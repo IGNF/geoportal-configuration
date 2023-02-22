@@ -21,5 +21,5 @@ if __name__ == "__main__":
     parser.add_argument("key")
     key = parser.parse_args().key
 
-    with open("{}Config.json".format(key), "w") as file:
+    with open("dist/{}Config.json".format(key), "w") as file:
         file.writelines(main(key))
