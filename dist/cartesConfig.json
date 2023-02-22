@@ -1,40 +1,252 @@
 {
   "generalOptions": {
     "apiKeys": {
-      "essentiels": [
-        "ADMIN_EXPRESS$GEOPORTAIL:OGC:WMTS",
-        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS",
+      "cartes": [
+        "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.BONNE$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.OVERVIEW$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMTS",
-        "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMTS",
         "PLAN.IGN$GEOPORTAIL:OGC:WMTS",
-        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMS",
+        "SCAN1000_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
+        "SCANDEP_PYR-JPEG_FXX_WM$GEOPORTAIL:OGC:WMS",
+        "SCANREG_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
       ]
     }
   },
   "layers": {
-    "ADMIN_EXPRESS$GEOPORTAIL:OGC:WMTS": {
-      "name": "ADMIN_EXPRESS",
-      "title": "ADMIN_EXPRESS",
-      "description": "Limites administratives des collectivités territoriales. Régions, départements, cantons, communes, arrondissements (pour Paris, Lyon et Marseille) et établissements publics de coopération intercommunale (EPCI).",
+    "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS",
+      "title": "Carte topographique - environs de Paris (1906)",
+      "description": "Carte topographique de Paris et de ses environs éditée en 1906.",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -6.50391,
-          "right": 9.84375,
-          "top": 51.2894,
-          "bottom": 40.9799
+          "left": 1.62941,
+          "right": 3.0,
+          "top": 49.1548,
+          "bottom": 48.4726
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "10": {
+            "minTileRow": "350",
+            "maxTileRow": "353",
+            "minTileCol": "516",
+            "maxTileCol": "520"
+          },
+          "11": {
+            "minTileRow": "701",
+            "maxTileRow": "707",
+            "minTileCol": "1033",
+            "maxTileCol": "1041"
+          },
+          "12": {
+            "minTileRow": "1403",
+            "maxTileRow": "1415",
+            "minTileCol": "2066",
+            "maxTileCol": "2082"
+          },
+          "13": {
+            "minTileRow": "2807",
+            "maxTileRow": "2831",
+            "minTileCol": "4132",
+            "maxTileCol": "4164"
+          },
+          "14": {
+            "minTileRow": "5615",
+            "maxTileRow": "5663",
+            "minTileCol": "8265",
+            "maxTileCol": "8328"
+          },
+          "15": {
+            "minTileRow": "11231",
+            "maxTileRow": "11326",
+            "minTileCol": "16531",
+            "maxTileCol": "16657"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.BONNE$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.BONNE",
+      "title": "Guyane française (1780)",
+      "description": "Carte de Guyane française établie par M. Bonne, Ingénieur-Hydrographe de la Marine. Cette carte figure dans l'\"atlas de toutes les parties connues du globe terrestre\", ouvrage rédigé par l'abbé Guillaume-Thomas RAYNAL et publié à Genève en 1780.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -55.9127,
+          "right": -50.0835,
+          "top": 7.88966,
+          "bottom": -0.49941
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "1"
+          },
+          "3": {
+            "minTileRow": "3",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "2"
+          },
+          "4": {
+            "minTileRow": "7",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "5"
+          },
+          "5": {
+            "minTileRow": "15",
+            "maxTileRow": "16",
+            "minTileCol": "11",
+            "maxTileCol": "11"
+          },
+          "6": {
+            "minTileRow": "30",
+            "maxTileRow": "32",
+            "minTileCol": "22",
+            "maxTileCol": "23"
+          },
+          "7": {
+            "minTileRow": "61",
+            "maxTileRow": "64",
+            "minTileCol": "44",
+            "maxTileCol": "46"
+          },
+          "8": {
+            "minTileRow": "122",
+            "maxTileRow": "128",
+            "minTileCol": "88",
+            "maxTileCol": "92"
+          },
+          "9": {
+            "minTileRow": "244",
+            "maxTileRow": "256",
+            "minTileCol": "176",
+            "maxTileCol": "184"
+          },
+          "10": {
+            "minTileRow": "489",
+            "maxTileRow": "513",
+            "minTileCol": "352",
+            "maxTileCol": "369"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10",
+      "title": "Carte de l'état-major - environs de Paris (1818 - 1824)",
+      "description": "Carte des environs de Paris au 1 : 10 000 établie entre 1818 et 1824.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 1.82682,
+          "right": 2.79738,
+          "top": 49.5142,
+          "bottom": 48.3847
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -43,118 +255,222 @@
         "tileMatrixSetLimits": {
           "6": {
             "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "20",
-            "maxTileCol": "41"
+            "maxTileRow": "22",
+            "minTileCol": "32",
+            "maxTileCol": "32"
           },
           "7": {
-            "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "41",
-            "maxTileCol": "83"
+            "minTileRow": "43",
+            "maxTileRow": "44",
+            "minTileCol": "64",
+            "maxTileCol": "64"
           },
           "8": {
-            "minTileRow": "85",
-            "maxTileRow": "143",
-            "minTileCol": "83",
-            "maxTileCol": "167"
+            "minTileRow": "87",
+            "maxTileRow": "88",
+            "minTileCol": "129",
+            "maxTileCol": "129"
           },
           "9": {
-            "minTileRow": "171",
-            "maxTileRow": "287",
-            "minTileCol": "166",
-            "maxTileCol": "335"
+            "minTileRow": "174",
+            "maxTileRow": "177",
+            "minTileCol": "258",
+            "maxTileCol": "259"
           },
           "10": {
-            "minTileRow": "342",
-            "maxTileRow": "574",
-            "minTileCol": "332",
-            "maxTileCol": "670"
+            "minTileRow": "349",
+            "maxTileRow": "354",
+            "minTileCol": "517",
+            "maxTileCol": "519"
           },
           "11": {
-            "minTileRow": "684",
-            "maxTileRow": "1148",
-            "minTileCol": "664",
-            "maxTileCol": "1341"
+            "minTileRow": "698",
+            "maxTileRow": "708",
+            "minTileCol": "1034",
+            "maxTileCol": "1039"
           },
           "12": {
-            "minTileRow": "1369",
-            "maxTileRow": "2297",
-            "minTileCol": "1329",
-            "maxTileCol": "2683"
+            "minTileRow": "1397",
+            "maxTileRow": "1417",
+            "minTileCol": "2068",
+            "maxTileCol": "2079"
           },
           "13": {
-            "minTileRow": "2738",
-            "maxTileRow": "4594",
-            "minTileCol": "2658",
-            "maxTileCol": "5366"
+            "minTileRow": "2795",
+            "maxTileRow": "2834",
+            "minTileCol": "4137",
+            "maxTileCol": "4159"
           },
           "14": {
-            "minTileRow": "5477",
-            "maxTileRow": "9189",
-            "minTileCol": "5317",
-            "maxTileCol": "10733"
+            "minTileRow": "5590",
+            "maxTileRow": "5669",
+            "minTileCol": "8275",
+            "maxTileCol": "8319"
           },
           "15": {
-            "minTileRow": "10955",
-            "maxTileRow": "18378",
-            "minTileCol": "10634",
-            "maxTileCol": "21467"
+            "minTileRow": "11181",
+            "maxTileRow": "11338",
+            "minTileCol": "16550",
+            "maxTileCol": "16638"
           },
           "16": {
-            "minTileRow": "21911",
-            "maxTileRow": "36757",
-            "minTileCol": "21269",
-            "maxTileCol": "42934"
-          },
-          "17": {
-            "minTileRow": "43822",
-            "maxTileRow": "73515",
-            "minTileCol": "42539",
-            "maxTileCol": "85869"
-          },
-          "18": {
-            "minTileRow": "87645",
-            "maxTileRow": "147030",
-            "minTileCol": "85079",
-            "maxTileCol": "171738"
-          },
-          "19": {
-            "minTileRow": "175290",
-            "maxTileRow": "294060",
-            "minTileCol": "170158",
-            "maxTileCol": "343476"
+            "minTileRow": "22363",
+            "maxTileRow": "22676",
+            "minTileCol": "33100",
+            "maxTileCol": "33277"
           }
         }
       },
-      "styles": [],
-      "legends": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
       "formats": [
         {
-          "name": "application/x-protobuf",
+          "name": "image/jpeg",
           "current": true
         }
       ]
     },
-    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS": {
-      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
-      "title": "PCI vecteur",
-      "description": "Plan cadastral informatisé vecteur de la DGFIP.",
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40",
+      "title": "Carte de l'état-major (1820-1866)",
+      "description": "Carte française en couleurs du XIXè siècle en couleurs superposable aux cartes et données modernes.",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -63.3725,
-          "right": 55.9259,
-          "top": 51.3121,
-          "bottom": -21.4756
+          "left": -6.08889,
+          "right": 10.961,
+          "top": 51.2745,
+          "bottom": 41.1844
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "270"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "495",
+            "maxTileCol": "540"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "991",
+            "maxTileCol": "1080"
+          },
+          "12": {
+            "minTileRow": "1368",
+            "maxTileRow": "1531",
+            "minTileCol": "1983",
+            "maxTileCol": "2160"
+          },
+          "13": {
+            "minTileRow": "2736",
+            "maxTileRow": "3063",
+            "minTileCol": "3966",
+            "maxTileCol": "4321"
+          },
+          "14": {
+            "minTileRow": "5472",
+            "maxTileRow": "6127",
+            "minTileCol": "7933",
+            "maxTileCol": "8642"
+          },
+          "15": {
+            "minTileRow": "10944",
+            "maxTileRow": "12255",
+            "minTileCol": "15866",
+            "maxTileCol": "17285"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1",
+      "title": "Plan IGN j+1",
+      "description": "Plan IGN j+1",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -182,125 +498,343 @@
           "3": {
             "minTileRow": "2",
             "maxTileRow": "4",
-            "minTileCol": "2",
-            "maxTileCol": "5"
+            "minTileCol": "3",
+            "maxTileCol": "4"
           },
           "4": {
             "minTileRow": "5",
             "maxTileRow": "8",
-            "minTileCol": "5",
-            "maxTileCol": "10"
+            "minTileCol": "7",
+            "maxTileCol": "8"
           },
           "5": {
             "minTileRow": "10",
-            "maxTileRow": "17",
-            "minTileCol": "10",
-            "maxTileCol": "20"
+            "maxTileRow": "16",
+            "minTileCol": "15",
+            "maxTileCol": "16"
           },
           "6": {
             "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "20",
-            "maxTileCol": "41"
+            "maxTileRow": "32",
+            "minTileCol": "31",
+            "maxTileCol": "33"
           },
           "7": {
             "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "41",
-            "maxTileCol": "83"
+            "maxTileRow": "64",
+            "minTileCol": "62",
+            "maxTileCol": "67"
           },
           "8": {
             "minTileRow": "85",
             "maxTileRow": "143",
-            "minTileCol": "82",
+            "minTileCol": "83",
             "maxTileCol": "167"
           },
           "9": {
             "minTileRow": "170",
             "maxTileRow": "287",
-            "minTileCol": "165",
+            "minTileCol": "166",
             "maxTileCol": "335"
           },
           "10": {
             "minTileRow": "341",
             "maxTileRow": "574",
-            "minTileCol": "331",
-            "maxTileCol": "671"
+            "minTileCol": "332",
+            "maxTileCol": "670"
           },
           "11": {
-            "minTileRow": "682",
-            "maxTileRow": "1149",
-            "minTileCol": "663",
-            "maxTileCol": "1342"
+            "minTileRow": "683",
+            "maxTileRow": "1148",
+            "minTileCol": "664",
+            "maxTileCol": "1341"
           },
           "12": {
-            "minTileRow": "1365",
-            "maxTileRow": "2298",
-            "minTileCol": "1326",
-            "maxTileCol": "2684"
+            "minTileRow": "1367",
+            "maxTileRow": "2297",
+            "minTileCol": "1328",
+            "maxTileCol": "2683"
           },
           "13": {
-            "minTileRow": "2731",
-            "maxTileRow": "4596",
-            "minTileCol": "2653",
-            "maxTileCol": "5368"
+            "minTileRow": "2735",
+            "maxTileRow": "4595",
+            "minTileCol": "2658",
+            "maxTileCol": "5367"
           },
           "14": {
-            "minTileRow": "5462",
-            "maxTileRow": "9193",
-            "minTileCol": "5307",
-            "maxTileCol": "10737"
+            "minTileRow": "5470",
+            "maxTileRow": "9190",
+            "minTileCol": "5316",
+            "maxTileCol": "10734"
           },
           "15": {
-            "minTileRow": "10924",
-            "maxTileRow": "18386",
-            "minTileCol": "10615",
-            "maxTileCol": "21474"
+            "minTileRow": "10940",
+            "maxTileRow": "18380",
+            "minTileCol": "10632",
+            "maxTileCol": "21468"
           },
           "16": {
-            "minTileRow": "21849",
-            "maxTileRow": "36772",
-            "minTileCol": "21231",
-            "maxTileCol": "42948"
+            "minTileRow": "21880",
+            "maxTileRow": "36760",
+            "minTileCol": "21264",
+            "maxTileCol": "42936"
           },
           "17": {
-            "minTileRow": "43698",
-            "maxTileRow": "73544",
-            "minTileCol": "42462",
-            "maxTileCol": "85897"
+            "minTileRow": "43768",
+            "maxTileRow": "73512",
+            "minTileCol": "42536",
+            "maxTileCol": "85864"
           },
           "18": {
-            "minTileRow": "87397",
-            "maxTileRow": "147089",
-            "minTileCol": "84925",
-            "maxTileCol": "171795"
-          },
-          "19": {
-            "minTileRow": "174795",
-            "maxTileRow": "294179",
-            "minTileCol": "169851",
-            "maxTileCol": "343591"
+            "minTileRow": "87536",
+            "maxTileRow": "147024",
+            "minTileCol": "85080",
+            "maxTileCol": "171728"
           }
         }
       },
       "styles": [
         {
-          "name": "PCI vecteur",
-          "title": "PCI vecteur",
+          "name": "normal",
+          "title": "Légende générique",
           "current": true,
           "url": null
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/CADASTRALPARCELS.PARCELLAIRE_EXPRESS.png",
-          "minScaleDenominator": "1"
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
         }
       ],
       "formats": [
         {
           "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.OVERVIEW$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.OVERVIEW",
+      "title": "Carte Mondiale pour la mini-vue",
+      "description": "Carte Mondiale pour la mini-vue",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "3",
+            "minTileCol": "0",
+            "maxTileCol": "3"
+          },
+          "3": {
+            "minTileRow": "1",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "7"
+          },
+          "4": {
+            "minTileRow": "2",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "5",
+            "maxTileRow": "26",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "11",
+            "maxTileRow": "52",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "22",
+            "maxTileRow": "105",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "45",
+            "maxTileRow": "210",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950",
+      "title": "SCAN50 Historique de 1950",
+      "description": "SCAN50 produit par l'IGN en 1950",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "16"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "32"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "64"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "128"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "256"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "512"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1024"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2048"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4096"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8192"
+          },
+          "14": {
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16384"
+          },
+          "15": {
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32768"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
           "current": true
         }
       ]
@@ -323,7 +857,7 @@
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -474,169 +1008,115 @@
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
-      "name": "ORTHOIMAGERY.ORTHOPHOTOS",
-      "title": "Photographies aériennes",
-      "description": "Photographies aériennes",
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1",
+      "title": "Plan Terrier V1 (XVIIIe siècle)",
+      "description": "Plan Terrier Corse V1 (XVIIIe siècle) - GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -179.5,
-          "right": 179.5,
-          "top": 75.0,
-          "bottom": -75.0
+          "left": 8.36284,
+          "right": 9.75281,
+          "top": 43.1174,
+          "bottom": 41.2568
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
       "wmtsOptions": {
         "tileMatrixSetLink": "PM",
         "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "0",
-            "maxTileCol": "1"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "2",
-            "minTileCol": "0",
-            "maxTileCol": "2"
-          },
-          "2": {
-            "minTileRow": "0",
-            "maxTileRow": "4",
-            "minTileCol": "0",
-            "maxTileCol": "4"
-          },
-          "3": {
-            "minTileRow": "0",
-            "maxTileRow": "8",
-            "minTileCol": "0",
-            "maxTileCol": "8"
-          },
-          "4": {
-            "minTileRow": "0",
-            "maxTileRow": "16",
-            "minTileCol": "0",
-            "maxTileCol": "16"
-          },
-          "5": {
-            "minTileRow": "0",
-            "maxTileRow": "32",
-            "minTileCol": "0",
-            "maxTileCol": "32"
-          },
           "6": {
-            "minTileRow": "0",
-            "maxTileRow": "64",
-            "minTileCol": "0",
-            "maxTileCol": "64"
+            "minTileRow": "23",
+            "maxTileRow": "23",
+            "minTileCol": "33",
+            "maxTileCol": "33"
           },
           "7": {
-            "minTileRow": "0",
-            "maxTileRow": "128",
-            "minTileCol": "0",
-            "maxTileCol": "128"
+            "minTileRow": "46",
+            "maxTileRow": "47",
+            "minTileCol": "66",
+            "maxTileCol": "67"
           },
           "8": {
-            "minTileRow": "0",
-            "maxTileRow": "256",
-            "minTileCol": "0",
-            "maxTileCol": "256"
+            "minTileRow": "93",
+            "maxTileRow": "95",
+            "minTileCol": "133",
+            "maxTileCol": "134"
           },
           "9": {
-            "minTileRow": "0",
-            "maxTileRow": "512",
-            "minTileCol": "0",
-            "maxTileCol": "512"
+            "minTileRow": "187",
+            "maxTileRow": "191",
+            "minTileCol": "267",
+            "maxTileCol": "269"
           },
           "10": {
-            "minTileRow": "0",
-            "maxTileRow": "1024",
-            "minTileCol": "0",
-            "maxTileCol": "1024"
+            "minTileRow": "375",
+            "maxTileRow": "382",
+            "minTileCol": "535",
+            "maxTileCol": "539"
           },
           "11": {
-            "minTileRow": "0",
-            "maxTileRow": "2048",
-            "minTileCol": "0",
-            "maxTileCol": "2048"
+            "minTileRow": "751",
+            "maxTileRow": "765",
+            "minTileCol": "1071",
+            "maxTileCol": "1079"
           },
           "12": {
-            "minTileRow": "0",
-            "maxTileRow": "4096",
-            "minTileCol": "0",
-            "maxTileCol": "4096"
+            "minTileRow": "1503",
+            "maxTileRow": "1531",
+            "minTileCol": "2143",
+            "maxTileCol": "2158"
           },
           "13": {
-            "minTileRow": "2736",
-            "maxTileRow": "4639",
-            "minTileCol": "32",
-            "maxTileCol": "7935"
+            "minTileRow": "3007",
+            "maxTileRow": "3063",
+            "minTileCol": "4287",
+            "maxTileCol": "4316"
           },
           "14": {
-            "minTileRow": "5472",
-            "maxTileRow": "9263",
-            "minTileCol": "80",
-            "maxTileCol": "15855"
+            "minTileRow": "6015",
+            "maxTileRow": "6126",
+            "minTileCol": "8575",
+            "maxTileCol": "8632"
           },
           "15": {
-            "minTileRow": "10944",
-            "maxTileRow": "18527",
-            "minTileCol": "160",
-            "maxTileCol": "31695"
+            "minTileRow": "12030",
+            "maxTileRow": "12252",
+            "minTileCol": "17150",
+            "maxTileCol": "17265"
           },
           "16": {
-            "minTileRow": "21904",
-            "maxTileRow": "37039",
-            "minTileCol": "320",
-            "maxTileCol": "63391"
+            "minTileRow": "24061",
+            "maxTileRow": "24505",
+            "minTileCol": "34301",
+            "maxTileCol": "34530"
           },
           "17": {
-            "minTileRow": "43808",
-            "maxTileRow": "74063",
-            "minTileCol": "656",
-            "maxTileCol": "126767"
+            "minTileRow": "48123",
+            "maxTileRow": "49011",
+            "minTileCol": "68603",
+            "maxTileCol": "69061"
           },
           "18": {
-            "minTileRow": "87616",
-            "maxTileRow": "148111",
-            "minTileCol": "1312",
-            "maxTileCol": "253535"
-          },
-          "19": {
-            "minTileRow": "175248",
-            "maxTileRow": "294063",
-            "minTileCol": "170144",
-            "maxTileCol": "343487"
-          },
-          "20": {
-            "minTileRow": "357008",
-            "maxTileRow": "384687",
-            "minTileCol": "524400",
-            "maxTileCol": "540927"
-          },
-          "21": {
-            "minTileRow": "714032",
-            "maxTileRow": "768783",
-            "minTileCol": "1048816",
-            "maxTileCol": "1081775"
+            "minTileRow": "96247",
+            "maxTileRow": "98022",
+            "minTileCol": "137207",
+            "maxTileCol": "138122"
           }
         }
       },
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique",
+          "name": "nolegend",
+          "title": "Données sans légende",
           "current": true,
           "url": null
         }
@@ -650,7 +1130,134 @@
       ],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2",
+      "title": "Plan Terrier V2 (XVIIIe siècle)",
+      "description": "Plan Terrier, cartographie ancienne du XVIIIème siècle sur la Corse version est une version numérisée par les archives militaires du Ministère de la Défense",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 8.36284,
+          "right": 9.75282,
+          "top": 43.1174,
+          "bottom": 41.2568
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "23",
+            "maxTileRow": "23",
+            "minTileCol": "33",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "46",
+            "maxTileRow": "47",
+            "minTileCol": "66",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "93",
+            "maxTileRow": "95",
+            "minTileCol": "133",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "187",
+            "maxTileRow": "191",
+            "minTileCol": "267",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "375",
+            "maxTileRow": "382",
+            "minTileCol": "535",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "751",
+            "maxTileRow": "765",
+            "minTileCol": "1071",
+            "maxTileCol": "1079"
+          },
+          "12": {
+            "minTileRow": "1503",
+            "maxTileRow": "1531",
+            "minTileCol": "2143",
+            "maxTileCol": "2158"
+          },
+          "13": {
+            "minTileRow": "3007",
+            "maxTileRow": "3063",
+            "minTileCol": "4287",
+            "maxTileCol": "4316"
+          },
+          "14": {
+            "minTileRow": "6015",
+            "maxTileRow": "6126",
+            "minTileCol": "8575",
+            "maxTileCol": "8632"
+          },
+          "15": {
+            "minTileRow": "12030",
+            "maxTileRow": "12252",
+            "minTileCol": "17150",
+            "maxTileCol": "17265"
+          },
+          "16": {
+            "minTileRow": "24061",
+            "maxTileRow": "24505",
+            "minTileCol": "34301",
+            "maxTileCol": "34530"
+          },
+          "17": {
+            "minTileRow": "48123",
+            "maxTileRow": "49011",
+            "minTileCol": "68603",
+            "maxTileCol": "69061"
+          },
+          "18": {
+            "minTileRow": "96247",
+            "maxTileRow": "98022",
+            "minTileCol": "137207",
+            "maxTileCol": "138122"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
           "current": true
         }
       ]
@@ -673,7 +1280,7 @@
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -811,44 +1418,36 @@
         }
       ]
     },
-    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS": {
-      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
-      "title": "PCI vecteur",
-      "description": "Plan cadastral informatisé vecteur de la DGFIP.",
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10",
+      "title": "Carte de l'état-major - environs de Paris (1818 - 1824)",
+      "description": "Carte des environs de Paris au 1 : 10 000 établie entre 1818 et 1824.",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": 1.826818564,
+          "right": 2.797380599,
+          "top": 49.514153879,
+          "bottom": 48.384737373
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
-      "queryable": true,
+      "queryable": false,
       "metadata": [
         {
           "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=PCI_VECTEUR.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=ADMIN-EXPRESS_1-1.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_SCANEMr_10K.xml"
         }
       ],
       "styles": [
-        {
-          "name": "PCI vecteur",
-          "title": "PCI vecteur"
-        },
         {
           "name": "normal",
           "title": "Légende générique"
@@ -856,12 +1455,220 @@
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/CADASTRALPARCELS.PARCELLAIRE_EXPRESS.png"
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
         },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40",
+      "title": "Carte de l'état-major (1820-1866)",
+      "description": "Carte française en couleurs du XIXè siècle en couleurs superposable aux cartes et données modernes.",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -6.088888794,
+          "right": 10.961009535,
+          "top": 51.274533795,
+          "bottom": 41.184408199
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_SCANEMr_40K.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
         {
           "format": "image/jpeg",
           "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1",
+      "title": "Plan IGN j+1",
+      "description": "Plan IGN j+1",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -179.499994634,
+          "right": 179.499994634,
+          "top": 74.99999974,
+          "bottom": -74.99999974
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=ADMIN-EXPRESS_1-1.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950",
+      "title": "SCAN50 Historique de 1950",
+      "description": "SCAN50 produit ppar l'IGN en 1950",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -179.499994634,
+          "right": 179.499994634,
+          "top": 74.99999974,
+          "bottom": -74.99999974
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_SCAN50r_Historique_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "SCAN50_1950",
+          "title": "SCAN 50 historique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950-legend.png"
         }
       ],
       "formats": [
@@ -909,7 +1716,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -959,33 +1766,237 @@
         }
       ]
     },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
-      "title": "Limites administratives mises à jour en continu.",
-      "description": "Limites administratives mises à jour en continu, édition février 2023",
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1",
+      "title": "Plan Terrier V1 (XVIIIe siècle)",
+      "description": "Plan Terrier, cartographie ancienne du XVIIIème siècle sur la Corse",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": 8.362838637,
+          "right": 9.752813429,
+          "top": 43.117404985,
+          "bottom": 41.256769696
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
-      "queryable": true,
+      "queryable": false,
       "metadata": [
         {
           "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ADMIN_EXPRESS_3-0.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=PLAN_TERRIER.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2",
+      "title": "Plan Terrier V2 (XVIIIe siècle)",
+      "description": "Plan Terrier, cartographie ancienne du XVIIIème siècle sur la Corse version est une version numérisée par les archives militaires du Ministère de la Défense",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": 8.362838476,
+          "right": 9.752815873,
+          "top": 43.117404985,
+          "bottom": 41.256767758
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=PLAN_TERRIER.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "SCAN1000_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "SCAN1000_PYR-JPEG_WLD_WM",
+      "title": "SCAN1000 France métropolitaine 2021 (WM)",
+      "description": "Le produit SCAN 1000® version 2 est une collection d'images numériques en couleurs, obtenues par rastérisation des données vecteur de la carte nationale France (901) à l'échelle 1 :1,000,000ième. Le produit couvre l'ensemble du territoire français métropolitain et la Corse.",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -6.420880971,
+          "right": 13.549984261,
+          "top": 51.444014219,
+          "bottom": 40.289066627
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_SCAN1000r_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "SCAN1000",
+          "title": "Légende du 1/1000000"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/SCAN1000_PYR-JPEG_WLD_WM-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "SCANDEP_PYR-JPEG_FXX_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "SCANDEP_PYR-JPEG_FXX_WM",
+      "title": "SCANDEP WM FXX 2011",
+      "description": "Le produit SCAN Départemental® version 3 est une collection d'images cartographiques numériques en couleur, obtenues par rastérisation des données vecteur de la série « Cartes départementales » éditées par l'IGN. Ces images couvrent l'ensemble du territoire français métropolitain.",
+      "globalConstraint": {
+        "minScaleDenominator": 8928.571428571,
+        "maxScaleDenominator": 585142857.1428571,
+        "bbox": {
+          "left": -6.420880971,
+          "right": 11.429714268,
+          "top": 51.161536605,
+          "bottom": 40.809712667
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_SCANDEPr_3-0.xml"
         }
       ],
       "styles": [
@@ -1027,61 +2038,45 @@
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS": {
-      "name": "ORTHOIMAGERY.ORTHOPHOTOS",
-      "title": "Photographies aériennes",
-      "description": "Photographies aériennes",
+    "SCANREG_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "SCANREG_PYR-JPEG_WLD_WM",
+      "title": "Scan Régional FXX WM 08-2021",
+      "description": "Le produit SCAN Régional® version 2 est une collection d'images cartographiques numériques en couleur, obtenues par rastérisation des données vecteur de la série « Cartes régionales » éditées par l'IGN. Ces images couvrent l'ensemble du territoire français métropolitain.",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -179.499994634,
-          "right": 179.499994634,
-          "top": 74.99999974,
-          "bottom": -74.99999974
+          "left": -6.420880971,
+          "right": 12.137980905,
+          "top": 51.444124102,
+          "bottom": 40.809712667
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
-      "queryable": true,
+      "queryable": false,
       "metadata": [
         {
           "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ORTHOHR_1-0.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=NCL-DITTT-ORTHO.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=SPOT5.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_SCANREGr_2-0.xml"
         }
       ],
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique"
+          "name": "SCANREG",
+          "title": "Légende du 1/1000000"
         }
       ],
       "legends": [
         {
-          "format": "image/jpeg",
-          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/SCANREG_PYR-JPEG_WLD_WM-legend.png"
         }
       ],
       "formats": [
@@ -1111,25 +2106,25 @@
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
-      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
-      "title": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
-      "description": "Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE",
+      "title": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE",
+      "description": "Layer-Group type layer: GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE",
       "globalConstraint": {
-        "minScaleDenominator": 800.0,
+        "minScaleDenominator": 1.0,
         "maxScaleDenominator": 10000000.0,
         "bbox": {
-          "left": -178.18541495878412,
-          "right": 55.85384064994032,
-          "top": 51.111835779138985,
-          "bottom": -21.427303081539563
+          "left": -178.2057322544516,
+          "right": 55.83667602180032,
+          "top": 51.08938761678308,
+          "bottom": -21.38985327009672
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/v/wms?SERVICE=WMS&"
+          "cartes": "https://wxs.ign.fr/cartes/geoportail/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -1137,7 +2132,7 @@
       "metadata": [
         {
           "format": "text/plain",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_SCAN25r_3-0.xml"
         }
       ],
       "styles": [],

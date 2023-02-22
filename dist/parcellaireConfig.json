@@ -1,40 +1,207 @@
 {
   "generalOptions": {
     "apiKeys": {
-      "essentiels": [
-        "ADMIN_EXPRESS$GEOPORTAIL:OGC:WMTS",
+      "parcellaire": [
+        "Aire-Parcellaire$GEOPORTAIL:OGC:WMTS",
+        "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMTS",
+        "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMTS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS",
-        "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMTS",
-        "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
-        "PLAN.IGN$GEOPORTAIL:OGC:WMTS",
+        "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMTS",
+        "PCI$GEOPORTAIL:OGC:WMTS",
+        "Aire-Parcellaire$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
-        "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
+        "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS"
       ]
     }
   },
   "layers": {
-    "ADMIN_EXPRESS$GEOPORTAIL:OGC:WMTS": {
-      "name": "ADMIN_EXPRESS",
-      "title": "ADMIN_EXPRESS",
-      "description": "Limites administratives des collectivités territoriales. Régions, départements, cantons, communes, arrondissements (pour Paris, Lyon et Marseille) et établissements publics de coopération intercommunale (EPCI).",
+    "Aire-Parcellaire$GEOPORTAIL:OGC:WMTS": {
+      "name": "Aire-Parcellaire",
+      "title": "Délimitation parcellaire AOC viticole",
+      "description": "Selon les règlements européens n°110/2008 du 15 janvier 2008, n°1151/2012 du 21 novembre 2012 et n°1308/2013 de l’OCM , le cahier des charges des appellations définit l’aire géographique. Le terme de « délimitation parcellaire » désigne une aire qui repose sur les limites administratives du cadastre (les parcelles) et dont le maillage suffisamment fin permet de tenir compte de variations très localisées des éléments du milieu physique. Elle correspond à l'aire de production de la matière première. Elle est incluse dans l'aire géographique. Données produites par l'Institut National des Origines et la Qualité (INAO)",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -6.50391,
-          "right": 9.84375,
-          "top": 51.2894,
-          "bottom": 40.9799
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          },
+          "17": {
+            "minTileRow": "43822",
+            "maxTileRow": "48985",
+            "minTileCol": "63660",
+            "maxTileCol": "69020"
+          },
+          "18": {
+            "minTileRow": "87645",
+            "maxTileRow": "97970",
+            "minTileCol": "127321",
+            "maxTileCol": "138041"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMTS": {
+      "name": "CADASTRALPARCELS.HEATMAP",
+      "title": "Décalage de la représentation cadastrale",
+      "description": "Cartographie des décalages entre les données BD Parcellaire et Parcellaire Express",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -43,95 +210,271 @@
         "tileMatrixSetLimits": {
           "6": {
             "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "20",
-            "maxTileCol": "41"
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
           },
           "7": {
             "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "41",
-            "maxTileCol": "83"
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
           },
           "8": {
             "minTileRow": "85",
-            "maxTileRow": "143",
-            "minTileCol": "83",
-            "maxTileCol": "167"
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
           },
           "9": {
             "minTileRow": "171",
-            "maxTileRow": "287",
-            "minTileCol": "166",
-            "maxTileCol": "335"
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
           },
           "10": {
             "minTileRow": "342",
-            "maxTileRow": "574",
-            "minTileCol": "332",
-            "maxTileCol": "670"
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
           },
           "11": {
             "minTileRow": "684",
-            "maxTileRow": "1148",
-            "minTileCol": "664",
-            "maxTileCol": "1341"
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
           },
           "12": {
             "minTileRow": "1369",
-            "maxTileRow": "2297",
-            "minTileCol": "1329",
-            "maxTileCol": "2683"
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
           },
           "13": {
             "minTileRow": "2738",
-            "maxTileRow": "4594",
-            "minTileCol": "2658",
-            "maxTileCol": "5366"
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
           },
           "14": {
             "minTileRow": "5477",
-            "maxTileRow": "9189",
-            "minTileCol": "5317",
-            "maxTileCol": "10733"
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
           },
           "15": {
             "minTileRow": "10955",
-            "maxTileRow": "18378",
-            "minTileCol": "10634",
-            "maxTileCol": "21467"
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
           },
           "16": {
             "minTileRow": "21911",
-            "maxTileRow": "36757",
-            "minTileCol": "21269",
-            "maxTileCol": "42934"
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
           },
           "17": {
             "minTileRow": "43822",
-            "maxTileRow": "73515",
-            "minTileCol": "42539",
-            "maxTileCol": "85869"
+            "maxTileRow": "48985",
+            "minTileCol": "63660",
+            "maxTileCol": "69020"
           },
           "18": {
             "minTileRow": "87645",
-            "maxTileRow": "147030",
-            "minTileCol": "85079",
-            "maxTileCol": "171738"
-          },
-          "19": {
-            "minTileRow": "175290",
-            "maxTileRow": "294060",
-            "minTileCol": "170158",
-            "maxTileCol": "343476"
+            "maxTileRow": "97970",
+            "minTileCol": "127321",
+            "maxTileCol": "138041"
           }
         }
       },
-      "styles": [],
+      "styles": [
+        {
+          "name": "DECALAGE DE LA REPRESENTATION CADASTRALE",
+          "title": "DECALAGE DE LA REPRESENTATION CADASTRALE",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/CADASTRALPARCELS.HEATMAP-legend.png",
+          "minScaleDenominator": "2000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMTS": {
+      "name": "CADASTRALPARCELS.HISTO.2008-2013.PARCELS",
+      "title": "Parcelles cadastrales historiques (2008-2013)",
+      "description": "Limites des parcelles cadastrales historiques (2008-2013) issues de plans scannés et de plans numériques.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1607,
+          "right": 55.8464,
+          "top": 51.0945,
+          "bottom": -21.3922
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "2"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "16"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "31",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "63",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "95",
+            "minTileCol": "32",
+            "maxTileCol": "95"
+          },
+          "8": {
+            "minTileRow": "64",
+            "maxTileRow": "159",
+            "minTileCol": "64",
+            "maxTileCol": "191"
+          },
+          "9": {
+            "minTileRow": "160",
+            "maxTileRow": "287",
+            "minTileCol": "160",
+            "maxTileCol": "351"
+          },
+          "10": {
+            "minTileRow": "320",
+            "maxTileRow": "575",
+            "minTileCol": "320",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "672",
+            "maxTileRow": "1151",
+            "minTileCol": "640",
+            "maxTileCol": "1343"
+          },
+          "12": {
+            "minTileRow": "1344",
+            "maxTileRow": "2303",
+            "minTileCol": "1312",
+            "maxTileCol": "2687"
+          },
+          "13": {
+            "minTileRow": "2720",
+            "maxTileRow": "4607",
+            "minTileCol": "2656",
+            "maxTileCol": "5375"
+          },
+          "14": {
+            "minTileRow": "5472",
+            "maxTileRow": "9215",
+            "minTileCol": "5312",
+            "maxTileCol": "10751"
+          },
+          "15": {
+            "minTileRow": "10944",
+            "maxTileRow": "18399",
+            "minTileCol": "10624",
+            "maxTileCol": "21471"
+          },
+          "16": {
+            "minTileRow": "21888",
+            "maxTileRow": "36767",
+            "minTileCol": "21248",
+            "maxTileCol": "42943"
+          },
+          "17": {
+            "minTileRow": "43808",
+            "maxTileRow": "73535",
+            "minTileCol": "42528",
+            "maxTileCol": "85887"
+          },
+          "18": {
+            "minTileRow": "87648",
+            "maxTileRow": "147039",
+            "minTileCol": "85056",
+            "maxTileCol": "171743"
+          },
+          "19": {
+            "minTileRow": "175296",
+            "maxTileRow": "294047",
+            "minTileCol": "170144",
+            "maxTileCol": "343487"
+          },
+          "20": {
+            "minTileRow": "350592",
+            "maxTileRow": "588095",
+            "minTileCol": "340288",
+            "maxTileCol": "686975"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "bdparcellaire",
+          "title": "BD Parcellaire Noire et transparente",
+          "current": true,
+          "url": null
+        }
+      ],
       "legends": [],
       "formats": [
         {
-          "name": "application/x-protobuf",
+          "name": "image/png",
           "current": true
         }
       ]
@@ -154,7 +497,7 @@
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -305,194 +648,25 @@
         }
       ]
     },
-    "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMTS": {
-      "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-      "title": "Plan IGN v2",
-      "description": "Cartographie multi-échelles sur le territoire national, issue des bases de données vecteur de l’IGN, mis à jour régulièrement et réalisée selon un processus entièrement automatisé.",
+    "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMTS": {
+      "name": "CADASTRALPARCELS.PARCELS",
+      "title": "Parcelles cadastrales",
+      "description": "Limites des parcelles cadastrales issues de plans scannés et de plans numériques.",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -175.0,
-          "right": 175.0,
-          "top": 85.0,
-          "bottom": -85.0
+          "left": -63.1607,
+          "right": 55.8464,
+          "top": 51.091,
+          "bottom": -21.3922
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM",
-        "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "0",
-            "maxTileCol": "0"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "2",
-            "minTileCol": "0",
-            "maxTileCol": "2"
-          },
-          "2": {
-            "minTileRow": "0",
-            "maxTileRow": "4",
-            "minTileCol": "0",
-            "maxTileCol": "4"
-          },
-          "3": {
-            "minTileRow": "0",
-            "maxTileRow": "8",
-            "minTileCol": "0",
-            "maxTileCol": "8"
-          },
-          "4": {
-            "minTileRow": "0",
-            "maxTileRow": "16",
-            "minTileCol": "0",
-            "maxTileCol": "16"
-          },
-          "5": {
-            "minTileRow": "0",
-            "maxTileRow": "32",
-            "minTileCol": "0",
-            "maxTileCol": "32"
-          },
-          "6": {
-            "minTileRow": "0",
-            "maxTileRow": "64",
-            "minTileCol": "0",
-            "maxTileCol": "64"
-          },
-          "7": {
-            "minTileRow": "0",
-            "maxTileRow": "128",
-            "minTileCol": "0",
-            "maxTileCol": "128"
-          },
-          "8": {
-            "minTileRow": "80",
-            "maxTileRow": "144",
-            "minTileCol": "80",
-            "maxTileCol": "168"
-          },
-          "9": {
-            "minTileRow": "168",
-            "maxTileRow": "288",
-            "minTileCol": "160",
-            "maxTileCol": "336"
-          },
-          "10": {
-            "minTileRow": "336",
-            "maxTileRow": "576",
-            "minTileCol": "328",
-            "maxTileCol": "672"
-          },
-          "11": {
-            "minTileRow": "680",
-            "maxTileRow": "1152",
-            "minTileCol": "664",
-            "maxTileCol": "1344"
-          },
-          "12": {
-            "minTileRow": "1368",
-            "maxTileRow": "2304",
-            "minTileCol": "1328",
-            "maxTileCol": "2688"
-          },
-          "13": {
-            "minTileRow": "2736",
-            "maxTileRow": "4600",
-            "minTileCol": "2656",
-            "maxTileCol": "5376"
-          },
-          "14": {
-            "minTileRow": "5472",
-            "maxTileRow": "9200",
-            "minTileCol": "5312",
-            "maxTileCol": "10744"
-          },
-          "15": {
-            "minTileRow": "10952",
-            "maxTileRow": "18392",
-            "minTileCol": "10624",
-            "maxTileCol": "21480"
-          },
-          "16": {
-            "minTileRow": "21904",
-            "maxTileRow": "36784",
-            "minTileCol": "21248",
-            "maxTileCol": "42952"
-          },
-          "17": {
-            "minTileRow": "43816",
-            "maxTileRow": "73568",
-            "minTileCol": "42496",
-            "maxTileCol": "85904"
-          },
-          "18": {
-            "minTileRow": "87640",
-            "maxTileRow": "147128",
-            "minTileCol": "85000",
-            "maxTileCol": "171808"
-          },
-          "19": {
-            "minTileRow": "175288",
-            "maxTileRow": "294248",
-            "minTileCol": "170008",
-            "maxTileCol": "343616"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        }
-      ]
-    },
-    "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
-      "name": "ORTHOIMAGERY.ORTHOPHOTOS",
-      "title": "Photographies aériennes",
-      "description": "Photographies aériennes",
-      "globalConstraint": {
-        "maxScaleDenominator": 559082264.0287179,
-        "minScaleDenominator": 266.5911979812229,
-        "bbox": {
-          "left": -179.5,
-          "right": 179.5,
-          "top": 75.0,
-          "bottom": -75.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -531,134 +705,122 @@
           },
           "5": {
             "minTileRow": "0",
-            "maxTileRow": "32",
+            "maxTileRow": "31",
             "minTileCol": "0",
-            "maxTileCol": "32"
+            "maxTileCol": "31"
           },
           "6": {
             "minTileRow": "0",
-            "maxTileRow": "64",
+            "maxTileRow": "63",
             "minTileCol": "0",
-            "maxTileCol": "64"
+            "maxTileCol": "63"
           },
           "7": {
-            "minTileRow": "0",
-            "maxTileRow": "128",
-            "minTileCol": "0",
-            "maxTileCol": "128"
+            "minTileRow": "32",
+            "maxTileRow": "95",
+            "minTileCol": "32",
+            "maxTileCol": "95"
           },
           "8": {
-            "minTileRow": "0",
-            "maxTileRow": "256",
-            "minTileCol": "0",
-            "maxTileCol": "256"
+            "minTileRow": "64",
+            "maxTileRow": "159",
+            "minTileCol": "64",
+            "maxTileCol": "191"
           },
           "9": {
-            "minTileRow": "0",
-            "maxTileRow": "512",
-            "minTileCol": "0",
-            "maxTileCol": "512"
+            "minTileRow": "160",
+            "maxTileRow": "287",
+            "minTileCol": "160",
+            "maxTileCol": "351"
           },
           "10": {
-            "minTileRow": "0",
-            "maxTileRow": "1024",
-            "minTileCol": "0",
-            "maxTileCol": "1024"
+            "minTileRow": "320",
+            "maxTileRow": "575",
+            "minTileCol": "320",
+            "maxTileCol": "671"
           },
           "11": {
-            "minTileRow": "0",
-            "maxTileRow": "2048",
-            "minTileCol": "0",
-            "maxTileCol": "2048"
+            "minTileRow": "672",
+            "maxTileRow": "1151",
+            "minTileCol": "640",
+            "maxTileCol": "1343"
           },
           "12": {
-            "minTileRow": "0",
-            "maxTileRow": "4096",
-            "minTileCol": "0",
-            "maxTileCol": "4096"
+            "minTileRow": "1344",
+            "maxTileRow": "2303",
+            "minTileCol": "1312",
+            "maxTileCol": "2687"
           },
           "13": {
-            "minTileRow": "2736",
-            "maxTileRow": "4639",
-            "minTileCol": "32",
-            "maxTileCol": "7935"
+            "minTileRow": "2720",
+            "maxTileRow": "4607",
+            "minTileCol": "2656",
+            "maxTileCol": "5375"
           },
           "14": {
             "minTileRow": "5472",
-            "maxTileRow": "9263",
-            "minTileCol": "80",
-            "maxTileCol": "15855"
+            "maxTileRow": "9215",
+            "minTileCol": "5312",
+            "maxTileCol": "10751"
           },
           "15": {
             "minTileRow": "10944",
-            "maxTileRow": "18527",
-            "minTileCol": "160",
-            "maxTileCol": "31695"
+            "maxTileRow": "18399",
+            "minTileCol": "10624",
+            "maxTileCol": "21471"
           },
           "16": {
-            "minTileRow": "21904",
-            "maxTileRow": "37039",
-            "minTileCol": "320",
-            "maxTileCol": "63391"
+            "minTileRow": "21888",
+            "maxTileRow": "36767",
+            "minTileCol": "21248",
+            "maxTileCol": "42943"
           },
           "17": {
             "minTileRow": "43808",
-            "maxTileRow": "74063",
-            "minTileCol": "656",
-            "maxTileCol": "126767"
+            "maxTileRow": "73535",
+            "minTileCol": "42528",
+            "maxTileCol": "85887"
           },
           "18": {
-            "minTileRow": "87616",
-            "maxTileRow": "148111",
-            "minTileCol": "1312",
-            "maxTileCol": "253535"
+            "minTileRow": "87648",
+            "maxTileRow": "147039",
+            "minTileCol": "85056",
+            "maxTileCol": "171743"
           },
           "19": {
-            "minTileRow": "175248",
-            "maxTileRow": "294063",
+            "minTileRow": "175296",
+            "maxTileRow": "294047",
             "minTileCol": "170144",
             "maxTileCol": "343487"
           },
           "20": {
-            "minTileRow": "357008",
-            "maxTileRow": "384687",
-            "minTileCol": "524400",
-            "maxTileCol": "540927"
-          },
-          "21": {
-            "minTileRow": "714032",
-            "maxTileRow": "768783",
-            "minTileCol": "1048816",
-            "maxTileCol": "1081775"
+            "minTileRow": "350592",
+            "maxTileRow": "588095",
+            "minTileCol": "340288",
+            "maxTileCol": "686975"
           }
         }
       },
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique",
+          "name": "bdparcellaire",
+          "title": "BD Parcellaire Noire et transparente",
           "current": true,
           "url": null
         }
       ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         }
       ]
     },
-    "PLAN.IGN$GEOPORTAIL:OGC:WMTS": {
-      "name": "PLAN.IGN",
-      "title": "Plan IGN",
-      "description": "BDUni tuilée",
+    "PCI$GEOPORTAIL:OGC:WMTS": {
+      "name": "PCI",
+      "title": "PCI",
+      "description": "Plan cadastral informatisé vecteur tuilé de la DGFIP",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
@@ -673,132 +835,102 @@
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
       "wmtsOptions": {
         "tileMatrixSetLink": "PM",
         "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "0",
-            "maxTileCol": "1"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "2",
-            "minTileCol": "0",
-            "maxTileCol": "2"
-          },
-          "2": {
-            "minTileRow": "0",
-            "maxTileRow": "4",
-            "minTileCol": "0",
-            "maxTileCol": "4"
-          },
-          "3": {
-            "minTileRow": "0",
-            "maxTileRow": "8",
-            "minTileCol": "0",
-            "maxTileCol": "8"
-          },
-          "4": {
-            "minTileRow": "0",
-            "maxTileRow": "16",
-            "minTileCol": "0",
-            "maxTileCol": "16"
-          },
           "5": {
-            "minTileRow": "0",
-            "maxTileRow": "32",
-            "minTileCol": "0",
-            "maxTileCol": "32"
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
           },
           "6": {
-            "minTileRow": "0",
-            "maxTileRow": "64",
-            "minTileCol": "0",
-            "maxTileCol": "64"
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
           },
           "7": {
-            "minTileRow": "0",
-            "maxTileRow": "128",
-            "minTileCol": "0",
-            "maxTileCol": "128"
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
           },
           "8": {
-            "minTileRow": "64",
-            "maxTileRow": "192",
-            "minTileCol": "64",
-            "maxTileCol": "192"
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
           },
           "9": {
-            "minTileRow": "128",
-            "maxTileRow": "320",
-            "minTileCol": "128",
-            "maxTileCol": "384"
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
           },
           "10": {
-            "minTileRow": "320",
-            "maxTileRow": "576",
-            "minTileCol": "320",
-            "maxTileCol": "704"
+            "minTileRow": "342",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "670"
           },
           "11": {
-            "minTileRow": "640",
-            "maxTileRow": "1152",
-            "minTileCol": "640",
-            "maxTileCol": "1344"
+            "minTileRow": "684",
+            "maxTileRow": "1148",
+            "minTileCol": "664",
+            "maxTileCol": "1341"
           },
           "12": {
-            "minTileRow": "1344",
-            "maxTileRow": "2304",
-            "minTileCol": "1280",
-            "maxTileCol": "2688"
+            "minTileRow": "1369",
+            "maxTileRow": "2297",
+            "minTileCol": "1329",
+            "maxTileCol": "2683"
           },
           "13": {
-            "minTileRow": "2688",
-            "maxTileRow": "4608",
-            "minTileCol": "2624",
-            "maxTileCol": "5376"
+            "minTileRow": "2738",
+            "maxTileRow": "4594",
+            "minTileCol": "2658",
+            "maxTileCol": "5366"
           },
           "14": {
-            "minTileRow": "5440",
-            "maxTileRow": "9216",
-            "minTileCol": "5312",
-            "maxTileCol": "10752"
+            "minTileRow": "5477",
+            "maxTileRow": "9189",
+            "minTileCol": "5317",
+            "maxTileCol": "10733"
           },
           "15": {
-            "minTileRow": "10944",
-            "maxTileRow": "18432",
-            "minTileCol": "10624",
-            "maxTileCol": "21504"
+            "minTileRow": "10955",
+            "maxTileRow": "18378",
+            "minTileCol": "10634",
+            "maxTileCol": "21467"
           },
           "16": {
-            "minTileRow": "21888",
-            "maxTileRow": "36800",
-            "minTileCol": "21248",
-            "maxTileCol": "42976"
+            "minTileRow": "21911",
+            "maxTileRow": "36757",
+            "minTileCol": "21269",
+            "maxTileCol": "42934"
           },
           "17": {
-            "minTileRow": "43776",
-            "maxTileRow": "73600",
-            "minTileCol": "42496",
-            "maxTileCol": "85952"
+            "minTileRow": "43822",
+            "maxTileRow": "73515",
+            "minTileCol": "42539",
+            "maxTileCol": "85869"
           },
           "18": {
-            "minTileRow": "87616",
-            "maxTileRow": "147136",
-            "minTileCol": "84992",
-            "maxTileCol": "171840"
+            "minTileRow": "87645",
+            "maxTileRow": "147030",
+            "minTileCol": "85079",
+            "maxTileCol": "171738"
           },
           "19": {
-            "minTileRow": "175232",
-            "maxTileRow": "294272",
-            "minTileCol": "169984",
-            "maxTileCol": "343616"
+            "minTileRow": "175290",
+            "maxTileRow": "294060",
+            "minTileCol": "170158",
+            "maxTileCol": "343476"
           }
         }
       },
@@ -808,6 +940,210 @@
         {
           "name": "application/x-protobuf",
           "current": true
+        }
+      ]
+    },
+    "Aire-Parcellaire$GEOPORTAIL:OGC:WMS": {
+      "name": "Aire-Parcellaire",
+      "title": "Délimitation parcellaire AOC viticole",
+      "description": "Selon les règlements européens n°110/2008 du 15 janvier 2008, n°1151/2012 du 21 novembre 2012 et n°1308/2013 de l’OCM , le cahier des charges des appellations définit l’aire géographique. Le terme de « délimitation parcellaire » désigne une aire qui repose sur les limites administratives du cadastre (les parcelles) et dont le maillage suffisamment fin permet de tenir compte de variations très localisées des éléments du milieu physique. Elle correspond à l'aire de production de la matière première. Elle est incluse dans l'aire géographique. Données produites par l'Institut National des Origines et la Qualité (INAO)",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=INAO_AOC.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.HEATMAP",
+      "title": "Décalage de la représentation cadastrale",
+      "description": "Cartographie des décalages entre les données BD Parcellaire et Parcellaire Express",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "DECALAGE DE LA REPRESENTATION CADASTRALE",
+          "title": "DECALAGE DE LA REPRESENTATION CADASTRALE"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/CADASTRALPARCELS.HEATMAP-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.HISTO.2008-2013.PARCELS",
+      "title": "Parcelles cadastrales historiques (2008-2013)",
+      "description": "Limites des parcelles cadastrales historiques (2008-2013) issues de plans scannés et de plans numériques.",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -63.16070698,
+          "right": 55.846431162,
+          "top": 51.094486956,
+          "bottom": -21.392229744
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2_image.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
         }
       ]
     },
@@ -829,7 +1165,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -891,25 +1227,25 @@
         }
       ]
     },
-    "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS": {
-      "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-      "title": "Plan IGN v2",
-      "description": "Cartographie multi-échelles sur le territoire national, issue des bases de données vecteur de l’IGN, mis à jour régulièrement et réalisée selon un processus entièrement automatisé.",
+    "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.PARCELS",
+      "title": "BDPARCELLAIRE-IMAGE WM 2018-09-27",
+      "description": "Parcelles cadastrales.",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -175.0,
-          "right": 175.0,
-          "top": 85.0,
-          "bottom": -85.0
+          "left": -63.16070698,
+          "right": 55.846431162,
+          "top": 51.090964667,
+          "bottom": -21.392229744
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -917,86 +1253,42 @@
       "metadata": [
         {
           "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=ADMIN-EXPRESS_1-1.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2_image.xml"
         }
       ],
       "styles": [
         {
-          "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-          "title": "Données GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2"
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "bdparcellaire_o",
+          "title": "BD Parcellaire orange transparente"
+        },
+        {
+          "name": "bdparcellaire",
+          "title": "BD Parcellaire Noire et transparente"
+        },
+        {
+          "name": "bdparcellaire_b",
+          "title": "BD Parcellaire blanc transparente"
         }
       ],
       "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        },
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2-legend.png"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
         },
         {
-          "name": "image/png",
-          "current": false
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
         },
         {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        },
-        {
-          "name": "text/asc",
-          "current": false
-        }
-      ]
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
-      "title": "Limites administratives mises à jour en continu.",
-      "description": "Limites administratives mises à jour en continu, édition février 2023",
-      "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
-        "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": true,
-      "metadata": [
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ADMIN_EXPRESS_3-0.xml"
-        }
-      ],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
+          "format": "image/png",
           "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
         }
       ],
@@ -1027,74 +1319,68 @@
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS": {
-      "name": "ORTHOIMAGERY.ORTHOPHOTOS",
-      "title": "Photographies aériennes",
-      "description": "Photographies aériennes",
+    "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.COMMUNES",
+      "title": "CADASTRALPARCELS.COMMUNES",
+      "description": "Layer-Group type layer: CADASTRALPARCELS.COMMUNES",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 100.0,
+        "maxScaleDenominator": 160000.0,
         "bbox": {
-          "left": -179.499994634,
-          "right": 179.499994634,
-          "top": 74.99999974,
-          "bottom": -74.99999974
+          "left": -63.1531314,
+          "right": 55.83668585,
+          "top": 51.0888974,
+          "bottom": -21.38974728
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ORTHOHR_1-0.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=NCL-DITTT-ORTHO.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=SPOT5.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2_vecteur.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -1102,34 +1388,74 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
-      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
-      "title": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
-      "description": "Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
+    "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.GRAPHE",
+      "title": "CADASTRALPARCELS.GRAPHE",
+      "description": "Layer-Group type layer: CADASTRALPARCELS.GRAPHE",
       "globalConstraint": {
-        "minScaleDenominator": 800.0,
-        "maxScaleDenominator": 10000000.0,
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -178.18541495878412,
-          "right": 55.85384064994032,
-          "top": 51.111835779138985,
-          "bottom": -21.427303081539563
+          "left": -61.80958500478003,
+          "right": 55.83667989569937,
+          "top": 51.08900031051782,
+          "bottom": -21.38984989008148
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/v/wms?SERVICE=WMS&"
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -1137,7 +1463,125 @@
       "metadata": [
         {
           "format": "text/plain",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.SECTIONS",
+      "title": "CADASTRALPARCELS.SECTIONS",
+      "description": "Layer-Group type layer: CADASTRALPARCELS.SECTIONS",
+      "globalConstraint": {
+        "minScaleDenominator": 100.0,
+        "maxScaleDenominator": 80000.0,
+        "bbox": {
+          "left": -63.1531314,
+          "right": 55.83668585,
+          "top": 51.0888974,
+          "bottom": -21.38974728
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2_vecteur.xml"
         }
       ],
       "styles": [],
