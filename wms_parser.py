@@ -52,6 +52,12 @@ def _parseLayer(layer, key, server_url, formats):
 
     layer_config["serviceParams"] = service_params
 
+    if isinstance(layer["BoundingBox"], list):
+        for bbox in layer["BoundingBox"]:
+            if bbox["@CRS"] != "CRS:84":
+                layer["BoundingBox"] = bbox
+                break
+
     layer_config["defaultProjection"] = layer["BoundingBox"]["@CRS"]
 
     try:
