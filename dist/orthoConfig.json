@@ -1,40 +1,55 @@
 {
   "generalOptions": {
     "apiKeys": {
-      "essentiels": [
-        "ADMIN_EXPRESS$GEOPORTAIL:OGC:WMTS",
-        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS",
-        "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMTS",
+      "ortho": [
+        "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
-        "PLAN.IGN$GEOPORTAIL:OGC:WMTS",
-        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
-        "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022$GEOPORTAIL:OGC:WMTS",
+        "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS",
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
+        "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
+        "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS",
+        "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
       ]
     }
   },
   "layers": {
-    "ADMIN_EXPRESS$GEOPORTAIL:OGC:WMTS": {
-      "name": "ADMIN_EXPRESS",
-      "title": "ADMIN_EXPRESS",
-      "description": "Limites administratives des collectivités territoriales. Régions, départements, cantons, communes, arrondissements (pour Paris, Lyon et Marseille) et établissements publics de coopération intercommunale (EPCI).",
+    "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
+      "name": "HR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Ortho 20 cm",
+      "description": "Le produit BD ORTHO® V3 est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert. La BD ORTHO® V3 se compose d'images numériques (sans habillage ni surcharge) et d'indications de géoréférencement. Le contenu informationnel permet localement une utilisation jusqu'au 1 :2,000ième pour mettre en valeur le territoire, enrichir la visualisation des données et des projets.",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -6.50391,
-          "right": 9.84375,
-          "top": 51.2894,
-          "bottom": 40.9799
+          "left": -63.1607,
+          "right": 55.8464,
+          "top": 51.1124,
+          "bottom": -21.4013
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -42,413 +57,203 @@
         "tileMatrixSetLink": "PM",
         "tileMatrixSetLimits": {
           "6": {
-            "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "20",
-            "maxTileCol": "41"
+            "minTileRow": "16",
+            "maxTileRow": "47",
+            "minTileCol": "16",
+            "maxTileCol": "47"
           },
           "7": {
-            "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "41",
-            "maxTileCol": "83"
+            "minTileRow": "32",
+            "maxTileRow": "79",
+            "minTileCol": "32",
+            "maxTileCol": "95"
           },
           "8": {
-            "minTileRow": "85",
+            "minTileRow": "80",
             "maxTileRow": "143",
-            "minTileCol": "83",
-            "maxTileCol": "167"
+            "minTileCol": "80",
+            "maxTileCol": "175"
           },
           "9": {
-            "minTileRow": "171",
+            "minTileRow": "160",
             "maxTileRow": "287",
-            "minTileCol": "166",
+            "minTileCol": "160",
             "maxTileCol": "335"
           },
           "10": {
-            "minTileRow": "342",
-            "maxTileRow": "574",
-            "minTileCol": "332",
-            "maxTileCol": "670"
-          },
-          "11": {
-            "minTileRow": "684",
-            "maxTileRow": "1148",
-            "minTileCol": "664",
-            "maxTileCol": "1341"
-          },
-          "12": {
-            "minTileRow": "1369",
-            "maxTileRow": "2297",
-            "minTileCol": "1329",
-            "maxTileCol": "2683"
-          },
-          "13": {
-            "minTileRow": "2738",
-            "maxTileRow": "4594",
-            "minTileCol": "2658",
-            "maxTileCol": "5366"
-          },
-          "14": {
-            "minTileRow": "5477",
-            "maxTileRow": "9189",
-            "minTileCol": "5317",
-            "maxTileCol": "10733"
-          },
-          "15": {
-            "minTileRow": "10955",
-            "maxTileRow": "18378",
-            "minTileCol": "10634",
-            "maxTileCol": "21467"
-          },
-          "16": {
-            "minTileRow": "21911",
-            "maxTileRow": "36757",
-            "minTileCol": "21269",
-            "maxTileCol": "42934"
-          },
-          "17": {
-            "minTileRow": "43822",
-            "maxTileRow": "73515",
-            "minTileCol": "42539",
-            "maxTileCol": "85869"
-          },
-          "18": {
-            "minTileRow": "87645",
-            "maxTileRow": "147030",
-            "minTileCol": "85079",
-            "maxTileCol": "171738"
-          },
-          "19": {
-            "minTileRow": "175290",
-            "maxTileRow": "294060",
-            "minTileCol": "170158",
-            "maxTileCol": "343476"
-          }
-        }
-      },
-      "styles": [],
-      "legends": [],
-      "formats": [
-        {
-          "name": "application/x-protobuf",
-          "current": true
-        }
-      ]
-    },
-    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS": {
-      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
-      "title": "PCI vecteur",
-      "description": "Plan cadastral informatisé vecteur de la DGFIP.",
-      "globalConstraint": {
-        "maxScaleDenominator": 559082264.0287179,
-        "minScaleDenominator": 266.5911979812229,
-        "bbox": {
-          "left": -63.3725,
-          "right": 55.9259,
-          "top": 51.3121,
-          "bottom": -21.4756
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM",
-        "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "0",
-            "maxTileCol": "0"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "0",
-            "maxTileCol": "1"
-          },
-          "2": {
-            "minTileRow": "1",
-            "maxTileRow": "2",
-            "minTileCol": "1",
-            "maxTileCol": "2"
-          },
-          "3": {
-            "minTileRow": "2",
-            "maxTileRow": "4",
-            "minTileCol": "2",
-            "maxTileCol": "5"
-          },
-          "4": {
-            "minTileRow": "5",
-            "maxTileRow": "8",
-            "minTileCol": "5",
-            "maxTileCol": "10"
-          },
-          "5": {
-            "minTileRow": "10",
-            "maxTileRow": "17",
-            "minTileCol": "10",
-            "maxTileCol": "20"
-          },
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "20",
-            "maxTileCol": "41"
-          },
-          "7": {
-            "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "41",
-            "maxTileCol": "83"
-          },
-          "8": {
-            "minTileRow": "85",
-            "maxTileRow": "143",
-            "minTileCol": "82",
-            "maxTileCol": "167"
-          },
-          "9": {
-            "minTileRow": "170",
-            "maxTileRow": "287",
-            "minTileCol": "165",
-            "maxTileCol": "335"
-          },
-          "10": {
-            "minTileRow": "341",
-            "maxTileRow": "574",
-            "minTileCol": "331",
+            "minTileRow": "336",
+            "maxTileRow": "575",
+            "minTileCol": "320",
             "maxTileCol": "671"
           },
           "11": {
-            "minTileRow": "682",
-            "maxTileRow": "1149",
-            "minTileCol": "663",
-            "maxTileCol": "1342"
+            "minTileRow": "672",
+            "maxTileRow": "1151",
+            "minTileCol": "656",
+            "maxTileCol": "1343"
           },
           "12": {
-            "minTileRow": "1365",
-            "maxTileRow": "2298",
-            "minTileCol": "1326",
-            "maxTileCol": "2684"
+            "minTileRow": "1360",
+            "maxTileRow": "2303",
+            "minTileCol": "1328",
+            "maxTileCol": "2687"
           },
           "13": {
-            "minTileRow": "2731",
-            "maxTileRow": "4596",
-            "minTileCol": "2653",
-            "maxTileCol": "5368"
+            "minTileRow": "2736",
+            "maxTileRow": "4607",
+            "minTileCol": "2656",
+            "maxTileCol": "5375"
           },
           "14": {
-            "minTileRow": "5462",
-            "maxTileRow": "9193",
-            "minTileCol": "5307",
-            "maxTileCol": "10737"
+            "minTileRow": "5472",
+            "maxTileRow": "9199",
+            "minTileCol": "5312",
+            "maxTileCol": "10735"
           },
           "15": {
-            "minTileRow": "10924",
-            "maxTileRow": "18386",
-            "minTileCol": "10615",
-            "maxTileCol": "21474"
+            "minTileRow": "10944",
+            "maxTileRow": "18383",
+            "minTileCol": "10624",
+            "maxTileCol": "21471"
           },
           "16": {
-            "minTileRow": "21849",
-            "maxTileRow": "36772",
-            "minTileCol": "21231",
-            "maxTileCol": "42948"
+            "minTileRow": "21904",
+            "maxTileRow": "36767",
+            "minTileCol": "21264",
+            "maxTileCol": "42943"
           },
           "17": {
-            "minTileRow": "43698",
-            "maxTileRow": "73544",
-            "minTileCol": "42462",
-            "maxTileCol": "85897"
+            "minTileRow": "43808",
+            "maxTileRow": "73519",
+            "minTileCol": "42528",
+            "maxTileCol": "85871"
           },
           "18": {
-            "minTileRow": "87397",
-            "maxTileRow": "147089",
-            "minTileCol": "84925",
-            "maxTileCol": "171795"
+            "minTileRow": "87616",
+            "maxTileRow": "147039",
+            "minTileCol": "85072",
+            "maxTileCol": "171743"
           },
           "19": {
-            "minTileRow": "174795",
-            "maxTileRow": "294179",
-            "minTileCol": "169851",
-            "maxTileCol": "343591"
+            "minTileRow": "175248",
+            "maxTileRow": "294063",
+            "minTileCol": "170144",
+            "maxTileCol": "343487"
           }
         }
       },
       "styles": [
         {
-          "name": "PCI vecteur",
-          "title": "PCI vecteur",
+          "name": "normal",
+          "title": "Légende générique",
           "current": true,
           "url": null
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/CADASTRALPARCELS.PARCELLAIRE_EXPRESS.png",
-          "minScaleDenominator": "1"
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         }
       ]
     },
-    "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMTS": {
-      "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-      "title": "Plan IGN v2",
-      "description": "Cartographie multi-échelles sur le territoire national, issue des bases de données vecteur de l’IGN, mis à jour régulièrement et réalisée selon un processus entièrement automatisé.",
+    "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS",
+      "title": "Zones interdites à la prise de vue aérienne",
+      "description": "Zones interdites à la prise de vue aérienne fixées par voie d'arrêté (arrêté du 12 octobre 2018 fixant la liste des zones interdites à la prise de vue aérienne par appareil photographique, cinématographique ou tout autre capteur).",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -175.0,
-          "right": 175.0,
-          "top": 85.0,
-          "bottom": -85.0
+          "left": -178.309,
+          "right": 168.298,
+          "top": 51.3121,
+          "bottom": -22.9723
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
       "wmtsOptions": {
         "tileMatrixSetLink": "PM",
         "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "0",
-            "maxTileCol": "0"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "2",
-            "minTileCol": "0",
-            "maxTileCol": "2"
-          },
-          "2": {
-            "minTileRow": "0",
-            "maxTileRow": "4",
-            "minTileCol": "0",
-            "maxTileCol": "4"
-          },
-          "3": {
-            "minTileRow": "0",
-            "maxTileRow": "8",
-            "minTileCol": "0",
-            "maxTileCol": "8"
-          },
-          "4": {
-            "minTileRow": "0",
-            "maxTileRow": "16",
-            "minTileCol": "0",
-            "maxTileCol": "16"
-          },
-          "5": {
-            "minTileRow": "0",
-            "maxTileRow": "32",
-            "minTileCol": "0",
-            "maxTileCol": "32"
-          },
           "6": {
-            "minTileRow": "0",
-            "maxTileRow": "64",
+            "minTileRow": "21",
+            "maxTileRow": "36",
             "minTileCol": "0",
-            "maxTileCol": "64"
+            "maxTileCol": "61"
           },
           "7": {
-            "minTileRow": "0",
-            "maxTileRow": "128",
+            "minTileRow": "42",
+            "maxTileRow": "72",
             "minTileCol": "0",
-            "maxTileCol": "128"
+            "maxTileCol": "123"
           },
           "8": {
-            "minTileRow": "80",
+            "minTileRow": "85",
             "maxTileRow": "144",
-            "minTileCol": "80",
-            "maxTileCol": "168"
+            "minTileCol": "1",
+            "maxTileCol": "247"
           },
           "9": {
-            "minTileRow": "168",
-            "maxTileRow": "288",
-            "minTileCol": "160",
-            "maxTileCol": "336"
+            "minTileRow": "170",
+            "maxTileRow": "289",
+            "minTileCol": "2",
+            "maxTileCol": "495"
           },
           "10": {
-            "minTileRow": "336",
-            "maxTileRow": "576",
-            "minTileCol": "328",
-            "maxTileCol": "672"
+            "minTileRow": "341",
+            "maxTileRow": "579",
+            "minTileCol": "4",
+            "maxTileCol": "990"
           },
           "11": {
-            "minTileRow": "680",
-            "maxTileRow": "1152",
-            "minTileCol": "664",
-            "maxTileCol": "1344"
+            "minTileRow": "682",
+            "maxTileRow": "1158",
+            "minTileCol": "9",
+            "maxTileCol": "1981"
           },
           "12": {
-            "minTileRow": "1368",
-            "maxTileRow": "2304",
-            "minTileCol": "1328",
-            "maxTileCol": "2688"
+            "minTileRow": "1365",
+            "maxTileRow": "2316",
+            "minTileCol": "19",
+            "maxTileCol": "3962"
           },
           "13": {
-            "minTileRow": "2736",
-            "maxTileRow": "4600",
-            "minTileCol": "2656",
-            "maxTileCol": "5376"
+            "minTileRow": "2731",
+            "maxTileRow": "4633",
+            "minTileCol": "38",
+            "maxTileCol": "7925"
           },
           "14": {
-            "minTileRow": "5472",
-            "maxTileRow": "9200",
-            "minTileCol": "5312",
-            "maxTileCol": "10744"
+            "minTileRow": "5462",
+            "maxTileRow": "9266",
+            "minTileCol": "76",
+            "maxTileCol": "15851"
           },
           "15": {
-            "minTileRow": "10952",
-            "maxTileRow": "18392",
-            "minTileCol": "10624",
-            "maxTileCol": "21480"
+            "minTileRow": "10924",
+            "maxTileRow": "18533",
+            "minTileCol": "153",
+            "maxTileCol": "31702"
           },
           "16": {
-            "minTileRow": "21904",
-            "maxTileRow": "36784",
-            "minTileCol": "21248",
-            "maxTileCol": "42952"
-          },
-          "17": {
-            "minTileRow": "43816",
-            "maxTileRow": "73568",
-            "minTileCol": "42496",
-            "maxTileCol": "85904"
-          },
-          "18": {
-            "minTileRow": "87640",
-            "maxTileRow": "147128",
-            "minTileCol": "85000",
-            "maxTileCol": "171808"
-          },
-          "19": {
-            "minTileRow": "175288",
-            "maxTileRow": "294248",
-            "minTileCol": "170008",
-            "maxTileCol": "343616"
+            "minTileRow": "21849",
+            "maxTileRow": "37066",
+            "minTileCol": "307",
+            "maxTileCol": "63405"
           }
         }
       },
@@ -492,7 +297,7 @@
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -655,25 +460,617 @@
         }
       ]
     },
-    "PLAN.IGN$GEOPORTAIL:OGC:WMTS": {
-      "name": "PLAN.IGN",
-      "title": "Plan IGN",
-      "description": "BDUni tuilée",
+    "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO",
+      "title": "Ortho 50 cm",
+      "description": "Le produit BD ORTHO® est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert.",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -6.50391,
-          "right": 9.84375,
-          "top": 51.2894,
-          "bottom": 40.9799
+          "left": -178.187,
+          "right": 168.19,
+          "top": 51.1124,
+          "bottom": -22.7643
         }
       },
       "serviceParams": {
         "id": "OGC:WMTS",
         "version": "1.0.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/wmts"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "47",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "79",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "159",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "160",
+            "maxTileRow": "303",
+            "minTileCol": "0",
+            "maxTileCol": "495"
+          },
+          "10": {
+            "minTileRow": "336",
+            "maxTileRow": "591",
+            "minTileCol": "0",
+            "maxTileCol": "991"
+          },
+          "11": {
+            "minTileRow": "672",
+            "maxTileRow": "1167",
+            "minTileCol": "0",
+            "maxTileCol": "1983"
+          },
+          "12": {
+            "minTileRow": "1360",
+            "maxTileRow": "2319",
+            "minTileCol": "16",
+            "maxTileCol": "3967"
+          },
+          "13": {
+            "minTileRow": "2736",
+            "maxTileRow": "4639",
+            "minTileCol": "32",
+            "maxTileCol": "7935"
+          },
+          "14": {
+            "minTileRow": "5472",
+            "maxTileRow": "9263",
+            "minTileCol": "80",
+            "maxTileCol": "15855"
+          },
+          "15": {
+            "minTileRow": "10944",
+            "maxTileRow": "18527",
+            "minTileCol": "160",
+            "maxTileCol": "31695"
+          },
+          "16": {
+            "minTileRow": "21904",
+            "maxTileRow": "37039",
+            "minTileCol": "320",
+            "maxTileCol": "63391"
+          },
+          "17": {
+            "minTileRow": "43808",
+            "maxTileRow": "74063",
+            "minTileCol": "656",
+            "maxTileCol": "126767"
+          },
+          "18": {
+            "minTileRow": "87616",
+            "maxTileRow": "148111",
+            "minTileCol": "1312",
+            "maxTileCol": "253535"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000",
+      "title": "Ortholittorale 2000",
+      "description": "Donnée issue du Référentiel géographique du littoral. Zone de couverture de l'orthophotographie : côte de la mer du Nord, de la Manche et de l'Atlantique.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.21565,
+          "right": 2.60783,
+          "top": 51.1233,
+          "bottom": 43.301
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "32"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "46",
+            "minTileCol": "62",
+            "maxTileCol": "64"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "93",
+            "minTileCol": "124",
+            "maxTileCol": "129"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "187",
+            "minTileCol": "248",
+            "maxTileCol": "259"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "375",
+            "minTileCol": "497",
+            "maxTileCol": "519"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "750",
+            "minTileCol": "994",
+            "maxTileCol": "1038"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1500",
+            "minTileCol": "1988",
+            "maxTileCol": "2077"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3000",
+            "minTileCol": "3977",
+            "maxTileCol": "4155"
+          },
+          "14": {
+            "minTileRow": "5476",
+            "maxTileRow": "6001",
+            "minTileCol": "7954",
+            "maxTileCol": "8310"
+          },
+          "15": {
+            "minTileRow": "10952",
+            "maxTileRow": "12003",
+            "minTileCol": "15909",
+            "maxTileCol": "16621"
+          },
+          "16": {
+            "minTileRow": "21904",
+            "maxTileRow": "24006",
+            "minTileCol": "31818",
+            "maxTileCol": "33242"
+          },
+          "17": {
+            "minTileRow": "43808",
+            "maxTileRow": "48012",
+            "minTileCol": "63637",
+            "maxTileCol": "66485"
+          },
+          "18": {
+            "minTileRow": "87617",
+            "maxTileRow": "96024",
+            "minTileCol": "127274",
+            "maxTileCol": "132970"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD",
+      "title": "Données ortho-réctifiées antérieures au passage d'Irma",
+      "description": "Ce flux regroupe des données ortho-rectifiées issues des prises de vue aériennes de Saint Martin (2017) et Saint Barthélémy (2016).",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1986,
+          "right": -62.7828,
+          "top": 18.1701,
+          "bottom": 17.8626
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "1"
+          },
+          "3": {
+            "minTileRow": "3",
+            "maxTileRow": "3",
+            "minTileCol": "2",
+            "maxTileCol": "2"
+          },
+          "4": {
+            "minTileRow": "7",
+            "maxTileRow": "7",
+            "minTileCol": "5",
+            "maxTileCol": "5"
+          },
+          "5": {
+            "minTileRow": "14",
+            "maxTileRow": "14",
+            "minTileCol": "10",
+            "maxTileCol": "10"
+          },
+          "6": {
+            "minTileRow": "28",
+            "maxTileRow": "28",
+            "minTileCol": "20",
+            "maxTileCol": "20"
+          },
+          "7": {
+            "minTileRow": "57",
+            "maxTileRow": "57",
+            "minTileCol": "41",
+            "maxTileCol": "41"
+          },
+          "8": {
+            "minTileRow": "114",
+            "maxTileRow": "115",
+            "minTileCol": "83",
+            "maxTileCol": "83"
+          },
+          "9": {
+            "minTileRow": "229",
+            "maxTileRow": "230",
+            "minTileCol": "166",
+            "maxTileCol": "166"
+          },
+          "10": {
+            "minTileRow": "459",
+            "maxTileRow": "460",
+            "minTileCol": "332",
+            "maxTileCol": "333"
+          },
+          "11": {
+            "minTileRow": "918",
+            "maxTileRow": "920",
+            "minTileCol": "664",
+            "maxTileCol": "666"
+          },
+          "12": {
+            "minTileRow": "1837",
+            "maxTileRow": "1841",
+            "minTileCol": "1328",
+            "maxTileCol": "1333"
+          },
+          "13": {
+            "minTileRow": "3675",
+            "maxTileRow": "3682",
+            "minTileCol": "2657",
+            "maxTileCol": "2667"
+          },
+          "14": {
+            "minTileRow": "7350",
+            "maxTileRow": "7365",
+            "minTileCol": "5315",
+            "maxTileCol": "5334"
+          },
+          "15": {
+            "minTileRow": "14701",
+            "maxTileRow": "14731",
+            "minTileCol": "10631",
+            "maxTileCol": "10669"
+          },
+          "16": {
+            "minTileRow": "29403",
+            "maxTileRow": "29462",
+            "minTileCol": "21263",
+            "maxTileCol": "21338"
+          },
+          "17": {
+            "minTileRow": "58806",
+            "maxTileRow": "58924",
+            "minTileCol": "42526",
+            "maxTileCol": "42677"
+          },
+          "18": {
+            "minTileRow": "117613",
+            "maxTileRow": "117848",
+            "minTileCol": "85052",
+            "maxTileCol": "85355"
+          },
+          "19": {
+            "minTileRow": "235226",
+            "maxTileRow": "235697",
+            "minTileCol": "170104",
+            "maxTileCol": "170710"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC",
+      "title": "BDORTHO en infrarouge fausses couleurs",
+      "description": "BDORTHO en infrarouge fausses couleurs",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -62.9717,
+          "right": 55.8464,
+          "top": 51.1124,
+          "bottom": -21.4013
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "2"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "15",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "31",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "47",
+            "minTileCol": "16",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "79",
+            "minTileCol": "32",
+            "maxTileCol": "95"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "143",
+            "minTileCol": "80",
+            "maxTileCol": "175"
+          },
+          "9": {
+            "minTileRow": "160",
+            "maxTileRow": "287",
+            "minTileCol": "160",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "336",
+            "maxTileRow": "575",
+            "minTileCol": "320",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "672",
+            "maxTileRow": "1151",
+            "minTileCol": "656",
+            "maxTileCol": "1343"
+          },
+          "12": {
+            "minTileRow": "1360",
+            "maxTileRow": "2303",
+            "minTileCol": "1328",
+            "maxTileCol": "2687"
+          },
+          "13": {
+            "minTileRow": "2736",
+            "maxTileRow": "4607",
+            "minTileCol": "2656",
+            "maxTileCol": "5375"
+          },
+          "14": {
+            "minTileRow": "5472",
+            "maxTileRow": "9199",
+            "minTileCol": "5312",
+            "maxTileCol": "10735"
+          },
+          "15": {
+            "minTileRow": "10944",
+            "maxTileRow": "18383",
+            "minTileCol": "10640",
+            "maxTileCol": "21471"
+          },
+          "16": {
+            "minTileRow": "21904",
+            "maxTileRow": "36767",
+            "minTileCol": "21296",
+            "maxTileCol": "42943"
+          },
+          "17": {
+            "minTileRow": "43808",
+            "maxTileRow": "73519",
+            "minTileCol": "42608",
+            "maxTileCol": "85871"
+          },
+          "18": {
+            "minTileRow": "87616",
+            "maxTileRow": "147039",
+            "minTileCol": "85216",
+            "maxTileCol": "171743"
+          },
+          "19": {
+            "minTileRow": "175248",
+            "maxTileRow": "294063",
+            "minTileCol": "170432",
+            "maxTileCol": "343487"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022",
+      "title": "ortho-express IRC 2022",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -729,107 +1126,742 @@
             "maxTileCol": "128"
           },
           "8": {
-            "minTileRow": "64",
-            "maxTileRow": "192",
-            "minTileCol": "64",
-            "maxTileCol": "192"
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "256"
           },
           "9": {
-            "minTileRow": "128",
-            "maxTileRow": "320",
-            "minTileCol": "128",
-            "maxTileCol": "384"
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "512"
           },
           "10": {
-            "minTileRow": "320",
-            "maxTileRow": "576",
-            "minTileCol": "320",
-            "maxTileCol": "704"
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1024"
           },
           "11": {
-            "minTileRow": "640",
-            "maxTileRow": "1152",
-            "minTileCol": "640",
-            "maxTileCol": "1344"
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2048"
           },
           "12": {
-            "minTileRow": "1344",
-            "maxTileRow": "2304",
-            "minTileCol": "1280",
-            "maxTileCol": "2688"
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4096"
           },
           "13": {
-            "minTileRow": "2688",
-            "maxTileRow": "4608",
-            "minTileCol": "2624",
-            "maxTileCol": "5376"
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8192"
           },
           "14": {
-            "minTileRow": "5440",
-            "maxTileRow": "9216",
-            "minTileCol": "5312",
-            "maxTileCol": "10752"
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16384"
           },
           "15": {
-            "minTileRow": "10944",
-            "maxTileRow": "18432",
-            "minTileCol": "10624",
-            "maxTileCol": "21504"
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32768"
           },
           "16": {
-            "minTileRow": "21888",
-            "maxTileRow": "36800",
-            "minTileCol": "21248",
-            "maxTileCol": "42976"
+            "minTileRow": "0",
+            "maxTileRow": "65536",
+            "minTileCol": "0",
+            "maxTileCol": "65536"
           },
           "17": {
-            "minTileRow": "43776",
-            "maxTileRow": "73600",
-            "minTileCol": "42496",
-            "maxTileCol": "85952"
+            "minTileRow": "0",
+            "maxTileRow": "131072",
+            "minTileCol": "0",
+            "maxTileCol": "131072"
           },
           "18": {
-            "minTileRow": "87616",
-            "maxTileRow": "147136",
-            "minTileCol": "84992",
-            "maxTileCol": "171840"
+            "minTileRow": "0",
+            "maxTileRow": "262144",
+            "minTileCol": "0",
+            "maxTileCol": "262144"
           },
           "19": {
-            "minTileRow": "175232",
-            "maxTileRow": "294272",
-            "minTileCol": "169984",
-            "maxTileCol": "343616"
+            "minTileRow": "0",
+            "maxTileRow": "524288",
+            "minTileCol": "0",
+            "maxTileCol": "524288"
           }
         }
       },
-      "styles": [],
-      "legends": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
       "formats": [
         {
-          "name": "application/x-protobuf",
+          "name": "image/jpeg",
           "current": true
         }
       ]
     },
-    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS": {
-      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
-      "title": "PCI vecteur",
-      "description": "Plan cadastral informatisé vecteur de la DGFIP.",
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022",
+      "title": "ORTHO-ASP_PAC2022",
+      "description": "orthos ASP PAC 2022",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "2"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "16"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "32"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "64"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "128"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "256"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "512"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1024"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2048"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4096"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8192"
+          },
+          "14": {
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16384"
+          },
+          "15": {
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32768"
+          },
+          "16": {
+            "minTileRow": "0",
+            "maxTileRow": "65536",
+            "minTileCol": "0",
+            "maxTileCol": "65536"
+          },
+          "17": {
+            "minTileRow": "0",
+            "maxTileRow": "131072",
+            "minTileCol": "0",
+            "maxTileCol": "131072"
+          },
+          "18": {
+            "minTileRow": "0",
+            "maxTileRow": "262144",
+            "minTileCol": "0",
+            "maxTileCol": "262144"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022",
+      "title": "ortho-express 2022",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "2"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "16"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "32"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "64"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "128"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "256"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "512"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1024"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2048"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4096"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8192"
+          },
+          "14": {
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16384"
+          },
+          "15": {
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32768"
+          },
+          "16": {
+            "minTileRow": "0",
+            "maxTileRow": "65536",
+            "minTileCol": "0",
+            "maxTileCol": "65536"
+          },
+          "17": {
+            "minTileRow": "0",
+            "maxTileRow": "131072",
+            "minTileCol": "0",
+            "maxTileCol": "131072"
+          },
+          "18": {
+            "minTileRow": "0",
+            "maxTileRow": "262144",
+            "minTileCol": "0",
+            "maxTileCol": "262144"
+          },
+          "19": {
+            "minTileRow": "184217",
+            "maxTileRow": "191132",
+            "minTileCol": "258610",
+            "maxTileCol": "268703"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS": {
+      "name": "PCRS.LAMB93",
+      "title": "PCRS LAMB93",
+      "description": "PCRS LAMB93",
+      "globalConstraint": {
+        "maxScaleDenominator": 748982857.1428572,
+        "minScaleDenominator": 178.57142857142858,
+        "bbox": {
+          "left": -3.80779,
+          "right": 6.92319,
+          "top": 48.8107,
+          "bottom": 42.6976
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "LAMB93_5cm_EPSG",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "2"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "15",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "8": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "0",
+            "maxTileCol": "7"
+          },
+          "9": {
+            "minTileRow": "48",
+            "maxTileRow": "63",
+            "minTileCol": "0",
+            "maxTileCol": "13"
+          },
+          "10": {
+            "minTileRow": "96",
+            "maxTileRow": "111",
+            "minTileCol": "0",
+            "maxTileCol": "25"
+          },
+          "11": {
+            "minTileRow": "192",
+            "maxTileRow": "223",
+            "minTileCol": "0",
+            "maxTileCol": "47"
+          },
+          "12": {
+            "minTileRow": "384",
+            "maxTileRow": "447",
+            "minTileCol": "0",
+            "maxTileCol": "79"
+          },
+          "13": {
+            "minTileRow": "784",
+            "maxTileRow": "895",
+            "minTileCol": "16",
+            "maxTileCol": "159"
+          },
+          "14": {
+            "minTileRow": "1568",
+            "maxTileRow": "1775",
+            "minTileCol": "48",
+            "maxTileCol": "319"
+          },
+          "15": {
+            "minTileRow": "3136",
+            "maxTileRow": "3551",
+            "minTileCol": "112",
+            "maxTileCol": "623"
+          },
+          "16": {
+            "minTileRow": "6272",
+            "maxTileRow": "7103",
+            "minTileCol": "240",
+            "maxTileCol": "1231"
+          },
+          "17": {
+            "minTileRow": "12544",
+            "maxTileRow": "14191",
+            "minTileCol": "480",
+            "maxTileCol": "2463"
+          },
+          "18": {
+            "minTileRow": "25088",
+            "maxTileRow": "28383",
+            "minTileCol": "960",
+            "maxTileCol": "4911"
+          },
+          "19": {
+            "minTileRow": "50192",
+            "maxTileRow": "56751",
+            "minTileCol": "1936",
+            "maxTileCol": "9807"
+          },
+          "20": {
+            "minTileRow": "100400",
+            "maxTileRow": "113503",
+            "minTileCol": "3872",
+            "maxTileCol": "19615"
+          },
+          "21": {
+            "minTileRow": "200816",
+            "maxTileRow": "227007",
+            "minTileCol": "7760",
+            "maxTileCol": "39231"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
+      "name": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes très haute résolution",
+      "description": "Orthophotographies aériennes d'une résolution de 10cm à 5cm selon disponibilité.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -6.92466,
+          "right": 11.4965,
+          "top": 51.9098,
+          "bottom": 40.4378
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "16",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "63",
+            "minTileCol": "48",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "111",
+            "minTileCol": "112",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "160",
+            "maxTileRow": "207",
+            "minTileCol": "240",
+            "maxTileCol": "287"
+          },
+          "10": {
+            "minTileRow": "336",
+            "maxTileRow": "383",
+            "minTileCol": "480",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "672",
+            "maxTileRow": "767",
+            "minTileCol": "976",
+            "maxTileCol": "1087"
+          },
+          "12": {
+            "minTileRow": "1392",
+            "maxTileRow": "1503",
+            "minTileCol": "2048",
+            "maxTileCol": "2127"
+          },
+          "13": {
+            "minTileRow": "2784",
+            "maxTileRow": "3007",
+            "minTileCol": "4096",
+            "maxTileCol": "4239"
+          },
+          "14": {
+            "minTileRow": "5568",
+            "maxTileRow": "6015",
+            "minTileCol": "8192",
+            "maxTileCol": "8463"
+          },
+          "15": {
+            "minTileRow": "11152",
+            "maxTileRow": "12031",
+            "minTileCol": "16384",
+            "maxTileCol": "16911"
+          },
+          "16": {
+            "minTileRow": "22304",
+            "maxTileRow": "24047",
+            "minTileCol": "32768",
+            "maxTileCol": "33807"
+          },
+          "17": {
+            "minTileRow": "44624",
+            "maxTileRow": "48095",
+            "minTileCol": "65536",
+            "maxTileCol": "67615"
+          },
+          "18": {
+            "minTileRow": "89248",
+            "maxTileRow": "96175",
+            "minTileCol": "131088",
+            "maxTileCol": "135231"
+          },
+          "19": {
+            "minTileRow": "178496",
+            "maxTileRow": "192351",
+            "minTileCol": "262192",
+            "maxTileCol": "270463"
+          },
+          "20": {
+            "minTileRow": "357008",
+            "maxTileRow": "384687",
+            "minTileCol": "524400",
+            "maxTileCol": "540927"
+          },
+          "21": {
+            "minTileRow": "714032",
+            "maxTileRow": "768783",
+            "minTileCol": "1048816",
+            "maxTileCol": "1081775"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS": {
+      "name": "HR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Ortho 20 cm",
+      "description": "Le produit BD ORTHO® V3 est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert. La BD ORTHO® V3 se compose d'images numériques (sans habillage ni surcharge) et d'indications de géoréférencement. Le contenu informationnel permet localement une utilisation jusqu'au 1 :2,000ième pour mettre en valeur le territoire, enrichir la visualisation des données et des projets.",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -63.16070698,
+          "right": 55.846431162,
+          "top": 51.112418912,
+          "bottom": -21.401263115
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -837,28 +1869,16 @@
       "metadata": [
         {
           "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=PCI_VECTEUR.xml"
-        },
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=ADMIN-EXPRESS_1-1.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
         }
       ],
       "styles": [
-        {
-          "name": "PCI vecteur",
-          "title": "PCI vecteur"
-        },
         {
           "name": "normal",
           "title": "Légende générique"
         }
       ],
       "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/CADASTRALPARCELS.PARCELLAIRE_EXPRESS.png"
-        },
         {
           "format": "image/jpeg",
           "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
@@ -891,93 +1911,25 @@
         }
       ]
     },
-    "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS": {
-      "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-      "title": "Plan IGN v2",
-      "description": "Cartographie multi-échelles sur le territoire national, issue des bases de données vecteur de l’IGN, mis à jour régulièrement et réalisée selon un processus entièrement automatisé.",
+    "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS",
+      "title": "Zones interdites à la prise de vue aérienne",
+      "description": "Zones interdites à la prise de vue aérienne fixées par voie d'arrêté (arrêté du janvier 2020 fixant la liste des zones interdites à la prise de vue aérienne par appareil photographique, cinématographique ou tout autre capteur).",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -175.0,
-          "right": 175.0,
-          "top": 85.0,
-          "bottom": -85.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": false,
-      "metadata": [
-        {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=ADMIN-EXPRESS_1-1.xml"
-        }
-      ],
-      "styles": [
-        {
-          "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
-          "title": "Données GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2-legend.png"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        },
-        {
-          "name": "text/asc",
-          "current": false
-        }
-      ]
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
-      "title": "Limites administratives mises à jour en continu.",
-      "description": "Limites administratives mises à jour en continu, édition février 2023",
-      "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
-        "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
+          "left": -178.309250775,
+          "right": 168.298110838,
           "top": 51.312119281,
-          "bottom": -21.475586668
+          "bottom": -22.972307157
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -985,7 +1937,7 @@
       "metadata": [
         {
           "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ADMIN_EXPRESS_3-0.xml"
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=ZIPVA.xml"
         }
       ],
       "styles": [
@@ -1045,7 +1997,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/r/wms?"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -1111,6 +2063,570 @@
         }
       ]
     },
+    "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO",
+      "title": "Ortho 50 cm",
+      "description": "Le produit BD ORTHO® est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert.",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -178.187136618,
+          "right": 168.190410515,
+          "top": 51.112418912,
+          "bottom": -22.764331793
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC",
+      "title": "BDORTHO en infrarouge fausses couleurs",
+      "description": "BDORTHO en infrarouge fausses couleurs",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -62.971687502,
+          "right": 55.846431162,
+          "top": 51.112418912,
+          "bottom": -21.401263115
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022",
+      "title": "ortho-express IRC 2022",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": 3.379063803,
+          "right": 5.066387691,
+          "top": 49.423838711,
+          "bottom": 48.489899901
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2022",
+      "title": "ORTHO-ASP_PAC2022",
+      "description": "ortho ASP PAC 2022",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -179.499994634,
+          "right": 179.499994634,
+          "top": 74.99999974,
+          "bottom": -74.99999974
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022",
+      "title": "ortho-express 2022",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte.",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -179.499994634,
+          "right": 179.499994634,
+          "top": 74.99999974,
+          "bottom": -74.99999974
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES",
+      "title": "Orthophotographies PCRS TPM traitement ombre",
+      "description": "Orthophotographies très haute résolution avec traitements sur les ombres sur la communauté d'agglomérations de Toulon Provence Méditerrannée. Diffusion limitée.",
+      "globalConstraint": {
+        "minScaleDenominator": 71.428571429,
+        "maxScaleDenominator": 535714.285714286,
+        "bbox": {
+          "left": 5.744386742,
+          "right": 6.538805063,
+          "top": 43.247394541,
+          "bottom": 42.960429634
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "PCRS.LAMB93$GEOPORTAIL:OGC:WMS": {
+      "name": "PCRS.LAMB93",
+      "title": "PCRS LAMB93",
+      "description": "PCRS LAMB93",
+      "globalConstraint": {
+        "minScaleDenominator": 178.571428571,
+        "maxScaleDenominator": 748982857.1428571,
+        "bbox": {
+          "left": -3.807791978,
+          "right": 6.923185627,
+          "top": 48.810701468,
+          "bottom": 42.697551657
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MTD_Produit_Raster.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS": {
+      "name": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes très haute résolution",
+      "description": "Orthophotographies aériennes d'une résolution de 10cm à 5cm selon disponibilité.",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -6.924663368,
+          "right": 11.496459343,
+          "top": 51.909785922,
+          "bottom": 40.437816168
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        },
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_PETITESECHELLES_1-0.xml"
+        },
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ORTHOHR_1-0.xml"
+        },
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ORTHOHR_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
     "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
       "title": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
@@ -1129,7 +2645,125 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/v/wms?SERVICE=WMS&"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE",
+      "title": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE",
+      "description": "Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -12.709172110341592,
+          "right": 15.046943035677202,
+          "top": 54.04417167149221,
+          "bottom": 38.6417722198416
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:3857",
