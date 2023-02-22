@@ -4,7 +4,8 @@ import xmltodict
 def getWMTSCapabilities(key):
     url = "https://wxs.ign.fr/{}/geoportail/wmts?SERVICE=WMTS&REQUEST=GetCapabilities".format(key)
     response = requests.get(url)
-
+    if response.status_code != 200:
+        return False
     dict_capabilities = xmltodict.parse(response.text)
 
     return dict_capabilities["Capabilities"]
