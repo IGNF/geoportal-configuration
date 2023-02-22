@@ -1,8 +1,12 @@
 def parseWMS(dict_capabilities, key):
+    if dict_capabilities == False:
+        return False
     wms_config = {}
-
-    if not isinstance(dict_capabilities["Layer"]["Layer"], list):
-        dict_capabilities["Layer"]["Layer"] = [dict_capabilities["Layer"]["Layer"]]
+    try:
+        if not isinstance(dict_capabilities["Layer"]["Layer"], list):
+            dict_capabilities["Layer"]["Layer"] = [dict_capabilities["Layer"]["Layer"]]
+    except KeyError:
+        return False
 
     server_url = dict_capabilities["Request"]["GetMap"]["DCPType"]["HTTP"]["Get"]["OnlineResource"]["@xlink:href"]
     formats = _parseFormats(dict_capabilities)
@@ -34,8 +38,15 @@ def _parseLayer(layer, key, server_url, formats):
     layer_config["description"] = layer["Abstract"]
 
     global_constraint = {}
-    global_constraint["maxScaleDenominator"] = float(layer["MaxScaleDenominator"])
-    global_constraint["minScaleDenominator"] = float(layer["MinScaleDenominator"])
+    try:
+        global_constraint["minScaleDenominator"] = float(layer["MinScaleDenominator"])
+    except KeyError:
+        global_constraint["minScaleDenominator"] = 0.
+    try:
+        global_constraint["maxScaleDenominator"] = float(layer["MaxScaleDenominator"])
+    except KeyError:
+        global_constraint["maxScaleDenominator"] = 62236752975597
+
     global_constraint["bbox"] = {}
     global_constraint["bbox"]["left"] = float(layer["EX_GeographicBoundingBox"]["westBoundLongitude"])
     global_constraint["bbox"]["right"] = float(layer["EX_GeographicBoundingBox"]["eastBoundLongitude"])
@@ -87,11 +98,13 @@ def _parseLayer(layer, key, server_url, formats):
 
             layer_config["styles"].append(style_config)
 
-            legend_config = {}
-            legend_config["format"] = style["LegendURL"]["Format"]
-            legend_config["url"] = style["LegendURL"]["OnlineResource"]["@xlink:href"]
-
-            layer_config["legends"].append(legend_config)
+            if not isinstance(style["LegendURL"], list):
+                style["LegendURL"] = [style["LegendURL"]]
+            for legend in style["LegendURL"]:
+                legend_config = {}
+                legend_config["format"] = legend["Format"]
+                legend_config["url"] = legend["OnlineResource"]["@xlink:href"]
+                layer_config["legends"].append(legend_config)
 
     except KeyError:
         pass
