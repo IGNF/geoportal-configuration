@@ -1,6 +1,7 @@
 name: refresh config_files
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: "30 14 * * *"    #runs at 12:30 UTC everyday
 
