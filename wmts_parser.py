@@ -1,7 +1,12 @@
 def parseWMTS(dict_capabilities, key):
+    if dict_capabilities == False:
+        return False
     wmts_config = {}
     all_tms = _parseAllTMS(dict_capabilities["Contents"]["TileMatrixSet"])
-    all_layers = _parseLayers(dict_capabilities["Contents"]["Layer"], all_tms, key)
+    try:
+        all_layers = _parseLayers(dict_capabilities["Contents"]["Layer"], all_tms, key)
+    except KeyError:
+        return False
     general_options = {}
     general_options["apiKeys"] = {}
     general_options["apiKeys"][key] = [layer_id for layer_id in all_layers.keys()]
@@ -86,12 +91,15 @@ def _parseLayer(layer, all_tms, key):
 
             layer_config["styles"].append(style_config)
 
-            legend_config = {}
-            legend_config["format"] = style["LegendURL"]["@format"]
-            legend_config["url"] = style["LegendURL"]["@xlink:href"]
-            legend_config["minScaleDenominator"] = style["LegendURL"]["@minScaleDenominator"]
+            if not isinstance(style["LegendURL"], list):
+                style["LegendURL"] = [style["LegendURL"]]
+            for legend in style["LegendURL"]:
+                legend_config = {}
+                legend_config["format"] = legend["@format"]
+                legend_config["url"] = legend["@xlink:href"]
+                legend_config["minScaleDenominator"] = legend["@minScaleDenominator"]
 
-            layer_config["legends"].append(legend_config)
+                layer_config["legends"].append(legend_config)
 
     except KeyError:
         pass

@@ -1,3 +1,4 @@
+from importlib.resources import contents
 import json
 
 from config_merger import merge_configs
@@ -6,12 +7,13 @@ from wms_parser import parseWMS
 from wmts_parser import parseWMTS
 
 def main(key):
-    parsed_wms_r = parseWMS(getWMSRCapabilities(key), key)
-    parsed_wms_v = parseWMS(getWMSVCapabilities(key), key)
-    parsed_wmts = parseWMTS(getWMTSCapabilities(key), key)
-
-    merged_config = merge_configs(parsed_wmts, parsed_wms_r)
-    merged_config = merge_configs(merged_config, parsed_wms_v)
+    list_configs = [
+        parseWMTS(getWMTSCapabilities(key), key),
+        parseWMS(getWMSRCapabilities(key), key),
+        parseWMS(getWMSVCapabilities(key), key)
+    ]
+    list_configs = [config for config in list_configs if isinstance(config, dict)]
+    merged_config = merge_configs(list_configs)
 
     return json.dumps(merged_config, indent=2, ensure_ascii=False)
 
@@ -21,5 +23,5 @@ if __name__ == "__main__":
     parser.add_argument("key")
     key = parser.parse_args().key
 
-    with open("dist/{}Config.json".format(key), "w") as file:
+    with open("dist/{}Config.json".format(key), "w", encoding="utf-8") as file:
         file.writelines(main(key))
