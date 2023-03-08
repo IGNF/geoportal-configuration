@@ -1,3 +1,6 @@
+import json
+from collections import defaultdict
+
 def parseWMTS(dict_capabilities, key):
     if dict_capabilities == False:
         return False
@@ -123,6 +126,9 @@ def _parseTMS(tms):
     tms_id = tms["ows:Identifier"]
     tms_config = {}
     tms_config["projection"] = tms["ows:SupportedCRS"]
+    with open("nativeResolutions.json") as json_file:
+        nativeResolutionsData = defaultdict(lambda: None, json.load(json_file))
+    tms_config["nativeResolutions"] = nativeResolutionsData[tms_id]
     matrix_ids = []
     tile_matrices = {}
     for tile_matrix in tms["TileMatrix"]:
