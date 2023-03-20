@@ -3,7 +3,9 @@
     "apiKeys": {
       "sol": [
         "BDCARTO_ETAT-MAJOR.NIVEAU3$GEOPORTAIL:OGC:WMTS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMTS"
+        "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMTS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3$GEOPORTAIL:OGC:WMS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMS"
       ]
     }
   },
@@ -16,10 +18,10 @@
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -5.15047,
-          "right": 9.57054,
-          "top": 51.0991,
-          "bottom": 41.3252
+          "left": -5.15012,
+          "right": 7.19384,
+          "top": 51.0938,
+          "bottom": 43.151
         }
       },
       "serviceParams": {
@@ -89,15 +91,15 @@
           },
           "15": {
             "minTileRow": "10944",
-            "maxTileRow": "12255",
+            "maxTileRow": "12031",
             "minTileCol": "15904",
-            "maxTileCol": "17263"
+            "maxTileCol": "17039"
           },
           "16": {
             "minTileRow": "21904",
-            "maxTileRow": "24495",
+            "maxTileRow": "24047",
             "minTileCol": "31824",
-            "maxTileCol": "34511"
+            "maxTileCol": "34079"
           }
         }
       },
@@ -235,6 +237,142 @@
         {
           "name": "image/png",
           "current": true
+        }
+      ]
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3$GEOPORTAIL:OGC:WMS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3",
+      "title": "BD CARTO Etat-major N3",
+      "description": "BDCARTO ETAT-MAJOR NIVEAU 3",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150115786,
+          "right": 7.193835249,
+          "top": 51.09380074,
+          "bottom": 43.15100173
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "sol": "https://wxs.ign.fr/sol/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCEM_1-0_LAMB93.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "BDCARTO_ETAT-MAJOR3",
+          "title": "Légende du 1/1000000"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/BDCARTO_ETAT-MAJOR-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4",
+      "title": "BD CARTO Etat-major N4",
+      "description": "BDCARTO ETAT-MAJOR NIVEAU 4",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "sol": "https://wxs.ign.fr/sol/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCEM_1-0_LAMB93.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "BDCARTO_ETAT-MAJOR4",
+          "title": "Légende du 1/1000000"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/BDCARTO_ETAT-MAJOR.NIVEAU4-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
         }
       ]
     }
