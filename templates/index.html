@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Création de fichiers de configuration pour les API JS Géoportail</title>
+    <style>
+      body {
+        font-family: Lucida Sans, Lucida Grande, Lucida Sans Unicode, Luxi Sans, sans-serif;
+        font-display: swap;
+        color: #333333;
+        background: #EFEDE4;
+        margin: 0;
+      }
+      header {
+        background-image: url({{ url_for('static', filename= 'images/entete.png') }});
+        height: 120px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px #71767A;
+      }
+
+      header .header-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-content {
+        position: relative;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .page {
+        position: relative;
+        display: flex;
+        max-width: 1200px;
+        min-width: 0;
+        margin: auto;
+        padding: 0 10px;
+      }
+
+      .content, .contentMaxi {
+        position: relative;
+        flex: 1;
+        background-color: #FFF;
+        padding: 20px 40px;
+        margin: 10px;
+        box-shadow: 0 0 10px #999;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #71767A;
+      }
+
+      header h1 {
+        flex: 1;
+        font-family: Open Sans, Arial, sans-serif;
+        font-display: swap;
+        font-size: 25px;
+        font-weight: normal;
+        line-height: 1em;
+        color: #71767A;
+        margin: 0;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        text-indent: -15px;
+      }
+
+      input[type="submit"] {
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <p class="logoIGN"><img src="{{ url_for('static', filename= 'images/logoIGN.png') }}"></a></p>
+        <h1>Création de fichiers de configuration pour les API JS Géoportail</h1>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="content">
+      <h3>Récupérer le fichier de configuration</h2>
+      <p>
+        Sélectionnez le nombre de clefs d'accès que vous souhaitez utiliser dans votre application Géoportail.
+        Pour chaque clef, remplissez le champ correspondant avec son nom.
+        Cliquez sur le bouton "Récupérer le fichier de configuration".
+      </p>
+
+      <form action="" method="POST">
+        <div>
+          <label for="keyNumber">Nombre de clefs : </label>
+          <input type="number" min="1" max="10" id="keyNumber" value="1">
+        </div>
+
+        <div id="keyInputSection">
+          <p id="keyInputPara1">
+              <label for="keyInput1" class="key-label">Clef 1 : </label>
+              <input type="text" class="form-control input-sm key-value" placeholder="Clef d'accès Géoportail 1" size="30" name="apiKey1" id="apiKey1">
+          </p>
+        </div>
+
+        <div>
+          <input type="submit" id="key-button" value="Récupérer le fichier de configuration" class="key-button">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    document.getElementById("keyNumber").addEventListener('change', createInput);
+    document.getElementById("keyNumber").value = 1; //reset the key number input
+    function removeInputAndLabel() {
+        var keyLabels = document.getElementsByClassName("key-label");
+        while (keyLabels.length > 0) {
+            keyLabels[0].parentNode.removeChild(keyLabels[0]);
+        }
+        // remove the keys input
+        var keyInputs = document.getElementsByClassName("key-value");
+        while (keyInputs.length > 0) {
+            keyInputs[0].parentNode.removeChild(keyInputs[0]);
+        }
+    };
+    function createInput(e) {
+        removeInputAndLabel();
+        var numberOfInput = e.target.value;
+        for (var i = 1; i <= numberOfInput; i++) {
+            // create key input div
+            var keyPara = document.createElement("p");
+            keyPara.id = "keyInputPara" + i;
+            // create label for key input
+            var keyLabel = document.createElement("div");
+            keyLabel.className = "key-label";
+            keyLabel.innerHTML = "Clef " + i + " : ";
+            // create key input
+            var keyInput = document.createElement("input");
+            keyInput.type = "text";
+            keyInput.className = "form-control input-sm key-value"; // set the CSS class
+            keyInput.placeholder = "Clef d'accès Géoportail " + i;
+            keyInput.size = "30";
+            keyInput.id = "apiKey" + i;
+            keyInput.name = "apiKey" + i;
+            // add the form elements to the DOM
+            keyPara.appendChild(keyLabel);
+            keyPara.appendChild(keyInput);
+            document.getElementById("keyInputSection").appendChild(keyPara);
+        }
+    };
+  </script>
+</body>
+</html>

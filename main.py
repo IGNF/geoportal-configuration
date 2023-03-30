@@ -1,9 +1,9 @@
 import json
 
-from config_merger import merge_configs
-from requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities
-from wms_parser import parseWMS
-from wmts_parser import parseWMTS
+from core.config_merger import merge_configs
+from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities
+from core.wms_parser import parseWMS
+from core.wmts_parser import parseWMTS
 
 def main(keys):
     if not isinstance(keys, list):
