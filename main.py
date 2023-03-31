@@ -17,7 +17,10 @@ def main(keys):
         ]
     ]
     list_configs = [config for config in list_configs if isinstance(config, dict)]
-    merged_config = merge_configs(list_configs)
+    try:
+        merged_config = merge_configs(list_configs)
+    except IndexError:
+        return "No key provided was valid"
 
     return json.dumps(merged_config, indent=2, ensure_ascii=False)
 
