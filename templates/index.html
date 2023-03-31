@@ -12,7 +12,7 @@
         margin: 0;
       }
       header {
-        background-image: url({{ url_for('static', filename= 'images/entete.png') }});
+        background-image: url(.{{ url_for('static', filename= 'images/entete.png') }});
         height: 120px;
         margin-bottom: 10px;
         box-shadow: 0 0 10px #71767A;
@@ -78,7 +78,7 @@
 <body>
   <header>
     <div class="header-content">
-        <p class="logoIGN"><img src="{{ url_for('static', filename= 'images/logoIGN.png') }}"></a></p>
+        <p class="logoIGN"><img src=".{{ url_for('static', filename= 'images/logoIGN.png') }}"></a></p>
         <h1>Création de fichiers de configuration pour les API JS Géoportail</h1>
     </div>
   </header>
@@ -89,7 +89,8 @@
       <p>
         Sélectionnez le nombre de clefs d'accès que vous souhaitez utiliser dans votre application Géoportail.
         Pour chaque clef, remplissez le champ correspondant avec son nom.
-        Cliquez sur le bouton "Récupérer le fichier de configuration".
+        Cliquez sur le bouton "Récupérer le fichier de configuration".<br>
+        <b>Cela peut prendre plusieurs minutes, merci de garder cet onglet ouvert après validation.</b>
       </p>
 
       <form action="" method="POST">
