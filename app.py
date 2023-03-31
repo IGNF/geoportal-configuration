@@ -18,5 +18,15 @@ def generate():
         mimetype='application/json',
         headers={'Content-disposition': 'attachment; filename=customConfig.json'})
 
+@app.route("/api", methods=['GET'])
+def generateAPI():
+    try:
+        apiKeys = request.args.get("keys").split(",")
+        return Response(
+            main(apiKeys),
+            mimetype='application/json')
+    except AttributeError:
+        return "Provide API keys separated with comas under the `keys` GET parameter"
+
 if __name__ == "__main__":
     app.run()
