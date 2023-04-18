@@ -31,6 +31,7 @@
         "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.2TE48$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.ALL$GEOPORTAIL:OGC:WMS",
+        "SECUROUTE.TE.OA$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.PN$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.PND$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.TE120$GEOPORTAIL:OGC:WMS",
@@ -1719,64 +1720,66 @@
     },
     "SECUROUTE.TE.OA$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.OA",
-      "title": "Autres franchissements",
-      "description": "Autres franchissements",
+      "title": "SECUROUTE.TE.OA",
+      "description": "Layer-Group type layer: SECUROUTE.TE.OA",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -5.5,
+          "right": 9.9,
+          "top": 51.3,
+          "bottom": 41.2
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://wxs.ign.fr/transports/geoportail/r/wms?"
+          "transports": "https://wxs.ign.fr/transports/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MTD_Produit_Vecteur.xml"
-        },
-        {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MTD_Produit_Vecteur.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "AUTRES FRANCHISSEMENTS",
-          "title": "AUTRES FRANCHISSEMENTS"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/SECUROUTE.TE.OA.GE-legend.png"
-        },
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/SECUROUTE.TE.OA.PE-legend.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -1784,11 +1787,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
