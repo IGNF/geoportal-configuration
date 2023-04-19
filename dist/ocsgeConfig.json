@@ -4,31 +4,49 @@
       "ocsge": [
         "OCSGE.CONSTRUCTIONS$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS.2002$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.CONSTRUCTIONS.2010$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.CONSTRUCTIONS.2011$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS.2014$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS.2016$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.CONSTRUCTIONS.2017$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS.2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2002$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.COUVERTURE.2010$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.COUVERTURE.2011$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2014$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2016$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.COUVERTURE.2017$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2002$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.USAGE.2010$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.USAGE.2011$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2014$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2016$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.USAGE.2017$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE.VISU.2016$GEOPORTAIL:OGC:WMTS",
         "OCSGE.VISU.2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE_2016$GEOPORTAIL:OGC:WMTS",
         "OCSGE_2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS$GEOPORTAIL:OGC:WMS",
+        "OCSGE.CONSTRUCTIONS.2010$GEOPORTAIL:OGC:WMS",
+        "OCSGE.CONSTRUCTIONS.2011$GEOPORTAIL:OGC:WMS",
         "OCSGE.CONSTRUCTIONS.2016$GEOPORTAIL:OGC:WMS",
+        "OCSGE.CONSTRUCTIONS.2017$GEOPORTAIL:OGC:WMS",
         "OCSGE.CONSTRUCTIONS.2019$GEOPORTAIL:OGC:WMS",
         "OCSGE.COUVERTURE$GEOPORTAIL:OGC:WMS",
+        "OCSGE.COUVERTURE.2010$GEOPORTAIL:OGC:WMS",
+        "OCSGE.COUVERTURE.2011$GEOPORTAIL:OGC:WMS",
         "OCSGE.COUVERTURE.2016$GEOPORTAIL:OGC:WMS",
+        "OCSGE.COUVERTURE.2017$GEOPORTAIL:OGC:WMS",
         "OCSGE.COUVERTURE.2019$GEOPORTAIL:OGC:WMS",
         "OCSGE.USAGE$GEOPORTAIL:OGC:WMS",
+        "OCSGE.USAGE.2010$GEOPORTAIL:OGC:WMS",
+        "OCSGE.USAGE.2011$GEOPORTAIL:OGC:WMS",
         "OCSGE.USAGE.2016$GEOPORTAIL:OGC:WMS",
+        "OCSGE.USAGE.2017$GEOPORTAIL:OGC:WMS",
         "OCSGE.USAGE.2019$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2016$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2019$GEOPORTAIL:OGC:WMS"
@@ -266,6 +284,236 @@
         }
       ]
     },
+    "OCSGE.CONSTRUCTIONS.2010$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.CONSTRUCTIONS.2010",
+      "title": "Occupation du sol grande échelle 2010 - zones contruites",
+      "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "32",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "47",
+            "minTileCol": "64",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "95",
+            "minTileCol": "128",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "191",
+            "minTileCol": "256",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "367",
+            "minTileCol": "512",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "735",
+            "minTileCol": "1040",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1455",
+            "minTileCol": "2080",
+            "maxTileCol": "2143"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "2911",
+            "minTileCol": "4176",
+            "maxTileCol": "4271"
+          },
+          "14": {
+            "minTileRow": "5680",
+            "maxTileRow": "5823",
+            "minTileCol": "8368",
+            "maxTileCol": "8527"
+          },
+          "15": {
+            "minTileRow": "11376",
+            "maxTileRow": "11631",
+            "minTileCol": "16752",
+            "maxTileCol": "17039"
+          },
+          "16": {
+            "minTileRow": "22768",
+            "maxTileRow": "23247",
+            "minTileCol": "33504",
+            "maxTileCol": "34079"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.CONSTRUCTIONS.2011$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.CONSTRUCTIONS.2011",
+      "title": "Occupation du sol grande échelle 2011 - zones contruites",
+      "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle (CNIG).</br> Source : IGN - 2011",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "32",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "47",
+            "minTileCol": "64",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "95",
+            "minTileCol": "128",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "191",
+            "minTileCol": "256",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "368",
+            "maxTileRow": "383",
+            "minTileCol": "512",
+            "maxTileCol": "527"
+          },
+          "11": {
+            "minTileRow": "736",
+            "maxTileRow": "751",
+            "minTileCol": "1024",
+            "maxTileCol": "1039"
+          },
+          "12": {
+            "minTileRow": "1488",
+            "maxTileRow": "1503",
+            "minTileCol": "2048",
+            "maxTileCol": "2079"
+          },
+          "13": {
+            "minTileRow": "2976",
+            "maxTileRow": "3007",
+            "minTileCol": "4112",
+            "maxTileCol": "4143"
+          },
+          "14": {
+            "minTileRow": "5968",
+            "maxTileRow": "5999",
+            "minTileCol": "8224",
+            "maxTileCol": "8271"
+          },
+          "15": {
+            "minTileRow": "11936",
+            "maxTileRow": "11999",
+            "minTileCol": "16464",
+            "maxTileCol": "16543"
+          },
+          "16": {
+            "minTileRow": "23888",
+            "maxTileRow": "23999",
+            "minTileCol": "32944",
+            "maxTileCol": "33087"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "OCSGE.CONSTRUCTIONS.2014$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.CONSTRUCTIONS.2014",
       "title": "Occupation du sol grande échelle 2014 - zones contruites",
@@ -471,6 +719,121 @@
             "maxTileRow": "24495",
             "minTileCol": "31824",
             "maxTileCol": "34511"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.CONSTRUCTIONS.2017$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.CONSTRUCTIONS.2017",
+      "title": "Occupation du sol grande échelle 2017 - zones contruites",
+      "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle (CNIG).</br>",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -61.6644,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 14.2395
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "16",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "63",
+            "minTileCol": "32",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "127",
+            "minTileCol": "80",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "239",
+            "minTileCol": "160",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "479",
+            "minTileCol": "336",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "943",
+            "minTileCol": "672",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1887",
+            "minTileCol": "1344",
+            "maxTileCol": "2143"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "3775",
+            "minTileCol": "2688",
+            "maxTileCol": "4271"
+          },
+          "14": {
+            "minTileRow": "5680",
+            "maxTileRow": "7551",
+            "minTileCol": "5376",
+            "maxTileCol": "8543"
+          },
+          "15": {
+            "minTileRow": "11376",
+            "maxTileRow": "15087",
+            "minTileCol": "10768",
+            "maxTileCol": "17071"
+          },
+          "16": {
+            "minTileRow": "22768",
+            "maxTileRow": "30159",
+            "minTileCol": "21536",
+            "maxTileCol": "34127"
           }
         }
       },
@@ -841,6 +1204,236 @@
         }
       ]
     },
+    "OCSGE.COUVERTURE.2010$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.COUVERTURE.2010",
+      "title": "Occupation du sol grande échelle 2010 - couverture",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "32",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "47",
+            "minTileCol": "64",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "95",
+            "minTileCol": "128",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "191",
+            "minTileCol": "256",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "367",
+            "minTileCol": "512",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "735",
+            "minTileCol": "1040",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1455",
+            "minTileCol": "2080",
+            "maxTileCol": "2143"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "2911",
+            "minTileCol": "4176",
+            "maxTileCol": "4271"
+          },
+          "14": {
+            "minTileRow": "5680",
+            "maxTileRow": "5823",
+            "minTileCol": "8368",
+            "maxTileCol": "8527"
+          },
+          "15": {
+            "minTileRow": "11376",
+            "maxTileRow": "11631",
+            "minTileCol": "16752",
+            "maxTileCol": "17039"
+          },
+          "16": {
+            "minTileRow": "22768",
+            "maxTileRow": "23247",
+            "minTileCol": "33504",
+            "maxTileCol": "34079"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.COUVERTURE.2011$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.COUVERTURE.2011",
+      "title": "Occupation du sol grande échelle 2011 - couverture",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG).</br> Source : IGN - 2011",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "32",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "47",
+            "minTileCol": "64",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "95",
+            "minTileCol": "128",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "191",
+            "minTileCol": "256",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "367",
+            "minTileCol": "512",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "735",
+            "minTileCol": "1040",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1455",
+            "minTileCol": "2080",
+            "maxTileCol": "2127"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "2911",
+            "minTileCol": "4160",
+            "maxTileCol": "4255"
+          },
+          "14": {
+            "minTileRow": "5664",
+            "maxTileRow": "5823",
+            "minTileCol": "8320",
+            "maxTileCol": "8511"
+          },
+          "15": {
+            "minTileRow": "11328",
+            "maxTileRow": "11647",
+            "minTileCol": "16640",
+            "maxTileCol": "17007"
+          },
+          "16": {
+            "minTileRow": "22672",
+            "maxTileRow": "23279",
+            "minTileCol": "33280",
+            "maxTileCol": "34015"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "OCSGE.COUVERTURE.2014$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.COUVERTURE.2014",
       "title": "Occupation du sol grande échelle 2014 - couverture",
@@ -1046,6 +1639,121 @@
             "maxTileRow": "24495",
             "minTileCol": "31824",
             "maxTileCol": "34511"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.COUVERTURE.2017$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.COUVERTURE.2017",
+      "title": "Occupation du sol grande échelle 2017 - couverture",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG).</br> Source : IGN - 2017",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -61.6644,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 14.2395
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "16",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "63",
+            "minTileCol": "32",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "127",
+            "minTileCol": "80",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "239",
+            "minTileCol": "160",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "479",
+            "minTileCol": "336",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "943",
+            "minTileCol": "672",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1887",
+            "minTileCol": "1344",
+            "maxTileCol": "2143"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "3775",
+            "minTileCol": "2688",
+            "maxTileCol": "4271"
+          },
+          "14": {
+            "minTileRow": "5680",
+            "maxTileRow": "7551",
+            "minTileCol": "5376",
+            "maxTileCol": "8543"
+          },
+          "15": {
+            "minTileRow": "11376",
+            "maxTileRow": "15087",
+            "minTileCol": "10768",
+            "maxTileCol": "17071"
+          },
+          "16": {
+            "minTileRow": "22768",
+            "maxTileRow": "30159",
+            "minTileCol": "21536",
+            "maxTileCol": "34127"
           }
         }
       },
@@ -1416,6 +2124,236 @@
         }
       ]
     },
+    "OCSGE.USAGE.2010$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.USAGE.2010",
+      "title": "Occupation du sol grande échelle 2010 - usage",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "32",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "47",
+            "minTileCol": "64",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "95",
+            "minTileCol": "128",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "191",
+            "minTileCol": "256",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "367",
+            "minTileCol": "512",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "735",
+            "minTileCol": "1040",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1455",
+            "minTileCol": "2080",
+            "maxTileCol": "2143"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "2911",
+            "minTileCol": "4176",
+            "maxTileCol": "4271"
+          },
+          "14": {
+            "minTileRow": "5680",
+            "maxTileRow": "5823",
+            "minTileCol": "8368",
+            "maxTileCol": "8527"
+          },
+          "15": {
+            "minTileRow": "11376",
+            "maxTileRow": "11631",
+            "minTileCol": "16752",
+            "maxTileCol": "17039"
+          },
+          "16": {
+            "minTileRow": "22768",
+            "maxTileRow": "23247",
+            "minTileCol": "33504",
+            "maxTileCol": "34079"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.USAGE.2011$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.USAGE.2011",
+      "title": "Occupation du sol grande échelle 2011 - usage",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG).</br> Source : IGN - 2011",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "32",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "47",
+            "minTileCol": "64",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "95",
+            "minTileCol": "128",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "191",
+            "minTileCol": "256",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "367",
+            "minTileCol": "512",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "735",
+            "minTileCol": "1040",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1455",
+            "minTileCol": "2080",
+            "maxTileCol": "2127"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "2911",
+            "minTileCol": "4160",
+            "maxTileCol": "4255"
+          },
+          "14": {
+            "minTileRow": "5664",
+            "maxTileRow": "5823",
+            "minTileCol": "8320",
+            "maxTileCol": "8511"
+          },
+          "15": {
+            "minTileRow": "11328",
+            "maxTileRow": "11647",
+            "minTileCol": "16640",
+            "maxTileCol": "17007"
+          },
+          "16": {
+            "minTileRow": "22656",
+            "maxTileRow": "23279",
+            "minTileCol": "33280",
+            "maxTileCol": "34015"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "OCSGE.USAGE.2014$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.USAGE.2014",
       "title": "Occupation du sol grande échelle 2014 - usage",
@@ -1621,6 +2559,121 @@
             "maxTileRow": "24495",
             "minTileCol": "31824",
             "maxTileCol": "34511"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.USAGE.2017$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.USAGE.2017",
+      "title": "Occupation du sol grande échelle 2017 - usage",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG).</br>",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -61.6644,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 14.2395
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "16",
+            "maxTileRow": "31",
+            "minTileCol": "16",
+            "maxTileCol": "47"
+          },
+          "7": {
+            "minTileRow": "32",
+            "maxTileRow": "63",
+            "minTileCol": "32",
+            "maxTileCol": "79"
+          },
+          "8": {
+            "minTileRow": "80",
+            "maxTileRow": "127",
+            "minTileCol": "80",
+            "maxTileCol": "143"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "239",
+            "minTileCol": "160",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "479",
+            "minTileCol": "336",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "704",
+            "maxTileRow": "943",
+            "minTileCol": "672",
+            "maxTileCol": "1071"
+          },
+          "12": {
+            "minTileRow": "1408",
+            "maxTileRow": "1887",
+            "minTileCol": "1344",
+            "maxTileCol": "2143"
+          },
+          "13": {
+            "minTileRow": "2832",
+            "maxTileRow": "3775",
+            "minTileCol": "2688",
+            "maxTileCol": "4271"
+          },
+          "14": {
+            "minTileRow": "5680",
+            "maxTileRow": "7551",
+            "minTileCol": "5376",
+            "maxTileCol": "8543"
+          },
+          "15": {
+            "minTileRow": "11376",
+            "maxTileRow": "15087",
+            "minTileCol": "10768",
+            "maxTileCol": "17071"
+          },
+          "16": {
+            "minTileRow": "22768",
+            "maxTileRow": "30159",
+            "minTileCol": "21536",
+            "maxTileCol": "34127"
           }
         }
       },
@@ -2323,6 +3376,142 @@
         }
       ]
     },
+    "OCSGE.CONSTRUCTIONS.2010$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.CONSTRUCTIONS.2010",
+      "title": "Occupation du sol grande échelle 2010 - zones contruites",
+      "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle (CNIG). Source : IGN - 2010",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "OCSGE.CONSTRUCTIONS.2011$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.CONSTRUCTIONS.2011",
+      "title": "Occupation du sol grande échelle 2011 - zones contruites",
+      "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle (CNIG). Source : IGN - 2011",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
     "OCSGE.CONSTRUCTIONS.2016$GEOPORTAIL:OGC:WMS": {
       "name": "OCSGE.CONSTRUCTIONS.2016",
       "title": "Occupation du sol grande échelle 2016 - zones contruites",
@@ -2335,6 +3524,74 @@
           "right": 9.570543239,
           "top": 51.099054184,
           "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "OCSGE.CONSTRUCTIONS.2017$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.CONSTRUCTIONS.2017",
+      "title": "Occupation du sol grande échelle 2017 - zones contruites",
+      "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle (CNIG). Source : IGN - 2017",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -61.664384666,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 14.239534788
         }
       },
       "serviceParams": {
@@ -2527,6 +3784,142 @@
         }
       ]
     },
+    "OCSGE.COUVERTURE.2010$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.COUVERTURE.2010",
+      "title": "Occupation du sol grande échelle 2010 - couverture",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG). Source : IGN - 2010",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "OCSGE.COUVERTURE.2011$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.COUVERTURE.2011",
+      "title": "Occupation du sol grande échelle 2011 - couverture",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG)1 Source : IGN - 2016",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
     "OCSGE.COUVERTURE.2016$GEOPORTAIL:OGC:WMS": {
       "name": "OCSGE.COUVERTURE.2016",
       "title": "Occupation du sol grande échelle 2016 - couverture",
@@ -2539,6 +3932,74 @@
           "right": 9.570543239,
           "top": 51.099054184,
           "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "OCSGE.COUVERTURE.2017$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.COUVERTURE.2017",
+      "title": "Occupation du sol grande échelle 2017 - couverture",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG). Source : IGN - 2017",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -61.664384666,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 14.239534788
         }
       },
       "serviceParams": {
@@ -2731,6 +4192,142 @@
         }
       ]
     },
+    "OCSGE.USAGE.2010$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.USAGE.2010",
+      "title": "Occupation du sol grande échelle 2010 - usage",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG). Source : IGN - 2010",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "OCSGE.USAGE.2011$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.USAGE.2011",
+      "title": "Occupation du sol grande échelle 2011 - usage",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG). Source : IGN - 2011",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -5.150472715,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
     "OCSGE.USAGE.2016$GEOPORTAIL:OGC:WMS": {
       "name": "OCSGE.USAGE.2016",
       "title": "Occupation du sol grande échelle 2016 - usage",
@@ -2743,6 +4340,74 @@
           "right": 9.570543239,
           "top": 51.099054184,
           "bottom": 41.325209636
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_OCS_GE_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "OCSGE.USAGE.2017$GEOPORTAIL:OGC:WMS": {
+      "name": "OCSGE.USAGE.2017",
+      "title": "Occupation du sol grande échelle 2017 - usage",
+      "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG). Source : IGN - 2017",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -61.664384666,
+          "right": 9.570543239,
+          "top": 51.099054184,
+          "bottom": 14.239534788
         }
       },
       "serviceParams": {
