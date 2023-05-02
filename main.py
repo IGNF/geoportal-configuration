@@ -2,6 +2,7 @@ import json
 
 from core.config_merger import merge_configs
 from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities
+from core.vectortiles_parser import parseVectorTiles
 from core.wms_parser import parseWMS
 from core.wmts_parser import parseWMTS
 
@@ -13,7 +14,8 @@ def main(keys):
         for config in [
             parseWMTS(getWMTSCapabilities(key), key),
             parseWMS(getWMSRCapabilities(key), key),
-            parseWMS(getWMSVCapabilities(key), key)
+            parseWMS(getWMSVCapabilities(key), key),
+            parseVectorTiles(key)
         ]
     ]
     list_configs = [config for config in list_configs if isinstance(config, dict)]
