@@ -8,7 +8,8 @@
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMTS",
         "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS"
+        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
+        "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
       ],
       "adresse": [
         "BAN.ADRESSE$GEOPORTAIL:OGC:WMS",
@@ -87,7 +88,8 @@
         "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
-        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS"
+        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
+        "ISOHYPSE$GEOPORTAIL:GPP:TMS"
       ],
       "cartes": [
         "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS",
@@ -111,7 +113,8 @@
         "SCAN1000_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
         "SCANDEP_PYR-JPEG_FXX_WM$GEOPORTAIL:OGC:WMS",
         "SCANREG_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
-        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ],
       "cartovecto": [
         "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS",
@@ -380,7 +383,9 @@
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "PLAN.IGN$GEOPORTAIL:GPP:TMS",
+        "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
       ],
       "geodesie": [
         "BDGEODESIQUE-RGP_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
@@ -472,6 +477,10 @@
         "OCSGE.USAGE.2019$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2016$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2019$GEOPORTAIL:OGC:WMS"
+      ],
+      "osge": [
+        "OCSGE_2016$GEOPORTAIL:GPP:TMS",
+        "OCSGE_2019$GEOPORTAIL:GPP:TMS"
       ],
       "ortho": [
         "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
@@ -605,7 +614,8 @@
         "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS",
-        "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS"
+        "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS",
+        "PCI$GEOPORTAIL:GPP:TMS"
       ],
       "satellite": [
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2012$GEOPORTAIL:OGC:WMTS",
@@ -684,7 +694,8 @@
         "BDTOPO-GEOPO-ZONE-ACTIVITES_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS",
         "UTILITYANDGOVERNMENTALSERVICES.MININT.POI.ACCUEIL_POLICE-GENDARMERIE$GEOPORTAIL:OGC:WMS",
-        "hedge.hedge$GEOPORTAIL:OGC:WMS"
+        "hedge.hedge$GEOPORTAIL:OGC:WMS",
+        "BDTOPO$GEOPORTAIL:GPP:TMS"
       ],
       "transports": [
         "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMTS",
@@ -1396,6 +1407,48 @@
           "current": false
         }
       ]
+    },
+    "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "ADMIN_EXPRESS",
+      "title": "ADMIN_EXPRESS",
+      "description": "Limites administratives des collectivités territoriales. Régions, départements, cantons, communes, arrondissements (pour Paris, Lyon et Marseille) et établissements publics de coopération intercommunale (EPCI)",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "adminexpress",
+          "title": "Style adminexpress",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ADMINEXPRESS/adminexpress.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -724011.531917197,
+          "right": 1095801.237496279,
+          "top": 6672646.821182753,
+          "bottom": 5009377.0856973175
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
     },
     "BAN.ADRESSE$GEOPORTAIL:OGC:WMS": {
       "name": "BAN.ADRESSE",
@@ -8607,6 +8660,60 @@
         }
       ]
     },
+    "ISOHYPSE$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://wxs.ign.fr/altimetrie/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "ISOHYPSE",
+      "title": "ISOHYPSE",
+      "description": "",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "isohypse_marron",
+          "title": "Style monochrome marron",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ISOHYPSE/isohypse_marron.json"
+        },
+        {
+          "name": "isohypse_orange",
+          "title": "Style monochrome isohypse_orange",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ISOHYPSE/isohypse_orange.json"
+        },
+        {
+          "name": "isohypse_multicolore",
+          "title": "Style monochrome isohypse_multicolore",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -6.50390625000007,
+          "right": 40.9798980696202,
+          "top": 51.2894059027168,
+          "bottom": 9.84374999999994
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "ISOHYPSE$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
+    },
     "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS": {
       "name": "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS",
       "title": "Carte topographique - environs de Paris (1906)",
@@ -10802,6 +10909,90 @@
           "current": false
         }
       ]
+    },
+    "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "PLAN.IGN",
+      "title": "Plan IGN",
+      "description": "BDUni tuilée",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "standard",
+          "title": "Style standard",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/standard.json"
+        },
+        {
+          "name": "classique",
+          "title": "Style classique",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/classique.json"
+        },
+        {
+          "name": "transparent",
+          "title": "Style transparent",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/transparent.json"
+        },
+        {
+          "name": "accentue",
+          "title": "Style accentue",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/accentue.json"
+        },
+        {
+          "name": "attenue",
+          "title": "Style attenue",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/attenue.json"
+        },
+        {
+          "name": "gris",
+          "title": "Style en noir et blanc",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/gris.json"
+        },
+        {
+          "name": "epure",
+          "title": "Style epure",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/epure.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "Style sans toponymes",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PLAN.IGN/essentiels/sans_toponymes.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -724011.531917197,
+          "right": 1095801.237496279,
+          "top": 6672646.821182753,
+          "bottom": 5009377.0856973175
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "PLAN.IGN$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
     },
     "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS": {
       "name": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
@@ -44317,6 +44508,102 @@
         }
       ]
     },
+    "OCSGE_2016$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "OCSGE_2016",
+      "title": "OCSGE_2016",
+      "description": "",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "ocsge_couverture",
+          "title": "Style OCSGE Couverture",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+        },
+        {
+          "name": "ocsge_usage",
+          "title": "Style OCSGE Usage",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -6.50390625000007,
+          "right": 40.9798980696202,
+          "top": 51.2894059027168,
+          "bottom": 9.84374999999994
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "OCSGE_2016$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
+    },
+    "OCSGE_2019$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://wxs.ign.fr/ocsge/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "OCSGE_2019",
+      "title": "OCSGE_2019",
+      "description": "",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "ocsge_couverture",
+          "title": "Style OCSGE Couverture",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+        },
+        {
+          "name": "ocsge_usage",
+          "title": "Style OCSGE Usage",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -6.50390625000007,
+          "right": 40.9798980696202,
+          "top": 51.2894059027168,
+          "bottom": 9.84374999999994
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "OCSGE_2019$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
+    },
     "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
       "name": "HR.ORTHOIMAGERY.ORTHOPHOTOS",
       "title": "Ortho 20 cm",
@@ -57957,6 +58244,54 @@
         }
       ]
     },
+    "PCI$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "PCI",
+      "title": "PCI",
+      "description": "Plan cadastral informatisé vecteur tuilé de la DGFIP",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "pci",
+          "title": "Style pci",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PCI/pci.json"
+        },
+        {
+          "name": "noir_et_blanc",
+          "title": "Style noir_et_blanc",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/PCI/noir_et_blanc.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -724011.531917197,
+          "right": 1095801.237496279,
+          "top": 6672646.821182753,
+          "bottom": 5009377.0856973175
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "PCI$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
+    },
     "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2012$GEOPORTAIL:OGC:WMTS": {
       "name": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2012",
       "title": "PLEIADES - 2012",
@@ -66227,6 +66562,78 @@
           "current": false
         }
       ]
+    },
+    "BDTOPO$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "topographie": "https://wxs.ign.fr/topographie/geoportail/tms/1.0.0"
+        }
+      },
+      "name": "BDTOPO",
+      "title": "BDTOPO",
+      "description": "La BD TOPO® contient une description vectorielle, structurée en objets, des éléments du territoire et de ses infrastructures, de précision métrique.",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "classique",
+          "title": "Style issu du projet bd carto",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "bati",
+          "title": "Style thématique Bati",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/BDTOPO/bati.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "Style bati sur l'attribut date de construction",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "Style bati sur l'attribut étages",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "hydrographie",
+          "title": "Style thématique hydrographie",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
+          "name": "routier",
+          "title": "Style thématique routier",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/BDTOPO/routier.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -724011.531917197,
+          "right": 1095801.237496279,
+          "top": 6672646.821182753,
+          "bottom": 5009377.0856973175
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "BDTOPO$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
     },
     "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMTS": {
       "name": "SECUROUTE.TE.1TE",

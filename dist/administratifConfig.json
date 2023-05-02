@@ -8,7 +8,8 @@
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMTS",
         "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS"
+        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
+        "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
       ]
     }
   },
@@ -681,6 +682,47 @@
           "current": false
         }
       ]
+    },
+    "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "administratif": "https://wxs.ign.fr/administratif/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "ADMIN_EXPRESS",
+      "title": "ADMIN_EXPRESS",
+      "description": "Limites administratives des collectivités territoriales. Régions, départements, cantons, communes, arrondissements (pour Paris, Lyon et Marseille) et établissements publics de coopération intercommunale (EPCI)",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "adminexpress",
+          "title": "Style adminexpress",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ADMINEXPRESS/adminexpress.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -724011.531917197,
+          "right": 1095801.237496279,
+          "top": 6672646.821182753,
+          "bottom": 5009377.0856973175
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {

@@ -32,7 +32,8 @@
         "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
-        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS"
+        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
+        "ISOHYPSE$GEOPORTAIL:GPP:TMS"
       ]
     }
   },
@@ -3153,6 +3154,60 @@
           "current": false
         }
       ]
+    },
+    "ISOHYPSE$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://wxs.ign.fr/altimetrie/geoportail/tms/1.0.0/"
+        }
+      },
+      "name": "ISOHYPSE",
+      "title": "ISOHYPSE",
+      "description": "",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "isohypse_marron",
+          "title": "Style monochrome marron",
+          "current": true,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ISOHYPSE/isohypse_marron.json"
+        },
+        {
+          "name": "isohypse_orange",
+          "title": "Style monochrome isohypse_orange",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ISOHYPSE/isohypse_orange.json"
+        },
+        {
+          "name": "isohypse_multicolore",
+          "title": "Style monochrome isohypse_multicolore",
+          "current": false,
+          "url": "https://wxs.ign.fr/static/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": null,
+        "bbox": {
+          "left": -6.50390625000007,
+          "right": 40.9798980696202,
+          "top": 51.2894059027168,
+          "bottom": 9.84374999999994
+        },
+        "minScaleDenominator": null,
+        "maxScaleDenominator": null
+      },
+      "quicklookUrl": "https://wxs.ign.fr/static/pictures/ign_carte2.jpg",
+      "layerId": "ISOHYPSE$GEOPORTAIL:GPP:TMS",
+      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {
