@@ -13,6 +13,7 @@
         "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.BIOS$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.GP$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMTS",
@@ -35,6 +36,7 @@
         "PROTECTEDAREAS.ZNIEFF1.SEA$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.ZNIEFF2$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.ZPS$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMTS",
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMS",
@@ -1351,6 +1353,121 @@
         {
           "name": "normal",
           "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.APLG",
+      "title": "Arrêtés listes de sites d'intérêt géologique",
+      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 82.645,
+          "top": 51.3121,
+          "bottom": -53.6279
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://wxs.ign.fr/environnement/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "43",
+            "minTileCol": "20",
+            "maxTileCol": "46"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "86",
+            "minTileCol": "41",
+            "maxTileCol": "93"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "173",
+            "minTileCol": "82",
+            "maxTileCol": "186"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "346",
+            "minTileCol": "165",
+            "maxTileCol": "373"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "693",
+            "minTileCol": "331",
+            "maxTileCol": "747"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1386",
+            "minTileCol": "663",
+            "maxTileCol": "1494"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2773",
+            "minTileCol": "1326",
+            "maxTileCol": "2988"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "5547",
+            "minTileCol": "2653",
+            "maxTileCol": "5976"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "11094",
+            "minTileCol": "5307",
+            "maxTileCol": "11953"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "22189",
+            "minTileCol": "10615",
+            "maxTileCol": "23906"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "44378",
+            "minTileCol": "21231",
+            "maxTileCol": "47813"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
           "current": true,
           "url": null
         }
@@ -3959,6 +4076,121 @@
         {
           "name": "normal",
           "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.ZPR",
+      "title": "Zones de protection renforcée",
+      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 82.645,
+          "top": 51.3121,
+          "bottom": -53.6279
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://wxs.ign.fr/environnement/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "43",
+            "minTileCol": "20",
+            "maxTileCol": "46"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "86",
+            "minTileCol": "41",
+            "maxTileCol": "93"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "173",
+            "minTileCol": "82",
+            "maxTileCol": "186"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "346",
+            "minTileCol": "165",
+            "maxTileCol": "373"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "693",
+            "minTileCol": "331",
+            "maxTileCol": "747"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1386",
+            "minTileCol": "663",
+            "maxTileCol": "1494"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2773",
+            "minTileCol": "1326",
+            "maxTileCol": "2988"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "5547",
+            "minTileCol": "2653",
+            "maxTileCol": "5976"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "11094",
+            "minTileCol": "5307",
+            "maxTileCol": "11953"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "22189",
+            "minTileCol": "10615",
+            "maxTileCol": "23906"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "44378",
+            "minTileCol": "21231",
+            "maxTileCol": "47813"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
           "current": true,
           "url": null
         }
