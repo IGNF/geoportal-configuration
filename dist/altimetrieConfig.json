@@ -31,8 +31,6 @@
         "RGEALTI-MNT_PYR-ZIP_MYT_RGM04UTM38S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
-        "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
-        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS"
       ]
     }
@@ -1533,90 +1531,52 @@
     },
     "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS": {
       "name": "ELEVATION.CONTOUR.LINE",
-      "title": "ELEVATION.CONTOUR.LINE",
-      "description": "Layer-Group type layer: ELEVATION.CONTOUR.LINE",
+      "title": "Courbes de niveau",
+      "description": "Le produit « Courbes de niveau » est un modèle numérique de terrain sous forme de courbes de même altitude, appelées aussi « isoplèthes d’altitude », ou plus techniquement « isohypses ». Ces courbes permettent la description du relief français.",
       "globalConstraint": {
-        "minScaleDenominator": 1.0,
-        "maxScaleDenominator": 5000000.0,
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -63.1534009200235,
-          "right": 55.8367873301623,
-          "top": 51.1208683472447,
-          "bottom": -21.3896731994897
+          "left": -63.372521503,
+          "right": 55.925864577,
+          "top": 51.312119281,
+          "bottom": -21.475586668
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "altimetrie": "https://wxs.ign.fr/altimetrie/geoportail/v/wms?SERVICE=WMS&"
+          "altimetrie": "https://wxs.ign.fr/altimetrie/geoportail/r/wms?"
         }
       },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
       "metadata": [
         {
-          "format": "text/plain",
+          "format": "xml",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MTD_Produit_Vecteur.xml"
         }
       ],
-      "styles": [],
-      "legends": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -1624,27 +1584,15 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
+          "name": "image/x-bil;bits=32",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "text/asc",
           "current": false
         }
       ]
@@ -2199,90 +2147,52 @@
     },
     "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS": {
       "name": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
-      "title": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
-      "description": "Layer-Group type layer: ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
+      "title": "Masque de source du RGE Alti",
+      "description": "Informations sur la précision du RGEAlti.",
       "globalConstraint": {
-        "minScaleDenominator": 1.0,
-        "maxScaleDenominator": 10000000.0,
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
         "bbox": {
-          "left": -63.1890421078016,
-          "right": 55.844532355254,
-          "top": 51.129651588879,
-          "bottom": -21.4272773385954
+          "left": -63.372521503,
+          "right": 55.925864577,
+          "top": 51.312119281,
+          "bottom": -21.475586668
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "altimetrie": "https://wxs.ign.fr/altimetrie/geoportail/v/wms?SERVICE=WMS&"
+          "altimetrie": "https://wxs.ign.fr/altimetrie/geoportail/r/wms?"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
         {
-          "format": "text/plain",
+          "format": "xml",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_RGEr_ALTI_1-0.xml"
         }
       ],
-      "styles": [],
-      "legends": [],
+      "styles": [
+        {
+          "name": "Graphe de source du RGE Alti",
+          "title": "Graphe de source du RGE Alti"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/static/legends/ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY.png"
+        }
+      ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -2290,27 +2200,15 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
+          "name": "image/x-bil;bits=32",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "text/asc",
           "current": false
         }
       ]
