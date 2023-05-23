@@ -77,13 +77,16 @@ def _parseLayer(layer, key, server_url, formats):
         layer_config["queryable"] = False
 
     layer_config["metadata"] = []
-    if not isinstance(layer["MetadataURL"], list):
-        layer["MetadataURL"] = [layer["MetadataURL"]]
-    for metadata_url in layer["MetadataURL"]:
-        metadata = {}
-        metadata["format"] = metadata_url["Format"]
-        metadata["url"] = metadata_url["OnlineResource"]["@xlink:href"]
-        layer_config["metadata"].append(metadata)
+    try:
+        if not isinstance(layer["MetadataURL"], list):
+            layer["MetadataURL"] = [layer["MetadataURL"]]
+        for metadata_url in layer["MetadataURL"]:
+            metadata = {}
+            metadata["format"] = metadata_url["Format"]
+            metadata["url"] = metadata_url["OnlineResource"]["@xlink:href"]
+            layer_config["metadata"].append(metadata)
+    except KeyError:
+        pass
 
     layer_config["styles"] = []
     layer_config["legends"] = []
