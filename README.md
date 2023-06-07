@@ -2,11 +2,14 @@
 
 Generation of configuration JSONs for Geoportal JS APIs
 
+## Direct usage (for geoportal-access-lib)
+Use the file in the `dist` directory of this repo directly in the project. The files are generated each day. Example: https://raw.githubusercontent.com/IGNF/geoportal-configuration/main/dist/essentielsConfig.json
+
 ## Dependency install
 `pip3 install -r requirements.txt`
 
 ## CLI usage
-`python main.py key1 key2...`$
+`python main.py key1 key2...`
 
 Config files are generated in `dist` directory
 
