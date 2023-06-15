@@ -61,7 +61,7 @@ def _parseLayer(layer, all_tms, key):
     service_params["id"] = "OGC:WMTS"
     service_params["version"] = "1.0.0"
     service_params["serverUrl"] = {}
-    service_params["serverUrl"][key] = "https://wxs.ign.fr/{}/geoportail/wmts".format(key)
+    service_params["serverUrl"][key] = "https://wmts.geopf.fr/rok4/wmts"
 
     layer_config["serviceParams"] = service_params
 
