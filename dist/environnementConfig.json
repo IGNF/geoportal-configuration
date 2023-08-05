@@ -46,6 +46,7 @@
         "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMS",
+        "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.BIOS$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.GP$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMS",
@@ -1258,7 +1259,7 @@
     "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMTS": {
       "name": "PROTECTEDAREAS.APHN",
       "title": "Arrêtés de protection d’habitats naturels",
-      "description": "Dispositif visant à protéger un habitat naturel (récif corallien, tourbière, prairie, etc.) en tant que tel, sans qu'il soit besoin d'établir qu'il constitue par ailleurs un habitat d'espèces protégées. Mise à jour 04-2023",
+      "description": "Dispositif visant à protéger un habitat naturel (récif corallien, tourbière, prairie, etc.) en tant que tel, sans qu'il soit besoin d'établir qu'il constitue par ailleurs un habitat d'espèces protégées. Mise à jour 06-2023",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
@@ -4853,7 +4854,7 @@
     "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.APHN",
       "title": "Arrêtés de protection d’habitats naturels",
-      "description": "Dispositif visant à protéger un habitat naturel (récif corallien, tourbière, prairie, etc.) en tant que tel, sans qu'il soit besoin d'établir qu'il constitue par ailleurs un habitat d'espèces protégées. Mise à jour 04-2023",
+      "description": "Dispositif visant à protéger un habitat naturel (récif corallien, tourbière, prairie, etc.) en tant que tel, sans qu'il soit besoin d'établir qu'il constitue par ailleurs un habitat d'espèces protégées. Mise à jour 06-2023",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
@@ -4883,6 +4884,74 @@
         {
           "name": "normal",
           "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.APLG",
+      "title": "Arrêtés listes de sites d'intérêt géologique",
+      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -63.372521503,
+          "right": 82.645006139,
+          "top": 51.312119281,
+          "bottom": -53.627912701
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://wxs.ign.fr/environnement/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MNHN.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
         }
       ],
       "legends": [
