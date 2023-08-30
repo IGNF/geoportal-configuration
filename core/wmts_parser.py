@@ -71,6 +71,9 @@ def _parseLayer(layer, all_tms, key):
     layer_config["wmtsOptions"]["tileMatrixSetLink"] = layer["TileMatrixSetLink"]["TileMatrixSet"]
     layer_config["wmtsOptions"]["tileMatrixSetLimits"] = {}
 
+    if not isinstance(layer["TileMatrixSetLink"]["TileMatrixSetLimits"]["TileMatrixLimits"], list):
+        layer["TileMatrixSetLink"]["TileMatrixSetLimits"]["TileMatrixLimits"] = [layer["TileMatrixSetLink"]["TileMatrixSetLimits"]["TileMatrixLimits"]]
+
     for tile_matrix in layer["TileMatrixSetLink"]["TileMatrixSetLimits"]["TileMatrixLimits"]:
         tile_matrix_set_limit = {}
         tile_matrix_set_limit["minTileRow"] = tile_matrix["MinTileRow"]
