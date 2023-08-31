@@ -12,8 +12,6 @@ def getWMTSCapabilities(key):
 
 def getWMSRCapabilities(key):
     url = "https://data.geopf.fr/wms-r/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
-    if key == "inspire":
-        url = "https://wms-r.geopf.fr/rok4/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
     response = requests.get(url)
     if response.status_code != 200:
         return False
@@ -23,8 +21,6 @@ def getWMSRCapabilities(key):
 
 def getWMSVCapabilities(key):
     url = "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
-    if key == "inspire":
-        url = "https://wms-v.geopf.fr/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
     response = requests.get(url)
     if response.status_code != 200:
         return False

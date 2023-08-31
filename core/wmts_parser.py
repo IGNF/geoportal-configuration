@@ -1,15 +1,23 @@
 import json
 from collections import defaultdict
 
+from core.key_resource_lister import keysServicesLayers
+
+key_services_layers = keysServicesLayers()
+
 def parseWMTS(dict_capabilities, key):
     if dict_capabilities == False:
         return False
+
     wmts_config = {}
     all_tms = _parseAllTMS(dict_capabilities["Contents"]["TileMatrixSet"])
     try:
         all_layers = _parseLayers(dict_capabilities["Contents"]["Layer"], all_tms, key)
     except KeyError:
         return False
+    if "WMTS" not in key_services_layers[key]:
+        return False
+
     general_options = {}
     general_options["apiKeys"] = {}
     general_options["apiKeys"][key] = [layer_id for layer_id in all_layers.keys()]
@@ -22,9 +30,12 @@ def parseWMTS(dict_capabilities, key):
 
 def _parseLayers(layers, all_tms, key):
     if not isinstance(layers, list):
-       layers = [layers]
+        layers = [layers]
     layers_config = {}
+
     for layer in layers:
+        if layer["ows:Identifier"] not in key_services_layers[key]["WMTS"]:
+            continue
         layer_id, layer_config = _parseLayer(layer, all_tms, key)
         layers_config[layer_id] = layer_config
     return layers_config
