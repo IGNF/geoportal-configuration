@@ -21,6 +21,8 @@ def parseWMTS(dict_capabilities, key):
     return wmts_config
 
 def _parseLayers(layers, all_tms, key):
+    if not isinstance(layers, list):
+       layers = [layers]
     layers_config = {}
     for layer in layers:
         layer_id, layer_config = _parseLayer(layer, all_tms, key)
@@ -28,6 +30,8 @@ def _parseLayers(layers, all_tms, key):
     return layers_config
 
 def _parseAllTMS(allTms):
+    if not isinstance(allTms, list):
+       allTms = [allTms]
     tile_matrix_sets = {}
     for tms in allTms:
         tms_id, tms_config = _parseTMS(tms)
