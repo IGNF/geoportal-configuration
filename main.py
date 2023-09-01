@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     config_name = keys[0]
     if len(keys) > 1:
-        config_name = "full"
+        config_name = "custom"
 
     with open("dist/{}Config.json".format(config_name), "w", encoding="utf-8") as file:
         file.writelines(main(keys))
