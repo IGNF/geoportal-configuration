@@ -15,7 +15,7 @@ def parseWMTS(dict_capabilities, key):
         all_layers = _parseLayers(dict_capabilities["Contents"]["Layer"], all_tms, key)
     except KeyError:
         return False
-    if "WMTS" not in key_services_layers[key]:
+    if key != "full" and "WMTS" not in key_services_layers[key]:
         return False
 
     general_options = {}
@@ -34,7 +34,7 @@ def _parseLayers(layers, all_tms, key):
     layers_config = {}
 
     for layer in layers:
-        if layer["ows:Identifier"] not in key_services_layers[key]["WMTS"]:
+        if key != "full" and layer["ows:Identifier"] not in key_services_layers[key]["WMTS"]:
             continue
         layer_id, layer_config = _parseLayer(layer, all_tms, key)
         layers_config[layer_id] = layer_config

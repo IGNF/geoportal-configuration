@@ -11,7 +11,7 @@ def parseWMS(dict_capabilities, key):
             dict_capabilities["Layer"]["Layer"] = [dict_capabilities["Layer"]["Layer"]]
     except KeyError:
         return False
-    if "WMS" not in key_services_layers[key]:
+    if key != "full" and "WMS" not in key_services_layers[key]:
         return False
 
     server_url = dict_capabilities["Request"]["GetMap"]["DCPType"]["HTTP"]["Get"]["OnlineResource"]["@xlink:href"]
@@ -28,7 +28,7 @@ def parseWMS(dict_capabilities, key):
 def _parseLayers(layers, key, server_url, formats):
     layers_config = {}
     for layer in layers:
-        if layer["Name"] not in key_services_layers[key]["WMS"]:
+        if key != "full" and layer["Name"] not in key_services_layers[key]["WMS"]:
             continue
         layer_id, layer_config = _parseLayer(layer, key, server_url, formats)
         layers_config[layer_id] = layer_config
