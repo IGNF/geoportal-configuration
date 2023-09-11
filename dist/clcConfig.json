@@ -1,10 +1,964 @@
 {
   "generalOptions": {
     "apiKeys": {
-      "clc": []
+      "clc": [
+        "LANDCOVER.GRID.CLC00R_FR$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.GRID.CLC00_FR$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.GRID.CLC06R_FR$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.GRID.CLC90_FR$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.GRID.CLC00R_FR$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.GRID.CLC00_FR$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.GRID.CLC06R_FR$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.GRID.CLC90_FR$GEOPORTAIL:OGC:WMS"
+      ]
     }
   },
-  "layers": {},
+  "layers": {
+    "LANDCOVER.GRID.CLC00R_FR$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.GRID.CLC00R_FR",
+      "title": "Raster CORINE Land Cover - 2000 révisée",
+      "description": "Raster au pas de 25m de l'inventaire biophysique de l'occupation des sols en 2000 en 44 postes pour la Métropole. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et de l'aménagement de l'espace. La base de données CORINE Land Cover 2000 révisée, dite CLC 2000 révisée, est une correction de CLC 2000 réalisée à partir d'images satellitaires de l'année 2000 et de données d'appui.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.68494,
+          "right": 10.8556,
+          "top": 51.1827,
+          "bottom": 41.1779
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://wmts.geopf.fr/rok4/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "383",
+            "minTileCol": "495",
+            "maxTileCol": "542"
+          },
+          "11": {
+            "minTileRow": "683",
+            "maxTileRow": "766",
+            "minTileCol": "991",
+            "maxTileCol": "1085"
+          },
+          "12": {
+            "minTileRow": "1367",
+            "maxTileRow": "1533",
+            "minTileCol": "1983",
+            "maxTileCol": "2171"
+          },
+          "13": {
+            "minTileRow": "2735",
+            "maxTileRow": "3066",
+            "minTileCol": "3966",
+            "maxTileCol": "4343"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "",
+          "url": "",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC00_FR$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.GRID.CLC00_FR",
+      "title": "Raster CORINE Land Cover - France métropolitaine - 2000",
+      "description": "Inventaire biophysique de l'occupation des sols en 2000 en 44 postes. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base de données CORINE Land Cover 2000, dite CLC 2000, a été réalisée à partir d'images satellitaires de l'année 2000 et de données d'appui.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.68494,
+          "right": 10.8556,
+          "top": 51.1827,
+          "bottom": 41.1779
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://wmts.geopf.fr/rok4/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "383",
+            "minTileCol": "495",
+            "maxTileCol": "542"
+          },
+          "11": {
+            "minTileRow": "683",
+            "maxTileRow": "766",
+            "minTileCol": "991",
+            "maxTileCol": "1085"
+          },
+          "12": {
+            "minTileRow": "1367",
+            "maxTileRow": "1533",
+            "minTileCol": "1983",
+            "maxTileCol": "2171"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "",
+          "url": "",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC06R_FR$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.GRID.CLC06R_FR",
+      "title": "Raster CORINE Land Cover - France métropolitaine - 2006 révisée",
+      "description": "Inventaire biophysique de l'occupation des sols en 2006 en 44 postes pour la métropole . CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base de données CORINE Land Cover 2006 révisée, dite CLC 2006 révisée, est une correction de CLC 2006 réalisée à partir d'images satellitaires de l'année 2006 pour la métropole, d'images satellitaires prises entre 2005 et 2008 pour les DOM et de données d'appui.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.91689,
+          "right": 11.0883,
+          "top": 51.2963,
+          "bottom": 41.0278
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://wmts.geopf.fr/rok4/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "383",
+            "minTileCol": "495",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "767",
+            "minTileCol": "990",
+            "maxTileCol": "1087"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "1535",
+            "minTileCol": "1980",
+            "maxTileCol": "2174"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "",
+          "url": "",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.GRID.CLC06_FR",
+      "title": "Raster CORINE Land Cover - France métropolitaine - 2006",
+      "description": "Raster au pas de 25m de l'inventaire biophysique de l'occupation des sols en 2006 en 44 postes. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de l'observation et des statistiques du ministère chargé de l'environnement. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base de données CORINE Land Cover 2006, dite CLC 2006, a été réalisée à partir de CLC 2000 révisée et de la base des changements 2000-2006.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.68494,
+          "right": 10.8556,
+          "top": 51.1827,
+          "bottom": 41.1779
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://wmts.geopf.fr/rok4/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "383",
+            "minTileCol": "495",
+            "maxTileCol": "542"
+          },
+          "11": {
+            "minTileRow": "683",
+            "maxTileRow": "766",
+            "minTileCol": "991",
+            "maxTileCol": "1085"
+          },
+          "12": {
+            "minTileRow": "1367",
+            "maxTileRow": "1533",
+            "minTileCol": "1983",
+            "maxTileCol": "2171"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "",
+          "url": "",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC90_FR$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.GRID.CLC90_FR",
+      "title": "Raster CORINE Land Cover - 1990",
+      "description": "Raster au pas de 25m de l'inventaire biophysique de l'occupation des sols en 1990 en 44 postes pour la Métropole. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et de l'aménagement de l'espace. La base de données CORINE Land Cover 1990, dite CLC 1990, a été réalisée à partir d'images satellitaires de l'année 1990 et de données d'appui.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.68494,
+          "right": 10.8556,
+          "top": 51.1827,
+          "bottom": 41.1779
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://wmts.geopf.fr/rok4/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "383",
+            "minTileCol": "495",
+            "maxTileCol": "542"
+          },
+          "11": {
+            "minTileRow": "683",
+            "maxTileRow": "766",
+            "minTileCol": "991",
+            "maxTileCol": "1085"
+          },
+          "12": {
+            "minTileRow": "1367",
+            "maxTileRow": "1533",
+            "minTileCol": "1983",
+            "maxTileCol": "2171"
+          },
+          "13": {
+            "minTileRow": "2735",
+            "maxTileRow": "3066",
+            "minTileCol": "3966",
+            "maxTileCol": "4343"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "",
+          "url": "",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC00R_FR$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.GRID.CLC00R_FR",
+      "title": "Raster CORINE Land Cover - 2000 révisée",
+      "description": "Raster au pas de 25m de l'inventaire biophysique de l'occupation des sols en 2000 en 44 postes pour la Métropole. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et de l'aménagement de l'espace. La base de données CORINE Land Cover 2000 révisée, dite CLC 2000 révisée, est une correction de CLC 2000 réalisée à partir d'images satellitaires de l'année 2000 et de données d'appui.",
+      "globalConstraint": {
+        "minScaleDenominator": 68247.346683193,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -5.68493611,
+          "right": 10.85558692,
+          "top": 51.18267863,
+          "bottom": 41.17789137
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC00_FR$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.GRID.CLC00_FR",
+      "title": "Raster CORINE Land Cover - France métropolitaine - 2000",
+      "description": "Inventaire biophysique de l'occupation des sols en 2000 en 44 postes. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base de données CORINE Land Cover 2000, dite CLC 2000, a été réalisée à partir d'images satellitaires de l'année 2000 et de données d'appui.",
+      "globalConstraint": {
+        "minScaleDenominator": 136494.693366386,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -5.68493611,
+          "right": 10.85558692,
+          "top": 51.18267863,
+          "bottom": 41.17789137
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC06R_FR$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.GRID.CLC06R_FR",
+      "title": "Raster CORINE Land Cover - France métropolitaine - 2006 révisée",
+      "description": "Inventaire biophysique de l'occupation des sols en 2006 en 44 postes pour la métropole . CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base de données CORINE Land Cover 2006 révisée, dite CLC 2006 révisée, est une correction de CLC 2006 réalisée à partir d'images satellitaires de l'année 2006 pour la métropole, d'images satellitaires prises entre 2005 et 2008 pour les DOM et de données d'appui.",
+      "globalConstraint": {
+        "minScaleDenominator": 136494.693366386,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -5.91689423,
+          "right": 11.08828284,
+          "top": 51.29629244,
+          "bottom": 41.02775268
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.GRID.CLC06_FR",
+      "title": "Raster CORINE Land Cover - France métropolitaine - 2006",
+      "description": "Raster au pas de 25m de l'inventaire biophysique de l'occupation des sols en 2006 en 44 postes. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de l'observation et des statistiques du ministère chargé de l'environnement. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base de données CORINE Land Cover 2006, dite CLC 2006, a été réalisée à partir de CLC 2000 révisée et de la base des changements 2000-2006.",
+      "globalConstraint": {
+        "minScaleDenominator": 136494.693366386,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -5.68493611,
+          "right": 10.85558692,
+          "top": 51.18267863,
+          "bottom": 41.17789137
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC90_FR$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.GRID.CLC90_FR",
+      "title": "Raster CORINE Land Cover - 1990",
+      "description": "Raster au pas de 25m de l'inventaire biophysique de l'occupation des sols en 1990 en 44 postes pour la Métropole. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et de l'aménagement de l'espace. La base de données CORINE Land Cover 1990, dite CLC 1990, a été réalisée à partir d'images satellitaires de l'année 1990 et de données d'appui.",
+      "globalConstraint": {
+        "minScaleDenominator": 68247.346683193,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -5.68493611,
+          "right": 10.85558692,
+          "top": 51.18267863,
+          "bottom": 41.17789137
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    }
+  },
   "tileMatrixSets": {
     "PM": {
       "projection": "EPSG:3857",
@@ -295,6 +1249,273 @@
           "topLeftCorner": {
             "x": -20037508.3427892,
             "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "WGS84G": {
+      "projection": "IGNF:WGS84G",
+      "nativeResolutions": [
+        "0.703125",
+        "0.3515625",
+        "0.17578125",
+        "0.087890625",
+        "0.0439453125",
+        "0.02197265625",
+        "0.010986328125",
+        "0.0054931640625",
+        "0.00274658203125",
+        "0.001373291015625",
+        "0.0006866455078125",
+        "0.00034332275390625",
+        "0.000171661376953125",
+        "0.0000858306884765625",
+        "0.00004291534423828125",
+        "0.000021457672119140625",
+        "0.0000107288360595703125",
+        "0.00000536441802978515625",
+        "0.000002682209014892578125",
+        "0.0000013411045074462890625"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 2,
+          "scaleDenominator": 279541132.0143589,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 2,
+          "matrixWidth": 4,
+          "scaleDenominator": 139770566.00717944,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 4,
+          "matrixWidth": 8,
+          "scaleDenominator": 69885283.00358972,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 8,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655447,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277234,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638617,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319309,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.67334159654,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.836670798253,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399127,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699563,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497853,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 524288,
+          "scaleDenominator": 1066.3647919248926,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 524288,
+          "matrixWidth": 1048576,
+          "scaleDenominator": 533.1823959624463,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
           }
         }
       }
