@@ -2,6 +2,8 @@ name: refresh config_files (gpf)
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "05 12 * * *"
   
 permissions: write-all
 
