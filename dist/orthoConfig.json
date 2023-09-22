@@ -4,6 +4,7 @@
       "ortho": [
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
       ]
@@ -91,6 +92,65 @@
         }
       },
       "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES",
+      "title": "Orthophotographies PCRS TPM traitement ombre",
+      "description": "Orthophotographies très haute résolution avec traitements sur les ombres sur la communauté d'agglomérations de Toulon Provence Méditerrannée. Diffusion limitée.",
+      "globalConstraint": {
+        "minScaleDenominator": 178.571428571,
+        "maxScaleDenominator": 365714.285714286,
+        "bbox": {
+          "left": 5.74438674,
+          "right": 6.53880506,
+          "top": 43.24739454,
+          "bottom": 42.96042963
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
       "queryable": false,
       "metadata": [],
       "styles": [
