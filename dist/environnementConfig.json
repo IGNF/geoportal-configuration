@@ -8,6 +8,7 @@
         "PROTECTEDAREAS.BIOS$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.GP$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.MNHN.RN.PERIMETER$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.PNM$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.PNR$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.RAMSAR$GEOPORTAIL:OGC:WMTS",
@@ -29,6 +30,7 @@
         "PROTECTEDAREAS.MNHN.RN.PERIMETER$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.PNM$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.PNR$GEOPORTAIL:OGC:WMS",
+        "PROTECTEDAREAS.RB$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.RIPN$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.RN$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.RNCF$GEOPORTAIL:OGC:WMS",
@@ -666,6 +668,157 @@
       "wmtsOptions": {
         "tileMatrixSetLink": "PM",
         "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "43",
+            "minTileCol": "20",
+            "maxTileCol": "46"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "86",
+            "minTileCol": "41",
+            "maxTileCol": "93"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "173",
+            "minTileCol": "82",
+            "maxTileCol": "186"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "346",
+            "minTileCol": "165",
+            "maxTileCol": "373"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "693",
+            "minTileCol": "331",
+            "maxTileCol": "747"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1386",
+            "minTileCol": "663",
+            "maxTileCol": "1494"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2773",
+            "minTileCol": "1326",
+            "maxTileCol": "2988"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "5547",
+            "minTileCol": "2653",
+            "maxTileCol": "5976"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "11094",
+            "minTileCol": "5307",
+            "maxTileCol": "11953"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "22189",
+            "minTileCol": "10615",
+            "maxTileCol": "23906"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "44378",
+            "minTileCol": "21231",
+            "maxTileCol": "47813"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "",
+          "url": "",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "PROTECTEDAREAS.MNHN.RN.PERIMETER$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.MNHN.RN.PERIMETER",
+      "title": "périmètres de protection de réserves naturelles",
+      "description": "Un périmètre de protection peut être institué en périphérie d’une réserve naturelle. Il concerne des espaces qui n’ont pas été classés en réserve et qui constituent une zone « tampon » autour de l’espace classé. Ils améliorent les échanges écologiques entre la réserve et sa périphérie. 04-2023",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 82.645,
+          "top": 51.3121,
+          "bottom": -53.6279
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "5",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "10",
+            "minTileCol": "5",
+            "maxTileCol": "11"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "21",
+            "minTileCol": "10",
+            "maxTileCol": "23"
+          },
           "6": {
             "minTileRow": "21",
             "maxTileRow": "43",
@@ -3187,6 +3340,129 @@
         }
       ]
     },
+    "PROTECTEDAREAS.RB$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.RB",
+      "title": "Réserves Biologiques",
+      "description": "Réserves Biologiques",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.51809317,
+          "right": 55.80534186,
+          "top": 50.76219068,
+          "bottom": -21.37682085
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.RB",
+          "title": "PROTECTEDAREAS.RB style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.RB"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "PROTECTEDAREAS.RIPN$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.RIPN",
       "title": "Réserves Intégrales de Parcs Nationaux",
@@ -4938,129 +5214,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.PRSF"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.RB$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.RB",
-      "title": "Réserves Biologiques",
-      "description": "Réserves Biologiques",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.51809317,
-          "right": 55.80534186,
-          "top": 50.76219068,
-          "bottom": -21.37682085
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.RB",
-          "title": "PROTECTEDAREAS.RB style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.RB"
         }
       ],
       "formats": [
