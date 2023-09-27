@@ -88,6 +88,7 @@
         "ZARZELLI__vecteur_tms_py$GEOPORTAIL:OGC:WMTS",
         "alain.maria__vecteur_tms_py$GEOPORTAIL:OGC:WMTS",
         "d029_1_brest_2021$GEOPORTAIL:OGC:WMTS",
+        "ludi_site_2275_4_5__Flux_vecteur_wmts_py$GEOPORTAIL:OGC:WMTS",
         "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMS",
         "EL.GridCoverage$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
@@ -11604,6 +11605,54 @@
             "maxTileRow": "181564",
             "minTileCol": "255338",
             "maxTileCol": "255884"
+          }
+        }
+      },
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "application/x-protobuf",
+          "current": true
+        }
+      ]
+    },
+    "ludi_site_2275_4_5__Flux_vecteur_wmts_py$GEOPORTAIL:OGC:WMTS": {
+      "name": "ludi_site_2275_4_5__Flux_vecteur_wmts_py",
+      "title": "Couche Site du tutoriel - WMTS - pyramide - ludi_site_2275_4_5",
+      "description": "Exemple de flux à visualiser",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.0864,
+          "right": 140.009,
+          "top": 51.8102,
+          "bottom": -66.6879
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "12",
+            "minTileCol": "5",
+            "maxTileCol": "14"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "24",
+            "minTileCol": "10",
+            "maxTileCol": "28"
           }
         }
       },
