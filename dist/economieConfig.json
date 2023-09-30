@@ -46,6 +46,27 @@
         "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.POPULATION$GEOPORTAIL:OGC:WMS",
+        "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.INDIVIDUS.25.39.ANS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.APRES.1990.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.COLLECTIFS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1945.1970.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1970.1990.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.MAISON.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.POPULATION$GEOPORTAIL:OGC:WMS"
       ]
     }
@@ -2831,56 +2852,66 @@
     },
     "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMS": {
       "name": "DREAL.ZONAGE_PINEL",
-      "title": "Zonage du dispositif Pinel en Bretagne 2020-2021",
-      "description": "La réduction d'impôt « Pinel » (code général des impôts) s'applique à l’investissement locatif réalisé dans les zones où la tension entre l'offre et la demande de logements est la plus forte. La loi n°2019-1479 du 28 décembre 2019 de finances pour 2020, prévoit à titre expérimental, un dispositif dérogatoire au droit commun pour la Bretagne. Ainsi, les communes ou parties de communes éligibles à la réduction d'impôt « Pinel » sont fixées par arrêté du préfet de région. Cet arrêté est pris après avis du président du conseil régional et du comité régional de l'habitat et de l'hébergement. Cet article prévoit également que le préfet de région fixe, par arrêté, les plafonds de loyer et de ressources du locataire pour chaque commune ou partie de commune éligible et par type de logement. L’une des particularités de cette expérimentation réside dans l’éligibilité du dispositif qui peut être limitée à une partie seulement du territoire communal. Lorsqu’une commune n’est éligible que pour une partie de son territoire, deux approches sont distinguées, à savoir à la maille de l’IRIS (correspondant à un quartier) ou à la maille du carreau de 200 mètres sur 200 mètres.",
+      "title": "DREAL.ZONAGE_PINEL",
+      "description": "Layer-Group type layer: DREAL.ZONAGE_PINEL",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -5.150115786,
-          "right": -1.006871864,
-          "top": 48.906431184,
-          "bottom": 47.271904389
+          "left": -180.00000000000003,
+          "right": 180.00000000000003,
+          "top": 85.0,
+          "bottom": -85.0
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=DREAL_zonage-PINEL.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -2888,67 +2919,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET",
-      "title": "Surface moyenne des logements (secret signalé)",
-      "description": "Surface moyenne des logements (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -2956,67 +3037,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET",
-      "title": "Niveau de vie winsorisé des individus (secret signalé)",
-      "description": "Niveau de vie des individus, retraité des valeurs extrêmes (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.NIVEAU.DE.VIE-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3024,67 +3155,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET",
-      "title": "% des 0-17 ans (secret signalé)",
-      "description": "Nombre d’individus âgés de 0 à 17 ans dans la population (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3092,67 +3273,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET",
-      "title": "% familles monoparentales (secret signalé)",
-      "description": "Part des familles monoparentales (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3160,67 +3391,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.INDIVIDUS.25.39.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.INDIVIDUS.25.39.ANS.SECRET",
-      "title": "% des 25-39 ans (secret signalé)",
-      "description": "Nombre d’individus âgés de 25 à 39 ans dans la population (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.INDIVIDUS.25.39.ANS.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.INDIVIDUS.25.39.ANS.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.INDIVIDUS.25.39.ANS-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3228,67 +3509,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS.SECRET",
-      "title": "% des 40-54 ans (secret signalé)",
-      "description": "Nombre d’individus âgés de 40 à 54 ans dans la population (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3296,67 +3627,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET",
-      "title": "% des 55-64 ans (secret signalé)",
-      "description": "Nombre d’individus âgés de 55 à 64 ans dans la population (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3364,67 +3745,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.LOGEMENTS.APRES.1990.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.LOGEMENTS.APRES.1990.SECRET",
-      "title": "% de logements construits après 1990 (secret signalé)",
-      "description": "Part des logements construits après 1990 (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.LOGEMENTS.APRES.1990.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.LOGEMENTS.APRES.1990.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.LOGEMENTS.APRES.1990-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3432,67 +3863,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET",
-      "title": "% de logements construits avant 1945 (secret signalé)",
-      "description": "Part des logements construits avant 1945 (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3500,67 +3981,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.LOGEMENTS.COLLECTIFS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.LOGEMENTS.COLLECTIFS.SECRET",
-      "title": "% de logements collectifs (secret signalé)",
-      "description": "Part des ménages habitant en logement collectif (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.LOGEMENTS.COLLECTIFS.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.LOGEMENTS.COLLECTIFS.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.LOGEMENTS.COLLECTIFS-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3568,67 +4099,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1945.1970.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1945.1970.SECRET",
-      "title": "% de logements construits entre 1945 et 1970 (secret signalé)",
-      "description": "Part des logements construits entre 1945 et 1970 (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1945.1970.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1945.1970.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1945.1970-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3636,67 +4217,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1970.1990.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1970.1990.SECRET",
-      "title": "% de logements construits entre 1970 et 1990 (secret signalé)",
-      "description": "Part des logements construits entre 1970 et 1990 (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1970.1990.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1970.1990.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1970.1990-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3704,67 +4335,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET",
-      "title": "% de logements sociaux (secret signalé)",
-      "description": "Nombre de ménages habitant en logement social – voir définition- (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3772,67 +4453,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET",
-      "title": "% ménages de 1 personne (secret signalé)",
-      "description": "Part des ménages de 1 personne (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3840,67 +4571,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS.SECRET",
-      "title": "% ménages de 5 personnes ou + (secret signalé)",
-      "description": "Part des ménages de 5 personnes ou plus (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3908,67 +4689,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.MENAGES.MAISON.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.MENAGES.MAISON.SECRET",
-      "title": "% ménages en maison (secret signalé)",
-      "description": "Part des ménages vivant en maison (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.MENAGES.MAISON.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.MENAGES.MAISON.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.MENAGES.MAISON-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3976,67 +4807,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET",
-      "title": "% ménages pauvres (secret signalé)",
-      "description": "Part des ménages pauvres (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.MENAGES.PAUVRES-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -4044,67 +4925,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET",
-      "title": "% ménages propriétaires (secret signalé)",
-      "description": "Part des ménages propriétaires (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -4112,67 +5043,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET",
-      "title": "% des plus de 65 ans (secret signalé)",
-      "description": "Nombre d’individus âgés de plus de 65 ans dans la population (les cases hachurées correspondent aux données secrétisées)",
+      "title": "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSSE.FILOSOFI.PART.PLUS.65.ANS-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -4180,67 +5161,117 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
     },
     "INSEE.FILOSOFI.POPULATION$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.POPULATION",
-      "title": "Densité de population",
-      "description": "Nombre d'individus par km²",
+      "title": "INSEE.FILOSOFI.POPULATION",
+      "description": "Layer-Group type layer: INSEE.FILOSOFI.POPULATION",
       "globalConstraint": {
-        "minScaleDenominator": 267.857142857,
-        "maxScaleDenominator": 559082264.2857143,
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 20000000.0,
         "bbox": {
-          "left": -63.372521503,
-          "right": 55.925864577,
-          "top": 51.312119281,
-          "bottom": -21.475586668
+          "left": -61.234552548936,
+          "right": 55.8346466624651,
+          "top": 51.0879076788291,
+          "bottom": -21.3908646229094
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "economie": "https://wxs.ign.fr/economie/geoportail/r/wms?"
+          "economie": "https://wxs.ign.fr/economie/geoportail/v/wms?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
-          "format": "xml",
+          "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=CARROYAGE_INSEE.xml"
         }
       ],
-      "styles": [
-        {
-          "name": "INSEE",
-          "title": "INSEE"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://wxs.ign.fr/static/legends/INSEE.FILOSOFI.POPULATION-tot-legend-2017.png"
-        }
-      ],
+      "styles": [],
+      "legends": [],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -4248,11 +5279,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
           "current": false
         },
         {
-          "name": "text/asc",
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
