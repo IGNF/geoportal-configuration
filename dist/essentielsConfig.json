@@ -2,6 +2,8 @@
   "generalOptions": {
     "apiKeys": {
       "essentiels": [
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
+        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
@@ -9,6 +11,132 @@
     }
   },
   "layers": {
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
+      "title": "PCI vecteur",
+      "description": "Plan cadastral informatisé vecteur de la DGFIP.",
+      "globalConstraint": {
+        "minScaleDenominator": 1066.364791925,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "PCI vecteur",
+          "title": "PCI vecteur"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        },
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS": {
+      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
+      "title": "Limites administratives mises à jour en continu.",
+      "description": "Limites administratives mises à jour en continu, édition Juillet 2023",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
       "title": "Graphe de mosaïquage France Entière de la BDORTHO.",

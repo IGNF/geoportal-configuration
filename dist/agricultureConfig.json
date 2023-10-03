@@ -3,6 +3,7 @@
     "apiKeys": {
       "agriculture": [
         "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMTS",
+        "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMS",
         "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS"
       ]
@@ -157,6 +158,65 @@
         {
           "name": "image/png",
           "current": true
+        }
+      ]
+    },
+    "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS": {
+      "name": "HYDROGRAPHY.BCAE.LATEST",
+      "title": "Cours d'eau BCAE dernière édition",
+      "description": "Le code rural et de la pêche maritime prévoit que les agriculteurs qui demandent des aides de la PAC implantent des bandes enherbées le long de certains cours d'eau au titre des bonnes conditions agricoles et environnementales. Cette carte est en vigueur du 1er janvier 2023 au 31 décembre 2023. Pour les départements non métropolitains, veuillez-vous référer aux arrêtés préfectoraux relatifs aux BCAE.",
+      "globalConstraint": {
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -5.15047272,
+          "right": 9.57054324,
+          "top": 51.09905418,
+          "bottom": 41.32520964
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
         }
       ]
     },

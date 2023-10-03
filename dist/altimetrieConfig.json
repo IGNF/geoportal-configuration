@@ -19,6 +19,7 @@
         "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_MTQ_WGS84UTM20_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_MYT_RGM04UTM38S_WMS$GEOPORTAIL:OGC:WMS",
+        "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
@@ -1611,6 +1612,81 @@
         }
       },
       "defaultProjection": "IGNF:RGM04UTM38S",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
+        },
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        },
+        {
+          "format": null,
+          "url": ""
+        },
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS$GEOPORTAIL:OGC:WMS": {
+      "name": "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS",
+      "title": "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS",
+      "description": "Modèle Numérique de la Réunion",
+      "globalConstraint": {
+        "minScaleDenominator": 3571.428571429,
+        "maxScaleDenominator": 3571428.571428571,
+        "bbox": {
+          "left": 55.19611097,
+          "right": 55.84656421,
+          "top": -20.84465769,
+          "bottom": -21.40125857
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:RGR92UTM40S",
       "queryable": false,
       "metadata": [],
       "styles": [

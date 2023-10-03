@@ -2,6 +2,7 @@
   "generalOptions": {
     "apiKeys": {
       "parcellaire": [
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMS",
         "PCI$GEOPORTAIL:GPP:TMS"
@@ -9,6 +10,73 @@
     }
   },
   "layers": {
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
+      "title": "PCI vecteur",
+      "description": "Plan cadastral informatisé vecteur de la DGFIP.",
+      "globalConstraint": {
+        "minScaleDenominator": 1066.364791925,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "PCI vecteur",
+          "title": "PCI vecteur"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        },
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS": {
       "name": "CADASTRALPARCELS.GRAPHE",
       "title": "Graphe de mosaïquage des parcelles cadastrales",
