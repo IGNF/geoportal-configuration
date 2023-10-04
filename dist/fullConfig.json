@@ -95,6 +95,7 @@
         "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST_VISU$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMTS",
         "d029_1_brest_2021$GEOPORTAIL:OGC:WMTS",
+        "ludi_site_2275_4_5_option__Flux_vecteur_wmts_py$GEOPORTAIL:OGC:WMTS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
         "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMS",
         "EL.GridCoverage$GEOPORTAIL:OGC:WMS",
@@ -239,6 +240,10 @@
         "ADMINEXPRESS_COG_CARTO_BDD_WLD_WM_20190924$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS_COG_CARTO_BDD_WLD_WM_30-04-2022$GEOPORTAIL:OGC:WMS",
         "ADMINISTRATIVEUNITS.BOUNDARIES.EXPRESS$GEOPORTAIL:OGC:WMS",
+        "AccessFor_accessibilite_porteur$GEOPORTAIL:OGC:WMS",
+        "AccessFor_accessibilite_skidder_restrictif$GEOPORTAIL:OGC:WMS",
+        "AccessFor_desserte$GEOPORTAIL:OGC:WMS",
+        "AccessFor_skidder_restrictif_v2$GEOPORTAIL:OGC:WMS",
         "BAN.DATA.GOUV$GEOPORTAIL:OGC:WMS",
         "BDADRESSE-POINTADRESSE_BDD_FXX_RGF93G$GEOPORTAIL:OGC:WMS",
         "BDADRESSE-POINTADRESSE_BDD_FXX_RGF93G_WMS_20190205$GEOPORTAIL:OGC:WMS",
@@ -885,7 +890,6 @@
         "monument_naturel_site_prod$GEOPORTAIL:OGC:WMS",
         "morvan_accessibilite_porteur$GEOPORTAIL:OGC:WMS",
         "morvan_accessibilite_skidder$GEOPORTAIL:OGC:WMS",
-        "morvan_accessibilite_skidder_restrictif$GEOPORTAIL:OGC:WMS",
         "morvan_desserte$GEOPORTAIL:OGC:WMS",
         "municipality_prod$GEOPORTAIL:OGC:WMS",
         "navigation_maritime_previsu$GEOPORTAIL:OGC:WMS",
@@ -1788,8 +1792,8 @@
       },
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence",
+          "name": "hypso",
+          "title": "Teinte Hypsométrique",
           "current": true,
           "url": null
         }
@@ -12633,6 +12637,54 @@
         }
       ]
     },
+    "ludi_site_2275_4_5_option__Flux_vecteur_wmts_py$GEOPORTAIL:OGC:WMTS": {
+      "name": "ludi_site_2275_4_5_option__Flux_vecteur_wmts_py",
+      "title": "Couche Site du tutoriel - WMTS - pyramide - ludi_site_2275_4_5_option",
+      "description": "Exemple de flux à visualiser",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.0864,
+          "right": 140.009,
+          "top": 51.8102,
+          "bottom": -66.6879
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "12",
+            "minTileCol": "5",
+            "maxTileCol": "14"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "24",
+            "minTileCol": "10",
+            "maxTileCol": "28"
+          }
+        }
+      },
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "application/x-protobuf",
+          "current": true
+        }
+      ]
+    },
     "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS": {
       "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
       "title": "PCI vecteur",
@@ -13216,10 +13268,6 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
@@ -13230,6 +13278,10 @@
         {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
@@ -18235,16 +18287,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
@@ -18310,16 +18362,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
@@ -18385,16 +18437,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
@@ -18460,16 +18512,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
@@ -18535,16 +18587,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
@@ -25904,6 +25956,498 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ADMINISTRATIVEUNITS.BOUNDARIES.EXPRESS"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "AccessFor_accessibilite_porteur$GEOPORTAIL:OGC:WMS": {
+      "name": "AccessFor_accessibilite_porteur",
+      "title": "Accessibilite",
+      "description": "Accessibilité en porteur sur l'ensemble des zones du projet AccessFor",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 3.672938872,
+          "right": 6.431484358,
+          "top": 48.10886216,
+          "bottom": 44.314492748
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-AccessFor_accessibilite_porteur",
+          "title": "AccessFor_accessibilite_porteur style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AccessFor_accessibilite_porteur"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "AccessFor_accessibilite_skidder_restrictif$GEOPORTAIL:OGC:WMS": {
+      "name": "AccessFor_accessibilite_skidder_restrictif",
+      "title": "Accessibilite",
+      "description": "Accessibilité en skidder (option plus restrictif) sur l'ensemble des zones du projet AccessFor",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 3.672938872,
+          "right": 6.431484358,
+          "top": 48.10886216,
+          "bottom": 44.314492748
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-AccessFor_accessibilite_skidder_restrictif",
+          "title": "AccessFor_accessibilite_skidder_restrictif style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AccessFor_accessibilite_skidder_restrictif"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "AccessFor_desserte$GEOPORTAIL:OGC:WMS": {
+      "name": "AccessFor_desserte",
+      "title": "Accessibilite",
+      "description": "Desserte classifiée sur l'ensemble des zones du projet AccessFor",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 3.646651846,
+          "right": 6.431537432,
+          "top": 48.127086162,
+          "bottom": 44.296758246
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-AccessFor_desserte",
+          "title": "AccessFor_desserte style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AccessFor_desserte"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "AccessFor_skidder_restrictif_v2$GEOPORTAIL:OGC:WMS": {
+      "name": "AccessFor_skidder_restrictif_v2",
+      "title": "Skidder_restrictif",
+      "description": "Accessibilité en skidder -restrictif- sur l'ensemble des zones du projet AccessFor",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 3.672938872,
+          "right": 6.431484358,
+          "top": 48.10886216,
+          "bottom": 44.314492748
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-AccessFor_skidder_restrictif_v2",
+          "title": "AccessFor_skidder_restrictif_v2 style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AccessFor_skidder_restrictif_v2"
         }
       ],
       "formats": [
@@ -101549,129 +102093,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=morvan_accessibilite_skidder"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "morvan_accessibilite_skidder_restrictif$GEOPORTAIL:OGC:WMS": {
-      "name": "morvan_accessibilite_skidder_restrictif",
-      "title": "Accessibilite",
-      "description": "Accessibilité en skidder restrictif du morvan",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": 3.672990294,
-          "right": 4.381578648,
-          "top": 47.514394588,
-          "bottom": 46.686420777
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-morvan_accessibilite_skidder_restrictif",
-          "title": "morvan_accessibilite_skidder_restrictif style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=morvan_accessibilite_skidder_restrictif"
         }
       ],
       "formats": [
