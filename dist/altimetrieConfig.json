@@ -16,6 +16,7 @@
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_MTQ_WGS84UTM20_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_MYT_RGM04UTM38S_WMS$GEOPORTAIL:OGC:WMS",
@@ -607,13 +608,19 @@
       },
       "styles": [
         {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique",
+          "name": "normal",
+          "title": "Légende générique",
           "current": true,
           "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "",
+          "url": "",
+          "minScaleDenominator": "200"
+        }
+      ],
       "formats": [
         {
           "name": "image/x-bil;bits=32",
@@ -1440,6 +1447,65 @@
         }
       ]
     },
+    "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN",
+      "title": "Carte des pentes",
+      "description": "Carte des zones ayant une valeur de pente supérieure à 30°-35°-40°-45° d'après la BD ALTI au pas de 5m",
+      "globalConstraint": {
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -63.16139681,
+          "right": 56.00181139,
+          "top": 51.09905418,
+          "bottom": -21.54462485
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS$GEOPORTAIL:OGC:WMS": {
       "name": "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS",
       "title": "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS1",
@@ -1541,16 +1607,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique"
-        },
-        {
           "name": "normal",
           "title": "Légende générique"
         },
         {
           "name": "hypso_noalpha",
           "title": "Teintes Hypsométriques Sans Transparence"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
         }
       ],
       "legends": [
@@ -1691,16 +1757,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique"
-        },
-        {
           "name": "normal",
           "title": "Légende générique"
         },
         {
           "name": "hypso_noalpha",
           "title": "Teintes Hypsométriques Sans Transparence"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
         }
       ],
       "legends": [
@@ -1766,16 +1832,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique"
-        },
-        {
           "name": "normal",
           "title": "Légende générique"
         },
         {
           "name": "hypso_noalpha",
           "title": "Teintes Hypsométriques Sans Transparence"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
         }
       ],
       "legends": [

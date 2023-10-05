@@ -7,6 +7,8 @@
         "LANDCOVER.GRID.CLC06R_FR$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC90_FR$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.CHA00_FR$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.CHA06_DOM$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.GRID.CLC00R_FR$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.GRID.CLC00_FR$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.GRID.CLC06R_FR$GEOPORTAIL:OGC:WMS",
@@ -660,6 +662,124 @@
         {
           "name": "image/png",
           "current": true
+        }
+      ]
+    },
+    "LANDCOVER.CHA00_FR$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.CHA00_FR",
+      "title": "CORINE Land Cover - France métropolitaine - Changements 1990-2000",
+      "description": "Inventaire biophysique du changement d'occupation des sols entre 1990 et 2000 suivant la nomenclature CORINE Land Cover en 44 postes. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base des changements CORINE Land Cover 1990-2000, a été réalisée à partir de CLC 1990 et de CLC 2000.",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -9.88146813,
+          "right": 11.67809869,
+          "top": 51.44281758,
+          "bottom": 40.57598982
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - France métropolitaine",
+          "title": "CORINE Land Cover - France métropolitaine"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.CHA06_DOM$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.CHA06_DOM",
+      "title": "CORINE Land Cover - DOM - Changements 2000-2006",
+      "description": "Inventaire biophysique du changement d'occupation des sols entre 2000 et 2006 suivant la nomenclature CORINE Land Cover en 50 postes. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et de l'aménagement de l'espace. La base des changements CORINE Land Cover DOM 2000-2006 a été réalisée à partir d'images satellitaires des périodes 1998-2003 et 2005-2008, et de données d'appui.",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 47.17473707,
+          "bottom": -21.47558667
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - DOM",
+          "title": "CORINE Land Cover - DOM"
+        }
+      ],
+      "legends": [
+        {
+          "format": null,
+          "url": ""
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
         }
       ]
     },
