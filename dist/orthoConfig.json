@@ -3,6 +3,12 @@
     "apiKeys": {
       "ortho": [
         "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022$GEOPORTAIL:OGC:WMTS",
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
         "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMS",
@@ -137,8 +143,908 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO",
+      "title": "Ortho 50 cm",
+      "description": "Le produit BD ORTHO® est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          },
+          "14": {
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
+          },
+          "15": {
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
+          },
+          "16": {
+            "minTileRow": "0",
+            "maxTileRow": "65536",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
+          },
+          "17": {
+            "minTileRow": "0",
+            "maxTileRow": "131072",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
+          },
+          "18": {
+            "minTileRow": "0",
+            "maxTileRow": "262144",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000",
+      "title": "Ortholittorale 2000",
+      "description": "Donnée issue du Référentiel géographique du littoral. Zone de couverture de l'orthophotographie : côte de la mer du Nord, de la Manche et de l'Atlantique.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.21565,
+          "right": 2.60783,
+          "top": 51.1233,
+          "bottom": 43.301
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "32"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "46",
+            "minTileCol": "62",
+            "maxTileCol": "64"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "93",
+            "minTileCol": "124",
+            "maxTileCol": "129"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "187",
+            "minTileCol": "248",
+            "maxTileCol": "259"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "375",
+            "minTileCol": "497",
+            "maxTileCol": "519"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "750",
+            "minTileCol": "994",
+            "maxTileCol": "1038"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1500",
+            "minTileCol": "1988",
+            "maxTileCol": "2077"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3000",
+            "minTileCol": "3977",
+            "maxTileCol": "4155"
+          },
+          "14": {
+            "minTileRow": "5476",
+            "maxTileRow": "6001",
+            "minTileCol": "7954",
+            "maxTileCol": "8310"
+          },
+          "15": {
+            "minTileRow": "10952",
+            "maxTileRow": "12003",
+            "minTileCol": "15909",
+            "maxTileCol": "16621"
+          },
+          "16": {
+            "minTileRow": "21904",
+            "maxTileRow": "24006",
+            "minTileCol": "31818",
+            "maxTileCol": "33242"
+          },
+          "17": {
+            "minTileRow": "43808",
+            "maxTileRow": "48012",
+            "minTileCol": "63637",
+            "maxTileCol": "66485"
+          },
+          "18": {
+            "minTileRow": "87617",
+            "maxTileRow": "96024",
+            "minTileCol": "127274",
+            "maxTileCol": "132970"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD",
+      "title": "Données ortho-réctifiées antérieures au passage d'Irma",
+      "description": "Ce flux regroupe des données ortho-rectifiées issues des prises de vue aériennes de Saint Martin (2017) et Saint Barthélémy (2016).",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1986,
+          "right": -62.7828,
+          "top": 18.1701,
+          "bottom": 17.8626
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "1"
+          },
+          "3": {
+            "minTileRow": "3",
+            "maxTileRow": "3",
+            "minTileCol": "2",
+            "maxTileCol": "2"
+          },
+          "4": {
+            "minTileRow": "7",
+            "maxTileRow": "7",
+            "minTileCol": "5",
+            "maxTileCol": "5"
+          },
+          "5": {
+            "minTileRow": "14",
+            "maxTileRow": "14",
+            "minTileCol": "10",
+            "maxTileCol": "10"
+          },
+          "6": {
+            "minTileRow": "28",
+            "maxTileRow": "28",
+            "minTileCol": "20",
+            "maxTileCol": "20"
+          },
+          "7": {
+            "minTileRow": "57",
+            "maxTileRow": "57",
+            "minTileCol": "41",
+            "maxTileCol": "41"
+          },
+          "8": {
+            "minTileRow": "114",
+            "maxTileRow": "115",
+            "minTileCol": "83",
+            "maxTileCol": "83"
+          },
+          "9": {
+            "minTileRow": "229",
+            "maxTileRow": "230",
+            "minTileCol": "166",
+            "maxTileCol": "166"
+          },
+          "10": {
+            "minTileRow": "459",
+            "maxTileRow": "460",
+            "minTileCol": "332",
+            "maxTileCol": "333"
+          },
+          "11": {
+            "minTileRow": "918",
+            "maxTileRow": "920",
+            "minTileCol": "664",
+            "maxTileCol": "666"
+          },
+          "12": {
+            "minTileRow": "1837",
+            "maxTileRow": "1841",
+            "minTileCol": "1328",
+            "maxTileCol": "1333"
+          },
+          "13": {
+            "minTileRow": "3675",
+            "maxTileRow": "3682",
+            "minTileCol": "2657",
+            "maxTileCol": "2667"
+          },
+          "14": {
+            "minTileRow": "7350",
+            "maxTileRow": "7365",
+            "minTileCol": "5315",
+            "maxTileCol": "5334"
+          },
+          "15": {
+            "minTileRow": "14701",
+            "maxTileRow": "14731",
+            "minTileCol": "10631",
+            "maxTileCol": "10669"
+          },
+          "16": {
+            "minTileRow": "29403",
+            "maxTileRow": "29462",
+            "minTileCol": "21263",
+            "maxTileCol": "21338"
+          },
+          "17": {
+            "minTileRow": "58806",
+            "maxTileRow": "58924",
+            "minTileCol": "42526",
+            "maxTileCol": "42677"
+          },
+          "18": {
+            "minTileRow": "117613",
+            "maxTileRow": "117848",
+            "minTileCol": "85052",
+            "maxTileCol": "85354"
+          },
+          "19": {
+            "minTileRow": "235226",
+            "maxTileRow": "235697",
+            "minTileCol": "170104",
+            "maxTileCol": "170709"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2022",
+      "title": "ortho-express IRC 2022",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "3",
+            "minTileCol": "0",
+            "maxTileCol": "3"
+          },
+          "3": {
+            "minTileRow": "1",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "7"
+          },
+          "4": {
+            "minTileRow": "2",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "5",
+            "maxTileRow": "26",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "11",
+            "maxTileRow": "52",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "22",
+            "maxTileRow": "105",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "45",
+            "maxTileRow": "210",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "90",
+            "maxTileRow": "421",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "181",
+            "maxTileRow": "842",
+            "minTileCol": "1",
+            "maxTileCol": "1022"
+          },
+          "11": {
+            "minTileRow": "363",
+            "maxTileRow": "1684",
+            "minTileCol": "2",
+            "maxTileCol": "2045"
+          },
+          "12": {
+            "minTileRow": "726",
+            "maxTileRow": "3369",
+            "minTileCol": "5",
+            "maxTileCol": "4090"
+          },
+          "13": {
+            "minTileRow": "1452",
+            "maxTileRow": "6739",
+            "minTileCol": "11",
+            "maxTileCol": "8180"
+          },
+          "14": {
+            "minTileRow": "2904",
+            "maxTileRow": "13479",
+            "minTileCol": "22",
+            "maxTileCol": "16361"
+          },
+          "15": {
+            "minTileRow": "5809",
+            "maxTileRow": "26958",
+            "minTileCol": "45",
+            "maxTileCol": "32722"
+          },
+          "16": {
+            "minTileRow": "11619",
+            "maxTileRow": "53916",
+            "minTileCol": "91",
+            "maxTileCol": "65444"
+          },
+          "17": {
+            "minTileRow": "23238",
+            "maxTileRow": "107833",
+            "minTileCol": "182",
+            "maxTileCol": "130889"
+          },
+          "18": {
+            "minTileRow": "46477",
+            "maxTileRow": "215666",
+            "minTileCol": "364",
+            "maxTileCol": "261779"
+          },
+          "19": {
+            "minTileRow": "92955",
+            "maxTileRow": "431332",
+            "minTileCol": "728",
+            "maxTileCol": "523559"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2022",
+      "title": "ortho-express 2022",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "3",
+            "minTileCol": "0",
+            "maxTileCol": "3"
+          },
+          "3": {
+            "minTileRow": "1",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "7"
+          },
+          "4": {
+            "minTileRow": "2",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "5",
+            "maxTileRow": "26",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "11",
+            "maxTileRow": "52",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "22",
+            "maxTileRow": "105",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "45",
+            "maxTileRow": "210",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "90",
+            "maxTileRow": "421",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "181",
+            "maxTileRow": "842",
+            "minTileCol": "1",
+            "maxTileCol": "1022"
+          },
+          "11": {
+            "minTileRow": "363",
+            "maxTileRow": "1684",
+            "minTileCol": "2",
+            "maxTileCol": "2045"
+          },
+          "12": {
+            "minTileRow": "726",
+            "maxTileRow": "3369",
+            "minTileCol": "5",
+            "maxTileCol": "4090"
+          },
+          "13": {
+            "minTileRow": "1452",
+            "maxTileRow": "6739",
+            "minTileCol": "11",
+            "maxTileCol": "8180"
+          },
+          "14": {
+            "minTileRow": "2904",
+            "maxTileRow": "13479",
+            "minTileCol": "22",
+            "maxTileCol": "16361"
+          },
+          "15": {
+            "minTileRow": "5809",
+            "maxTileRow": "26958",
+            "minTileCol": "45",
+            "maxTileCol": "32722"
+          },
+          "16": {
+            "minTileRow": "11619",
+            "maxTileRow": "53916",
+            "minTileCol": "91",
+            "maxTileCol": "65444"
+          },
+          "17": {
+            "minTileRow": "23238",
+            "maxTileRow": "107833",
+            "minTileCol": "182",
+            "maxTileCol": "130889"
+          },
+          "18": {
+            "minTileRow": "46477",
+            "maxTileRow": "215666",
+            "minTileCol": "364",
+            "maxTileCol": "261779"
+          },
+          "19": {
+            "minTileRow": "92955",
+            "maxTileRow": "431332",
+            "minTileCol": "728",
+            "maxTileCol": "523559"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
+      "name": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes très haute résolution",
+      "description": "Orthophotographies aériennes d'une résolution de 10cm à 5cm selon disponibilité.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 0.0354912,
+          "right": 6.02353,
+          "top": 49.6969,
+          "bottom": 43.1533
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "32",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "43",
+            "maxTileRow": "46",
+            "minTileCol": "64",
+            "maxTileCol": "66"
+          },
+          "8": {
+            "minTileRow": "87",
+            "maxTileRow": "93",
+            "minTileCol": "128",
+            "maxTileCol": "132"
+          },
+          "9": {
+            "minTileRow": "174",
+            "maxTileRow": "187",
+            "minTileCol": "256",
+            "maxTileCol": "264"
+          },
+          "10": {
+            "minTileRow": "348",
+            "maxTileRow": "375",
+            "minTileCol": "512",
+            "maxTileCol": "529"
+          },
+          "11": {
+            "minTileRow": "697",
+            "maxTileRow": "751",
+            "minTileCol": "1024",
+            "maxTileCol": "1058"
+          },
+          "12": {
+            "minTileRow": "1394",
+            "maxTileRow": "1502",
+            "minTileCol": "2048",
+            "maxTileCol": "2116"
+          },
+          "13": {
+            "minTileRow": "2788",
+            "maxTileRow": "3005",
+            "minTileCol": "4096",
+            "maxTileCol": "4233"
+          },
+          "14": {
+            "minTileRow": "5577",
+            "maxTileRow": "6010",
+            "minTileCol": "8193",
+            "maxTileCol": "8466"
+          },
+          "15": {
+            "minTileRow": "11155",
+            "maxTileRow": "12021",
+            "minTileCol": "16387",
+            "maxTileCol": "16932"
+          },
+          "16": {
+            "minTileRow": "22311",
+            "maxTileRow": "24042",
+            "minTileCol": "32774",
+            "maxTileCol": "33864"
+          },
+          "17": {
+            "minTileRow": "44623",
+            "maxTileRow": "48085",
+            "minTileCol": "65548",
+            "maxTileCol": "67729"
+          },
+          "18": {
+            "minTileRow": "89247",
+            "maxTileRow": "96171",
+            "minTileCol": "131097",
+            "maxTileCol": "135458"
+          },
+          "19": {
+            "minTileRow": "178494",
+            "maxTileRow": "192343",
+            "minTileCol": "262195",
+            "maxTileCol": "270916"
+          },
+          "20": {
+            "minTileRow": "356988",
+            "maxTileRow": "384687",
+            "minTileCol": "524391",
+            "maxTileCol": "541832"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
         }
       ],
@@ -181,8 +1087,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -363,8 +1269,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -422,8 +1328,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -481,8 +1387,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -540,8 +1446,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -599,8 +1505,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [

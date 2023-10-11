@@ -2,7 +2,10 @@
   "generalOptions": {
     "apiKeys": {
       "agriculture": [
+        "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC$GEOPORTAIL:OGC:WMTS",
         "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMTS",
+        "LANDUSE.AGRICULTURE2007$GEOPORTAIL:OGC:WMTS",
+        "LANDUSE.AGRICULTURE2009$GEOPORTAIL:OGC:WMTS",
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE2011$GEOPORTAIL:OGC:WMS",
@@ -18,6 +21,151 @@
     }
   },
   "layers": {
+    "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC",
+      "title": "Carte des pentes pour l'agriculture sur la métropole",
+      "description": "Carte des zones ayant une valeur de pente supérieure à 10% - source : RGEALTI 2017 au pas de 5m - disponible jusqu'au 1/17062 - métropole uniquement - mise à jour le 12/10/2017",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1614,
+          "right": 56.0018,
+          "top": 51.0991,
+          "bottom": -21.5446
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "1149",
+            "minTileCol": "664",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "2299",
+            "minTileCol": "1329",
+            "maxTileCol": "2685"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "4598",
+            "minTileCol": "2658",
+            "maxTileCol": "5370"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "9196",
+            "minTileCol": "5317",
+            "maxTileCol": "10740"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "18392",
+            "minTileCol": "10634",
+            "maxTileCol": "21481"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMTS": {
       "name": "LANDUSE.AGRICULTURE.LATEST",
       "title": "Registre parcellaire graphique (RPG) Latest",
@@ -157,8 +305,238 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDUSE.AGRICULTURE2007$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDUSE.AGRICULTURE2007",
+      "title": "Registre parcellaire graphique (RPG) 2007",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2007.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.2635,
+          "right": 56.0237,
+          "top": 51.2203,
+          "bottom": -21.419
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "683",
+            "maxTileRow": "1148",
+            "minTileCol": "664",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1367",
+            "maxTileRow": "2297",
+            "minTileCol": "1328",
+            "maxTileCol": "2685"
+          },
+          "13": {
+            "minTileRow": "2734",
+            "maxTileRow": "4595",
+            "minTileCol": "2656",
+            "maxTileCol": "5370"
+          },
+          "14": {
+            "minTileRow": "5469",
+            "maxTileRow": "9190",
+            "minTileCol": "5312",
+            "maxTileCol": "10741"
+          },
+          "15": {
+            "minTileRow": "10938",
+            "maxTileRow": "18380",
+            "minTileCol": "10625",
+            "maxTileCol": "21483"
+          },
+          "16": {
+            "minTileRow": "21876",
+            "maxTileRow": "36761",
+            "minTileCol": "21251",
+            "maxTileCol": "42966"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDUSE.AGRICULTURE2009$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDUSE.AGRICULTURE2009",
+      "title": "Registre parcellaire graphique (RPG) 2009",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2009.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.2635,
+          "right": 56.0237,
+          "top": 51.2203,
+          "bottom": -21.419
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "683",
+            "maxTileRow": "1148",
+            "minTileCol": "664",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1367",
+            "maxTileRow": "2297",
+            "minTileCol": "1328",
+            "maxTileCol": "2685"
+          },
+          "13": {
+            "minTileRow": "2734",
+            "maxTileRow": "4595",
+            "minTileCol": "2656",
+            "maxTileCol": "5370"
+          },
+          "14": {
+            "minTileRow": "5469",
+            "maxTileRow": "9190",
+            "minTileCol": "5312",
+            "maxTileCol": "10741"
+          },
+          "15": {
+            "minTileRow": "10938",
+            "maxTileRow": "18380",
+            "minTileCol": "10625",
+            "maxTileCol": "21483"
+          },
+          "16": {
+            "minTileRow": "21876",
+            "maxTileRow": "36761",
+            "minTileCol": "21251",
+            "maxTileCol": "42966"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
         }
       ],
@@ -201,8 +579,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -260,8 +638,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -319,8 +697,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -378,8 +756,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -437,8 +815,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -496,8 +874,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -555,8 +933,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -614,8 +992,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -673,8 +1051,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -732,8 +1110,8 @@
       ],
       "legends": [
         {
-          "format": null,
-          "url": ""
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [

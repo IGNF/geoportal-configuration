@@ -11,6 +11,7 @@
         "SECUROUTE.TE.TE120$GEOPORTAIL:OGC:WMTS",
         "SECUROUTE.TE.TE72$GEOPORTAIL:OGC:WMTS",
         "SECUROUTE.TE.TE94$GEOPORTAIL:OGC:WMTS",
+        "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMTS",
         "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.2TE48$GEOPORTAIL:OGC:WMS",
@@ -163,8 +164,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.1TE-legend.png",
           "minScaleDenominator": "8000"
         }
       ],
@@ -284,8 +285,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.2TE48-legend.png",
           "minScaleDenominator": "8000"
         }
       ],
@@ -405,8 +406,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.ALL.GE-legend.png",
           "minScaleDenominator": "500"
         }
       ],
@@ -526,8 +527,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.OA.GE-legend.png",
           "minScaleDenominator": "500"
         }
       ],
@@ -647,8 +648,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.PN.GE-legend.png",
           "minScaleDenominator": "500"
         }
       ],
@@ -768,8 +769,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.PND.GE-legend.png",
           "minScaleDenominator": "500"
         }
       ],
@@ -889,8 +890,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.TE120-legend.png",
           "minScaleDenominator": "8000"
         }
       ],
@@ -1010,8 +1011,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.TE72-legend.png",
           "minScaleDenominator": "8000"
         }
       ],
@@ -1131,9 +1132,82 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.TE94-legend.png",
           "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMTS": {
+      "name": "TRANSPORTNETWORKS.ROADS.DIRECTION",
+      "title": "Sens de circulation",
+      "description": "Affichage des sens de circulation du réseau routier",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          },
+          "17": {
+            "minTileRow": "43698",
+            "maxTileRow": "73544",
+            "minTileCol": "42462",
+            "maxTileCol": "85897"
+          },
+          "18": {
+            "minTileRow": "87397",
+            "maxTileRow": "147089",
+            "minTileCol": "84925",
+            "maxTileCol": "171795"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
         }
       ],
       "formats": [
@@ -1258,8 +1332,8 @@
       ],
       "legends": [
         {
-          "format": "",
-          "url": "",
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
         }
       ],
