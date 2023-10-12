@@ -9,20 +9,26 @@
         "LANDCOVER.SYLVOECOREGIONS$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.SYLVOECOREGIONS.ALLUVIUM$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.BIOS$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.GP$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.MNHN.CDL.PARCELS$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.MNHN.CONSERVATOIRES$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.MNHN.RN.PERIMETER$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.PNM$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.PNR$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.RAMSAR$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.RB$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.RIPN$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.RN$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.RNC$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.RNCF$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.SIC$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.ZNIEFF1$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.ZNIEFF1.SEA$GEOPORTAIL:OGC:WMTS",
+        "PROTECTEDAREAS.ZNIEFF2$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.ZPS$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMTS",
@@ -902,6 +908,121 @@
         }
       ]
     },
+    "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.APG",
+      "title": "Arrêtés de protection de géotope",
+      "description": "Sites d'intérêt géologique faisant l'objet d’une interdiction de destruction, d'altération ou de dégradation du site, ainsi que de prélèvement, de destruction ou de dégradation de fossiles, minéraux et concrétions présents sur ces sites appelés « aires de protection de géotope».",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMTS": {
       "name": "PROTECTEDAREAS.APHN",
       "title": "Arrêtés de protection d’habitats naturels",
@@ -1366,6 +1487,121 @@
       "name": "PROTECTEDAREAS.MNHN.CDL.PARCELS",
       "title": "Conservatoire du littoral - sites sous responsabilité du conservatoire",
       "description": "Les sites du conservatoire du littoral ont pour vocation la sauvegarde des espaces côtiers et lacustres. Leur accès au public est encouragé mais reste défini dans des limites compatibles avec la vulnérabilité de chaque site",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "PROTECTEDAREAS.MNHN.CONSERVATOIRES$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.MNHN.CONSERVATOIRES",
+      "title": "Terrains des conservatoires d'espaces naturels",
+      "description": "Les conservatoires d'espaces naturels organisent la maîtrise foncière de terrains en vue d'assurer la protection des espèces qui y résident. 05-2022",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
@@ -2203,6 +2439,272 @@
         }
       ]
     },
+    "PROTECTEDAREAS.RN$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.RN",
+      "title": "Réserves naturelles nationales",
+      "description": "Les réserves naturelles sont des espaces protégés terrestres ou marins dont le patrimoine naturel est exceptionnel, tant sur le plan de la biodiversité que parfois sur celui de la géodiversité. 04-2023",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 82.645,
+          "top": 51.3121,
+          "bottom": -53.6279
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "5",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "10",
+            "minTileCol": "5",
+            "maxTileCol": "11"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "21",
+            "minTileCol": "10",
+            "maxTileCol": "23"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "43",
+            "minTileCol": "20",
+            "maxTileCol": "46"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "86",
+            "minTileCol": "41",
+            "maxTileCol": "93"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "173",
+            "minTileCol": "82",
+            "maxTileCol": "186"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "346",
+            "minTileCol": "165",
+            "maxTileCol": "373"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "693",
+            "minTileCol": "331",
+            "maxTileCol": "747"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1386",
+            "minTileCol": "663",
+            "maxTileCol": "1494"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2773",
+            "minTileCol": "1326",
+            "maxTileCol": "2988"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "5547",
+            "minTileCol": "2653",
+            "maxTileCol": "5976"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "11094",
+            "minTileCol": "5307",
+            "maxTileCol": "11953"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "22189",
+            "minTileCol": "10615",
+            "maxTileCol": "23906"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "44378",
+            "minTileCol": "21231",
+            "maxTileCol": "47813"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "PROTECTEDAREAS.RNC$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.RNC",
+      "title": "Réserves Naturelles de Corse",
+      "description": "Les réserves naturelles sont des espaces protégés terrestres ou marins dont le patrimoine naturel est exceptionnel, tant sur le plan de la biodiversité que parfois sur celui de la géodiversité. </br><a href=\"http://www.geoportail.gouv.fr/depot/fiches/mnhn/actualite_donnees_mnhn.pdf\" alt=\"Date des données\" target=\"_blank\">Date des données</a>",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "PROTECTEDAREAS.RNCF$GEOPORTAIL:OGC:WMTS": {
       "name": "PROTECTEDAREAS.RNCF",
       "title": "Réserves nationales de chasse et de faune sauvage",
@@ -2433,10 +2935,240 @@
         }
       ]
     },
+    "PROTECTEDAREAS.ZNIEFF1$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.ZNIEFF1",
+      "title": "Zones écologiques de nature remarquable (ZNIEFF1)",
+      "description": "Inventaire des espaces naturels abritant la nature remarquable.09-2022",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "PROTECTEDAREAS.ZNIEFF1.SEA$GEOPORTAIL:OGC:WMTS": {
       "name": "PROTECTEDAREAS.ZNIEFF1.SEA",
       "title": "Zones naturelles d’intérêt écologique faunistique et floristique (ZNIEFF) marine type I",
       "description": "Espaces marin homogènes d’un point de vue écologique abritant au moins une espèce ou un habitat rare ou menacé, d’intérêt local ou régional, national ou communautaire. Espaces marin d’intérêt fonctionnel pour le fonctionnement écologique local.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "PROTECTEDAREAS.ZNIEFF2$GEOPORTAIL:OGC:WMTS": {
+      "name": "PROTECTEDAREAS.ZNIEFF2",
+      "title": "Zones fonctionnelles de nature remarquable (ZNIEFF2)",
+      "description": "Inventaire des espaces fonctionnels indispensables à la nature remarquable.</br><a href=\"http://www.geoportail.gouv.fr/depot/fiches/mnhn/actualite_donnees_mnhn.pdf\" alt=\"Date des données\" target=\"_blank\">Date des données</a>",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
