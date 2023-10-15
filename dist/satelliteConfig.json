@@ -2,9 +2,8 @@
   "generalOptions": {
     "apiKeys": {
       "satellite": [
-        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2013$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015$GEOPORTAIL:OGC:WMTS",
-        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2017$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2016$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2012$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2013$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2014$GEOPORTAIL:OGC:WMS",
@@ -25,163 +24,6 @@
     }
   },
   "layers": {
-    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2013$GEOPORTAIL:OGC:WMTS": {
-      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2013",
-      "title": "Millésime Spot 2013",
-      "description": "Agrégation des images Spot de l'année 2013",
-      "globalConstraint": {
-        "maxScaleDenominator": 559082264.0287179,
-        "minScaleDenominator": 266.5911979812229,
-        "bbox": {
-          "left": 0.563585,
-          "right": 4.29191,
-          "top": 50.3879,
-          "bottom": 44.8809
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "satellite": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM",
-        "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "0",
-            "maxTileCol": "0"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "1",
-            "maxTileCol": "1"
-          },
-          "2": {
-            "minTileRow": "1",
-            "maxTileRow": "1",
-            "minTileCol": "2",
-            "maxTileCol": "2"
-          },
-          "3": {
-            "minTileRow": "2",
-            "maxTileRow": "2",
-            "minTileCol": "4",
-            "maxTileCol": "4"
-          },
-          "4": {
-            "minTileRow": "5",
-            "maxTileRow": "5",
-            "minTileCol": "8",
-            "maxTileCol": "8"
-          },
-          "5": {
-            "minTileRow": "10",
-            "maxTileRow": "11",
-            "minTileCol": "16",
-            "maxTileCol": "16"
-          },
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "23",
-            "minTileCol": "32",
-            "maxTileCol": "32"
-          },
-          "7": {
-            "minTileRow": "43",
-            "maxTileRow": "46",
-            "minTileCol": "64",
-            "maxTileCol": "65"
-          },
-          "8": {
-            "minTileRow": "86",
-            "maxTileRow": "92",
-            "minTileCol": "128",
-            "maxTileCol": "131"
-          },
-          "9": {
-            "minTileRow": "172",
-            "maxTileRow": "184",
-            "minTileCol": "256",
-            "maxTileCol": "262"
-          },
-          "10": {
-            "minTileRow": "345",
-            "maxTileRow": "368",
-            "minTileCol": "513",
-            "maxTileCol": "524"
-          },
-          "11": {
-            "minTileRow": "691",
-            "maxTileRow": "737",
-            "minTileCol": "1027",
-            "maxTileCol": "1048"
-          },
-          "12": {
-            "minTileRow": "1382",
-            "maxTileRow": "1475",
-            "minTileCol": "2054",
-            "maxTileCol": "2096"
-          },
-          "13": {
-            "minTileRow": "2764",
-            "maxTileRow": "2950",
-            "minTileCol": "4108",
-            "maxTileCol": "4193"
-          },
-          "14": {
-            "minTileRow": "5528",
-            "maxTileRow": "5901",
-            "minTileCol": "8217",
-            "maxTileCol": "8387"
-          },
-          "15": {
-            "minTileRow": "11057",
-            "maxTileRow": "11802",
-            "minTileCol": "16435",
-            "maxTileCol": "16774"
-          },
-          "16": {
-            "minTileRow": "22115",
-            "maxTileRow": "23605",
-            "minTileCol": "32870",
-            "maxTileCol": "33549"
-          },
-          "17": {
-            "minTileRow": "44231",
-            "maxTileRow": "47211",
-            "minTileCol": "65741",
-            "maxTileCol": "67098"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        }
-      ]
-    },
     "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015$GEOPORTAIL:OGC:WMTS": {
       "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015",
       "title": "SPOT 6-7 - 2015",
@@ -339,15 +181,15 @@
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2017$GEOPORTAIL:OGC:WMTS": {
-      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2017",
-      "title": "SPOT 6-7 - 2017",
-      "description": "Agrégation des images Spot de l'année 2017",
+    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2016$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2016",
+      "title": "SPOT 6-7 - 2016",
+      "description": "Agrégation des images Spot de l'année 2016. <br/><br/> <b>Financeurs de la télémesure SPOT 6-7 : <br/>CIRAD, CNES, CNRS, IGN, IRD, Irstea, GEOSUD</b>",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -61.8534,
+          "left": -61.85,
           "right": 55.8562,
           "top": 51.1123,
           "bottom": -21.4104
@@ -451,25 +293,25 @@
           "14": {
             "minTileRow": "5476",
             "maxTileRow": "9189",
-            "minTileCol": "5376",
+            "minTileCol": "5377",
             "maxTileCol": "10734"
           },
           "15": {
             "minTileRow": "10953",
             "maxTileRow": "18379",
-            "minTileCol": "10753",
+            "minTileCol": "10754",
             "maxTileCol": "21468"
           },
           "16": {
             "minTileRow": "21907",
             "maxTileRow": "36759",
-            "minTileCol": "21507",
+            "minTileCol": "21508",
             "maxTileCol": "42936"
           },
           "17": {
             "minTileRow": "43814",
             "maxTileRow": "73519",
-            "minTileCol": "43015",
+            "minTileCol": "43017",
             "maxTileCol": "85872"
           }
         }
