@@ -2,16 +2,19 @@
   "generalOptions": {
     "apiKeys": {
       "satellite": [
-        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015$GEOPORTAIL:OGC:WMTS",
-        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2016$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2013$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2010$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2020$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2012$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2013$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2014$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2010$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2011$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2013$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2014$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2016$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHO-SAT.SPOT.2017$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2018$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2019$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2020$GEOPORTAIL:OGC:WMS",
@@ -24,18 +27,18 @@
     }
   },
   "layers": {
-    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015$GEOPORTAIL:OGC:WMTS": {
-      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015",
-      "title": "SPOT 6-7 - 2015",
-      "description": "Agrégation des images Spot de l'année 2015. <br/><br/> <b>Financeurs de la télémesure SPOT 6-7 : <br/>CIRAD, CNES, CNRS, IGN, IRD, Irstea, GEOSUD</b>",
+    "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2013$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2013",
+      "title": "PLEIADES - 2013",
+      "description": "Agrégation des images Pleiades de l'année 2013",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -61.8141,
-          "right": 55.856,
-          "top": 51.106,
-          "bottom": -21.4104
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -62,100 +65,251 @@
             "maxTileCol": "1"
           },
           "2": {
+            "minTileRow": "0",
+            "maxTileRow": "3",
+            "minTileCol": "0",
+            "maxTileCol": "3"
+          },
+          "3": {
             "minTileRow": "1",
-            "maxTileRow": "2",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "7"
+          },
+          "4": {
+            "minTileRow": "2",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "5",
+            "maxTileRow": "26",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "11",
+            "maxTileRow": "52",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "22",
+            "maxTileRow": "105",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "45",
+            "maxTileRow": "210",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "90",
+            "maxTileRow": "421",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "181",
+            "maxTileRow": "842",
+            "minTileCol": "1",
+            "maxTileCol": "1022"
+          },
+          "11": {
+            "minTileRow": "363",
+            "maxTileRow": "1684",
+            "minTileCol": "2",
+            "maxTileCol": "2045"
+          },
+          "12": {
+            "minTileRow": "726",
+            "maxTileRow": "3369",
+            "minTileCol": "5",
+            "maxTileCol": "4090"
+          },
+          "13": {
+            "minTileRow": "1452",
+            "maxTileRow": "6739",
+            "minTileCol": "11",
+            "maxTileCol": "8180"
+          },
+          "14": {
+            "minTileRow": "2904",
+            "maxTileRow": "13479",
+            "minTileCol": "22",
+            "maxTileCol": "16361"
+          },
+          "15": {
+            "minTileRow": "5809",
+            "maxTileRow": "26958",
+            "minTileCol": "45",
+            "maxTileCol": "32722"
+          },
+          "16": {
+            "minTileRow": "11619",
+            "maxTileRow": "53916",
+            "minTileCol": "91",
+            "maxTileCol": "65444"
+          },
+          "17": {
+            "minTileRow": "23238",
+            "maxTileRow": "107833",
+            "minTileCol": "182",
+            "maxTileCol": "130889"
+          },
+          "18": {
+            "minTileRow": "46477",
+            "maxTileRow": "215666",
+            "minTileCol": "364",
+            "maxTileCol": "261779"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2010$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2010",
+      "title": "RAPIDEYE 2010",
+      "description": "￼Image satellitaire de la France métropolitaine effectuée en 2010 par les satellites de télédétection RapidEye dans le cadre du projet EQUIPEX GEOSUD.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.80725,
+          "right": 10.961,
+          "top": 50.9218,
+          "bottom": 41.2014
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "satellite": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
             "minTileCol": "1",
             "maxTileCol": "2"
           },
           "3": {
             "minTileRow": "2",
-            "maxTileRow": "4",
-            "minTileCol": "2",
-            "maxTileCol": "5"
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
           },
           "4": {
             "minTileRow": "5",
-            "maxTileRow": "8",
-            "minTileCol": "5",
-            "maxTileCol": "10"
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
           },
           "5": {
             "minTileRow": "10",
-            "maxTileRow": "17",
-            "minTileCol": "10",
-            "maxTileCol": "20"
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
           },
           "6": {
             "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "21",
-            "maxTileCol": "41"
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
           },
           "7": {
             "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "42",
-            "maxTileCol": "83"
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
           },
           "8": {
             "minTileRow": "85",
-            "maxTileRow": "143",
-            "minTileCol": "84",
-            "maxTileCol": "167"
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
           },
           "9": {
             "minTileRow": "171",
-            "maxTileRow": "287",
-            "minTileCol": "168",
-            "maxTileCol": "335"
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "271"
           },
           "10": {
-            "minTileRow": "342",
-            "maxTileRow": "574",
-            "minTileCol": "336",
-            "maxTileCol": "670"
+            "minTileRow": "343",
+            "maxTileRow": "383",
+            "minTileCol": "495",
+            "maxTileCol": "543"
           },
           "11": {
-            "minTileRow": "684",
-            "maxTileRow": "1148",
-            "minTileCol": "672",
-            "maxTileCol": "1341"
+            "minTileRow": "686",
+            "maxTileRow": "766",
+            "minTileCol": "990",
+            "maxTileCol": "1086"
           },
           "12": {
-            "minTileRow": "1369",
-            "maxTileRow": "2297",
-            "minTileCol": "1344",
-            "maxTileCol": "2683"
+            "minTileRow": "1372",
+            "maxTileRow": "1532",
+            "minTileCol": "1981",
+            "maxTileCol": "2172"
           },
           "13": {
-            "minTileRow": "2738",
-            "maxTileRow": "4594",
-            "minTileCol": "2689",
-            "maxTileCol": "5367"
+            "minTileRow": "2745",
+            "maxTileRow": "3065",
+            "minTileCol": "3963",
+            "maxTileCol": "4345"
           },
           "14": {
-            "minTileRow": "5477",
-            "maxTileRow": "9189",
-            "minTileCol": "5378",
-            "maxTileCol": "10734"
+            "minTileRow": "5490",
+            "maxTileRow": "6130",
+            "minTileCol": "7927",
+            "maxTileCol": "8690"
           },
           "15": {
-            "minTileRow": "10954",
-            "maxTileRow": "18379",
-            "minTileCol": "10757",
-            "maxTileCol": "21468"
-          },
-          "16": {
-            "minTileRow": "21909",
-            "maxTileRow": "36759",
-            "minTileCol": "21515",
-            "maxTileCol": "42936"
-          },
-          "17": {
-            "minTileRow": "43818",
-            "maxTileRow": "73519",
-            "minTileCol": "43030",
-            "maxTileCol": "85872"
+            "minTileRow": "10981",
+            "maxTileRow": "12261",
+            "minTileCol": "15855",
+            "maxTileCol": "17381"
           }
         }
       },
@@ -181,18 +335,18 @@
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2016$GEOPORTAIL:OGC:WMTS": {
-      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2016",
-      "title": "SPOT 6-7 - 2016",
-      "description": "Agrégation des images Spot de l'année 2016. <br/><br/> <b>Financeurs de la télémesure SPOT 6-7 : <br/>CIRAD, CNES, CNRS, IGN, IRD, Irstea, GEOSUD</b>",
+    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2020$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2020",
+      "title": "SPOT 6-7 - 2020",
+      "description": "Agrégation des images SPOT 2020",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
         "bbox": {
-          "left": -61.85,
-          "right": 55.8562,
+          "left": -5.57103,
+          "right": 10.7394,
           "top": 51.1123,
-          "bottom": -21.4104
+          "bottom": 41.2593
         }
       },
       "serviceParams": {
@@ -214,105 +368,105 @@
           },
           "1": {
             "minTileRow": "0",
-            "maxTileRow": "1",
+            "maxTileRow": "0",
             "minTileCol": "0",
             "maxTileCol": "1"
           },
           "2": {
             "minTileRow": "1",
-            "maxTileRow": "2",
+            "maxTileRow": "1",
             "minTileCol": "1",
             "maxTileCol": "2"
           },
           "3": {
             "minTileRow": "2",
-            "maxTileRow": "4",
-            "minTileCol": "2",
-            "maxTileCol": "5"
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
           },
           "4": {
             "minTileRow": "5",
-            "maxTileRow": "8",
-            "minTileCol": "5",
-            "maxTileCol": "10"
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
           },
           "5": {
             "minTileRow": "10",
-            "maxTileRow": "17",
-            "minTileCol": "10",
-            "maxTileCol": "20"
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
           },
           "6": {
             "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "21",
-            "maxTileCol": "41"
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
           },
           "7": {
             "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "42",
-            "maxTileCol": "83"
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
           },
           "8": {
             "minTileRow": "85",
-            "maxTileRow": "143",
-            "minTileCol": "84",
-            "maxTileCol": "167"
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "135"
           },
           "9": {
             "minTileRow": "171",
-            "maxTileRow": "287",
-            "minTileCol": "168",
-            "maxTileCol": "335"
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "271"
           },
           "10": {
             "minTileRow": "342",
-            "maxTileRow": "574",
-            "minTileCol": "336",
-            "maxTileCol": "670"
+            "maxTileRow": "382",
+            "minTileCol": "496",
+            "maxTileCol": "542"
           },
           "11": {
             "minTileRow": "684",
-            "maxTileRow": "1148",
-            "minTileCol": "672",
-            "maxTileCol": "1341"
+            "maxTileRow": "765",
+            "minTileCol": "992",
+            "maxTileCol": "1085"
           },
           "12": {
             "minTileRow": "1369",
-            "maxTileRow": "2297",
-            "minTileCol": "1344",
-            "maxTileCol": "2683"
+            "maxTileRow": "1531",
+            "minTileCol": "1984",
+            "maxTileCol": "2170"
           },
           "13": {
             "minTileRow": "2738",
-            "maxTileRow": "4594",
-            "minTileCol": "2688",
-            "maxTileCol": "5367"
+            "maxTileRow": "3063",
+            "minTileCol": "3969",
+            "maxTileCol": "4340"
           },
           "14": {
             "minTileRow": "5476",
-            "maxTileRow": "9189",
-            "minTileCol": "5377",
-            "maxTileCol": "10734"
+            "maxTileRow": "6127",
+            "minTileCol": "7938",
+            "maxTileCol": "8680"
           },
           "15": {
             "minTileRow": "10953",
-            "maxTileRow": "18379",
-            "minTileCol": "10754",
-            "maxTileCol": "21468"
+            "maxTileRow": "12254",
+            "minTileCol": "15876",
+            "maxTileCol": "17361"
           },
           "16": {
             "minTileRow": "21907",
-            "maxTileRow": "36759",
-            "minTileCol": "21508",
-            "maxTileCol": "42936"
+            "maxTileRow": "24508",
+            "minTileCol": "31753",
+            "maxTileCol": "34723"
           },
           "17": {
             "minTileRow": "43814",
-            "maxTileRow": "73519",
-            "minTileCol": "43017",
-            "maxTileCol": "85872"
+            "maxTileRow": "49016",
+            "minTileCol": "63507",
+            "maxTileCol": "69446"
           }
         }
       },
@@ -692,6 +846,65 @@
         }
       ]
     },
+    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2014$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2014",
+      "title": "SPOT 6 - 2014",
+      "description": "Couche millésimée SPOT 2014 agrégeant les orthophotographies satellites du projet Geosud.",
+      "globalConstraint": {
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -179.49999463,
+          "right": 179.49999463,
+          "top": 74.99999974,
+          "bottom": -74.99999974
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "satellite": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2015",
       "title": "SPOT 6-7 - 2015",
@@ -760,6 +973,65 @@
         "maxScaleDenominator": 559082264.0287179,
         "bbox": {
           "left": -61.85004834,
+          "right": 55.85624773,
+          "top": 51.11228765,
+          "bottom": -21.41036284
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "satellite": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHO-SAT.SPOT.2017$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.SPOT.2017",
+      "title": "SPOT 6-7 - 2017",
+      "description": "Agrégation des images Spot de l'année 2017",
+      "globalConstraint": {
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -61.85338154,
           "right": 55.85624773,
           "top": 51.11228765,
           "bottom": -21.41036284

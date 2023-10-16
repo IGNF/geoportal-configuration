@@ -2,9 +2,10 @@
   "generalOptions": {
     "apiKeys": {
       "economie": [
-        "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET$GEOPORTAIL:OGC:WMTS",
-        "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET$GEOPORTAIL:OGC:WMTS",
-        "INSEE.FILOSOFI.POPULATION$GEOPORTAIL:OGC:WMTS",
+        "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMTS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET$GEOPORTAIL:OGC:WMTS",
+        "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET$GEOPORTAIL:OGC:WMTS",
+        "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET$GEOPORTAIL:OGC:WMTS",
         "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMS",
@@ -12,6 +13,7 @@
         "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.INDIVIDUS.25.39.ANS.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.LOGEMENTS.APRES.1990.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.LOGEMENTS.COLLECTIFS.SECRET$GEOPORTAIL:OGC:WMS",
@@ -22,6 +24,7 @@
         "INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.MENAGES.MAISON.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.POPULATION$GEOPORTAIL:OGC:WMS",
         "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMS",
@@ -48,10 +51,10 @@
     }
   },
   "layers": {
-    "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET$GEOPORTAIL:OGC:WMTS": {
-      "name": "INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES.SECRET",
-      "title": "% familles monoparentales (secret signalé)",
-      "description": "Part des familles monoparentales (les cases hachurées correspondent aux données secrétisées)",
+    "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMTS": {
+      "name": "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET",
+      "title": "Niveau de vie winsorisé des individus (secret signalé)",
+      "description": "Niveau de vie des individus, retraité des valeurs extrêmes (les cases hachurées correspondent aux données secrétisées)",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
@@ -152,7 +155,7 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/INSEE.FILOSOFI.PART.FAMILLES.MONOPARENTALES-tot-legend-2017.png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/INSEE.FILOSOFI.NIVEAU.DE.VIE-tot-legend-2017.png",
           "minScaleDenominator": "1"
         }
       ],
@@ -163,10 +166,10 @@
         }
       ]
     },
-    "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET$GEOPORTAIL:OGC:WMTS": {
-      "name": "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET",
-      "title": "% ménages de 1 personne (secret signalé)",
-      "description": "Part des ménages de 1 personne (les cases hachurées correspondent aux données secrétisées)",
+    "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET$GEOPORTAIL:OGC:WMTS": {
+      "name": "INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945.SECRET",
+      "title": "% de logements construits avant 1945 (secret signalé)",
+      "description": "Part des logements construits avant 1945 (les cases hachurées correspondent aux données secrétisées)",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
@@ -267,7 +270,7 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE-tot-legend-2017.png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/INSEE.FILOSOFI.PART.LOGEMENTS.AVANT.1945-tot-legend-2017.png",
           "minScaleDenominator": "1"
         }
       ],
@@ -278,10 +281,10 @@
         }
       ]
     },
-    "INSEE.FILOSOFI.POPULATION$GEOPORTAIL:OGC:WMTS": {
-      "name": "INSEE.FILOSOFI.POPULATION",
-      "title": "Densité de population",
-      "description": "Nombre d'individus par km²",
+    "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET$GEOPORTAIL:OGC:WMTS": {
+      "name": "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET",
+      "title": "% de logements sociaux (secret signalé)",
+      "description": "Nombre de ménages habitant en logement social – voir définition- (les cases hachurées correspondent aux données secrétisées)",
       "globalConstraint": {
         "maxScaleDenominator": 559082264.0287179,
         "minScaleDenominator": 266.5911979812229,
@@ -382,7 +385,122 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/INSEE.FILOSOFI.POPULATION-tot-legend-2017.png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX-tot-legend-2017.png",
+          "minScaleDenominator": "1"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET$GEOPORTAIL:OGC:WMTS": {
+      "name": "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET",
+      "title": "% ménages pauvres (secret signalé)",
+      "description": "Part des ménages pauvres (les cases hachurées correspondent aux données secrétisées)",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "economie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "INSEE",
+          "title": "INSEE",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/INSEE.FILOSOFI.PART.MENAGES.PAUVRES-tot-legend-2017.png",
           "minScaleDenominator": "1"
         }
       ],
@@ -1165,6 +1283,129 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INSEE.FILOSOFI.PART.INDIVIDUS.40.54.ANS.SECRET"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
+      "name": "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET",
+      "title": "% des 55-64 ans  (secret signalé)",
+      "description": "Nombre d’individus âgés de 55 à 64 ans dans la population (les cases hachurées correspondent aux données secrétisées)",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.23455255,
+          "right": 55.83464666,
+          "top": 51.08790768,
+          "bottom": -21.39086462
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "economie": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET",
+          "title": "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET"
         }
       ],
       "formats": [
@@ -2420,6 +2661,129 @@
         }
       ]
     },
+    "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET$GEOPORTAIL:OGC:WMS": {
+      "name": "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET",
+      "title": "% ménages propriétaires (secret signalé)",
+      "description": "Part des ménages propriétaires   (les cases hachurées correspondent aux données secrétisées)",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.23455255,
+          "right": 55.83464666,
+          "top": 51.08790768,
+          "bottom": -21.39086462
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "economie": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET",
+          "title": "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.PART.PLUS.65.ANS.SECRET",
       "title": "% des plus de 65 ans (secret signalé)",
@@ -2577,252 +2941,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INSEE.FILOSOFI.POPULATION"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET$GEOPORTAIL:OGC:WMS": {
-      "name": "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET",
-      "title": "% des 55-64 ans  (secret signalé)",
-      "description": "Nombre d’individus âgés de 55 à 64 ans dans la population (les cases hachurées correspondent aux données secrétisées)",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.23455255,
-          "right": 55.83464666,
-          "top": 51.08790768,
-          "bottom": -21.39086462
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "economie": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET",
-          "title": "INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INSEE.FILOSOFI.PART.INDIVIDUS.55.64.ANS.SECRET"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET$GEOPORTAIL:OGC:WMS": {
-      "name": "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET",
-      "title": "% ménages propriétaires (secret signalé)",
-      "description": "Part des ménages propriétaires   (les cases hachurées correspondent aux données secrétisées)",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.23455255,
-          "right": 55.83464666,
-          "top": 51.08790768,
-          "bottom": -21.39086462
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "economie": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET",
-          "title": "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET"
         }
       ],
       "formats": [
