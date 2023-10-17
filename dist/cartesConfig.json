@@ -2,6 +2,14 @@
   "generalOptions": {
     "apiKeys": {
       "cartes": [
+        "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.BONNE$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.OVERVIEW$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMS",
@@ -15,6 +23,908 @@
     }
   },
   "layers": {
+    "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS",
+      "title": "Carte topographique - environs de Paris (1906)",
+      "description": "Carte topographique de Paris et de ses environs éditée en 1906.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 1.62941,
+          "right": 3.0,
+          "top": 49.1548,
+          "bottom": 48.4726
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "10": {
+            "minTileRow": "350",
+            "maxTileRow": "353",
+            "minTileCol": "516",
+            "maxTileCol": "520"
+          },
+          "11": {
+            "minTileRow": "701",
+            "maxTileRow": "707",
+            "minTileCol": "1033",
+            "maxTileCol": "1041"
+          },
+          "12": {
+            "minTileRow": "1403",
+            "maxTileRow": "1415",
+            "minTileCol": "2066",
+            "maxTileCol": "2082"
+          },
+          "13": {
+            "minTileRow": "2807",
+            "maxTileRow": "2831",
+            "minTileCol": "4133",
+            "maxTileCol": "4164"
+          },
+          "14": {
+            "minTileRow": "5615",
+            "maxTileRow": "5663",
+            "minTileCol": "8266",
+            "maxTileCol": "8328"
+          },
+          "15": {
+            "minTileRow": "11231",
+            "maxTileRow": "11326",
+            "minTileCol": "16532",
+            "maxTileCol": "16657"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.BONNE$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.BONNE",
+      "title": "Guyane française (1780)",
+      "description": "Carte de Guyane française établie par M. Bonne, Ingénieur-Hydrographe de la Marine. Cette carte figure dans l'\"atlas de toutes les parties connues du globe terrestre\", ouvrage rédigé par l'abbé Guillaume-Thomas RAYNAL et publié à Genève en 1780.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -55.9127,
+          "right": -50.0835,
+          "top": 7.88966,
+          "bottom": -0.49941
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "1"
+          },
+          "3": {
+            "minTileRow": "3",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "2"
+          },
+          "4": {
+            "minTileRow": "7",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "5"
+          },
+          "5": {
+            "minTileRow": "15",
+            "maxTileRow": "16",
+            "minTileCol": "11",
+            "maxTileCol": "11"
+          },
+          "6": {
+            "minTileRow": "30",
+            "maxTileRow": "32",
+            "minTileCol": "22",
+            "maxTileCol": "23"
+          },
+          "7": {
+            "minTileRow": "61",
+            "maxTileRow": "64",
+            "minTileCol": "44",
+            "maxTileCol": "46"
+          },
+          "8": {
+            "minTileRow": "122",
+            "maxTileRow": "128",
+            "minTileCol": "88",
+            "maxTileCol": "92"
+          },
+          "9": {
+            "minTileRow": "244",
+            "maxTileRow": "256",
+            "minTileCol": "176",
+            "maxTileCol": "184"
+          },
+          "10": {
+            "minTileRow": "489",
+            "maxTileRow": "513",
+            "minTileCol": "352",
+            "maxTileCol": "369"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10",
+      "title": "Carte de l'état-major - environs de Paris (1818 - 1824)",
+      "description": "Carte des environs de Paris au 1 : 10 000 établie entre 1818 et 1824.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 1.82682,
+          "right": 2.79738,
+          "top": 49.5142,
+          "bottom": 48.3847
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "22",
+            "minTileCol": "32",
+            "maxTileCol": "32"
+          },
+          "7": {
+            "minTileRow": "43",
+            "maxTileRow": "44",
+            "minTileCol": "64",
+            "maxTileCol": "64"
+          },
+          "8": {
+            "minTileRow": "87",
+            "maxTileRow": "88",
+            "minTileCol": "129",
+            "maxTileCol": "129"
+          },
+          "9": {
+            "minTileRow": "174",
+            "maxTileRow": "177",
+            "minTileCol": "258",
+            "maxTileCol": "259"
+          },
+          "10": {
+            "minTileRow": "349",
+            "maxTileRow": "354",
+            "minTileCol": "517",
+            "maxTileCol": "519"
+          },
+          "11": {
+            "minTileRow": "698",
+            "maxTileRow": "708",
+            "minTileCol": "1034",
+            "maxTileCol": "1039"
+          },
+          "12": {
+            "minTileRow": "1397",
+            "maxTileRow": "1417",
+            "minTileCol": "2068",
+            "maxTileCol": "2079"
+          },
+          "13": {
+            "minTileRow": "2795",
+            "maxTileRow": "2834",
+            "minTileCol": "4137",
+            "maxTileCol": "4159"
+          },
+          "14": {
+            "minTileRow": "5590",
+            "maxTileRow": "5669",
+            "minTileCol": "8275",
+            "maxTileCol": "8319"
+          },
+          "15": {
+            "minTileRow": "11181",
+            "maxTileRow": "11338",
+            "minTileCol": "16550",
+            "maxTileCol": "16638"
+          },
+          "16": {
+            "minTileRow": "22363",
+            "maxTileRow": "22676",
+            "minTileCol": "33100",
+            "maxTileCol": "33277"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40",
+      "title": "Carte de l'état-major (1820-1866)",
+      "description": "Carte française en couleurs du XIXè siècle en couleurs superposable aux cartes et données modernes.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -6.08889,
+          "right": 10.961,
+          "top": 51.2745,
+          "bottom": 41.1844
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "271"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "383",
+            "minTileCol": "494",
+            "maxTileCol": "543"
+          },
+          "11": {
+            "minTileRow": "683",
+            "maxTileRow": "766",
+            "minTileCol": "989",
+            "maxTileCol": "1086"
+          },
+          "12": {
+            "minTileRow": "1366",
+            "maxTileRow": "1532",
+            "minTileCol": "1978",
+            "maxTileCol": "2172"
+          },
+          "13": {
+            "minTileRow": "2732",
+            "maxTileRow": "3065",
+            "minTileCol": "3957",
+            "maxTileCol": "4345"
+          },
+          "14": {
+            "minTileRow": "5465",
+            "maxTileRow": "6131",
+            "minTileCol": "7914",
+            "maxTileCol": "8690"
+          },
+          "15": {
+            "minTileRow": "10930",
+            "maxTileRow": "12263",
+            "minTileCol": "15829",
+            "maxTileCol": "17381"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.OVERVIEW$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.OVERVIEW",
+      "title": "Carte Mondiale pour la mini-vue",
+      "description": "Carte Mondiale pour la mini-vue",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "3",
+            "minTileCol": "0",
+            "maxTileCol": "3"
+          },
+          "3": {
+            "minTileRow": "1",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "7"
+          },
+          "4": {
+            "minTileRow": "2",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "5",
+            "maxTileRow": "26",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "11",
+            "maxTileRow": "52",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "22",
+            "maxTileRow": "105",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "45",
+            "maxTileRow": "210",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950",
+      "title": "SCAN50 Historique de 1950",
+      "description": "SCAN50 produit par l'IGN en 1950",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "3": {
+            "minTileRow": "1",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "7"
+          },
+          "4": {
+            "minTileRow": "2",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "5",
+            "maxTileRow": "26",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "11",
+            "maxTileRow": "52",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "22",
+            "maxTileRow": "105",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "45",
+            "maxTileRow": "210",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "90",
+            "maxTileRow": "421",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "181",
+            "maxTileRow": "842",
+            "minTileCol": "1",
+            "maxTileCol": "1022"
+          },
+          "11": {
+            "minTileRow": "363",
+            "maxTileRow": "1684",
+            "minTileCol": "2",
+            "maxTileCol": "2045"
+          },
+          "12": {
+            "minTileRow": "726",
+            "maxTileRow": "3369",
+            "minTileCol": "5",
+            "maxTileCol": "4090"
+          },
+          "13": {
+            "minTileRow": "1452",
+            "maxTileRow": "6739",
+            "minTileCol": "11",
+            "maxTileCol": "8180"
+          },
+          "14": {
+            "minTileRow": "2904",
+            "maxTileRow": "13479",
+            "minTileCol": "22",
+            "maxTileCol": "16361"
+          },
+          "15": {
+            "minTileRow": "5809",
+            "maxTileRow": "26958",
+            "minTileCol": "45",
+            "maxTileCol": "32722"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "SCAN50_1950",
+          "title": "SCAN 50 historique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950-legend.png",
+          "minScaleDenominator": "17000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1",
+      "title": "Plan Terrier V1 (XVIIIe siècle)",
+      "description": "Plan Terrier Corse V1 (XVIIIe siècle) - GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 8.36284,
+          "right": 9.75281,
+          "top": 43.1174,
+          "bottom": 41.2568
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "23",
+            "maxTileRow": "23",
+            "minTileCol": "33",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "46",
+            "maxTileRow": "47",
+            "minTileCol": "66",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "93",
+            "maxTileRow": "95",
+            "minTileCol": "133",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "187",
+            "maxTileRow": "191",
+            "minTileCol": "267",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "375",
+            "maxTileRow": "382",
+            "minTileCol": "535",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "751",
+            "maxTileRow": "765",
+            "minTileCol": "1071",
+            "maxTileCol": "1079"
+          },
+          "12": {
+            "minTileRow": "1503",
+            "maxTileRow": "1531",
+            "minTileCol": "2143",
+            "maxTileCol": "2158"
+          },
+          "13": {
+            "minTileRow": "3006",
+            "maxTileRow": "3063",
+            "minTileCol": "4286",
+            "maxTileCol": "4317"
+          },
+          "14": {
+            "minTileRow": "6012",
+            "maxTileRow": "6127",
+            "minTileCol": "8572",
+            "maxTileCol": "8635"
+          },
+          "15": {
+            "minTileRow": "12025",
+            "maxTileRow": "12254",
+            "minTileCol": "17145",
+            "maxTileCol": "17271"
+          },
+          "16": {
+            "minTileRow": "24051",
+            "maxTileRow": "24509",
+            "minTileCol": "34290",
+            "maxTileCol": "34543"
+          },
+          "17": {
+            "minTileRow": "48103",
+            "maxTileRow": "49018",
+            "minTileCol": "68580",
+            "maxTileCol": "69086"
+          },
+          "18": {
+            "minTileRow": "96207",
+            "maxTileRow": "98036",
+            "minTileCol": "137161",
+            "maxTileCol": "138173"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2",
+      "title": "Plan Terrier V2 (XVIIIe siècle)",
+      "description": "Plan Terrier, cartographie ancienne du XVIIIème siècle sur la Corse version est une version numérisée par les archives militaires du Ministère de la Défense",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 8.36284,
+          "right": 9.75282,
+          "top": 43.1174,
+          "bottom": 41.2568
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "23",
+            "maxTileRow": "23",
+            "minTileCol": "33",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "46",
+            "maxTileRow": "47",
+            "minTileCol": "66",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "93",
+            "maxTileRow": "95",
+            "minTileCol": "133",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "187",
+            "maxTileRow": "191",
+            "minTileCol": "267",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "375",
+            "maxTileRow": "382",
+            "minTileCol": "535",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "751",
+            "maxTileRow": "765",
+            "minTileCol": "1071",
+            "maxTileCol": "1079"
+          },
+          "12": {
+            "minTileRow": "1503",
+            "maxTileRow": "1531",
+            "minTileCol": "2143",
+            "maxTileCol": "2158"
+          },
+          "13": {
+            "minTileRow": "3006",
+            "maxTileRow": "3063",
+            "minTileCol": "4286",
+            "maxTileCol": "4317"
+          },
+          "14": {
+            "minTileRow": "6012",
+            "maxTileRow": "6127",
+            "minTileCol": "8572",
+            "maxTileCol": "8635"
+          },
+          "15": {
+            "minTileRow": "12025",
+            "maxTileRow": "12254",
+            "minTileCol": "17145",
+            "maxTileCol": "17271"
+          },
+          "16": {
+            "minTileRow": "24051",
+            "maxTileRow": "24509",
+            "minTileCol": "34290",
+            "maxTileCol": "34543"
+          },
+          "17": {
+            "minTileRow": "48103",
+            "maxTileRow": "49018",
+            "minTileCol": "68580",
+            "maxTileCol": "69086"
+          },
+          "18": {
+            "minTileRow": "96207",
+            "maxTileRow": "98036",
+            "minTileCol": "137161",
+            "maxTileCol": "138173"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS": {
       "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10",
       "title": "Carte de l'état-major - environs de Paris (1818 - 1824)",

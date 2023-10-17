@@ -2,7 +2,15 @@
   "generalOptions": {
     "apiKeys": {
       "altimetrie": [
+        "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMTS",
+        "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMTS",
+        "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS",
+        "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
+        "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMTS",
+        "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMTS",
+        "ELEVATION.LEVEL0$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.SLOPES$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMS",
@@ -24,6 +32,865 @@
     }
   },
   "layers": {
+    "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.CONTOUR.LINE",
+      "title": "Courbes de niveau",
+      "description": "Le produit « Courbes de niveau » est un modèle numérique de terrain sous forme de courbes de même altitude, appelées aussi « isoplèthes d’altitude », ou plus techniquement « isohypses ». Ces courbes permettent la description du relief français.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          },
+          "17": {
+            "minTileRow": "43698",
+            "maxTileRow": "73544",
+            "minTileCol": "42462",
+            "maxTileCol": "85897"
+          },
+          "18": {
+            "minTileRow": "87397",
+            "maxTileRow": "147089",
+            "minTileCol": "84925",
+            "maxTileCol": "171795"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE",
+      "title": "MNT BDAlti V1",
+      "description": "BDAlti V1 au pas de 25m",
+      "globalConstraint": {
+        "maxScaleDenominator": 279541132.0143589,
+        "minScaleDenominator": 533.1823959624463,
+        "bbox": {
+          "left": -64.0,
+          "right": 168.0,
+          "top": 52.0,
+          "bottom": -23.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "WGS84G",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "3"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "2",
+            "maxTileCol": "7"
+          },
+          "3": {
+            "minTileRow": "1",
+            "maxTileRow": "5",
+            "minTileCol": "5",
+            "maxTileCol": "15"
+          },
+          "4": {
+            "minTileRow": "3",
+            "maxTileRow": "10",
+            "minTileCol": "10",
+            "maxTileCol": "30"
+          },
+          "5": {
+            "minTileRow": "6",
+            "maxTileRow": "20",
+            "minTileCol": "20",
+            "maxTileCol": "61"
+          },
+          "6": {
+            "minTileRow": "13",
+            "maxTileRow": "40",
+            "minTileCol": "41",
+            "maxTileCol": "123"
+          },
+          "7": {
+            "minTileRow": "27",
+            "maxTileRow": "80",
+            "minTileCol": "82",
+            "maxTileCol": "247"
+          },
+          "8": {
+            "minTileRow": "54",
+            "maxTileRow": "160",
+            "minTileCol": "164",
+            "maxTileCol": "494"
+          },
+          "9": {
+            "minTileRow": "108",
+            "maxTileRow": "321",
+            "minTileCol": "329",
+            "maxTileCol": "989"
+          },
+          "10": {
+            "minTileRow": "216",
+            "maxTileRow": "642",
+            "minTileCol": "659",
+            "maxTileCol": "1979"
+          },
+          "11": {
+            "minTileRow": "432",
+            "maxTileRow": "1285",
+            "minTileCol": "1319",
+            "maxTileCol": "3959"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/x-bil;bits=32",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES",
+      "title": "Modèle Numérique de Terrain issu du RGEALTI",
+      "description": "Modèle Numérique de Terrain issu du RGEALTI",
+      "globalConstraint": {
+        "maxScaleDenominator": 279541132.0143589,
+        "minScaleDenominator": 533.1823959624463,
+        "bbox": {
+          "left": -62.9528,
+          "right": 45.3043,
+          "top": 51.1053,
+          "bottom": -13.0078
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "WGS84G",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "13",
+            "maxTileRow": "36",
+            "minTileCol": "41",
+            "maxTileCol": "80"
+          },
+          "7": {
+            "minTileRow": "27",
+            "maxTileRow": "73",
+            "minTileCol": "83",
+            "maxTileCol": "160"
+          },
+          "8": {
+            "minTileRow": "55",
+            "maxTileRow": "146",
+            "minTileCol": "166",
+            "maxTileCol": "320"
+          },
+          "9": {
+            "minTileRow": "110",
+            "maxTileRow": "292",
+            "minTileCol": "332",
+            "maxTileCol": "640"
+          },
+          "10": {
+            "minTileRow": "221",
+            "maxTileRow": "585",
+            "minTileCol": "665",
+            "maxTileCol": "1281"
+          },
+          "11": {
+            "minTileRow": "442",
+            "maxTileRow": "1171",
+            "minTileCol": "1331",
+            "maxTileCol": "2563"
+          },
+          "12": {
+            "minTileRow": "885",
+            "maxTileRow": "2343",
+            "minTileCol": "2663",
+            "maxTileCol": "5126"
+          },
+          "13": {
+            "minTileRow": "1770",
+            "maxTileRow": "4687",
+            "minTileCol": "5326",
+            "maxTileCol": "10253"
+          },
+          "14": {
+            "minTileRow": "3540",
+            "maxTileRow": "9375",
+            "minTileCol": "10653",
+            "maxTileCol": "20507"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/x-bil;bits=32",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
+      "title": "Estompage",
+      "description": "Couche d'ombrage calculée à partir des données altimétriques de l'IGN permettant de mieux appréhender le relief. L'estompage proposé est réalisé à partir des données MNT BDAlti au pas de 25m avec deux soleils : un au nord-est de hauteur 45°, l'autre zénithal.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.187,
+          "right": 55.8884,
+          "top": 50.9218,
+          "bottom": -21.4069
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "343",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "670"
+          },
+          "11": {
+            "minTileRow": "686",
+            "maxTileRow": "1148",
+            "minTileCol": "664",
+            "maxTileCol": "1341"
+          },
+          "12": {
+            "minTileRow": "1372",
+            "maxTileRow": "2297",
+            "minTileCol": "1329",
+            "maxTileCol": "2683"
+          },
+          "13": {
+            "minTileRow": "2745",
+            "maxTileRow": "4594",
+            "minTileCol": "2658",
+            "maxTileCol": "5367"
+          },
+          "14": {
+            "minTileRow": "5490",
+            "maxTileRow": "9189",
+            "minTileCol": "5316",
+            "maxTileCol": "10735"
+          },
+          "15": {
+            "minTileRow": "10981",
+            "maxTileRow": "18379",
+            "minTileCol": "10632",
+            "maxTileCol": "21471"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "estompage_grayscale",
+          "title": "Estompage",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3",
+      "title": "MNT SRTM3",
+      "description": "MNT SRTM3 construit par la NASA et le NGA.",
+      "globalConstraint": {
+        "maxScaleDenominator": 279541132.0143589,
+        "minScaleDenominator": 533.1823959624463,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 61.0004,
+          "bottom": -56.0004
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "WGS84G",
+        "tileMatrixSetLimits": {
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "3",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "3": {
+            "minTileRow": "1",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "16"
+          },
+          "4": {
+            "minTileRow": "2",
+            "maxTileRow": "12",
+            "minTileCol": "0",
+            "maxTileCol": "32"
+          },
+          "5": {
+            "minTileRow": "5",
+            "maxTileRow": "25",
+            "minTileCol": "0",
+            "maxTileCol": "64"
+          },
+          "6": {
+            "minTileRow": "10",
+            "maxTileRow": "51",
+            "minTileCol": "0",
+            "maxTileCol": "128"
+          },
+          "7": {
+            "minTileRow": "20",
+            "maxTileRow": "103",
+            "minTileCol": "0",
+            "maxTileCol": "256"
+          },
+          "8": {
+            "minTileRow": "41",
+            "maxTileRow": "207",
+            "minTileCol": "0",
+            "maxTileCol": "512"
+          },
+          "9": {
+            "minTileRow": "82",
+            "maxTileRow": "415",
+            "minTileCol": "0",
+            "maxTileCol": "1024"
+          },
+          "10": {
+            "minTileRow": "164",
+            "maxTileRow": "830",
+            "minTileCol": "0",
+            "maxTileCol": "2048"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/x-bil;bits=32",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD",
+      "title": "Seuils de pente pour l'agriculture",
+      "description": "La carte expérimentale des seuils de pente pour l'agriculture est dérivée du MNT RGEAlti, modèle numérique de terrain maillé au pas de 1 m. Les seuils de représentation de cette carte sont : 7% à 10% : bleu, 10% à 15% : mauve, 15% à 20% : orange, plus de 20% : rouge. Données disponibles en France Métropolitaine du 1/4265 au 1/69885283 - mise à jour du 30/06/2017.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          },
+          "17": {
+            "minTileRow": "43822",
+            "maxTileRow": "48985",
+            "minTileCol": "63660",
+            "maxTileCol": "69020"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD",
+          "title": "Valeur de pente en %",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD-legend.png",
+          "minScaleDenominator": "4265"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATION.LEVEL0$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.LEVEL0",
+      "title": "Trait de côte Histolitt",
+      "description": "Formalisation de la limite entre le domaine terrestre et le domaine marin.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.2529,
+          "right": 55.9472,
+          "top": 51.1388,
+          "bottom": -21.51
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "1149",
+            "minTileCol": "664",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1368",
+            "maxTileRow": "2298",
+            "minTileCol": "1328",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2737",
+            "maxTileRow": "4597",
+            "minTileCol": "2656",
+            "maxTileCol": "5369"
+          },
+          "14": {
+            "minTileRow": "5474",
+            "maxTileRow": "9194",
+            "minTileCol": "5313",
+            "maxTileCol": "10738"
+          },
+          "15": {
+            "minTileRow": "10949",
+            "maxTileRow": "18389",
+            "minTileCol": "10626",
+            "maxTileCol": "21476"
+          },
+          "16": {
+            "minTileRow": "21899",
+            "maxTileRow": "36779",
+            "minTileCol": "21253",
+            "maxTileCol": "42952"
+          },
+          "17": {
+            "minTileRow": "43799",
+            "maxTileRow": "73558",
+            "minTileCol": "42506",
+            "maxTileCol": "85905"
+          },
+          "18": {
+            "minTileRow": "87599",
+            "maxTileRow": "147116",
+            "minTileCol": "85012",
+            "maxTileCol": "171811"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "ELEVATION.SLOPES$GEOPORTAIL:OGC:WMTS": {
       "name": "ELEVATION.SLOPES",
       "title": "Altitude",
@@ -123,6 +990,163 @@
       "formats": [
         {
           "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN",
+      "title": "Carte des pentes",
+      "description": "Carte des zones ayant une valeur de pente supérieure à 30°-35°-40°-45° d'après la BD ALTI au pas de 5m",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1614,
+          "right": 56.0018,
+          "top": 51.0991,
+          "bottom": -21.5446
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "1149",
+            "minTileCol": "664",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "2299",
+            "minTileCol": "1329",
+            "maxTileCol": "2685"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "4598",
+            "minTileCol": "2658",
+            "maxTileCol": "5370"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "9196",
+            "minTileCol": "5317",
+            "maxTileCol": "10740"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "18392",
+            "minTileCol": "10634",
+            "maxTileCol": "21481"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "36785",
+            "minTileCol": "21269",
+            "maxTileCol": "42962"
+          },
+          "17": {
+            "minTileRow": "43822",
+            "maxTileRow": "73571",
+            "minTileCol": "42539",
+            "maxTileCol": "85925"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
           "current": true
         }
       ]
@@ -335,21 +1359,21 @@
       "metadata": [],
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
+        },
+        {
+          "name": "normal",
+          "title": "Légende générique"
         }
       ],
       "legends": [
         {
-          "format": "image/jpeg",
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/png",
+          "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -461,37 +1485,37 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique"
+          "name": "normal",
+          "title": "Légende générique"
         },
         {
           "name": "estompage_grayscale",
           "title": "Estompage"
         },
         {
-          "name": "normal",
-          "title": "Légende générique"
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
           "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -812,29 +1836,29 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
+          "name": "normal",
+          "title": "Légende générique"
         },
         {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
-          "name": "normal",
-          "title": "Légende générique"
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
           "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -1112,29 +2136,29 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
+          "name": "normal",
+          "title": "Légende générique"
         },
         {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
-          "name": "normal",
-          "title": "Légende générique"
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
           "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -1629,6 +2653,273 @@
           "topLeftCorner": {
             "x": -20037508.3427892,
             "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "WGS84G": {
+      "projection": "IGNF:WGS84G",
+      "nativeResolutions": [
+        "0.703125",
+        "0.3515625",
+        "0.17578125",
+        "0.087890625",
+        "0.0439453125",
+        "0.02197265625",
+        "0.010986328125",
+        "0.0054931640625",
+        "0.00274658203125",
+        "0.001373291015625",
+        "0.0006866455078125",
+        "0.00034332275390625",
+        "0.000171661376953125",
+        "0.0000858306884765625",
+        "0.00004291534423828125",
+        "0.000021457672119140625",
+        "0.0000107288360595703125",
+        "0.00000536441802978515625",
+        "0.000002682209014892578125",
+        "0.0000013411045074462890625"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 2,
+          "scaleDenominator": 279541132.0143589,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 2,
+          "matrixWidth": 4,
+          "scaleDenominator": 139770566.00717944,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 4,
+          "matrixWidth": 8,
+          "scaleDenominator": 69885283.00358972,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 8,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655447,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277234,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638617,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319309,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.67334159654,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.836670798253,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399127,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699563,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497853,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 524288,
+          "scaleDenominator": 1066.3647919248926,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 524288,
+          "matrixWidth": 1048576,
+          "scaleDenominator": 533.1823959624463,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
           }
         }
       }

@@ -2,6 +2,9 @@
   "generalOptions": {
     "apiKeys": {
       "administratif": [
+        "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMTS",
+        "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMTS",
+        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMTS",
         "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
@@ -10,6 +13,351 @@
     }
   },
   "layers": {
+    "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMTS": {
+      "name": "ADMINEXPRESS-COG-CARTO.LATEST",
+      "title": "ADMINEXPRESS COG CARTO",
+      "description": "Limites administratives Express COG code officiel géographique 2023",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMTS": {
+      "name": "ADMINEXPRESS-COG.LATEST",
+      "title": "ADMINEXPRESS COG",
+      "description": "Limites administratives Express COG code officiel géographique. 2023",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMTS": {
+      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
+      "title": "Limites administratives mises à jour en continu.",
+      "description": "Limites administratives mises à jour en continu, édition Juillet 2023",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS": {
       "name": "ADMINEXPRESS-COG-CARTO.LATEST",
       "title": "ADMINEXPRESS COG CARTO",
