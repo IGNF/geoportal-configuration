@@ -264,6 +264,7 @@
         "ludi_2266__joincache_pyramide_1$GEOPORTAIL:OGC:WMTS",
         "ludi_2266__joincache_pyramide_2$GEOPORTAIL:OGC:WMTS",
         "ludi_site_2275_4_5_option__Flux_vecteur_wmts_py$GEOPORTAIL:OGC:WMTS",
+        "test_jpe$GEOPORTAIL:OGC:WMTS",
         "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS_COG_2020$GEOPORTAIL:OGC:WMS",
@@ -1691,17 +1692,17 @@
       },
       "styles": [
         {
-          "name": "BUILDINGS.BUILDINGS",
-          "title": "BUILDINGS.BUILDINGS",
+          "name": "normal",
+          "title": "Légende générique",
           "current": true,
           "url": null
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/BUILDINGS.BUILDINGS-legend.png",
-          "minScaleDenominator": "2000"
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
         }
       ],
       "formats": [
@@ -3264,8 +3265,8 @@
       },
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence",
+          "name": "hypso",
+          "title": "Teinte Hypsométrique",
           "current": true,
           "url": null
         }
@@ -4940,17 +4941,17 @@
       },
       "styles": [
         {
-          "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC",
-          "title": "Données GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC",
+          "name": "normal",
+          "title": "Légende générique",
           "current": true,
           "url": null
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC-legend.png",
-          "minScaleDenominator": "17062"
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
         }
       ],
       "formats": [
@@ -35541,6 +35542,151 @@
         }
       ]
     },
+    "test_jpe$GEOPORTAIL:OGC:WMTS": {
+      "name": "test_jpe",
+      "title": "test_jpe",
+      "description": "test_jpe",
+      "globalConstraint": {
+        "maxScaleDenominator": 748982857.1428572,
+        "minScaleDenominator": 178.57142857142858,
+        "bbox": {
+          "left": 2.47085,
+          "right": 3.246,
+          "top": 43.3851,
+          "bottom": 42.9983
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "LAMB93_5cm",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "6",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "7": {
+            "minTileRow": "13",
+            "maxTileRow": "13",
+            "minTileCol": "1",
+            "maxTileCol": "1"
+          },
+          "8": {
+            "minTileRow": "27",
+            "maxTileRow": "27",
+            "minTileCol": "3",
+            "maxTileCol": "3"
+          },
+          "9": {
+            "minTileRow": "54",
+            "maxTileRow": "55",
+            "minTileCol": "6",
+            "maxTileCol": "6"
+          },
+          "10": {
+            "minTileRow": "109",
+            "maxTileRow": "110",
+            "minTileCol": "12",
+            "maxTileCol": "13"
+          },
+          "11": {
+            "minTileRow": "219",
+            "maxTileRow": "220",
+            "minTileCol": "25",
+            "maxTileCol": "27"
+          },
+          "12": {
+            "minTileRow": "438",
+            "maxTileRow": "441",
+            "minTileCol": "50",
+            "maxTileCol": "54"
+          },
+          "13": {
+            "minTileRow": "876",
+            "maxTileRow": "883",
+            "minTileCol": "100",
+            "maxTileCol": "109"
+          },
+          "14": {
+            "minTileRow": "1753",
+            "maxTileRow": "1766",
+            "minTileCol": "200",
+            "maxTileCol": "219"
+          },
+          "15": {
+            "minTileRow": "3506",
+            "maxTileRow": "3533",
+            "minTileCol": "400",
+            "maxTileCol": "439"
+          },
+          "16": {
+            "minTileRow": "7013",
+            "maxTileRow": "7066",
+            "minTileCol": "801",
+            "maxTileCol": "879"
+          },
+          "17": {
+            "minTileRow": "14027",
+            "maxTileRow": "14133",
+            "minTileCol": "1603",
+            "maxTileCol": "1758"
+          },
+          "18": {
+            "minTileRow": "28055",
+            "maxTileRow": "28266",
+            "minTileCol": "3207",
+            "maxTileCol": "3516"
+          },
+          "19": {
+            "minTileRow": "56111",
+            "maxTileRow": "56533",
+            "minTileCol": "6414",
+            "maxTileCol": "7032"
+          },
+          "20": {
+            "minTileRow": "112223",
+            "maxTileRow": "113066",
+            "minTileCol": "12828",
+            "maxTileCol": "14064"
+          },
+          "21": {
+            "minTileRow": "224447",
+            "maxTileRow": "226132",
+            "minTileCol": "25656",
+            "maxTileCol": "28128"
+          },
+          "22": {
+            "minTileRow": "448895",
+            "maxTileRow": "452265",
+            "minTileCol": "51313",
+            "maxTileCol": "56256"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
     "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS": {
       "name": "ADMINEXPRESS-COG-CARTO.LATEST",
       "title": "ADMINEXPRESS COG CARTO",
@@ -36547,20 +36693,20 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
+          "name": "estompage_grayscale",
+          "title": "Estompage"
         },
         {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique"
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         },
         {
           "name": "normal",
           "title": "Légende générique"
         },
         {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
         }
       ],
       "legends": [
@@ -51062,29 +51208,29 @@
       "metadata": [],
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
           "name": "hypso_noalpha",
           "title": "Teintes Hypsométriques Sans Transparence"
+        },
+        {
+          "name": "normal",
+          "title": "Légende générique"
         }
       ],
       "legends": [
         {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
           "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -51137,12 +51283,12 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         },
         {
           "name": "normal",
@@ -51212,29 +51358,29 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
+          "name": "normal",
+          "title": "Légende générique"
         },
         {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
-          "name": "normal",
-          "title": "Légende générique"
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
           "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -51287,16 +51433,16 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
         },
         {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
@@ -51305,11 +51451,11 @@
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/png",
+          "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/jpeg",
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -51366,12 +51512,12 @@
           "title": "Teintes Hypsométriques Sans Transparence"
         },
         {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique"
-        },
-        {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
         }
       ],
       "legends": [
@@ -51380,11 +51526,11 @@
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/png",
+          "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/jpeg",
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -51516,12 +51662,12 @@
           "title": "Teintes Hypsométriques Sans Transparence"
         },
         {
-          "name": "hypso",
-          "title": "Teinte Hypsométrique"
-        },
-        {
           "name": "normal",
           "title": "Légende générique"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
         }
       ],
       "legends": [
@@ -51530,11 +51676,11 @@
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/png",
+          "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/jpeg",
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -107680,6 +107826,312 @@
     }
   },
   "tileMatrixSets": {
+    "LAMB93_5cm": {
+      "projection": "IGNF:LAMB93",
+      "nativeResolutions": [
+        "209715.2",
+        "104857.6",
+        "52428.8",
+        "26214.4",
+        "13107.2",
+        "6553.6",
+        "3276.8",
+        "1638.4",
+        "819.2",
+        "409.6",
+        "204.8",
+        "102.4",
+        "51.2",
+        "25.6",
+        "12.8",
+        "6.4",
+        "3.2",
+        "1.6",
+        "0.8",
+        "0.4",
+        "0.2",
+        "0.1",
+        "0.05"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 1,
+          "scaleDenominator": 748982857.1428572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 1,
+          "matrixWidth": 1,
+          "scaleDenominator": 374491428.5714286,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 1,
+          "matrixWidth": 1,
+          "scaleDenominator": 187245714.2857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 2,
+          "matrixWidth": 1,
+          "scaleDenominator": 93622857.14285715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 4,
+          "matrixWidth": 1,
+          "scaleDenominator": 46811428.571428575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 7,
+          "matrixWidth": 1,
+          "scaleDenominator": 23405714.285714287,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 13,
+          "matrixWidth": 2,
+          "scaleDenominator": 11702857.142857144,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 26,
+          "matrixWidth": 4,
+          "scaleDenominator": 5851428.571428572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 52,
+          "matrixWidth": 7,
+          "scaleDenominator": 2925714.285714286,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 103,
+          "matrixWidth": 13,
+          "scaleDenominator": 1462857.142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 206,
+          "matrixWidth": 25,
+          "scaleDenominator": 731428.5714285715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 411,
+          "matrixWidth": 50,
+          "scaleDenominator": 365714.28571428574,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 822,
+          "matrixWidth": 99,
+          "scaleDenominator": 182857.14285714287,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 1643,
+          "matrixWidth": 197,
+          "scaleDenominator": 91428.57142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 3285,
+          "matrixWidth": 394,
+          "scaleDenominator": 45714.28571428572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 6569,
+          "matrixWidth": 788,
+          "scaleDenominator": 22857.14285714286,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 13138,
+          "matrixWidth": 1575,
+          "scaleDenominator": 11428.57142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 26276,
+          "matrixWidth": 3150,
+          "scaleDenominator": 5714.285714285715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 52552,
+          "matrixWidth": 6300,
+          "scaleDenominator": 2857.1428571428573,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 105102,
+          "matrixWidth": 12600,
+          "scaleDenominator": 1428.5714285714287,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "20": {
+          "matrixId": "20",
+          "matrixHeight": 210205,
+          "matrixWidth": 25200,
+          "scaleDenominator": 714.2857142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "21": {
+          "matrixId": "21",
+          "matrixHeight": 420409,
+          "matrixWidth": 50400,
+          "scaleDenominator": 357.14285714285717,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "22": {
+          "matrixId": "22",
+          "matrixHeight": 840818,
+          "matrixWidth": 100800,
+          "scaleDenominator": 178.57142857142858,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        }
+      }
+    },
     "PM": {
       "projection": "EPSG:3857",
       "nativeResolutions": [
