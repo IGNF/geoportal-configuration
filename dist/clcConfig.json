@@ -38,9 +38,13 @@
         "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC12$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC90_FR$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.HR.DLT.CLC12$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.HR.DLT.CLC15$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.HR.GRA.CLC15$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.HR.IMD.CLC12$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.HR.IMD.CLC15$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.HR.TCD.CLC12$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.HR.TCD.CLC15$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.HR.WAW.CLC15$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.CHA00_FR$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.CHA06_DOM$GEOPORTAIL:OGC:WMS",
@@ -78,9 +82,13 @@
         "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.GRID.CLC12$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.GRID.CLC90_FR$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.HR.DLT.CLC12$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.HR.DLT.CLC15$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.HR.GRA.CLC15$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.HR.IMD.CLC12$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.HR.IMD.CLC15$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.HR.TCD.CLC12$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.HR.TCD.CLC15$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.HR.WAW.CLC15$GEOPORTAIL:OGC:WMS"
       ]
     }
@@ -5294,6 +5302,272 @@
         }
       ]
     },
+    "LANDCOVER.HR.DLT.CLC12$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.HR.DLT.CLC12",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du type de forêts - Résolution 20m - 2012",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le type de forêt cartographie la distinction feuillus ou résineux majoritairement présents dans les pixels, avec un taux de couvert arboré de plus de 10%. Ce produit permet d’approcher le plus possible des forêts au sens de la définition de l’Organisation des Nations unies pour l'alimentation et l'agriculture (FAO). La surface minimale cartographiée est de 0,52 ha, ce qui correspond à un groupement de 13 pixels. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1 : Feuillus - 2 : Conifères - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - type de forêts",
+          "title": "CORINE Land Cover - HR - type de forêts",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_DLT.png",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.HR.DLT.CLC15$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.HR.DLT.CLC15",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du type de forêts - Résolution 20m - 2015",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le type de forêt cartographie la distinction feuillus ou résineux majoritairement présents dans les pixels, avec un taux de couvert arboré de plus de 10%. Ce produit permet d’approcher le plus possible des forêts au sens de la définition de l’Organisation des Nations unies pour l'alimentation et l'agriculture (FAO). La surface minimale cartographiée est de 0,52 ha, ce qui correspond à un groupement de 13 pixels. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1 : Feuillus - 2 : Conifères - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - type de forêts",
+          "title": "CORINE Land Cover - HR - type de forêts",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_DLT.png",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "LANDCOVER.HR.GRA.CLC15$GEOPORTAIL:OGC:WMTS": {
       "name": "LANDCOVER.HR.GRA.CLC15",
       "title": "Raster CORINE Land Cover - Couche haute résolution des prairies - Résolution 20m - 2015",
@@ -5683,6 +5957,272 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_IMD.png",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.HR.TCD.CLC12$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.HR.TCD.CLC12",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du taux de couvert arboré - Résolution 20m - 2012",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le taux de couvert arboré cartographie le pourcentage de couverture arborée par pixels de 20 m de côté. Sont ainsi cartographiées les surfaces arborées en zones urbaines, agricoles ou forestières. La surface minimale cartographiée est de 20 m x 20 m. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1-100 : Taux de couvert arboré - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - taux de couvert arboré",
+          "title": "CORINE Land Cover - HR - taux de couvert arboré",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_TCD.png",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.HR.TCD.CLC15$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.HR.TCD.CLC15",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du taux de couvert arboré - Résolution 20m - 2015",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le taux de couvert arboré cartographie le pourcentage de couverture arborée par pixels de 20 m de côté. Sont ainsi cartographiées les surfaces arborées en zones urbaines, agricoles ou forestières. La surface minimale cartographiée est de 20 m x 20 m. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1-100 : Taux de couvert arboré - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - taux de couvert arboré",
+          "title": "CORINE Land Cover - HR - taux de couvert arboré",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_TCD.png",
           "minScaleDenominator": "8000"
         }
       ],
@@ -7950,6 +8490,124 @@
         }
       ]
     },
+    "LANDCOVER.HR.DLT.CLC12$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.HR.DLT.CLC12",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du type de forêts - Résolution 20m - 2012",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le type de forêt cartographie la distinction feuillus ou résineux majoritairement présents dans les pixels, avec un taux de couvert arboré de plus de 10%. Ce produit permet d’approcher le plus possible des forêts au sens de la définition de l’Organisation des Nations unies pour l'alimentation et l'agriculture (FAO). La surface minimale cartographiée est de 0,52 ha, ce qui correspond à un groupement de 13 pixels. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1 : Feuillus - 2 : Conifères - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "minScaleDenominator": 68247.346683193,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - type de forêts",
+          "title": "CORINE Land Cover - HR - type de forêts"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_DLT.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.HR.DLT.CLC15$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.HR.DLT.CLC15",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du type de forêts - Résolution 20m - 2015",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le type de forêt cartographie la distinction feuillus ou résineux majoritairement présents dans les pixels, avec un taux de couvert arboré de plus de 10%. Ce produit permet d’approcher le plus possible des forêts au sens de la définition de l’Organisation des Nations unies pour l'alimentation et l'agriculture (FAO). La surface minimale cartographiée est de 0,52 ha, ce qui correspond à un groupement de 13 pixels. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1 : Feuillus - 2 : Conifères - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "minScaleDenominator": 68247.346683193,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - type de forêts",
+          "title": "CORINE Land Cover - HR - type de forêts"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_DLT.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "LANDCOVER.HR.GRA.CLC15$GEOPORTAIL:OGC:WMS": {
       "name": "LANDCOVER.HR.GRA.CLC15",
       "title": "Raster CORINE Land Cover - Couche haute résolution des prairies - Résolution 20m - 2015",
@@ -8102,6 +8760,124 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_IMD.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.HR.TCD.CLC12$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.HR.TCD.CLC12",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du taux de couvert arboré - Résolution 20m - 2012",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le taux de couvert arboré cartographie le pourcentage de couverture arborée par pixels de 20 m de côté. Sont ainsi cartographiées les surfaces arborées en zones urbaines, agricoles ou forestières. La surface minimale cartographiée est de 20 m x 20 m. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1-100 : Taux de couvert arboré - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "minScaleDenominator": 68247.346683193,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - taux de couvert arboré",
+          "title": "CORINE Land Cover - HR - taux de couvert arboré"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_TCD.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.HR.TCD.CLC15$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.HR.TCD.CLC15",
+      "title": "Raster CORINE Land Cover - Couche haute résolution du taux de couvert arboré - Résolution 20m - 2015",
+      "description": "Les couches haute résolution sont des couches thématiques d’occupation des sols, produites par le service Territoire du programme européen d'observation de la Terre Copernicus. Ce programme est coordonné par la Commission européenne et associe l’Agence spatiale européenne, l’Agence européenne pour l’environnement ainsi que les États membres. Ces données sont produites automatiquement à partir d’images satellite. Elles sont ensuite vérifiées puis améliorées manuellement. La production et la diffusion de ces couches haute résolution sont pilotées par l'Agence européenne pour l'environnement. Pour la France, le Service de l'observation et des statistiques du ministère chargé de l'environnement a la responsabilité des vérifications et des améliorations de ces produits. Le taux de couvert arboré cartographie le pourcentage de couverture arborée par pixels de 20 m de côté. Sont ainsi cartographiées les surfaces arborées en zones urbaines, agricoles ou forestières. La surface minimale cartographiée est de 20 m x 20 m. Les valeurs cartographiées sont : - 0 : Zone non-arborée - 1-100 : Taux de couvert arboré - 254 : Inclassable (nuage, donnée satellite indisponible, ombre ou neige) - 255 : En dehors de la zone d'étude Ces données haute résolution peuvent être utilisées indépendamment ou en complément de CORINE Land Cover. En effet, CLC permet de cartographier des polygones homogènes d’occupation des sols tels que du tissu urbain discontinu et des zones industrielles ou commerciales. Les couches haute résolution permettent alors d’apporter une nouvelle information pour chacune de ces zones, en précisant leur degré d’imperméabilisation, leur taux de couvert arboré, etc.",
+      "globalConstraint": {
+        "minScaleDenominator": 68247.346683193,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "CORINE Land Cover - HR - taux de couvert arboré",
+          "title": "CORINE Land Cover - HR - taux de couvert arboré"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_HR_TCD.png"
         }
       ],
       "formats": [
