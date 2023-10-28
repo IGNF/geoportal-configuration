@@ -388,6 +388,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS2018$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS2019$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS2020$GEOPORTAIL:OGC:WMTS",
+        "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMTS",
@@ -50946,6 +50947,151 @@
           "minScaleDenominator": "200"
         }
       ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS": {
+      "name": "PCRS.LAMB93",
+      "title": "PCRS",
+      "description": "Données du Plan Corps de Rue Simplifié",
+      "globalConstraint": {
+        "maxScaleDenominator": 748982857.1428572,
+        "minScaleDenominator": 178.57142857142858,
+        "bbox": {
+          "left": -3.74182,
+          "right": 4.24228,
+          "top": 50.991,
+          "bottom": 42.6445
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "LAMB93_5cm",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "5",
+            "maxTileRow": "6",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "7": {
+            "minTileRow": "11",
+            "maxTileRow": "13",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "8": {
+            "minTileRow": "23",
+            "maxTileRow": "27",
+            "minTileCol": "0",
+            "maxTileCol": "3"
+          },
+          "9": {
+            "minTileRow": "46",
+            "maxTileRow": "55",
+            "minTileCol": "1",
+            "maxTileCol": "7"
+          },
+          "10": {
+            "minTileRow": "93",
+            "maxTileRow": "111",
+            "minTileCol": "2",
+            "maxTileCol": "15"
+          },
+          "11": {
+            "minTileRow": "186",
+            "maxTileRow": "222",
+            "minTileCol": "5",
+            "maxTileCol": "30"
+          },
+          "12": {
+            "minTileRow": "372",
+            "maxTileRow": "444",
+            "minTileCol": "11",
+            "maxTileCol": "61"
+          },
+          "13": {
+            "minTileRow": "744",
+            "maxTileRow": "889",
+            "minTileCol": "22",
+            "maxTileCol": "122"
+          },
+          "14": {
+            "minTileRow": "1489",
+            "maxTileRow": "1778",
+            "minTileCol": "44",
+            "maxTileCol": "244"
+          },
+          "15": {
+            "minTileRow": "2978",
+            "maxTileRow": "3557",
+            "minTileCol": "89",
+            "maxTileCol": "489"
+          },
+          "16": {
+            "minTileRow": "5957",
+            "maxTileRow": "7114",
+            "minTileCol": "179",
+            "maxTileCol": "979"
+          },
+          "17": {
+            "minTileRow": "11914",
+            "maxTileRow": "14229",
+            "minTileCol": "359",
+            "maxTileCol": "1958"
+          },
+          "18": {
+            "minTileRow": "23829",
+            "maxTileRow": "28458",
+            "minTileCol": "718",
+            "maxTileCol": "3916"
+          },
+          "19": {
+            "minTileRow": "47659",
+            "maxTileRow": "56917",
+            "minTileCol": "1436",
+            "maxTileCol": "7832"
+          },
+          "20": {
+            "minTileRow": "95318",
+            "maxTileRow": "113835",
+            "minTileCol": "2872",
+            "maxTileCol": "15664"
+          },
+          "21": {
+            "minTileRow": "190636",
+            "maxTileRow": "227670",
+            "minTileCol": "5744",
+            "maxTileCol": "31328"
+          },
+          "22": {
+            "minTileRow": "381273",
+            "maxTileRow": "455340",
+            "minTileCol": "11489",
+            "maxTileCol": "62656"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
       "formats": [
         {
           "name": "image/jpeg",
