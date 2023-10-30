@@ -87,22 +87,22 @@
     <div class="content">
       <h3>Récupérer le fichier de configuration</h2>
       <p>
-        Sélectionnez le nombre de clefs d'accès que vous souhaitez utiliser dans votre application Géoportail.
-        Pour chaque clef, remplissez le champ correspondant avec son nom.
+        Sélectionnez le nombre de thématiques d'accès que vous souhaitez utiliser dans votre application Géoportail.
+        Pour chaque thématique, remplissez le champ correspondant avec son nom.
         Cliquez sur le bouton "Récupérer le fichier de configuration".<br>
         <b>Cela peut prendre plusieurs minutes, merci de garder cet onglet ouvert après validation.</b>
       </p>
 
       <form action="" method="POST">
         <div>
-          <label for="keyNumber">Nombre de clefs : </label>
+          <label for="keyNumber">Nombre de thématiques : </label>
           <input type="number" min="1" max="10" id="keyNumber" value="1">
         </div>
 
         <div id="keyInputSection">
           <p id="keyInputPara1">
-              <label for="keyInput1" class="key-label">Clef 1 : </label>
-              <input type="text" class="form-control input-sm key-value" placeholder="Clef d'accès Géoportail 1" size="30" name="apiKey1" id="apiKey1">
+              <label for="keyInput1" class="key-label">thématique 1 : </label>
+              <input type="text" class="form-control input-sm key-value" placeholder="thématique d'accès Géoportail 1" size="30" name="apiKey1" id="apiKey1">
           </p>
         </div>
 
@@ -138,12 +138,12 @@
             // create label for key input
             var keyLabel = document.createElement("div");
             keyLabel.className = "key-label";
-            keyLabel.innerHTML = "Clef " + i + " : ";
+            keyLabel.innerHTML = "thématique " + i + " : ";
             // create key input
             var keyInput = document.createElement("input");
             keyInput.type = "text";
             keyInput.className = "form-control input-sm key-value"; // set the CSS class
-            keyInput.placeholder = "Clef d'accès Géoportail " + i;
+            keyInput.placeholder = "thématique d'accès Géoportail " + i;
             keyInput.size = "30";
             keyInput.id = "apiKey" + i;
             keyInput.name = "apiKey" + i;
