@@ -667,6 +667,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS2019$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS2020$GEOPORTAIL:OGC:WMS",
         "Ortho_50cm_ASSEMBLAGE_D075D092_2021$GEOPORTAIL:OGC:WMS",
+        "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMS",
@@ -799,6 +800,7 @@
         "BDCARTO-GEOPO-HYDROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDCARTO-GEOPO-RESEAU_FERRE_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDCARTO-GEOPO-RESEAU_ROUTIER_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
+        "BDCARTO-GEOPO-TOPONYME_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDCARTO-HYDROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDCARTO-LIEUX_NOMMES_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDCARTO-OCCUPATION_DU_SOL_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
@@ -832,10 +834,12 @@
         "BDTOPO-GEOPO-ZONE-ACTIVITES_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BESOIN.CHALEUR.TERTIAIRE$GEOPORTAIL:OGC:WMS",
         "BESOIN.FROID.TERTIAIRE$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.PCI_VECTEUR$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.QUALREFBDP$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS",
         "CAMINO$GEOPORTAIL:OGC:WMS",
         "CJP-PARCS-JARDINS_BDD-POI_WLD_WM$GEOPORTAIL:OGC:WMS",
         "CLC00R_BDD_WLD_WM_20180322$GEOPORTAIL:OGC:WMS",
@@ -73506,6 +73510,70 @@
         }
       ]
     },
+    "PCRS.LAMB93$GEOPORTAIL:OGC:WMS": {
+      "name": "PCRS.LAMB93",
+      "title": "PCRS",
+      "description": "Données du Plan Corps de Rue Simplifié",
+      "globalConstraint": {
+        "minScaleDenominator": 178.571428571,
+        "maxScaleDenominator": 11702857.142857142,
+        "bbox": {
+          "left": -3.741824,
+          "right": 4.242277,
+          "top": 50.991047,
+          "bottom": 42.644453
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://geoservices.ign.fr/sites/default/files/2021-07/PCRS_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.APB",
       "title": "Biotopes d'espèces protégées",
@@ -87176,6 +87244,129 @@
         }
       ]
     },
+    "BDCARTO-GEOPO-TOPONYME_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
+      "name": "BDCARTO-GEOPO-TOPONYME_WLD_WGS84G",
+      "title": "BDCARTO Toponyme 21.1 edition 2021",
+      "description": "BDCARTO  21.1 edition 2021",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-BDCARTO-GEOPO-TOPONYME_WLD_WGS84G",
+          "title": "BDCARTO-GEOPO-TOPONYME_WLD_WGS84G style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDCARTO-GEOPO-TOPONYME_WLD_WGS84G"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "BDCARTO-HYDROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
       "name": "BDCARTO-HYDROGRAPHIE_WLD_WGS84G",
       "title": "bdcarto v5 hydrographie",
@@ -90989,6 +91180,129 @@
         }
       ]
     },
+    "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.COMMUNES",
+      "title": "Communes - BD PARCELLAIRE",
+      "description": "Affichage des communes cadastrales (NB : les contours des communes de la BD TOPO® et de la BD PARCELLAIRE® ne sont pas exactement superposables ; en effet, l'origine de la donnée n'est pas la même pour ces deux ba ses (uniquement cadastre, éventuellement ajusté, pour la BD PARCELLAIRE®). Donnée établie d'après les plans cadastraux transmis par la DGFiP (Direction générale des Finances publiques).",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15313141,
+          "right": 55.83668585,
+          "top": 51.0888974,
+          "bottom": -21.38974728
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-CADASTRALPARCELS.COMMUNES",
+          "title": "CADASTRALPARCELS.COMMUNES style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CADASTRALPARCELS.COMMUNES"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS": {
       "name": "CADASTRALPARCELS.GRAPHE",
       "title": "Graphe de mosaïquage des parcelles cadastrales",
@@ -91146,6 +91460,129 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CADASTRALPARCELS.PCI_VECTEUR"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.SECTIONS",
+      "title": "Sections cadastrales - BD PARCELLAIRE",
+      "description": "Affichage des divisions cadastrales (partie du plan cadastral correspondant à une section ou à une subdivision de section). Donnée établie d'après les plans cadastraux transmis par la DGFiP (Direction générale des Finances publiques).",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15313141,
+          "right": 55.83668585,
+          "top": 51.0888974,
+          "bottom": -21.38974728
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-CADASTRALPARCELS.SECTIONS",
+          "title": "CADASTRALPARCELS.SECTIONS style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CADASTRALPARCELS.SECTIONS"
         }
       ],
       "formats": [
