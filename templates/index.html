@@ -101,8 +101,33 @@
 
         <div id="keyInputSection">
           <p id="keyInputPara1">
-              <label for="keyInput1" class="key-label">thématique 1 : </label>
-              <input type="text" class="form-control input-sm key-value" placeholder="thématique d'accès Géoportail 1" size="30" name="apiKey1" id="apiKey1">
+            <label for="keyInput1" class="key-label">Thématique 1</label>
+            <select class="form-control input-sm key-value" name="apiKey1" id="apiKey1">
+              <option value="administratif">administratif</option>
+              <option value="adresse">adresse</option>
+              <option value="agriculture">agriculture</option>
+              <option value="altimetrie">altimetrie</option>
+              <option value="calcul">calcul</option>
+              <option value="cartes">cartes</option>
+              <option value="cartovecto">cartovecto</option>
+              <option value="clc">clc</option>
+              <option value="decouverte">decouverte</option>
+              <option value="economie">economie</option>
+              <option value="enr">enr</option>
+              <option value="environnement">environnement</option>
+              <option value="essentiels">essentiels</option>
+              <option value="geodesie">geodesie</option>
+              <option value="inspire">inspire</option>
+              <option value="lambert93">lambert93</option>
+              <option value="ocsge">ocsge</option>
+              <option value="ortho">ortho</option>
+              <option value="orthohisto">orthohisto</option>
+              <option value="parcellaire">parcellaire</option>
+              <option value="satellite">satellite</option>
+              <option value="sol">sol</option>
+              <option value="topographie">topographie</option>
+              <option value="transports">transports</option>
+            </select>
           </p>
         </div>
 
@@ -138,15 +163,39 @@
             // create label for key input
             var keyLabel = document.createElement("div");
             keyLabel.className = "key-label";
-            keyLabel.innerHTML = "thématique " + i + " : ";
+            keyLabel.innerHTML = "Thématique " + i + " : ";
             // create key input
-            var keyInput = document.createElement("input");
+            var keyInput = document.createElement("select");
             keyInput.type = "text";
             keyInput.className = "form-control input-sm key-value"; // set the CSS class
-            keyInput.placeholder = "thématique d'accès Géoportail " + i;
-            keyInput.size = "30";
             keyInput.id = "apiKey" + i;
             keyInput.name = "apiKey" + i;
+            keyInput.innerHTML = `
+              <option value="administratif">administratif</option>
+              <option value="adresse">adresse</option>
+              <option value="agriculture">agriculture</option>
+              <option value="altimetrie">altimetrie</option>
+              <option value="calcul">calcul</option>
+              <option value="cartes">cartes</option>
+              <option value="cartovecto">cartovecto</option>
+              <option value="clc">clc</option>
+              <option value="decouverte">decouverte</option>
+              <option value="economie">economie</option>
+              <option value="enr">enr</option>
+              <option value="environnement">environnement</option>
+              <option value="essentiels">essentiels</option>
+              <option value="geodesie">geodesie</option>
+              <option value="inspire">inspire</option>
+              <option value="lambert93">lambert93</option>
+              <option value="ocsge">ocsge</option>
+              <option value="ortho">ortho</option>
+              <option value="orthohisto">orthohisto</option>
+              <option value="parcellaire">parcellaire</option>
+              <option value="satellite">satellite</option>
+              <option value="sol">sol</option>
+              <option value="topographie">topographie</option>
+              <option value="transports">transports</option>
+            `
             // add the form elements to the DOM
             keyPara.appendChild(keyLabel);
             keyPara.appendChild(keyInput);
