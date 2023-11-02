@@ -33,6 +33,7 @@
         "LANDUSE.AGRICULTURE2019$GEOPORTAIL:OGC:WMTS",
         "LANDUSE.AGRICULTURE2020$GEOPORTAIL:OGC:WMTS",
         "LANDUSE.AGRICULTURE2021$GEOPORTAIL:OGC:WMTS",
+        "LANDUSE.AGRICULTURE2022$GEOPORTAIL:OGC:WMTS",
         "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
@@ -52,6 +53,7 @@
         "LANDUSE.AGRICULTURE2019$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE2020$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE2021$GEOPORTAIL:OGC:WMS",
+        "LANDUSE.AGRICULTURE2022$GEOPORTAIL:OGC:WMS",
         "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS"
       ],
       "altimetrie": [
@@ -3785,6 +3787,121 @@
         }
       ]
     },
+    "LANDUSE.AGRICULTURE2022$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDUSE.AGRICULTURE2022",
+      "title": "Registre parcellaire graphique 2022",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2022",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://wxs.ign.fr/agriculture/geoportail/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMTS": {
       "name": "PRAIRIES.SENSIBLES.BCAE",
       "title": "Préservation des prairies et pâturages permanents en zone Natura 2000",
@@ -5060,6 +5177,74 @@
       "name": "LANDUSE.AGRICULTURE2021",
       "title": "Registre parcellaire graphique 2021",
       "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2021",
+      "globalConstraint": {
+        "minScaleDenominator": 267.857142857,
+        "maxScaleDenominator": 559082264.2857143,
+        "bbox": {
+          "left": -63.372521503,
+          "right": 55.925864577,
+          "top": 51.312119281,
+          "bottom": -21.475586668
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "agriculture": "https://wxs.ign.fr/agriculture/geoportail/r/wms?"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "xml",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_RPG_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        },
+        {
+          "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "LANDUSE.AGRICULTURE2022$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDUSE.AGRICULTURE2022",
+      "title": "Registre parcellaire graphique 2022",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2022",
       "globalConstraint": {
         "minScaleDenominator": 267.857142857,
         "maxScaleDenominator": 559082264.2857143,
