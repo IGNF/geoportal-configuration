@@ -4,12 +4,14 @@
       "altimetrie": [
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMTS",
+        "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.LEVEL0$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.SLOPES$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMS",
@@ -255,6 +257,109 @@
             "maxTileRow": "1285",
             "minTileCol": "1319",
             "maxTileCol": "3959"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/x-bil;bits=32",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES",
+      "title": "Modèle Numérique de Terrain issu du RGEALTI",
+      "description": "Modèle Numérique de Terrain issu du RGEALTI",
+      "globalConstraint": {
+        "maxScaleDenominator": 279541132.0143589,
+        "minScaleDenominator": 533.1823959624463,
+        "bbox": {
+          "left": -62.9528,
+          "right": 45.3043,
+          "top": 51.1053,
+          "bottom": -13.0078
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "WGS84G",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "13",
+            "maxTileRow": "36",
+            "minTileCol": "41",
+            "maxTileCol": "80"
+          },
+          "7": {
+            "minTileRow": "27",
+            "maxTileRow": "73",
+            "minTileCol": "83",
+            "maxTileCol": "160"
+          },
+          "8": {
+            "minTileRow": "55",
+            "maxTileRow": "146",
+            "minTileCol": "166",
+            "maxTileCol": "320"
+          },
+          "9": {
+            "minTileRow": "110",
+            "maxTileRow": "292",
+            "minTileCol": "332",
+            "maxTileCol": "640"
+          },
+          "10": {
+            "minTileRow": "221",
+            "maxTileRow": "585",
+            "minTileCol": "665",
+            "maxTileCol": "1281"
+          },
+          "11": {
+            "minTileRow": "442",
+            "maxTileRow": "1171",
+            "minTileCol": "1331",
+            "maxTileCol": "2563"
+          },
+          "12": {
+            "minTileRow": "885",
+            "maxTileRow": "2343",
+            "minTileCol": "2663",
+            "maxTileCol": "5126"
+          },
+          "13": {
+            "minTileRow": "1770",
+            "maxTileRow": "4687",
+            "minTileCol": "5326",
+            "maxTileCol": "10253"
+          },
+          "14": {
+            "minTileRow": "3540",
+            "maxTileRow": "9375",
+            "minTileCol": "10653",
+            "maxTileCol": "20507"
           }
         }
       },
@@ -1020,6 +1125,163 @@
       "formats": [
         {
           "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN",
+      "title": "Carte des pentes",
+      "description": "Carte des zones ayant une valeur de pente supérieure à 30°-35°-40°-45° d'après la BD ALTI au pas de 5m",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1614,
+          "right": 56.0018,
+          "top": 51.0991,
+          "bottom": -21.5446
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "1149",
+            "minTileCol": "664",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "2299",
+            "minTileCol": "1329",
+            "maxTileCol": "2685"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "4598",
+            "minTileCol": "2658",
+            "maxTileCol": "5370"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "9196",
+            "minTileCol": "5317",
+            "maxTileCol": "10740"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "18392",
+            "minTileCol": "10634",
+            "maxTileCol": "21481"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "36785",
+            "minTileCol": "21269",
+            "maxTileCol": "42962"
+          },
+          "17": {
+            "minTileRow": "43822",
+            "maxTileRow": "73571",
+            "minTileCol": "42539",
+            "maxTileCol": "85925"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
           "current": true
         }
       ]
