@@ -42,6 +42,7 @@
         "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMS",
+        "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.BIOS$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.GP$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMS",
@@ -62,6 +63,7 @@
         "PROTECTEDAREAS.ZNIEFF1.SEA$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZNIEFF2$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMS",
+        "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZPS$GEOPORTAIL:OGC:WMS",
         "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMS",
         "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS",
@@ -4717,6 +4719,129 @@
         }
       ]
     },
+    "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.APLG",
+      "title": "Arrêtés listes de sites d'intérêt géologique",
+      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.13927604,
+          "right": -1.13186347,
+          "top": 48.88517694,
+          "bottom": 47.32788872
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.APLG",
+          "title": "PROTECTEDAREAS.APLG style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.APLG"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "PROTECTEDAREAS.BIOS$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.BIOS",
       "title": "Réserves de biosphère",
@@ -6729,6 +6854,129 @@
         }
       ]
     },
+    "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.ZPR",
+      "title": "Zones de protection renforcée",
+      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -2.70339452,
+          "right": 81.5276315,
+          "top": 48.52637697,
+          "bottom": -51.59472222
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.ZPR",
+          "title": "PROTECTEDAREAS.ZPR style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZPR"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "PROTECTEDAREAS.ZPS$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.ZPS",
       "title": "Sites NATURA 2000 au titre de la directive Oiseaux",
@@ -7221,129 +7469,6 @@
         }
       ]
     },
-    "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.APLG",
-      "title": "Arrêtés listes de sites d'intérêt géologique",
-      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.13927604,
-          "right": -1.13186347,
-          "top": 48.88517694,
-          "bottom": 47.32788872
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.APLG",
-          "title": "PROTECTEDAREAS.APLG style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.APLG"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
     "PROTECTEDAREAS.MNHN.CONSERVATOIRES$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.MNHN.CONSERVATOIRES",
       "title": "Terrains des conservatoires d'espaces naturels",
@@ -7378,129 +7503,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.MNHN.CONSERVATOIRES"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.ZPR",
-      "title": "Zones de protection renforcée",
-      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -2.70339452,
-          "right": 81.5276315,
-          "top": 48.52637697,
-          "bottom": -51.59472222
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.ZPR",
-          "title": "PROTECTEDAREAS.ZPR style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZPR"
         }
       ],
       "formats": [
