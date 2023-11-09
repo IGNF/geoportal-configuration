@@ -480,6 +480,7 @@
         "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMS",
+        "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMS",
@@ -924,6 +925,7 @@
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMS",
         "Formation_vegetation_Guadeloupe_2010$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "HAIES.BOCAGES$GEOPORTAIL:OGC:WMS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMS",
         "INRAP-ARCHEOPREV_BDD-POI_WLD_WM$GEOPORTAIL:OGC:WMS",
@@ -53292,17 +53294,17 @@
       },
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique",
+          "name": "PROTECTEDAREAS.MNHN.CDL.PARCELS",
+          "title": "PROTECTEDAREAS.MNHN.CDL.PARCELS",
           "current": true,
           "url": null
         }
       ],
       "legends": [
         {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/PROTECTEDAREAS.MNHN.CDL.PARCELS-legend.png",
+          "minScaleDenominator": "2000"
         }
       ],
       "formats": [
@@ -61863,6 +61865,65 @@
         },
         {
           "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW$GEOPORTAIL:OGC:WMS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW",
+      "title": "Estompage appliqué au Modèle Numérique de Surface",
+      "description": "Modèle Numérique de Surface (MNS) avec un style par défaut produisant de l'estompage.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.019158636,
+        "maxScaleDenominator": 156.947544643,
+        "bbox": {
+          "left": -63.19677759,
+          "right": 55.86392603,
+          "top": 51.22004662,
+          "bottom": -21.43377841
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -79731,25 +79792,25 @@
       "metadata": [],
       "styles": [
         {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
           "name": "normal",
           "title": "Légende générique"
         },
         {
           "name": "hypso",
           "title": "Teinte Hypsométrique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
+          "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
-          "format": "image/jpeg",
+          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         },
         {
@@ -101085,6 +101146,129 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Formation_vegetation_Guadeloupe_2010"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE",
+      "title": "Graphe de mosaïquage du produit SCAN25",
+      "description": "Le graphe de mosaïquage du produit SCAN25 fournit le zonage utilisé pour la mise à jour des données SCAN25 ainsi que différentes métadonnées. 12-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.20573225,
+          "right": 55.83667602,
+          "top": 51.08938762,
+          "bottom": -21.38985327
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE",
+          "title": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE"
         }
       ],
       "formats": [
