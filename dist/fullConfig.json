@@ -372,7 +372,11 @@
         "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZPS$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMS"
+        "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMS",
+        "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS",
+        "LOT.CHASSE$GEOPORTAIL:OGC:WMS",
+        "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS",
+        "PROTECTEDAREAS.MNHN.CONSERVATOIRES$GEOPORTAIL:OGC:WMS"
       ],
       "essentiels": [
         "ADMIN_EXPRESS$GEOPORTAIL:OGC:WMTS",
@@ -387,6 +391,13 @@
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
+      ],
+      "geodesie": [
+        "BDGEODESIQUE-RGP_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-RN_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-TRIPLET_BDD-POI_WLD$GEOPORTAIL:OGC:WMS"
       ],
       "inspire": [
         "CP.CadastralParcel$INSPIRE:OGC:WMS",
@@ -499,7 +510,9 @@
         "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS",
         "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
-        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS"
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
       ],
       "orthohisto": [
         "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965$GEOPORTAIL:OGC:WMTS",
@@ -588,7 +601,11 @@
         "ORTHOIMAGERY.ORTHOPHOTOS2017$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS2018$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS2019$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS2020$GEOPORTAIL:OGC:WMS"
+        "ORTHOIMAGERY.ORTHOPHOTOS2020$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORHOPHOTOS.URGENCE.ALEX.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2006-2010$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015$GEOPORTAIL:OGC:WMS"
       ],
       "parcellaire": [
         "Aire-Parcellaire$GEOPORTAIL:OGC:WMTS",
@@ -602,6 +619,9 @@
         "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS",
         "PCI$GEOPORTAIL:GPP:TMS"
       ],
       "satellite": [
@@ -13184,7 +13204,7 @@
         "bbox": {
           "left": -54.0454793151576,
           "right": 166.022369722846,
-          "top": 50.9739558526893,
+          "top": 50.5795443487469,
           "bottom": -21.8995463207788
         }
       },
@@ -35004,6 +35024,478 @@
         }
       ]
     },
+    "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS": {
+      "name": "DEBROUSSAILLEMENT",
+      "title": "DEBROUSSAILLEMENT",
+      "description": "Layer-Group type layer: DEBROUSSAILLEMENT",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -3.8675180308517407,
+          "right": 10.437578242631561,
+          "top": 49.322583236813664,
+          "bottom": 41.32091748198299
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://wxs.ign.fr/environnement/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MTD_Produit_Vecteur.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "LOT.CHASSE$GEOPORTAIL:OGC:WMS": {
+      "name": "LOT.CHASSE",
+      "title": "LOT.CHASSE",
+      "description": "Layer-Group type layer: LOT.CHASSE",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.14490144545954,
+          "right": 55.83443328125219,
+          "top": 51.08708740912745,
+          "bottom": -21.383983746046177
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://wxs.ign.fr/environnement/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MTD_Produit_Vecteur.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS": {
+      "name": "MESURES_COMPENSATOIRES",
+      "title": "MESURES_COMPENSATOIRES",
+      "description": "Layer-Group type layer: MESURES_COMPENSATOIRES",
+      "globalConstraint": {
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 85.0,
+          "bottom": -85.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://wxs.ign.fr/environnement/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=mesures_compensatoires_MTES.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.MNHN.CONSERVATOIRES$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.MNHN.CONSERVATOIRES",
+      "title": "PROTECTEDAREAS.MNHN.CONSERVATOIRES",
+      "description": "Layer-Group type layer: PROTECTEDAREAS.MNHN.CONSERVATOIRES",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -2.3701155109154377,
+          "right": 7.593216435614205,
+          "top": 50.900417274730465,
+          "bottom": 42.50564845429481
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://wxs.ign.fr/environnement/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MNHN.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS": {
       "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
       "title": "PCI vecteur",
@@ -35355,7 +35847,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "essentiels": "https://wxs.ign.fr/essentiels/geoportail/v/wms?SERVICE=WMS&"
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:3857",
@@ -35364,6 +35856,596 @@
         {
           "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-RGP_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-RGP_BDD-POI_WLD",
+      "title": "BDGEODESIQUE-RGP_BDD-POI_WLD",
+      "description": "Layer-Group type layer: BDGEODESIQUE-RGP_BDD-POI_WLD",
+      "globalConstraint": {
+        "minScaleDenominator": 2000.0,
+        "maxScaleDenominator": 560000000.0,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.810188378719,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://wxs.ign.fr/geodesie/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDGEODESIQUEr_1.0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-RN_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-RN_BDD-POI_WLD",
+      "title": "BDGEODESIQUE-RN_BDD-POI_WLD",
+      "description": "Layer-Group type layer: BDGEODESIQUE-RN_BDD-POI_WLD",
+      "globalConstraint": {
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 64001.0,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.810188378719,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://wxs.ign.fr/geodesie/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDGEODESIQUEr_1.0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD",
+      "title": "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD",
+      "description": "Layer-Group type layer: BDGEODESIQUE-SITE-RBF_BDD-POI_WLD",
+      "globalConstraint": {
+        "minScaleDenominator": 2000.0,
+        "maxScaleDenominator": 4370000.0,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.810188378719,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://wxs.ign.fr/geodesie/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDGEODESIQUEr_1.0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD",
+      "title": "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD",
+      "description": "Layer-Group type layer: BDGEODESIQUE-SITE-RDF_BDD-POI_WLD",
+      "globalConstraint": {
+        "minScaleDenominator": 2000.0,
+        "maxScaleDenominator": 540000.0,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.810188378719,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://wxs.ign.fr/geodesie/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDGEODESIQUEr_1.0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-TRIPLET_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-TRIPLET_BDD-POI_WLD",
+      "title": "BDGEODESIQUE-TRIPLET_BDD-POI_WLD",
+      "description": "Layer-Group type layer: BDGEODESIQUE-TRIPLET_BDD-POI_WLD",
+      "globalConstraint": {
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 4370000.0,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.810188378719,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://wxs.ign.fr/geodesie/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDGEODESIQUEr_1.0.xml"
         }
       ],
       "styles": [],
@@ -46229,6 +47311,124 @@
         }
       ]
     },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE",
+      "title": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE",
+      "description": "Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.GRAPHE-MOSAIQUAGE",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -12.709172110341592,
+          "right": 15.046943035677202,
+          "top": 54.04417167149221,
+          "bottom": 38.6417722198416
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://wxs.ign.fr/ortho/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965$GEOPORTAIL:OGC:WMTS": {
       "name": "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965",
       "title": "Photographies aériennes historiques 1950-1965",
@@ -55745,6 +56945,478 @@
         }
       ]
     },
+    "ORTHOIMAGERY.ORHOPHOTOS.URGENCE.ALEX.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORHOPHOTOS.URGENCE.ALEX.GRAPHE-MOSAIQUAGE",
+      "title": "ORTHOIMAGERY.ORHOPHOTOS.URGENCE.ALEX.GRAPHE-MOSAIQUAGE",
+      "description": "Layer-Group type layer: ORTHOIMAGERY.ORHOPHOTOS.URGENCE.ALEX.GRAPHE-MOSAIQUAGE",
+      "globalConstraint": {
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 8000000.0,
+        "bbox": {
+          "left": 7.080417223162337,
+          "right": 7.6371573281300265,
+          "top": 44.18277269853686,
+          "bottom": 43.81352727423069
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "orthohisto": "https://wxs.ign.fr/orthohisto/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ORTHOHR_1-0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE",
+      "title": "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE",
+      "description": "Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.16065723435582,
+          "right": 55.84425655413142,
+          "top": 51.08932742029653,
+          "bottom": -21.399897362347634
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "orthohisto": "https://wxs.ign.fr/orthohisto/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOHistor_1-0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2006-2010$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2006-2010",
+      "title": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2006-2010",
+      "description": "Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2006-2010",
+      "globalConstraint": {
+        "minScaleDenominator": 800.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -66.49159690952567,
+          "right": 55.84456069372925,
+          "top": 51.09371244574077,
+          "bottom": -21.427303081539563
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "orthohisto": "https://wxs.ign.fr/orthohisto/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015",
+      "title": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015",
+      "description": "Layer-Group type layer: ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015",
+      "globalConstraint": {
+        "minScaleDenominator": 800.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -63.16551153704054,
+          "right": 55.84428059902366,
+          "top": 51.09371233290367,
+          "bottom": -21.39990125231396
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "orthohisto": "https://wxs.ign.fr/orthohisto/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDORTHOr_2-0.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "Aire-Parcellaire$GEOPORTAIL:OGC:WMTS": {
       "name": "Aire-Parcellaire",
       "title": "Délimitation parcellaire AOC viticole",
@@ -56791,6 +58463,360 @@
         },
         {
           "name": "text/asc",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.COMMUNES",
+      "title": "CADASTRALPARCELS.COMMUNES",
+      "description": "Layer-Group type layer: CADASTRALPARCELS.COMMUNES",
+      "globalConstraint": {
+        "minScaleDenominator": 100.0,
+        "maxScaleDenominator": 160000.0,
+        "bbox": {
+          "left": -63.1531314,
+          "right": 55.83668585,
+          "top": 51.0888974,
+          "bottom": -21.38974728
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2_vecteur.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.GRAPHE",
+      "title": "CADASTRALPARCELS.GRAPHE",
+      "description": "Layer-Group type layer: CADASTRALPARCELS.GRAPHE",
+      "globalConstraint": {
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 20000000.0,
+        "bbox": {
+          "left": -61.80958500478003,
+          "right": 55.83667989569937,
+          "top": 51.08900031051782,
+          "bottom": -21.38984989008148
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.SECTIONS",
+      "title": "CADASTRALPARCELS.SECTIONS",
+      "description": "Layer-Group type layer: CADASTRALPARCELS.SECTIONS",
+      "globalConstraint": {
+        "minScaleDenominator": 100.0,
+        "maxScaleDenominator": 80000.0,
+        "bbox": {
+          "left": -63.1531314,
+          "right": 55.83668585,
+          "top": 51.0888974,
+          "bottom": -21.38974728
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://wxs.ign.fr/parcellaire/geoportail/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDPARCELLAIREr_1-2_vecteur.xml"
+        }
+      ],
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
