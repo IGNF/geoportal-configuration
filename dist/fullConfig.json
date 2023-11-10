@@ -397,6 +397,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS2018$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS2019$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS2020$GEOPORTAIL:OGC:WMTS",
+        "OSM.POI$GEOPORTAIL:OGC:WMTS",
         "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMTS",
@@ -52360,6 +52361,66 @@
       "formats": [
         {
           "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "OSM.POI$GEOPORTAIL:OGC:WMTS": {
+      "name": "OSM.POI",
+      "title": "Points d'intérêts OSM",
+      "description": "Données points d'intérêts OSM mai 2023",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15091,
+          "right": 9.55598,
+          "top": 51.1268,
+          "bottom": 41.2381
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "16": {
+            "minTileRow": "21903",
+            "maxTileRow": "24513",
+            "minTileCol": "31830",
+            "maxTileCol": "34507"
+          },
+          "17": {
+            "minTileRow": "43806",
+            "maxTileRow": "49027",
+            "minTileCol": "63660",
+            "maxTileCol": "69015"
+          },
+          "18": {
+            "minTileRow": "87613",
+            "maxTileRow": "98054",
+            "minTileCol": "127321",
+            "maxTileCol": "138030"
+          },
+          "19": {
+            "minTileRow": "175226",
+            "maxTileRow": "196108",
+            "minTileCol": "254642",
+            "maxTileCol": "276060"
+          }
+        }
+      },
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "application/x-protobuf",
           "current": true
         }
       ]
