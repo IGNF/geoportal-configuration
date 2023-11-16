@@ -405,16 +405,36 @@
         "OI.OrthoimageCoverage$INSPIRE:OGC:WMS",
         "OI.OrthoimageCoverage.HR$INSPIRE:OGC:WMS",
         "AD.Address$INSPIRE:OGC:WMS",
+        "AD.Address-2017-12-11$INSPIRE:OGC:WMS",
         "AU.AdministrativeUnit$INSPIRE:OGC:WMS",
+        "AU.AdministrativeUnit-2017-11-23$INSPIRE:OGC:WMS",
+        "AU.AdministrativeUnit-2020-06-04$INSPIRE:OGC:WMS",
         "BU.Building$INSPIRE:OGC:WMS",
+        "BU.Building-2017-12-12$INSPIRE:OGC:WMS",
+        "BU.Building-2020-06-03$INSPIRE:OGC:WMS",
         "GN.GeographicalNames$INSPIRE:OGC:WMS",
+        "GN.GeographicalNames-2017-11-01$INSPIRE:OGC:WMS",
+        "GN.GeographicalNames-2019-12-14$INSPIRE:OGC:WMS",
         "HY.PhysicalWaters$INSPIRE:OGC:WMS",
+        "HY.PhysicalWaters-2017-12-12$INSPIRE:OGC:WMS",
+        "HY.PhysicalWaters-2020-06-04$INSPIRE:OGC:WMS",
+        "RPG-2012_BDD_WLD_WGS84_2021-07-20$INSPIRE:OGC:WMS",
         "RPG.2012$INSPIRE:OGC:WMS",
         "TN.AirTransportNetwork$INSPIRE:OGC:WMS",
+        "TN.AirTransportNetwork-2017-12-12$INSPIRE:OGC:WMS",
+        "TN.AirTransportNetwork_2020-10-14$INSPIRE:OGC:WMS",
         "TN.RailTransportNetwork$INSPIRE:OGC:WMS",
+        "TN.RailTransportNetwork-2017-12-12$INSPIRE:OGC:WMS",
+        "TN.RailTransportNetwork-2020-06-03$INSPIRE:OGC:WMS",
         "TN.RoadTransportNetwork$INSPIRE:OGC:WMS",
         "TN.RoadTransportNetwork-2$INSPIRE:OGC:WMS",
-        "US.UtilityAndGovernmentalServices$INSPIRE:OGC:WMS"
+        "TN.RoadTransportNetwork-2-2019-08-13-2$INSPIRE:OGC:WMS",
+        "TN.RoadTransportNetwork-2017-12-12$INSPIRE:OGC:WMS",
+        "TN.RoadTransportNetwork-2019-08-13-2$INSPIRE:OGC:WMS",
+        "TN.RoadTransportNetwork-2020-06-04$INSPIRE:OGC:WMS",
+        "US.UtilityAndGovernmentalService_14-10-2020$INSPIRE:OGC:WMS",
+        "US.UtilityAndGovernmentalServices$INSPIRE:OGC:WMS",
+        "US.UtilityAndGovernmentalServices-2017-12-12$INSPIRE:OGC:WMS"
       ],
       "lambert93": [
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS.L93$GEOPORTAIL:OGC:WMTS",
@@ -36827,7 +36847,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -36851,7 +36871,139 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AD.Address"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AD.Address"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "AD.Address-2017-12-11$INSPIRE:OGC:WMS": {
+      "name": "AD.Address-2017-12-11",
+      "title": "AD.Address-2017-12-11",
+      "description": "Layer-Group type layer: AD.Address-2017-12-11",
+      "globalConstraint": {
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 10000.0,
+        "bbox": {
+          "left": -63.15332828,
+          "right": 55.8366872,
+          "top": 51.18890976,
+          "bottom": -21.3896308595695
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDADRESSEr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for AD.Address-2017-12-11"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AD.Address-2017-12-11"
         }
       ],
       "formats": [
@@ -36959,7 +37111,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -36991,7 +37143,287 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AU.AdministrativeUnit"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AU.AdministrativeUnit"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "AU.AdministrativeUnit-2017-11-23$INSPIRE:OGC:WMS": {
+      "name": "AU.AdministrativeUnit-2017-11-23",
+      "title": "AU.AdministrativeUnit-2017-11-23",
+      "description": "Layer-Group type layer: AU.AdministrativeUnit-2017-11-23",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8372325,
+          "top": 84.9999999999998,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for AU.AdministrativeUnit-2017-11-23"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AU.AdministrativeUnit-2017-11-23"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "AU.AdministrativeUnit-2020-06-04$INSPIRE:OGC:WMS": {
+      "name": "AU.AdministrativeUnit-2020-06-04",
+      "title": "AU.AdministrativeUnit-2020-06-04",
+      "description": "Layer-Group type layer: AU.AdministrativeUnit-2020-06-04",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8366872,
+          "top": 84.9999999999998,
+          "bottom": -52.4486905
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for AU.AdministrativeUnit-2020-06-04"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=AU.AdministrativeUnit-2020-06-04"
         }
       ],
       "formats": [
@@ -37099,7 +37531,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -37131,7 +37563,287 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BU.Building"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BU.Building"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BU.Building-2017-12-12$INSPIRE:OGC:WMS": {
+      "name": "BU.Building-2017-12-12",
+      "title": "BU.Building-2017-12-12",
+      "description": "Layer-Group type layer: BU.Building-2017-12-12",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8372325,
+          "top": 84.9999999999998,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for BU.Building-2017-12-12"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BU.Building-2017-12-12"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BU.Building-2020-06-03$INSPIRE:OGC:WMS": {
+      "name": "BU.Building-2020-06-03",
+      "title": "BU.Building-2020-06-03",
+      "description": "Layer-Group type layer: BU.Building-2020-06-03",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8366872,
+          "top": 84.9999999999998,
+          "bottom": -52.4486905
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for BU.Building-2020-06-03"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BU.Building-2020-06-03"
         }
       ],
       "formats": [
@@ -37239,7 +37951,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -37263,7 +37975,271 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=GN.GeographicalNames"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=GN.GeographicalNames"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "GN.GeographicalNames-2017-11-01$INSPIRE:OGC:WMS": {
+      "name": "GN.GeographicalNames-2017-11-01",
+      "title": "GN.GeographicalNames-2017-11-01",
+      "description": "Layer-Group type layer: GN.GeographicalNames-2017-11-01",
+      "globalConstraint": {
+        "minScaleDenominator": 100.0,
+        "maxScaleDenominator": 20000000.0,
+        "bbox": {
+          "left": -63.153706,
+          "right": 55.8372325,
+          "top": 51.18890976,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for GN.GeographicalNames-2017-11-01"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=GN.GeographicalNames-2017-11-01"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "GN.GeographicalNames-2019-12-14$INSPIRE:OGC:WMS": {
+      "name": "GN.GeographicalNames-2019-12-14",
+      "title": "GN.GeographicalNames-2019-12-14",
+      "description": "Layer-Group type layer: GN.GeographicalNames-2019-12-14",
+      "globalConstraint": {
+        "minScaleDenominator": 100.0,
+        "maxScaleDenominator": 20000000.0,
+        "bbox": {
+          "left": -63.15333366,
+          "right": 55.8366872,
+          "top": 51.315048,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for GN.GeographicalNames-2019-12-14"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=GN.GeographicalNames-2019-12-14"
         }
       ],
       "formats": [
@@ -37371,7 +38347,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -37403,7 +38379,415 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=HY.PhysicalWaters"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=HY.PhysicalWaters"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "HY.PhysicalWaters-2017-12-12$INSPIRE:OGC:WMS": {
+      "name": "HY.PhysicalWaters-2017-12-12",
+      "title": "HY.PhysicalWaters-2017-12-12",
+      "description": "Layer-Group type layer: HY.PhysicalWaters-2017-12-12",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8372325,
+          "top": 84.9999999999998,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for HY.PhysicalWaters-2017-12-12"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=HY.PhysicalWaters-2017-12-12"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "HY.PhysicalWaters-2020-06-04$INSPIRE:OGC:WMS": {
+      "name": "HY.PhysicalWaters-2020-06-04",
+      "title": "HY.PhysicalWaters-2020-06-04",
+      "description": "Layer-Group type layer: HY.PhysicalWaters-2020-06-04",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8366872,
+          "top": 84.9999999999998,
+          "bottom": -52.4486905
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for HY.PhysicalWaters-2020-06-04"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=HY.PhysicalWaters-2020-06-04"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "RPG-2012_BDD_WLD_WGS84_2021-07-20$INSPIRE:OGC:WMS": {
+      "name": "RPG-2012_BDD_WLD_WGS84_2021-07-20",
+      "title": "RPG-2012_BDD_WLD_WGS84_2021-07-20",
+      "description": "Layer-Group type layer: RPG-2012_BDD_WLD_WGS84_2021-07-20",
+      "globalConstraint": {
+        "minScaleDenominator": 1.0,
+        "maxScaleDenominator": 1000000.0,
+        "bbox": {
+          "left": -63.0906179139052,
+          "right": 55.8326663475979,
+          "top": 51.0751466948314,
+          "bottom": -21.3854170892403
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_RPG_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for RPG-2012_BDD_WLD_WGS84_2021-07-20"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=RPG-2012_BDD_WLD_WGS84_2021-07-20"
         }
       ],
       "formats": [
@@ -37511,7 +38895,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -37531,7 +38915,7 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=RPG.2012"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=RPG.2012"
         }
       ],
       "formats": [
@@ -37639,7 +39023,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -37663,7 +39047,271 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.AirTransportNetwork"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.AirTransportNetwork"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.AirTransportNetwork-2017-12-12$INSPIRE:OGC:WMS": {
+      "name": "TN.AirTransportNetwork-2017-12-12",
+      "title": "TN.AirTransportNetwork-2017-12-12",
+      "description": "Layer-Group type layer: TN.AirTransportNetwork-2017-12-12",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 200000.0,
+        "bbox": {
+          "left": -63.153706,
+          "right": 55.8372325,
+          "top": 51.18890976,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.AirTransportNetwork-2017-12-12"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.AirTransportNetwork-2017-12-12"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.AirTransportNetwork_2020-10-14$INSPIRE:OGC:WMS": {
+      "name": "TN.AirTransportNetwork_2020-10-14",
+      "title": "TN.AirTransportNetwork_2020-10-14",
+      "description": "Layer-Group type layer: TN.AirTransportNetwork_2020-10-14",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 200000.0,
+        "bbox": {
+          "left": -69.7371947830966,
+          "right": 63.06991599440371,
+          "top": 63.87974319370021,
+          "bottom": -34.8567836717564
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.AirTransportNetwork_2020-10-14"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.AirTransportNetwork_2020-10-14"
         }
       ],
       "formats": [
@@ -37771,7 +39419,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -37803,7 +39451,287 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RailTransportNetwork"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RailTransportNetwork"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.RailTransportNetwork-2017-12-12$INSPIRE:OGC:WMS": {
+      "name": "TN.RailTransportNetwork-2017-12-12",
+      "title": "TN.RailTransportNetwork-2017-12-12",
+      "description": "Layer-Group type layer: TN.RailTransportNetwork-2017-12-12",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8372325,
+          "top": 84.9999999999998,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.RailTransportNetwork-2017-12-12"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RailTransportNetwork-2017-12-12"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.RailTransportNetwork-2020-06-03$INSPIRE:OGC:WMS": {
+      "name": "TN.RailTransportNetwork-2020-06-03",
+      "title": "TN.RailTransportNetwork-2020-06-03",
+      "description": "Layer-Group type layer: TN.RailTransportNetwork-2020-06-03",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8366872,
+          "top": 84.9999999999998,
+          "bottom": -52.4486905
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.RailTransportNetwork-2020-06-03"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RailTransportNetwork-2020-06-03"
         }
       ],
       "formats": [
@@ -37911,7 +39839,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -37943,7 +39871,7 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork"
         }
       ],
       "formats": [
@@ -38051,7 +39979,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -38071,7 +39999,691 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork-2"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork-2"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.RoadTransportNetwork-2-2019-08-13-2$INSPIRE:OGC:WMS": {
+      "name": "TN.RoadTransportNetwork-2-2019-08-13-2",
+      "title": "TN.RoadTransportNetwork-2-2019-08-13-2",
+      "description": "Layer-Group type layer: TN.RoadTransportNetwork-2-2019-08-13-2",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 30000.0,
+        "bbox": {
+          "left": -63.15333366,
+          "right": 55.8366872,
+          "top": 51.18890976,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.RoadTransportNetwork-2-2019-08-13-2"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork-2-2019-08-13-2"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.RoadTransportNetwork-2017-12-12$INSPIRE:OGC:WMS": {
+      "name": "TN.RoadTransportNetwork-2017-12-12",
+      "title": "TN.RoadTransportNetwork-2017-12-12",
+      "description": "Layer-Group type layer: TN.RoadTransportNetwork-2017-12-12",
+      "globalConstraint": {
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8372325,
+          "top": 84.9999999999998,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.RoadTransportNetwork-2017-12-12"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork-2017-12-12"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.RoadTransportNetwork-2019-08-13-2$INSPIRE:OGC:WMS": {
+      "name": "TN.RoadTransportNetwork-2019-08-13-2",
+      "title": "TN.RoadTransportNetwork-2019-08-13-2",
+      "description": "Layer-Group type layer: TN.RoadTransportNetwork-2019-08-13-2",
+      "globalConstraint": {
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8372325,
+          "top": 84.9999999999998,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.RoadTransportNetwork-2019-08-13-2"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork-2019-08-13-2"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TN.RoadTransportNetwork-2020-06-04$INSPIRE:OGC:WMS": {
+      "name": "TN.RoadTransportNetwork-2020-06-04",
+      "title": "TN.RoadTransportNetwork-2020-06-04",
+      "description": "Layer-Group type layer: TN.RoadTransportNetwork-2020-06-04",
+      "globalConstraint": {
+        "minScaleDenominator": 500.0,
+        "maxScaleDenominator": 10000000.0,
+        "bbox": {
+          "left": -74.0000000000001,
+          "right": 55.8366872,
+          "top": 84.9999999999998,
+          "bottom": -52.4486905
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_EGMr_2-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for TN.RoadTransportNetwork-2020-06-04"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TN.RoadTransportNetwork-2020-06-04"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "US.UtilityAndGovernmentalService_14-10-2020$INSPIRE:OGC:WMS": {
+      "name": "US.UtilityAndGovernmentalService_14-10-2020",
+      "title": "US.UtilityAndGovernmentalService_14-10-2020",
+      "description": "Layer-Group type layer: US.UtilityAndGovernmentalService_14-10-2020",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 1000000.0,
+        "bbox": {
+          "left": -69.7371947830966,
+          "right": 63.06991599440371,
+          "top": 84.1457764999998,
+          "bottom": -34.8567836717564
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/inspire/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for US.UtilityAndGovernmentalService_14-10-2020"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=US.UtilityAndGovernmentalService_14-10-2020"
         }
       ],
       "formats": [
@@ -38179,7 +40791,7 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "inspire": "https://wxs.ign.fr/inspire/inspire/v/wms?SERVICE=WMS&"
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
         }
       },
       "defaultProjection": "EPSG:4326",
@@ -38207,7 +40819,143 @@
       "legends": [
         {
           "format": "image/png",
-          "url": "https://wxs.ign.fr/inspire/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=US.UtilityAndGovernmentalServices"
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=US.UtilityAndGovernmentalServices"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "US.UtilityAndGovernmentalServices-2017-12-12$INSPIRE:OGC:WMS": {
+      "name": "US.UtilityAndGovernmentalServices-2017-12-12",
+      "title": "US.UtilityAndGovernmentalServices-2017-12-12",
+      "description": "Layer-Group type layer: US.UtilityAndGovernmentalServices-2017-12-12",
+      "globalConstraint": {
+        "minScaleDenominator": 1000.0,
+        "maxScaleDenominator": 1000000.0,
+        "bbox": {
+          "left": -63.153706,
+          "right": 55.8372325,
+          "top": 84.1457764999998,
+          "bottom": -21.3900209
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "inspire": "https://wxs.ign.fr/inspire/v/wms?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDTOPOr_2-0.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_BDCARTOr_3-1.xml"
+        },
+        {
+          "format": "text/plain",
+          "url": "https://wxs.ign.fr/catalogue/geoportail/csw-inspire?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_ERMr_2-2.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style for US.UtilityAndGovernmentalServices-2017-12-12"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://wxs.ign.fr/inspire/v/wms?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=US.UtilityAndGovernmentalServices-2017-12-12"
         }
       ],
       "formats": [
