@@ -458,6 +458,7 @@
         "TRANSPORTNETWORKS.RUNWAYS$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMTS",
         "UTILITYANDGOVERNMENTALSERVICES.ALL$GEOPORTAIL:OGC:WMTS",
+        "bdtopo_cote_d_azur$GEOPORTAIL:OGC:WMTS",
         "d029_1_brest_2021$GEOPORTAIL:OGC:WMTS",
         "hedge.hedge$GEOPORTAIL:OGC:WMTS",
         "ludi_2266__joincache_pyramide_1$GEOPORTAIL:OGC:WMTS",
@@ -59824,6 +59825,150 @@
       "formats": [
         {
           "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "bdtopo_cote_d_azur$GEOPORTAIL:OGC:WMTS": {
+      "name": "bdtopo_cote_d_azur",
+      "title": "BDTOPO personnalisable cote d'azur",
+      "description": "test petite zone génération bdtopo",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1533,
+          "right": 55.8368,
+          "top": 51.3127,
+          "bottom": -21.3897
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "670"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1148",
+            "minTileCol": "664",
+            "maxTileCol": "1341"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2297",
+            "minTileCol": "1329",
+            "maxTileCol": "2683"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4594",
+            "minTileCol": "2658",
+            "maxTileCol": "5366"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9188",
+            "minTileCol": "5317",
+            "maxTileCol": "10733"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18377",
+            "minTileCol": "10635",
+            "maxTileCol": "21466"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36755",
+            "minTileCol": "21271",
+            "maxTileCol": "42932"
+          },
+          "17": {
+            "minTileRow": "43698",
+            "maxTileRow": "73511",
+            "minTileCol": "42542",
+            "maxTileCol": "85865"
+          },
+          "18": {
+            "minTileRow": "87396",
+            "maxTileRow": "147022",
+            "minTileCol": "85085",
+            "maxTileCol": "171731"
+          },
+          "19": {
+            "minTileRow": "174793",
+            "maxTileRow": "294044",
+            "minTileCol": "170170",
+            "maxTileCol": "343462"
+          }
+        }
+      },
+      "styles": [],
+      "legends": [],
+      "formats": [
+        {
+          "name": "application/x-protobuf",
           "current": true
         }
       ]
