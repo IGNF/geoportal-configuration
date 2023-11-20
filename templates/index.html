@@ -85,7 +85,7 @@
 
   <div class="page">
     <div class="content">
-      <h3>Récupérer le fichier de configuration</h2>
+      <h3>Récupérer le fichier de configuration</h3>
       <p>
         Sélectionnez le nombre de thématiques d'accès que vous souhaitez utiliser dans votre application Géoportail.
         Pour chaque thématique, remplissez le champ correspondant avec son nom.
@@ -94,41 +94,16 @@
       </p>
 
       <form action="" method="POST">
+        <p id="keyInputPara0">
+          <label for="keyInput0" class="">Clef d'accès privée</label>
+          <input type="text" class="form-control input-sm" placeholder="Clef d'accès privée" size="30" name="apiKey0" id="apiKey0">
+        </p>
         <div>
           <label for="keyNumber">Nombre de thématiques : </label>
-          <input type="number" min="1" max="10" id="keyNumber" value="1">
+          <input type="number" min="0" max="10" id="keyNumber" value="0">
         </div>
 
         <div id="keyInputSection">
-          <p id="keyInputPara1">
-            <label for="keyInput1" class="key-label">Thématique 1</label>
-            <select class="form-control input-sm key-value" name="apiKey1" id="apiKey1">
-              <option value="administratif">administratif</option>
-              <option value="adresse">adresse</option>
-              <option value="agriculture">agriculture</option>
-              <option value="altimetrie">altimetrie</option>
-              <option value="calcul">calcul</option>
-              <option value="cartes">cartes</option>
-              <option value="cartovecto">cartovecto</option>
-              <option value="clc">clc</option>
-              <option value="decouverte">decouverte</option>
-              <option value="economie">economie</option>
-              <option value="enr">enr</option>
-              <option value="environnement">environnement</option>
-              <option value="essentiels">essentiels</option>
-              <option value="geodesie">geodesie</option>
-              <option value="inspire">inspire</option>
-              <option value="lambert93">lambert93</option>
-              <option value="ocsge">ocsge</option>
-              <option value="ortho">ortho</option>
-              <option value="orthohisto">orthohisto</option>
-              <option value="parcellaire">parcellaire</option>
-              <option value="satellite">satellite</option>
-              <option value="sol">sol</option>
-              <option value="topographie">topographie</option>
-              <option value="transports">transports</option>
-            </select>
-          </p>
         </div>
 
         <div>
@@ -141,7 +116,7 @@
 
   <script type="text/javascript">
     document.getElementById("keyNumber").addEventListener('change', createInput);
-    document.getElementById("keyNumber").value = 1; //reset the key number input
+    document.getElementById("keyNumber").value = 0; //reset the key number input
     function removeInputAndLabel() {
         var keyLabels = document.getElementsByClassName("key-label");
         while (keyLabels.length > 0) {
