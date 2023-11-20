@@ -76,7 +76,10 @@ def _parseLayer(layer, all_tms, key):
     service_params["id"] = "OGC:WMTS"
     service_params["version"] = "1.0.0"
     service_params["serverUrl"] = {}
-    service_params["serverUrl"][key] = "https://data.geopf.fr/wmts"
+    if key in GENERIC_KEYS:
+        service_params["serverUrl"][key] = "https://data.geopf.fr/wmts"
+    else:
+        service_params["serverUrl"][key] = "https://data.geopf.fr/private/wmts"
 
     layer_config["serviceParams"] = service_params
 
