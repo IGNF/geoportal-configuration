@@ -33,6 +33,7 @@
         "LANDCOVER.GRID.CLC00_FR$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC06$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC06R$GEOPORTAIL:OGC:WMTS",
+        "LANDCOVER.GRID.CLC06R_DOM$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC06R_FR$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC06_DOM$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.GRID.CLC06_FR$GEOPORTAIL:OGC:WMTS",
@@ -4645,6 +4646,133 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC.png",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LANDCOVER.GRID.CLC06R_DOM$GEOPORTAIL:OGC:WMTS": {
+      "name": "LANDCOVER.GRID.CLC06R_DOM",
+      "title": "Raster CORINE Land Cover - DOM - 2006 - révisée",
+      "description": "Inventaire biophysique de l'occupation des sols en 2006 en 44 postes pour la Métropole et 50 postes pour les DOM. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et plus généralement de l'aménagement de l'espace. La base de données CORINE Land Cover 2006 révisée, dite CLC 2006 révisée, est une correction de CLC 2006 réalisée à partir d'images satellitaires de l'année 2006 pour la Métropole, d'images satellitaires prises entre 2005 et 2008 pour les DOM et de données d'appui.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -61.9063,
+          "right": 55.9362,
+          "top": 16.6077,
+          "bottom": -21.4825
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "clc": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "3",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "7",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "14",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "29",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "58",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "116",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "232",
+            "maxTileRow": "287",
+            "minTileCol": "167",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "464",
+            "maxTileRow": "574",
+            "minTileCol": "335",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "928",
+            "maxTileRow": "1149",
+            "minTileCol": "671",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1856",
+            "maxTileRow": "2298",
+            "minTileCol": "1343",
+            "maxTileCol": "2684"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "CORINE Land Cover - DOM",
+          "title": "CORINE Land Cover - DOM",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CLC_DOM.png",
           "minScaleDenominator": "8000"
         }
       ],
