@@ -22,6 +22,7 @@
         "CGET_QP_BDD_WLD_WM_WMTS_20150914$GEOPORTAIL:OGC:WMTS",
         "COMMUNES.PRIORITYDISCTRICT$GEOPORTAIL:OGC:WMTS",
         "COMMUNES.SISMICITE$GEOPORTAIL:OGC:WMTS",
+        "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMTS",
         "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMTS",
         "EDUGEO.LANDUSE.AGRICULTURE2012$GEOPORTAIL:OGC:WMTS",
         "EDUGEO.NATURALRISKZONES.1910FLOODEDWATERSHEDS$GEOPORTAIL:OGC:WMTS",
@@ -35,6 +36,7 @@
         "ELEVATION.LEVEL0$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.SLOPES$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.SLOPES.HIGHRES$GEOPORTAIL:OGC:WMTS",
+        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMTS",
         "EVOL-SURFACE-FORESTIERE-1980-2011_EDUGEO_PYR-PNG_FXX_LAMB93_20150918$GEOPORTAIL:OGC:WMTS",
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS",
@@ -1315,6 +1317,7 @@
         "pp-ressources_equipement_previsu$GEOPORTAIL:OGC:WMS",
         "pp-salubrite_publique$GEOPORTAIL:OGC:WMS",
         "pp-salubrite_publique_previsu$GEOPORTAIL:OGC:WMS",
+        "pp-salubrite_securite_publique$GEOPORTAIL:OGC:WMS",
         "pp-salubrite_securite_publique_previsu$GEOPORTAIL:OGC:WMS",
         "pp-scot$GEOPORTAIL:OGC:WMS",
         "pp-scot_previsu$GEOPORTAIL:OGC:WMS",
@@ -1334,8 +1337,7 @@
         "pp-zone_secteur_previsu$GEOPORTAIL:OGC:WMS",
         "pp-zone_secteur_psmv$GEOPORTAIL:OGC:WMS",
         "pp-zone_secteur_psmv_previsu$GEOPORTAIL:OGC:WMS",
-        "transport_exceptionnel_IDF$GEOPORTAIL:OGC:WMS",
-        "pp-salubrite_securite_publique:assiette_sup_s_prod_c5de4c72-2b15-4156-9ecf-66b2edac76a6$GEOPORTAIL:OGC:WMS"
+        "transport_exceptionnel_IDF$GEOPORTAIL:OGC:WMS"
       ]
     }
   },
@@ -3826,6 +3828,133 @@
         }
       ]
     },
+    "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMTS": {
+      "name": "DEBROUSSAILLEMENT",
+      "title": "Zonage informatif des obligations légales de débroussaillement",
+      "description": "Zonage informatif des obligations légales de débroussaillement",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          },
+          "17": {
+            "minTileRow": "43822",
+            "maxTileRow": "48985",
+            "minTileCol": "63660",
+            "maxTileCol": "69020"
+          },
+          "18": {
+            "minTileRow": "87645",
+            "maxTileRow": "97970",
+            "minTileCol": "127321",
+            "maxTileCol": "138041"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "DREAL.ZONAGE_PINEL$GEOPORTAIL:OGC:WMTS": {
       "name": "DREAL.ZONAGE_PINEL",
       "title": "Zonage du dispositif Pinel en Bretagne 2020-2021",
@@ -5420,6 +5549,121 @@
           "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMTS": {
+      "name": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
+      "title": "Masque de source du RGE Alti",
+      "description": "Informations sur la précision du RGEAlti.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "Graphe de source du RGE Alti",
+          "title": "Graphe de source du RGE Alti",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY.png",
+          "minScaleDenominator": "1"
         }
       ],
       "formats": [
@@ -143494,6 +143738,129 @@
         }
       ]
     },
+    "pp-salubrite_securite_publique$GEOPORTAIL:OGC:WMS": {
+      "name": "pp-salubrite_securite_publique",
+      "title": "Salubrité et sécurité publique",
+      "description": "Servitude d'Utilité Publique de catégories EL2BIS,INT1, AS2, PM1, PM1BIS, PM2, PM3, PM4, PM5 et PM6",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.09045423987444,
+          "right": 77.851909,
+          "top": 51.12397356662392,
+          "bottom": -49.784376
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-pp-salubrite_securite_publique",
+          "title": "pp-salubrite_securite_publique style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=pp-salubrite_securite_publique"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "pp-salubrite_securite_publique_previsu$GEOPORTAIL:OGC:WMS": {
       "name": "pp-salubrite_securite_publique_previsu",
       "title": "Salubrité et sécurité publique",
@@ -145865,129 +146232,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=transport_exceptionnel_IDF"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "pp-salubrite_securite_publique:assiette_sup_s_prod_c5de4c72-2b15-4156-9ecf-66b2edac76a6$GEOPORTAIL:OGC:WMS": {
-      "name": "pp-salubrite_securite_publique:assiette_sup_s_prod_c5de4c72-2b15-4156-9ecf-66b2edac76a6",
-      "title": "assiette_sup_s_prod_c5de4c72-2b15-4156-9ecf-66b2edac76a6",
-      "description": null,
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.09045423987444,
-          "right": 77.851909,
-          "top": 51.09831454882826,
-          "bottom": -49.784376
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "generic",
-          "title": "Generic"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=pp-salubrite_securite_publique%3Aassiette_sup_s_prod_c5de4c72-2b15-4156-9ecf-66b2edac76a6"
         }
       ],
       "formats": [
