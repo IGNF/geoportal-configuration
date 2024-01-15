@@ -116,7 +116,6 @@
         "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ],
       "cartovecto": [
-        "TRACERANDOHIVERNALE$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS",
         "BDCARTO-ADMINISTRATIF_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDCARTO-BATI_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
@@ -140,7 +139,6 @@
         "STATIONSVERTES$GEOPORTAIL:OGC:WMS",
         "STATISTICALUNITS.IRIS$GEOPORTAIL:OGC:WMS",
         "STATISTICALUNITS.IRISGE$GEOPORTAIL:OGC:WMS",
-        "TRACERANDOHIVERNALE$GEOPORTAIL:OGC:WMS",
         "VILLAGESETAPE$GEOPORTAIL:OGC:WMS"
       ],
       "clc": [
@@ -10828,121 +10826,6 @@
       "layerId": "PLAN.IGN$GEOPORTAIL:GPP:TMS",
       "defaultProjection": "EPSG:3857"
     },
-    "TRACERANDOHIVERNALE$GEOPORTAIL:OGC:WMTS": {
-      "name": "TRACERANDOHIVERNALE",
-      "title": "Trace randonnée hivernale",
-      "description": "Trace randonnée hivernale",
-      "globalConstraint": {
-        "maxScaleDenominator": 559082264.0287179,
-        "minScaleDenominator": 266.5911979812229,
-        "bbox": {
-          "left": -5.15047,
-          "right": 9.57054,
-          "top": 51.0991,
-          "bottom": 41.3252
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "cartovecto": "https://wxs.ign.fr/cartovecto/geoportail/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM",
-        "tileMatrixSetLimits": {
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "23",
-            "minTileCol": "31",
-            "maxTileCol": "33"
-          },
-          "7": {
-            "minTileRow": "42",
-            "maxTileRow": "47",
-            "minTileCol": "62",
-            "maxTileCol": "67"
-          },
-          "8": {
-            "minTileRow": "85",
-            "maxTileRow": "95",
-            "minTileCol": "124",
-            "maxTileCol": "134"
-          },
-          "9": {
-            "minTileRow": "171",
-            "maxTileRow": "191",
-            "minTileCol": "248",
-            "maxTileCol": "269"
-          },
-          "10": {
-            "minTileRow": "342",
-            "maxTileRow": "382",
-            "minTileCol": "497",
-            "maxTileCol": "539"
-          },
-          "11": {
-            "minTileRow": "684",
-            "maxTileRow": "765",
-            "minTileCol": "994",
-            "maxTileCol": "1078"
-          },
-          "12": {
-            "minTileRow": "1369",
-            "maxTileRow": "1530",
-            "minTileCol": "1989",
-            "maxTileCol": "2156"
-          },
-          "13": {
-            "minTileRow": "2738",
-            "maxTileRow": "3061",
-            "minTileCol": "3978",
-            "maxTileCol": "4313"
-          },
-          "14": {
-            "minTileRow": "5477",
-            "maxTileRow": "6123",
-            "minTileCol": "7957",
-            "maxTileCol": "8627"
-          },
-          "15": {
-            "minTileRow": "10955",
-            "maxTileRow": "12246",
-            "minTileCol": "15915",
-            "maxTileCol": "17255"
-          },
-          "16": {
-            "minTileRow": "21911",
-            "maxTileRow": "24492",
-            "minTileCol": "31830",
-            "maxTileCol": "34510"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "nolegend",
-          "title": "Données sans légende",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://wxs.ign.fr/static/legends/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        }
-      ]
-    },
     "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS": {
       "name": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
       "title": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
@@ -13570,124 +13453,6 @@
         {
           "format": "text/plain",
           "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=IGNF_Iris-GE_1-0.xml"
-        }
-      ],
-      "styles": [],
-      "legends": [],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "TRACERANDOHIVERNALE$GEOPORTAIL:OGC:WMS": {
-      "name": "TRACERANDOHIVERNALE",
-      "title": "TRACERANDOHIVERNALE",
-      "description": "Layer-Group type layer: TRACERANDOHIVERNALE",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": 5.4483526876857225,
-          "right": 7.192491396509486,
-          "top": 46.30255563954265,
-          "bottom": 44.18934240795036
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "cartovecto": "https://wxs.ign.fr/cartovecto/geoportail/v/wms?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": true,
-      "metadata": [
-        {
-          "format": "text/plain",
-          "url": "https://wxs.ign.fr/catalogue/geoportail/csw?service=CSW&version=2.0.2&request=GetRecordById&Id=MTD_Produit_Vecteur.xml"
         }
       ],
       "styles": [],
