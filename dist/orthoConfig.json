@@ -2,6 +2,14 @@
   "generalOptions": {
     "apiKeys": {
       "ortho": [
+        "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMTS",
+        "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS",
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
         "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
@@ -9,11 +17,1197 @@
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS",
         "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
-        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS"
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS"
       ]
     }
   },
   "layers": {
+    "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
+      "name": "HR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Ortho 20 cm",
+      "description": "Le produit BD ORTHO® V3 est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert. La BD ORTHO® V3 se compose d'images numériques (sans habillage ni surcharge) et d'indications de géoréférencement. Le contenu informationnel permet localement une utilisation jusqu'au 1 :2,000ième pour mettre en valeur le territoire, enrichir la visualisation des données et des projets.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 90.0,
+          "bottom": -90.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          },
+          "14": {
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
+          },
+          "15": {
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
+          },
+          "16": {
+            "minTileRow": "0",
+            "maxTileRow": "65536",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
+          },
+          "17": {
+            "minTileRow": "0",
+            "maxTileRow": "131072",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
+          },
+          "18": {
+            "minTileRow": "0",
+            "maxTileRow": "262144",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
+          },
+          "19": {
+            "minTileRow": "0",
+            "maxTileRow": "524288",
+            "minTileCol": "0",
+            "maxTileCol": "524287"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes",
+      "description": "Photographies aériennes",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "2",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "0",
+            "maxTileRow": "4",
+            "minTileCol": "0",
+            "maxTileCol": "4"
+          },
+          "3": {
+            "minTileRow": "0",
+            "maxTileRow": "8",
+            "minTileCol": "0",
+            "maxTileCol": "8"
+          },
+          "4": {
+            "minTileRow": "0",
+            "maxTileRow": "16",
+            "minTileCol": "0",
+            "maxTileCol": "15"
+          },
+          "5": {
+            "minTileRow": "0",
+            "maxTileRow": "32",
+            "minTileCol": "0",
+            "maxTileCol": "31"
+          },
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          },
+          "14": {
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
+          },
+          "15": {
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
+          },
+          "16": {
+            "minTileRow": "0",
+            "maxTileRow": "65536",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
+          },
+          "17": {
+            "minTileRow": "0",
+            "maxTileRow": "131072",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
+          },
+          "18": {
+            "minTileRow": "0",
+            "maxTileRow": "262144",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
+          },
+          "19": {
+            "minTileRow": "0",
+            "maxTileRow": "524288",
+            "minTileCol": "0",
+            "maxTileCol": "524287"
+          },
+          "20": {
+            "minTileRow": "0",
+            "maxTileRow": "1048576",
+            "minTileCol": "0",
+            "maxTileCol": "1048575"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO",
+      "title": "Ortho 50 cm",
+      "description": "Le produit BD ORTHO® est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.0,
+          "bottom": -89.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "0",
+            "maxTileRow": "64",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "0",
+            "maxTileRow": "128",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "0",
+            "maxTileRow": "256",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "0",
+            "maxTileRow": "512",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "0",
+            "maxTileRow": "1024",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "0",
+            "maxTileRow": "2048",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "0",
+            "maxTileRow": "4096",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "0",
+            "maxTileRow": "8192",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          },
+          "14": {
+            "minTileRow": "0",
+            "maxTileRow": "16384",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
+          },
+          "15": {
+            "minTileRow": "0",
+            "maxTileRow": "32768",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
+          },
+          "16": {
+            "minTileRow": "0",
+            "maxTileRow": "65536",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
+          },
+          "17": {
+            "minTileRow": "0",
+            "maxTileRow": "131072",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
+          },
+          "18": {
+            "minTileRow": "0",
+            "maxTileRow": "262144",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.COAST2000",
+      "title": "Ortholittorale 2000",
+      "description": "Donnée issue du Référentiel géographique du littoral. Zone de couverture de l'orthophotographie : côte de la mer du Nord, de la Manche et de l'Atlantique.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.21565,
+          "right": 2.60783,
+          "top": 51.1233,
+          "bottom": 43.301
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "32"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "46",
+            "minTileCol": "62",
+            "maxTileCol": "64"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "93",
+            "minTileCol": "124",
+            "maxTileCol": "129"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "187",
+            "minTileCol": "248",
+            "maxTileCol": "259"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "375",
+            "minTileCol": "497",
+            "maxTileCol": "519"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "750",
+            "minTileCol": "994",
+            "maxTileCol": "1038"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1500",
+            "minTileCol": "1988",
+            "maxTileCol": "2077"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3000",
+            "minTileCol": "3977",
+            "maxTileCol": "4155"
+          },
+          "14": {
+            "minTileRow": "5476",
+            "maxTileRow": "6001",
+            "minTileCol": "7954",
+            "maxTileCol": "8310"
+          },
+          "15": {
+            "minTileRow": "10952",
+            "maxTileRow": "12003",
+            "minTileCol": "15909",
+            "maxTileCol": "16621"
+          },
+          "16": {
+            "minTileRow": "21904",
+            "maxTileRow": "24006",
+            "minTileCol": "31818",
+            "maxTileCol": "33242"
+          },
+          "17": {
+            "minTileRow": "43808",
+            "maxTileRow": "48012",
+            "minTileCol": "63637",
+            "maxTileCol": "66485"
+          },
+          "18": {
+            "minTileRow": "87617",
+            "maxTileRow": "96024",
+            "minTileCol": "127274",
+            "maxTileCol": "132970"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ILESDUNORD",
+      "title": "Données ortho-réctifiées antérieures au passage d'Irma",
+      "description": "Ce flux regroupe des données ortho-rectifiées issues des prises de vue aériennes de Saint Martin (2017) et Saint Barthélémy (2016).",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -63.1986,
+          "right": -62.7828,
+          "top": 18.1701,
+          "bottom": 17.8626
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "1"
+          },
+          "3": {
+            "minTileRow": "3",
+            "maxTileRow": "3",
+            "minTileCol": "2",
+            "maxTileCol": "2"
+          },
+          "4": {
+            "minTileRow": "7",
+            "maxTileRow": "7",
+            "minTileCol": "5",
+            "maxTileCol": "5"
+          },
+          "5": {
+            "minTileRow": "14",
+            "maxTileRow": "14",
+            "minTileCol": "10",
+            "maxTileCol": "10"
+          },
+          "6": {
+            "minTileRow": "28",
+            "maxTileRow": "28",
+            "minTileCol": "20",
+            "maxTileCol": "20"
+          },
+          "7": {
+            "minTileRow": "57",
+            "maxTileRow": "57",
+            "minTileCol": "41",
+            "maxTileCol": "41"
+          },
+          "8": {
+            "minTileRow": "114",
+            "maxTileRow": "115",
+            "minTileCol": "83",
+            "maxTileCol": "83"
+          },
+          "9": {
+            "minTileRow": "229",
+            "maxTileRow": "230",
+            "minTileCol": "166",
+            "maxTileCol": "166"
+          },
+          "10": {
+            "minTileRow": "459",
+            "maxTileRow": "460",
+            "minTileCol": "332",
+            "maxTileCol": "333"
+          },
+          "11": {
+            "minTileRow": "918",
+            "maxTileRow": "920",
+            "minTileCol": "664",
+            "maxTileCol": "666"
+          },
+          "12": {
+            "minTileRow": "1837",
+            "maxTileRow": "1841",
+            "minTileCol": "1328",
+            "maxTileCol": "1333"
+          },
+          "13": {
+            "minTileRow": "3675",
+            "maxTileRow": "3682",
+            "minTileCol": "2657",
+            "maxTileCol": "2667"
+          },
+          "14": {
+            "minTileRow": "7350",
+            "maxTileRow": "7365",
+            "minTileCol": "5315",
+            "maxTileCol": "5334"
+          },
+          "15": {
+            "minTileRow": "14701",
+            "maxTileRow": "14731",
+            "minTileCol": "10631",
+            "maxTileCol": "10669"
+          },
+          "16": {
+            "minTileRow": "29403",
+            "maxTileRow": "29462",
+            "minTileCol": "21263",
+            "maxTileCol": "21338"
+          },
+          "17": {
+            "minTileRow": "58806",
+            "maxTileRow": "58924",
+            "minTileCol": "42526",
+            "maxTileCol": "42677"
+          },
+          "18": {
+            "minTileRow": "117613",
+            "maxTileRow": "117848",
+            "minTileCol": "85052",
+            "maxTileCol": "85354"
+          },
+          "19": {
+            "minTileRow": "235226",
+            "maxTileRow": "235697",
+            "minTileCol": "170104",
+            "maxTileCol": "170709"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC",
+      "title": "BDORTHO en infrarouge fausses couleurs",
+      "description": "BDORTHO en infrarouge fausses couleurs",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -62.9717,
+          "right": 55.8464,
+          "top": 51.1124,
+          "bottom": -21.4013
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "1",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "2",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "4",
+            "minTileCol": "2",
+            "maxTileCol": "5"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "670"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "1148",
+            "minTileCol": "665",
+            "maxTileCol": "1341"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "2297",
+            "minTileCol": "1331",
+            "maxTileCol": "2683"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "4594",
+            "minTileCol": "2663",
+            "maxTileCol": "5366"
+          },
+          "14": {
+            "minTileRow": "5476",
+            "maxTileRow": "9189",
+            "minTileCol": "5326",
+            "maxTileCol": "10733"
+          },
+          "15": {
+            "minTileRow": "10953",
+            "maxTileRow": "18378",
+            "minTileCol": "10652",
+            "maxTileCol": "21467"
+          },
+          "16": {
+            "minTileRow": "21907",
+            "maxTileRow": "36757",
+            "minTileCol": "21304",
+            "maxTileCol": "42934"
+          },
+          "17": {
+            "minTileRow": "43814",
+            "maxTileRow": "73515",
+            "minTileCol": "42608",
+            "maxTileCol": "85869"
+          },
+          "18": {
+            "minTileRow": "87629",
+            "maxTileRow": "147031",
+            "minTileCol": "85217",
+            "maxTileCol": "171738"
+          },
+          "19": {
+            "minTileRow": "175259",
+            "maxTileRow": "294062",
+            "minTileCol": "170434",
+            "maxTileCol": "343476"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS": {
+      "name": "PCRS.LAMB93",
+      "title": "PCRS",
+      "description": "Données du Plan Corps de Rue Simplifié",
+      "globalConstraint": {
+        "maxScaleDenominator": 748982857.1428572,
+        "minScaleDenominator": 178.57142857142858,
+        "bbox": {
+          "left": -5.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 40.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "LAMB93_5cm",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "5",
+            "maxTileRow": "7",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "7": {
+            "minTileRow": "11",
+            "maxTileRow": "14",
+            "minTileCol": "0",
+            "maxTileCol": "3"
+          },
+          "8": {
+            "minTileRow": "22",
+            "maxTileRow": "29",
+            "minTileCol": "0",
+            "maxTileCol": "6"
+          },
+          "9": {
+            "minTileRow": "45",
+            "maxTileRow": "58",
+            "minTileCol": "0",
+            "maxTileCol": "12"
+          },
+          "10": {
+            "minTileRow": "90",
+            "maxTileRow": "116",
+            "minTileCol": "0",
+            "maxTileCol": "24"
+          },
+          "11": {
+            "minTileRow": "181",
+            "maxTileRow": "233",
+            "minTileCol": "0",
+            "maxTileCol": "49"
+          },
+          "12": {
+            "minTileRow": "363",
+            "maxTileRow": "467",
+            "minTileCol": "1",
+            "maxTileCol": "99"
+          },
+          "13": {
+            "minTileRow": "726",
+            "maxTileRow": "934",
+            "minTileCol": "2",
+            "maxTileCol": "197"
+          },
+          "14": {
+            "minTileRow": "1452",
+            "maxTileRow": "1868",
+            "minTileCol": "4",
+            "maxTileCol": "394"
+          },
+          "15": {
+            "minTileRow": "2905",
+            "maxTileRow": "3737",
+            "minTileCol": "8",
+            "maxTileCol": "788"
+          },
+          "16": {
+            "minTileRow": "5810",
+            "maxTileRow": "7474",
+            "minTileCol": "17",
+            "maxTileCol": "1575"
+          },
+          "17": {
+            "minTileRow": "11621",
+            "maxTileRow": "14948",
+            "minTileCol": "35",
+            "maxTileCol": "3150"
+          },
+          "18": {
+            "minTileRow": "23242",
+            "maxTileRow": "29897",
+            "minTileCol": "70",
+            "maxTileCol": "6300"
+          },
+          "19": {
+            "minTileRow": "46484",
+            "maxTileRow": "59794",
+            "minTileCol": "140",
+            "maxTileCol": "12600"
+          },
+          "20": {
+            "minTileRow": "92969",
+            "maxTileRow": "119589",
+            "minTileCol": "281",
+            "maxTileCol": "25200"
+          },
+          "21": {
+            "minTileRow": "185938",
+            "maxTileRow": "239178",
+            "minTileCol": "562",
+            "maxTileCol": "50400"
+          },
+          "22": {
+            "minTileRow": "371877",
+            "maxTileRow": "478356",
+            "minTileCol": "1125",
+            "maxTileCol": "100800"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
+    "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
+      "name": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes très haute résolution",
+      "description": "Orthophotographies aériennes d'une résolution de 10cm à 5cm selon disponibilité.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": 0.0354912,
+          "right": 6.02353,
+          "top": 49.6969,
+          "bottom": 43.1533
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "32",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "43",
+            "maxTileRow": "46",
+            "minTileCol": "64",
+            "maxTileCol": "66"
+          },
+          "8": {
+            "minTileRow": "87",
+            "maxTileRow": "93",
+            "minTileCol": "128",
+            "maxTileCol": "132"
+          },
+          "9": {
+            "minTileRow": "174",
+            "maxTileRow": "187",
+            "minTileCol": "256",
+            "maxTileCol": "264"
+          },
+          "10": {
+            "minTileRow": "348",
+            "maxTileRow": "375",
+            "minTileCol": "512",
+            "maxTileCol": "529"
+          },
+          "11": {
+            "minTileRow": "697",
+            "maxTileRow": "751",
+            "minTileCol": "1024",
+            "maxTileCol": "1058"
+          },
+          "12": {
+            "minTileRow": "1394",
+            "maxTileRow": "1502",
+            "minTileCol": "2048",
+            "maxTileCol": "2116"
+          },
+          "13": {
+            "minTileRow": "2788",
+            "maxTileRow": "3005",
+            "minTileCol": "4096",
+            "maxTileCol": "4233"
+          },
+          "14": {
+            "minTileRow": "5577",
+            "maxTileRow": "6010",
+            "minTileCol": "8193",
+            "maxTileCol": "8466"
+          },
+          "15": {
+            "minTileRow": "11155",
+            "maxTileRow": "12021",
+            "minTileCol": "16387",
+            "maxTileCol": "16932"
+          },
+          "16": {
+            "minTileRow": "22311",
+            "maxTileRow": "24042",
+            "minTileCol": "32774",
+            "maxTileCol": "33864"
+          },
+          "17": {
+            "minTileRow": "44623",
+            "maxTileRow": "48085",
+            "minTileCol": "65548",
+            "maxTileCol": "67729"
+          },
+          "18": {
+            "minTileRow": "89247",
+            "maxTileRow": "96171",
+            "minTileCol": "131097",
+            "maxTileCol": "135458"
+          },
+          "19": {
+            "minTileRow": "178494",
+            "maxTileRow": "192343",
+            "minTileCol": "262195",
+            "maxTileCol": "270916"
+          },
+          "20": {
+            "minTileRow": "356988",
+            "maxTileRow": "384687",
+            "minTileCol": "524391",
+            "maxTileCol": "541832"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
     "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS": {
       "name": "HR.ORTHOIMAGERY.ORTHOPHOTOS",
       "title": "Ortho 20 cm",
@@ -75,51 +1269,71 @@
     },
     "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS",
-      "title": "Zones interdites à la captation aérienne des données",
-      "description": "Zones interdites à la captation aérienne des données (ZICAD) fixées par voie d'arrêté (arrêté du 02-01-2023 fixant la liste des zones interdites à la prise de vue aérienne par appareil photographique, cinématographique ou tout autre capteur). Édition 02-01-2023",
+      "title": "Zones interdites à la captation aérienne des données (ZICAD)",
+      "description": "zones interdites à la captation aérienne des données (ZICAD) fixées par voie d'arrêté (arrêté du 02-01-2023 fixant la liste des zones interdites à la prise de vue aérienne par appareil photographique, cinématographique ou tout autre capteur). Édition 02-01-2023",
       "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.30925077,
-          "right": 168.29811084,
-          "top": 51.31211928,
-          "bottom": -22.97230716
+          "left": -151.44636283,
+          "right": 183.824153,
+          "top": 51.04013008,
+          "bottom": -22.48733778
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "ortho": "https://data.geopf.fr/wms-r/wms"
+          "ortho": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique"
+          "name": "default-style-ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS",
+          "title": "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS style"
         }
       ],
       "legends": [
         {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS"
         }
       ],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -127,7 +1341,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
@@ -490,6 +1748,997 @@
           "current": false
         }
       ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
+      "title": "Graphe de mosaïquage France Entière de la BDORTHO.",
+      "description": "Graphe de mosaïquage France Entière de la BDORTHO.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.18541496,
+          "right": 55.85384065,
+          "top": 51.11183578,
+          "bottom": -21.42730308
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
+          "title": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    }
+  },
+  "tileMatrixSets": {
+    "LAMB93_5cm": {
+      "projection": "IGNF:LAMB93",
+      "nativeResolutions": [
+        "209715.2",
+        "104857.6",
+        "52428.8",
+        "26214.4",
+        "13107.2",
+        "6553.6",
+        "3276.8",
+        "1638.4",
+        "819.2",
+        "409.6",
+        "204.8",
+        "102.4",
+        "51.2",
+        "25.6",
+        "12.8",
+        "6.4",
+        "3.2",
+        "1.6",
+        "0.8",
+        "0.4",
+        "0.2",
+        "0.1",
+        "0.05"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 1,
+          "scaleDenominator": 748982857.1428572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 1,
+          "matrixWidth": 1,
+          "scaleDenominator": 374491428.5714286,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 1,
+          "matrixWidth": 1,
+          "scaleDenominator": 187245714.2857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 2,
+          "matrixWidth": 1,
+          "scaleDenominator": 93622857.14285715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 4,
+          "matrixWidth": 1,
+          "scaleDenominator": 46811428.571428575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 7,
+          "matrixWidth": 1,
+          "scaleDenominator": 23405714.285714287,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 13,
+          "matrixWidth": 2,
+          "scaleDenominator": 11702857.142857144,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 26,
+          "matrixWidth": 4,
+          "scaleDenominator": 5851428.571428572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 52,
+          "matrixWidth": 7,
+          "scaleDenominator": 2925714.285714286,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 103,
+          "matrixWidth": 13,
+          "scaleDenominator": 1462857.142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 206,
+          "matrixWidth": 25,
+          "scaleDenominator": 731428.5714285715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 411,
+          "matrixWidth": 50,
+          "scaleDenominator": 365714.28571428574,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 822,
+          "matrixWidth": 99,
+          "scaleDenominator": 182857.14285714287,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 1643,
+          "matrixWidth": 197,
+          "scaleDenominator": 91428.57142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 3285,
+          "matrixWidth": 394,
+          "scaleDenominator": 45714.28571428572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 6569,
+          "matrixWidth": 788,
+          "scaleDenominator": 22857.14285714286,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 13138,
+          "matrixWidth": 1575,
+          "scaleDenominator": 11428.57142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 26276,
+          "matrixWidth": 3150,
+          "scaleDenominator": 5714.285714285715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 52552,
+          "matrixWidth": 6300,
+          "scaleDenominator": 2857.1428571428573,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 105102,
+          "matrixWidth": 12600,
+          "scaleDenominator": 1428.5714285714287,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "20": {
+          "matrixId": "20",
+          "matrixHeight": 210205,
+          "matrixWidth": 25200,
+          "scaleDenominator": 714.2857142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "21": {
+          "matrixId": "21",
+          "matrixHeight": 420409,
+          "matrixWidth": 50400,
+          "scaleDenominator": 357.14285714285717,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "22": {
+          "matrixId": "22",
+          "matrixHeight": 840818,
+          "matrixWidth": 100800,
+          "scaleDenominator": 178.57142857142858,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        }
+      }
+    },
+    "PM": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "156543.0339280410",
+        "78271.51696402048",
+        "39135.75848201023",
+        "19567.87924100512",
+        "9783.939620502561",
+        "4891.969810251280",
+        "2445.984905125640",
+        "1222.992452562820",
+        "611.4962262814100",
+        "305.7481131407048",
+        "152.8740565703525",
+        "76.43702828517624",
+        "38.21851414258813",
+        "19.10925707129406",
+        "9.554628535647032",
+        "4.777314267823516",
+        "2.388657133911758",
+        "1.194328566955879",
+        "0.5971642834779395",
+        "0.2985821417389697",
+        "0.1492910708694849",
+        "0.0746455354347424"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 1,
+          "scaleDenominator": 559082264.0287179,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 2,
+          "matrixWidth": 2,
+          "scaleDenominator": 279541132.01435894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 4,
+          "matrixWidth": 4,
+          "scaleDenominator": 139770566.0071793,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 8,
+          "matrixWidth": 8,
+          "scaleDenominator": 69885283.00358965,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655464,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277217,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638608,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319322,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.673341596535,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497826,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 524288,
+          "matrixWidth": 524288,
+          "scaleDenominator": 1066.364791924893,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "20": {
+          "matrixId": "20",
+          "matrixHeight": 1048576,
+          "matrixWidth": 1048576,
+          "scaleDenominator": 533.1823959624465,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "21": {
+          "matrixId": "21",
+          "matrixHeight": 2097152,
+          "matrixWidth": 2097152,
+          "scaleDenominator": 266.5911979812229,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "WGS84G": {
+      "projection": "IGNF:WGS84G",
+      "nativeResolutions": [
+        "0.703125",
+        "0.3515625",
+        "0.17578125",
+        "0.087890625",
+        "0.0439453125",
+        "0.02197265625",
+        "0.010986328125",
+        "0.0054931640625",
+        "0.00274658203125",
+        "0.001373291015625",
+        "0.0006866455078125",
+        "0.00034332275390625",
+        "0.000171661376953125",
+        "0.0000858306884765625",
+        "0.00004291534423828125",
+        "0.000021457672119140625",
+        "0.0000107288360595703125",
+        "0.00000536441802978515625",
+        "0.000002682209014892578125",
+        "0.0000013411045074462890625"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 2,
+          "scaleDenominator": 279541132.0143589,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 2,
+          "matrixWidth": 4,
+          "scaleDenominator": 139770566.00717944,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 4,
+          "matrixWidth": 8,
+          "scaleDenominator": 69885283.00358972,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 8,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655447,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277234,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638617,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319309,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.67334159654,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.836670798253,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399127,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699563,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497853,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 524288,
+          "scaleDenominator": 1066.3647919248926,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 524288,
+          "matrixWidth": 1048576,
+          "scaleDenominator": 533.1823959624463,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        }
+      }
     }
   }
 }
