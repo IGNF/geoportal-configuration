@@ -15,21 +15,12 @@
         "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMS",
-        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMS",
-        "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS$GEOPORTAIL:OGC:WMS",
-        "RGEALTI-MNT_PYR-ZIP_GLP_WGS84UTM20_WMS$GEOPORTAIL:OGC:WMS",
-        "RGEALTI-MNT_PYR-ZIP_GUF_UTM22RGFG95_WMS$GEOPORTAIL:OGC:WMS",
-        "RGEALTI-MNT_PYR-ZIP_MTQ_WGS84UTM20_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_MYT_RGM04UTM38S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS$GEOPORTAIL:OGC:WMS",
-        "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS"
@@ -1592,140 +1583,6 @@
         }
       ]
     },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES",
-      "title": "Modèle Numérique de Terrain issu du RGEALTI",
-      "description": "Modèle Numérique de Terrain issu du RGEALTI",
-      "globalConstraint": {
-        "minScaleDenominator": 0.153269087,
-        "maxScaleDenominator": 39.236886161,
-        "bbox": {
-          "left": -62.95280769,
-          "right": 45.30431533,
-          "top": 51.10527968,
-          "bottom": -13.00780942
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:WGS84G",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS",
-      "title": "Modèle numérique de surface",
-      "description": "Modèle numérique de surface (MNS)",
-      "globalConstraint": {
-        "minScaleDenominator": 0.019158636,
-        "maxScaleDenominator": 156.947544643,
-        "bbox": {
-          "left": -63.19677759,
-          "right": 55.86392603,
-          "top": 51.22004662,
-          "bottom": -21.43377841
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:WGS84G",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
     "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW$GEOPORTAIL:OGC:WMS": {
       "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW",
       "title": "Estompage appliqué au Modèle Numérique de Surface",
@@ -1844,89 +1701,6 @@
         }
       ]
     },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3",
-      "title": "MNT SRTM3",
-      "description": "MNT SRTM3 construit par la NASA et le NGA.",
-      "globalConstraint": {
-        "minScaleDenominator": 2.452305385,
-        "maxScaleDenominator": 1255.580357143,
-        "bbox": {
-          "left": -180.00041667,
-          "right": 180.00041667,
-          "top": 61.00041667,
-          "bottom": -56.00041667
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:WGS84G",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        },
-        {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
     "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMS": {
       "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD",
       "title": "Seuils de pente pour l'agriculture",
@@ -1986,129 +1760,6 @@
         }
       ]
     },
-    "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS": {
-      "name": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
-      "title": "Masque de source du RGE Alti",
-      "description": "Informations sur la précision du RGEAlti.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.18904211,
-          "right": 55.84453236,
-          "top": 51.12965159,
-          "bottom": -21.42727734
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
-          "title": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
     "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN$GEOPORTAIL:OGC:WMS": {
       "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.MOUNTAIN",
       "title": "Carte des pentes",
@@ -2142,306 +1793,6 @@
       "legends": [
         {
           "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS",
-      "title": "RGEALTI-MNT_PYR-ZIP_FXX_LAMB93_WMS1",
-      "description": "MNT RGEALTI",
-      "globalConstraint": {
-        "minScaleDenominator": 3571.428571429,
-        "maxScaleDenominator": 3571428.571428571,
-        "bbox": {
-          "left": -5.32038417,
-          "right": 9.66313884,
-          "top": 51.12131377,
-          "bottom": 41.31562546
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:LAMB93",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        },
-        {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "RGEALTI-MNT_PYR-ZIP_GLP_WGS84UTM20_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "RGEALTI-MNT_PYR-ZIP_GLP_WGS84UTM20_WMS",
-      "title": "RGEALTI-MNT_PYR-ZIP_GLP_WGS84UTM20_WMS20200706",
-      "description": "RGEALTI des MNT en PYR-ZIP pour la GLP en WGS84UTM20",
-      "globalConstraint": {
-        "minScaleDenominator": 3571.428571429,
-        "maxScaleDenominator": 3571428.571428571,
-        "bbox": {
-          "left": -19.40702807,
-          "right": 131.26914062,
-          "top": 71.52498305,
-          "bottom": 11.80185014
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:UTM20W84MART",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        },
-        {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "RGEALTI-MNT_PYR-ZIP_GUF_UTM22RGFG95_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "RGEALTI-MNT_PYR-ZIP_GUF_UTM22RGFG95_WMS",
-      "title": "RGEALTI-MNT_PYR-ZIP_GUF_UTM22RGFG95_WMS2",
-      "description": "RGEALTI MNT GUYANE",
-      "globalConstraint": {
-        "minScaleDenominator": 1828571.428571428,
-        "maxScaleDenominator": 468114285.7142857,
-        "bbox": {
-          "left": -54.64663827,
-          "right": -51.60250004,
-          "top": 5.78976485,
-          "bottom": 2.07667687
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:UTM22RGFG95",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        },
-        {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "RGEALTI-MNT_PYR-ZIP_MTQ_WGS84UTM20_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "RGEALTI-MNT_PYR-ZIP_MTQ_WGS84UTM20_WMS",
-      "title": "RGEALTI-MNT_PYR-ZIP_MTQ_WGS84UTM20_WMS20160317",
-      "description": "RGEALTI du MNT de la Martinique.",
-      "globalConstraint": {
-        "minScaleDenominator": 3571.428571429,
-        "maxScaleDenominator": 3571428.571428571,
-        "bbox": {
-          "left": -61.237869,
-          "right": -60.79722547,
-          "top": 14.88176066,
-          "bottom": 14.38106722
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:UTM20W84MART",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        },
-        {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -2618,69 +1969,73 @@
         }
       ]
     },
-    "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS",
-      "title": "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS_20170617",
-      "description": "RGEALTI des MNT en PYR-ZIP pour SMP en RGSPM06U21",
+    "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS": {
+      "name": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
+      "title": "Masque de source du RGE Alti",
+      "description": "Informations sur la précision du RGEAlti.",
       "globalConstraint": {
-        "minScaleDenominator": 3571.428571429,
-        "maxScaleDenominator": 3571428.571428571,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -56.52871382,
-          "right": -56.07671196,
-          "top": 47.15052052,
-          "bottom": 46.74288786
+          "left": -63.18904211,
+          "right": 55.84453236,
+          "top": 51.12965159,
+          "bottom": -21.42727734
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-r/wms"
+          "altimetrie": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "IGNF:RGSPM06U21",
-      "queryable": false,
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique"
-        },
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage"
-        },
-        {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence"
+          "name": "default-style-ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
+          "title": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY style"
         }
       ],
       "legends": [
         {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
           "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY"
         }
       ],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -2688,7 +2043,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
