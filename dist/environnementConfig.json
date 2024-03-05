@@ -37,37 +37,18 @@
         "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.ZPS$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMTS",
-        "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMS",
-        "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMS",
-        "LANDCOVER.FORESTINVENTORY.V1$GEOPORTAIL:OGC:WMS",
-        "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.APHN$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.APLG$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.BIOS$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.GP$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.MNHN.CDL.PARCELS$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.MNHN.CDL.PERIMETER$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.MNHN.RN.PERIMETER$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.PN$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.PNM$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.PNR$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.PRSF$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.RB$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.RIPN$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.RN$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.RNC$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.RNCF$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.SIC$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZNIEFF1$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZNIEFF1.SEA$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.ZNIEFF2$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDAREAS.ZPS$GEOPORTAIL:OGC:WMS",
-        "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMS",
         "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS",
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMS",
@@ -4233,6 +4214,1541 @@
         }
       ]
     },
+    "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.APG",
+      "title": "Arrêtés de protection de géotope",
+      "description": "Sites d'intérêt géologique faisant l'objet d’une interdiction de destruction, d'altération ou de dégradation du site, ainsi que de prélèvement, de destruction ou de dégradation de fossiles, minéraux et concrétions présents sur ces sites appelés « aires de protection de géotope».",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 1.84634829,
+          "right": 4.61007198,
+          "top": 48.85525383,
+          "bottom": 43.91802301
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.APG",
+          "title": "PROTECTEDAREAS.APG style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.APG"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.INPG",
+      "title": "Inventaire National du Patrimoine Géologique (INPG)",
+      "description": "L'Inventaire National du Patrimoine Géologique (INPG) est un programme initié en 2007 de connaissance géologique du territoire métropolitain et outre-mer, dans lequel chaque site géologique naturel est renseigné sur une application web dédiée (InvenTerre) de façon textuelle avec une évaluation patrimoniale et une cartographie associées.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.79004303,
+          "right": 55.83694573,
+          "top": 51.09254226,
+          "bottom": -21.38412564
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.INPG",
+          "title": "PROTECTEDAREAS.INPG style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.INPG"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.MNHN.CDL.PERIMETER$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.MNHN.CDL.PERIMETER",
+      "title": "Conservatoire du littoral : Périmètres d'intervention (MNHN)",
+      "description": "Conservatoire du littoral : Périmètres d'intervention 03-2023",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.14490421,
+          "right": 55.83443179,
+          "top": 51.08708741,
+          "bottom": -21.38396941
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.MNHN.CDL.PERIMETER",
+          "title": "PROTECTEDAREAS.MNHN.CDL.PERIMETER style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.MNHN.CDL.PERIMETER"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.MNHN.RN.PERIMETER$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.MNHN.RN.PERIMETER",
+      "title": "périmètres de protection de réserves naturelles",
+      "description": "Un périmètre de protection peut être institué en périphérie d’une réserve naturelle. Il concerne des espaces qui n’ont pas été classés en réserve et qui constituent une zone « tampon » autour de l’espace classé. Ils améliorent les échanges écologiques entre la réserve et sa périphérie. Mise à jour 09-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -60.83711192,
+          "right": 6.65777824,
+          "top": 50.26251827,
+          "bottom": 14.40765258
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.MNHN.RN.PERIMETER",
+          "title": "PROTECTEDAREAS.MNHN.RN.PERIMETER style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.MNHN.RN.PERIMETER"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.PN$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.PN",
+      "title": "Parcs nationaux",
+      "description": "Les parcs nationaux sont de vastes espaces protégés terrestres ou marins dont le patrimoine naturel est exceptionnel, et dont le but est à la fois de protéger des processus écologiques à large échelle et de fournir des possibilités de découverte de la nature. Mise à jour 09-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -62.018039,
+          "right": 55.83675479,
+          "top": 48.10662195,
+          "bottom": -21.35866047
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.PN",
+          "title": "PROTECTEDAREAS.PN style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.PN"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.PNR$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.PNR",
+      "title": "Parcs naturels régionaux",
+      "description": "Les parcs naturels régionaux ont pour but de valoriser de vastes espaces de fort intérêt culturel et naturel, et de veiller au développement durable de ces territoires dont le caractère rural est souvent très affirmé. Mise à jour 05-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.22903786,
+          "right": 9.48875843,
+          "top": 50.96250731,
+          "bottom": 3.90567846
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.PNR",
+          "title": "PROTECTEDAREAS.PNR style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.PNR"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.RB$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.RB",
+      "title": "Réserves Biologiques",
+      "description": "Réserves Biologiques",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.51809317,
+          "right": 55.80534186,
+          "top": 50.76219068,
+          "bottom": -21.37682085
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.RB",
+          "title": "PROTECTEDAREAS.RB style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.RB"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.RNCF$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.RNCF",
+      "title": "Réserves nationales de chasse et de faune sauvage",
+      "description": "Les réserves nationales de chasse et de faune sauvage sont des espaces protégés terrestres ou marins dont la gestion est principalement assurée par l'Office National de la Chasse et de la Faune Sauvage. 09-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -2.90554814,
+          "right": 8.23355065,
+          "top": 48.96747315,
+          "bottom": 42.60479748
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.RNCF",
+          "title": "PROTECTEDAREAS.RNCF style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.RNCF"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.ZNIEFF1$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.ZNIEFF1",
+      "title": "Zones écologiques de nature remarquable (ZNIEFF1)",
+      "description": "Inventaire des espaces naturels abritant la nature remarquable 09-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.ZNIEFF1.SEA$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.ZNIEFF1.SEA",
+      "title": "Zones naturelles d’intérêt écologique faunistique et floristique (ZNIEFF) marine type I",
+      "description": "Espaces marin homogènes d’un point de vue écologique abritant au moins une espèce ou un habitat rare ou menacé, d’intérêt local ou régional, national ou communautaire. Espaces marin d’intérêt fonctionnel pour le fonctionnement écologique local. 09-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.55202832,
+          "right": 55.84184063,
+          "top": 50.96715647,
+          "bottom": -21.39122212
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.ZNIEFF1.SEA",
+          "title": "PROTECTEDAREAS.ZNIEFF1.SEA style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZNIEFF1.SEA"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.ZNIEFF2.SEA",
+      "title": "Zones naturelles d’intérêt écologique faunistique et floristique (ZNIEFF) marine type II",
+      "description": "Grands ensembles naturels ou peu modifiés marin offrant des potentialités biologiques importantes. 09-2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -54.01550883,
+          "right": 55.84184063,
+          "top": 50.30562688,
+          "bottom": -21.39287786
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.ZNIEFF2.SEA",
+          "title": "PROTECTEDAREAS.ZNIEFF2.SEA style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZNIEFF2.SEA"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.ZPR",
+      "title": "Zones de protection renforcée",
+      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -2.70339452,
+          "right": 81.5276315,
+          "top": 48.52637697,
+          "bottom": -51.59472222
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-PROTECTEDAREAS.ZPR",
+          "title": "PROTECTEDAREAS.ZPR style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZPR"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS": {
+      "name": "DEBROUSSAILLEMENT",
+      "title": "Zonage informatif des obligations légales de débroussaillement",
+      "description": "Zonage informatif des obligations légales de débroussaillement",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -3.84955064,
+          "right": 9.6540527,
+          "top": 49.32495008,
+          "bottom": 41.32091748
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-DEBROUSSAILLEMENT",
+          "title": "DEBROUSSAILLEMENT style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DEBROUSSAILLEMENT"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMS": {
       "name": "FORETS.PUBLIQUES",
       "title": "Forêts publiques",
@@ -4479,136 +5995,18 @@
         }
       ]
     },
-    "LANDCOVER.FORESTINVENTORY.V1$GEOPORTAIL:OGC:WMS": {
-      "name": "LANDCOVER.FORESTINVENTORY.V1",
-      "title": "Carte forestière v1 (1987-2004)",
-      "description": "La cartographie forestière est une base de données cartographique des formations végétales forestières et naturelles. Elle couvre l'ensemble du territoire de France métropolitaine. Elle est réalisée par interprétation de photographies aériennes infrarouges et affinée par des contrôles sur le terrain (le seuil minimal de surface cartographiée est de 2,25 ha).",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 8735660.375448715,
-        "bbox": {
-          "left": -5.15047272,
-          "right": 9.57054324,
-          "top": 51.09905418,
-          "bottom": 41.32520964
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS": {
-      "name": "LANDCOVER.FORESTINVENTORY.V2",
-      "title": "Carte forestière (v2 : 2006-)",
-      "description": "Localisation de 32 types de formations végétales sur le territoire. Carte en cours de réalisation depuis 2006.",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 8735660.375448715,
-        "bbox": {
-          "left": -5.15047272,
-          "right": 9.57054324,
-          "top": 51.09905418,
-          "bottom": 41.32520964
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "LANDCOVER.FORESTINVENTORY.V2",
-          "title": "Données LANDCOVER.FORESTINVENTORY.V2"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LANDCOVER.FORESTINVENTORY.V2-legend.png"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.APB",
-      "title": "Biotopes d'espèces protégées",
-      "description": "Conservation de l'habitat d'espèces protégées. Mise à jour 09-2022",
+    "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS": {
+      "name": "MESURES_COMPENSATOIRES",
+      "title": "Mesures compensatoires des atteintes à la biodiversité",
+      "description": "Carte des mesures compensatoires des atteintes à la biodiversité. Une mesure compensatoire d’atteinte à la biodiversité n'intervient que sur l'impact résiduel d'un projet d'aménagement, lorsque toutes les mesures envisageables ont été mises en œuvre pour éviter puis réduire les impacts négatifs sur la biodiversité. Elle vise à offrir une contrepartie positive à un impact dommageable non réductible provoqué par un projet, de façon à maintenir la biodiversité dans un état équivalent ou meilleur à celui observé avant sa réalisation.",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -109.43767837,
-          "right": 55.68722025,
-          "top": 50.98414979,
-          "bottom": -21.37814188
+          "left": -180.0,
+          "right": 180.0,
+          "top": 85.0,
+          "bottom": -85.0
         }
       },
       "serviceParams": {
@@ -4623,14 +6021,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-PROTECTEDAREAS.APB",
-          "title": "PROTECTEDAREAS.APB style"
+          "name": "default-style-MESURES_COMPENSATOIRES",
+          "title": "MESURES_COMPENSATOIRES style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.APB"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=MESURES_COMPENSATOIRES"
         }
       ],
       "formats": [
@@ -4720,18 +6118,18 @@
         }
       ]
     },
-    "PROTECTEDAREAS.APG$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.APG",
-      "title": "Arrêtés de protection de géotope",
-      "description": "Sites d'intérêt géologique faisant l'objet d’une interdiction de destruction, d'altération ou de dégradation du site, ainsi que de prélèvement, de destruction ou de dégradation de fossiles, minéraux et concrétions présents sur ces sites appelés « aires de protection de géotope».",
+    "PROTECTEDAREAS.APB$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.APB",
+      "title": "Biotopes d'espèces protégées",
+      "description": "Conservation de l'habitat d'espèces protégées. Mise à jour 09-2022",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": 1.84634829,
-          "right": 4.61007198,
-          "top": 48.85525383,
-          "bottom": 43.91802301
+          "left": -109.43767837,
+          "right": 55.68722025,
+          "top": 50.98414979,
+          "bottom": -21.37814188
         }
       },
       "serviceParams": {
@@ -4746,14 +6144,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-PROTECTEDAREAS.APG",
-          "title": "PROTECTEDAREAS.APG style"
+          "name": "default-style-PROTECTEDAREAS.APB",
+          "title": "PROTECTEDAREAS.APB style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.APG"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.APB"
         }
       ],
       "formats": [
@@ -5335,18 +6733,18 @@
         }
       ]
     },
-    "PROTECTEDAREAS.INPG$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.INPG",
-      "title": "Inventaire National du Patrimoine Géologique (INPG)",
-      "description": "L'Inventaire National du Patrimoine Géologique (INPG) est un programme initié en 2007 de connaissance géologique du territoire métropolitain et outre-mer, dans lequel chaque site géologique naturel est renseigné sur une application web dédiée (InvenTerre) de façon textuelle avec une évaluation patrimoniale et une cartographie associées.",
+    "PROTECTEDAREAS.MNHN.CONSERVATOIRES$GEOPORTAIL:OGC:WMS": {
+      "name": "PROTECTEDAREAS.MNHN.CONSERVATOIRES",
+      "title": "Terrains des conservatoires d'espaces naturels",
+      "description": "Les conservatoires d'espaces naturels organisent la maîtrise foncière de terrains en vue d'assurer la protection des espèces qui y résident. 05-2022",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -61.79004303,
-          "right": 55.83694573,
-          "top": 51.09254226,
-          "bottom": -21.38412564
+          "left": -2.37011551,
+          "right": 9.53678527,
+          "top": 50.90041727,
+          "bottom": 41.59376493
         }
       },
       "serviceParams": {
@@ -5361,442 +6759,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-PROTECTEDAREAS.INPG",
-          "title": "PROTECTEDAREAS.INPG style"
+          "name": "default-style-PROTECTEDAREAS.MNHN.CONSERVATOIRES",
+          "title": "PROTECTEDAREAS.MNHN.CONSERVATOIRES style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.INPG"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.MNHN.CDL.PARCELS$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.MNHN.CDL.PARCELS",
-      "title": "Conservatoire du littoral - sites sous responsabilité du conservatoire",
-      "description": "Les sites du conservatoire du littoral ont pour vocation la sauvegarde des espaces côtiers et lacustres. Leur accès au public est encouragé mais reste défini dans des limites compatibles avec la vulnérabilité de chaque site",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 8735660.375448715,
-        "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.MNHN.CDL.PERIMETER$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.MNHN.CDL.PERIMETER",
-      "title": "Conservatoire du littoral : Périmètres d'intervention (MNHN)",
-      "description": "Conservatoire du littoral : Périmètres d'intervention 03-2023",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.14490421,
-          "right": 55.83443179,
-          "top": 51.08708741,
-          "bottom": -21.38396941
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.MNHN.CDL.PERIMETER",
-          "title": "PROTECTEDAREAS.MNHN.CDL.PERIMETER style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.MNHN.CDL.PERIMETER"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.MNHN.RN.PERIMETER$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.MNHN.RN.PERIMETER",
-      "title": "périmètres de protection de réserves naturelles",
-      "description": "Un périmètre de protection peut être institué en périphérie d’une réserve naturelle. Il concerne des espaces qui n’ont pas été classés en réserve et qui constituent une zone « tampon » autour de l’espace classé. Ils améliorent les échanges écologiques entre la réserve et sa périphérie. Mise à jour 09-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -60.83711192,
-          "right": 6.65777824,
-          "top": 50.26251827,
-          "bottom": 14.40765258
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.MNHN.RN.PERIMETER",
-          "title": "PROTECTEDAREAS.MNHN.RN.PERIMETER style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.MNHN.RN.PERIMETER"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.PN$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.PN",
-      "title": "Parcs nationaux",
-      "description": "Les parcs nationaux sont de vastes espaces protégés terrestres ou marins dont le patrimoine naturel est exceptionnel, et dont le but est à la fois de protéger des processus écologiques à large échelle et de fournir des possibilités de découverte de la nature. Mise à jour 09-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -62.018039,
-          "right": 55.83675479,
-          "top": 48.10662195,
-          "bottom": -21.35866047
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.PN",
-          "title": "PROTECTEDAREAS.PN style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.PN"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.MNHN.CONSERVATOIRES"
         }
       ],
       "formats": [
@@ -6009,129 +6979,6 @@
         }
       ]
     },
-    "PROTECTEDAREAS.PNR$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.PNR",
-      "title": "Parcs naturels régionaux",
-      "description": "Les parcs naturels régionaux ont pour but de valoriser de vastes espaces de fort intérêt culturel et naturel, et de veiller au développement durable de ces territoires dont le caractère rural est souvent très affirmé. Mise à jour 05-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.22903786,
-          "right": 9.48875843,
-          "top": 50.96250731,
-          "bottom": 3.90567846
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.PNR",
-          "title": "PROTECTEDAREAS.PNR style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.PNR"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
     "PROTECTEDAREAS.PRSF$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.PRSF",
       "title": "Points de Rencontre de Secours en Forêt (PRSF)",
@@ -6166,129 +7013,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.PRSF"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.RB$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.RB",
-      "title": "Réserves Biologiques",
-      "description": "Réserves Biologiques",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.51809317,
-          "right": 55.80534186,
-          "top": 50.76219068,
-          "bottom": -21.37682085
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.RB",
-          "title": "PROTECTEDAREAS.RB style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.RB"
         }
       ],
       "formats": [
@@ -6501,65 +7225,6 @@
         }
       ]
     },
-    "PROTECTEDAREAS.RN$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.RN",
-      "title": "Réserves naturelles nationales",
-      "description": "Les réserves naturelles sont des espaces protégés terrestres ou marins dont le patrimoine naturel est exceptionnel, tant sur le plan de la biodiversité que parfois sur celui de la géodiversité. 04-2023",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 559082264.0287179,
-        "bbox": {
-          "left": -63.3725215,
-          "right": 82.64500614,
-          "top": 51.31211928,
-          "bottom": -53.6279127
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
     "PROTECTEDAREAS.RNC$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.RNC",
       "title": "Réserves Naturelles de Corse",
@@ -6683,129 +7348,6 @@
         }
       ]
     },
-    "PROTECTEDAREAS.RNCF$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.RNCF",
-      "title": "Réserves nationales de chasse et de faune sauvage",
-      "description": "Les réserves nationales de chasse et de faune sauvage sont des espaces protégés terrestres ou marins dont la gestion est principalement assurée par l'Office National de la Chasse et de la Faune Sauvage. 09-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -2.90554814,
-          "right": 8.23355065,
-          "top": 48.96747315,
-          "bottom": 42.60479748
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.RNCF",
-          "title": "PROTECTEDAREAS.RNCF style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.RNCF"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
     "PROTECTEDAREAS.SIC$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.SIC",
       "title": "Sites Natura 2000 au titre de la Directive Habitats",
@@ -6840,493 +7382,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.SIC"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.ZNIEFF1$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.ZNIEFF1",
-      "title": "Zones écologiques de nature remarquable (ZNIEFF1)",
-      "description": "Inventaire des espaces naturels abritant la nature remarquable 09-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 8735660.375448715,
-        "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.ZNIEFF1.SEA$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.ZNIEFF1.SEA",
-      "title": "Zones naturelles d’intérêt écologique faunistique et floristique (ZNIEFF) marine type I",
-      "description": "Espaces marin homogènes d’un point de vue écologique abritant au moins une espèce ou un habitat rare ou menacé, d’intérêt local ou régional, national ou communautaire. Espaces marin d’intérêt fonctionnel pour le fonctionnement écologique local. 09-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.55202832,
-          "right": 55.84184063,
-          "top": 50.96715647,
-          "bottom": -21.39122212
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.ZNIEFF1.SEA",
-          "title": "PROTECTEDAREAS.ZNIEFF1.SEA style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZNIEFF1.SEA"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.ZNIEFF2$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.ZNIEFF2",
-      "title": "Zones fonctionnelles de nature remarquable (ZNIEFF2)",
-      "description": "Inventaire des espaces fonctionnels indispensables à la nature remarquable.</br><a href=\"https://data.geopf.fr/annexes/ressources/fiches/mnhn/actualite_donnees_mnhn.pdf\" alt=\"Date des données\" target=\"_blank\">Date des données</a>",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 8735660.375448715,
-        "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.ZNIEFF2.SEA$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.ZNIEFF2.SEA",
-      "title": "Zones naturelles d’intérêt écologique faunistique et floristique (ZNIEFF) marine type II",
-      "description": "Grands ensembles naturels ou peu modifiés marin offrant des potentialités biologiques importantes. 09-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -54.01550883,
-          "right": 55.84184063,
-          "top": 50.30562688,
-          "bottom": -21.39287786
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.ZNIEFF2.SEA",
-          "title": "PROTECTEDAREAS.ZNIEFF2.SEA style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZNIEFF2.SEA"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.ZPR$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.ZPR",
-      "title": "Zones de protection renforcée",
-      "description": "L'arrêté préfectoral fixant la liste départementale de sites d'intérêt géologique est un outil règlementaire qui vise à protéger, par des mesures générales, les sites géologiques qui sont mentionnés en son sein. Il s'agit d'un des deux outils mis en place par le décret du 28 décembre 2015 codifié aux articles R.411-17-1 et 17-2 du code de l'environnement et précisé par la Note du 1er décembre 2016 relative à la protection des sites d'intérêt géologique",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -2.70339452,
-          "right": 81.5276315,
-          "top": 48.52637697,
-          "bottom": -51.59472222
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.ZPR",
-          "title": "PROTECTEDAREAS.ZPR style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.ZPR"
         }
       ],
       "formats": [
@@ -7573,375 +7628,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDSITES.MNHN.RESERVES-REGIONALES"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS": {
-      "name": "DEBROUSSAILLEMENT",
-      "title": "Zonage informatif des obligations légales de débroussaillement",
-      "description": "Zonage informatif des obligations légales de débroussaillement",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -3.84955064,
-          "right": 9.6540527,
-          "top": 49.32495008,
-          "bottom": 41.32091748
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-DEBROUSSAILLEMENT",
-          "title": "DEBROUSSAILLEMENT style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DEBROUSSAILLEMENT"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS": {
-      "name": "MESURES_COMPENSATOIRES",
-      "title": "Mesures compensatoires des atteintes à la biodiversité",
-      "description": "Carte des mesures compensatoires des atteintes à la biodiversité. Une mesure compensatoire d’atteinte à la biodiversité n'intervient que sur l'impact résiduel d'un projet d'aménagement, lorsque toutes les mesures envisageables ont été mises en œuvre pour éviter puis réduire les impacts négatifs sur la biodiversité. Elle vise à offrir une contrepartie positive à un impact dommageable non réductible provoqué par un projet, de façon à maintenir la biodiversité dans un état équivalent ou meilleur à celui observé avant sa réalisation.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -180.0,
-          "right": 180.0,
-          "top": 85.0,
-          "bottom": -85.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-MESURES_COMPENSATOIRES",
-          "title": "MESURES_COMPENSATOIRES style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=MESURES_COMPENSATOIRES"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "PROTECTEDAREAS.MNHN.CONSERVATOIRES$GEOPORTAIL:OGC:WMS": {
-      "name": "PROTECTEDAREAS.MNHN.CONSERVATOIRES",
-      "title": "Terrains des conservatoires d'espaces naturels",
-      "description": "Les conservatoires d'espaces naturels organisent la maîtrise foncière de terrains en vue d'assurer la protection des espèces qui y résident. 05-2022",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -2.37011551,
-          "right": 9.53678527,
-          "top": 50.90041727,
-          "bottom": 41.59376493
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-PROTECTEDAREAS.MNHN.CONSERVATOIRES",
-          "title": "PROTECTEDAREAS.MNHN.CONSERVATOIRES style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.MNHN.CONSERVATOIRES"
         }
       ],
       "formats": [
