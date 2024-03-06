@@ -11,6 +11,7 @@
         "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMS",
@@ -1100,6 +1101,89 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/CADASTRALPARCELS.PARCELLAIRE_EXPRESS.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMS": {
+      "name": "CADASTRALPARCELS.PARCELS",
+      "title": "BDPARCELLAIRE-IMAGE WM 2018-09-27",
+      "description": "Parcelles cadastrales.",
+      "globalConstraint": {
+        "minScaleDenominator": 533.182395962,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -63.16070698,
+          "right": 55.84643116,
+          "top": 51.09096467,
+          "bottom": -21.39222974
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "bdparcellaire_o",
+          "title": "BD Parcellaire orange transparente"
+        },
+        {
+          "name": "bdparcellaire",
+          "title": "BD Parcellaire Noire et transparente"
+        },
+        {
+          "name": "bdparcellaire_b",
+          "title": "BD Parcellaire blanc transparente"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
