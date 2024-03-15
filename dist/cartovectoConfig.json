@@ -11,7 +11,9 @@
         "BDCARTO-TRANSPORT_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDCARTO-ZONES_REGLEMENTEES_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "CLEFVERTE$GEOPORTAIL:OGC:WMS",
+        "COMMUNESTOURISTIQUES$GEOPORTAIL:OGC:WMS",
         "PAVILLONBLEU$GEOPORTAIL:OGC:WMS",
+        "STATIONSCLASSEES$GEOPORTAIL:OGC:WMS",
         "STATIONSVERTES$GEOPORTAIL:OGC:WMS",
         "STATISTICALUNITS.IRIS$GEOPORTAIL:OGC:WMS",
         "STATISTICALUNITS.IRISGE$GEOPORTAIL:OGC:WMS",
@@ -1127,6 +1129,129 @@
         }
       ]
     },
+    "COMMUNESTOURISTIQUES$GEOPORTAIL:OGC:WMS": {
+      "name": "COMMUNESTOURISTIQUES",
+      "title": "Communes touristiques",
+      "description": "Deux niveaux de classement sont prévus pour les communes qui développent d’une politique touristique sur leur territoire. Le premier niveau se matérialise par l’obtention de la dénomination en commune touristique régie par les articles L.133-11 et L.133-12 du code du tourisme.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -54.140625,
+          "right": 166.11328125,
+          "top": 51.27109375,
+          "bottom": -22.123828125
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-COMMUNESTOURISTIQUES",
+          "title": "COMMUNESTOURISTIQUES style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=COMMUNESTOURISTIQUES"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "PAVILLONBLEU$GEOPORTAIL:OGC:WMS": {
       "name": "PAVILLONBLEU",
       "title": "Le Pavillon Bleu",
@@ -1250,18 +1375,141 @@
         }
       ]
     },
-    "STATIONSVERTES$GEOPORTAIL:OGC:WMS": {
-      "name": "STATIONSVERTES",
-      "title": "Stations vertes",
-      "description": "Une Station Verte propose des séjours écotouristiques, porteurs de sens, en faveur d'un tourisme nature, authentique, humain et respectueux de l'environnement 11-2023",
+    "STATIONSCLASSEES$GEOPORTAIL:OGC:WMS": {
+      "name": "STATIONSCLASSEES",
+      "title": "Stations classées",
+      "description": "Deux niveaux de classement sont prévus pour les communes qui développent d’une politique touristique sur leur territoire. Le second niveau, plus élevé que le premier, se matérialise par le classement en station de tourisme tel que défini par les articles L.133-13 à L.133-16 du code du tourisme.",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -54.140625,
           "right": 166.11328125,
-          "top": 50.744335938,
-          "bottom": -21.948242188
+          "top": 51.27109375,
+          "bottom": -22.123828125
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-STATIONSCLASSEES",
+          "title": "STATIONSCLASSEES style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=STATIONSCLASSEES"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "STATIONSVERTES$GEOPORTAIL:OGC:WMS": {
+      "name": "STATIONSVERTES",
+      "title": "Stations vertes",
+      "description": "Une Station Verte propose des séjours écotouristiques, porteurs de sens, en faveur d'un tourisme nature, authentique, humain et respectueux de l'environnement",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -54.140625,
+          "right": 166.11328125,
+          "top": 51.27109375,
+          "bottom": -22.123828125
         }
       },
       "serviceParams": {
@@ -1622,7 +1870,7 @@
     "VILLAGESETAPE$GEOPORTAIL:OGC:WMS": {
       "name": "VILLAGESETAPE",
       "title": "Villages étapes",
-      "description": "Communes de moins de 5 000 habitants, situées à moins de 5km d'un grand axe routier national 03-2023",
+      "description": "Communes de moins de 5 000 habitants, situées à moins de 5km d'un grand axe routier national",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
