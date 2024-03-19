@@ -4,6 +4,7 @@
       "environnement": [
         "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMTS",
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.FORESTAREAS$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.FORESTINVENTORY.V1$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMTS",
@@ -352,6 +353,121 @@
           "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/onf_forets_publiques.png",
           "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMTS": {
+      "name": "GEOGRAPHICALGRIDSYSTEM.DFCI",
+      "title": "Carroyage DFCI",
+      "description": "Le « carroyage DFCI » est un système de maillage géographique utilisé en France par les acteurs de la Défense des Forêts Contre les Incendies (DFCI). Le territoire métropolitain est couvert par des carrés de 100 km de côté, identifiables par deux lettres. Chaque carré de 100 km est divisé en 25 carrés de 20 km de côté, numérotés par des chiffres pairs de 0 à 8. Chaque carré de 20 km est divisé en 100 carrés de 2 km de côté, numérotés par un groupe composé d'une lettre et d'un chiffre. L'unité élémentaire est un carreau de 2 kilomètres de côté, défini par 6 caractères (exemple : KD42F7). Pour désigner un point à l'intérieur de l'unité élémentaire, la précision est obtenue en découpant ce carré en cinq zones numérotées de 1 à 5. Il a été créé sur une grille qui s'appuie sur la projection Lambert II étendue. Depuis 2009, il est re-projeté en Lambert 93 avec une légère déformation des angles et des surfaces. Carroyage DFCI (2 km) : Chaque carré de 20 km est divisé en 100 carrés de 2 km de côté, numérotés par un groupe composé d'une lettre et d'un chiffre. Les carrés de 2 km sont dénommés de A à L (sauf I et J) pour les abscisses, et numérotés de 0 à 9 pour les ordonnées. Date des données : 7 juin 2016 Source : couches 100, 50, 20 et 2 km : Entente Valablre - PôNT, couche 1 km : avec l'aimable autorisation de Geonov (www.geonov.fr)",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 266.5911979812229,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
         }
       ],
       "formats": [
@@ -4603,10 +4719,10 @@
         "minScaleDenominator": 8530.918335399,
         "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -5.15047272,
-          "right": 9.57054324,
-          "top": 51.09905418,
-          "bottom": 41.32520964
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
         }
       },
       "serviceParams": {
@@ -4662,10 +4778,10 @@
         "minScaleDenominator": 8530.918335399,
         "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -5.15047272,
-          "right": 9.57054324,
-          "top": 51.09905418,
-          "bottom": 41.32520964
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
         }
       },
       "serviceParams": {
@@ -5582,10 +5698,10 @@
         "minScaleDenominator": 8530.918335399,
         "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
@@ -6748,10 +6864,10 @@
         "minScaleDenominator": 8530.918335399,
         "maxScaleDenominator": 559082264.0287179,
         "bbox": {
-          "left": -63.3725215,
-          "right": 82.64500614,
-          "top": 51.31211928,
-          "bottom": -53.6279127
+          "left": -63.3725,
+          "right": 82.645,
+          "top": 51.3121,
+          "bottom": -53.6279
         }
       },
       "serviceParams": {
@@ -7176,10 +7292,10 @@
         "minScaleDenominator": 8530.918335399,
         "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
@@ -7358,10 +7474,10 @@
         "minScaleDenominator": 8530.918335399,
         "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
@@ -7663,10 +7779,10 @@
         "minScaleDenominator": 8530.918335399,
         "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
