@@ -14,7 +14,6 @@
         "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS",
-        "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMS",
         "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS",
         "PCI$GEOPORTAIL:GPP:TMS"
       ]
@@ -882,92 +881,44 @@
       "title": "Décalage de la représentation cadastrale",
       "description": "Cartographie des décalages entre les données BD Parcellaire et Parcellaire Express",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 2132.72958385,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -5.14076796,
-          "right": 9.55990504,
-          "top": 64.15154681,
-          "bottom": -4.46233984
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "parcellaire": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+          "parcellaire": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-CADASTRALPARCELS.HEATMAP",
-          "title": "CADASTRALPARCELS.HEATMAP style"
+          "name": "DECALAGE DE LA REPRESENTATION CADASTRALE",
+          "title": "DECALAGE DE LA REPRESENTATION CADASTRALE"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CADASTRALPARCELS.HEATMAP"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/CADASTRALPARCELS.HEATMAP-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -975,27 +926,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
