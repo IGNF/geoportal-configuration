@@ -6,7 +6,6 @@
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMTS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMTS",
         "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS",
-        "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
       ],
@@ -1123,65 +1122,6 @@
         }
       ]
     },
-    "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS": {
-      "name": "ADMINEXPRESS-COG.LATEST",
-      "title": "ADMINEXPRESS COG",
-      "description": "Limites administratives Express COG code officiel géographique. 2023",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399,
-        "maxScaleDenominator": 8735660.375448715,
-        "bbox": {
-          "left": -63.3725,
-          "right": 55.9259,
-          "top": 51.3121,
-          "bottom": -21.4756
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "ADMINEXPRESS-COG",
-          "title": "Légende du 1/1000000"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/ADMINEXPRESS-COG.LATEST-legend.png"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
       "title": "Limites administratives mises à jour en continu.",
@@ -1284,8 +1224,8 @@
     },
     "BAN.DATA.GOUV$GEOPORTAIL:OGC:WMS": {
       "name": "BAN.DATA.GOUV",
-      "title": "Base Adresse Nationale édition : 2024-02-01",
-      "description": "Données Base Adresse Nationale édition : 2024-02-01",
+      "title": "BAN édition 2024-05-01",
+      "description": "BAN édition 2024-05-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
