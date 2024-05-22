@@ -13,17 +13,6 @@
         "SECUROUTE.TE.TE94$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMTS",
-        "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.2TE48$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.ALL$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.OA$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.PN$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.PND$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.TE120$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.TE72$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.TE94$GEOPORTAIL:OGC:WMS",
-        "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMS",
-        "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS",
         "DGAC-PEB-POI_BDD_WLD_WM$GEOPORTAIL:OGC:WMS",
         "DGAC-PEB_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS",
         "DGAC-PGS-POI_BDD_FXX_WM_WM$GEOPORTAIL:OGC:WMS",
@@ -1279,6 +1268,498 @@
         }
       ]
     },
+    "DGAC-PEB-POI_BDD_WLD_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "DGAC-PEB-POI_BDD_WLD_WM",
+      "title": "Plan d'exposition au bruit, documents d'approbation (PEB)",
+      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zone de bruit diversement exposés au bruit engendré par les aéronefs (A, B, C et/ou D et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne.  Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.525833,
+          "right": 55.516342,
+          "top": 50.687222,
+          "bottom": -21.321536
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-DGAC-PEB-POI_BDD_WLD_WM",
+          "title": "DGAC-PEB-POI_BDD_WLD_WM style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PEB-POI_BDD_WLD_WM"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "DGAC-PEB_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
+      "name": "DGAC-PEB_BDD_FXX_WM_WMS",
+      "title": "Plan d'exposition au bruit (PEB)",
+      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zone de bruit diversement exposés au bruit engendré par les aéronefs (A, B, C et/ou D et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne. Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.598904,
+          "right": 55.582677,
+          "top": 50.700964,
+          "bottom": -21.335064
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-DGAC-PEB_BDD_FXX_WM_WMS",
+          "title": "DGAC-PEB_BDD_FXX_WM_WMS style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PEB_BDD_FXX_WM_WMS"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "DGAC-PGS-POI_BDD_FXX_WM_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "DGAC-PGS-POI_BDD_FXX_WM_WM",
+      "title": "Plan de gêne sonore, documents d'approbation (PGS)",
+      "description": "Arrêté préfectoral d'approbation, pour chaque aérodrome, du plan de gêne sonore. Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -1.607808,
+          "right": 7.529222,
+          "top": 49.454422,
+          "bottom": 43.436634
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-DGAC-PGS-POI_BDD_FXX_WM_WM",
+          "title": "DGAC-PGS-POI_BDD_FXX_WM_WM style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PGS-POI_BDD_FXX_WM_WM"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "DGAC-PGS_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
+      "name": "DGAC-PGS_BDD_FXX_WM_WMS",
+      "title": "Plan de gêne sonore (PGS)",
+      "description": "Les plans de gêne sonore identifient trois type de zones de bruit (I, II, III) établies sur la base du trafic estimé, des procédures de circulation aérienne applicables et des infrastructures qui seront en service dans l'année suivant la date de publication de l'arrêté approuvant le PGS.  Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -1.645795,
+          "right": 7.551737,
+          "top": 49.489555,
+          "bottom": 43.365423
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-DGAC-PGS_BDD_FXX_WM_WMS",
+          "title": "DGAC-PGS_BDD_FXX_WM_WMS style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PGS_BDD_FXX_WM_WMS"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.1TE",
       "title": "Tronçons routiers 1TE",
@@ -2386,680 +2867,6 @@
         }
       ]
     },
-    "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMS": {
-      "name": "TRANSPORTNETWORKS.ROADS.DIRECTION",
-      "title": "Sens de circulation",
-      "description": "Affichage des sens de circulation du réseau routier",
-      "globalConstraint": {
-        "minScaleDenominator": 2132.72958385,
-        "maxScaleDenominator": 17061.836670798,
-        "bbox": {
-          "left": -63.3725,
-          "right": 55.9259,
-          "top": 51.3121,
-          "bottom": -21.4756
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS": {
-      "name": "TRANSPORTS.DRONES.RESTRICTIONS",
-      "title": "Restrictions UAS catégorie Ouverte et Aéromodélisme",
-      "description": "Représentation des zones soumises à interdictions ou à restrictions pour l’usage, à titre de loisir, d’aéronefs télépilotés (ou drones), sur le territoire métropolitain. Cette carte est basée sur l’arrêté « espace » du 17 décembre 2015 et ne couvre pas les interdictions temporaires. La représentation des zones soumises à interdictions ou à restrictions n’engage pas la responsabilité des producteurs de la donnée. Le contour des agglomérations est fourni à titre purement indicatif. Consultez les interdictions temporaires sur https://www.sia.aviation-civile.gouv.fr/.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -7.99999703,
-          "right": 10.70000198,
-          "top": 51.09333213,
-          "bottom": 40.84341536
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-TRANSPORTS.DRONES.RESTRICTIONS",
-          "title": "TRANSPORTS.DRONES.RESTRICTIONS style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TRANSPORTS.DRONES.RESTRICTIONS"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "DGAC-PEB-POI_BDD_WLD_WM$GEOPORTAIL:OGC:WMS": {
-      "name": "DGAC-PEB-POI_BDD_WLD_WM",
-      "title": "Plan d'exposition au bruit, documents d'approbation (PEB)",
-      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zone de bruit diversement exposés au bruit engendré par les aéronefs (A, B, C et/ou D et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne.  Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.525833,
-          "right": 55.516342,
-          "top": 50.687222,
-          "bottom": -21.321536
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-DGAC-PEB-POI_BDD_WLD_WM",
-          "title": "DGAC-PEB-POI_BDD_WLD_WM style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PEB-POI_BDD_WLD_WM"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "DGAC-PEB_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "DGAC-PEB_BDD_FXX_WM_WMS",
-      "title": "Plan d'exposition au bruit (PEB)",
-      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zone de bruit diversement exposés au bruit engendré par les aéronefs (A, B, C et/ou D et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne. Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.598904,
-          "right": 55.582677,
-          "top": 50.700964,
-          "bottom": -21.335064
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-DGAC-PEB_BDD_FXX_WM_WMS",
-          "title": "DGAC-PEB_BDD_FXX_WM_WMS style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PEB_BDD_FXX_WM_WMS"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "DGAC-PGS-POI_BDD_FXX_WM_WM$GEOPORTAIL:OGC:WMS": {
-      "name": "DGAC-PGS-POI_BDD_FXX_WM_WM",
-      "title": "Plan de gêne sonore, documents d'approbation (PGS)",
-      "description": "Arrêté préfectoral d'approbation, pour chaque aérodrome, du plan de gêne sonore. Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -1.607808,
-          "right": 7.529222,
-          "top": 49.454422,
-          "bottom": 43.436634
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-DGAC-PGS-POI_BDD_FXX_WM_WM",
-          "title": "DGAC-PGS-POI_BDD_FXX_WM_WM style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PGS-POI_BDD_FXX_WM_WM"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "DGAC-PGS_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "DGAC-PGS_BDD_FXX_WM_WMS",
-      "title": "Plan de gêne sonore (PGS)",
-      "description": "Les plans de gêne sonore identifient trois type de zones de bruit (I, II, III) établies sur la base du trafic estimé, des procédures de circulation aérienne applicables et des infrastructures qui seront en service dans l'année suivant la date de publication de l'arrêté approuvant le PGS.  Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -1.645795,
-          "right": 7.551737,
-          "top": 49.489555,
-          "bottom": 43.365423
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-DGAC-PGS_BDD_FXX_WM_WMS",
-          "title": "DGAC-PGS_BDD_FXX_WM_WMS style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PGS_BDD_FXX_WM_WMS"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
     "TRANSPORTS.AIRNOISE$GEOPORTAIL:OGC:WMS": {
       "name": "TRANSPORTS.AIRNOISE",
       "title": "Plan de Servitudes Aéronautiques (PSA)",
@@ -3217,6 +3024,129 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TRANSPORTS.AIRNOISE.DOCS"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS": {
+      "name": "TRANSPORTS.DRONES.RESTRICTIONS",
+      "title": "Restrictions UAS catégorie Ouverte et Aéromodélisme",
+      "description": "Représentation des zones soumises à interdictions ou à restrictions pour l’usage, à titre de loisir, d’aéronefs télépilotés (ou drones), sur le territoire métropolitain. Cette carte est basée sur l’arrêté « espace » du 17 décembre 2015 et ne couvre pas les interdictions temporaires. La représentation des zones soumises à interdictions ou à restrictions n’engage pas la responsabilité des producteurs de la donnée. Le contour des agglomérations est fourni à titre purement indicatif. Consultez les interdictions temporaires sur https://www.sia.aviation-civile.gouv.fr/.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -7.99999703,
+          "right": 10.70000198,
+          "top": 51.09333213,
+          "bottom": 40.84341536
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-TRANSPORTS.DRONES.RESTRICTIONS",
+          "title": "TRANSPORTS.DRONES.RESTRICTIONS style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TRANSPORTS.DRONES.RESTRICTIONS"
         }
       ],
       "formats": [
