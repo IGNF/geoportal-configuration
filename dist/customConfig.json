@@ -670,6 +670,7 @@
         "BDTOPO-GEOPO-TRANSPORT_ENERGIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDTOPO-GEOPO-VEGETATION_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDTOPO-GEOPO-ZONE-ACTIVITES_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
+        "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS",
         "UTILITYANDGOVERNMENTALSERVICES.MININT.POI.ACCUEIL_POLICE-GENDARMERIE$GEOPORTAIL:OGC:WMS",
         "hedge.hedge$GEOPORTAIL:OGC:WMS",
         "BDTOPO$GEOPORTAIL:GPP:TMS"
@@ -58625,50 +58626,70 @@
     "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS": {
       "name": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
       "title": "Points de repère routiers (PR)",
-      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine.",
+      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine. Edition 22.4",
       "globalConstraint": {
-        "minScaleDenominator": 2132.72958385,
-        "maxScaleDenominator": 545978.773465546,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -63.3725,
-          "right": 55.9259,
-          "top": 51.3121,
-          "bottom": -21.4756
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "topographie": "https://data.geopf.fr/wms-r/wms"
+          "topographie": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "normal",
-          "title": "Légende générique"
+          "name": "default-style-TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
+          "title": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST style"
         }
       ],
       "legends": [
         {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST"
         }
       ],
       "formats": [
         {
-          "name": "image/jpeg",
+          "name": "image/png",
           "current": true
         },
         {
-          "name": "image/png",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -58676,7 +58697,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
