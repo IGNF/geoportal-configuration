@@ -149,7 +149,10 @@ def _parseTMS(tms):
     tms_config["projection"] = tms["ows:SupportedCRS"]
     with open("nativeResolutions.json") as json_file:
         nativeResolutionsData = defaultdict(lambda: None, json.load(json_file))
-    tms_config["nativeResolutions"] = nativeResolutionsData[tms_id]
+    if len(tms_id.split("_")) == 3 and tms_id.split("_")[0] == "PM":
+        tms_config["nativeResolutions"] = nativeResolutionsData["PM"][int(tms_id.split("_")[1]):int(tms_id.split("_")[2])]
+    else:
+      tms_config["nativeResolutions"] = nativeResolutionsData[tms_id]
     matrix_ids = []
     tile_matrices = {}
     for tile_matrix in tms["TileMatrix"]:
