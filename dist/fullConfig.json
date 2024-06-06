@@ -583,6 +583,9 @@
         "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.2021$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNH$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNS$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNT$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET$GEOPORTAIL:OGC:WMS",
@@ -1211,6 +1214,7 @@
         "gaz_hydrocarbures_produits_chimiques_previsu$GEOPORTAIL:OGC:WMS",
         "gaz_previsu$GEOPORTAIL:OGC:WMS",
         "hedge.hedge$GEOPORTAIL:OGC:WMS",
+        "ia_gpkg_22-04-2024_wmsv$GEOPORTAIL:OGC:WMS",
         "info$GEOPORTAIL:OGC:WMS",
         "info_previsu$GEOPORTAIL:OGC:WMS",
         "info_psmv$GEOPORTAIL:OGC:WMS",
@@ -73089,6 +73093,183 @@
         }
       ]
     },
+    "IGNF_LIDAR-HD_MNH$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_LIDAR-HD_MNH",
+      "title": "MNH issu de LiDAR HD",
+      "description": "Données MNH dérivées des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.019158636,
+        "maxScaleDenominator": 2511.160714286,
+        "bbox": {
+          "left": 1.53858,
+          "right": 2.10108,
+          "top": 51.0194,
+          "bottom": 50.386
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_LIDAR-HD_MNS$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_LIDAR-HD_MNS",
+      "title": "MNS issu de LiDAR HD",
+      "description": "Données MNS dérivées des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.019158636,
+        "maxScaleDenominator": 2511.160714286,
+        "bbox": {
+          "left": 1.53858,
+          "right": 2.10108,
+          "top": 51.0194,
+          "bottom": 50.386
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_LIDAR-HD_MNT$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_LIDAR-HD_MNT",
+      "title": "MNT issu de LiDAR HD",
+      "description": "Données MNT dérivées des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.019158636,
+        "maxScaleDenominator": 2511.160714286,
+        "bbox": {
+          "left": 1.53858,
+          "right": 2.10108,
+          "top": 51.0194,
+          "bottom": 50.386
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS": {
       "name": "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET",
       "title": "Surface moyenne des logements (secret signalé)",
@@ -94121,8 +94302,8 @@
     },
     "BAN.DATA.GOUV$GEOPORTAIL:OGC:WMS": {
       "name": "BAN.DATA.GOUV",
-      "title": "BAN édition 2024-05-01",
-      "description": "BAN édition 2024-05-01",
+      "title": "BAN édition 2024-06-01",
+      "description": "BAN édition 2024-06-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -102239,8 +102420,8 @@
     },
     "COMMUNESTOURISTIQUES$GEOPORTAIL:OGC:WMS": {
       "name": "COMMUNESTOURISTIQUES",
-      "title": "COMMUNES_TOURISTIQUES édition 2024-05-01",
-      "description": "COMMUNES_TOURISTIQUES édition 2024-05-01",
+      "title": "COMMUNES_TOURISTIQUES édition 2024-06-01",
+      "description": "COMMUNES_TOURISTIQUES édition 2024-06-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -120197,8 +120378,8 @@
     },
     "STATIONSCLASSEES$GEOPORTAIL:OGC:WMS": {
       "name": "STATIONSCLASSEES",
-      "title": "STATIONS_CLASSEES édition 2024-05-01",
-      "description": "STATIONS_CLASSEES édition 2024-05-01",
+      "title": "STATIONS_CLASSEES édition 2024-06-01",
+      "description": "STATIONS_CLASSEES édition 2024-06-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -120320,8 +120501,8 @@
     },
     "STATIONSVERTES$GEOPORTAIL:OGC:WMS": {
       "name": "STATIONSVERTES",
-      "title": "STATIONS_VERTES édition 2024-05-01",
-      "description": "STATIONS_VERTES édition 2024-05-01",
+      "title": "STATIONS_VERTES édition 2024-06-01",
+      "description": "STATIONS_VERTES édition 2024-06-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -122903,8 +123084,8 @@
     },
     "VILLAGESETAPE$GEOPORTAIL:OGC:WMS": {
       "name": "VILLAGESETAPE",
-      "title": "VILLAGES_ETAPE édition 2024-05-01",
-      "description": "VILLAGES_ETAPE édition 2024-05-01",
+      "title": "VILLAGES_ETAPE édition 2024-06-01",
+      "description": "VILLAGES_ETAPE édition 2024-06-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -128839,6 +129020,129 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=hedge.hedge"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "ia_gpkg_22-04-2024_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "ia_gpkg_22-04-2024_wmsv",
+      "title": "ia_gpkg_22-04-2024_wmsv_arbre06062024",
+      "description": "ia_gpkg_22-04-2024_wfs_arbre06062024 test",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -2.358945312,
+          "right": -1.192773437,
+          "top": 47.696914062,
+          "bottom": 47.015791016
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-ia_gpkg_22-04-2024_wmsv",
+          "title": "ia_gpkg_22-04-2024_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ia_gpkg_22-04-2024_wmsv"
         }
       ],
       "formats": [
