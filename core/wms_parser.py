@@ -16,7 +16,7 @@ def parseWMS(dict_capabilities, key):
     if key in GENERIC_KEYS and key != "full" and "WMS" not in key_services_layers[key]:
         return False
 
-    server_url = dict_capabilities["Request"]["GetMap"]["DCPType"]["HTTP"]["Get"]["OnlineResource"]["@xlink:href"]
+    server_url = dict_capabilities["Request"]["GetMap"]["DCPType"]["HTTP"]["Get"]["OnlineResource"]["@xlink:href"].split("?")[0]
     formats = _parseFormats(dict_capabilities)
     all_layers = _parseLayers(dict_capabilities["Layer"]["Layer"], key, server_url, formats)
 
