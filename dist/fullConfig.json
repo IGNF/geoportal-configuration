@@ -920,7 +920,6 @@
         "CLC_CHA06_BDD_WLD_WM_20180314$GEOPORTAIL:OGC:WMS",
         "CLC_CHA12_BDD_WLD_WM_20180305$GEOPORTAIL:OGC:WMS",
         "CLC_CHA12_BDD_WLD_WM_20180314$GEOPORTAIL:OGC:WMS",
-        "CLC_CHA18_BDD_WLD_WM_20190425$GEOPORTAIL:OGC:WMS",
         "CLC_CLC00R_BDD_WLD_WM_20180306$GEOPORTAIL:OGC:WMS",
         "CLC_CLC00_BDD_WLD_WM_20180305$GEOPORTAIL:OGC:WMS",
         "CLC_CLC06_BDD_WLD_WM_20180305$GEOPORTAIL:OGC:WMS",
@@ -940,7 +939,6 @@
         "DELAISSES.AUTOROUTIERS$GEOPORTAIL:OGC:WMS",
         "DEPARTEMENT.2015$GEOPORTAIL:OGC:WMS",
         "DEPARTEMENT.2017$GEOPORTAIL:OGC:WMS",
-        "DGAC-PEB-POI_BDD_WLD_WM$GEOPORTAIL:OGC:WMS",
         "DGAC-PEB_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS",
         "DGAC-PGS-POI_BDD_FXX_WM_WM$GEOPORTAIL:OGC:WMS",
         "DGAC-PGS_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS",
@@ -1237,6 +1235,7 @@
         "navigation_maritime$GEOPORTAIL:OGC:WMS",
         "navigation_maritime_previsu$GEOPORTAIL:OGC:WMS",
         "nl_test_bdtopo_la_ciotat$GEOPORTAIL:OGC:WMS",
+        "ocsge_31_2022_di_wmsv$GEOPORTAIL:OGC:WMS",
         "ouvrage_defense$GEOPORTAIL:OGC:WMS",
         "ouvrage_defense_previsu$GEOPORTAIL:OGC:WMS",
         "ouvrage_plan_prevention_risque$GEOPORTAIL:OGC:WMS",
@@ -1287,6 +1286,8 @@
         "zone_secteur_previsu$GEOPORTAIL:OGC:WMS",
         "zone_secteur_psmv$GEOPORTAIL:OGC:WMS",
         "zone_secteur_psmv_previsu$GEOPORTAIL:OGC:WMS",
+        "DGAC-PEB-POI_BDD_WLD_WM:aerodrome_avec_peb_wm_4e10826f-9c2f-489a-9e42-4b9ad967d394$GEOPORTAIL:OGC:WMS",
+        "CLC_CHA18_BDD_WLD_WM_20190425:cha18_wld_4061345d-e373-4530-b7fd-b815301756f1$GEOPORTAIL:OGC:WMS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS",
@@ -101337,129 +101338,6 @@
         }
       ]
     },
-    "CLC_CHA18_BDD_WLD_WM_20190425$GEOPORTAIL:OGC:WMS": {
-      "name": "CLC_CHA18_BDD_WLD_WM_20190425",
-      "title": "CORINE Land Cover - Changements 2012-2018",
-      "description": "Inventaire biophysique du changement d'occupation des sols entre 2012 et 2018 suivant la nomenclature CORINE Land Cover en 50 postes pour les DOM et 44 postes pour la Métropole. CORINE Land Cover est une base de données d’occupation des sols produite dans le cadre du programme européen d’observation de la Terre Copernicus. Cet inventaire biophysique de l’occupation des terres fournit une information géographique de référence pour 39 États européens. La continuité du programme et la diffusion des données CORINE Land Cover sont pilotées par l'Agence européenne pour l'environnement. Le producteur pour la France est le  Service de la donnée et des études statistiques du ministère chargé de l’écologie. L'utilisation de cette base de données permet des applications variées adaptées aux problématiques de l'environnement et à celles de l'aménagement du territoire : production cartographique, exploitation à des fins statistiques ou bien encore analyses géographiques en combinaison avec d'autres bases de données. Outil de connaissance et d'analyse, CORINE Land Cover apporte également une aide à la décision comme instrument de suivi, de surveillance et de gestion de l'environnement, des milieux naturels et de l'aménagement de l'espace. La base des changements CORINE Land Cover 2012-2018 a été réalisée à partir d'images satellitaires des périodes 2011-2012 et 2016-2017, et de données d'appui.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -62.2265625,
-          "right": 56.25,
-          "top": 51.501171875,
-          "bottom": -21.597265625
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-CLC_CHA18_BDD_WLD_WM_20190425",
-          "title": "CLC_CHA18_BDD_WLD_WM_20190425 style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CLC_CHA18_BDD_WLD_WM_20190425"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
     "CLC_CLC00R_BDD_WLD_WM_20180306$GEOPORTAIL:OGC:WMS": {
       "name": "CLC_CLC00R_BDD_WLD_WM_20180306",
       "title": "CORINE Land Cover - 2000 révisée",
@@ -103708,129 +103586,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DEPARTEMENT.2017"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "DGAC-PEB-POI_BDD_WLD_WM$GEOPORTAIL:OGC:WMS": {
-      "name": "DGAC-PEB-POI_BDD_WLD_WM",
-      "title": "Plan d'exposition au bruit, documents d'approbation (PEB)",
-      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zone de bruit diversement exposés au bruit engendré par les aéronefs (A, B, C et/ou D et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne.  Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.525833,
-          "right": 55.516342,
-          "top": 50.687222,
-          "bottom": -21.321536
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-DGAC-PEB-POI_BDD_WLD_WM",
-          "title": "DGAC-PEB-POI_BDD_WLD_WM style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PEB-POI_BDD_WLD_WM"
         }
       ],
       "formats": [
@@ -107490,7 +107245,7 @@
     "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
       "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE",
       "title": "Graphe de mosaïquage du produit SCAN25",
-      "description": "Le graphe de mosaïquage du produit SCAN25 fournit le zonage utilisé pour la mise à jour des données SCAN25 ainsi que différentes métadonnées. 07-2023",
+      "description": "Le graphe de mosaïquage du produit SCAN25 fournit le zonage utilisé pour la mise à jour des données SCAN25 ainsi que différentes métadonnées.",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -131964,6 +131719,129 @@
         }
       ]
     },
+    "ocsge_31_2022_di_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "ocsge_31_2022_di_wmsv",
+      "title": "ocsge_31_2022_di_wmsv",
+      "description": "Flux test",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 0.418125,
+          "right": 2.0784375,
+          "top": 43.955820312,
+          "bottom": 42.654570312
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-ocsge_31_2022_di_wmsv",
+          "title": "ocsge_31_2022_di_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ocsge_31_2022_di_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "ouvrage_defense$GEOPORTAIL:OGC:WMS": {
       "name": "ouvrage_defense",
       "title": "Ouvrages de défense",
@@ -138025,6 +137903,252 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=zone_secteur_psmv_previsu"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "DGAC-PEB-POI_BDD_WLD_WM:aerodrome_avec_peb_wm_4e10826f-9c2f-489a-9e42-4b9ad967d394$GEOPORTAIL:OGC:WMS": {
+      "name": "DGAC-PEB-POI_BDD_WLD_WM:aerodrome_avec_peb_wm_4e10826f-9c2f-489a-9e42-4b9ad967d394",
+      "title": "aerodrome_avec_peb_wm_4e10826f-9c2f-489a-9e42-4b9ad967d394",
+      "description": null,
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.52583389659063,
+          "right": 55.516342699381326,
+          "top": 50.68722315452332,
+          "bottom": -21.32153702786491
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "point",
+          "title": "Red Square point"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PEB-POI_BDD_WLD_WM%3Aaerodrome_avec_peb_wm_4e10826f-9c2f-489a-9e42-4b9ad967d394"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "CLC_CHA18_BDD_WLD_WM_20190425:cha18_wld_4061345d-e373-4530-b7fd-b815301756f1$GEOPORTAIL:OGC:WMS": {
+      "name": "CLC_CHA18_BDD_WLD_WM_20190425:cha18_wld_4061345d-e373-4530-b7fd-b815301756f1",
+      "title": "cha18_wld_4061345d-e373-4530-b7fd-b815301756f1",
+      "description": null,
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.7952880576387,
+          "right": 55.73521272678063,
+          "top": 51.19418810545845,
+          "bottom": -21.374147445257826
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "polygon",
+          "title": "Grey Polygon"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CLC_CHA18_BDD_WLD_WM_20190425%3Acha18_wld_4061345d-e373-4530-b7fd-b815301756f1"
         }
       ],
       "formats": [
