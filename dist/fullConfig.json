@@ -588,6 +588,8 @@
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNH$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNT$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNT_2154$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNT_mask$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET$GEOPORTAIL:OGC:WMS",
@@ -73506,6 +73508,124 @@
         }
       },
       "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_LIDAR-HD_MNT_2154$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_LIDAR-HD_MNT_2154",
+      "title": "MNT issu de LiDAR HD",
+      "description": "Données MNT dérivées des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 3571.428571429,
+        "maxScaleDenominator": 468114285.7142857,
+        "bbox": {
+          "left": 2.09007,
+          "right": 2.80335,
+          "top": 51.0937,
+          "bottom": 50.3913
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_LIDAR-HD_MNT_mask$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_LIDAR-HD_MNT_mask",
+      "title": "MNT issu de LiDAR HD",
+      "description": "Données MNT dérivées des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 3571.428571429,
+        "maxScaleDenominator": 468114285.7142857,
+        "bbox": {
+          "left": 2.09007,
+          "right": 2.80335,
+          "top": 51.0937,
+          "bottom": 50.3913
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
       "queryable": false,
       "metadata": [],
       "styles": [
