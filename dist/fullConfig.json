@@ -592,8 +592,6 @@
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNH$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNT$GEOPORTAIL:OGC:WMS",
-        "IGNF_LIDAR-HD_MNT_2154$GEOPORTAIL:OGC:WMS",
-        "IGNF_LIDAR-HD_MNT_mask$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET$GEOPORTAIL:OGC:WMS",
@@ -1190,6 +1188,7 @@
         "associations$GEOPORTAIL:OGC:WMS",
         "associations_previsu$GEOPORTAIL:OGC:WMS",
         "bruit_multi_gpkg_24-06-2024_wmsv$GEOPORTAIL:OGC:WMS",
+        "bruit_multi_gpkg_26-06-2024_wmsv$GEOPORTAIL:OGC:WMS",
         "canalisation$GEOPORTAIL:OGC:WMS",
         "canalisation_previsu$GEOPORTAIL:OGC:WMS",
         "carriere$GEOPORTAIL:OGC:WMS",
@@ -74016,8 +74015,8 @@
         "maxScaleDenominator": 2511.160714286,
         "bbox": {
           "left": 1.53858,
-          "right": 2.10108,
-          "top": 51.0194,
+          "right": 2.80335,
+          "top": 51.0937,
           "bottom": 50.386
         }
       },
@@ -74075,8 +74074,8 @@
         "maxScaleDenominator": 2511.160714286,
         "bbox": {
           "left": 1.53858,
-          "right": 2.10108,
-          "top": 51.0194,
+          "right": 2.80335,
+          "top": 51.0937,
           "bottom": 50.386
         }
       },
@@ -74088,124 +74087,6 @@
         }
       },
       "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Données Brutes"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "http://ign.fr"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "IGNF_LIDAR-HD_MNT_2154$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_LIDAR-HD_MNT_2154",
-      "title": "MNT issu de LiDAR HD",
-      "description": "Données MNT dérivées des données LiDAR HD",
-      "globalConstraint": {
-        "minScaleDenominator": 3571.428571429,
-        "maxScaleDenominator": 468114285.7142857,
-        "bbox": {
-          "left": 2.09007,
-          "right": 2.80335,
-          "top": 51.0937,
-          "bottom": 50.3913
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:LAMB93",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Données Brutes"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "http://ign.fr"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        },
-        {
-          "name": "image/png",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
-    "IGNF_LIDAR-HD_MNT_mask$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_LIDAR-HD_MNT_mask",
-      "title": "MNT issu de LiDAR HD",
-      "description": "Données MNT dérivées des données LiDAR HD",
-      "globalConstraint": {
-        "minScaleDenominator": 3571.428571429,
-        "maxScaleDenominator": 468114285.7142857,
-        "bbox": {
-          "left": 2.09007,
-          "right": 2.80335,
-          "top": 51.0937,
-          "bottom": 50.3913
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "IGNF:LAMB93",
       "queryable": false,
       "metadata": [],
       "styles": [
@@ -125929,6 +125810,129 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=bruit_multi_gpkg_24-06-2024_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "bruit_multi_gpkg_26-06-2024_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "bruit_multi_gpkg_26-06-2024_wmsv",
+      "title": "Bruit",
+      "description": "Bruit",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 2.79,
+          "right": 3.274257812,
+          "top": 50.797548828,
+          "bottom": 50.492568359
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-bruit_multi_gpkg_26-06-2024_wmsv",
+          "title": "bruit_multi_gpkg_26-06-2024_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=bruit_multi_gpkg_26-06-2024_wmsv"
         }
       ],
       "formats": [
