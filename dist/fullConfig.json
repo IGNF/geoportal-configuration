@@ -264,6 +264,7 @@
         "LSEP-CRUE_PYR-PNG_WLD_WM_EDUGEO_20130128$GEOPORTAIL:OGC:WMTS",
         "NATURALRISKZONES.1910FLOODEDWATERSHEDS$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTION.2010$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.CONSTRUCTION.2016-2017$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS.2002$GEOPORTAIL:OGC:WMTS",
         "OCSGE.CONSTRUCTIONS.2011$GEOPORTAIL:OGC:WMTS",
@@ -277,7 +278,9 @@
         "OCSGE.COUVERTURE.2011$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2014$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2016$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.COUVERTURE.2016-2017$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2017$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.COUVERTURE.2017-2020$GEOPORTAIL:OGC:WMTS",
         "OCSGE.COUVERTURE.2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2002$GEOPORTAIL:OGC:WMTS",
@@ -285,7 +288,9 @@
         "OCSGE.USAGE.2011$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2014$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2016$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.USAGE.2016-2017$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2017$GEOPORTAIL:OGC:WMTS",
+        "OCSGE.USAGE.2017-2020$GEOPORTAIL:OGC:WMTS",
         "OCSGE.USAGE.2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE.VISU.2016$GEOPORTAIL:OGC:WMTS",
         "OCSGE.VISU.2019$GEOPORTAIL:OGC:WMTS",
@@ -1187,7 +1192,7 @@
         "assainissement_previsu$GEOPORTAIL:OGC:WMS",
         "associations$GEOPORTAIL:OGC:WMS",
         "associations_previsu$GEOPORTAIL:OGC:WMS",
-        "bruit_multi_gpkg_27-06-2024_wmsv$GEOPORTAIL:OGC:WMS",
+        "bruit_multi_gpkg_28-06-2024_wmsv$GEOPORTAIL:OGC:WMS",
         "canalisation$GEOPORTAIL:OGC:WMS",
         "canalisation_previsu$GEOPORTAIL:OGC:WMS",
         "carriere$GEOPORTAIL:OGC:WMS",
@@ -1230,7 +1235,6 @@
         "gaz_previsu$GEOPORTAIL:OGC:WMS",
         "hedge.hedge$GEOPORTAIL:OGC:WMS",
         "hydro-ardennes-l93_gpkg_11-03-2024_wmsv$GEOPORTAIL:OGC:WMS",
-        "ia_gpkg_22-04-2024_wmsv$GEOPORTAIL:OGC:WMS",
         "info$GEOPORTAIL:OGC:WMS",
         "info_previsu$GEOPORTAIL:OGC:WMS",
         "info_psmv$GEOPORTAIL:OGC:WMS",
@@ -33930,6 +33934,115 @@
         }
       ]
     },
+    "OCSGE.CONSTRUCTION.2016-2017$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.CONSTRUCTION.2016-2017",
+      "title": "OCS GE 2016-2017 - zones construites",
+      "description": "Occupation du sol grande échelle 2016-2017 - zones construites",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -2.289,
+          "right": 6.9336,
+          "top": 48.7218,
+          "bottom": 42.982
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "22",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "44",
+            "maxTileRow": "47",
+            "minTileCol": "63",
+            "maxTileCol": "66"
+          },
+          "8": {
+            "minTileRow": "88",
+            "maxTileRow": "94",
+            "minTileCol": "126",
+            "maxTileCol": "132"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "188",
+            "minTileCol": "252",
+            "maxTileCol": "265"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "376",
+            "minTileCol": "505",
+            "maxTileCol": "531"
+          },
+          "11": {
+            "minTileRow": "705",
+            "maxTileRow": "752",
+            "minTileCol": "1010",
+            "maxTileCol": "1063"
+          },
+          "12": {
+            "minTileRow": "1411",
+            "maxTileRow": "1505",
+            "minTileCol": "2021",
+            "maxTileCol": "2126"
+          },
+          "13": {
+            "minTileRow": "2822",
+            "maxTileRow": "3010",
+            "minTileCol": "4043",
+            "maxTileCol": "4253"
+          },
+          "14": {
+            "minTileRow": "5645",
+            "maxTileRow": "6021",
+            "minTileCol": "8087",
+            "maxTileCol": "8507"
+          },
+          "15": {
+            "minTileRow": "11291",
+            "maxTileRow": "12042",
+            "minTileCol": "16175",
+            "maxTileCol": "17015"
+          },
+          "16": {
+            "minTileRow": "22583",
+            "maxTileRow": "24085",
+            "minTileCol": "32351",
+            "maxTileCol": "34030"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "OCSGE.CONSTRUCTIONS$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.CONSTRUCTIONS",
       "title": "Occupation du sol grande échelle - zones construites",
@@ -35419,6 +35532,115 @@
         }
       ]
     },
+    "OCSGE.COUVERTURE.2016-2017$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.COUVERTURE.2016-2017",
+      "title": "OCS GE 2016-2017 - couvertures",
+      "description": "Occupation du sol grande échelle 2016-2017 - couvertures",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -2.289,
+          "right": 6.9336,
+          "top": 48.7218,
+          "bottom": 42.982
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "22",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "44",
+            "maxTileRow": "47",
+            "minTileCol": "63",
+            "maxTileCol": "66"
+          },
+          "8": {
+            "minTileRow": "88",
+            "maxTileRow": "94",
+            "minTileCol": "126",
+            "maxTileCol": "132"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "188",
+            "minTileCol": "252",
+            "maxTileCol": "265"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "376",
+            "minTileCol": "505",
+            "maxTileCol": "531"
+          },
+          "11": {
+            "minTileRow": "705",
+            "maxTileRow": "752",
+            "minTileCol": "1010",
+            "maxTileCol": "1063"
+          },
+          "12": {
+            "minTileRow": "1411",
+            "maxTileRow": "1505",
+            "minTileCol": "2021",
+            "maxTileCol": "2126"
+          },
+          "13": {
+            "minTileRow": "2822",
+            "maxTileRow": "3010",
+            "minTileCol": "4043",
+            "maxTileCol": "4253"
+          },
+          "14": {
+            "minTileRow": "5645",
+            "maxTileRow": "6021",
+            "minTileCol": "8087",
+            "maxTileCol": "8507"
+          },
+          "15": {
+            "minTileRow": "11291",
+            "maxTileRow": "12042",
+            "minTileCol": "16175",
+            "maxTileCol": "17015"
+          },
+          "16": {
+            "minTileRow": "22583",
+            "maxTileRow": "24085",
+            "minTileCol": "32351",
+            "maxTileCol": "34030"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "OCSGE.COUVERTURE.2017$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.COUVERTURE.2017",
       "title": "Occupation du sol grande échelle 2017 - couverture",
@@ -35527,6 +35749,115 @@
           "minScaleDenominator": "200"
         }
       ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.COUVERTURE.2017-2020$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.COUVERTURE.2017-2020",
+      "title": "OCS GE 2017-2020 - couvertures",
+      "description": "Occupation du sol grande échelle 2017-2020 - couvertures",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -5.1413,
+          "right": 8.2325,
+          "top": 51.01,
+          "bottom": 42.3329
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "66"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "94",
+            "minTileCol": "124",
+            "maxTileCol": "133"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "189",
+            "minTileCol": "248",
+            "maxTileCol": "267"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "378",
+            "minTileCol": "497",
+            "maxTileCol": "535"
+          },
+          "11": {
+            "minTileRow": "685",
+            "maxTileRow": "757",
+            "minTileCol": "994",
+            "maxTileCol": "1070"
+          },
+          "12": {
+            "minTileRow": "1371",
+            "maxTileRow": "1515",
+            "minTileCol": "1989",
+            "maxTileCol": "2141"
+          },
+          "13": {
+            "minTileRow": "2742",
+            "maxTileRow": "3030",
+            "minTileCol": "3979",
+            "maxTileCol": "4283"
+          },
+          "14": {
+            "minTileRow": "5484",
+            "maxTileRow": "6061",
+            "minTileCol": "7958",
+            "maxTileCol": "8566"
+          },
+          "15": {
+            "minTileRow": "10968",
+            "maxTileRow": "12123",
+            "minTileCol": "15916",
+            "maxTileCol": "17133"
+          },
+          "16": {
+            "minTileRow": "21937",
+            "maxTileRow": "24246",
+            "minTileCol": "31832",
+            "maxTileCol": "34266"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
       "formats": [
         {
           "name": "image/png",
@@ -36333,6 +36664,115 @@
         }
       ]
     },
+    "OCSGE.USAGE.2016-2017$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.USAGE.2016-2017",
+      "title": "OCS GE 2016-2017 - usages",
+      "description": "Occupation du sol grande échelle 2016-2017 - usages",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -2.289,
+          "right": 6.9336,
+          "top": 48.7218,
+          "bottom": 42.982
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "22",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "44",
+            "maxTileRow": "47",
+            "minTileCol": "63",
+            "maxTileCol": "66"
+          },
+          "8": {
+            "minTileRow": "88",
+            "maxTileRow": "94",
+            "minTileCol": "126",
+            "maxTileCol": "132"
+          },
+          "9": {
+            "minTileRow": "176",
+            "maxTileRow": "188",
+            "minTileCol": "252",
+            "maxTileCol": "265"
+          },
+          "10": {
+            "minTileRow": "352",
+            "maxTileRow": "376",
+            "minTileCol": "505",
+            "maxTileCol": "531"
+          },
+          "11": {
+            "minTileRow": "705",
+            "maxTileRow": "752",
+            "minTileCol": "1010",
+            "maxTileCol": "1063"
+          },
+          "12": {
+            "minTileRow": "1411",
+            "maxTileRow": "1505",
+            "minTileCol": "2021",
+            "maxTileCol": "2126"
+          },
+          "13": {
+            "minTileRow": "2822",
+            "maxTileRow": "3010",
+            "minTileCol": "4043",
+            "maxTileCol": "4253"
+          },
+          "14": {
+            "minTileRow": "5645",
+            "maxTileRow": "6021",
+            "minTileCol": "8087",
+            "maxTileCol": "8507"
+          },
+          "15": {
+            "minTileRow": "11291",
+            "maxTileRow": "12042",
+            "minTileCol": "16175",
+            "maxTileCol": "17015"
+          },
+          "16": {
+            "minTileRow": "22583",
+            "maxTileRow": "24085",
+            "minTileCol": "32351",
+            "maxTileCol": "34030"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "OCSGE.USAGE.2017$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.USAGE.2017",
       "title": "Occupation du sol grande échelle 2017 - usage",
@@ -36441,6 +36881,115 @@
           "minScaleDenominator": "200"
         }
       ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "OCSGE.USAGE.2017-2020$GEOPORTAIL:OGC:WMTS": {
+      "name": "OCSGE.USAGE.2017-2020",
+      "title": "OCS GE 2017-2020 - usages",
+      "description": "Occupation du sol grande échelle 2017-2020 - usages",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -5.1413,
+          "right": 8.2325,
+          "top": 51.01,
+          "bottom": 42.3329
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "66"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "94",
+            "minTileCol": "124",
+            "maxTileCol": "133"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "189",
+            "minTileCol": "248",
+            "maxTileCol": "267"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "378",
+            "minTileCol": "497",
+            "maxTileCol": "535"
+          },
+          "11": {
+            "minTileRow": "685",
+            "maxTileRow": "757",
+            "minTileCol": "994",
+            "maxTileCol": "1070"
+          },
+          "12": {
+            "minTileRow": "1371",
+            "maxTileRow": "1515",
+            "minTileCol": "1989",
+            "maxTileCol": "2141"
+          },
+          "13": {
+            "minTileRow": "2742",
+            "maxTileRow": "3030",
+            "minTileCol": "3979",
+            "maxTileCol": "4283"
+          },
+          "14": {
+            "minTileRow": "5484",
+            "maxTileRow": "6061",
+            "minTileCol": "7958",
+            "maxTileCol": "8566"
+          },
+          "15": {
+            "minTileRow": "10968",
+            "maxTileRow": "12123",
+            "minTileCol": "15916",
+            "maxTileCol": "17133"
+          },
+          "16": {
+            "minTileRow": "21937",
+            "maxTileRow": "24246",
+            "minTileCol": "31832",
+            "maxTileCol": "34266"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
       "formats": [
         {
           "name": "image/png",
@@ -125710,10 +126259,10 @@
         }
       ]
     },
-    "bruit_multi_gpkg_27-06-2024_wmsv$GEOPORTAIL:OGC:WMS": {
-      "name": "bruit_multi_gpkg_27-06-2024_wmsv",
-      "title": "Exposition au bruit MEL - test",
-      "description": "Exposition au bruit",
+    "bruit_multi_gpkg_28-06-2024_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "bruit_multi_gpkg_28-06-2024_wmsv",
+      "title": "TEST Exposition au bruit MEL",
+      "description": "Exposition au **bruit** de *jour*",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -125736,14 +126285,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-bruit_multi_gpkg_27-06-2024_wmsv",
-          "title": "bruit_multi_gpkg_27-06-2024_wmsv style"
+          "name": "default-style-bruit_multi_gpkg_28-06-2024_wmsv",
+          "title": "bruit_multi_gpkg_28-06-2024_wmsv style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=bruit_multi_gpkg_27-06-2024_wmsv"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=bruit_multi_gpkg_28-06-2024_wmsv"
         }
       ],
       "formats": [
@@ -130910,129 +131459,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=hydro-ardennes-l93_gpkg_11-03-2024_wmsv"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "ia_gpkg_22-04-2024_wmsv$GEOPORTAIL:OGC:WMS": {
-      "name": "ia_gpkg_22-04-2024_wmsv",
-      "title": "ia_gpkg_22-04-2024_wmsv_arbre06062024",
-      "description": "ia_gpkg_22-04-2024_wfs_arbre06062024 test",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -2.358945312,
-          "right": -1.192773437,
-          "top": 47.696914062,
-          "bottom": 47.015791016
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-ia_gpkg_22-04-2024_wmsv",
-          "title": "ia_gpkg_22-04-2024_wmsv style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ia_gpkg_22-04-2024_wmsv"
         }
       ],
       "formats": [
