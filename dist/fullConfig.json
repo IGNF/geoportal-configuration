@@ -261,6 +261,7 @@
         "LGV_EDUGEO_FLORE_PYR-PNG_FXX_WM_20170213$GEOPORTAIL:OGC:WMTS",
         "LGV_EDUGEO_TECHNIQUE_PYR-PNG_FXX_WM_20170215$GEOPORTAIL:OGC:WMTS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMTS",
+        "LOCALISATION.CONCESSIONS.HYDRO$GEOPORTAIL:OGC:WMTS",
         "LOCALISATION.MATS.EOLIEN$GEOPORTAIL:OGC:WMTS",
         "LSEP-CRUE_PYR-PNG_WLD_WM_EDUGEO_20130128$GEOPORTAIL:OGC:WMTS",
         "NATURALRISKZONES.1910FLOODEDWATERSHEDS$GEOPORTAIL:OGC:WMTS",
@@ -1019,6 +1020,7 @@
         "LANDCOVER.EDUGEO.EVOL_SURFACE_FORESTIERE_1980-2011$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS",
         "LANDOVER.CLC$GEOPORTAIL:OGC:WMS",
+        "LOCALISATION.CONCESSIONS.HYDRO$GEOPORTAIL:OGC:WMS",
         "LOCALISATION.MATS.EOLIEN$GEOPORTAIL:OGC:WMS",
         "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS",
         "METEOFRANCE-STATIONS_BDD-POI_WLD_WM$GEOPORTAIL:OGC:WMS",
@@ -33570,6 +33572,121 @@
           "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "LOCALISATION.CONCESSIONS.HYDRO$GEOPORTAIL:OGC:WMTS": {
+      "name": "LOCALISATION.CONCESSIONS.HYDRO",
+      "title": "Localisation des concessions hydroélectriques",
+      "description": "Localisation des concessions hydroélectriques",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "LOCALISATION.CONCESSIONS.HYDRO",
+          "title": "LOCALISATION.CONCESSIONS.HYDRO",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ENR/LOCALISATION.CONCESSIONS.HYDRO-legend.png",
+          "minScaleDenominator": "2000"
         }
       ],
       "formats": [
@@ -110036,6 +110153,129 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=LANDOVER.CLC"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "LOCALISATION.CONCESSIONS.HYDRO$GEOPORTAIL:OGC:WMS": {
+      "name": "LOCALISATION.CONCESSIONS.HYDRO",
+      "title": "Localisation des concessions hydroélectriques",
+      "description": "Localisation des concessions hydroélectriques",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -3.21875,
+          "right": 7.919179688,
+          "top": 49.938520508,
+          "bottom": 42.40550293
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-LOCALISATION.CONCESSIONS.HYDRO",
+          "title": "LOCALISATION.CONCESSIONS.HYDRO style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=LOCALISATION.CONCESSIONS.HYDRO"
         }
       ],
       "formats": [
