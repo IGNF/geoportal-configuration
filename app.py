@@ -11,10 +11,16 @@ def index():
 @app.route("/", methods=['POST'])
 def generate():
     apiKeys = []
-    for apiKey in request.form.values():
-        apiKeys.append(apiKey)
+    referer = ""
+    i = 0;
+    for param in request.form.values():
+        if (i == 0):
+            referer = param
+        else :
+            apiKeys.append(param)
+        i += 1
     return Response(
-        main(apiKeys),
+        main(apiKeys, referer),
         mimetype='application/json',
         headers={'Content-disposition': 'attachment; filename=customConfig.json'})
 
