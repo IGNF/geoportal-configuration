@@ -1,10 +1,11 @@
 import json
 
 from core.config_merger import merge_configs
-from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities
+from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities, getWFSCapabilities
 from core.vectortiles_parser import parseVectorTiles
 from core.wms_parser import parseWMS
 from core.wmts_parser import parseWMTS
+from core.wfs_parser import parseWFS
 
 def main(keys, referer=""):
     if not isinstance(keys, list):
@@ -15,6 +16,7 @@ def main(keys, referer=""):
             parseWMTS(getWMTSCapabilities(key, referer), key),
             parseWMS(getWMSRCapabilities(key, referer), key),
             parseWMS(getWMSVCapabilities(key, referer), key),
+            parseWFS(getWFSCapabilities(key, referer)[0], key, getWFSCapabilities(key, referer)[1]),
             parseVectorTiles(key)
         ]
     ]

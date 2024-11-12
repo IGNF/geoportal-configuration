@@ -1,6 +1,57 @@
 import csv
+import requests
+
+TMS_CONFIG = [
+  {"service": "TMS", "key": "administratif", "layer": "ADMIN_EXPRESS"},
+  {"service": "TMS", "key": "altimetrie", "layer": "ISOHYPSE"},
+  {"service": "TMS", "key": "cartes", "layer": "PLAN.IGN"},
+  {"service": "TMS", "key": "essentiels", "layer": "ADMIN_EXPRESS"},
+  {"service": "TMS", "key": "essentiels", "layer": "PLAN.IGN"},
+  {"service": "TMS", "key": "ocsge", "layer": "OCSGE_2016"},
+  {"service": "TMS", "key": "ocsge", "layer": "OCSGE_2019"},
+  {"service": "TMS", "key": "parcellaire", "layer": "PCI"},
+  {"service": "TMS", "key": "topographie", "layer": "BDTOPO"}
+]
+
+def createKeyServiceLayersFile(
+  url="https://data.geopf.fr/annexes/ressources/capabilities/services.csv",
+  filePath="resources_by_key.csv"):
+  with requests.Session() as s:
+    download = s.get(url)
+    decoded_content = download.content.decode("latin1")
+    reader = csv.DictReader(decoded_content.splitlines(), delimiter=";")
+  with open(filePath, "w", newline='', encoding="utf-8") as csvFile:
+    fieldnames = ["service", "key", "layer"]
+    writer = csv.DictWriter(csvFile, fieldnames=fieldnames, lineterminator='\n')
+    writer.writeheader()
+    for newRow in TMS_CONFIG:
+      writer.writerow(newRow)
+    for row in reader:
+      if row["Service"] == "WMTS":
+        service = "WMTS"
+      elif row["Service"] == "WMS Raster":
+        service = "WMS"
+      elif row["Service"] == "WMS Vecteur":
+        service = "WMS"
+      elif row["Service"] == "WFS":
+        service = "WFS"
+      else:
+        continue
+
+      if row["Thématique"] == "cle personnelle *":
+        continue
+      if row["Thématique"] == "":
+        continue
+
+      newRow = {
+        "service": service,
+        "key": row["Thématique"],
+        "layer": row["Nom technique"].strip()
+      }
+      writer.writerow(newRow)
 
 def keysServicesLayers(filePath="resources_by_key.csv"):
+  createKeyServiceLayersFile(filePath=filePath)
   rows = []
   keys = []
   with open(filePath) as csvfile:
