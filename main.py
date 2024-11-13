@@ -8,8 +8,10 @@ from core.wmts_parser import parseWMTS
 from core.wfs_parser import parseWFS
 
 def main(keys, referer=""):
+    print(keys)
     if not isinstance(keys, list):
         keys = [keys]
+    keys = filter(lambda x: x != "", keys)
     list_configs = [
         config for key in keys
         for config in [
