@@ -1,25 +1,6 @@
-GENERIC_KEYS = [
-    "administratif",
-    "adresse",
-    "agriculture",
-    "altimetrie",
-    "cartes",
-    "cartovecto",
-    "clc",
-    "decouverte",
-    "economie",
-    "environnement",
-    "essentiels",
-    "geodesie",
-    "inspire",
-    "lambert93",
-    "ocsge",
-    "ortho",
-    "orthohisto",
-    "parcellaire",
-    "satellite",
-    "sol",
-    "topographie",
-    "transports",
-    "full"
-]
+import json
+
+def GENERIC_KEYS():
+    with open("generic_keys.json", "r", newline='', encoding="utf-8") as file:
+      GENERIC_KEYS = json.load(file)
+    return GENERIC_KEYS

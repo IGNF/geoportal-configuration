@@ -16,7 +16,7 @@ def parseWMTS(dict_capabilities, key):
         all_layers = _parseLayers(dict_capabilities["Contents"]["Layer"], all_tms, key)
     except KeyError:
         return False
-    if key in GENERIC_KEYS and key != "full" and "WMTS" not in key_services_layers[key]:
+    if key in GENERIC_KEYS() and key != "full" and "WMTS" not in key_services_layers[key]:
         return False
 
     general_options = {}
@@ -34,7 +34,7 @@ def _parseLayers(layers, all_tms, key):
         layers = [layers]
     layers_config = {}
     for layer in layers:
-        if key in GENERIC_KEYS and key != "full" and layer["ows:Identifier"] not in key_services_layers[key]["WMTS"]:
+        if key in GENERIC_KEYS() and key != "full" and layer["ows:Identifier"] not in key_services_layers[key]["WMTS"]:
             continue
         layer_id, layer_config = _parseLayer(layer, all_tms, key)
         layers_config[layer_id] = layer_config
@@ -76,7 +76,7 @@ def _parseLayer(layer, all_tms, key):
     service_params["id"] = "OGC:WMTS"
     service_params["version"] = "1.0.0"
     service_params["serverUrl"] = {}
-    if key in GENERIC_KEYS:
+    if key in GENERIC_KEYS():
         service_params["serverUrl"][key] = "https://data.geopf.fr/wmts"
     else:
         service_params["serverUrl"][key] = "https://data.geopf.fr/private/wmts"
