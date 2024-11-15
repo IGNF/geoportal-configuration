@@ -6,9 +6,10 @@ from core.vectortiles_parser import parseVectorTiles
 from core.wms_parser import parseWMS
 from core.wmts_parser import parseWMTS
 from core.wfs_parser import parseWFS
+from core.key_resource_lister import createKeyServiceLayersFile
 
 def main(keys, referer=""):
-    print(keys)
+    createKeyServiceLayersFile()
     if not isinstance(keys, list):
         keys = [keys]
     keys = filter(lambda x: x != "", keys)

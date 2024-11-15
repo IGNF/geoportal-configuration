@@ -10,7 +10,7 @@ def parseWFS(capabilities, key, namespaces):
     if capabilities == False:
         return False
     wfs_config = {}
-    if key in GENERIC_KEYS and key != "full" and "WFS" not in key_services_layers[key]:
+    if key in GENERIC_KEYS() and key != "full" and "WFS" not in key_services_layers[key]:
         return False
 
     root = capabilities.getroot()
@@ -31,7 +31,7 @@ def _parseLayers(layers, key, server_url, namespaces):
     for layer in layers.findall('FeatureType', namespaces):
         if layer == None:
             continue
-        if key in GENERIC_KEYS and key != "full" and layer.find("Name", namespaces).text not in key_services_layers[key]["WFS"]:
+        if key in GENERIC_KEYS() and key != "full" and layer.find("Name", namespaces).text not in key_services_layers[key]["WFS"]:
             continue
         layer_id, layer_config = _parseLayer(layer, key, server_url, namespaces)
         layers_config[layer_id] = layer_config

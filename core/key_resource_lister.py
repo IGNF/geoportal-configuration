@@ -1,5 +1,6 @@
 import csv
 import requests
+import json
 
 TMS_CONFIG = [
   {"service": "TMS", "key": "administratif", "layer": "ADMIN_EXPRESS"},
@@ -20,6 +21,7 @@ def createKeyServiceLayersFile(
     download = s.get(url)
     decoded_content = download.content.decode("latin1")
     reader = csv.DictReader(decoded_content.splitlines(), delimiter=";")
+  generic_keys = []
   with open(filePath, "w", newline='', encoding="utf-8") as csvFile:
     fieldnames = ["service", "key", "layer"]
     writer = csv.DictWriter(csvFile, fieldnames=fieldnames, lineterminator='\n')
@@ -38,20 +40,21 @@ def createKeyServiceLayersFile(
       else:
         continue
 
-      if row["Thématique"] == "cle personnelle *":
+      if row["Thématique"] == "cle specifique *":
         continue
       if row["Thématique"] == "":
         continue
-
+      generic_keys.append(row["Thématique"])
       newRow = {
         "service": service,
         "key": row["Thématique"],
         "layer": row["Nom technique"].strip()
       }
       writer.writerow(newRow)
+    with open("generic_keys.json", "w", newline='', encoding="utf-8") as generic_keys_file:
+      json.dump(generic_keys, generic_keys_file)
 
 def keysServicesLayers(filePath="resources_by_key.csv"):
-  createKeyServiceLayersFile(filePath=filePath)
   rows = []
   keys = []
   with open(filePath) as csvfile:
