@@ -39,7 +39,13 @@
         "SECUROUTE.TE.TE94$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.AIRNOISE$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.AIRNOISE.DOCS$GEOPORTAIL:OGC:WMS",
-        "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS"
+        "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS",
+        "DGAC-PEB_BDD_FXX_WM:fxx_peb_wm$GEOPORTAIL:OGC:WFS",
+        "DGAC-PEB-POI_BDD_WLD_WM:aerodrome_avec_peb_wm$GEOPORTAIL:OGC:WFS",
+        "DGAC-PGS_BDD_FXX_WM:fxx_pgs_wm$GEOPORTAIL:OGC:WFS",
+        "DGAC-PGS-POI_BDD_FXX_WM:aerodrome_avec_pgs_wm$GEOPORTAIL:OGC:WFS",
+        "TRANSPORTS.AIRNOISE.DOCS:dgac_psa_poi_wm$GEOPORTAIL:OGC:WFS",
+        "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -3305,6 +3311,174 @@
           "current": false
         }
       ]
+    },
+    "DGAC-PEB_BDD_FXX_WM:fxx_peb_wm$GEOPORTAIL:OGC:WFS": {
+      "name": "DGAC-PEB_BDD_FXX_WM:fxx_peb_wm",
+      "title": "Plan d'exposition au bruit (PEB)",
+      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zone de bruit diversement exposés au bruit engendré par les aéronefs (A, B, C et/ou D et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne.Pour en savoir plus Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie Date des données",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.598904,
+          "right": 55.582677,
+          "top": 50.700964,
+          "bottom": -21.335064
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "DGAC-PEB-POI_BDD_WLD_WM:aerodrome_avec_peb_wm$GEOPORTAIL:OGC:WFS": {
+      "name": "DGAC-PEB-POI_BDD_WLD_WM:aerodrome_avec_peb_wm",
+      "title": "Plan d'exposition au bruit, documents d'approbation (PEB)",
+      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zone de bruit diversement exposés au bruit engendré par les aéronefs (A, B, C et/ou D et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne. Pour en savoir plus Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie Date des données",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.525833,
+          "right": 55.516342,
+          "top": 50.687222,
+          "bottom": -21.321536
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "DGAC-PGS_BDD_FXX_WM:fxx_pgs_wm$GEOPORTAIL:OGC:WFS": {
+      "name": "DGAC-PGS_BDD_FXX_WM:fxx_pgs_wm",
+      "title": "Plan de gêne sonore (PGS)",
+      "description": "Les plans de gêne sonore identifient trois type de zones de bruit (I, II, III) établies sur la base du trafic estimé, des procédures de circulation aérienne applicables et des infrastructures qui seront en service dans l'année suivant la date de publication de l'arrêté approuvant le PGS. Pour en savoir plus Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -1.645795,
+          "right": 7.551737,
+          "top": 49.489555,
+          "bottom": 43.365423
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "DGAC-PGS-POI_BDD_FXX_WM:aerodrome_avec_pgs_wm$GEOPORTAIL:OGC:WFS": {
+      "name": "DGAC-PGS-POI_BDD_FXX_WM:aerodrome_avec_pgs_wm",
+      "title": "Plan de gêne sonore, documents d'approbation (PGS)",
+      "description": "Arrêté préfectoral d'approbation, pour chaque aérodrome, du plan de gêne sonore. Pour en savoir plus Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -1.607808,
+          "right": 7.529222,
+          "top": 49.454422,
+          "bottom": 43.436634
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "TRANSPORTS.AIRNOISE.DOCS:dgac_psa_poi_wm$GEOPORTAIL:OGC:WFS": {
+      "name": "TRANSPORTS.AIRNOISE.DOCS:dgac_psa_poi_wm",
+      "title": "Plan de servitudes aéronautiques, documents d'approbation (PSA)",
+      "description": "Arrêté ministériel ou décret en Conseil d'Etat approuvant les servitudes aéronautiques aux abords de l'aérodrome. Les donn&eacute;es sont fournies &agrave; titre informatif et n'ont aucune valeur r&eacute;glementaire. Seul le document papier officiel consultable en mairie ou en pr&eacute;fecture est opposable. Pour en savoir plus Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie Date des données",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -149.611389,
+          "right": 167.455278,
+          "top": 50.960933,
+          "bottom": -22.588611
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf$GEOPORTAIL:OGC:WFS": {
+      "name": "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf",
+      "title": "Restrictions UAS catégorie Ouverte et Aéromodélisme ",
+      "description": "{quote}Zones soumises à interdictions ou à restrictions pour l’usage, à titre de loisir, d’aéronefs télépilotés (ou drones), sur le territoire métropolitain, à jour au 07-2024. Elle intègre partiellement les interdictions s'appuyant sur des données non publiées à l'AIP et ne couvre pas les interdictions temporaires. Cette carte est basée sur l’arrêté « espace » du 30 mars 2017. La représentation des zones soumises à interdictions ou à restrictions n’engage pas la responsabilité des producteurs de la donnée. Le contour des agglomérations est fourni à titre purement indicatif. Consultez les interdictions temporaires sur https://www.sia.aviation-civile.gouv.fr/.{quote}",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -7.99999703,
+          "right": 10.70000198,
+          "top": 51.09333213,
+          "bottom": 40.84341536
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     }
   },
   "tileMatrixSets": {

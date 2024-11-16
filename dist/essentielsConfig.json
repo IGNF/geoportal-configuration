@@ -10,6 +10,9 @@
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS",
+        "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
       ]
@@ -901,6 +904,90 @@
           "current": false
         }
       ]
+    },
+    "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS": {
+      "name": "BDTOPO_V3:batiment",
+      "title": "BDTOPO : Bâtiments",
+      "description": "Bâtiments − BDTOPO",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.9734375,
+          "bottom": -21.77265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS": {
+      "name": "BDTOPO_V3:troncon_de_route",
+      "title": "BDTOPO : Tronçons de route",
+      "description": "Tronçons de route − BDTOPO",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.9734375,
+          "bottom": -21.77265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle",
+      "title": "PCI Vecteur : Parcelles",
+      "description": "Parcelles avril 2023",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     },
     "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
       "hidden": true,

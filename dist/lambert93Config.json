@@ -4,7 +4,9 @@
       "lambert93": [
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS.L93$GEOPORTAIL:OGC:WMTS",
         "HR.ORTHOIMAGERY.ORTHOPHOTOS.L93$GEOPORTAIL:OGC:WMTS",
-        "SCANEM40_PYR_PNG_FXX_LAMB93$GEOPORTAIL:OGC:WMS"
+        "SCANEM40_PYR_PNG_FXX_LAMB93$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_1x1_l93$GEOPORTAIL:OGC:WFS",
+        "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_2x2_l93$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -285,6 +287,62 @@
           "current": false
         }
       ]
+    },
+    "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_1x1_l93$GEOPORTAIL:OGC:WFS": {
+      "name": "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_1x1_l93",
+      "title": "Carroyages DFCI 1x1",
+      "description": "Carroyages DFCI 1x1",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -6.065,
+          "right": 10.38,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "lambert93": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_2x2_l93$GEOPORTAIL:OGC:WFS": {
+      "name": "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_2x2_l93",
+      "title": "Carroyages DFCI 2x2",
+      "description": "Carroyages DFCI 2x2",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -6.065,
+          "right": 10.38,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "lambert93": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     }
   },
   "tileMatrixSets": {

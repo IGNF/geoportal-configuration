@@ -2,6 +2,7 @@
   "generalOptions": {
     "apiKeys": {
       "cartes": [
+        "BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.BONNE$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMTS",
@@ -12,6 +13,7 @@
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMTS",
+        "SCAN1000_PYR-JPEG_WLD_WM_WMTS_3D$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMS",
@@ -23,11 +25,110 @@
         "SCANDEP_PYR-JPEG_FXX_WM$GEOPORTAIL:OGC:WMS",
         "SCANREG_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE:graphe_scan25$GEOPORTAIL:OGC:WFS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950.GRAPHE:ta_france_cartes_50k_1950_date_wm$GEOPORTAIL:OGC:WFS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ]
     }
   },
   "layers": {
+    "BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI$GEOPORTAIL:OGC:WMTS": {
+      "name": "BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI",
+      "title": "Carte de Cassini",
+      "description": "Planches numérisées colorisées de la carte de Cassini détenue par la BNF",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 34123.673341596535,
+        "bbox": {
+          "left": -6.39486,
+          "right": 9.96282,
+          "top": 51.8839,
+          "bottom": 40.9343
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_14",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "24",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "48",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "84",
+            "maxTileRow": "96",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "169",
+            "maxTileRow": "192",
+            "minTileCol": "246",
+            "maxTileCol": "270"
+          },
+          "10": {
+            "minTileRow": "338",
+            "maxTileRow": "384",
+            "minTileCol": "493",
+            "maxTileCol": "540"
+          },
+          "11": {
+            "minTileRow": "677",
+            "maxTileRow": "768",
+            "minTileCol": "987",
+            "maxTileCol": "1080"
+          },
+          "12": {
+            "minTileRow": "1355",
+            "maxTileRow": "1536",
+            "minTileCol": "1975",
+            "maxTileCol": "2161"
+          },
+          "13": {
+            "minTileRow": "2710",
+            "maxTileRow": "3073",
+            "minTileCol": "3950",
+            "maxTileCol": "4322"
+          },
+          "14": {
+            "minTileRow": "5420",
+            "maxTileRow": "6146",
+            "minTileCol": "7900",
+            "maxTileCol": "8645"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS$GEOPORTAIL:OGC:WMTS": {
       "name": "GEOGRAPHICALGRIDSYSTEMS.1900TYPEMAPS",
       "title": "Carte topographique - environs de Paris (1906)",
@@ -1256,6 +1357,121 @@
         }
       ]
     },
+    "SCAN1000_PYR-JPEG_WLD_WM_WMTS_3D$GEOPORTAIL:OGC:WMTS": {
+      "name": "SCAN1000_PYR-JPEG_WLD_WM_WMTS_3D",
+      "title": "Carte SCAN 1000",
+      "description": "Le produit SCAN 1000® version 2 est une collection d'images numériques en couleurs, obtenues par rastérisation des données vecteur de la carte nationale France (901) à l'échelle 1 :1,000,000ième. Le produit couvre l'ensemble du territoire français métropolitain et la Corse.",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 545978.7734655464,
+        "bbox": {
+          "left": -6.42088,
+          "right": 13.55,
+          "top": 51.444,
+          "bottom": 40.2891
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_0_10",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "1"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "2"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "3",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "6",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "12",
+            "minTileCol": "15",
+            "maxTileCol": "17"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "24",
+            "minTileCol": "30",
+            "maxTileCol": "34"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "48",
+            "minTileCol": "61",
+            "maxTileCol": "68"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "96",
+            "minTileCol": "123",
+            "maxTileCol": "137"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "193",
+            "minTileCol": "246",
+            "maxTileCol": "275"
+          },
+          "10": {
+            "minTileRow": "340",
+            "maxTileRow": "386",
+            "minTileCol": "493",
+            "maxTileCol": "550"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ]
+    },
     "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS": {
       "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10",
       "title": "Carte de l'état-major - environs de Paris (1818 - 1824)",
@@ -1976,6 +2192,62 @@
           "current": false
         }
       ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE:graphe_scan25$GEOPORTAIL:OGC:WFS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE:graphe_scan25",
+      "title": "Graphe de mosaïquage du produit SCAN25",
+      "description": "Le graphe de mosaïquage du produit SCAN25 fournit le zonage utilisé pour la mise à jour des données SCAN25 ainsi que différentes métadonnées.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.2421875,
+          "right": 55.8984375,
+          "top": 51.16890625,
+          "bottom": -21.597265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950.GRAPHE:ta_france_cartes_50k_1950_date_wm$GEOPORTAIL:OGC:WFS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950.GRAPHE:ta_france_cartes_50k_1950_date_wm",
+      "title": "Graphe de raccord du SCAN50 Historique de 1950",
+      "description": "Graphe de raccord du SCAN50 produit par l'IGN en 1950",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.40382678,
+          "right": 9.71705594,
+          "top": 51.12127705,
+          "bottom": 41.22005172
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     },
     "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
       "hidden": true,

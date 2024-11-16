@@ -3,6 +3,8 @@
     "apiKeys": {
       "orthohisto": [
         "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.1965-1980$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2021$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2013$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2014$GEOPORTAIL:OGC:WMTS",
@@ -43,6 +45,8 @@
         "ORTHOIMAGERY.ORTHOPHOTOS2019$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS2020$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.1965-1980$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2021$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2012$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2013$GEOPORTAIL:OGC:WMS",
@@ -85,7 +89,12 @@
         "ORTHOIMAGERY.ORHOPHOTOS.URGENCE.ALEX.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2000-2005$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2006-2010$GEOPORTAIL:OGC:WMS"
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-2006-2010$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE:graphe$GEOPORTAIL:OGC:WFS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2000-2005:graphe_bdortho$GEOPORTAIL:OGC:WFS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2006-2010:graphe_bdortho$GEOPORTAIL:OGC:WFS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015:graphe_bdortho$GEOPORTAIL:OGC:WFS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2016-2020:graphe_bdortho$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -228,6 +237,284 @@
             "maxTileRow": "147031",
             "minTileCol": "81758",
             "maxTileCol": "171738"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "BDORTHOHISTORIQUE",
+          "title": "BDOrthoHistorique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.1965-1980$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.1965-1980",
+      "title": "Photographies aériennes historiques 1965-1980",
+      "description": "Couverture en photographies aériennes de la France des années 1965 à 1980. Cette couverture a été réalisée à partir des photographies aériennes historiques numérisées par l'IGN. Elle est disponible sur la France métropolitaine, les départements et régions d'Outre-Mer (la Guyane n'est que partiellement couverte) et les collectivités d'Outre-Mer sauf la Polynésie française. Les photographies sont orthorectifiées, c'est-à-dire corrigées des déformations dues à la prise de vue et au relief du terrain, et assemblées pour fournir une visualisation continue superposable avec le Référentiel à Grande Echelle (RGE®) ou les cartes.",
+      "globalConstraint": {
+        "maxScaleDenominator": 69885283.00358965,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -6.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 40.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_3_18",
+        "tileMatrixSetLimits": {
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "3",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "6",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "12",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "24",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "48",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "84",
+            "maxTileRow": "96",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "169",
+            "maxTileRow": "193",
+            "minTileCol": "247",
+            "maxTileCol": "270"
+          },
+          "10": {
+            "minTileRow": "338",
+            "maxTileRow": "387",
+            "minTileCol": "494",
+            "maxTileCol": "540"
+          },
+          "11": {
+            "minTileRow": "676",
+            "maxTileRow": "775",
+            "minTileCol": "989",
+            "maxTileCol": "1080"
+          },
+          "12": {
+            "minTileRow": "1352",
+            "maxTileRow": "1550",
+            "minTileCol": "1979",
+            "maxTileCol": "2161"
+          },
+          "13": {
+            "minTileRow": "2705",
+            "maxTileRow": "3101",
+            "minTileCol": "3959",
+            "maxTileCol": "4323"
+          },
+          "14": {
+            "minTileRow": "5411",
+            "maxTileRow": "6202",
+            "minTileCol": "7918",
+            "maxTileCol": "8647"
+          },
+          "15": {
+            "minTileRow": "10823",
+            "maxTileRow": "12405",
+            "minTileCol": "15837",
+            "maxTileCol": "17294"
+          },
+          "16": {
+            "minTileRow": "21647",
+            "maxTileRow": "24810",
+            "minTileCol": "31675",
+            "maxTileCol": "34588"
+          },
+          "17": {
+            "minTileRow": "43295",
+            "maxTileRow": "49621",
+            "minTileCol": "63351",
+            "maxTileCol": "69176"
+          },
+          "18": {
+            "minTileRow": "86590",
+            "maxTileRow": "99242",
+            "minTileCol": "126702",
+            "maxTileCol": "138353"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "BDORTHOHISTORIQUE",
+          "title": "BDOrthoHistorique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995",
+      "title": "Photographies aériennes historiques 1980-1995",
+      "description": "Couverture en photographies aériennes de la France des années 11980 à 1995. Cette couverture a été réalisée à partir des photographies aériennes historiques numérisées par l'IGN. Elle est disponible sur la France métropolitaine, les départements et régions d'Outre-Mer (la Guyane n'est que partiellement couverte) et les collectivités d'Outre-Mer sauf la Polynésie française. Les photographies sont orthorectifiées, c'est-à-dire corrigées des déformations dues à la prise de vue et au relief du terrain, et assemblées pour fournir une visualisation continue superposable avec le Référentiel à Grande Echelle (RGE®) ou les cartes.",
+      "globalConstraint": {
+        "maxScaleDenominator": 69885283.00358965,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -5.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 40.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_3_18",
+        "tileMatrixSetLimits": {
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "3",
+            "minTileCol": "3",
+            "maxTileCol": "4"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "6",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "12",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "24",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "48",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "84",
+            "maxTileRow": "96",
+            "minTileCol": "124",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "169",
+            "maxTileRow": "193",
+            "minTileCol": "248",
+            "maxTileCol": "270"
+          },
+          "10": {
+            "minTileRow": "338",
+            "maxTileRow": "387",
+            "minTileCol": "497",
+            "maxTileCol": "540"
+          },
+          "11": {
+            "minTileRow": "676",
+            "maxTileRow": "775",
+            "minTileCol": "995",
+            "maxTileCol": "1080"
+          },
+          "12": {
+            "minTileRow": "1352",
+            "maxTileRow": "1550",
+            "minTileCol": "1991",
+            "maxTileCol": "2161"
+          },
+          "13": {
+            "minTileRow": "2705",
+            "maxTileRow": "3101",
+            "minTileCol": "3982",
+            "maxTileCol": "4323"
+          },
+          "14": {
+            "minTileRow": "5411",
+            "maxTileRow": "6202",
+            "minTileCol": "7964",
+            "maxTileCol": "8647"
+          },
+          "15": {
+            "minTileRow": "10823",
+            "maxTileRow": "12405",
+            "minTileCol": "15928",
+            "maxTileCol": "17294"
+          },
+          "16": {
+            "minTileRow": "21647",
+            "maxTileRow": "24810",
+            "minTileCol": "31857",
+            "maxTileCol": "34588"
+          },
+          "17": {
+            "minTileRow": "43295",
+            "maxTileRow": "49621",
+            "minTileCol": "63715",
+            "maxTileCol": "69176"
+          },
+          "18": {
+            "minTileRow": "86590",
+            "maxTileRow": "99242",
+            "minTileCol": "127431",
+            "maxTileCol": "138353"
           }
         }
       },
@@ -6013,7 +6300,7 @@
     "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965",
       "title": "Photographies aériennes historiques 1950-1965",
-      "description": "Couverture en photographies aériennes de la France des années 50, telle qu'elle se présentait avant les grands aménagements des années 60. Cette couverture a été réalisée à partir des photographies aériennes historiques numérisées par l'IGN. Elle est disponible sur la France métropolitaine, les départements et régions d'Outre-Mer (la Guyane n'est que partiellement couverte) et les collectivités d'Outre-Mer sauf la Polynésie française. Les photographies sont orthorectifiées, c'est-à-dire corrigées des déformations dues à la prise de vue et au relief du terrain, et assemblées pour fournir une visualisation continue superposable avec le Référentiel à Grande Echelle (RGE®) ou les cartes.",
+      "description": "Couverture en photographies aériennes de la France des années 1950-1965. Cette couverture a été réalisée à partir des photographies aériennes historiques numérisées par l'IGN. Elle est disponible sur la France métropolitaine, les départements et régions d'Outre-Mer (la Guyane n'est que partiellement couverte) et les collectivités d'Outre-Mer sauf la Polynésie française. Les photographies sont orthorectifiées, c'est-à-dire corrigées des déformations dues à la prise de vue et au relief du terrain, et assemblées pour fournir une visualisation continue superposable avec le Référentiel à Grande Echelle (RGE®) ou les cartes.",
       "globalConstraint": {
         "minScaleDenominator": 2132.72958385,
         "maxScaleDenominator": 559082264.0287179,
@@ -6059,6 +6346,124 @@
         },
         {
           "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.1965-1980$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.1965-1980",
+      "title": "Photographies aériennes historiques 1965-1980",
+      "description": "Couverture en photographies aériennes de la France des années 1965 à 1980. Cette couverture a été réalisée à partir des photographies aériennes historiques numérisées par l'IGN. Elle est disponible sur la France métropolitaine, les départements et régions d'Outre-Mer (la Guyane n'est que partiellement couverte) et les collectivités d'Outre-Mer sauf la Polynésie française. Les photographies sont orthorectifiées, c'est-à-dire corrigées des déformations dues à la prise de vue et au relief du terrain, et assemblées pour fournir une visualisation continue superposable avec le Référentiel à Grande Echelle (RGE®) ou les cartes.",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.72958385,
+        "maxScaleDenominator": 69885283.00358963,
+        "bbox": {
+          "left": -5.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 42.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "BDORTHOHISTORIQUE",
+          "title": "BDOrthoHistorique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995",
+      "title": "Photographies aériennes historiques 1980-1995",
+      "description": "Couverture en photographies aériennes de la France des années 1980 à 1995. Cette couverture a été réalisée à partir des photographies aériennes historiques numérisées par l'IGN. Elle est disponible sur la France métropolitaine, les départements et régions d'Outre-Mer (la Guyane n'est que partiellement couverte) et les collectivités d'Outre-Mer sauf la Polynésie française. Les photographies sont orthorectifiées, c'est-à-dire corrigées des déformations dues à la prise de vue et au relief du terrain, et assemblées pour fournir une visualisation continue superposable avec le Référentiel à Grande Echelle (RGE®) ou les cartes.",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.72958385,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -5.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 40.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
@@ -8877,6 +9282,146 @@
           "current": false
         }
       ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE:graphe$GEOPORTAIL:OGC:WFS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965.GRAPHE-MOSAIQUAGE:graphe",
+      "title": "Graphe de mosaiquage de la couche photographies aériennes historiques 1950-1965",
+      "description": "Graphe de mosaiquage de la couche photographies aériennes historiques 1950-1965.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.16065723,
+          "right": 55.84425655,
+          "top": 51.08932742,
+          "bottom": -21.39989736
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2000-2005:graphe_bdortho$GEOPORTAIL:OGC:WFS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2000-2005:graphe_bdortho",
+      "title": "Graphe de mosaïquage BDORTHO 2000-2005",
+      "description": "Graphe de mosaïquage BDORTHO 2000-2005",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -66.15805146,
+          "right": 55.85384065,
+          "top": 51.10341491,
+          "bottom": -21.39139475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2006-2010:graphe_bdortho$GEOPORTAIL:OGC:WFS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2006-2010:graphe_bdortho",
+      "title": "Graphe de mosaïquage BDORTHO 2006-2010 ",
+      "description": "graphe bdortho millesimees",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -66.49159691,
+          "right": 55.84456069,
+          "top": 51.09371245,
+          "bottom": -21.42730308
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015:graphe_bdortho$GEOPORTAIL:OGC:WFS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2011-2015:graphe_bdortho",
+      "title": "Graphe de mosaïquage BDORTHO 2011-2015",
+      "description": "Graphe de mosaïquage BDORTHO 2011-2015",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.16551154,
+          "right": 55.8442806,
+          "top": 51.09371233,
+          "bottom": -21.39990125
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2016-2020:graphe_bdortho$GEOPORTAIL:OGC:WFS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE.2016-2020:graphe_bdortho",
+      "title": "Graphe de mosaïquage BDORTHO 2016-2020",
+      "description": "Graphe de mosaïquage BDORTHO 2016-2020",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.17011235,
+          "right": 55.8442806,
+          "top": 51.11183578,
+          "bottom": -21.3999015
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     }
   },
   "tileMatrixSets": {
