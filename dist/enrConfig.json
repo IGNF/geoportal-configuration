@@ -55,7 +55,10 @@
         "SITE.PRODUCTION.CHALEUR.DECHETS$GEOPORTAIL:OGC:WMTS",
         "SITE.PRODUCTION.CHALEUR.METHANISATON$GEOPORTAIL:OGC:WMTS",
         "SITE.PRODUCTION.CHALEUR.RCF.LINEAIRE$GEOPORTAIL:OGC:WMTS",
-        "SITE.PRODUCTION.CHALEUR.RCF.POINT$GEOPORTAIL:OGC:WMTS"
+        "SITE.PRODUCTION.CHALEUR.RCF.POINT$GEOPORTAIL:OGC:WMTS",
+        "IRRADIATION.SOLAIRE$GEOPORTAIL:OGC:WMS",
+        "POTENTIEL.VENT.140M$GEOPORTAIL:OGC:WMS",
+        "POTENTIEL.VENT.160M$GEOPORTAIL:OGC:WMS"
       ]
     }
   },
@@ -6591,6 +6594,183 @@
         {
           "name": "image/png",
           "current": true
+        }
+      ]
+    },
+    "IRRADIATION.SOLAIRE$GEOPORTAIL:OGC:WMS": {
+      "name": "IRRADIATION.SOLAIRE",
+      "title": "Irradiation solaire horizontale annuelle moyenne",
+      "description": "Cette couche représente les valeurs annuelles horizontales moyennes (ie \"reçues sur une surface horizontale\") d'irradiation solaire exprimées en kWh/m². Les données sont issues de Solargis et calculées sur une période 1994-2018. Pour plus d'informations : www.solargis.com",
+      "globalConstraint": {
+        "minScaleDenominator": 136494.693366386,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -6.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "enr": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "irradiation",
+          "title": "Irradiation solaire horizontale annuelle moyenne"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ENR/IRRADIATION.SOLAIRE-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "POTENTIEL.VENT.140M$GEOPORTAIL:OGC:WMS": {
+      "name": "POTENTIEL.VENT.140M",
+      "title": "Potentiel éolien terrestre - gisement de vent à 140m",
+      "description": "Cartes de la moyenne 2000-2019 du vent moyen sur 10 minutes, à 140m mètres de hauteur, sur toute la métropole",
+      "globalConstraint": {
+        "minScaleDenominator": 545978.773465546,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -6.0125,
+          "right": 10.5125,
+          "top": 51.5125,
+          "bottom": 40.9875
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "enr": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "vent 140m",
+          "title": "Moyenne des vents à 140m"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ENR/POTENTIEL.VENT.140M-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "POTENTIEL.VENT.160M$GEOPORTAIL:OGC:WMS": {
+      "name": "POTENTIEL.VENT.160M",
+      "title": "Potentiel éolien terrestre - gisement de vent à 160m",
+      "description": "Cartes de la moyenne 2000-2019 du vent moyen sur 10 minutes, à 160m mètres de hauteur, sur toute la métropole",
+      "globalConstraint": {
+        "minScaleDenominator": 545978.773465546,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -6.0125,
+          "right": 10.5125,
+          "top": 51.5125,
+          "bottom": 40.9875
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "enr": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "vent 160m",
+          "title": "Moyenne des vents à 160m"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ENR/POTENTIEL.VENT.160M-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
         }
       ]
     }
