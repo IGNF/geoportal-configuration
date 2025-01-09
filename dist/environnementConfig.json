@@ -112,6 +112,7 @@
         "LANDCOVER.FORESTINVENTORY.V1:resu_bdv1_shape$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.FORESTINVENTORY.V2:formation_vegetale$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.MNHN.CDL.PARCELS:cdl$GEOPORTAIL:OGC:WFS",
+        "PROTECTEDAREAS.MNHN.CDL.PERIMETER:perimetre_autorise$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.GP:gp$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.INPG:inpg$GEOPORTAIL:OGC:WFS",
         "INPE:inpe$GEOPORTAIL:OGC:WFS",
@@ -8978,6 +8979,34 @@
           "right": 55.83443328,
           "top": 51.08708741,
           "bottom": -21.38398375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "PROTECTEDAREAS.MNHN.CDL.PERIMETER:perimetre_autorise$GEOPORTAIL:OGC:WFS": {
+      "name": "PROTECTEDAREAS.MNHN.CDL.PERIMETER:perimetre_autorise",
+      "title": "Conservatoire du littoral : périmètres autorisés",
+      "description": "L’intervention foncière du Conservatoire du littoral est plus particulièrement justifiée dans au moins un de ces quatre critères : - Lorsque le terrain fait l’objet de pressions en faveur de l’urbanisation mettant en échec la réglementation existante ou de menaces d’artificialisation irréversible du milieu ; - Lorsque le terrain connaît un processus de dégradation qui appelle une gestion patrimoniale pour restaurer la biodiversité et les paysages ; - Lorsque le terrain est inaccessible et que son ouverture au public est souhaitable ; - Lorsque la maîtrise foncière permet d’assurer la pérennité d’activités économiques traditionnelles garantes d’un paysage caractéristique ou d’équilibres écologiques remarquables. Ces interventions du Conservatoire répondent à quatre préoccupations : - C’est sur la zone côtière immédiate que les pressions sont les plus fortes ; - Il faut veiller à une répartition équilibrée des acquisitions ; - Certains grands sites nationaux ont une importance particulière, en fonction de critères écologiques, esthétiques et paysagers ; - Ces interventions doivent être appréciées au regard des interactions entre les espaces concernés et leur environnement et donc en termes de fonctionnalité au sein d’une zone plus large et plus complexe sur le plan des écosystèmes.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.193359375,
+          "right": 55.8984375,
+          "top": 51.16890625,
+          "bottom": -21.431132812
         }
       },
       "serviceParams": {
