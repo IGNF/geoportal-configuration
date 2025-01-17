@@ -44,7 +44,12 @@
         "DGAC-PGS_BDD_FXX_WM:fxx_pgs_wm$GEOPORTAIL:OGC:WFS",
         "DGAC-PGS-POI_BDD_FXX_WM:aerodrome_avec_pgs_wm$GEOPORTAIL:OGC:WFS",
         "TRANSPORTS.AIRNOISE.DOCS:dgac_psa_poi_wm$GEOPORTAIL:OGC:WFS",
-        "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf$GEOPORTAIL:OGC:WFS"
+        "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf$GEOPORTAIL:OGC:WFS",
+        "SECUROUT.TE:franchissement_te_lien_prescription$GEOPORTAIL:OGC:WFS",
+        "SECUROUT.TE:franchissement_te$GEOPORTAIL:OGC:WFS",
+        "SECUROUT.TE:prescription_te$GEOPORTAIL:OGC:WFS",
+        "SECUROUT.TE:troncon_te$GEOPORTAIL:OGC:WFS",
+        "SECUROUT.TE:troncon_te_lien_prescription$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -3409,6 +3414,146 @@
         }
       },
       "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "SECUROUT.TE:franchissement_te_lien_prescription$GEOPORTAIL:OGC:WFS": {
+      "name": "SECUROUT.TE:franchissement_te_lien_prescription",
+      "title": "Transports exceptionnels ,franchissements - prescription",
+      "description": "Transports exceptionnels (tronçons, franchissements et prescriptions) au format COVADIS",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.8,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "SECUROUT.TE:franchissement_te$GEOPORTAIL:OGC:WFS": {
+      "name": "SECUROUT.TE:franchissement_te",
+      "title": "Transports exceptionnels Franchissements",
+      "description": "Transports exceptionnels (tronçons, franchissements et prescriptions) au format COVADIS",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.8,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "SECUROUT.TE:prescription_te$GEOPORTAIL:OGC:WFS": {
+      "name": "SECUROUT.TE:prescription_te",
+      "title": "Transports exceptionnels Prescriptions",
+      "description": "Transports exceptionnels (tronçons, franchissements et prescriptions) au format COVADIS",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.8,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "SECUROUT.TE:troncon_te$GEOPORTAIL:OGC:WFS": {
+      "name": "SECUROUT.TE:troncon_te",
+      "title": "Transports exceptionnels Tronçons",
+      "description": "Transports exceptionnels (tronçons, franchissements et prescriptions) au format COVADIS",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.8,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "SECUROUT.TE:troncon_te_lien_prescription$GEOPORTAIL:OGC:WFS": {
+      "name": "SECUROUT.TE:troncon_te_lien_prescription",
+      "title": "Transports exceptionnels lien tronçon - prescription",
+      "description": "Transports exceptionnels (tronçons, franchissements et prescriptions) au format COVADIS",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.8,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
       "queryable": false,
       "metadata": [],
       "styles": [],
