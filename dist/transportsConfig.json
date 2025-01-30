@@ -28,15 +28,6 @@
         "DGAC-PEB_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS",
         "DGAC-PGS-POI_BDD_FXX_WM_WM$GEOPORTAIL:OGC:WMS",
         "DGAC-PGS_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.2TE48$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.ALL$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.OA$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.PN$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.PND$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.TE120$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.TE72$GEOPORTAIL:OGC:WMS",
-        "SECUROUTE.TE.TE94$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.AIRNOISE$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.AIRNOISE.DOCS$GEOPORTAIL:OGC:WMS",
         "DGAC-PEB_BDD_FXX_WM:fxx_peb_wm$GEOPORTAIL:OGC:WFS",
@@ -1292,94 +1283,46 @@
     "SECUROUTE.TE.1TE$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.1TE",
       "title": "Tronçons routiers 1TE",
-      "description": "Tronçons routiers 1TE",
+      "description": "Troncons routiers 1TE; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.1TE",
-          "title": "SECUROUTE.TE.1TE style"
+          "name": "RESEAU ROUTIER 1TE",
+          "title": "RESEAU ROUTIER 1TE"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.1TE"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.1TE-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -1387,27 +1330,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -1415,94 +1342,46 @@
     "SECUROUTE.TE.2TE48$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.2TE48",
       "title": "Tronçons routiers 2TE48",
-      "description": "Tronçons routiers 2TE48",
+      "description": "Troncons routiers 2TE48; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.2TE48",
-          "title": "SECUROUTE.TE.2TE48 style"
+          "name": "RESEAU ROUTIER 2TE48",
+          "title": "RESEAU ROUTIER 2TE48"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.2TE48"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.2TE48-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -1510,27 +1389,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -1538,94 +1401,46 @@
     "SECUROUTE.TE.ALL$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.ALL",
       "title": "Tous les franchissements",
-      "description": "Tous les franchissements",
+      "description": "Tous les franchissements; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.ALL",
-          "title": "SECUROUTE.TE.ALL style"
+          "name": "TOUS LES FRANCHISSEMENTS",
+          "title": "TOUS LES FRANCHISSEMENTS"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.ALL"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.ALL.GE-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -1633,122 +1448,58 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
     },
     "SECUROUTE.TE.OA$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.OA",
-      "title": "Franchissements ouvrage d'art",
-      "description": "Franchissements ouvrage d'art",
+      "title": "Autres franchissements",
+      "description": "Franchissements ouvrage d'art; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.OA",
-          "title": "SECUROUTE.TE.OA style"
+          "name": "AUTRES FRANCHISSEMENTS",
+          "title": "AUTRES FRANCHISSEMENTS"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.OA"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.OA.GE-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -1756,27 +1507,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -1784,94 +1519,46 @@
     "SECUROUTE.TE.PN$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.PN",
       "title": "Franchissements passage à niveau",
-      "description": "Franchissements passage à niveau",
+      "description": "Franchissements passage a niveau; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.PN",
-          "title": "SECUROUTE.TE.PN style"
+          "name": "FRANCHISSEMENTS PASSAGE A NIVEAU",
+          "title": "FRANCHISSEMENTS PASSAGE A NIVEAU"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.PN"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.PN.GE-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -1879,27 +1566,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -1907,94 +1578,46 @@
     "SECUROUTE.TE.PND$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.PND",
       "title": "Franchissements passage à niveau difficile",
-      "description": "Franchissements passage à niveau difficile",
+      "description": "Franchissements passage a niveau difficile; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.PND",
-          "title": "SECUROUTE.TE.PND style"
+          "name": "FRANCHISSEMENTS PASSAGE A NIVEAU DIFFICILE",
+          "title": "FRANCHISSEMENTS PASSAGE A NIVEAU DIFFICILE"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.PND"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.PND.GE-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -2002,27 +1625,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -2030,94 +1637,46 @@
     "SECUROUTE.TE.TE120$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.TE120",
       "title": "Tronçons routiers TE120",
-      "description": "Tronçons routiers TE120",
+      "description": "Troncons routiers TE120; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.TE120",
-          "title": "SECUROUTE.TE.TE120 style"
+          "name": "RESEAU ROUTIER TE120",
+          "title": "RESEAU ROUTIER TE120"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.TE120"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.TE120-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -2125,27 +1684,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -2153,94 +1696,46 @@
     "SECUROUTE.TE.TE72$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.TE72",
       "title": "Tronçons routiers TE72",
-      "description": "Tronçons routiers TE72",
+      "description": "Troncons routiers TE72; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.5,
-          "right": 9.9,
-          "top": 51.3,
-          "bottom": 41.2
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.TE72",
-          "title": "SECUROUTE.TE.TE72 style"
+          "name": "RESEAU ROUTIER TE72",
+          "title": "RESEAU ROUTIER TE72"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.TE72"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.TE72-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -2248,27 +1743,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -2276,94 +1755,46 @@
     "SECUROUTE.TE.TE94$GEOPORTAIL:OGC:WMS": {
       "name": "SECUROUTE.TE.TE94",
       "title": "Tronçons routiers TE94",
-      "description": "Tronçons routiers TE94",
+      "description": "Troncons routiers TE94; Edition : 2024-12-15",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.4591677,
+        "maxScaleDenominator": 4367830.187724357,
         "bbox": {
-          "left": -5.625,
-          "right": 10.1953125,
-          "top": 51.9734375,
-          "bottom": 40.7359375
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wms-v/ows"
+          "transports": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-SECUROUTE.TE.TE94",
-          "title": "SECUROUTE.TE.TE94 style"
+          "name": "RESEAU ROUTIER TE94",
+          "title": "RESEAU ROUTIER TE94"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=SECUROUTE.TE.TE94"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SECUROUTE.TE.TE94-legend.png"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -2371,27 +1802,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
