@@ -19,10 +19,16 @@
         "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2023$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2024$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-ASP_PAC2024$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS",
+        "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE:graphe_bdortho$GEOPORTAIL:OGC:WFS",
@@ -2350,6 +2356,65 @@
         }
       ]
     },
+    "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.BDORTHO",
+      "title": "Ortho 50 cm",
+      "description": "Le produit BD ORTHO® est une collection de mosaïques d'orthophotographies numériques en couleurs ou en Infra Rouge couleurs, rectifiées dans la projection adaptée au territoire couvert.",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.72958385,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 80.0,
+          "bottom": -80.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "ORTHOIMAGERY.ORTHOPHOTOS.IRC$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC",
       "title": "BDORTHO en infrarouge fausses couleurs",
@@ -2362,6 +2427,65 @@
           "right": 180.0,
           "top": 80.0,
           "bottom": -80.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2023$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2023",
+      "title": "ortho-express IRC 2023",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte.",
+      "globalConstraint": {
+        "minScaleDenominator": 1066.364791925,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -2527,6 +2651,65 @@
         }
       ]
     },
+    "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023",
+      "title": "ortho-express 2023",
+      "description": "L’Ortho Express est une mosaïque d’ortho‐images numériques. Elle se différencie des autres produits orthophotographiques de l’IGN par le fait que, par souci de minimiser les délais de sa production, elle résulte d’un traitement massivement automatisé . L’Ortho Express vise en premier lieu à répondre à une exigence sur les délais de production. Il s’agit donc d’un produit dont les caractéristiques techniques sont contraintes par cette exigence forte.",
+      "globalConstraint": {
+        "minScaleDenominator": 1066.364791925,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -179.5,
+          "right": 179.5,
+          "top": 75.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024",
       "title": "Ortho-express 2024",
@@ -2539,6 +2722,188 @@
           "right": 179.5,
           "top": 75.0,
           "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES",
+      "title": "Orthophotographies PCRS TPM traitement ombre",
+      "description": "Orthophotographies très haute résolution avec traitements sur les ombres sur la communauté d'agglomérations de Toulon Provence Méditerrannée. Diffusion limitée.",
+      "globalConstraint": {
+        "minScaleDenominator": 178.571428571,
+        "maxScaleDenominator": 365714.285714286,
+        "bbox": {
+          "left": 5.74439,
+          "right": 6.53881,
+          "top": 43.2474,
+          "bottom": 42.9604
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:LAMB93",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "PCRS.LAMB93$GEOPORTAIL:OGC:WMS": {
+      "name": "PCRS.LAMB93",
+      "title": "PCRS",
+      "description": "Données du Plan Corps de Rue Simplifié",
+      "globalConstraint": {
+        "minScaleDenominator": 178.571428571,
+        "maxScaleDenominator": 11702857.142857142,
+        "bbox": {
+          "left": -5.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 40.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://geoservices.ign.fr/sites/default/files/2021-07/PCRS_1-0.xml"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS": {
+      "name": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes très haute résolution",
+      "description": "Orthophotographies aériennes d'une résolution de 10cm à 5cm selon disponibilité.",
+      "globalConstraint": {
+        "minScaleDenominator": 266.591197981,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": 0.0354912,
+          "right": 6.02353,
+          "top": 49.6969,
+          "bottom": 43.1533
         }
       },
       "serviceParams": {
