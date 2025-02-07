@@ -154,7 +154,10 @@ def _parseTMS(tms):
         last_tm = splitted.pop()
         fist_tm = splitted.pop()
         tms_name = "_".join(splitted)
-        tms_config["nativeResolutions"] = nativeResolutionsData[tms_name][int(fist_tm):int(last_tm) + 1]
+        try:
+            tms_config["nativeResolutions"] = nativeResolutionsData[tms_name][int(fist_tm):int(last_tm) + 1]
+        except TypeError:
+            print("unknown TMS: " + tms_name)
     else:
       tms_config["nativeResolutions"] = nativeResolutionsData[tms_id]
     matrix_ids = []
