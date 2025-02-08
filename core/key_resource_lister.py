@@ -52,7 +52,7 @@ def createKeyServiceLayersFile(
       }
       writer.writerow(newRow)
     with open("generic_keys.json", "w", newline='', encoding="utf-8") as generic_keys_file:
-      json.dump(generic_keys, generic_keys_file)
+      json.dump(list(set(generic_keys)), generic_keys_file)
 
 def keysServicesLayers(filePath="resources_by_key.csv"):
   rows = []
