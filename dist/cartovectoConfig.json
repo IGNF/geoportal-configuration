@@ -19,7 +19,52 @@
         "STATISTICALUNITS.IRIS$GEOPORTAIL:OGC:WMS",
         "STATISTICALUNITS.IRISGE$GEOPORTAIL:OGC:WMS",
         "TRACES.RANDO.HIVERNALE$GEOPORTAIL:OGC:WMS",
-        "VILLAGESETAPE$GEOPORTAIL:OGC:WMS"
+        "VILLAGESETAPE$GEOPORTAIL:OGC:WMS",
+        "STATISTICALUNITS.IRIS:contours_iris$GEOPORTAIL:OGC:WFS",
+        "TERAGIR:clef_verte$GEOPORTAIL:OGC:WFS",
+        "LABELS.TOURISTIQUES:communes_touristiques$GEOPORTAIL:OGC:WFS",
+        "STATISTICALUNITS.IRISGE:iris_ge$GEOPORTAIL:OGC:WFS",
+        "TERAGIR:pavillon_bleu$GEOPORTAIL:OGC:WFS",
+        "LABELS.TOURISTIQUES:stations_classees$GEOPORTAIL:OGC:WFS",
+        "LABELS.TOURISTIQUES:stations_vertes$GEOPORTAIL:OGC:WFS",
+        "TRACES.RANDO.HIVERNALE:traces_rando_hivernale$GEOPORTAIL:OGC:WFS",
+        "LABELS.TOURISTIQUES:villages_etape$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:aerodrome$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:arrondissement$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:bassin_versant_topographique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:cimetiere$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:commune$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:construction_lineaire$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:construction_ponctuelle$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:construction_surfacique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:cours_d_eau$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:departement$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:detail_hydrographique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:detail_orographique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:epci$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:equipement_de_transport$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:lieu_dit_non_habite$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:ligne_electrique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:limite_terre_mer$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:noeud_hydrographique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:occupation_du_sol$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:parc_ou_reserve$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:piste_d_aerodrome$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:plan_d_eau$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:region$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:reservoir$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:rond_point$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:route_numerotee_ou_nommee$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:surface_hydrographique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:transport_par_cable$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:troncon_de_route$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:troncon_hydrographique$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:voie_ferree_nommee$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:zone_d_activite_ou_d_interet$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_V5:zone_d_habitation$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -2223,6 +2268,1266 @@
           "current": false
         }
       ]
+    },
+    "STATISTICALUNITS.IRIS:contours_iris$GEOPORTAIL:OGC:WFS": {
+      "name": "STATISTICALUNITS.IRIS:contours_iris",
+      "title": "CONTOURS IRIS",
+      "description": "Contours géométriques des IRIS de l'INSEE",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.8098218,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38929713
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "TERAGIR:clef_verte$GEOPORTAIL:OGC:WFS": {
+      "name": "TERAGIR:clef_verte",
+      "title": "Clef verte",
+      "description": "Clef verte",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -151.875,
+          "right": 166.640625,
+          "top": 51.27109375,
+          "bottom": -22.475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "LABELS.TOURISTIQUES:communes_touristiques$GEOPORTAIL:OGC:WFS": {
+      "name": "LABELS.TOURISTIQUES:communes_touristiques",
+      "title": "Communes touristiques",
+      "description": "Communes touristiques",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -151.875,
+          "right": 166.640625,
+          "top": 51.27109375,
+          "bottom": -22.475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "STATISTICALUNITS.IRISGE:iris_ge$GEOPORTAIL:OGC:WFS": {
+      "name": "STATISTICALUNITS.IRISGE:iris_ge",
+      "title": "IRIS Grande Echelle",
+      "description": "Contours géométriques des IRIS de l'INSEE à grande échelle toute la France 2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.1533205,
+          "right": 55.8366539,
+          "top": 51.0889894,
+          "bottom": -21.3896307
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "TERAGIR:pavillon_bleu$GEOPORTAIL:OGC:WFS": {
+      "name": "TERAGIR:pavillon_bleu",
+      "title": "Pavillon bleu",
+      "description": "Pavillon bleu",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -151.875,
+          "right": 166.640625,
+          "top": 51.27109375,
+          "bottom": -22.475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "LABELS.TOURISTIQUES:stations_classees$GEOPORTAIL:OGC:WFS": {
+      "name": "LABELS.TOURISTIQUES:stations_classees",
+      "title": "Stations classées",
+      "description": "Stations classées",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -151.875,
+          "right": 166.640625,
+          "top": 51.27109375,
+          "bottom": -22.475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "LABELS.TOURISTIQUES:stations_vertes$GEOPORTAIL:OGC:WFS": {
+      "name": "LABELS.TOURISTIQUES:stations_vertes",
+      "title": "Stations vertes",
+      "description": "Stations vertes",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -151.875,
+          "right": 166.640625,
+          "top": 51.27109375,
+          "bottom": -22.475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "TRACES.RANDO.HIVERNALE:traces_rando_hivernale$GEOPORTAIL:OGC:WFS": {
+      "name": "TRACES.RANDO.HIVERNALE:traces_rando_hivernale",
+      "title": "Trace de randonnée hivernale (à ski, à raquette)",
+      "description": "Trace de randonnée hivernale (à ski, à raquette)",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 5.43859375,
+          "right": 7.09890625,
+          "top": 46.314335938,
+          "bottom": 44.199804688
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "LABELS.TOURISTIQUES:villages_etape$GEOPORTAIL:OGC:WFS": {
+      "name": "LABELS.TOURISTIQUES:villages_etape",
+      "title": "Villages étape",
+      "description": "Villages étape",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -151.875,
+          "right": 166.640625,
+          "top": 51.27109375,
+          "bottom": -22.475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:aerodrome$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:aerodrome",
+      "title": "aerodrome",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:arrondissement$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:arrondissement",
+      "title": "arrondissement",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:arrondissement_municipal",
+      "title": "arrondissement_municipal",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:bassin_versant_topographique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:bassin_versant_topographique",
+      "title": "bassin_versant_topographique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:cimetiere$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:cimetiere",
+      "title": "cimetiere",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:collectivite_territoriale$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:collectivite_territoriale",
+      "title": "collectivite_territoriale",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:commune$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:commune",
+      "title": "commune",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:commune_associee_ou_deleguee",
+      "title": "commune_associee_ou_deleguee",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:construction_lineaire$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:construction_lineaire",
+      "title": "construction_lineaire",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:construction_ponctuelle$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:construction_ponctuelle",
+      "title": "construction_ponctuelle",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:construction_surfacique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:construction_surfacique",
+      "title": "construction_surfacique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:cours_d_eau$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:cours_d_eau",
+      "title": "cours_d_eau",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:departement$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:departement",
+      "title": "departement",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:detail_hydrographique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:detail_hydrographique",
+      "title": "detail_hydrographique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:detail_orographique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:detail_orographique",
+      "title": "detail_orographique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:epci$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:epci",
+      "title": "epci",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:equipement_de_transport$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:equipement_de_transport",
+      "title": "equipement_de_transport",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:lieu_dit_non_habite$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:lieu_dit_non_habite",
+      "title": "lieu_dit_non_habite",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:ligne_electrique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:ligne_electrique",
+      "title": "ligne_electrique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:limite_terre_mer$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:limite_terre_mer",
+      "title": "limite_terre_mer",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:noeud_hydrographique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:noeud_hydrographique",
+      "title": "noeud_hydrographique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:occupation_du_sol$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:occupation_du_sol",
+      "title": "occupation_du_sol",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:parc_ou_reserve$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:parc_ou_reserve",
+      "title": "parc_ou_reserve",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:piste_d_aerodrome$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:piste_d_aerodrome",
+      "title": "piste_d_aerodrome",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:plan_d_eau$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:plan_d_eau",
+      "title": "plan_d_eau",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:region$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:region",
+      "title": "region",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:reservoir$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:reservoir",
+      "title": "reservoir",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:rond_point$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:rond_point",
+      "title": "rond_point",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:route_numerotee_ou_nommee$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:route_numerotee_ou_nommee",
+      "title": "route_numerotee_ou_nommee",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:surface_hydrographique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:surface_hydrographique",
+      "title": "surface_hydrographique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:transport_par_cable$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:transport_par_cable",
+      "title": "transport_par_cable",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:troncon_de_route$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:troncon_de_route",
+      "title": "troncon_de_route",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:troncon_hydrographique$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:troncon_hydrographique",
+      "title": "troncon_hydrographique",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:voie_ferree_nommee$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:voie_ferree_nommee",
+      "title": "voie_ferree_nommee",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:zone_d_activite_ou_d_interet$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:zone_d_activite_ou_d_interet",
+      "title": "zone_d_activite_ou_d_interet",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_V5:zone_d_habitation$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_V5:zone_d_habitation",
+      "title": "zone_d_habitation",
+      "description": "BD CARTO® V5",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     }
   },
   "tileMatrixSets": {

@@ -2,7 +2,13 @@
   "generalOptions": {
     "apiKeys": {
       "adresse": [
-        "BAN.DATA.GOUV$GEOPORTAIL:OGC:WMS"
+        "BAN.DATA.GOUV$GEOPORTAIL:OGC:WMS",
+        "BAN-PLUS:adresse$GEOPORTAIL:OGC:WFS",
+        "BAN-PLUS:lien_adresse_bati$GEOPORTAIL:OGC:WFS",
+        "BAN-PLUS:lien_adresse_parcelle$GEOPORTAIL:OGC:WFS",
+        "BAN-PLUS:lien_adresse_support$GEOPORTAIL:OGC:WFS",
+        "BAN-PLUS:lien_bati_parcelle$GEOPORTAIL:OGC:WFS",
+        "BAN.DATA.GOUV:ban$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -129,6 +135,174 @@
           "current": false
         }
       ]
+    },
+    "BAN-PLUS:adresse$GEOPORTAIL:OGC:WFS": {
+      "name": "BAN-PLUS:adresse",
+      "title": "BAN PLUS adresse",
+      "description": "Base Nationale Adresse PLUS : adresse",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.80792925,
+          "right": 55.83211236,
+          "top": 51.0823567,
+          "bottom": -21.38749008
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "adresse": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BAN-PLUS:lien_adresse_bati$GEOPORTAIL:OGC:WFS": {
+      "name": "BAN-PLUS:lien_adresse_bati",
+      "title": "BAN PLUS lien adresse bâti",
+      "description": "Base Nationale Adresse PLUS : lien adresse bâti",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.80792925,
+          "right": 55.83211236,
+          "top": 51.0823567,
+          "bottom": -21.38749008
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "adresse": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BAN-PLUS:lien_adresse_parcelle$GEOPORTAIL:OGC:WFS": {
+      "name": "BAN-PLUS:lien_adresse_parcelle",
+      "title": "BAN PLUS lien adresse parcelle",
+      "description": "Base Nationale Adresse PLUS : lien adresse parcelle",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.80792925,
+          "right": 55.83211236,
+          "top": 51.0823567,
+          "bottom": -21.38749008
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "adresse": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BAN-PLUS:lien_adresse_support$GEOPORTAIL:OGC:WFS": {
+      "name": "BAN-PLUS:lien_adresse_support",
+      "title": "BAN PLUS lien adresse support",
+      "description": "Base Nationale Adresse PLUS : lien adresse support",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.80792925,
+          "right": 55.83211236,
+          "top": 51.0823567,
+          "bottom": -21.38749008
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "adresse": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BAN-PLUS:lien_bati_parcelle$GEOPORTAIL:OGC:WFS": {
+      "name": "BAN-PLUS:lien_bati_parcelle",
+      "title": "BAN PLUS lien bâti parcelle",
+      "description": "Base Nationale Adresse PLUS : lien bâti parcelle",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.80792925,
+          "right": 55.83211236,
+          "top": 51.0823567,
+          "bottom": -21.38749008
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "adresse": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BAN.DATA.GOUV:ban$GEOPORTAIL:OGC:WFS": {
+      "name": "BAN.DATA.GOUV:ban",
+      "title": "Données Base Adresse Nationale",
+      "description": "Données Base Adresse Nationale",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -149.765625,
+          "right": 166.9921875,
+          "top": 51.27109375,
+          "bottom": -22.475
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "adresse": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     }
   }
 }
