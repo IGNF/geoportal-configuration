@@ -1,0 +1,22 @@
+name: update_annex
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 15 * * *"
+
+permissions: write-all
+
+jobs:
+  refresh_config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3 # checkout the repository content to github runner.
+      - name: execute script
+        shell: bash
+        env:
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+        run: |
+          bash update_annex/update_annex.sh $username $password
