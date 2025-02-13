@@ -109,8 +109,12 @@ def _parseLayer(layer, all_tms, key):
         for style in layer["Style"]:
             style_config = {}
             style_config["name"] = style["ows:Identifier"]
-            style_config["title"] = style["ows:Title"]
-            style_config["current"] = bool(style["@isDefault"])
+            if "ows:Title" in style.keys():
+                style_config["title"] = style["ows:Title"]
+            elif "Title" in style.keys():
+                style_config["title"] = style["Title"]
+            if "@isDefault" in style.keys():
+                style_config["current"] = bool(style["@isDefault"])
             style_config["url"] = None
 
             layer_config["styles"].append(style_config)
@@ -125,7 +129,8 @@ def _parseLayer(layer, all_tms, key):
 
                 layer_config["legends"].append(legend_config)
 
-    except KeyError:
+    except KeyError as e:
+        print(e)
         pass
 
     layer_config["formats"] = []
