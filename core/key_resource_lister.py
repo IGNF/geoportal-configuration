@@ -37,6 +37,8 @@ def createKeyServiceLayersFile(
         service = "WMS"
       elif row["Service"] == "WFS":
         service = "WFS"
+      elif row["Service"] == "TMS":
+        service = "TMS"
       else:
         continue
 
