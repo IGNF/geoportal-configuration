@@ -125,7 +125,10 @@ def _parseLayer(layer, all_tms, key):
                 legend_config = {}
                 legend_config["format"] = legend["@format"]
                 legend_config["url"] = legend["@xlink:href"]
-                legend_config["minScaleDenominator"] = legend["@minScaleDenominator"]
+                if "@minScaleDenominator" in legend.keys():
+                    legend_config["minScaleDenominator"] = legend["@minScaleDenominator"]
+                else:
+                    legend_config["minScaleDenominator"] = 1
 
                 layer_config["legends"].append(legend_config)
 

@@ -43,6 +43,8 @@ def parseVectorTiles(tileMaps, key, referer):
             minTileSet = responseText["TileMap"]["TileSet"][0]
             maxTileSet = responseText["TileMap"]["TileSet"][-1]
             try:
+                if not isinstance(responseText["Metadata"], list):
+                    responseText["Metadata"] = [responseText["Metadata"]]
                 styles = filter(lambda metadata : metadata["@type"] == "Other" and metadata["@mime-type"] == "application/json", responseText["Metadata"])
                 styles = list(styles)
             except KeyError:
