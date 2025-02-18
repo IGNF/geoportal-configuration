@@ -31,8 +31,7 @@
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_parcelle$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:localisant$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
-        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:subdivision_fiscale$GEOPORTAIL:OGC:WFS",
-        "PCI$GEOPORTAIL:GPP:TMS"
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:subdivision_fiscale$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -485,7 +484,13 @@
           "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": 1
+        }
+      ],
       "formats": [
         {
           "name": "image/png",
@@ -829,9 +834,45 @@
           "name": "bdparcellaire",
           "title": "BD Parcellaire Noire et transparente",
           "url": null
+        },
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "url": null
+        },
+        {
+          "name": "bdparcellaire_b",
+          "title": "BD Parcellaire blanc transparente",
+          "url": null
+        },
+        {
+          "name": "bdparcellaire_o",
+          "title": "BD Parcellaire orange transparente",
+          "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": 1
+        },
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": 1
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": 1
+        }
+      ],
       "formats": [
         {
           "name": "image/png",
@@ -2105,53 +2146,6 @@
       "styles": [],
       "legends": [],
       "formats": []
-    },
-    "PCI$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "parcellaire": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "PCI",
-      "title": "PCI",
-      "description": "Plan cadastral informatisé vecteur tuilé de la DGFIP",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "pci",
-          "title": "Style pci",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
-        },
-        {
-          "name": "noir_et_blanc",
-          "title": "Style noir_et_blanc",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -724011.531917197,
-          "right": 1095801.237496279,
-          "top": 6672646.821182753,
-          "bottom": 5009377.0856973175
-        },
-        "minScaleDenominator": null,
-        "maxScaleDenominator": null
-      },
-      "layerId": "PCI$GEOPORTAIL:GPP:TMS",
-      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {

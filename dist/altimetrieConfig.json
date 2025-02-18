@@ -34,8 +34,7 @@
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS",
-        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS",
-        "ISOHYPSE$GEOPORTAIL:GPP:TMS"
+        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -650,7 +649,13 @@
           "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": 1
+        }
+      ],
       "formats": [
         {
           "name": "image/png",
@@ -762,6 +767,11 @@
           "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": 1
         }
       ],
       "formats": [
@@ -2865,59 +2875,6 @@
       "styles": [],
       "legends": [],
       "formats": []
-    },
-    "ISOHYPSE$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "ISOHYPSE",
-      "title": "ISOHYPSE",
-      "description": "",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "isohypse_marron",
-          "title": "Style monochrome marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
-          "name": "isohypse_orange",
-          "title": "Style monochrome isohypse_orange",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
-          "name": "isohypse_multicolore",
-          "title": "Style monochrome isohypse_multicolore",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:4326",
-        "bbox": {
-          "left": -6.50390625000007,
-          "right": 40.9798980696202,
-          "top": 51.2894059027168,
-          "bottom": 9.84374999999994
-        },
-        "minScaleDenominator": null,
-        "maxScaleDenominator": null
-      },
-      "layerId": "ISOHYPSE$GEOPORTAIL:GPP:TMS",
-      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {

@@ -120,7 +120,13 @@
           "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
       "formats": [
         {
           "name": "image/png",
@@ -696,7 +702,13 @@
           "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1-legend.png",
+          "minScaleDenominator": 1
+        }
+      ],
       "formats": [
         {
           "name": "image/png",
@@ -2258,8 +2270,8 @@
         }
       },
       "name": "PLAN.IGN",
-      "title": "Plan IGN",
-      "description": "BDUni tuilée",
+      "title": "PLAN.IGN",
+      "description": "Plan IGN personnalisable",
       "formats": [
         {
           "current": true,
@@ -2268,50 +2280,56 @@
       ],
       "styles": [
         {
-          "name": "standard",
-          "title": "Style standard",
+          "name": "attenue",
+          "title": "attenue",
           "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
           "name": "classique",
-          "title": "Style classique",
+          "title": "classique",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "transparent",
-          "title": "Style transparent",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
-        },
-        {
           "name": "accentue",
-          "title": "Style accentue",
+          "title": "accentue",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
-          "name": "attenue",
-          "title": "Style attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
           "name": "gris",
-          "title": "Style en noir et blanc",
+          "title": "gris",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         },
         {
+          "name": "transparent",
+          "title": "transparent",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
+        },
+        {
           "name": "epure",
-          "title": "Style epure",
+          "title": "epure",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
           "name": "sans_toponymes",
-          "title": "Style sans toponymes",
+          "title": "sans_toponymes",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         }
@@ -2319,15 +2337,14 @@
       "globalConstraint": {
         "crs": "EPSG:3857",
         "bbox": {
-          "left": -724011.531917197,
-          "right": 1095801.237496279,
-          "top": 6672646.821182753,
-          "bottom": 5009377.0856973175
+          "left": -20026376.393709917,
+          "right": 20026376.393709917,
+          "top": 15538711.096309226,
+          "bottom": -15538711.096309224
         },
-        "minScaleDenominator": null,
-        "maxScaleDenominator": null
+        "minScaleDenominator": 559082264.0287179,
+        "maxScaleDenominator": 2132.7295838497826
       },
-      "layerId": "PLAN.IGN$GEOPORTAIL:GPP:TMS",
       "defaultProjection": "EPSG:3857"
     }
   },

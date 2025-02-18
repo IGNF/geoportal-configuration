@@ -81,8 +81,7 @@
         "BDTOPO_V3:zone_d_estran$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:zone_d_habitation$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:zone_de_vegetation$GEOPORTAIL:OGC:WFS",
-        "BDTOPO_V3:equipement_de_transport$GEOPORTAIL:OGC:WFS",
-        "BDTOPO$GEOPORTAIL:GPP:TMS"
+        "BDTOPO_V3:equipement_de_transport$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -4205,77 +4204,6 @@
       "styles": [],
       "legends": [],
       "formats": []
-    },
-    "BDTOPO$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "topographie": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "BDTOPO",
-      "title": "BDTOPO",
-      "description": "La BD TOPO® contient une description vectorielle, structurée en objets, des éléments du territoire et de ses infrastructures, de précision métrique.",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "classique",
-          "title": "Style issu du projet bd carto",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "bati",
-          "title": "Style thématique Bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
-          "name": "bati_date",
-          "title": "Style bati sur l'attribut date de construction",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "Style bati sur l'attribut étages",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "Style thématique hydrographie",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
-        },
-        {
-          "name": "routier",
-          "title": "Style thématique routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -724011.531917197,
-          "right": 1095801.237496279,
-          "top": 6672646.821182753,
-          "bottom": 5009377.0856973175
-        },
-        "minScaleDenominator": null,
-        "maxScaleDenominator": null
-      },
-      "layerId": "BDTOPO$GEOPORTAIL:GPP:TMS",
-      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {

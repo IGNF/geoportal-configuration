@@ -44,10 +44,6 @@
         "OCSGE.USAGE.2019$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2016$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2019$GEOPORTAIL:OGC:WMS"
-      ],
-      "osge": [
-        "OCSGE_2016$GEOPORTAIL:GPP:TMS",
-        "OCSGE_2019$GEOPORTAIL:GPP:TMS"
       ]
     }
   },
@@ -1178,7 +1174,13 @@
           "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
       "formats": [
         {
           "name": "image/png",
@@ -2084,7 +2086,13 @@
           "url": null
         }
       ],
-      "legends": [],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
       "formats": [
         {
           "name": "image/png",
@@ -3916,100 +3924,6 @@
           "current": false
         }
       ]
-    },
-    "OCSGE_2016$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "ocsge": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "OCSGE_2016",
-      "title": "OCSGE_2016",
-      "description": "",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "ocsge_couverture",
-          "title": "Style OCSGE Couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
-          "name": "ocsge_usage",
-          "title": "Style OCSGE Usage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:4326",
-        "bbox": {
-          "left": -6.50390625000007,
-          "right": 40.9798980696202,
-          "top": 51.2894059027168,
-          "bottom": 9.84374999999994
-        },
-        "minScaleDenominator": null,
-        "maxScaleDenominator": null
-      },
-      "layerId": "OCSGE_2016$GEOPORTAIL:GPP:TMS",
-      "defaultProjection": "EPSG:3857"
-    },
-    "OCSGE_2019$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "ocsge": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "OCSGE_2019",
-      "title": "OCSGE_2019",
-      "description": "",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "ocsge_couverture",
-          "title": "Style OCSGE Couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
-          "name": "ocsge_usage",
-          "title": "Style OCSGE Usage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:4326",
-        "bbox": {
-          "left": -6.50390625000007,
-          "right": 40.9798980696202,
-          "top": 51.2894059027168,
-          "bottom": 9.84374999999994
-        },
-        "minScaleDenominator": null,
-        "maxScaleDenominator": null
-      },
-      "layerId": "OCSGE_2019$GEOPORTAIL:GPP:TMS",
-      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {
