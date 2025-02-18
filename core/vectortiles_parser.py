@@ -47,6 +47,18 @@ def parseVectorTiles(tileMaps, key, referer):
             except KeyError:
                 styles = []
 
+        finalStyles = []
+        current = True
+        for style in styles:
+            finalStyles.append({
+                "name": style["@href"].split("/")[-1].split(".")[0],
+                "title": style["@href"].split("/")[-1].split(".")[0],
+                "current": current,
+                "url": style["@href"]
+                })
+            current = False
+
+
         vector_tile_config["generalOptions"]["apiKeys"][key].append(layerName + "$GEOPORTAIL:GPP:TMS")
         vector_tile_config["layers"][layerName + "$GEOPORTAIL:GPP:TMS"] = {
             "hidden": True,
@@ -67,13 +79,7 @@ def parseVectorTiles(tileMaps, key, referer):
                     "name": "application/x-protobuf"
                 }
             ],
-            "styles": [{
-                "name": style["@href"].split("/")[-1].split(".")[0],
-                "title": style["@href"].split("/")[-1].split(".")[0],
-                "url": style["@href"]
-                }
-                for style in styles
-            ],
+            "styles": finalStyles,
             "globalConstraint": {
                 "crs": "EPSG:3857",
                 "bbox": {
