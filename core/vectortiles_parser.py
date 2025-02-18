@@ -74,7 +74,7 @@ def parseVectorTiles(tileMaps, key, referer):
                 }
                 for style in styles
             ],
-            "globalCOnstraint": {
+            "globalConstraint": {
                 "crs": "EPSG:3857",
                 "bbox": {
                     "left": float(bbox["@minx"]),
