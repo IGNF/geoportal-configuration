@@ -9,7 +9,6 @@
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
-        "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
@@ -788,129 +787,6 @@
         }
       ]
     },
-    "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS": {
-      "name": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
-      "title": "Graphe de mosaïquage France Entière de la BDORTHO.",
-      "description": "Graphe de mosaïquage France Entière de la BDORTHO.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -178.18541496,
-          "right": 55.85384065,
-          "top": 51.11183578,
-          "bottom": -21.42730308
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "essentiels": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE",
-          "title": "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
     "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS": {
       "name": "BDTOPO_V3:batiment",
       "title": "BDTOPO : Bâtiments",
@@ -1016,28 +892,10 @@
       ],
       "styles": [
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
+          "name": "toponymes",
+          "title": "toponymes",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
-        },
-        {
-          "name": "attenue",
-          "title": "attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
           "name": "standard",
@@ -1052,10 +910,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
-          "name": "toponymes",
-          "title": "toponymes",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
           "name": "accentue",
@@ -1064,10 +922,28 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
+          "name": "attenue",
+          "title": "attenue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
           "name": "transparent",
           "title": "transparent",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         }
       ],
       "globalConstraint": {
