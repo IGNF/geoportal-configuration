@@ -1,8 +1,746 @@
 {
   "generalOptions": {
     "apiKeys": {
-      "geodesie": []
+      "geodesie": [
+        "BDGEODESIQUE-RGP_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-RN_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE-TRIPLET_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
+        "BDGEODESIQUE:rgp$GEOPORTAIL:OGC:WFS",
+        "BDGEODESIQUE:rn$GEOPORTAIL:OGC:WFS",
+        "BDGEODESIQUE:site$GEOPORTAIL:OGC:WFS",
+        "BDGEODESIQUE:triplet$GEOPORTAIL:OGC:WFS"
+      ]
     }
   },
-  "layers": {}
+  "layers": {
+    "BDGEODESIQUE-RGP_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-RGP_BDD-POI_WLD",
+      "title": "Réseau GNSS permanent",
+      "description": "Réseau de stations permanentes permettant un accès qualifié aux données d'observation des constellations de satellites de positionnement (GPS, GLONASS, Galileo …).",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-BDGEODESIQUE-RGP_BDD-POI_WLD",
+          "title": "BDGEODESIQUE-RGP_BDD-POI_WLD style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-RGP_BDD-POI_WLD"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-RN_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-RN_BDD-POI_WLD",
+      "title": "Réseau de nivellement",
+      "description": "Réseau de près de quatre-cent mille repères matérialisés répartis en mailles le long des voies de communication et dont l'altitude est déterminée avec une très grande précision.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-BDGEODESIQUE-RN_BDD-POI_WLD",
+          "title": "BDGEODESIQUE-RN_BDD-POI_WLD style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-RN_BDD-POI_WLD"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD",
+      "title": "Réseau de base français (RBF)",
+      "description": "Réseau de bornes et repères, constitué d’un millier de sites déterminés et entretenus avec exactitude en coordonnées, altitude et gravimétrie.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-BDGEODESIQUE-SITE-RBF_BDD-POI_WLD",
+          "title": "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-SITE-RBF_BDD-POI_WLD"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD",
+      "title": "Réseau de détail français (RDF)",
+      "description": "Réseau de bornes et repères, constitué d’environ soixante-quinze mille sites connus en coordonnées et dont seule l’information documentaire est entretenue.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-BDGEODESIQUE-SITE-RDF_BDD-POI_WLD",
+          "title": "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-SITE-RDF_BDD-POI_WLD"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE-TRIPLET_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
+      "name": "BDGEODESIQUE-TRIPLET_BDD-POI_WLD",
+      "title": "Triplets de repères de nivellement",
+      "description": "Composante du réseau de nivellement constituée de groupes d’au moins trois repères faisant l’objet d’un entretien régulier. Cette composante est en cours de constitution et comprendra environ treize mille cinq-cents triplets.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-BDGEODESIQUE-TRIPLET_BDD-POI_WLD",
+          "title": "BDGEODESIQUE-TRIPLET_BDD-POI_WLD style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-TRIPLET_BDD-POI_WLD"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "BDGEODESIQUE:rgp$GEOPORTAIL:OGC:WFS": {
+      "name": "BDGEODESIQUE:rgp",
+      "title": "BDGéodésique rgp",
+      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDGEODESIQUE:rn$GEOPORTAIL:OGC:WFS": {
+      "name": "BDGEODESIQUE:rn",
+      "title": "BDGéodésique rl",
+      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDGEODESIQUE:site$GEOPORTAIL:OGC:WFS": {
+      "name": "BDGEODESIQUE:site",
+      "title": "BDGéodésique site",
+      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDGEODESIQUE:triplet$GEOPORTAIL:OGC:WFS": {
+      "name": "BDGEODESIQUE:triplet",
+      "title": "BDGéodésique triplet",
+      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -178.180792,
+          "right": 140.009732,
+          "top": 51.81018838,
+          "bottom": -66.68794411
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    }
+  }
 }
