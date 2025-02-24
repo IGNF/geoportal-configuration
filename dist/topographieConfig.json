@@ -81,7 +81,8 @@
         "BDTOPO_V3:zone_d_estran$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:zone_d_habitation$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:zone_de_vegetation$GEOPORTAIL:OGC:WFS",
-        "BDTOPO_V3:equipement_de_transport$GEOPORTAIL:OGC:WFS"
+        "BDTOPO_V3:equipement_de_transport$GEOPORTAIL:OGC:WFS",
+        "BDTOPO$GEOPORTAIL:GPP:TMS"
       ]
     }
   },
@@ -4204,6 +4205,88 @@
       "styles": [],
       "legends": [],
       "formats": []
+    },
+    "BDTOPO$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "topographie": "https://data.geopf.fr/tms/1.0.0/"
+        }
+      },
+      "name": "BDTOPO",
+      "title": "BDTOPO",
+      "description": "La BD TOPO® contient une description vectorielle, structurée en objets, des éléments du territoire et de ses infrastructures, de précision métrique. Edition 2024-12-15",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+        },
+        {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "routier",
+          "title": "routier",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": "EPSG:3857",
+        "bbox": {
+          "left": -7031136.485883979,
+          "right": 6216852.822974959,
+          "top": 6638861.656508054,
+          "bottom": -2439640.627576065
+        },
+        "minScaleDenominator": 34942641.50179486,
+        "maxScaleDenominator": 1066.364791924893
+      },
+      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {
