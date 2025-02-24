@@ -9,9 +9,6 @@
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
-        "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS",
-        "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS",
-        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ]
     }
@@ -787,90 +784,6 @@
         }
       ]
     },
-    "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS": {
-      "name": "BDTOPO_V3:batiment",
-      "title": "BDTOPO : Bâtiments",
-      "description": "Bâtiments − BDTOPO",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.9734375,
-          "bottom": -21.77265625
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "essentiels": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS": {
-      "name": "BDTOPO_V3:troncon_de_route",
-      "title": "BDTOPO : Tronçons de route",
-      "description": "Tronçons de route − BDTOPO",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.9734375,
-          "bottom": -21.77265625
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "essentiels": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS": {
-      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle",
-      "title": "PCI Vecteur : Parcelles",
-      "description": "Parcelles",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "essentiels": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -892,10 +805,10 @@
       ],
       "styles": [
         {
-          "name": "toponymes",
-          "title": "toponymes",
+          "name": "attenue",
+          "title": "attenue",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
           "name": "standard",
@@ -904,10 +817,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
-          "name": "epure",
-          "title": "epure",
+          "name": "toponymes",
+          "title": "toponymes",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
           "name": "classique",
@@ -922,10 +835,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
-          "name": "attenue",
-          "title": "attenue",
+          "name": "gris",
+          "title": "gris",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         },
         {
           "name": "transparent",
@@ -934,10 +847,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
-          "name": "gris",
-          "title": "gris",
+          "name": "epure",
+          "title": "epure",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
           "name": "sans_toponymes",

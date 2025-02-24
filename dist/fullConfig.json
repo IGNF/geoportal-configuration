@@ -1161,8 +1161,8 @@
         "ADMINEXPRESS-COG.LATEST:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:departement$GEOPORTAIL:OGC:WFS",
         "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:departement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:epci$GEOPORTAIL:OGC:WFS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS",
+        "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:epci$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.LATEST:epci$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:epci$GEOPORTAIL:OGC:WFS",
         "test_geothermie_gpkg_10-02-2025_wfs:Energie_potentiel_de_geothermie_a_la_commune$GEOPORTAIL:OGC:WFS",
@@ -104867,18 +104867,18 @@
       "legends": [],
       "formats": []
     },
-    "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:epci$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:epci",
+    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS": {
+      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci",
       "title": "EPCI",
-      "description": "EPCI",
+      "description": "Limites administrative mises à jour en continu",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -61.80983861776941,
-          "right": 55.83665387473344,
-          "top": 51.088989440786094,
-          "bottom": -21.389630761010356
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
         }
       },
       "serviceParams": {
@@ -104895,18 +104895,18 @@
       "legends": [],
       "formats": []
     },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci",
+    "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:epci$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:epci",
       "title": "EPCI",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "EPCI",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
+          "left": -61.80983861776941,
+          "right": 55.83665387473344,
+          "top": 51.088989440786094,
+          "bottom": -21.389630761010356
         }
       },
       "serviceParams": {
@@ -113064,10 +113064,10 @@
       ],
       "styles": [
         {
-          "name": "attenue",
-          "title": "attenue",
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "gris",
@@ -113082,22 +113082,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "transparent",
-          "title": "transparent",
+          "name": "attenue",
+          "title": "attenue",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
-        },
-        {
-          "name": "accentue",
-          "title": "accentue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
-        },
-        {
-          "name": "toponymes",
-          "title": "toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
           "name": "standard",
@@ -113106,16 +113094,28 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
           "name": "epure",
           "title": "epure",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "accentue",
+          "title": "accentue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+        },
+        {
+          "name": "transparent",
+          "title": "transparent",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         }
       ],
       "globalConstraint": {
