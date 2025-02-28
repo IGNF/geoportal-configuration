@@ -2,31 +2,32 @@
   "generalOptions": {
     "apiKeys": {
       "geodesie": [
-        "BDGEODESIQUE-RGP_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
-        "BDGEODESIQUE-RN_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
-        "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
-        "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
-        "BDGEODESIQUE-TRIPLET_BDD-POI_WLD$GEOPORTAIL:OGC:WMS",
-        "BDGEODESIQUE:rgp$GEOPORTAIL:OGC:WFS",
-        "BDGEODESIQUE:rn$GEOPORTAIL:OGC:WFS",
-        "BDGEODESIQUE:site$GEOPORTAIL:OGC:WFS",
-        "BDGEODESIQUE:triplet$GEOPORTAIL:OGC:WFS"
+        "IGNF_GEODESIE-RBF$GEOPORTAIL:OGC:WMS",
+        "IGNF_GEODESIE-RDF$GEOPORTAIL:OGC:WMS",
+        "IGNF_GEODESIE-RGP$GEOPORTAIL:OGC:WMS",
+        "IGNF_GEODESIE-RN$GEOPORTAIL:OGC:WMS",
+        "IGNF_GEODESIE-TRIPLET$GEOPORTAIL:OGC:WMS",
+        "IGNF_GEODESIE:triplet$GEOPORTAIL:OGC:WFS",
+        "IGNF_GEODESIE:point-rdf$GEOPORTAIL:OGC:WFS",
+        "IGNF_GEODESIE:point-rbf$GEOPORTAIL:OGC:WFS",
+        "IGNF_GEODESIE:rn$GEOPORTAIL:OGC:WFS",
+        "IGNF_GEODESIE:rgp$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
   "layers": {
-    "BDGEODESIQUE-RGP_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
-      "name": "BDGEODESIQUE-RGP_BDD-POI_WLD",
-      "title": "Réseau GNSS permanent",
-      "description": "Réseau de stations permanentes permettant un accès qualifié aux données d'observation des constellations de satellites de positionnement (GPS, GLONASS, Galileo …).",
+    "IGNF_GEODESIE-RBF$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_GEODESIE-RBF",
+      "title": "RBF",
+      "description": "Réseau de points matérialisés dont les coordonnées, altitude et gravimétrie sont connues avec précision",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -41,14 +42,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-BDGEODESIQUE-RGP_BDD-POI_WLD",
-          "title": "BDGEODESIQUE-RGP_BDD-POI_WLD style"
+          "name": "default-style-IGNF_GEODESIE-RBF",
+          "title": "IGNF_GEODESIE-RBF style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-RGP_BDD-POI_WLD"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_GEODESIE-RBF"
         }
       ],
       "formats": [
@@ -138,18 +139,18 @@
         }
       ]
     },
-    "BDGEODESIQUE-RN_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
-      "name": "BDGEODESIQUE-RN_BDD-POI_WLD",
-      "title": "Réseau de nivellement",
-      "description": "Réseau de près de quatre-cent mille repères matérialisés répartis en mailles le long des voies de communication et dont l'altitude est déterminée avec une très grande précision.",
+    "IGNF_GEODESIE-RDF$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_GEODESIE-RDF",
+      "title": "RDF",
+      "description": "Réseau de points matérialisés dont les coordonnées sont connues avec précision",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -164,14 +165,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-BDGEODESIQUE-RN_BDD-POI_WLD",
-          "title": "BDGEODESIQUE-RN_BDD-POI_WLD style"
+          "name": "default-style-IGNF_GEODESIE-RDF",
+          "title": "IGNF_GEODESIE-RDF style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-RN_BDD-POI_WLD"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_GEODESIE-RDF"
         }
       ],
       "formats": [
@@ -261,18 +262,18 @@
         }
       ]
     },
-    "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
-      "name": "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD",
-      "title": "Réseau de base français (RBF)",
-      "description": "Réseau de bornes et repères, constitué d’un millier de sites déterminés et entretenus avec exactitude en coordonnées, altitude et gravimétrie.",
+    "IGNF_GEODESIE-RGP$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_GEODESIE-RGP",
+      "title": "RGP",
+      "description": "Réseau de stations permanentes permettant un accès qualifié aux données d'observation des constellations de satellites de positionnement (GPS, GLONASS, Galileo …)",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -287,14 +288,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-BDGEODESIQUE-SITE-RBF_BDD-POI_WLD",
-          "title": "BDGEODESIQUE-SITE-RBF_BDD-POI_WLD style"
+          "name": "default-style-IGNF_GEODESIE-RGP",
+          "title": "IGNF_GEODESIE-RGP style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-SITE-RBF_BDD-POI_WLD"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_GEODESIE-RGP"
         }
       ],
       "formats": [
@@ -384,18 +385,18 @@
         }
       ]
     },
-    "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
-      "name": "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD",
-      "title": "Réseau de détail français (RDF)",
-      "description": "Réseau de bornes et repères, constitué d’environ soixante-quinze mille sites connus en coordonnées et dont seule l’information documentaire est entretenue.",
+    "IGNF_GEODESIE-RN$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_GEODESIE-RN",
+      "title": "RN",
+      "description": "Réseau de repères matérialisés répartis en mailles le long des voies de communication et dont l'altitude est déterminée avec une très grande précision.",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -410,14 +411,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-BDGEODESIQUE-SITE-RDF_BDD-POI_WLD",
-          "title": "BDGEODESIQUE-SITE-RDF_BDD-POI_WLD style"
+          "name": "default-style-IGNF_GEODESIE-RN",
+          "title": "IGNF_GEODESIE-RN style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-SITE-RDF_BDD-POI_WLD"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_GEODESIE-RN"
         }
       ],
       "formats": [
@@ -507,18 +508,18 @@
         }
       ]
     },
-    "BDGEODESIQUE-TRIPLET_BDD-POI_WLD$GEOPORTAIL:OGC:WMS": {
-      "name": "BDGEODESIQUE-TRIPLET_BDD-POI_WLD",
-      "title": "Triplets de repères de nivellement",
-      "description": "Composante du réseau de nivellement constituée de groupes d’au moins trois repères faisant l’objet d’un entretien régulier. Cette composante est en cours de constitution et comprendra environ treize mille cinq-cents triplets.",
+    "IGNF_GEODESIE-TRIPLET$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_GEODESIE-TRIPLET",
+      "title": "TRIPLET",
+      "description": "Composante du réseau de nivellement constituée de groupes d’au moins trois repères faisant l’objet d’un entretien régulier",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -533,14 +534,14 @@
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-BDGEODESIQUE-TRIPLET_BDD-POI_WLD",
-          "title": "BDGEODESIQUE-TRIPLET_BDD-POI_WLD style"
+          "name": "default-style-IGNF_GEODESIE-TRIPLET",
+          "title": "IGNF_GEODESIE-TRIPLET style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=BDGEODESIQUE-TRIPLET_BDD-POI_WLD"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_GEODESIE-TRIPLET"
         }
       ],
       "formats": [
@@ -630,18 +631,18 @@
         }
       ]
     },
-    "BDGEODESIQUE:rgp$GEOPORTAIL:OGC:WFS": {
-      "name": "BDGEODESIQUE:rgp",
-      "title": "BDGéodésique rgp",
-      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+    "IGNF_GEODESIE:triplet$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_GEODESIE:triplet",
+      "title": "Composante du réseau de nivellement constituée de groupes d’au moins trois repères faisant l’objet d’un entretien régulier",
+      "description": "TRIPLET",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -658,18 +659,18 @@
       "legends": [],
       "formats": []
     },
-    "BDGEODESIQUE:rn$GEOPORTAIL:OGC:WFS": {
-      "name": "BDGEODESIQUE:rn",
-      "title": "BDGéodésique rl",
-      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+    "IGNF_GEODESIE:point-rdf$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_GEODESIE:point-rdf",
+      "title": "Réseau de points matérialisés dont les coordonnées sont connues avec précision",
+      "description": "RDF",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -686,18 +687,18 @@
       "legends": [],
       "formats": []
     },
-    "BDGEODESIQUE:site$GEOPORTAIL:OGC:WFS": {
-      "name": "BDGEODESIQUE:site",
-      "title": "BDGéodésique site",
-      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+    "IGNF_GEODESIE:point-rbf$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_GEODESIE:point-rbf",
+      "title": "Réseau de points matérialisés dont les coordonnées, altitude et gravimétrie sont connues avec précision",
+      "description": "RBF",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
@@ -714,18 +715,46 @@
       "legends": [],
       "formats": []
     },
-    "BDGEODESIQUE:triplet$GEOPORTAIL:OGC:WFS": {
-      "name": "BDGEODESIQUE:triplet",
-      "title": "BDGéodésique triplet",
-      "description": "Fiches signalétiques des repères de nivellement (points matérialisés dont l'altitude est déterminée avec précision) et des sites géodésiques (ensembles de points matérialisés dont les coordonnées, bidimensionnelles ou tridimensionnelles suivant le type de point, sont connues avec précision). ",
+    "IGNF_GEODESIE:rn$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_GEODESIE:rn",
+      "title": "Réseau de repères matérialisés répartis en mailles le long des voies de communication et dont l'altitude est déterminée avec une très grande précision",
+      "description": "REPERE",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -178.180792,
-          "right": 140.009732,
-          "top": 51.81018838,
-          "bottom": -66.68794411
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "geodesie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_GEODESIE:rgp$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_GEODESIE:rgp",
+      "title": "Réseau de stations permanentes permettant un accès qualifié aux données d'observation des constellations de satellites de positionnement (GPS, GLONASS, Galileo …)",
+      "description": "RGP",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -75.0
         }
       },
       "serviceParams": {
