@@ -8,6 +8,17 @@
         "BDCARTO_ETAT-MAJOR.NIVEAU3$GEOPORTAIL:OGC:WMS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:a_1_limite_administrative$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:a_2_surface_administrative$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:b_2_troncon_de_voie_ferree$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:b_3_troncon_de_cours_d_eau$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:c_1_1_ocs_ancien$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:c_1_2_ocs_ancien_sans_bati$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:c_2_1_batiment$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:c_2_2_batiment_hors_zone_urbaine$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:c_3_zone_urbaine$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU4:z_1_chantier$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU3:a_2_surface_administrative$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU3:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS",
@@ -35,7 +46,7 @@
           "left": -5.5,
           "right": 10.0,
           "top": 52.0,
-          "bottom": 42.0
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -69,49 +80,49 @@
           },
           "9": {
             "minTileRow": "169",
-            "maxTileRow": "190",
+            "maxTileRow": "191",
             "minTileCol": "248",
             "maxTileCol": "270"
           },
           "10": {
             "minTileRow": "338",
-            "maxTileRow": "380",
+            "maxTileRow": "383",
             "minTileCol": "496",
             "maxTileCol": "540"
           },
           "11": {
             "minTileRow": "676",
-            "maxTileRow": "760",
+            "maxTileRow": "767",
             "minTileCol": "992",
             "maxTileCol": "1080"
           },
           "12": {
             "minTileRow": "1352",
-            "maxTileRow": "1520",
+            "maxTileRow": "1535",
             "minTileCol": "1985",
             "maxTileCol": "2161"
           },
           "13": {
             "minTileRow": "2705",
-            "maxTileRow": "3041",
+            "maxTileRow": "3071",
             "minTileCol": "3970",
             "maxTileCol": "4323"
           },
           "14": {
             "minTileRow": "5411",
-            "maxTileRow": "6082",
+            "maxTileRow": "6142",
             "minTileCol": "7941",
             "maxTileCol": "8647"
           },
           "15": {
             "minTileRow": "10823",
-            "maxTileRow": "12164",
+            "maxTileRow": "12285",
             "minTileCol": "15883",
             "maxTileCol": "17294"
           },
           "16": {
             "minTileRow": "21647",
-            "maxTileRow": "24328",
+            "maxTileRow": "24571",
             "minTileCol": "31766",
             "maxTileCol": "34588"
           }
@@ -543,6 +554,314 @@
         }
       ]
     },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:a_1_limite_administrative$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:a_1_limite_administrative",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:a_2_surface_administrative$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:a_2_surface_administrative",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:b_1_troncon_de_route",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:b_2_troncon_de_voie_ferree$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:b_2_troncon_de_voie_ferree",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:b_3_troncon_de_cours_d_eau$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:b_3_troncon_de_cours_d_eau",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:c_1_1_ocs_ancien$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:c_1_1_ocs_ancien",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:c_1_2_ocs_ancien_sans_bati$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:c_1_2_ocs_ancien_sans_bati",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:c_2_1_batiment$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:c_2_1_batiment",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:c_2_2_batiment_hors_zone_urbaine$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:c_2_2_batiment_hors_zone_urbaine",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:c_3_zone_urbaine$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:c_3_zone_urbaine",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU4:z_1_chantier$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:z_1_chantier",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative$GEOPORTAIL:OGC:WFS": {
       "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative",
       "title": "BD CARTO Etat-major",
@@ -552,9 +871,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -580,9 +899,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -608,9 +927,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -636,9 +955,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -664,9 +983,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -692,9 +1011,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -720,9 +1039,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -748,9 +1067,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -776,9 +1095,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -804,9 +1123,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
@@ -832,9 +1151,9 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.74875,
-          "right": 8.79875,
-          "top": 51.2346875,
-          "bottom": 42.1259375
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
         }
       },
       "serviceParams": {
