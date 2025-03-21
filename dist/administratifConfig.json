@@ -104,13 +104,13 @@
         "ADMINEXPRESS-COG.2020:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2021:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2021:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
-        "ADMINEXPRESS-COG.2017:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2024:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2024:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2023:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2023:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2022:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2022:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG.2017:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
@@ -120,10 +120,10 @@
         "ADMINEXPRESS-COG.2019:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2021:departement$GEOPORTAIL:OGC:WFS",
-        "ADMINEXPRESS-COG.2017:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2024:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2023:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2022:departement$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG.2017:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:departement$GEOPORTAIL:OGC:WFS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.LATEST:epci$GEOPORTAIL:OGC:WFS",
@@ -142,10 +142,10 @@
         "ADMINEXPRESS-COG.2019:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2021:region$GEOPORTAIL:OGC:WFS",
-        "ADMINEXPRESS-COG.2017:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2024:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2023:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2022:region$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG.2017:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:region$GEOPORTAIL:OGC:WFS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
       ]
@@ -4868,34 +4868,6 @@
       "legends": [],
       "formats": []
     },
-    "ADMINEXPRESS-COG.2017:commune$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMINEXPRESS-COG.2017:commune",
-      "title": "Commune COG",
-      "description": "Commune ADMINEXPRESS COG",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.0847418,
-          "right": 55.83665387,
-          "top": 51.08898944,
-          "bottom": -21.38963076
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "ADMINEXPRESS-COG.2024:commune$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2024:commune",
       "title": "Commune COG",
@@ -5038,6 +5010,34 @@
     },
     "ADMINEXPRESS-COG.2022:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2022:commune_associee_ou_deleguee",
+      "title": "Commune COG",
+      "description": "Commune ADMINEXPRESS COG",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ADMINEXPRESS-COG.2017:commune$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG.2017:commune",
       "title": "Commune COG",
       "description": "Commune ADMINEXPRESS COG",
       "globalConstraint": {
@@ -5316,34 +5316,6 @@
       "legends": [],
       "formats": []
     },
-    "ADMINEXPRESS-COG.2017:departement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMINEXPRESS-COG.2017:departement",
-      "title": "Département COG",
-      "description": "Departement ADMINEXPRESS COG",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.0847418,
-          "right": 55.83665387,
-          "top": 51.08898944,
-          "bottom": -21.38963076
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "ADMINEXPRESS-COG.2024:departement$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2024:departement",
       "title": "Département COG",
@@ -5402,6 +5374,34 @@
     },
     "ADMINEXPRESS-COG.2022:departement$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2022:departement",
+      "title": "Département COG",
+      "description": "Departement ADMINEXPRESS COG",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ADMINEXPRESS-COG.2017:departement$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG.2017:departement",
       "title": "Département COG",
       "description": "Departement ADMINEXPRESS COG",
       "globalConstraint": {
@@ -5932,34 +5932,6 @@
       "legends": [],
       "formats": []
     },
-    "ADMINEXPRESS-COG.2017:region$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMINEXPRESS-COG.2017:region",
-      "title": "Région COG",
-      "description": "Région ADMINEXPRESS COG",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.0847418,
-          "right": 55.83665387,
-          "top": 51.08898944,
-          "bottom": -21.38963076
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "ADMINEXPRESS-COG.2024:region$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2024:region",
       "title": "Région COG",
@@ -6018,6 +5990,34 @@
     },
     "ADMINEXPRESS-COG.2022:region$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2022:region",
+      "title": "Région COG",
+      "description": "Région ADMINEXPRESS COG",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ADMINEXPRESS-COG.2017:region$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG.2017:region",
       "title": "Région COG",
       "description": "Région ADMINEXPRESS COG",
       "globalConstraint": {
