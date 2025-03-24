@@ -43,12 +43,12 @@
         "ADMINEXPRESS-COG.2019:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:arrondissement_departemental$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG.2020:canton$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:chef_lieu$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:epci$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2020:region$GEOPORTAIL:OGC:WFS",
-        "ADMINEXPRESS-COG.2020:canton$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2021:arrondissement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2021:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2021:canton$GEOPORTAIL:OGC:WFS",
@@ -2558,6 +2558,34 @@
       "legends": [],
       "formats": []
     },
+    "ADMINEXPRESS-COG.2020:canton$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG.2020:canton",
+      "title": "ADMINEXPRESS COG 2020 Canton",
+      "description": "ADMINEXPRESS COG 2020 Canton",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "ADMINEXPRESS-COG.2020:chef_lieu$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2020:chef_lieu",
       "title": "ADMINEXPRESS COG 2020 Chef-lieu",
@@ -2673,35 +2701,7 @@
     "ADMINEXPRESS-COG.2020:region$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG.2020:region",
       "title": "ADMINEXPRESS COG 2020 Région",
-      "description": "ADMINEXPRESS COG 2020 canton",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.0847418,
-          "right": 55.83665387,
-          "top": 51.08898944,
-          "bottom": -21.38963076
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMINEXPRESS-COG.2020:canton$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMINEXPRESS-COG.2020:canton",
-      "title": "ADMINEXPRESS COG 2020 canton",
-      "description": "ADMINEXPRESS COG 2020 canton",
+      "description": "ADMINEXPRESS COG 2020 Région",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
