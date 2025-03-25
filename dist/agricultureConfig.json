@@ -44,7 +44,28 @@
         "LANDUSE.AGRICULTURE2022$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE2023$GEOPORTAIL:OGC:WMS",
         "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS",
-        "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS"
+        "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS",
+        "HYDROGRAPHY.BCAE.LATEST:bcae_cours_eau$GEOPORTAIL:OGC:WFS",
+        "PRAIRIES.SENSIBLES.BCAE:prairies_sensibles$GEOPORTAIL:OGC:WFS",
+        "RPG.2010:rpg_2010$GEOPORTAIL:OGC:WFS",
+        "RPG.2013:rpg_2013$GEOPORTAIL:OGC:WFS",
+        "RPG.2015:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2016:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2017:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2018:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2019:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2020:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2021:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2022:codes_cultures$GEOPORTAIL:OGC:WFS",
+        "RPG.2022:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.2023:codes_cultures$GEOPORTAIL:OGC:WFS",
+        "RPG.2023:ilots_de_reference$GEOPORTAIL:OGC:WFS",
+        "RPG.2023:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.LATEST:codes_cultures$GEOPORTAIL:OGC:WFS",
+        "RPG.LATEST:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.LATEST:ilots_de_reference$GEOPORTAIL:OGC:WFS",
+        "RPG.2011:rpg_2011$GEOPORTAIL:OGC:WFS",
+        "RPG.2012:rpg_2012$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -3899,6 +3920,594 @@
           "current": false
         }
       ]
+    },
+    "HYDROGRAPHY.BCAE.LATEST:bcae_cours_eau$GEOPORTAIL:OGC:WFS": {
+      "name": "HYDROGRAPHY.BCAE.LATEST:bcae_cours_eau",
+      "title": "Cours d'eau BCAE dernière édition",
+      "description": "Le code rural et de la pêche maritime prévoit que les agriculteurs qui demandent des aides de la PAC implantent des bandes enherbées le long de certains cours d'eau au titre des bonnes conditions agricoles et environnementales. Cette carte est en vigueur du 1er janvier 2024 au 31 décembre 2024. Pour les départements non métropolitains, veuillez-vous référer aux arrêtés préfectoraux relatifs aux BCAE.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.51063483,
+          "right": 9.65203797,
+          "top": 50.9519425,
+          "bottom": 41.35555653
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "PRAIRIES.SENSIBLES.BCAE:prairies_sensibles$GEOPORTAIL:OGC:WFS": {
+      "name": "PRAIRIES.SENSIBLES.BCAE:prairies_sensibles",
+      "title": "Préservation des prairies et pâturages permanents en zone Natura 2000",
+      "description": "Préservation des prairies et pâturages permanents en zone Natura 2000 - Couche pour la nouvelle PAC produite par l’Observatoire du développement rural (ODR) en lien avec l’INRAE.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.12736132,
+          "right": 9.64817082,
+          "top": 50.82288748,
+          "bottom": 41.34982303
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2010:rpg_2010$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2010:rpg_2010",
+      "title": "Registre parcellaire graphique (RPG) 2010",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2010",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.08582386,
+          "right": 55.83266635,
+          "top": 51.07514669,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2013:rpg_2013$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2013:rpg_2013",
+      "title": "Registre parcellaire graphique (RPG) 2013",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2013",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.09061791,
+          "right": 55.83266635,
+          "top": 51.07514669,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2015:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2015:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2015",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2015",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.09061791,
+          "right": 55.83259967,
+          "top": 51.07510064,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2016:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2016:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2016",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2016",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.09061791,
+          "right": 55.83259967,
+          "top": 51.07510064,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2017:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2017:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2017",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2017",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.09061791,
+          "right": 55.83259967,
+          "top": 51.07510064,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2018:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2018:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2018",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2018",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.08613261,
+          "right": 55.83259967,
+          "top": 51.07510064,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2019:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2019:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2019",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2019",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07282825,
+          "right": 55.83259967,
+          "top": 51.07510064,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2020:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2020:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2020",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2020.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2021:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2021:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2021",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2021",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2022:codes_cultures$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2022:codes_cultures",
+      "title": "Registre parcellaire graphique (RPG) 2022 : Codes des cultures",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2022:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2022:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2022 : Parcelles graphiques",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2022",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2023:codes_cultures$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2023:codes_cultures",
+      "title": "Registre parcellaire graphique (RPG) 2023 : Codes des cultures",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2023",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2023:ilots_de_reference$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2023:ilots_de_reference",
+      "title": "Registre parcellaire graphique (RPG) 2023 : Ilots de référence",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2023",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2023:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2023:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) 2023 : Parcelles graphiques",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2023",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.LATEST:codes_cultures$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.LATEST:codes_cultures",
+      "title": "Registre parcellaire graphique (RPG) : codes culture",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.LATEST:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.LATEST:parcelles_graphiques",
+      "title": "Registre parcellaire graphique (RPG) : parcelles graphiques",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.LATEST:ilots_de_reference$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.LATEST:ilots_de_reference",
+      "title": "Registre parcellaire graphique (RPG) : îlots de référence",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2011:rpg_2011$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2011:rpg_2011",
+      "title": "Registre parcellaire graphique 2011",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2011.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.08582386,
+          "right": 55.83266635,
+          "top": 51.07514669,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2012:rpg_2012$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2012:rpg_2012",
+      "title": "Registre parcellaire graphique 2012",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2012.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.09061791,
+          "right": 55.83266635,
+          "top": 51.07514669,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
     }
   },
   "tileMatrixSets": {
