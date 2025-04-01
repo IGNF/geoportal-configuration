@@ -50,7 +50,6 @@
         "OCSGE.USAGE.2019$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2016$GEOPORTAIL:OGC:WMS",
         "OCSGE.VISU.2019$GEOPORTAIL:OGC:WMS",
-        "OCSGE_2016$GEOPORTAIL:GPP:TMS",
         "OCSGE_2019$GEOPORTAIL:GPP:TMS"
       ]
     }
@@ -4452,58 +4451,6 @@
         }
       ]
     },
-    "OCSGE_2016$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "ocsge": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "OCSGE_2016",
-      "title": "OCSGE_2016",
-      "description": "OCS GE 2016",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -31492.050174486427,
-          "right": 133994.11334515916,
-          "top": 5477859.625901454,
-          "bottom": 5359382.2350920765
-        },
-        "minScaleDenominator": 8735660.375448715,
-        "maxScaleDenominator": 1066.364791924893
-      },
-      "defaultProjection": "EPSG:3857"
-    },
     "OCSGE_2019$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -4525,9 +4472,15 @@
       ],
       "styles": [
         {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
@@ -4535,12 +4488,6 @@
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
