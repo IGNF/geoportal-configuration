@@ -112,10 +112,7 @@
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:canton$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:canton$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:chflieu_arrondissement_municipal$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_arrondissement_municipal$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:chflieu_commune$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:chflieu_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
@@ -4881,7 +4878,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement",
       "title": "Arrondissement",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "Arrondissement",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -4937,7 +4934,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement_municipal",
       "title": "Arrondissement municipal",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "Arrondissement municipal",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -4993,7 +4990,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:canton$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:canton",
       "title": "Canton",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "Canton",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -5074,62 +5071,6 @@
       "legends": [],
       "formats": []
     },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_arrondissement_municipal",
-      "title": "Chef-lieu d'arrondissement municipal",
-      "description": "Limites administrative mises à jour en continu",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_commune$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_commune",
-      "title": "Chef-lieu de commune",
-      "description": "Limites administrative mises à jour en continu",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "ADMINEXPRESS-COG-CARTO.LATEST:chflieu_commune$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG-CARTO.LATEST:chflieu_commune",
       "title": "Chef-lieu de commune COG CARTO",
@@ -5142,34 +5083,6 @@
           "right": 55.83662923,
           "top": 51.08898944,
           "bottom": -21.38963076
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:chflieu_commune_associee_ou_deleguee",
-      "title": "Chef-lieu de commune associée ou déléguée",
-      "description": "Limites administrative mises à jour en continu",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
         }
       },
       "serviceParams": {
@@ -5217,7 +5130,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:collectivite_territoriale",
       "title": "Collectivité territoriale",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "Collectivité territoriale",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -5273,7 +5186,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune",
       "title": "Commune",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "Commune",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -5357,7 +5270,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune_associee_ou_deleguee",
       "title": "Commune associée ou déléguée",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "Commune associée ou déléguée",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -5384,8 +5297,8 @@
     },
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:departement$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:departement",
-      "title": "Departement",
-      "description": "Limites administrative mises à jour en continu",
+      "title": "Département",
+      "description": "Département",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -5441,7 +5354,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci",
       "title": "EPCI",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "EPCI",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -5497,7 +5410,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:region$GEOPORTAIL:OGC:WFS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:region",
       "title": "Région",
-      "description": "Limites administrative mises à jour en continu",
+      "description": "Région",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
