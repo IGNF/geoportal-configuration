@@ -13,6 +13,7 @@
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2020$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2021$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2022$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2010$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2011$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2013$GEOPORTAIL:OGC:WMTS",
@@ -1839,6 +1840,144 @@
       "formats": [
         {
           "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025",
+      "title": "PLEIADES - Mayotte - 2025",
+      "description": "Agrégation des images Pleiades de l'année 2025 uniquement sur Mayotte pour le moment",
+      "globalConstraint": {
+        "maxScaleDenominator": 34942641.50179486,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": 44.9613,
+          "right": 45.3115,
+          "top": -12.6208,
+          "bottom": -13.0277
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "satellite": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_4_18",
+        "tileMatrixSetLimits": {
+          "4": {
+            "minTileRow": "8",
+            "maxTileRow": "8",
+            "minTileCol": "9",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "17",
+            "maxTileRow": "17",
+            "minTileCol": "19",
+            "maxTileCol": "20"
+          },
+          "6": {
+            "minTileRow": "34",
+            "maxTileRow": "34",
+            "minTileCol": "39",
+            "maxTileCol": "40"
+          },
+          "7": {
+            "minTileRow": "68",
+            "maxTileRow": "68",
+            "minTileCol": "79",
+            "maxTileCol": "80"
+          },
+          "8": {
+            "minTileRow": "137",
+            "maxTileRow": "137",
+            "minTileCol": "159",
+            "maxTileCol": "160"
+          },
+          "9": {
+            "minTileRow": "274",
+            "maxTileRow": "274",
+            "minTileCol": "319",
+            "maxTileCol": "320"
+          },
+          "10": {
+            "minTileRow": "548",
+            "maxTileRow": "549",
+            "minTileCol": "639",
+            "maxTileCol": "640"
+          },
+          "11": {
+            "minTileRow": "1096",
+            "maxTileRow": "1098",
+            "minTileCol": "1279",
+            "maxTileCol": "1281"
+          },
+          "12": {
+            "minTileRow": "2192",
+            "maxTileRow": "2197",
+            "minTileCol": "2559",
+            "maxTileCol": "2563"
+          },
+          "13": {
+            "minTileRow": "4385",
+            "maxTileRow": "4395",
+            "minTileCol": "5119",
+            "maxTileCol": "5127"
+          },
+          "14": {
+            "minTileRow": "8771",
+            "maxTileRow": "8790",
+            "minTileCol": "10238",
+            "maxTileCol": "10254"
+          },
+          "15": {
+            "minTileRow": "17542",
+            "maxTileRow": "17580",
+            "minTileCol": "20476",
+            "maxTileCol": "20508"
+          },
+          "16": {
+            "minTileRow": "35084",
+            "maxTileRow": "35160",
+            "minTileCol": "40952",
+            "maxTileCol": "41016"
+          },
+          "17": {
+            "minTileRow": "70168",
+            "maxTileRow": "70320",
+            "minTileCol": "81905",
+            "maxTileCol": "82033"
+          },
+          "18": {
+            "minTileRow": "140337",
+            "maxTileRow": "140641",
+            "minTileCol": "163811",
+            "maxTileCol": "164066"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
           "current": true
         }
       ]

@@ -75,6 +75,9 @@
         "PROTECTEDSITES.MNHN.RESERVES-REGIONALES$GEOPORTAIL:OGC:WMS",
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMS",
+        "IGNF_CARTO-FORMATIONS-VEGETALES_2016$GEOPORTAIL:OGC:WMS",
+        "IGNF_CARTO-FORMATIONS-VEGETALES_2023$GEOPORTAIL:OGC:WMS",
+        "IGNF_SITES-UNESCO$GEOPORTAIL:OGC:WMS",
         "INPE$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS",
         "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS",
@@ -110,6 +113,8 @@
         "PROTECTEDAREAS.APLG:aplg$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.FORESTINVENTORY.V1:resu_bdv1_shape$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.FORESTINVENTORY.V2:formation_vegetale$GEOPORTAIL:OGC:WFS",
+        "IGNF_CARTO-FORMATIONS-VEGETALES_2016:formations_vegetales_d976_2016$GEOPORTAIL:OGC:WFS",
+        "IGNF_CARTO-FORMATIONS-VEGETALES_2023:formations_vegetales_d976_2023$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.MNHN.CDL.PARCELS:cdl$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.MNHN.CDL.PERIMETER:perimetre_autorise$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.GP:gp$GEOPORTAIL:OGC:WFS",
@@ -8420,6 +8425,375 @@
         }
       ]
     },
+    "IGNF_CARTO-FORMATIONS-VEGETALES_2016$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2016",
+      "title": "Cartographie des formations végétales 2016 de Mayotte",
+      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 45.013046875,
+          "right": 45.30796875,
+          "top": -12.632265625,
+          "bottom": -13.00875
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-IGNF_CARTO-FORMATIONS-VEGETALES_2016",
+          "title": "IGNF_CARTO-FORMATIONS-VEGETALES_2016 style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_CARTO-FORMATIONS-VEGETALES_2016"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_CARTO-FORMATIONS-VEGETALES_2023$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2023",
+      "title": "Cartographie des formations végétales 2023 de Mayotte",
+      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 45.013046875,
+          "right": 45.30796875,
+          "top": -12.632265625,
+          "bottom": -13.00875
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-IGNF_CARTO-FORMATIONS-VEGETALES_2023",
+          "title": "IGNF_CARTO-FORMATIONS-VEGETALES_2023 style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_CARTO-FORMATIONS-VEGETALES_2023"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_SITES-UNESCO$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_SITES-UNESCO",
+      "title": "Sites du patrimoine mondial de l'UNESCO",
+      "description": "Sites du patrimoine mondial de l'UNESCO : Le patrimoine mondial est une appellation attribuée à des lieux ou des biens, situés à travers le monde, possédant une valeur universelle exceptionnelle. A ce titre, ils sont inscrits sur la Liste du patrimoine mondial afin d’être protégés pour que les générations futures puissent encore les apprécier à leur tour.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -151.37512207,
+          "right": 166.876831055,
+          "top": 51.040637207,
+          "bottom": -49.334161377
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-IGNF_SITES-UNESCO",
+          "title": "IGNF_SITES-UNESCO style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_SITES-UNESCO"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "INPE$GEOPORTAIL:OGC:WMS": {
       "name": "INPE",
       "title": "Inventaire national des plans d'eau",
@@ -8923,6 +9297,62 @@
         }
       },
       "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_CARTO-FORMATIONS-VEGETALES_2016:formations_vegetales_d976_2016$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2016:formations_vegetales_d976_2016",
+      "title": "Cartographie des formations végétales 2016 de Mayotte",
+      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 45.013046875,
+          "right": 45.30796875,
+          "top": -12.632265625,
+          "bottom": -13.00875
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4471",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_CARTO-FORMATIONS-VEGETALES_2023:formations_vegetales_d976_2023$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2023:formations_vegetales_d976_2023",
+      "title": "Cartographie des formations végétales 2023 de Mayotte",
+      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 45.013046875,
+          "right": 45.30796875,
+          "top": -12.632265625,
+          "bottom": -13.00875
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4471",
       "queryable": false,
       "metadata": [],
       "styles": [],
