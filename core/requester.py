@@ -81,3 +81,10 @@ def getTMSTileMaps(key, referer=""):
     dict_capabilities = xmltodict.parse(response.text)
 
     return dict_capabilities["TileMapService"]["TileMaps"]["TileMap"]
+
+def getEdito():
+    url = "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/edito.json"
+    response = requests.get(url)
+    if response.status_code != 200:
+        return False
+    return response.json()
