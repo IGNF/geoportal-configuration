@@ -31,7 +31,8 @@ def merge_configs(list_configs):
 
 def merge_edito(config, edito):
     merged_layers = {}
-    for layerID, layer in config["layers"].items():
+    new_config = config.copy()
+    for layerID, layer in new_config["layers"].items():
         merged_layer = layer.copy()
 
         # Si l'ID existe dans l'edito, fusionner les propriétés
@@ -54,8 +55,8 @@ def merge_edito(config, edito):
         merged_layers[layerID] = merged_layer
 
 
-    config["layers"] = merged_layers
-    return config
+    new_config["layers"] = merged_layers
+    return new_config
 
 if __name__ == "__main__":
     import json
