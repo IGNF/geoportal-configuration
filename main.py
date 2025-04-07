@@ -1,7 +1,7 @@
 import json
 
-from core.config_merger import merge_configs
-from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities, getWFSCapabilities, getTMSTileMaps
+from core.config_merger import merge_configs, merge_edito
+from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities, getWFSCapabilities, getTMSTileMaps, getEdito
 from core.vectortiles_parser import parseVectorTiles
 from core.wms_parser import parseWMS
 from core.wmts_parser import parseWMTS
@@ -29,6 +29,9 @@ def main(keys, referer=""):
     except IndexError:
         return "No key provided was valid"
 
+    edito = getEdito()
+    if edito:
+        merged_config = merge_edito(merged_config, edito)
     return json.dumps(merged_config, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
