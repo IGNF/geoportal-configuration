@@ -39,7 +39,7 @@ def merge_edito(config, edito):
         if layerID in edito["layers"]:
             edito_layer = edito["layers"][layerID]
             for key, value in edito_layer.items():
-                if key == "producer" or key == "thematic":
+                if key in ["producer", "thematic"]:
                     if isinstance(value, str):
                         if not value:
                            merged_layer[key] = ["Autres"] 
@@ -47,6 +47,8 @@ def merge_edito(config, edito):
                             merged_layer[key] = [value]
                     elif  isinstance(value, list):
                         merged_layer[key] = value
+                else:
+                    merged_layer[key] = value
         # infos éditoriales par défaut
         else:
             merged_layer["producer"] = ["Autres"] 
