@@ -50,7 +50,6 @@
         "LANDUSE.AGRICULTURE2022$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE2023$GEOPORTAIL:OGC:WMS",
         "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS",
-        "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.LATEST:bcae_cours_eau$GEOPORTAIL:OGC:WFS",
         "PRAIRIES.SENSIBLES.BCAE:prairies_sensibles$GEOPORTAIL:OGC:WFS",
         "RPG.2010:rpg_2010$GEOPORTAIL:OGC:WFS",
@@ -4529,92 +4528,44 @@
       "title": "Préservation des prairies et pâturages permanents en zone Natura 2000",
       "description": "Préservation des prairies et pâturages permanents en zone Natura 2000 - Couche pour la nouvelle PAC produite par l’Observatoire du développement rural (ODR) en lien avec l’INRAE.",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -5.12736132,
-          "right": 9.64817082,
-          "top": 50.82288748,
-          "bottom": 41.34982303
+          "left": -5.15047272,
+          "right": 9.57054324,
+          "top": 51.09905418,
+          "bottom": 41.32520964
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "agriculture": "https://data.geopf.fr/wms-v/ows"
+          "agriculture": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
       "metadata": [],
       "styles": [
         {
-          "name": "default-style-PRAIRIES.SENSIBLES.BCAE",
-          "title": "PRAIRIES.SENSIBLES.BCAE style"
+          "name": "nolegend",
+          "title": "Données sans légende"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PRAIRIES.SENSIBLES.BCAE"
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
         {
-          "name": "image/png",
+          "name": "image/jpeg",
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
+          "name": "image/png",
           "current": false
         },
         {
@@ -4622,27 +4573,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
