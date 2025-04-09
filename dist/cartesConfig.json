@@ -14,6 +14,16 @@
         "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMTS",
         "SCAN1000_PYR-JPEG_WLD_WM_WMTS_3D$GEOPORTAIL:OGC:WMTS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMS",
+        "SCAN1000_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
+        "SCANDEP_PYR-JPEG_FXX_WM$GEOPORTAIL:OGC:WMS",
+        "SCANREG_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE:graphe_scan25$GEOPORTAIL:OGC:WFS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950.GRAPHE:ta_france_cartes_50k_1950_date_wm$GEOPORTAIL:OGC:WFS",
@@ -1469,6 +1479,604 @@
         {
           "name": "image/jpeg",
           "current": true
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR10",
+      "title": "Carte de l'état-major - environs de Paris (1818 - 1824)",
+      "description": "Carte des environs de Paris au 1 : 10 000 établie entre 1818 et 1824.",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": 1.82681856,
+          "right": 2.7973806,
+          "top": 49.51415388,
+          "bottom": 48.38473737
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40",
+      "title": "Carte de l'état-major (1820-1866)",
+      "description": "Carte française en couleurs du XIXè siècle en couleurs superposable aux cartes et données modernes.",
+      "globalConstraint": {
+        "minScaleDenominator": 17061.836670798282,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -6.08888879,
+          "right": 10.96100953,
+          "top": 51.2745338,
+          "bottom": 41.1844082
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1",
+      "title": "Plan IGN J+1",
+      "description": "Représentation cartographique de la base de production du Référentiel à Grande Echelle actualisée quotidiennement.",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 80.0,
+          "bottom": -80.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950",
+      "title": "SCAN50 Historique de 1950",
+      "description": "SCAN50 produit ppar l'IGN en 1950",
+      "globalConstraint": {
+        "minScaleDenominator": 17061.836670798282,
+        "maxScaleDenominator": 69885283.00358963,
+        "bbox": {
+          "left": -179.49999463,
+          "right": 179.49999463,
+          "top": 74.99999974,
+          "bottom": -74.99999974
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "SCAN50_1950",
+          "title": "SCAN 50 historique"
+        },
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950-legend.png"
+        },
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
+      "title": "Plan IGN v2",
+      "description": "Cartographie multi-échelles sur le territoire national, issue des bases de données vecteur de l’IGN, mis à jour régulièrement et réalisée selon un processus entièrement automatisé.",
+      "globalConstraint": {
+        "minScaleDenominator": 1066.3647919248926,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -175.0,
+          "right": 175.0,
+          "top": 85.0,
+          "bottom": -85.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
+          "title": "Données GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V1",
+      "title": "Plan Terrier V1 (XVIIIe siècle)",
+      "description": "Plan Terrier, cartographie ancienne du XVIIIème siècle sur la Corse",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": 8.36283864,
+          "right": 9.75281343,
+          "top": 43.11740499,
+          "bottom": 41.2567697
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2",
+      "title": "Plan Terrier V2 (XVIIIe siècle)",
+      "description": "Plan Terrier, cartographie ancienne du XVIIIème siècle sur la Corse version est une version numérisée par les archives militaires du Ministère de la Défense",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": 8.36283848,
+          "right": 9.75281587,
+          "top": 43.11740499,
+          "bottom": 41.25676776
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "SCAN1000_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "SCAN1000_PYR-JPEG_WLD_WM",
+      "title": "SCAN1000 France métropolitaine",
+      "description": "Le produit SCAN 1000® version 2 est une collection d'images numériques en couleurs, obtenues par rastérisation des données vecteur de la carte nationale France (901) à l'échelle 1 :1,000,000ième. Le produit couvre l'ensemble du territoire français métropolitain et la Corse.",
+      "globalConstraint": {
+        "minScaleDenominator": 545978.7734655463,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -6.42088097,
+          "right": 13.54998426,
+          "top": 51.44401422,
+          "bottom": 40.28906663
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "SCAN1000",
+          "title": "Légende du 1/1000000"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SCAN1000_PYR-JPEG_WLD_WM-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "SCANDEP_PYR-JPEG_FXX_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "SCANDEP_PYR-JPEG_FXX_WM",
+      "title": "SCANDEP WM FXX 2011",
+      "description": "Le produit SCAN Départemental® version 3 est une collection d'images cartographiques numériques en couleur, obtenues par rastérisation des données vecteur de la série « Cartes départementales » éditées par l'IGN. Ces images couvrent l'ensemble du territoire français métropolitain.",
+      "globalConstraint": {
+        "minScaleDenominator": 68247.3466831932,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -6.42088097,
+          "right": 11.42971427,
+          "top": 51.16153661,
+          "bottom": 40.80971267
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "SCANREG_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS": {
+      "name": "SCANREG_PYR-JPEG_WLD_WM",
+      "title": "Scan Régional FXX WM 08-2021",
+      "description": "Le produit SCAN Régional® version 2 est une collection d'images cartographiques numériques en couleur, obtenues par rastérisation des données vecteur de la série « Cartes régionales » éditées par l'IGN. Ces images couvrent l'ensemble du territoire français métropolitain.",
+      "globalConstraint": {
+        "minScaleDenominator": 136494.69336638605,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -6.42088097,
+          "right": 12.13798091,
+          "top": 51.4441241,
+          "bottom": 40.80971267
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "SCANREG",
+          "title": "Légende du 1/1000000"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/SCANREG_PYR-JPEG_WLD_WM-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        },
+        {
+          "name": "image/png",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
         }
       ]
     },
