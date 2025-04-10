@@ -132,15 +132,15 @@ def _parseFormats(dict_capabilities):
     formats = []
     if not isinstance(dict_capabilities["Request"]["GetMap"]["Format"], list):
         dict_capabilities["Request"]["GetMap"]["Format"]
-    test_first = True
     for format in dict_capabilities["Request"]["GetMap"]["Format"]:
         format_config = {}
         format_config["name"] = format
-        format_config["current"] = test_first
+        if format == "image/png":
+          format_config["current"] = True
+        else:
+          format_config["current"] = False
 
         formats.append(format_config)
-        if test_first:
-            test_first = False
 
     return formats
 
