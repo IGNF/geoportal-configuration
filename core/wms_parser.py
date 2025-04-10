@@ -137,10 +137,10 @@ def _parseFormats(dict_capabilities):
         format_config["name"] = format
         if format == "image/png":
           format_config["current"] = True
+          formats = [format_config] + formats
         else:
           format_config["current"] = False
-
-        formats.append(format_config)
+          formats.append(format_config)
 
     return formats
 
