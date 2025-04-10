@@ -11,6 +11,10 @@
         "TRANSPORTNETWORKS.RUNWAYS$GEOPORTAIL:OGC:WMTS",
         "UTILITYANDGOVERNMENTALSERVICES.ALL$GEOPORTAIL:OGC:WMTS",
         "hedge.hedge$GEOPORTAIL:OGC:WMTS",
+        "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS",
+        "IGNF_TRANSPORTNETWORKS.RAILWAYS$GEOPORTAIL:OGC:WMS",
+        "IGNF_TRANSPORTNETWORKS.ROADS$GEOPORTAIL:OGC:WMS",
+        "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS",
         "BDTOPO-GEOPO-BATI_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDTOPO-GEOPO-HYDROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
         "BDTOPO-GEOPO-OROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS",
@@ -1178,6 +1182,306 @@
         }
       ]
     },
+    "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_HYDROGRAPHY.HYDROGRAPHY",
+      "title": "Hydrographie",
+      "description": "Lacs, réservoirs, rivières et cours d'eau.",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.96916021,
+          "right": 55.96441737,
+          "top": 71.58407635,
+          "bottom": -21.49686954
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "topographie": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_TRANSPORTNETWORKS.RAILWAYS$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_TRANSPORTNETWORKS.RAILWAYS",
+      "title": "Réseau ferroviaire",
+      "description": "Réseau ferroviaire",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.96916021,
+          "right": 55.96441737,
+          "top": 71.58407635,
+          "bottom": -21.49686954
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "topographie": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_TRANSPORTNETWORKS.ROADS$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_TRANSPORTNETWORKS.ROADS",
+      "title": "Routes",
+      "description": "Réseau routier.",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.96916021,
+          "right": 55.96441737,
+          "top": 71.58407635,
+          "bottom": -21.49686954
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "topographie": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS": {
+      "name": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
+      "title": "Points de repère routiers (PR)",
+      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine. Edition 2023-12-15",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.15371169,
+          "right": 55.83677582,
+          "top": 51.31504801,
+          "bottom": -21.38982666
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "topographie": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
+          "title": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "BDTOPO-GEOPO-BATI_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
       "name": "BDTOPO-GEOPO-BATI_WLD_WGS84G",
       "title": "BDTopo Bâtiment édition 2024-12-15",
@@ -2196,129 +2500,6 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=POI.MUSEUM"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS": {
-      "name": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
-      "title": "Points de repère routiers (PR)",
-      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine. Edition 2023-12-15",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.15371169,
-          "right": 55.83677582,
-          "top": 51.31504801,
-          "bottom": -21.38982666
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "topographie": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
-          "title": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST"
         }
       ],
       "formats": [
@@ -4450,34 +4631,10 @@
       ],
       "styles": [
         {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
           "name": "bati_etages",
           "title": "bati_etages",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "delestage",
-          "title": "delestage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
           "name": "classique",
@@ -4486,16 +4643,40 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+        },
+        {
           "name": "hydrographie",
           "title": "hydrographie",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
           "name": "bati",
           "title": "bati",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+        },
+        {
+          "name": "routier",
+          "title": "routier",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         }
       ],
       "globalConstraint": {
