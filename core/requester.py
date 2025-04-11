@@ -73,7 +73,7 @@ def getTMSTileMaps(key, referer=""):
     if key in GENERIC_KEYS() :
         url = "https://data.geopf.fr/tms/1.0.0"
     else:
-        url = "https://data.geopf.fr/private/tms/1.0.0&apikey={}".format(key)
+        return {}
 
     response = requests.get(url, headers={'referer': referer})
     if response.status_code != 200:
