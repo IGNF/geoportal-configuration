@@ -58,7 +58,7 @@ def generate_entree_carto_conf(merged_config):
     edito = getEdito()
     if edito:
         edito_config = merge_edito(merged_config, edito)
-    
+
     # Filtre des couches selon les propriétés des layers
     conditions = {
         "defaultProjection": lambda prop: not any(substring in prop for substring in ["IGNF:LAMB93","EPSG:2154"]),
@@ -72,7 +72,10 @@ def generate_entree_carto_conf(merged_config):
             for prop, condition in conditions.items()
         )
     }
-
+    # Ajoute la propriété key (utile pour l'entrée carto)
+    for layerID, layerParams in edito_config["layers"].items():
+        layerParams['key'] = layerID
+    
     # Filtre les couches WMS qui dupliquent une couche WMTS
     edito_config["layers"] = filter_specific_duplicates(edito_config["layers"])
 
