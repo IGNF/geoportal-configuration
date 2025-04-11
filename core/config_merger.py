@@ -58,6 +58,8 @@ def merge_edito(config, edito):
 
 
     new_config["layers"] = merged_layers
+    edito.pop("layers")
+    new_config.update(edito)
     return new_config
 
 if __name__ == "__main__":
