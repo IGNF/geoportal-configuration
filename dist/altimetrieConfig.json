@@ -39,7 +39,15 @@
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_TA:nuage-bloc$GEOPORTAIL:OGC:WFS",
+        "IGNF_LIDAR-HD_TA:mnh-bloc$GEOPORTAIL:OGC:WFS",
+        "IGNF_LIDAR-HD_TA:mns-bloc$GEOPORTAIL:OGC:WFS",
+        "IGNF_LIDAR-HD_TA:mnt-bloc$GEOPORTAIL:OGC:WFS",
         "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS",
+        "IGNF_LIDAR-HD_TA:mnh-dalle$GEOPORTAIL:OGC:WFS",
+        "IGNF_LIDAR-HD_TA:mns-dalle$GEOPORTAIL:OGC:WFS",
+        "IGNF_LIDAR-HD_TA:mnt-dalle$GEOPORTAIL:OGC:WFS",
+        "IGNF_LIDAR-HD_TA:nuage-dalle$GEOPORTAIL:OGC:WFS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS"
       ]
@@ -3490,6 +3498,118 @@
         }
       ]
     },
+    "IGNF_LIDAR-HD_TA:nuage-bloc$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:nuage-bloc",
+      "title": "Bloc de nuages de points LiDAR HD.",
+      "description": "Liste des blocs des nuages de points LiDAR HD.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_LIDAR-HD_TA:mnh-bloc$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:mnh-bloc",
+      "title": "Blocs MNH issus de LiDAR HD",
+      "description": "Liste des blocs du MNH issus des données LiDAR HD ",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_LIDAR-HD_TA:mns-bloc$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:mns-bloc",
+      "title": "Blocs MNS issus de LiDAR HD",
+      "description": "Liste des blocs du MNS issus des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_LIDAR-HD_TA:mnt-bloc$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:mnt-bloc",
+      "title": "Blocs MNT issus de LiDAR HD",
+      "description": "Liste des blocs du MNT issus des données LiDAR HD ",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS": {
       "name": "ELEVATION.CONTOUR.LINE:courbe",
       "title": "Courbes de niveau",
@@ -3512,6 +3632,118 @@
         }
       },
       "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_LIDAR-HD_TA:mnh-dalle$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:mnh-dalle",
+      "title": "Dalles MNH issues de LiDAR HD",
+      "description": "Liste des dalles du MNH issues des données LiDAR HD ",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_LIDAR-HD_TA:mns-dalle$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:mns-dalle",
+      "title": "Dalles MNS issues des données LiDAR HD",
+      "description": "Liste des blocs du MNS issues des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_LIDAR-HD_TA:mnt-dalle$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:mnt-dalle",
+      "title": "Dalles MNT issues de LiDAR HD",
+      "description": "Liste des dalles du MNT issues des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_LIDAR-HD_TA:nuage-dalle$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_LIDAR-HD_TA:nuage-dalle",
+      "title": "Dalles de nuages de points LiDAR HD.",
+      "description": "Liste des dalles des nuages de points LiDAR HD.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.1675,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
       "queryable": false,
       "metadata": [],
       "styles": [],

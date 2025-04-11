@@ -2,6 +2,7 @@
   "generalOptions": {
     "apiKeys": {
       "ocsge": [
+        "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMTS",
         "OCSGE.ARTIF.2016-2017$GEOPORTAIL:OGC:WMTS",
         "OCSGE.ARTIF.2017-2020$GEOPORTAIL:OGC:WMTS",
         "OCSGE.ARTIF.2021-2023$GEOPORTAIL:OGC:WMTS",
@@ -30,6 +31,7 @@
         "OCSGE.USAGE.2019$GEOPORTAIL:OGC:WMTS",
         "OCSGE.VISU.2016$GEOPORTAIL:OGC:WMTS",
         "OCSGE.VISU.2019$GEOPORTAIL:OGC:WMTS",
+        "IGNF_COSIA_2021-2023_WMS$GEOPORTAIL:OGC:WMS",
         "OCSGE.ARTIF.2016-2017$GEOPORTAIL:OGC:WMS",
         "OCSGE.ARTIF.2017-2020$GEOPORTAIL:OGC:WMS",
         "OCSGE.ARTIF.2021-2023$GEOPORTAIL:OGC:WMS",
@@ -56,6 +58,132 @@
     }
   },
   "layers": {
+    "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_COSIA_2021-2023",
+      "title": "IGNF COSIA 2021-2023",
+      "description": "COSIA 2021-2023",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "ocsge": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_18",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "84",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "169",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "270"
+          },
+          "10": {
+            "minTileRow": "338",
+            "maxTileRow": "383",
+            "minTileCol": "496",
+            "maxTileCol": "540"
+          },
+          "11": {
+            "minTileRow": "676",
+            "maxTileRow": "767",
+            "minTileCol": "992",
+            "maxTileCol": "1080"
+          },
+          "12": {
+            "minTileRow": "1352",
+            "maxTileRow": "1535",
+            "minTileCol": "1985",
+            "maxTileCol": "2161"
+          },
+          "13": {
+            "minTileRow": "2705",
+            "maxTileRow": "3071",
+            "minTileCol": "3970",
+            "maxTileCol": "4323"
+          },
+          "14": {
+            "minTileRow": "5411",
+            "maxTileRow": "6142",
+            "minTileCol": "7941",
+            "maxTileCol": "8647"
+          },
+          "15": {
+            "minTileRow": "10823",
+            "maxTileRow": "12285",
+            "minTileCol": "15883",
+            "maxTileCol": "17294"
+          },
+          "16": {
+            "minTileRow": "21647",
+            "maxTileRow": "24571",
+            "minTileCol": "31766",
+            "maxTileCol": "34588"
+          },
+          "17": {
+            "minTileRow": "43295",
+            "maxTileRow": "49142",
+            "minTileCol": "63533",
+            "maxTileCol": "69176"
+          },
+          "18": {
+            "minTileRow": "86590",
+            "maxTileRow": "98284",
+            "minTileCol": "127067",
+            "maxTileCol": "138353"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "OCSGE.ARTIF.2016-2017$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.ARTIF.2016-2017",
       "title": "OCS GE 2016-2017 - artificialisation",
@@ -3269,6 +3397,65 @@
         {
           "name": "image/png",
           "current": true
+        }
+      ]
+    },
+    "IGNF_COSIA_2021-2023_WMS$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_COSIA_2021-2023_WMS",
+      "title": "COSIA 2021-2023",
+      "description": "COSIA 2021-2023",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -1.7923999896657796,
+          "right": 3.17779997966578,
+          "top": 43.596799989665776,
+          "bottom": 42.33290002033423
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ocsge": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
         }
       ]
     },
