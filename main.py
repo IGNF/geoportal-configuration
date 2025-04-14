@@ -1,6 +1,7 @@
 import json
 
 from core.config_merger import merge_configs
+from core.entree_carto_custom import generate_entree_carto_conf
 from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities, getWFSCapabilities, getTMSTileMaps
 from core.vectortiles_parser import parseVectorTiles
 from core.wms_parser import parseWMS
@@ -28,6 +29,7 @@ def main(keys, referer=""):
         merged_config = merge_configs(list_configs)
     except IndexError:
         return "No key provided was valid"
+    generate_entree_carto_conf(merged_config)
 
     return json.dumps(merged_config, indent=2, ensure_ascii=False)
 
