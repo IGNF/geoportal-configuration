@@ -73,7 +73,7 @@ def getTMSTileMaps(key, referer=""):
     if key in GENERIC_KEYS() :
         url = "https://data.geopf.fr/tms/1.0.0"
     else:
-        url = "https://data.geopf.fr/private/tms/1.0.0&apikey={}".format(key)
+        return {}
 
     response = requests.get(url, headers={'referer': referer})
     if response.status_code != 200:
@@ -81,3 +81,10 @@ def getTMSTileMaps(key, referer=""):
     dict_capabilities = xmltodict.parse(response.text)
 
     return dict_capabilities["TileMapService"]["TileMaps"]["TileMap"]
+
+def getEdito():
+    url = "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/edito.json"
+    response = requests.get(url)
+    if response.status_code != 200:
+        return False
+    return response.json()

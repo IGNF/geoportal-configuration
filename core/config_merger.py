@@ -29,6 +29,39 @@ def merge_configs(list_configs):
 
     return config1
 
+def merge_edito(config, edito):
+    merged_layers = {}
+    new_config = config.copy()
+    for layerID, layer in new_config["layers"].items():
+        merged_layer = layer.copy()
+
+        # Si l'ID existe dans l'edito, fusionner les propriétés
+        if layerID in edito["layers"]:
+            edito_layer = edito["layers"][layerID]
+            for key, value in edito_layer.items():
+                if key in ["producer", "thematic"]:
+                    if isinstance(value, str):
+                        if not value:
+                           merged_layer[key] = ["Autres"] 
+                        else:
+                            merged_layer[key] = [value]
+                    elif  isinstance(value, list):
+                        merged_layer[key] = value
+                else:
+                    merged_layer[key] = value
+        # infos éditoriales par défaut
+        else:
+            merged_layer["producer"] = ["Autres"] 
+            merged_layer["thematic"] = ["Autres"]
+            merged_layer["base"] = False
+        merged_layers[layerID] = merged_layer
+
+
+    new_config["layers"] = merged_layers
+    edito.pop("layers")
+    new_config.update(edito)
+    return new_config
+
 if __name__ == "__main__":
     import json
     from requester import getWMSRCapabilities, getWMTSCapabilities
