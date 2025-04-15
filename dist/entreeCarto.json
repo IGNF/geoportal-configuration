@@ -1737,8 +1737,8 @@
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:departement$GEOPORTAIL:OGC:WFS",
         "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:departement$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS",
         "ADMIN-EXPRESS_WGS84G_FRA_WFS_LATEST:epci$GEOPORTAIL:OGC:WFS",
+        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:epci$GEOPORTAIL:OGC:WFS",
         "test_geothermie_gpkg_10-02-2025_wfs:Energie_potentiel_de_geothermie_a_la_commune$GEOPORTAIL:OGC:WFS",
         "POI.CULTURE_LOISIRS:pai_culture_et_loisirs$GEOPORTAIL:OGC:WFS",
@@ -1990,8 +1990,8 @@
         "BDCARTO_V5:construction_lineaire$GEOPORTAIL:OGC:WFS",
         "BDCARTO_V5:construction_ponctuelle$GEOPORTAIL:OGC:WFS",
         "BDCARTO_V5:construction_surfacique$GEOPORTAIL:OGC:WFS",
-        "hydro-ardennes-l93_gpkg_11-03-2024_wfs:cours_d_eau$GEOPORTAIL:OGC:WFS",
         "BDCARTO_V5:cours_d_eau$GEOPORTAIL:OGC:WFS",
+        "hydro-ardennes-l93_gpkg_11-03-2024_wfs:cours_d_eau$GEOPORTAIL:OGC:WFS",
         "test_mig_rlt:dataset$GEOPORTAIL:OGC:WFS",
         "cartes:dataset$GEOPORTAIL:OGC:WFS",
         "pva:dataset$GEOPORTAIL:OGC:WFS",
@@ -126728,28 +126728,16 @@
       ],
       "styles": [
         {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
           "name": "classique",
           "title": "classique",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "hydrographie",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
           "name": "classique_simplifiee",
@@ -126758,22 +126746,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
+          "name": "hydrographie",
+          "title": "hydrographie",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
           "name": "delestage",
           "title": "delestage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+        },
+        {
+          "name": "routier",
+          "title": "routier",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         }
       ],
       "globalConstraint": {
@@ -126818,16 +126818,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
           "name": "isohypse_monochrome_orange",
           "title": "isohypse_monochrome_orange",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
+        },
+        {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
@@ -126938,16 +126938,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
           "name": "ocsge_occupation",
           "title": "ocsge_occupation",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         }
       ],
       "globalConstraint": {
