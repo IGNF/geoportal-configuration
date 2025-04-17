@@ -3,7 +3,6 @@
     "apiKeys": {
       "ign_scan_ws": [
         "GEOGRAPHICALGRIDSYSTEMS.MAPS$GEOPORTAIL:OGC:WMTS",
-        "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-OACI$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.L93$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS$GEOPORTAIL:OGC:WMS",
@@ -152,90 +151,6 @@
             "maxTileRow": "199680",
             "minTileCol": "0",
             "maxTileCol": "262143"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        }
-      ]
-    },
-    "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-OACI$GEOPORTAIL:OGC:WMTS": {
-      "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-OACI",
-      "title": "carte OACI-VFR 2024",
-      "description": "Les cartes OACI (Organisation de l'aviation civile internationale) ont été conçues pour le vol à vue (VFR : Visual Flights Rules). Elles proposent des informations aéronautiques fournies par le Service de l'information aéronautique (SIA) de la Direction générale de l'aviation civile (DGAC).",
-      "globalConstraint": {
-        "maxScaleDenominator": 8735660.375448715,
-        "minScaleDenominator": 272989.38673277217,
-        "bbox": {
-          "left": -5.99644,
-          "right": 11.146,
-          "top": 51.4441,
-          "bottom": 40.3893
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "ign_scan_ws": "https://data.geopf.fr/private/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_6_11",
-        "tileMatrixSetLimits": {
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "24",
-            "minTileCol": "30",
-            "maxTileCol": "33"
-          },
-          "7": {
-            "minTileRow": "42",
-            "maxTileRow": "48",
-            "minTileCol": "61",
-            "maxTileCol": "67"
-          },
-          "8": {
-            "minTileRow": "85",
-            "maxTileRow": "96",
-            "minTileCol": "123",
-            "maxTileCol": "135"
-          },
-          "9": {
-            "minTileRow": "170",
-            "maxTileRow": "193",
-            "minTileCol": "247",
-            "maxTileCol": "271"
-          },
-          "10": {
-            "minTileRow": "340",
-            "maxTileRow": "386",
-            "minTileCol": "494",
-            "maxTileCol": "543"
-          },
-          "11": {
-            "minTileRow": "681",
-            "maxTileRow": "772",
-            "minTileCol": "989",
-            "maxTileCol": "1087"
           }
         }
       },
