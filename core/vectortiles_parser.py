@@ -40,8 +40,8 @@ def parseVectorTiles(tileMaps, key, referer):
         if response.status_code == 200:
             responseText = xmltodict.parse(response.text)["TileMap"]
             bbox = responseText["BoundingBox"]
-            minTileSet = responseText["TileMap"]["TileSet"][0]
-            maxTileSet = responseText["TileMap"]["TileSet"][-1]
+            minTileSet = responseText["TileSets"]["TileSet"][0]
+            maxTileSet = responseText["TileSets"]["TileSet"][-1]
             try:
                 if not isinstance(responseText["Metadata"], list):
                     responseText["Metadata"] = [responseText["Metadata"]]
