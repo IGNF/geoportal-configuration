@@ -1817,11 +1817,11 @@
         "IGNF_LIDAR-HD_TA:nuage-dalle$GEOPORTAIL:OGC:WFS",
         "carr_200m_zip_24-10-2024_wfs:carr_200m$GEOPORTAIL:OGC:WFS",
         "appariement_dep52_gpkg_15-11-2024_wfs:appariement_dep52$GEOPORTAIL:OGC:WFS",
+        "wfs_scot:doc_urba$GEOPORTAIL:OGC:WFS",
+        "wfs_scot:doc_urba_com$GEOPORTAIL:OGC:WFS",
         "wfs_du:doc_urba$GEOPORTAIL:OGC:WFS",
         "wfs_du:doc_urba_com$GEOPORTAIL:OGC:WFS",
         "wfs_du:document$GEOPORTAIL:OGC:WFS",
-        "wfs_scot:doc_urba$GEOPORTAIL:OGC:WFS",
-        "wfs_scot:doc_urba_com$GEOPORTAIL:OGC:WFS",
         "BAN.DATA.GOUV:ban$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.HEATMAP:parcelle_wld$GEOPORTAIL:OGC:WFS",
         "AOC-VITICOLES:aire_parcellaire$GEOPORTAIL:OGC:WFS",
@@ -1940,9 +1940,9 @@
         "pays_ecoregions:pays$GEOPORTAIL:OGC:WFS",
         "ecoregions:pays$GEOPORTAIL:OGC:WFS",
         "data_formation_gpf_vecteur_zip_26-05-2025_wmsv:pays$GEOPORTAIL:OGC:WFS",
-        "test-formation-karim2:pays$GEOPORTAIL:OGC:WFS",
         "pays_ecoregions_mrp:pays$GEOPORTAIL:OGC:WFS",
         "pays_et_regions_ad_0622025:pays$GEOPORTAIL:OGC:WFS",
+        "test-formation-karim2:pays$GEOPORTAIL:OGC:WFS",
         "wfs_scot:perimetre_scot$GEOPORTAIL:OGC:WFS",
         "DGAC-PEB_BDD_FXX_WM:fxx_peb_wm$GEOPORTAIL:OGC:WFS",
         "DGAC-PEB-POI_BDD_WLD_WM:aerodrome_avec_peb_wm$GEOPORTAIL:OGC:WFS",
@@ -2002,9 +2002,9 @@
         "pays_ecoregions:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "ecoregions:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "data_formation_gpf_vecteur_zip_26-05-2025_wmsv:regions_ecologiques$GEOPORTAIL:OGC:WFS",
-        "test-formation-karim2:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "pays_ecoregions_mrp:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "pays_et_regions_ad_0622025:regions_ecologiques$GEOPORTAIL:OGC:WFS",
+        "test-formation-karim2:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "Tests_RM_pays_ecoregions:Test RM - regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "ObsForets.Sols:repartition_niveaux_trophiques_2018_2022$GEOPORTAIL:OGC:WFS",
         "ObsForets.Sols:repartition_niveaux_trophiques_toutes_campagnes$GEOPORTAIL:OGC:WFS",
@@ -134754,16 +134754,28 @@
       ],
       "styles": [
         {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
           "name": "classique_simplifiee",
           "title": "classique_simplifiee",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
+          "name": "bati",
+          "title": "bati",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
           "name": "delestage",
@@ -134778,28 +134790,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
           "name": "routier",
           "title": "routier",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
-          "name": "bati",
-          "title": "bati",
+          "name": "bati_etages",
+          "title": "bati_etages",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "hydrographie",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
         }
       ],
       "globalConstraint": {
@@ -135264,16 +135264,16 @@
       ],
       "styles": [
         {
-          "name": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
-          "title": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/f7c53655-1310-4f6a-8f54-eb3e259ec604.json"
-        },
-        {
           "name": "aa961c94-2ad5-4a92-ad2d-e6241fddfd52",
           "title": "aa961c94-2ad5-4a92-ad2d-e6241fddfd52",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/aa961c94-2ad5-4a92-ad2d-e6241fddfd52.json"
+        },
+        {
+          "name": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
+          "title": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/f7c53655-1310-4f6a-8f54-eb3e259ec604.json"
         }
       ],
       "globalConstraint": {
