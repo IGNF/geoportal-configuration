@@ -105,8 +105,9 @@ def generate_entree_carto_conf(merged_config):
             return thematic
 
     # Map les thématiques avec la table de conversion
-    for layerID, layerParams in edito_config["layers"].items():
-        edito_config["layers"][layerID]["thematic"] = [convertThematic(thematic, convert_table) for thematic in layerParams["thematic"]]
+    if convert_table:
+        for layerID, layerParams in edito_config["layers"].items():
+            edito_config["layers"][layerID]["thematic"] = [convertThematic(thematic, convert_table) for thematic in layerParams["thematic"]]
 
 
     with open("dist/entreeCarto.json", "w", encoding="utf-8") as file:
