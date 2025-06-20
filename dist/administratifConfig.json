@@ -14,7 +14,16 @@
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMTS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMTS",
         "ADMINEXPRESS-COG-CARTO.LATEST$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2017$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2018$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2019$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2020$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2021$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2022$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2023$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2024$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
+        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.2017$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.2018$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.2019$GEOPORTAIL:OGC:WMS",
@@ -90,6 +99,11 @@
         "ADMINEXPRESS-COG-CARTO.LATEST:arrondissement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:canton$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_d_arrondissement$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_d_arrondissement_municipal$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_departement$GEOPORTAIL:OGC:WFS",
+        "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:commune$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
@@ -105,15 +119,6 @@
         "ADMINEXPRESS-COG.LATEST:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.LATEST:epci$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.LATEST:region$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:canton$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:departement$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS",
-        "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:region$GEOPORTAIL:OGC:WFS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
       ]
     }
@@ -1443,65 +1448,6 @@
         }
       ]
     },
-    "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS": {
-      "name": "ADMINEXPRESS-COG.LATEST",
-      "title": "ADMINEXPRESS COG ; Edition : 2024-02-22",
-      "description": "Limites administratives Express COG code officiel géographique ; Edition : 2024-02-22",
-      "globalConstraint": {
-        "minScaleDenominator": 8530.918335399141,
-        "maxScaleDenominator": 8735660.375448715,
-        "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "ADMINEXPRESS-COG",
-          "title": "Légende du 1/1000000"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/ADMINEXPRESS-COG.LATEST-legend.png"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
-        }
-      ]
-    },
     "ADMINEXPRESS-COG.2017$GEOPORTAIL:OGC:WMS": {
       "name": "ADMINEXPRESS-COG.2017",
       "title": "ADMINEXPRESS COG ; Edition : 2017-01-01",
@@ -2482,6 +2428,124 @@
         },
         {
           "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS": {
+      "name": "ADMINEXPRESS-COG.LATEST",
+      "title": "ADMINEXPRESS COG ; Edition : 2024-02-22",
+      "description": "Limites administratives Express COG code officiel géographique ; Edition : 2024-02-22",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "ADMINEXPRESS-COG",
+          "title": "Légende du 1/1000000"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ADMINEXPRESS-COG.LATEST-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS": {
+      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
+      "title": "Limites administratives mises à jour en continu",
+      "description": "Limites administratives mises à jour en continu ; Edition : 2025-03-12",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -4647,6 +4711,146 @@
       "legends": [],
       "formats": []
     },
+    "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_d_arrondissement$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_d_arrondissement",
+      "title": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu d Arrondissement",
+      "description": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu d Arrondissement",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83662923,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_d_arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_d_arrondissement_municipal",
+      "title": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu d Arrondissement municipal",
+      "description": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu d Arrondissement municipal",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83662923,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_commune_associee_ou_deleguee",
+      "title": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu de Commune associée ou déléguée",
+      "description": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu de Commune associée ou déléguée",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83662923,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_departement$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_departement",
+      "title": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu de Département",
+      "description": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu de Département",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83662923,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_region$GEOPORTAIL:OGC:WFS": {
+      "name": "ADMINEXPRESS-COG-CARTO.LATEST:chef_lieu_de_region",
+      "title": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu de Région",
+      "description": "ADMINEXPRESS COG Carto Dernière édition Chef-lieu de Région",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83662923,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "ADMINEXPRESS-COG-CARTO.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS": {
       "name": "ADMINEXPRESS-COG-CARTO.LATEST:collectivite_territoriale",
       "title": "ADMINEXPRESS COG Carto Dernière édition Collectivité territoriale",
@@ -5051,258 +5255,6 @@
           "right": 55.83665387,
           "top": 51.08898944,
           "bottom": -21.38963076
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement",
-      "title": "Arrondissements",
-      "description": "Arrondissements",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement_municipal",
-      "title": "Arrondissements municipaux",
-      "description": "Arrondissements municipaux",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:canton$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:canton",
-      "title": "Cantons",
-      "description": "Cantons",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:collectivite_territoriale",
-      "title": "Collectivités territoriales",
-      "description": "Collectivités territoriales",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune",
-      "title": "Communes",
-      "description": "Communes",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:commune_associee_ou_deleguee",
-      "title": "Communes associées ou déléguées",
-      "description": "Communes associées ou déléguées",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:departement$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:departement",
-      "title": "Départements",
-      "description": "Départements",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:epci",
-      "title": "EPCI",
-      "description": "EPCI",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:region$GEOPORTAIL:OGC:WFS": {
-      "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:region",
-      "title": "Régions",
-      "description": "Régions",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.28125,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
         }
       },
       "serviceParams": {
