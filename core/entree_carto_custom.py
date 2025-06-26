@@ -1,7 +1,7 @@
 import json
 
 from core.config_merger import merge_edito
-from core.requester import getEdito
+from core.requester import getEdito, searchMtdUrls, getThematicConversionTable
 
 def filter_specific_duplicates(input_dict):
     """
@@ -56,6 +56,23 @@ def filter_specific_duplicates(input_dict):
 
 def generate_entree_carto_conf(merged_config):
     edito = getEdito()
+
+    # Récupère les infos idsponibles depuis le service recherche
+    # en particulier "theme" et "producers"
+    mtd_urls_layers = searchMtdUrls()
+    if mtd_urls_layers:
+        for item in mtd_urls_layers:
+            if 'layer_name' in item:
+                layerType = item["type"]
+                layerName = item['layer_name']
+                layerID = layerName + "$GEOPORTAIL:OGC:" + layerType
+                if layerID in merged_config["layers"]:
+                    if 'theme' in item:
+                        merged_config["layers"][layerID]["thematic"] = list(map(str.strip, item["theme"].split(',')))
+                    merged_config["layers"][layerID]["metadata_urls"] = item["metadata_urls"]
+                    if 'producers' in item:
+                        merged_config["layers"][layerID]["producer"] = item["producers"]
+
     if edito:
         edito_config = merge_edito(merged_config, edito)
 
@@ -78,6 +95,20 @@ def generate_entree_carto_conf(merged_config):
     
     # Filtre les couches WMS qui dupliquent une couche WMTS
     edito_config["layers"] = filter_specific_duplicates(edito_config["layers"])
+
+    # Récupère une table de conversion des thématiques
+    convert_table = getThematicConversionTable()
+    def convertThematic(thematic, convert_table):
+        if thematic in convert_table:
+            return convert_table[thematic]
+        else:
+            return thematic
+
+    # Map les thématiques avec la table de conversion
+    if convert_table:
+        for layerID, layerParams in edito_config["layers"].items():
+            edito_config["layers"][layerID]["thematic"] = [convertThematic(thematic, convert_table) for thematic in layerParams["thematic"]]
+
 
     with open("dist/entreeCarto.json", "w", encoding="utf-8") as file:
         file.writelines(json.dumps(edito_config, indent=2, ensure_ascii=False))
