@@ -16,7 +16,7 @@
   "layers": {
     "OCSGE.CONSTRUCTIONS$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.CONSTRUCTIONS",
-      "title": "Occupation du sol grande échelle - zones construites",
+      "title": "Occupation du sol grande échelle - zones construites - ancienne génération",
       "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle (CNIG).</br>",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
@@ -131,7 +131,7 @@
     },
     "OCSGE.COUVERTURE$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.COUVERTURE",
-      "title": "Occupation du sol grande échelle - couverture",
+      "title": "Occupation du sol grande échelle - couverture - ancienne génération",
       "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
@@ -246,7 +246,7 @@
     },
     "OCSGE.USAGE$GEOPORTAIL:OGC:WMTS": {
       "name": "OCSGE.USAGE",
-      "title": "Occupation du sol grande échelle - usage",
+      "title": "Occupation du sol grande échelle - usage - ancienne génération",
       "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG).",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
@@ -361,7 +361,7 @@
     },
     "OCSGE.CONSTRUCTIONS$GEOPORTAIL:OGC:WMS": {
       "name": "OCSGE.CONSTRUCTIONS",
-      "title": "Occupation du sol grande échelle - zones construites",
+      "title": "Occupation du sol grande échelle - zones construites - ancienne génération",
       "description": "La composante Occupation du sol grande échelle retenue par l’IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l’usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d’occupation des sols à grande échelle (CNIG).",
       "globalConstraint": {
         "minScaleDenominator": 8530.918335399141,
@@ -420,7 +420,7 @@
     },
     "OCSGE.COUVERTURE$GEOPORTAIL:OGC:WMS": {
       "name": "OCSGE.COUVERTURE",
-      "title": "Occupation du sol grande échelle - couverture",
+      "title": "Occupation du sol grande échelle - couverture - ancienne génération",
       "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle",
       "globalConstraint": {
         "minScaleDenominator": 8530.918335399141,
@@ -479,7 +479,7 @@
     },
     "OCSGE.USAGE$GEOPORTAIL:OGC:WMS": {
       "name": "OCSGE.USAGE",
-      "title": "Occupation du sol grande échelle - usage",
+      "title": "Occupation du sol grande échelle - usage - ancienne génération",
       "description": "La composante Occupation du sol grande échelle retenue par l'IGN partitionne le territoire en deux vues, physionomique (la couverture) et fonctionnel (l'usage principal). La zone construite, calculée à partir de ces deux informations, délimite les espaces construits des espaces naturels, agricoles et forestiers. Les données respectent les préconisations nationales pour la production des bases de données d'occupation des sols à grande échelle (CNIG).",
       "globalConstraint": {
         "minScaleDenominator": 8530.918335399141,
@@ -557,9 +557,15 @@
       ],
       "styles": [
         {
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
@@ -567,12 +573,6 @@
           "title": "ocsge_occupation",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         }
       ],
       "globalConstraint": {
@@ -615,16 +615,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
