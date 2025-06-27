@@ -5,6 +5,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS.1950-1965$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.1965-1980$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.1980-1995$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2012$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2013$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2014$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2015$GEOPORTAIL:OGC:WMTS",
@@ -568,6 +569,133 @@
       "formats": [
         {
           "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2012$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2012",
+      "title": "BDORTHO 2012 en infrarouge fausses couleurs",
+      "description": "BDORTHO 2012 en infrarouge fausses couleurs",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 80.0,
+          "bottom": -80.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "orthohisto": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_18",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "7",
+            "maxTileRow": "56",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "14",
+            "maxTileRow": "113",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "28",
+            "maxTileRow": "227",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "57",
+            "maxTileRow": "454",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "114",
+            "maxTileRow": "909",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "229",
+            "maxTileRow": "1818",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "459",
+            "maxTileRow": "3636",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "919",
+            "maxTileRow": "7272",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          },
+          "14": {
+            "minTileRow": "1839",
+            "maxTileRow": "14544",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
+          },
+          "15": {
+            "minTileRow": "3678",
+            "maxTileRow": "29089",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
+          },
+          "16": {
+            "minTileRow": "7357",
+            "maxTileRow": "58178",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
+          },
+          "17": {
+            "minTileRow": "14714",
+            "maxTileRow": "116357",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
+          },
+          "18": {
+            "minTileRow": "29428",
+            "maxTileRow": "232715",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
           "current": true
         }
       ]
