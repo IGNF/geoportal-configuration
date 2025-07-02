@@ -29,30 +29,34 @@ def createKeyServiceLayersFile(
     for newRow in TMS_CONFIG:
       writer.writerow(newRow)
     for row in reader:
-      if row["Service"] == "WMTS":
-        service = "WMTS"
-      elif row["Service"] == "WMS Raster":
-        service = "WMS"
-      elif row["Service"] == "WMS Vecteur":
-        service = "WMS"
-      elif row["Service"] == "WFS":
-        service = "WFS"
-      elif row["Service"] == "TMS":
-        service = "TMS"
-      else:
+      try:
+        if row["Service"] == "WMTS":
+          service = "WMTS"
+        elif row["Service"] == "WMS Raster":
+          service = "WMS"
+        elif row["Service"] == "WMS Vecteur":
+          service = "WMS"
+        elif row["Service"] == "WFS":
+          service = "WFS"
+        elif row["Service"] == "TMS":
+          service = "TMS"
+        else:
+          continue
+  
+        if row["Thématique"] == "cle specifique *":
+          continue
+        if row["Thématique"] == "":
+          continue
+        generic_keys.append(row["Thématique"])
+        newRow = {
+          "service": service,
+          "key": row["Thématique"],
+          "layer": row["Nom technique"].strip()
+        }
+        writer.writerow(newRow)
+      except:
+        print(row)
         continue
-
-      if row["Thématique"] == "cle specifique *":
-        continue
-      if row["Thématique"] == "":
-        continue
-      generic_keys.append(row["Thématique"])
-      newRow = {
-        "service": service,
-        "key": row["Thématique"],
-        "layer": row["Nom technique"].strip()
-      }
-      writer.writerow(newRow)
     with open("generic_keys.json", "w", newline='', encoding="utf-8") as generic_keys_file:
       json.dump(list(set(generic_keys)), generic_keys_file)
 
