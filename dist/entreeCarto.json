@@ -631,7 +631,6 @@
         "SPOT-EDUGEO_PYR-PNG_WLD_WM$GEOPORTAIL:OGC:WMTS",
         "SPOT5_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMTS",
         "TEST_PBE_LE_HAVRE$GEOPORTAIL:OGC:WMTS",
-        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS",
         "TN.RoadTransportNetwork.RoadLink$GEOPORTAIL:OGC:WMTS",
         "TOURBIERES_ZONES-HUMIDES.BCAE$GEOPORTAIL:OGC:WMTS",
         "TRACES.RANDO.HIVERNALE$GEOPORTAIL:OGC:WMTS",
@@ -644,7 +643,6 @@
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMTS",
         "UTILITYANDGOVERNMENTALSERVICES.ALL$GEOPORTAIL:OGC:WMTS",
         "WMTS_BEZIERS-COLOMBIERS_2022110638503087$GEOPORTAIL:OGC:WMTS",
-        "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS",
         "hedge.hedge$GEOPORTAIL:OGC:WMTS",
         "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS",
         "orthophoto_1947_calvados$GEOPORTAIL:OGC:WMTS",
@@ -1024,13 +1022,11 @@
         "SECUROUTE.TE.TE120$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.TE72$GEOPORTAIL:OGC:WMS",
         "SECUROUTE.TE.TE94$GEOPORTAIL:OGC:WMS",
-        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "TOURBIERES_ZONES-HUMIDES.BCAE$GEOPORTAIL:OGC:WMS",
         "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMS",
         "TRANSPORTNETWORKS.ROADS$GEOPORTAIL:OGC:WMS",
         "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS",
-        "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMS",
         "hydro_ardennes_pyramide_raster_wmsr$GEOPORTAIL:OGC:WMS",
         "lidarhd$GEOPORTAIL:OGC:WMS",
         "lidarhd_hypso$GEOPORTAIL:OGC:WMS",
@@ -1867,9 +1863,9 @@
         "ADMIN-EXPRESS-COG-CARTO-PE.2025:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
         "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
         "communes_972:commune972$GEOPORTAIL:OGC:WFS",
+        "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune$GEOPORTAIL:OGC:WFS",
         "test_mrp_la_ciotat_2:commune$GEOPORTAIL:OGC:WFS",
         "aubagne_ad_23062025_v3:commune$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune$GEOPORTAIL:OGC:WFS",
         "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune$GEOPORTAIL:OGC:WFS",
         "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
         "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
@@ -2200,7 +2196,6 @@
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS:arrete$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.ZNIEFF1.SEA:znieff1_mer$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.ZNIEFF2.SEA:znieff2_mer$GEOPORTAIL:OGC:WFS",
-        "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES:zones_a_prospecter_forets_subnaturelles$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.ZNIEFF1:znieff1$GEOPORTAIL:OGC:WFS",
         "TES_PGN_flux_aubagne2:point_du_reseau$GEOPORTAIL:OGC:WFS",
         "essai_gpkg_raster_v2_gpkg_03-02-2025_wfs:composantes_de_la_trame_verte_nsm$GEOPORTAIL:OGC:WFS",
@@ -85862,159 +85857,6 @@
       ],
       "key": "TEST_PBE_LE_HAVRE$GEOPORTAIL:OGC:WMTS"
     },
-    "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS": {
-      "name": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
-      "title": "Photographies aériennes très haute résolution",
-      "description": "Orthophotographies aériennes d'une résolution de 10cm à 5cm selon disponibilité.",
-      "globalConstraint": {
-        "maxScaleDenominator": 8735660.375448715,
-        "minScaleDenominator": 266.5911979812229,
-        "bbox": {
-          "left": 0.0354912,
-          "right": 6.02353,
-          "top": 49.6969,
-          "bottom": 43.1533
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_6_21",
-        "tileMatrixSetLimits": {
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "23",
-            "minTileCol": "32",
-            "maxTileCol": "33"
-          },
-          "7": {
-            "minTileRow": "43",
-            "maxTileRow": "46",
-            "minTileCol": "64",
-            "maxTileCol": "66"
-          },
-          "8": {
-            "minTileRow": "87",
-            "maxTileRow": "93",
-            "minTileCol": "128",
-            "maxTileCol": "132"
-          },
-          "9": {
-            "minTileRow": "174",
-            "maxTileRow": "187",
-            "minTileCol": "256",
-            "maxTileCol": "264"
-          },
-          "10": {
-            "minTileRow": "348",
-            "maxTileRow": "375",
-            "minTileCol": "512",
-            "maxTileCol": "529"
-          },
-          "11": {
-            "minTileRow": "697",
-            "maxTileRow": "751",
-            "minTileCol": "1024",
-            "maxTileCol": "1058"
-          },
-          "12": {
-            "minTileRow": "1394",
-            "maxTileRow": "1502",
-            "minTileCol": "2048",
-            "maxTileCol": "2116"
-          },
-          "13": {
-            "minTileRow": "2788",
-            "maxTileRow": "3005",
-            "minTileCol": "4096",
-            "maxTileCol": "4233"
-          },
-          "14": {
-            "minTileRow": "5577",
-            "maxTileRow": "6010",
-            "minTileCol": "8193",
-            "maxTileCol": "8466"
-          },
-          "15": {
-            "minTileRow": "11155",
-            "maxTileRow": "12021",
-            "minTileCol": "16387",
-            "maxTileCol": "16932"
-          },
-          "16": {
-            "minTileRow": "22311",
-            "maxTileRow": "24042",
-            "minTileCol": "32774",
-            "maxTileCol": "33864"
-          },
-          "17": {
-            "minTileRow": "44623",
-            "maxTileRow": "48085",
-            "minTileCol": "65548",
-            "maxTileCol": "67729"
-          },
-          "18": {
-            "minTileRow": "89247",
-            "maxTileRow": "96171",
-            "minTileCol": "131097",
-            "maxTileCol": "135458"
-          },
-          "19": {
-            "minTileRow": "178494",
-            "maxTileRow": "192343",
-            "minTileCol": "262195",
-            "maxTileCol": "270916"
-          },
-          "20": {
-            "minTileRow": "356988",
-            "maxTileRow": "384687",
-            "minTileCol": "524391",
-            "maxTileCol": "541832"
-          },
-          "21": {
-            "minTileRow": "713976",
-            "maxTileRow": "769374",
-            "minTileCol": "1048782",
-            "maxTileCol": "1083665"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        }
-      ],
-      "thematic": [
-        "Carte de référence de la couverture terrestre"
-      ],
-      "base": false,
-      "producer": [
-        "IGN"
-      ],
-      "key": "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMTS"
-    },
     "TN.RoadTransportNetwork.RoadLink$GEOPORTAIL:OGC:WMTS": {
       "name": "TN.RoadTransportNetwork.RoadLink",
       "title": "Routes",
@@ -87550,141 +87392,6 @@
         "Autres"
       ],
       "key": "WMTS_BEZIERS-COLOMBIERS_2022110638503087$GEOPORTAIL:OGC:WMTS"
-    },
-    "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS": {
-      "name": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES",
-      "title": "Zones à prospecter pour les forêts subnaturelles",
-      "description": "Cartographie des zones à prospecter pour l’identification des forêts subnaturelles",
-      "globalConstraint": {
-        "maxScaleDenominator": 34942641.50179486,
-        "minScaleDenominator": 8530.918335399145,
-        "bbox": {
-          "left": -5.1505,
-          "right": 9.5705,
-          "top": 51.0991,
-          "bottom": 41.3252
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_4_16",
-        "tileMatrixSetLimits": {
-          "4": {
-            "minTileRow": "5",
-            "maxTileRow": "5",
-            "minTileCol": "7",
-            "maxTileCol": "8"
-          },
-          "5": {
-            "minTileRow": "10",
-            "maxTileRow": "11",
-            "minTileCol": "15",
-            "maxTileCol": "16"
-          },
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "23",
-            "minTileCol": "31",
-            "maxTileCol": "33"
-          },
-          "7": {
-            "minTileRow": "42",
-            "maxTileRow": "47",
-            "minTileCol": "62",
-            "maxTileCol": "67"
-          },
-          "8": {
-            "minTileRow": "85",
-            "maxTileRow": "95",
-            "minTileCol": "124",
-            "maxTileCol": "134"
-          },
-          "9": {
-            "minTileRow": "171",
-            "maxTileRow": "191",
-            "minTileCol": "248",
-            "maxTileCol": "269"
-          },
-          "10": {
-            "minTileRow": "342",
-            "maxTileRow": "382",
-            "minTileCol": "497",
-            "maxTileCol": "539"
-          },
-          "11": {
-            "minTileRow": "684",
-            "maxTileRow": "765",
-            "minTileCol": "994",
-            "maxTileCol": "1078"
-          },
-          "12": {
-            "minTileRow": "1369",
-            "maxTileRow": "1530",
-            "minTileCol": "1989",
-            "maxTileCol": "2156"
-          },
-          "13": {
-            "minTileRow": "2738",
-            "maxTileRow": "3061",
-            "minTileCol": "3978",
-            "maxTileCol": "4313"
-          },
-          "14": {
-            "minTileRow": "5477",
-            "maxTileRow": "6123",
-            "minTileCol": "7957",
-            "maxTileCol": "8627"
-          },
-          "15": {
-            "minTileRow": "10955",
-            "maxTileRow": "12246",
-            "minTileCol": "15915",
-            "maxTileCol": "17255"
-          },
-          "16": {
-            "minTileRow": "21911",
-            "maxTileRow": "24492",
-            "minTileCol": "31830",
-            "maxTileCol": "34510"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Données Brutes",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "http://ign.fr",
-          "minScaleDenominator": 1
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        }
-      ],
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Autres"
-      ],
-      "base": false,
-      "key": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS"
     },
     "hedge.hedge$GEOPORTAIL:OGC:WMTS": {
       "name": "hedge.hedge",
@@ -93029,12 +92736,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+        },
+        {
+          "format": "text/html",
+          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -137148,12 +136855,6 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
           "name": "classique",
           "title": "classique",
           "current": false,
@@ -137182,6 +136883,12 @@
           "title": "bati_date",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         }
       ],
       "globalConstraint": {
@@ -137226,16 +136933,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
           "name": "isohypse_monochrome_orange",
           "title": "isohypse_monochrome_orange",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
+        },
+        {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
@@ -137280,9 +136987,15 @@
       ],
       "styles": [
         {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         },
         {
@@ -137290,12 +137003,6 @@
           "title": "ocsge_couverture",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -137340,16 +137047,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
           "name": "ocsge_occupation",
@@ -137400,16 +137107,16 @@
       ],
       "styles": [
         {
-          "name": "noir_et_blanc",
-          "title": "noir_et_blanc",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
-        },
-        {
           "name": "pci",
           "title": "pci",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        },
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
         }
       ],
       "globalConstraint": {
@@ -137454,28 +137161,10 @@
       ],
       "styles": [
         {
-          "name": "toponymes",
-          "title": "toponymes",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
-        },
-        {
           "name": "gris",
           "title": "gris",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
-          "name": "attenue",
-          "title": "attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
           "name": "transparent",
@@ -137484,16 +137173,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
-          "name": "standard",
-          "title": "standard",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
-        },
-        {
           "name": "accentue",
           "title": "accentue",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
+        },
+        {
+          "name": "attenue",
+          "title": "attenue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
           "name": "epure",
@@ -143787,182 +143494,6 @@
         }
       }
     },
-    "PM_4_16": {
-      "projection": "EPSG:3857",
-      "nativeResolutions": [
-        "9783.939620502561",
-        "4891.969810251280",
-        "2445.984905125640",
-        "1222.992452562820",
-        "611.4962262814100",
-        "305.7481131407048",
-        "152.8740565703525",
-        "76.43702828517624",
-        "38.21851414258813",
-        "19.10925707129406",
-        "9.554628535647032",
-        "4.777314267823516",
-        "2.388657133911758"
-      ],
-      "tileMatrices": {
-        "4": {
-          "matrixId": "4",
-          "matrixHeight": 16,
-          "matrixWidth": 16,
-          "scaleDenominator": 34942641.50179486,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "5": {
-          "matrixId": "5",
-          "matrixHeight": 32,
-          "matrixWidth": 32,
-          "scaleDenominator": 17471320.75089743,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "6": {
-          "matrixId": "6",
-          "matrixHeight": 64,
-          "matrixWidth": 64,
-          "scaleDenominator": 8735660.375448715,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "7": {
-          "matrixId": "7",
-          "matrixHeight": 128,
-          "matrixWidth": 128,
-          "scaleDenominator": 4367830.1877243575,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "8": {
-          "matrixId": "8",
-          "matrixHeight": 256,
-          "matrixWidth": 256,
-          "scaleDenominator": 2183915.0938621787,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "9": {
-          "matrixId": "9",
-          "matrixHeight": 512,
-          "matrixWidth": 512,
-          "scaleDenominator": 1091957.5469310894,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "10": {
-          "matrixId": "10",
-          "matrixHeight": 1024,
-          "matrixWidth": 1024,
-          "scaleDenominator": 545978.7734655464,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "11": {
-          "matrixId": "11",
-          "matrixHeight": 2048,
-          "matrixWidth": 2048,
-          "scaleDenominator": 272989.38673277217,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "12": {
-          "matrixId": "12",
-          "matrixHeight": 4096,
-          "matrixWidth": 4096,
-          "scaleDenominator": 136494.69336638608,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "13": {
-          "matrixId": "13",
-          "matrixHeight": 8192,
-          "matrixWidth": 8192,
-          "scaleDenominator": 68247.34668319322,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "14": {
-          "matrixId": "14",
-          "matrixHeight": 16384,
-          "matrixWidth": 16384,
-          "scaleDenominator": 34123.673341596535,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "15": {
-          "matrixId": "15",
-          "matrixHeight": 32768,
-          "matrixWidth": 32768,
-          "scaleDenominator": 17061.83667079829,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "16": {
-          "matrixId": "16",
-          "matrixHeight": 65536,
-          "matrixWidth": 65536,
-          "scaleDenominator": 8530.918335399145,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        }
-      }
-    },
     "PM_4_18": {
       "projection": "EPSG:3857",
       "nativeResolutions": [
@@ -145480,221 +145011,6 @@
           "matrixHeight": 1048576,
           "matrixWidth": 1048576,
           "scaleDenominator": 533.1823959624465,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        }
-      }
-    },
-    "PM_6_21": {
-      "projection": "EPSG:3857",
-      "nativeResolutions": [
-        "2445.984905125640",
-        "1222.992452562820",
-        "611.4962262814100",
-        "305.7481131407048",
-        "152.8740565703525",
-        "76.43702828517624",
-        "38.21851414258813",
-        "19.10925707129406",
-        "9.554628535647032",
-        "4.777314267823516",
-        "2.388657133911758",
-        "1.194328566955879",
-        "0.5971642834779395",
-        "0.2985821417389697",
-        "0.1492910708694849",
-        "0.0746455354347424"
-      ],
-      "tileMatrices": {
-        "6": {
-          "matrixId": "6",
-          "matrixHeight": 64,
-          "matrixWidth": 64,
-          "scaleDenominator": 8735660.375448715,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "7": {
-          "matrixId": "7",
-          "matrixHeight": 128,
-          "matrixWidth": 128,
-          "scaleDenominator": 4367830.1877243575,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "8": {
-          "matrixId": "8",
-          "matrixHeight": 256,
-          "matrixWidth": 256,
-          "scaleDenominator": 2183915.0938621787,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "9": {
-          "matrixId": "9",
-          "matrixHeight": 512,
-          "matrixWidth": 512,
-          "scaleDenominator": 1091957.5469310894,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "10": {
-          "matrixId": "10",
-          "matrixHeight": 1024,
-          "matrixWidth": 1024,
-          "scaleDenominator": 545978.7734655464,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "11": {
-          "matrixId": "11",
-          "matrixHeight": 2048,
-          "matrixWidth": 2048,
-          "scaleDenominator": 272989.38673277217,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "12": {
-          "matrixId": "12",
-          "matrixHeight": 4096,
-          "matrixWidth": 4096,
-          "scaleDenominator": 136494.69336638608,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "13": {
-          "matrixId": "13",
-          "matrixHeight": 8192,
-          "matrixWidth": 8192,
-          "scaleDenominator": 68247.34668319322,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "14": {
-          "matrixId": "14",
-          "matrixHeight": 16384,
-          "matrixWidth": 16384,
-          "scaleDenominator": 34123.673341596535,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "15": {
-          "matrixId": "15",
-          "matrixHeight": 32768,
-          "matrixWidth": 32768,
-          "scaleDenominator": 17061.83667079829,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "16": {
-          "matrixId": "16",
-          "matrixHeight": 65536,
-          "matrixWidth": 65536,
-          "scaleDenominator": 8530.918335399145,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "17": {
-          "matrixId": "17",
-          "matrixHeight": 131072,
-          "matrixWidth": 131072,
-          "scaleDenominator": 4265.459167699572,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "18": {
-          "matrixId": "18",
-          "matrixHeight": 262144,
-          "matrixWidth": 262144,
-          "scaleDenominator": 2132.7295838497826,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "19": {
-          "matrixId": "19",
-          "matrixHeight": 524288,
-          "matrixWidth": 524288,
-          "scaleDenominator": 1066.364791924893,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "20": {
-          "matrixId": "20",
-          "matrixHeight": 1048576,
-          "matrixWidth": 1048576,
-          "scaleDenominator": 533.1823959624465,
-          "tileHeight": 256,
-          "tileWidth": 256,
-          "topLeftCorner": {
-            "x": -20037508.3427892,
-            "y": 20037508.3427892
-          }
-        },
-        "21": {
-          "matrixId": "21",
-          "matrixHeight": 2097152,
-          "matrixWidth": 2097152,
-          "scaleDenominator": 266.5911979812229,
           "tileHeight": 256,
           "tileWidth": 256,
           "topLeftCorner": {
