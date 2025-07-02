@@ -29,7 +29,8 @@ def main(keys, referer=""):
         merged_config = merge_configs(list_configs)
     except IndexError:
         return "No key provided was valid"
-    generate_entree_carto_conf(merged_config)
+    if "entree-carto" in keys:
+        generate_entree_carto_conf(merged_config)
 
     return json.dumps(merged_config, indent=2, ensure_ascii=False)
 
