@@ -76,39 +76,39 @@ def generate_entree_carto_conf(merged_config):
     if edito:
         edito_config = merge_edito(merged_config, edito)
 
-    # Filtre des couches selon les propriétés des layers
-    conditions = {
-        "defaultProjection": lambda prop: not any(substring in prop for substring in ["IGNF:LAMB93","EPSG:2154"]),
-        "serviceParams": lambda prop: any(substring in prop["id"] for substring in ["WMTS", "WMS", "TMS"]),
-    }
-    edito_config["layers"] = {
-        layerID: layerParams 
-        for layerID, layerParams in edito_config["layers"].items()
-        if all(
-            prop in layerParams and condition(layerParams[prop])
-            for prop, condition in conditions.items()
-        )
-    }
-    # Ajoute la propriété key (utile pour l'entrée carto)
-    for layerID, layerParams in edito_config["layers"].items():
-        layerParams['key'] = layerID
-    
-    # Filtre les couches WMS qui dupliquent une couche WMTS
-    edito_config["layers"] = filter_specific_duplicates(edito_config["layers"])
-
-    # Récupère une table de conversion des thématiques
-    convert_table = getThematicConversionTable()
-    def convertThematic(thematic, convert_table):
-        if thematic in convert_table:
-            return convert_table[thematic]
-        else:
-            return thematic
-
-    # Map les thématiques avec la table de conversion
-    if convert_table:
+        # Filtre des couches selon les propriétés des layers
+        conditions = {
+            "defaultProjection": lambda prop: not any(substring in prop for substring in ["IGNF:LAMB93","EPSG:2154"]),
+            "serviceParams": lambda prop: any(substring in prop["id"] for substring in ["WMTS", "WMS", "TMS"]),
+        }
+        edito_config["layers"] = {
+            layerID: layerParams 
+            for layerID, layerParams in edito_config["layers"].items()
+            if all(
+                prop in layerParams and condition(layerParams[prop])
+                for prop, condition in conditions.items()
+            )
+        }
+        # Ajoute la propriété key (utile pour l'entrée carto)
         for layerID, layerParams in edito_config["layers"].items():
-            edito_config["layers"][layerID]["thematic"] = [convertThematic(thematic, convert_table) for thematic in layerParams["thematic"]]
-
-
-    with open("dist/entreeCarto.json", "w", encoding="utf-8") as file:
-        file.writelines(json.dumps(edito_config, indent=2, ensure_ascii=False))
+            layerParams['key'] = layerID
+        
+        # Filtre les couches WMS qui dupliquent une couche WMTS
+        edito_config["layers"] = filter_specific_duplicates(edito_config["layers"])
+    
+        # Récupère une table de conversion des thématiques
+        convert_table = getThematicConversionTable()
+        def convertThematic(thematic, convert_table):
+            if thematic in convert_table:
+                return convert_table[thematic]
+            else:
+                return thematic
+    
+        # Map les thématiques avec la table de conversion
+        if convert_table:
+            for layerID, layerParams in edito_config["layers"].items():
+                edito_config["layers"][layerID]["thematic"] = [convertThematic(thematic, convert_table) for thematic in layerParams["thematic"]]
+    
+    
+        with open("dist/entreeCarto.json", "w", encoding="utf-8") as file:
+            file.writelines(json.dumps(edito_config, indent=2, ensure_ascii=False))
