@@ -13,9 +13,9 @@ def main(keys, referer=""):
     createKeyServiceLayersFile()
     if not isinstance(keys, list):
         keys = [keys]
-    keys = filter(lambda x: x != "", keys)
+    non_null_keys = list(filter(lambda x: x != "", keys))
     list_configs = [
-        config for key in keys
+        config for key in non_null_keys
         for config in [
             parseWMTS(getWMTSCapabilities(key, referer), key),
             parseWMS(getWMSRCapabilities(key, referer), key),
@@ -29,7 +29,7 @@ def main(keys, referer=""):
         merged_config = merge_configs(list_configs)
     except IndexError:
         return "No key provided was valid"
-    if "entree-carto" in keys:
+    if "entree-carto" in non_null_keys:
         generate_entree_carto_conf(merged_config)
 
     return json.dumps(merged_config, indent=2, ensure_ascii=False)
