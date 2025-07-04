@@ -87000,7 +87000,7 @@
     "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMTS": {
       "name": "TRANSPORTS.DRONES.RESTRICTIONS",
       "title": "Restrictions UAS catégorie Ouverte et Aéromodélisme",
-      "description": "Représentation des zones soumises à interdictions ou à restrictions pour l’usage, à titre de loisir, d’aéronefs télépilotés (ou drones), sur le territoire métropolitain, à jour au 07-2024 Elle intègre partiellement les interdictions s'appuyant sur des données non publiées à l'AIP et ne couvre pas les interdictions temporaires. Cette carte est basée sur l’arrêté « espace » du 09/11/2017. La représentation des zones soumises à interdictions ou à restrictions n’engage pas la responsabilité des producteurs de la donnée. Le contour des agglomérations est fourni à titre purement indicatif. Consultez les interdictions temporaires sur https://www.sia.aviation-civile.gouv.fr/.",
+      "description": "Représentation des zones soumises à interdictions ou à restrictions pour l’usage, à titre de loisir, d’aéronefs télépilotés (ou drones), sur le territoire métropolitain, en Guyane, aux Antilles françaises, Saint-Pierre et Miquelon, Mayotte, La Réunion et aux Terres Australes, à jour au 07-2025. Elle intègre partiellement les interdictions s'appuyant sur des données non publiées à l'AIP et ne couvre pas les interdictions temporaires. Cette carte est basée sur l’arrêté « espace » du 09/11/2017. La représentation des zones soumises à interdictions ou à restrictions n’engage pas la responsabilité des producteurs de la donnée. Le contour des agglomérations est fourni à titre purement indicatif. Consultez les interdictions temporaires sur https://www.sia.aviation-civile.gouv.fr/.",
       "globalConstraint": {
         "maxScaleDenominator": 69885283.00358965,
         "minScaleDenominator": 17061.83667079829,
@@ -136813,16 +136813,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
           "name": "ocsge_occupation",
           "title": "ocsge_occupation",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
           "name": "ocsge_usage",
@@ -136873,16 +136873,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+        },
+        {
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         },
         {
           "name": "ocsge_occupation",
@@ -136987,21 +136987,9 @@
       ],
       "styles": [
         {
-          "name": "attenue",
-          "title": "attenue",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
           "name": "classique",
           "title": "classique",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
@@ -137011,22 +136999,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+        },
+        {
           "name": "accentue",
           "title": "accentue",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
+          "name": "attenue",
+          "title": "attenue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
           "name": "toponymes",
           "title": "toponymes",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
-        },
-        {
-          "name": "standard",
-          "title": "standard",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
           "name": "sans_toponymes",
@@ -137227,16 +137227,16 @@
       ],
       "styles": [
         {
-          "name": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
-          "title": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/f7c53655-1310-4f6a-8f54-eb3e259ec604.json"
-        },
-        {
           "name": "aa961c94-2ad5-4a92-ad2d-e6241fddfd52",
           "title": "aa961c94-2ad5-4a92-ad2d-e6241fddfd52",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/aa961c94-2ad5-4a92-ad2d-e6241fddfd52.json"
+        },
+        {
+          "name": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
+          "title": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/f7c53655-1310-4f6a-8f54-eb3e259ec604.json"
         }
       ],
       "globalConstraint": {
