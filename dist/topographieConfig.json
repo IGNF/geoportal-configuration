@@ -486,9 +486,9 @@
     "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMTS": {
       "name": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
       "title": "Points de repère routiers (PR)",
-      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine. Echelles du 1/8.000.000 au 1/8.000; Edition : 2025-03-15",
+      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine. Echelles du 1/8.000.000 au 1/8.000; Edition : 2025-06-15",
       "globalConstraint": {
-        "maxScaleDenominator": 545978.7734655464,
+        "maxScaleDenominator": 2183915.0938621787,
         "minScaleDenominator": 2132.7295838497826,
         "bbox": {
           "left": -63.3725,
@@ -506,8 +506,20 @@
       },
       "defaultProjection": "EPSG:3857",
       "wmtsOptions": {
-        "tileMatrixSetLink": "PM_10_18",
+        "tileMatrixSetLink": "PM_8_18",
         "tileMatrixSetLimits": {
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
           "10": {
             "minTileRow": "341",
             "maxTileRow": "574",
@@ -4640,21 +4652,9 @@
       ],
       "styles": [
         {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
           "name": "hydrographie",
           "title": "hydrographie",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
@@ -4686,6 +4686,18 @@
           "title": "bati_etages",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         }
       ],
       "globalConstraint": {
@@ -12514,6 +12526,156 @@
             "y": 20037508.3427892
           }
         },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655464,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277217,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638608,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319322,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.673341596535,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497826,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "PM_8_18": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "611.4962262814100",
+        "305.7481131407048",
+        "152.8740565703525",
+        "76.43702828517624",
+        "38.21851414258813",
+        "19.10925707129406",
+        "9.554628535647032",
+        "4.777314267823516",
+        "2.388657133911758",
+        "1.194328566955879",
+        "0.5971642834779395"
+      ],
+      "tileMatrices": {
         "8": {
           "matrixId": "8",
           "matrixHeight": 256,
