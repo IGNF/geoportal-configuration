@@ -582,13 +582,13 @@
         "Patrinat_APG$GEOPORTAIL:OGC:WMTS",
         "Patrinat_APHN$GEOPORTAIL:OGC:WMTS",
         "Patrinat_APLG$GEOPORTAIL:OGC:WMTS",
+        "Patrinat_BIOS$GEOPORTAIL:OGC:WMTS",
         "Patrinat_BPM$GEOPORTAIL:OGC:WMTS",
         "Patrinat_CDL$GEOPORTAIL:OGC:WMTS",
         "Patrinat_CEN$GEOPORTAIL:OGC:WMTS",
         "Patrinat_GEOPARC$GEOPORTAIL:OGC:WMTS",
         "Patrinat_INPG$GEOPORTAIL:OGC:WMTS",
         "Patrinat_PN$GEOPORTAIL:OGC:WMTS",
-        "Patrinat_PN2$GEOPORTAIL:OGC:WMTS",
         "Patrinat_PNM$GEOPORTAIL:OGC:WMTS",
         "Patrinat_PNR$GEOPORTAIL:OGC:WMTS",
         "Patrinat_PPRNN$GEOPORTAIL:OGC:WMTS",
@@ -79541,6 +79541,129 @@
       "base": false,
       "key": "Patrinat_APLG$GEOPORTAIL:OGC:WMTS"
     },
+    "Patrinat_BIOS$GEOPORTAIL:OGC:WMTS": {
+      "name": "Patrinat_BIOS",
+      "title": "Patrinat_BIOS",
+      "description": "BIOS",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -146.483,
+          "right": 8.9138,
+          "top": 50.8555,
+          "bottom": -16.6412
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "5",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "70",
+            "minTileCol": "11",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "140",
+            "minTileCol": "23",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "280",
+            "minTileCol": "47",
+            "maxTileCol": "268"
+          },
+          "10": {
+            "minTileRow": "343",
+            "maxTileRow": "560",
+            "minTileCol": "95",
+            "maxTileCol": "537"
+          },
+          "11": {
+            "minTileRow": "686",
+            "maxTileRow": "1120",
+            "minTileCol": "190",
+            "maxTileCol": "1074"
+          },
+          "12": {
+            "minTileRow": "1373",
+            "maxTileRow": "2240",
+            "minTileCol": "381",
+            "maxTileCol": "2149"
+          },
+          "13": {
+            "minTileRow": "2747",
+            "maxTileRow": "4480",
+            "minTileCol": "762",
+            "maxTileCol": "4298"
+          },
+          "14": {
+            "minTileRow": "5495",
+            "maxTileRow": "8960",
+            "minTileCol": "1525",
+            "maxTileCol": "8597"
+          },
+          "15": {
+            "minTileRow": "10990",
+            "maxTileRow": "17920",
+            "minTileCol": "3050",
+            "maxTileCol": "17195"
+          },
+          "16": {
+            "minTileRow": "21981",
+            "maxTileRow": "35840",
+            "minTileCol": "6101",
+            "maxTileCol": "34390"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "Patrinat_BIOS$GEOPORTAIL:OGC:WMTS"
+    },
     "Patrinat_BPM$GEOPORTAIL:OGC:WMTS": {
       "name": "Patrinat_BPM",
       "title": "Patrinat_BPM",
@@ -80278,129 +80401,6 @@
       ],
       "base": false,
       "key": "Patrinat_PN$GEOPORTAIL:OGC:WMTS"
-    },
-    "Patrinat_PN2$GEOPORTAIL:OGC:WMTS": {
-      "name": "Patrinat_PN2",
-      "title": "Patrinat_PN",
-      "description": "SIC",
-      "globalConstraint": {
-        "maxScaleDenominator": 8735660.375448715,
-        "minScaleDenominator": 8530.918335399145,
-        "bbox": {
-          "left": -62.018,
-          "right": 55.8367,
-          "top": 48.1066,
-          "bottom": -21.3863
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_6_16",
-        "tileMatrixSetLimits": {
-          "6": {
-            "minTileRow": "22",
-            "maxTileRow": "35",
-            "minTileCol": "20",
-            "maxTileCol": "41"
-          },
-          "7": {
-            "minTileRow": "44",
-            "maxTileRow": "71",
-            "minTileCol": "41",
-            "maxTileCol": "83"
-          },
-          "8": {
-            "minTileRow": "88",
-            "maxTileRow": "143",
-            "minTileCol": "83",
-            "maxTileCol": "167"
-          },
-          "9": {
-            "minTileRow": "177",
-            "maxTileRow": "287",
-            "minTileCol": "167",
-            "maxTileCol": "335"
-          },
-          "10": {
-            "minTileRow": "355",
-            "maxTileRow": "574",
-            "minTileCol": "335",
-            "maxTileCol": "670"
-          },
-          "11": {
-            "minTileRow": "711",
-            "maxTileRow": "1148",
-            "minTileCol": "671",
-            "maxTileCol": "1341"
-          },
-          "12": {
-            "minTileRow": "1422",
-            "maxTileRow": "2297",
-            "minTileCol": "1342",
-            "maxTileCol": "2683"
-          },
-          "13": {
-            "minTileRow": "2844",
-            "maxTileRow": "4594",
-            "minTileCol": "2684",
-            "maxTileCol": "5366"
-          },
-          "14": {
-            "minTileRow": "5688",
-            "maxTileRow": "9188",
-            "minTileCol": "5369",
-            "maxTileCol": "10733"
-          },
-          "15": {
-            "minTileRow": "11376",
-            "maxTileRow": "18377",
-            "minTileCol": "10738",
-            "maxTileCol": "21466"
-          },
-          "16": {
-            "minTileRow": "22752",
-            "maxTileRow": "36754",
-            "minTileCol": "21477",
-            "maxTileCol": "42932"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Données Brutes",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "http://ign.fr",
-          "minScaleDenominator": 1
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        }
-      ],
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Autres"
-      ],
-      "base": false,
-      "key": "Patrinat_PN2$GEOPORTAIL:OGC:WMTS"
     },
     "Patrinat_PNM$GEOPORTAIL:OGC:WMTS": {
       "name": "Patrinat_PNM",
@@ -126966,12 +126966,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
-        },
-        {
           "format": "text/html",
           "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -136848,10 +136848,10 @@
       ],
       "styles": [
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
+          "name": "classique",
+          "title": "classique",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
           "name": "hydrographie",
@@ -136866,16 +136866,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
           "name": "routier",
           "title": "routier",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
           "name": "bati_date",
@@ -136884,16 +136884,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "bati_etages",
+          "title": "bati_etages",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
         },
         {
-          "name": "delestage",
-          "title": "delestage",
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         }
       ],
       "globalConstraint": {
@@ -136992,16 +136992,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
           "name": "ocsge_occupation",
           "title": "ocsge_occupation",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
           "name": "ocsge_usage",
@@ -137058,16 +137058,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         },
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+        },
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -137166,22 +137166,10 @@
       ],
       "styles": [
         {
-          "name": "toponymes",
-          "title": "toponymes",
+          "name": "accentue",
+          "title": "accentue",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
-        },
-        {
-          "name": "epure",
-          "title": "epure",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
-        },
-        {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
           "name": "classique",
@@ -137190,16 +137178,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+        },
+        {
           "name": "gris",
           "title": "gris",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         },
         {
-          "name": "accentue",
-          "title": "accentue",
+          "name": "attenue",
+          "title": "attenue",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
           "name": "transparent",
@@ -137208,16 +137214,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
-          "name": "standard",
-          "title": "standard",
+          "name": "epure",
+          "title": "epure",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
-        },
-        {
-          "name": "attenue",
-          "title": "attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         }
       ],
       "globalConstraint": {
@@ -137406,16 +137406,16 @@
       ],
       "styles": [
         {
-          "name": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
-          "title": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/f7c53655-1310-4f6a-8f54-eb3e259ec604.json"
-        },
-        {
           "name": "aa961c94-2ad5-4a92-ad2d-e6241fddfd52",
           "title": "aa961c94-2ad5-4a92-ad2d-e6241fddfd52",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/aa961c94-2ad5-4a92-ad2d-e6241fddfd52.json"
+        },
+        {
+          "name": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
+          "title": "f7c53655-1310-4f6a-8f54-eb3e259ec604",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/IGN_Formation_GPF/style/f7c53655-1310-4f6a-8f54-eb3e259ec604.json"
         }
       ],
       "globalConstraint": {
