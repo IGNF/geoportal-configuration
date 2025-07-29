@@ -6,7 +6,7 @@ from core.requester import getEdito, searchMtdUrls, getThematicConversionTable
 def filter_specific_duplicates(input_dict):
     """
     Filtre un dictionnaire en supprimant les entrées où:
-    - Le 'name' est dupliqué
+    - Le 'name' est dupliqué  (y compris les noms formatés avec _wms/_wmts)
     - ET l'entrée a 'serviceParams' contenant 'WMS'
     - ET l'autre entrée avec même 'name' a 'serviceParams' = 'WMTS'
     
@@ -17,7 +17,7 @@ def filter_specific_duplicates(input_dict):
         dict: Dictionnaire filtré
     """
     # Dictionnaire pour tracker les names et leurs serviceParams
-    name_tracker = {}
+    base_name_tracker = {}
     
     # Premier passage: compiler les informations sur les doublons
     for key, entity in input_dict.items():
@@ -25,27 +25,30 @@ def filter_specific_duplicates(input_dict):
             name = entity["name"]
             service_params = str(entity["serviceParams"])
             
-            if name not in name_tracker:
-                name_tracker[name] = {
+            # Extraire le nom de base (sans _wms ou _wmts)
+            base_name = name.replace("_WMS", "").replace("_WMTS", "")
+
+            if base_name not in base_name_tracker:
+                base_name_tracker[base_name] = {
                     'count': 1,
                     'wms_keys': [],
                     'wmts_keys': [],
                     'other_keys': []
                 }
             else:
-                name_tracker[name]['count'] += 1
+                base_name_tracker[base_name]['count'] += 1
                 
             if "WMS" in service_params:
-                name_tracker[name]['wms_keys'].append(key)
+                base_name_tracker[base_name]['wms_keys'].append(key)
             elif "WMTS" in service_params:
-                name_tracker[name]['wmts_keys'].append(key)
+                base_name_tracker[base_name]['wmts_keys'].append(key)
             else:
-                name_tracker[name]['other_keys'].append(key)
+                base_name_tracker[base_name]['other_keys'].append(key)
     
     # Identifier les clés à supprimer
     keys_to_remove = set()
     
-    for name, info in name_tracker.items():
+    for base_name, info in base_name_tracker.items():
         # S'il y a un doublon avec à la fois WMTS et WMS
         if info['count'] > 1 and info['wmts_keys'] and info['wms_keys']:
             # On garde le WMTS et on supprime le WMS
