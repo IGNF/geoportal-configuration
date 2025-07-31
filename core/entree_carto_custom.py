@@ -25,8 +25,14 @@ def filter_specific_duplicates(input_dict):
             name = entity["name"]
             service_params = str(entity["serviceParams"])
             
-            # Extraire le nom de base (sans _wms ou _wmts)
-            base_name = name.replace("_WMS", "").replace("_WMTS", "")
+            # Extraire le nom de base (sans _wms, _wmts, _wmsr)
+            suffixes = ["_wms", "_wmts", "_wmsr"]
+            for suffix in suffixes:
+                if name.endswith(suffix):
+                    base_name = name[:-len(suffix)]
+                    break
+                else:
+                    base_name = name
 
             if base_name not in base_name_tracker:
                 base_name_tracker[base_name] = {
