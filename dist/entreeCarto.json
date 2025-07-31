@@ -1401,6 +1401,7 @@
         "assainissement$GEOPORTAIL:OGC:WMS",
         "associations$GEOPORTAIL:OGC:WMS",
         "batiment_gpkg_19-12-2024_wmsv$GEOPORTAIL:OGC:WMS",
+        "bruit_multi_gpkg_31-07-2025_wmsv$GEOPORTAIL:OGC:WMS",
         "canalisation$GEOPORTAIL:OGC:WMS",
         "carreaux_200m_met_gpkg_19-12-2024_wmsv$GEOPORTAIL:OGC:WMS",
         "carriere$GEOPORTAIL:OGC:WMS",
@@ -122312,6 +122313,150 @@
       ],
       "key": "batiment_gpkg_19-12-2024_wmsv$GEOPORTAIL:OGC:WMS"
     },
+    "bruit_multi_gpkg_31-07-2025_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "bruit_multi_gpkg_31-07-2025_wmsv",
+      "title": "Exposition au bruit en métropole lilloise  - CPC6596",
+      "description": "Exposition au bruit en métropole lilloise  - donnée concaténée dans le cadre de l'accord CPC n°6596 du 7 décembre 2019 - version 2.11 - réservé à usage parallèle",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 2.79,
+          "right": 3.274257812,
+          "top": 50.797548828,
+          "bottom": 50.492568359
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/html",
+          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/taux_de_boisement_communal"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=taux_de_boisement_communal"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-bruit_multi_gpkg_31-07-2025_wmsv",
+          "title": "bruit_multi_gpkg_31-07-2025_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=bruit_multi_gpkg_31-07-2025_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "metadata_urls": [
+        "https://qlf-cartes.ign.fr/catalogue/dataset/taux_de_boisement_communal",
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=taux_de_boisement_communal"
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "bruit_multi_gpkg_31-07-2025_wmsv$GEOPORTAIL:OGC:WMS"
+    },
     "canalisation$GEOPORTAIL:OGC:WMS": {
       "name": "canalisation",
       "title": "Canalisations",
@@ -136817,10 +136962,34 @@
       ],
       "styles": [
         {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
           "name": "classique",
           "title": "classique",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
           "name": "hydrographie",
@@ -136839,30 +137008,6 @@
           "title": "routier",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "delestage",
-          "title": "delestage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
-        },
-        {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         }
       ],
       "globalConstraint": {
@@ -136907,16 +137052,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_monochrome_marron",
           "title": "isohypse_monochrome_marron",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         }
       ],
       "globalConstraint": {
@@ -136967,16 +137112,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
           "name": "ocsge_occupation",
           "title": "ocsge_occupation",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         }
       ],
       "globalConstraint": {
@@ -137021,10 +137166,10 @@
       ],
       "styles": [
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         },
         {
           "name": "ocsge_couverture",
@@ -137033,10 +137178,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -137081,16 +137226,16 @@
       ],
       "styles": [
         {
-          "name": "noir_et_blanc",
-          "title": "noir_et_blanc",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
-        },
-        {
           "name": "pci",
           "title": "pci",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        },
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
         }
       ],
       "globalConstraint": {
@@ -137135,9 +137280,27 @@
       ],
       "styles": [
         {
+          "name": "attenue",
+          "title": "attenue",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "accentue",
+          "title": "accentue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+        },
+        {
           "name": "epure",
           "title": "epure",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
@@ -137147,10 +137310,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "standard",
-          "title": "standard",
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "toponymes",
@@ -137159,34 +137322,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
-          "name": "accentue",
-          "title": "accentue",
+          "name": "standard",
+          "title": "standard",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
-        },
-        {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
           "name": "transparent",
           "title": "transparent",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
-        },
-        {
-          "name": "attenue",
-          "title": "attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         }
       ],
       "globalConstraint": {
