@@ -5,6 +5,7 @@
         "BUILDINGS.BUILDINGS$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALNAMES.NAMES$GEOPORTAIL:OGC:WMTS",
         "HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMTS",
+        "IGNF_BD-HAIE-V1_2020$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTNETWORKS.RAILWAYS$GEOPORTAIL:OGC:WMTS",
         "TRANSPORTNETWORKS.ROADS$GEOPORTAIL:OGC:WMTS",
@@ -458,6 +459,145 @@
             "maxTileRow": "147106",
             "minTileCol": "84491",
             "maxTileCol": "171824"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "IGNF_BD-HAIE-V1_2020$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_BD-HAIE-V1_2020",
+      "title": "BD HAIE 2020",
+      "description": "Couche nationale de référence des haies linéaires en France métropolitaine ; Edition : 2020",
+      "globalConstraint": {
+        "maxScaleDenominator": 34942641.50179486,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -6.0,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "topographie": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_4_18",
+        "tileMatrixSetLimits": {
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "30",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "61",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "84",
+            "maxTileRow": "95",
+            "minTileCol": "123",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "169",
+            "maxTileRow": "191",
+            "minTileCol": "247",
+            "maxTileCol": "270"
+          },
+          "10": {
+            "minTileRow": "338",
+            "maxTileRow": "383",
+            "minTileCol": "494",
+            "maxTileCol": "540"
+          },
+          "11": {
+            "minTileRow": "676",
+            "maxTileRow": "767",
+            "minTileCol": "989",
+            "maxTileCol": "1080"
+          },
+          "12": {
+            "minTileRow": "1352",
+            "maxTileRow": "1535",
+            "minTileCol": "1979",
+            "maxTileCol": "2161"
+          },
+          "13": {
+            "minTileRow": "2705",
+            "maxTileRow": "3071",
+            "minTileCol": "3959",
+            "maxTileCol": "4323"
+          },
+          "14": {
+            "minTileRow": "5411",
+            "maxTileRow": "6142",
+            "minTileCol": "7918",
+            "maxTileCol": "8647"
+          },
+          "15": {
+            "minTileRow": "10823",
+            "maxTileRow": "12285",
+            "minTileCol": "15837",
+            "maxTileCol": "17294"
+          },
+          "16": {
+            "minTileRow": "21647",
+            "maxTileRow": "24571",
+            "minTileCol": "31675",
+            "maxTileCol": "34588"
+          },
+          "17": {
+            "minTileRow": "43295",
+            "maxTileRow": "49142",
+            "minTileCol": "63351",
+            "maxTileCol": "69176"
+          },
+          "18": {
+            "minTileRow": "86590",
+            "maxTileRow": "98284",
+            "minTileCol": "126702",
+            "maxTileCol": "138353"
           }
         }
       },
@@ -4658,16 +4798,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
-          "name": "delestage",
-          "title": "delestage",
+          "name": "hydrographie",
+          "title": "hydrographie",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "bati",
+          "title": "bati",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
           "name": "bati_etages",
@@ -4682,22 +4822,22 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
-          "name": "hydrographie",
-          "title": "hydrographie",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
           "name": "classique_simplifiee",
           "title": "classique_simplifiee",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         }
       ],
       "globalConstraint": {
