@@ -26,6 +26,7 @@
         "ADMINEXPRESS-COG.2025$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG-CARTO-PE.2025$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.2017$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.2018$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.2019$GEOPORTAIL:OGC:WMS",
@@ -124,34 +125,6 @@
         "ADMINEXPRESS-COG.2025:departement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2025:epci$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG.2025:region$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:arrondissement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:canton$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_d_arrondissement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_d_arrondissement_municipal$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_departement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_region$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:departement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:epci$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.2025:region$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:arrondissement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:canton$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_d_arrondissement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_d_arrondissement_municipal$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_departement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_region$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:departement$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:epci$GEOPORTAIL:OGC:WFS",
-        "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:region$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:arrondissement$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
         "ADMINEXPRESS-COG-CARTO.LATEST:canton$GEOPORTAIL:OGC:WFS",
@@ -2842,6 +2815,129 @@
         },
         {
           "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ADMINEXPRESS-COG-CARTO-PE.2025$GEOPORTAIL:OGC:WMS": {
+      "name": "ADMINEXPRESS-COG-CARTO-PE.2025",
+      "title": "ADMINEXPRESS COG CARTO PE (PETITE ECHELLE); Edition 2025-01-01",
+      "description": "Limites administratives d’ADMIN EXPRESS pour un usage cartographique et/ou statistique à petite échelle (édition annuelle).",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-ADMINEXPRESS-COG-CARTO-PE.2025",
+          "title": "ADMINEXPRESS-COG-CARTO-PE.2025 style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ADMINEXPRESS-COG-CARTO-PE.2025"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
@@ -5607,790 +5703,6 @@
           "right": 55.83665387,
           "top": 51.08898944,
           "bottom": -21.38963076
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:arrondissement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:arrondissement",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Arrondissement",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Arrondissement",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:arrondissement_municipal",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Arrondissement municipal",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Arrondissement municipal",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:canton$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:canton",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Canton",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Canton",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_d_arrondissement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_d_arrondissement",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu d'Arrondissement",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu d'Arrondissement",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_d_arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_d_arrondissement_municipal",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu d'Arrondissement municipal",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu d'Arrondissement municipal",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_commune_associee_ou_deleguee",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu de Commune associée ou déléguée",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu de Commune associée ou déléguée",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_departement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_departement",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu de Département",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu de Département",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_region$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:chef_lieu_de_region",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu de Région",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Chef-lieu de Région",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:collectivite_territoriale$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:collectivite_territoriale",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Collectivité territoriale",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Collectivité territoriale",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Commune",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Commune",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:commune_associee_ou_deleguee",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Commune associée ou déléguée",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Commune associée ou déléguée",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:departement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:departement",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Département",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Département",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:epci$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:epci",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 EPCI",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 EPCI",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.2025:region$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.2025:region",
-      "title": "ADMINEXPRESS COG CARTO PE 2025 Région",
-      "description": "ADMINEXPRESS COG CARTO PE 2025 Région",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:arrondissement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:arrondissement",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Arrondissement",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Arrondissement",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:arrondissement_municipal",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Arrondissement municipal",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Arrondissement municipal",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:canton$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:canton",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Canton",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Canton",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_d_arrondissement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_d_arrondissement",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu d'Arrondissement",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu d'Arrondissement",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_d_arrondissement_municipal$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_d_arrondissement_municipal",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu d'Arrondissement municipal",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu d'Arrondissement municipal",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_commune_associee_ou_deleguee",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu de Commune associée ou déléguée",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu de Commune associée ou déléguée",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_departement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_departement",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu de Département",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu de Département",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_region$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:chef_lieu_de_region",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu de Région",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Chef-lieu de Région",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:collectivite_territoriale$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:collectivite_territoriale",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Collectivité territoriale",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Collectivité territoriale",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Commune",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Commune",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune_associee_ou_deleguee$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:commune_associee_ou_deleguee",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Commune associée ou déléguée",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Commune associée ou déléguée",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:departement$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:departement",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Département",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Département",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:epci$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:epci",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition EPCI",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition EPCI",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "administratif": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:region$GEOPORTAIL:OGC:WFS": {
-      "name": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST:region",
-      "title": "ADMINEXPRESS COG CARTO PE Dernière édition Région",
-      "description": "ADMINEXPRESS COG CARTO PE Dernière édition Région",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
         }
       },
       "serviceParams": {
