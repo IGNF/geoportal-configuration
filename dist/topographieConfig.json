@@ -96,7 +96,7 @@
     "BUILDINGS.BUILDINGS$GEOPORTAIL:OGC:WMTS": {
       "name": "BUILDINGS.BUILDINGS",
       "title": "Bâtiments",
-      "description": "Bâtiments ; Edition : 2025-03-15",
+      "description": "Bâtiments ; Edition : 2025-06-15",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
         "minScaleDenominator": 2132.7295838497826,
@@ -233,7 +233,7 @@
     "GEOGRAPHICALNAMES.NAMES$GEOPORTAIL:OGC:WMTS": {
       "name": "GEOGRAPHICALNAMES.NAMES",
       "title": "Noms",
-      "description": "Noms ; Edition : 2025-03-15",
+      "description": "Noms ; Edition : 2025-06-15",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
         "minScaleDenominator": 2132.7295838497826,
@@ -360,7 +360,7 @@
     "HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMTS": {
       "name": "HYDROGRAPHY.HYDROGRAPHY",
       "title": "Hydrographie",
-      "description": "Hydrographie ; Edition : 2025-03-15",
+      "description": "Hydrographie ; Edition : 2025-06-15",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
         "minScaleDenominator": 2132.7295838497826,
@@ -741,7 +741,7 @@
     "TRANSPORTNETWORKS.RAILWAYS$GEOPORTAIL:OGC:WMTS": {
       "name": "TRANSPORTNETWORKS.RAILWAYS",
       "title": "Voie ferrée",
-      "description": "Voie ferrée ; Edition : 2025-03-15",
+      "description": "Voie ferrée ; Edition : 2025-06-15",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
         "minScaleDenominator": 2132.7295838497826,
@@ -868,7 +868,7 @@
     "TRANSPORTNETWORKS.ROADS$GEOPORTAIL:OGC:WMTS": {
       "name": "TRANSPORTNETWORKS.ROADS",
       "title": "Routes",
-      "description": "Routes ; Edition : 2025-03-15",
+      "description": "Routes ; Edition : 2025-06-15",
       "globalConstraint": {
         "maxScaleDenominator": 8735660.375448715,
         "minScaleDenominator": 2132.7295838497826,
@@ -1122,7 +1122,7 @@
     "UTILITYANDGOVERNMENTALSERVICES.ALL$GEOPORTAIL:OGC:WMTS": {
       "name": "UTILITYANDGOVERNMENTALSERVICES.ALL",
       "title": "Réseau électrique",
-      "description": "Réseau électrique ; Edition : 2025-03-15",
+      "description": "Réseau électrique ; Edition : 2025-06-15",
       "globalConstraint": {
         "maxScaleDenominator": 545978.7734655464,
         "minScaleDenominator": 2132.7295838497826,
@@ -4792,10 +4792,10 @@
       ],
       "styles": [
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "routier",
+          "title": "routier",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
           "name": "hydrographie",
@@ -4810,16 +4810,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "routier",
-          "title": "routier",
+          "name": "bati_etages",
+          "title": "bati_etages",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "delestage",
-          "title": "delestage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
         },
         {
           "name": "bati_date",
@@ -4828,10 +4822,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
           "name": "classique_simplifiee",
