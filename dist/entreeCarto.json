@@ -177,6 +177,7 @@
         "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
         "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
+        "IGNF_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMTS",
         "IGN_NL_TEST_ST_AMAND$GEOPORTAIL:OGC:WMTS",
         "INPE$GEOPORTAIL:OGC:WMTS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS",
@@ -727,6 +728,7 @@
         "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
         "IGNF_TRANSPORTNETWORKS.RAILWAYS$GEOPORTAIL:OGC:WMS",
         "IGNF_TRANSPORTNETWORKS.ROADS$GEOPORTAIL:OGC:WMS",
+        "IGNF_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.LOGEMENTS.SURFACE.MOYENNE.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.NIVEAU.DE.VIE.SECRET$GEOPORTAIL:OGC:WMS",
@@ -2226,6 +2228,7 @@
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
         "BDTOPO$GEOPORTAIL:GPP:TMS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS",
+        "OCSGE_2016$GEOPORTAIL:GPP:TMS",
         "OCSGE_2019$GEOPORTAIL:GPP:TMS",
         "PCI$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS",
@@ -24005,6 +24008,129 @@
         "IGN"
       ],
       "key": "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS"
+    },
+    "IGNF_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_ZONES-DENSITE-HOMOGENE_2024",
+      "title": "Zones de Densité Homogène (ZDH)",
+      "description": "Registre parcellaire graphique : Zones de densité homogènes sur laquelle la végétation et les autres éléments naturels non agricoles (affleurements rocheux, zones de sol nu…) apparaissent homogènes lors de la photo-interprétation d’une parcelle ou d’un ensemble de parcelles de prairie permanente déclarées au RPG par les exploitants édition 2024",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "IGNF_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMTS"
     },
     "IGN_NL_TEST_ST_AMAND$GEOPORTAIL:OGC:WMTS": {
       "name": "IGN_NL_TEST_ST_AMAND",
@@ -104586,137 +104712,6 @@
       ],
       "key": "IGNF_SITES-UNESCO$GEOPORTAIL:OGC:WMS"
     },
-    "IGNF_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_ZONES-DENSITE-HOMOGENE_2024",
-      "title": "Zones de Densité Homogène (ZDH)",
-      "description": "Registre parcellaire graphique : Zones de densité homogènes sur laquelle la végétation et les autres éléments naturels non agricoles (affleurements rocheux, zones de sol nu…) apparaissent homogènes lors de la photo-interprétation d’une parcelle ou d’un ensemble de parcelles de prairie permanente déclarées au RPG par les exploitants édition 2024",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -63.07078975,
-          "right": 55.83259967,
-          "top": 51.07510062,
-          "bottom": -21.38541709
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-IGNF_ZONES-DENSITE-HOMOGENE_2024",
-          "title": "IGNF_ZONES-DENSITE-HOMOGENE_2024 style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_ZONES-DENSITE-HOMOGENE_2024"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ],
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Autres"
-      ],
-      "base": false,
-      "key": "IGNF_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMS"
-    },
     "INAO-AOC_SYMBO_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
       "name": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS",
       "title": "Délimitation parcellaire AOC viticole",
@@ -107008,12 +107003,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -107152,12 +107147,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -126291,12 +126286,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+        },
+        {
+          "format": "text/html",
+          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -126579,12 +126574,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
-        },
-        {
           "format": "text/html",
           "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -135151,10 +135146,16 @@
       ],
       "styles": [
         {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
+          "name": "hydrographie",
+          "title": "hydrographie",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
           "name": "bati",
@@ -135163,16 +135164,22 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "hydrographie",
-          "title": "hydrographie",
+          "name": "routier",
+          "title": "routier",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
-          "name": "delestage",
-          "title": "delestage",
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
           "name": "bati_etages",
@@ -135185,18 +135192,6 @@
           "title": "bati_date",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         }
       ],
       "globalConstraint": {
@@ -135274,7 +135269,7 @@
       ],
       "key": "ISOHYPSE$GEOPORTAIL:GPP:TMS"
     },
-    "OCSGE_2019$GEOPORTAIL:GPP:TMS": {
+    "OCSGE_2016$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
       "serviceParams": {
@@ -135284,9 +135279,9 @@
           "full": "https://data.geopf.fr/tms/1.0.0/"
         }
       },
-      "name": "OCSGE_2019",
-      "title": "OCSGE_2019",
-      "description": "OCS GE 2019",
+      "name": "OCSGE_2016",
+      "title": "OCSGE_2016",
+      "description": "OCS GE 2016",
       "formats": [
         {
           "current": true,
@@ -135311,6 +135306,66 @@
           "title": "ocsge_occupation",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": "EPSG:3857",
+        "bbox": {
+          "left": -31492.050174486427,
+          "right": 133994.11334515916,
+          "top": 5477859.625901451,
+          "bottom": 5359382.235092076
+        },
+        "minScaleDenominator": 8735660.375448715,
+        "maxScaleDenominator": 1066.364791924893
+      },
+      "defaultProjection": "EPSG:3857",
+      "thematic": [
+        "Carte de référence de la couverture terrestre"
+      ],
+      "base": false,
+      "producer": [
+        "IGN"
+      ],
+      "key": "OCSGE_2016$GEOPORTAIL:GPP:TMS"
+    },
+    "OCSGE_2019$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/tms/1.0.0/"
+        }
+      },
+      "name": "OCSGE_2019",
+      "title": "OCSGE_2019",
+      "description": "OCS GE 2019",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         }
       ],
       "globalConstraint": {
