@@ -58,11 +58,7 @@
         "EDUGEO.LANDUSE.AGRICULTURE2012$GEOPORTAIL:OGC:WMTS",
         "EDUGEO.NATURALRISKZONES.1910FLOODEDWATERSHEDS$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMTS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMTS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.LEVEL0$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.SLOPES$GEOPORTAIL:OGC:WMTS",
@@ -422,6 +418,7 @@
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2021$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2022$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2023$GEOPORTAIL:OGC:WMTS",
+        "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMTS$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.MAYOTTE.2024-06$GEOPORTAIL:OGC:WMTS",
         "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2010$GEOPORTAIL:OGC:WMTS",
@@ -865,6 +862,7 @@
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2021$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2022$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2023$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2010$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2011$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHO-SAT.SPOT.2013$GEOPORTAIL:OGC:WMS",
@@ -9044,387 +9042,6 @@
       ],
       "key": "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMTS"
     },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMTS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE",
-      "title": "MNT BDAlti V1",
-      "description": "BDAlti V1 au pas de 25m",
-      "globalConstraint": {
-        "maxScaleDenominator": 279541132.0143589,
-        "minScaleDenominator": 136494.69336638617,
-        "bbox": {
-          "left": -64.0,
-          "right": 168.0,
-          "top": 52.0,
-          "bottom": -23.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "IGNF:WGS84G",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "WGS84G_0_11",
-        "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "0",
-            "maxTileCol": "1"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "1",
-            "maxTileCol": "3"
-          },
-          "2": {
-            "minTileRow": "0",
-            "maxTileRow": "2",
-            "minTileCol": "2",
-            "maxTileCol": "7"
-          },
-          "3": {
-            "minTileRow": "1",
-            "maxTileRow": "5",
-            "minTileCol": "5",
-            "maxTileCol": "15"
-          },
-          "4": {
-            "minTileRow": "3",
-            "maxTileRow": "10",
-            "minTileCol": "10",
-            "maxTileCol": "30"
-          },
-          "5": {
-            "minTileRow": "6",
-            "maxTileRow": "20",
-            "minTileCol": "20",
-            "maxTileCol": "61"
-          },
-          "6": {
-            "minTileRow": "13",
-            "maxTileRow": "40",
-            "minTileCol": "41",
-            "maxTileCol": "123"
-          },
-          "7": {
-            "minTileRow": "27",
-            "maxTileRow": "80",
-            "minTileCol": "82",
-            "maxTileCol": "247"
-          },
-          "8": {
-            "minTileRow": "54",
-            "maxTileRow": "160",
-            "minTileCol": "164",
-            "maxTileCol": "494"
-          },
-          "9": {
-            "minTileRow": "108",
-            "maxTileRow": "321",
-            "minTileCol": "329",
-            "maxTileCol": "989"
-          },
-          "10": {
-            "minTileRow": "216",
-            "maxTileRow": "642",
-            "minTileCol": "659",
-            "maxTileCol": "1979"
-          },
-          "11": {
-            "minTileRow": "432",
-            "maxTileRow": "1285",
-            "minTileCol": "1319",
-            "maxTileCol": "3959"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/x-bil;bits=32",
-          "current": true
-        }
-      ],
-      "thematic": [
-        "Altimétrie"
-      ],
-      "base": false,
-      "producer": [
-        "IGN"
-      ],
-      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMTS"
-    },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES",
-      "title": "Modèle Numérique de Terrain issu du RGEALTI",
-      "description": "Modèle Numérique de Terrain issu du RGEALTI",
-      "globalConstraint": {
-        "maxScaleDenominator": 4367830.1877243575,
-        "minScaleDenominator": 17061.836670798253,
-        "bbox": {
-          "left": -62.9528,
-          "right": 45.3043,
-          "top": 51.1053,
-          "bottom": -13.0078
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "IGNF:WGS84G",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "WGS84G_6_14",
-        "tileMatrixSetLimits": {
-          "6": {
-            "minTileRow": "13",
-            "maxTileRow": "36",
-            "minTileCol": "41",
-            "maxTileCol": "80"
-          },
-          "7": {
-            "minTileRow": "27",
-            "maxTileRow": "73",
-            "minTileCol": "83",
-            "maxTileCol": "160"
-          },
-          "8": {
-            "minTileRow": "55",
-            "maxTileRow": "146",
-            "minTileCol": "166",
-            "maxTileCol": "320"
-          },
-          "9": {
-            "minTileRow": "110",
-            "maxTileRow": "292",
-            "minTileCol": "332",
-            "maxTileCol": "640"
-          },
-          "10": {
-            "minTileRow": "221",
-            "maxTileRow": "585",
-            "minTileCol": "665",
-            "maxTileCol": "1281"
-          },
-          "11": {
-            "minTileRow": "442",
-            "maxTileRow": "1171",
-            "minTileCol": "1331",
-            "maxTileCol": "2563"
-          },
-          "12": {
-            "minTileRow": "885",
-            "maxTileRow": "2343",
-            "minTileCol": "2663",
-            "maxTileCol": "5126"
-          },
-          "13": {
-            "minTileRow": "1770",
-            "maxTileRow": "4687",
-            "minTileCol": "5326",
-            "maxTileCol": "10253"
-          },
-          "14": {
-            "minTileRow": "3540",
-            "maxTileRow": "9375",
-            "minTileCol": "10653",
-            "maxTileCol": "20507"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/x-bil;bits=32",
-          "current": true
-        }
-      ],
-      "thematic": [
-        "Altimétrie"
-      ],
-      "base": false,
-      "producer": [
-        "IGN"
-      ],
-      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS"
-    },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMTS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS",
-      "title": "Modèle numérique de surface",
-      "description": "Modèle numérique de surface",
-      "globalConstraint": {
-        "maxScaleDenominator": 17471320.75089743,
-        "minScaleDenominator": 2132.7295838497853,
-        "bbox": {
-          "left": -63.1968,
-          "right": 55.8639,
-          "top": 51.22,
-          "bottom": -21.4338
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "IGNF:WGS84G",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "WGS84G_4_17",
-        "tileMatrixSetLimits": {
-          "4": {
-            "minTileRow": "3",
-            "maxTileRow": "9",
-            "minTileCol": "10",
-            "maxTileCol": "20"
-          },
-          "5": {
-            "minTileRow": "6",
-            "maxTileRow": "19",
-            "minTileCol": "20",
-            "maxTileCol": "41"
-          },
-          "6": {
-            "minTileRow": "13",
-            "maxTileRow": "39",
-            "minTileCol": "41",
-            "maxTileCol": "83"
-          },
-          "7": {
-            "minTileRow": "27",
-            "maxTileRow": "79",
-            "minTileCol": "83",
-            "maxTileCol": "167"
-          },
-          "8": {
-            "minTileRow": "55",
-            "maxTileRow": "158",
-            "minTileCol": "166",
-            "maxTileCol": "335"
-          },
-          "9": {
-            "minTileRow": "110",
-            "maxTileRow": "316",
-            "minTileCol": "332",
-            "maxTileCol": "670"
-          },
-          "10": {
-            "minTileRow": "220",
-            "maxTileRow": "633",
-            "minTileCol": "664",
-            "maxTileCol": "1341"
-          },
-          "11": {
-            "minTileRow": "441",
-            "maxTileRow": "1267",
-            "minTileCol": "1328",
-            "maxTileCol": "2683"
-          },
-          "12": {
-            "minTileRow": "882",
-            "maxTileRow": "2535",
-            "minTileCol": "2657",
-            "maxTileCol": "5367"
-          },
-          "13": {
-            "minTileRow": "1764",
-            "maxTileRow": "5071",
-            "minTileCol": "5315",
-            "maxTileCol": "10734"
-          },
-          "14": {
-            "minTileRow": "3529",
-            "maxTileRow": "10142",
-            "minTileCol": "10631",
-            "maxTileCol": "21468"
-          },
-          "15": {
-            "minTileRow": "7059",
-            "maxTileRow": "20285",
-            "minTileCol": "21263",
-            "maxTileCol": "42937"
-          },
-          "16": {
-            "minTileRow": "14119",
-            "maxTileRow": "40571",
-            "minTileCol": "42526",
-            "maxTileCol": "85875"
-          },
-          "17": {
-            "minTileRow": "28238",
-            "maxTileRow": "81143",
-            "minTileCol": "85053",
-            "maxTileCol": "171750"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/x-bil;bits=32",
-          "current": true
-        }
-      ],
-      "thematic": [
-        "Altimétrie"
-      ],
-      "base": false,
-      "producer": [
-        "IGN"
-      ],
-      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMTS"
-    },
     "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS": {
       "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
       "title": "Estompage",
@@ -9577,133 +9194,6 @@
         "IGN"
       ],
       "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS"
-    },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMTS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3",
-      "title": "MNT SRTM3",
-      "description": "MNT SRTM3 construit par la NASA et le NGA.",
-      "globalConstraint": {
-        "maxScaleDenominator": 139770566.00717944,
-        "minScaleDenominator": 272989.38673277234,
-        "bbox": {
-          "left": -180.0,
-          "right": 180.0,
-          "top": 61.0004,
-          "bottom": -56.0004
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "IGNF:WGS84G",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "WGS84G_1_10",
-        "tileMatrixSetLimits": {
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "0",
-            "maxTileCol": "4"
-          },
-          "2": {
-            "minTileRow": "0",
-            "maxTileRow": "3",
-            "minTileCol": "0",
-            "maxTileCol": "8"
-          },
-          "3": {
-            "minTileRow": "1",
-            "maxTileRow": "6",
-            "minTileCol": "0",
-            "maxTileCol": "16"
-          },
-          "4": {
-            "minTileRow": "2",
-            "maxTileRow": "12",
-            "minTileCol": "0",
-            "maxTileCol": "32"
-          },
-          "5": {
-            "minTileRow": "5",
-            "maxTileRow": "25",
-            "minTileCol": "0",
-            "maxTileCol": "64"
-          },
-          "6": {
-            "minTileRow": "10",
-            "maxTileRow": "51",
-            "minTileCol": "0",
-            "maxTileCol": "128"
-          },
-          "7": {
-            "minTileRow": "20",
-            "maxTileRow": "103",
-            "minTileCol": "0",
-            "maxTileCol": "256"
-          },
-          "8": {
-            "minTileRow": "41",
-            "maxTileRow": "207",
-            "minTileCol": "0",
-            "maxTileCol": "512"
-          },
-          "9": {
-            "minTileRow": "82",
-            "maxTileRow": "415",
-            "minTileCol": "0",
-            "maxTileCol": "1024"
-          },
-          "10": {
-            "minTileRow": "164",
-            "maxTileRow": "830",
-            "minTileCol": "0",
-            "maxTileCol": "2048"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Légende générique",
-          "current": true,
-          "url": null
-        },
-        {
-          "name": "hypso_noalpha",
-          "title": "Teintes Hypsométriques Sans Transparence",
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/jpeg",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": "200"
-        },
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": 1
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/x-bil;bits=32",
-          "current": true
-        }
-      ],
-      "thematic": [
-        "Altimétrie"
-      ],
-      "base": false,
-      "producer": [
-        "IGN"
-      ],
-      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMTS"
     },
     "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMTS": {
       "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD",
@@ -56695,6 +56185,177 @@
       "base": false,
       "key": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2023$GEOPORTAIL:OGC:WMTS"
     },
+    "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMTS$GEOPORTAIL:OGC:WMTS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMTS",
+      "title": "PLEIADES 2024",
+      "description": "Agrégation des images PLEIADES 2024",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -56.4332,
+          "right": -56.0958,
+          "top": 47.1589,
+          "bottom": 46.7343
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_0_18",
+        "tileMatrixSetLimits": {
+          "0": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "1": {
+            "minTileRow": "0",
+            "maxTileRow": "0",
+            "minTileCol": "0",
+            "maxTileCol": "0"
+          },
+          "2": {
+            "minTileRow": "1",
+            "maxTileRow": "1",
+            "minTileCol": "1",
+            "maxTileCol": "1"
+          },
+          "3": {
+            "minTileRow": "2",
+            "maxTileRow": "2",
+            "minTileCol": "2",
+            "maxTileCol": "2"
+          },
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "5",
+            "maxTileCol": "5"
+          },
+          "5": {
+            "minTileRow": "11",
+            "maxTileRow": "11",
+            "minTileCol": "10",
+            "maxTileCol": "11"
+          },
+          "6": {
+            "minTileRow": "22",
+            "maxTileRow": "22",
+            "minTileCol": "21",
+            "maxTileCol": "22"
+          },
+          "7": {
+            "minTileRow": "44",
+            "maxTileRow": "45",
+            "minTileCol": "43",
+            "maxTileCol": "44"
+          },
+          "8": {
+            "minTileRow": "89",
+            "maxTileRow": "90",
+            "minTileCol": "87",
+            "maxTileCol": "88"
+          },
+          "9": {
+            "minTileRow": "179",
+            "maxTileRow": "180",
+            "minTileCol": "175",
+            "maxTileCol": "176"
+          },
+          "10": {
+            "minTileRow": "359",
+            "maxTileRow": "361",
+            "minTileCol": "351",
+            "maxTileCol": "352"
+          },
+          "11": {
+            "minTileRow": "719",
+            "maxTileRow": "722",
+            "minTileCol": "702",
+            "maxTileCol": "704"
+          },
+          "12": {
+            "minTileRow": "1438",
+            "maxTileRow": "1445",
+            "minTileCol": "1405",
+            "maxTileCol": "1409"
+          },
+          "13": {
+            "minTileRow": "2876",
+            "maxTileRow": "2890",
+            "minTileCol": "2811",
+            "maxTileCol": "2819"
+          },
+          "14": {
+            "minTileRow": "5752",
+            "maxTileRow": "5780",
+            "minTileCol": "5623",
+            "maxTileCol": "5639"
+          },
+          "15": {
+            "minTileRow": "11504",
+            "maxTileRow": "11560",
+            "minTileCol": "11247",
+            "maxTileCol": "11278"
+          },
+          "16": {
+            "minTileRow": "23008",
+            "maxTileRow": "23121",
+            "minTileCol": "22494",
+            "maxTileCol": "22556"
+          },
+          "17": {
+            "minTileRow": "46016",
+            "maxTileRow": "46242",
+            "minTileCol": "44989",
+            "maxTileCol": "45112"
+          },
+          "18": {
+            "minTileRow": "92033",
+            "maxTileRow": "92485",
+            "minTileCol": "89978",
+            "maxTileCol": "90224"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMTS$GEOPORTAIL:OGC:WMTS"
+    },
     "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025$GEOPORTAIL:OGC:WMTS": {
       "name": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025",
       "title": "PLEIADES - Mayotte - 2025",
@@ -89448,6 +89109,223 @@
       ],
       "key": "EL.GridCoverage$GEOPORTAIL:OGC:WMS"
     },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE",
+      "title": "MNT BDAlti V1",
+      "description": "BDAlti V1 au pas de 25m",
+      "globalConstraint": {
+        "minScaleDenominator": 1.2261526925223214,
+        "maxScaleDenominator": 2511.160714285714,
+        "bbox": {
+          "left": -64.0,
+          "right": 168.0,
+          "top": 52.0,
+          "bottom": -23.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "thematic": [
+        "Altimétrie"
+      ],
+      "base": false,
+      "producer": [
+        "IGN"
+      ],
+      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMS"
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES",
+      "title": "Modèle Numérique de Terrain issu du RGEALTI",
+      "description": "Modèle Numérique de Terrain issu du RGEALTI",
+      "globalConstraint": {
+        "minScaleDenominator": 0.15326908656528998,
+        "maxScaleDenominator": 39.236886160714285,
+        "bbox": {
+          "left": -62.95280769,
+          "right": 45.30431533,
+          "top": 51.10527968,
+          "bottom": -13.00780942
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "thematic": [
+        "Altimétrie"
+      ],
+      "base": false,
+      "producer": [
+        "IGN"
+      ],
+      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMS"
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS",
+      "title": "Modèle numérique de surface",
+      "description": "Modèle numérique de surface (MNS)",
+      "globalConstraint": {
+        "minScaleDenominator": 0.019158635820661282,
+        "maxScaleDenominator": 156.94754464285714,
+        "bbox": {
+          "left": -63.19677759,
+          "right": 55.86392603,
+          "top": 51.22004662,
+          "bottom": -21.43377841
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "thematic": [
+        "Altimétrie"
+      ],
+      "base": false,
+      "producer": [
+        "IGN"
+      ],
+      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMS"
+    },
     "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW$GEOPORTAIL:OGC:WMS": {
       "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW",
       "title": "Estompage appliqué au Modèle Numérique de Surface",
@@ -89514,6 +89392,97 @@
         "IGN"
       ],
       "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS.SHADOW$GEOPORTAIL:OGC:WMS"
+    },
+    "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMS": {
+      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3",
+      "title": "MNT SRTM3",
+      "description": "MNT SRTM3 construit par la NASA et le NGA.",
+      "globalConstraint": {
+        "minScaleDenominator": 2.452305385044643,
+        "maxScaleDenominator": 1255.580357142857,
+        "bbox": {
+          "left": -180.00041667,
+          "right": 180.00041667,
+          "top": 61.00041667,
+          "bottom": -56.00041667
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "IGNF:WGS84G",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
+        },
+        {
+          "name": "hypso_noalpha",
+          "title": "Teintes Hypsométriques Sans Transparence"
+        },
+        {
+          "name": "estompage_grayscale",
+          "title": "Estompage"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "thematic": [
+        "Altimétrie"
+      ],
+      "base": false,
+      "producer": [
+        "IGN"
+      ],
+      "key": "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMS"
     },
     "EXPLGPF-193$GEOPORTAIL:OGC:WMS": {
       "name": "EXPLGPF-193",
@@ -90781,6 +90750,73 @@
         "IGN"
       ],
       "key": "ORTHO-EXPRESS-2020_PYR-JPG_WLD_WM_20200708$GEOPORTAIL:OGC:WMS"
+    },
+    "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMS$GEOPORTAIL:OGC:WMS": {
+      "name": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMS",
+      "title": "PLEIADES 2024",
+      "description": "Agrégation des images PLEIADES 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": -56.43319097814242,
+          "right": -56.0958290625305,
+          "top": 47.15888993276701,
+          "bottom": 46.734292543338384
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024.WMS$GEOPORTAIL:OGC:WMS"
     },
     "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS$GEOPORTAIL:OGC:WMS": {
       "name": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS",
@@ -107183,12 +107219,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -107471,12 +107507,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -126898,12 +126934,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+        },
+        {
+          "format": "text/html",
+          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -135560,16 +135596,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_monochrome_marron",
           "title": "isohypse_monochrome_marron",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         }
       ],
       "globalConstraint": {
@@ -135620,16 +135656,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -135788,39 +135824,9 @@
       ],
       "styles": [
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "standard",
-          "title": "standard",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
-        },
-        {
-          "name": "attenue",
-          "title": "attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "toponymes",
-          "title": "toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
-        },
-        {
-          "name": "accentue",
-          "title": "accentue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
-        },
-        {
           "name": "classique",
           "title": "classique",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
@@ -135830,16 +135836,46 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
-          "name": "gris",
-          "title": "gris",
+          "name": "standard",
+          "title": "standard",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+        },
+        {
+          "name": "accentue",
+          "title": "accentue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "epure",
           "title": "epure",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "attenue",
+          "title": "attenue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         }
       ],
       "globalConstraint": {
