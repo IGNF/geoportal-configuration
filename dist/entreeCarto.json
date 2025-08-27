@@ -1048,6 +1048,7 @@
         "scan1000$GEOPORTAIL:OGC:WMS",
         "site_test003$GEOPORTAIL:OGC:WMS",
         "vflorent__raster_wms$GEOPORTAIL:OGC:WMS",
+        "wmsr_from_open$GEOPORTAIL:OGC:WMS",
         "z_St_amand_pcrs_jp2$GEOPORTAIL:OGC:WMS",
         "ACADEMIES.2015$GEOPORTAIL:OGC:WMS",
         "ACCES.BIOMETHANE$GEOPORTAIL:OGC:WMS",
@@ -1417,6 +1418,7 @@
         "acaz_test_ecoregions_pays_aout_bis$GEOPORTAIL:OGC:WMS",
         "aeag-rwbody-sdage2022$GEOPORTAIL:OGC:WMS",
         "agricole$GEOPORTAIL:OGC:WMS",
+        "arbres_remarquables_wmsv$GEOPORTAIL:OGC:WMS",
         "assainissement$GEOPORTAIL:OGC:WMS",
         "associations$GEOPORTAIL:OGC:WMS",
         "batiment_gpkg_19-12-2024_wmsv$GEOPORTAIL:OGC:WMS",
@@ -1511,7 +1513,7 @@
         "unesco_pelee_wmsv$GEOPORTAIL:OGC:WMS",
         "vflorent__vecteur_wms_bdd$GEOPORTAIL:OGC:WMS",
         "wmsv_arbres_public$GEOPORTAIL:OGC:WMS",
-        "wmsv_arbres_public_restreint$GEOPORTAIL:OGC:WMS",
+        "wmsv_ecoreg$GEOPORTAIL:OGC:WMS",
         "zas972$GEOPORTAIL:OGC:WMS",
         "zone_secteur$GEOPORTAIL:OGC:WMS",
         "zone_secteur_psmv$GEOPORTAIL:OGC:WMS",
@@ -2202,7 +2204,6 @@
         "PROTECTEDAREAS.ZNIEFF1.SEA:znieff1_mer$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.ZNIEFF2.SEA:znieff2_mer$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.ZNIEFF1:znieff1$GEOPORTAIL:OGC:WFS",
-        "arbres_remarquables_wfs_2708:arbres$GEOPORTAIL:OGC:WFS",
         "TES_PGN_flux_aubagne2:point_du_reseau$GEOPORTAIL:OGC:WFS",
         "essai_gpkg_raster_v2_gpkg_03-02-2025_wfs:composantes_de_la_trame_verte_nsm$GEOPORTAIL:OGC:WFS",
         "hydro-ardennes-l93_gpkg_11-03-2024_wfs:cours_d_eau$GEOPORTAIL:OGC:WFS",
@@ -71681,10 +71682,10 @@
         "maxScaleDenominator": 8735660.375448715,
         "minScaleDenominator": 2132.7295838497826,
         "bbox": {
-          "left": 54.7936,
-          "right": 55.9352,
-          "top": -20.4503,
-          "bottom": -21.5561
+          "left": -180.0,
+          "right": 180.0,
+          "top": 80.0,
+          "bottom": -80.0
         }
       },
       "serviceParams": {
@@ -71699,82 +71700,82 @@
         "tileMatrixSetLink": "PM_6_18",
         "tileMatrixSetLimits": {
           "6": {
-            "minTileRow": "35",
-            "maxTileRow": "35",
-            "minTileCol": "41",
-            "maxTileCol": "41"
+            "minTileRow": "7",
+            "maxTileRow": "56",
+            "minTileCol": "0",
+            "maxTileCol": "63"
           },
           "7": {
-            "minTileRow": "71",
-            "maxTileRow": "71",
-            "minTileCol": "83",
-            "maxTileCol": "83"
+            "minTileRow": "14",
+            "maxTileRow": "113",
+            "minTileCol": "0",
+            "maxTileCol": "127"
           },
           "8": {
-            "minTileRow": "142",
-            "maxTileRow": "143",
-            "minTileCol": "166",
-            "maxTileCol": "167"
+            "minTileRow": "28",
+            "maxTileRow": "227",
+            "minTileCol": "0",
+            "maxTileCol": "255"
           },
           "9": {
-            "minTileRow": "285",
-            "maxTileRow": "287",
-            "minTileCol": "333",
-            "maxTileCol": "335"
+            "minTileRow": "57",
+            "maxTileRow": "454",
+            "minTileCol": "0",
+            "maxTileCol": "511"
           },
           "10": {
-            "minTileRow": "571",
-            "maxTileRow": "574",
-            "minTileCol": "667",
-            "maxTileCol": "671"
+            "minTileRow": "114",
+            "maxTileRow": "909",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
           },
           "11": {
-            "minTileRow": "1142",
-            "maxTileRow": "1149",
-            "minTileCol": "1335",
-            "maxTileCol": "1342"
+            "minTileRow": "229",
+            "maxTileRow": "1818",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
           },
           "12": {
-            "minTileRow": "2285",
-            "maxTileRow": "2299",
-            "minTileCol": "2671",
-            "maxTileCol": "2684"
+            "minTileRow": "459",
+            "maxTileRow": "3636",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
           },
           "13": {
-            "minTileRow": "4571",
-            "maxTileRow": "4598",
-            "minTileCol": "5342",
-            "maxTileCol": "5368"
+            "minTileRow": "919",
+            "maxTileRow": "7272",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
           },
           "14": {
-            "minTileRow": "9143",
-            "maxTileRow": "9197",
-            "minTileCol": "10685",
-            "maxTileCol": "10737"
+            "minTileRow": "1839",
+            "maxTileRow": "14544",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
           },
           "15": {
-            "minTileRow": "18286",
-            "maxTileRow": "18394",
-            "minTileCol": "21371",
-            "maxTileCol": "21475"
+            "minTileRow": "3678",
+            "maxTileRow": "29089",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
           },
           "16": {
-            "minTileRow": "36572",
-            "maxTileRow": "36788",
-            "minTileCol": "42742",
-            "maxTileCol": "42950"
+            "minTileRow": "7357",
+            "maxTileRow": "58178",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
           },
           "17": {
-            "minTileRow": "73145",
-            "maxTileRow": "73576",
-            "minTileCol": "85485",
-            "maxTileCol": "85901"
+            "minTileRow": "14714",
+            "maxTileRow": "116357",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
           },
           "18": {
-            "minTileRow": "146290",
-            "maxTileRow": "147152",
-            "minTileCol": "170971",
-            "maxTileCol": "171802"
+            "minTileRow": "29428",
+            "maxTileRow": "232715",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
           }
         }
       },
@@ -93800,6 +93801,86 @@
       ],
       "key": "site_test003$GEOPORTAIL:OGC:WMS"
     },
+    "wmsr_from_open$GEOPORTAIL:OGC:WMS": {
+      "name": "wmsr_from_open",
+      "title": "wmsr_from_open",
+      "description": "wmsr_from_open",
+      "globalConstraint": {
+        "minScaleDenominator": 272989.3867327721,
+        "maxScaleDenominator": 559082264.0287179,
+        "bbox": {
+          "left": 2.2302252987143873,
+          "right": 2.466429974285613,
+          "top": 48.895195843285606,
+          "bottom": 48.81837837571439
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=UniqueId2"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/UniqueId2"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=UniqueId2",
+        "https://cartes.gouv.fr/catalogue/dataset/UniqueId2"
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "wmsr_from_open$GEOPORTAIL:OGC:WMS"
+    },
     "z_St_amand_pcrs_jp2$GEOPORTAIL:OGC:WMS": {
       "name": "z_St_amand_pcrs_jp2",
       "title": "dalle_St_amand_pcrs_jp2",
@@ -107660,12 +107741,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -107804,12 +107885,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -123407,6 +123488,150 @@
       ],
       "key": "agricole$GEOPORTAIL:OGC:WMS"
     },
+    "arbres_remarquables_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "arbres_remarquables_wmsv",
+      "title": "Title",
+      "description": "Description",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 2.230224609,
+          "right": 2.466430664,
+          "top": 48.895196533,
+          "bottom": 48.818377686
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=UniqueId2"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/UniqueId2"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-arbres_remarquables_wmsv",
+          "title": "arbres_remarquables_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=arbres_remarquables_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=UniqueId2",
+        "https://cartes.gouv.fr/catalogue/dataset/UniqueId2"
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "arbres_remarquables_wmsv$GEOPORTAIL:OGC:WMS"
+    },
     "assainissement$GEOPORTAIL:OGC:WMS": {
       "name": "assainissement",
       "title": "SUP - Eau et assainissement",
@@ -127231,12 +127456,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+        },
+        {
+          "format": "text/html",
+          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -135521,7 +135746,16 @@
       },
       "defaultProjection": "EPSG:4326",
       "queryable": true,
-      "metadata": [],
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=UniqueId2"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/UniqueId2"
+        }
+      ],
       "styles": [
         {
           "name": "default-style-wmsv_arbres_public",
@@ -135620,32 +135854,27 @@
           "current": false
         }
       ],
-      "thematic": [
+      "producer": [
         "Autres"
       ],
-      "metadata_urls": [
-        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&elementSetName=full&ID=_tempo_testsplugin_2708",
-        "https://data.geopf.fr/annexes/tests-aurore/style/2f44f610-b94b-409c-a1c0-50947700c1ee.sld",
-        "https://cartes.gouv.fr/catalogue/dataset/_tempo_testsplugin_2708"
-      ],
-      "producer": [
+      "thematic": [
         "Autres"
       ],
       "base": false,
       "key": "wmsv_arbres_public$GEOPORTAIL:OGC:WMS"
     },
-    "wmsv_arbres_public_restreint$GEOPORTAIL:OGC:WMS": {
-      "name": "wmsv_arbres_public_restreint",
-      "title": "wmsv_arbres_public_restreint",
-      "description": "wmsv_arbres_public_restreint",
+    "wmsv_ecoreg$GEOPORTAIL:OGC:WMS": {
+      "name": "wmsv_ecoreg",
+      "title": "wmsv_ecoreg",
+      "description": "wmsv_ecoreg",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": 2.230224609,
-          "right": 2.466430664,
-          "top": 48.895196533,
-          "bottom": 48.818377686
+          "left": -180.0,
+          "right": 180.0,
+          "top": 89.9,
+          "bottom": -89.9
         }
       },
       "serviceParams": {
@@ -135657,17 +135886,26 @@
       },
       "defaultProjection": "EPSG:4326",
       "queryable": true,
-      "metadata": [],
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=UniqueId2"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/UniqueId2"
+        }
+      ],
       "styles": [
         {
-          "name": "default-style-wmsv_arbres_public_restreint",
-          "title": "wmsv_arbres_public_restreint style"
+          "name": "default-style-wmsv_ecoreg",
+          "title": "wmsv_ecoreg style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=wmsv_arbres_public_restreint"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=wmsv_ecoreg"
         }
       ],
       "formats": [
@@ -135756,14 +135994,18 @@
           "current": false
         }
       ],
-      "producer": [
-        "Autres"
-      ],
       "thematic": [
         "Autres"
       ],
+      "metadata_urls": [
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=UniqueId2",
+        "https://cartes.gouv.fr/catalogue/dataset/UniqueId2"
+      ],
+      "producer": [
+        "Autres"
+      ],
       "base": false,
-      "key": "wmsv_arbres_public_restreint$GEOPORTAIL:OGC:WMS"
+      "key": "wmsv_ecoreg$GEOPORTAIL:OGC:WMS"
     },
     "zas972$GEOPORTAIL:OGC:WMS": {
       "name": "zas972",
@@ -136358,27 +136600,9 @@
       ],
       "styles": [
         {
-          "name": "classique",
-          "title": "classique",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "hydrographie",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
-        },
-        {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
           "name": "routier",
           "title": "routier",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
@@ -136388,10 +136612,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
-          "name": "bati_date",
-          "title": "bati_date",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
           "name": "bati_etages",
@@ -136400,10 +136624,28 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
         },
         {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
           "name": "classique_simplifiee",
           "title": "classique_simplifiee",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         }
       ],
       "globalConstraint": {
@@ -136448,16 +136690,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
           "name": "isohypse_monochrome_orange",
           "title": "isohypse_monochrome_orange",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
+        },
+        {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
