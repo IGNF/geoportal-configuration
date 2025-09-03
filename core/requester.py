@@ -89,6 +89,12 @@ def getEdito():
         return False
     return response.json()
 
+def getMetadata(url):
+    response = requests.get(url)
+    if response.status_code != 200:
+        return False
+    return response.content
+
 def getThematicConversionTable():
     url = "https://raw.githubusercontent.com/IGNF/cartes.gouv.fr/refs/heads/main/assets/data/topic_categories.json"
     response = requests.get(url)
@@ -131,3 +137,9 @@ def searchMtdUrls():
         page += 1
     
     return results
+
+def getHeadRequest(url, referer=""):
+    response = requests.head(url, headers={'referer': referer})
+    if response.status_code != 200:
+        return False
+    return response.headers
