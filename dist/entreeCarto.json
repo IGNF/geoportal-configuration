@@ -651,6 +651,7 @@
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMTS",
         "UTILITYANDGOVERNMENTALSERVICES.ALL$GEOPORTAIL:OGC:WMTS",
         "WMTS_BEZIERS-COLOMBIERS_2022110638503087$GEOPORTAIL:OGC:WMTS",
+        "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS",
         "hedge.hedge$GEOPORTAIL:OGC:WMTS",
         "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS",
         "orthophoto_1947_calvados$GEOPORTAIL:OGC:WMTS",
@@ -1042,6 +1043,7 @@
         "TRANSPORTNETWORKS.ROADS$GEOPORTAIL:OGC:WMS",
         "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS",
+        "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMS",
         "hydro_ardennes_pyramide_raster_wmsr$GEOPORTAIL:OGC:WMS",
         "lidarhd$GEOPORTAIL:OGC:WMS",
         "lidarhd_hypso$GEOPORTAIL:OGC:WMS",
@@ -88190,6 +88192,141 @@
       ],
       "key": "WMTS_BEZIERS-COLOMBIERS_2022110638503087$GEOPORTAIL:OGC:WMTS"
     },
+    "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS": {
+      "name": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES",
+      "title": "Zones à prospecter pour les forêts subnaturelles",
+      "description": "Cartographie des zones à prospecter pour l’identification des forêts subnaturelles",
+      "globalConstraint": {
+        "maxScaleDenominator": 34942641.50179486,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -5.1505,
+          "right": 9.5705,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_4_16",
+        "tileMatrixSetLimits": {
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "5",
+            "minTileCol": "7",
+            "maxTileCol": "8"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "11",
+            "minTileCol": "15",
+            "maxTileCol": "16"
+          },
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ],
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false,
+      "key": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS"
+    },
     "hedge.hedge$GEOPORTAIL:OGC:WMTS": {
       "name": "hedge.hedge",
       "title": "haies linéaires",
@@ -126962,12 +127099,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+        },
+        {
+          "format": "text/html",
+          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -127106,12 +127243,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
-        },
-        {
           "format": "text/html",
           "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -127250,12 +127387,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+        },
+        {
+          "format": "text/html",
+          "url": "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93"
         }
       ],
       "styles": [
@@ -135691,15 +135828,9 @@
       ],
       "styles": [
         {
-          "name": "routier",
-          "title": "routier",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
           "name": "delestage",
           "title": "delestage",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
@@ -135715,10 +135846,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
+          "name": "routier",
+          "title": "routier",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
           "name": "bati_date",
@@ -135727,16 +135864,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
           "name": "classique",
           "title": "classique",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "hydrographie",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         }
       ],
       "globalConstraint": {
@@ -135901,16 +136038,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -136051,16 +136188,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "epure",
-          "title": "epure",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
-        },
-        {
           "name": "gris",
           "title": "gris",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "epure",
+          "title": "epure",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         }
       ],
       "globalConstraint": {
