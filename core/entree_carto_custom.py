@@ -1,7 +1,9 @@
 import json
+import xml.etree.ElementTree as ET
 
 from core.config_merger import merge_edito
-from core.requester import getEdito, searchMtdUrls, getThematicConversionTable
+from core.requester import getEdito, searchMtdUrls, getThematicConversionTable, getHeadRequest, getMetadata
+from core.image_dimensions import get_image_dimensions
 
 def filter_specific_duplicates(input_dict):
     """
@@ -63,19 +65,42 @@ def filter_specific_duplicates(input_dict):
     # Créer le dictionnaire résultat
     return {k: v for k, v in input_dict.items() if k not in keys_to_remove}
 
+
+def get_valid_thumbnail(mtd_url):
+    if (mtd_url):
+        mtd_xml = getMetadata(mtd_url)
+        root = ET.fromstring(mtd_xml)  # ou ET.fromstring(xml_string)
+        # Définir les namespaces
+        ns = {
+            "gmd": "http://www.isotc211.org/2005/gmd",
+            "gco": "http://www.isotc211.org/2005/gco"
+        }
+
+        # Récupérer toutes les valeurs de fileName/CharacterString dans graphicOverview
+        urls = root.findall(".//gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString", ns)
+        for url in urls:
+            image = get_image_dimensions(url.text)
+            if image and image['width'] <= 60 and image['height'] <= 60:
+                return url.text
+    return ""
+
 def generate_entree_carto_conf(merged_config):
     edito = getEdito()
 
     # Récupère les infos idsponibles depuis le service recherche
     # en particulier "theme" et "producers"
+    print("Searching metadata urls...")
     mtd_urls_layers = searchMtdUrls()
     if mtd_urls_layers:
         for item in mtd_urls_layers:
             if 'layer_name' in item:
+                layerThumbnail = get_valid_thumbnail(next((url for url in item["metadata_urls"] if "csw?" in url), None))
                 layerType = item["type"]
                 layerName = item['layer_name']
                 layerID = layerName + "$GEOPORTAIL:OGC:" + layerType
                 if layerID in merged_config["layers"]:
+                    if layerThumbnail:
+                        merged_config["layers"][layerID]["thumbnail"] = layerThumbnail
                     if 'theme' in item:
                         merged_config["layers"][layerID]["thematic"] = list(map(str.strip, item["theme"].split(',')))
                     merged_config["layers"][layerID]["metadata_urls"] = item["metadata_urls"]
