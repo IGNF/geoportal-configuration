@@ -1,7 +1,8 @@
+import xml.etree.ElementTree as ET
+from core.requester import getMetadata
 import requests
 import struct
 from core.requester import getHeadRequest
-
 
 def get_image_dimensions(url: str):
     # --- Étape 1 : HEAD pour connaître le type ---
@@ -69,9 +70,30 @@ def get_image_dimensions(url: str):
 
     raise Exception("Format non reconnu ou non supporté")
 
+def is_valid_thumbnail(mtd_url, max_width, max_height):
+    """
+        Fonction pour obtenir une miniature valide
+        On cherche une image avec largeur et hauteur <= 60px
+        Retourne l'URL de la première image valide trouvée, ou une chaîne vide si aucune n'est trouvée
+        Args:
+            mtd_url (str): string URL d'une métadonnée  
 
-# Exemple d'utilisation
-if __name__ == "__main__":
-    url = "https://example.com/image.jpg"
-    dims = get_image_dimensions(url)
-    print(dims)
+        Returns:
+            Boolean : True si une image valide est trouvée, False sinon
+    """
+    if (mtd_url and "csw?" in mtd_url):
+        mtd_xml = getMetadata(mtd_url)
+        root = ET.fromstring(mtd_xml)  # ou ET.fromstring(xml_string)
+        # Définir les namespaces
+        ns = {
+            "gmd": "http://www.isotc211.org/2005/gmd",
+            "gco": "http://www.isotc211.org/2005/gco"
+        }
+
+        # Récupérer toutes les valeurs de fileName/CharacterString dans graphicOverview
+        urls = root.findall(".//gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString", ns)
+        for url in urls:
+            image = get_image_dimensions(url.text)
+            if image and image['width'] <= max_width and image['height'] <= max_height:
+                return True
+    return False

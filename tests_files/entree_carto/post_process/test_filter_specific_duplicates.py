@@ -6,7 +6,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import unittest
 import json
-from core.entree_carto_custom import filter_specific_duplicates
+from core.entree_carto.entree_carto_config import filter_specific_duplicates
 
 class TestRemoveDuplicate(unittest.TestCase):
     def test_entree_carto_custom_same_name(self):
