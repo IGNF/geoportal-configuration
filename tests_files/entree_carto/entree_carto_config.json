@@ -1,0 +1,385 @@
+{
+  "generalOptions": {},
+  "layers": {
+    "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/tms/1.0.0/"
+        }
+      },
+      "name": "PLAN.IGN",
+      "title": "PLAN.IGN",
+      "description": "Plan IGN personnalisable",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "globalConstraint": {
+        "crs": "EPSG:3857",
+        "bbox": {
+          "left": -20026376.393709917,
+          "right": 20026376.393709917,
+          "top": 15538711.09630922,
+          "bottom": -15538711.09630922
+        },
+        "minScaleDenominator": 559082264.0287179,
+        "maxScaleDenominator": 2132.7295838497826
+      },
+      "defaultProjection": "EPSG:3857",
+      "thumbnail": "",
+      "producer": [
+        ""
+      ],
+      "thematic": [
+        "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+      ],
+      "base": false,
+      "key": "PLAN.IGN$GEOPORTAIL:GPP:TMS"
+    },
+    "INAO-AOC_SYMBO_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
+      "name": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS",
+      "title": "Délimitation parcellaire AOC viticole",
+      "description": "Selon les règlements européens n°110/2008 du 15 janvier 2008, n°1151/2012 du 21 novembre 2012 et n°1308/2013 de l’OCM , le cahier des charges des appellations définit l’aire géographique. Le terme de « délimitation parcellaire » désigne une aire qui repose sur les limites administratives du cadastre (les parcelles) et dont le maillage suffisamment fin permet de tenir compte de variations très localisées des éléments du milieu physique. Elle correspond à l'aire de production de la matière première. Elle est incluse dans l'aire géographique. Données produites par l'Institut National des Origines et la Qualité (INAO)",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -2.111875,
+          "right": 9.589375,
+          "top": 49.608125,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-INAO-AOC_SYMBO_BDD_FXX_WM_WMS",
+          "title": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INAO-AOC_SYMBO_BDD_FXX_WM_WMS"
+        }
+      ],
+      "producer": [
+        "INAO"
+      ],
+      "thematic": [
+        "Agriculture"
+      ],
+      "base": false,
+      "key": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS"
+    },
+    "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS": {
+      "name": "INRA.CARTE.SOLS",
+      "title": "carte des sols France entière",
+      "description": "Identification des principaux types de sols.",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "styles": [
+        {
+          "name": "CARTE DES SOLS",
+          "title": "CARTE DES SOLS",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/INRA.CARTE.SOLS-legend.png",
+          "minScaleDenominator": "8000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ],
+      "producer": [
+        "INRA"
+      ],
+      "thematic": [
+        "géosciences",
+        "Sciences de la terre"
+      ],
+      "base": false,
+      "key": "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"
+    },
+    "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS": {
+      "name": "hydro_ardennes_pyramide_raster_wmts",
+      "title": "hydro-ardennes-l93",
+      "description": "\"Extrait des donn\\u00e9es hydrographiques france enti\\u00e8re de la BD Topo sur le d\\u00e9partement des Ardennes.\\n\\nIl contient 3 tables qui sont group\\u00e9es dans certains des services :\\n\\n- les ponctuels\\n- les lin\\u00e9aires\\n- les surfaces d'eau\"",
+      "globalConstraint": {
+        "maxScaleDenominator": 559082264.0287179,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": 1.99937,
+          "right": 5.87344,
+          "top": 50.2587,
+          "bottom": 47.9409
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ],
+      "thematic": [
+        "Eaux intérieures, Hydrographie",
+        "Eaux intérieures",
+        "Hydrographie"
+      ],
+      "metadata_urls": [
+        "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93",
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+      ],
+      "producer": [
+        ""
+      ],
+      "base": false,
+      "key": "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS"
+    }
+  },
+  "territories": [
+    {
+      "id": "FXX",
+      "title": "France métropolitaine",
+      "description": "",
+      "zoom": null,
+      "bbox": [
+        -9.86,
+        41.15,
+        10.38,
+        51.56
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/fxx.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/fxx.svg"
+    },
+    {
+      "id": "GLP",
+      "title": "Guadeloupe",
+      "description": "",
+      "zoom": null,
+      "bbox": [
+        -61.97,
+        15.72,
+        -60.93,
+        16.66
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/glp.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/glp.svg"
+    },
+    {
+      "id": "GUF",
+      "title": "Guyane",
+      "description": "",
+      "zoom": null,
+      "bbox": [
+        -55.65,
+        1.49,
+        -51.2,
+        6.21
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/guf.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/guf.svg"
+    },
+    {
+      "id": "MTQ",
+      "title": "Martinique",
+      "description": "",
+      "zoom": null,
+      "bbox": [
+        -61.4,
+        14.25,
+        -60.67,
+        15.04
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/mtq.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/mtq.svg"
+    },
+    {
+      "id": "REU",
+      "title": "Réunion",
+      "description": "",
+      "zoom": 10,
+      "bbox": [
+        55.07,
+        -21.46,
+        55.86,
+        -20.79
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/reu.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/reu.svg"
+    },
+    {
+      "id": "SPM",
+      "title": "Saint-Pierre-et-Miquelon",
+      "description": "",
+      "zoom": null,
+      "bbox": [
+        -56.48,
+        46.69,
+        -56.07,
+        47.19
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/spm.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/spm.svg"
+    },
+    {
+      "id": "IDF",
+      "title": "Paris petite couronne",
+      "description": "",
+      "zoom": 12,
+      "bbox": [
+        2.18,
+        48.77,
+        2.52,
+        48.95
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/idf.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/idf.svg"
+    },
+    {
+      "id": "MYT",
+      "title": "Mayotte",
+      "description": "",
+      "zoom": null,
+      "bbox": [
+        44.95,
+        -13.049,
+        45.32,
+        -12.57
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/myt.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/myt.svg"
+    },
+    {
+      "id": "NCL",
+      "title": "Nouvelle Calédonie",
+      "description": "",
+      "zoom": null,
+      "bbox": [
+        163.02,
+        -23.08,
+        167.86,
+        -19.5
+      ],
+      "thumbnail": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/thumbnails/ncl.png",
+      "icon": "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/resources/territories/ncl.svg"
+    }
+  ],
+  "contacts": {
+    "mail": "",
+    "networks": {
+      "facebook": "https://www.facebook.com/sharer.php",
+      "twitter": "https://twitter.com/intent/tweet",
+      "linkedin": "https://www.linkedin.com/shareArticle",
+      "instagram": "https://www.instagram.com/ign_france/?hl=fr"
+    }
+  },
+  "thematics": [
+    "Biologie, faune et flore",
+    "Limites politiques et administratives",
+    "Climatologie, météorologie, atmosphère",
+    "Économie",
+    "Altimétrie",
+    "Environnement",
+    "Agriculture",
+    "Sciences de la terre, géosciences",
+    "Santé",
+    "Carte de référence de la couverture terrestre",
+    "Infrastructures militaires",
+    "Eaux intérieures, Hydrographie",
+    "Localisation",
+    "Océans",
+    "Cadastre, aménagement",
+    "Société",
+    "Constructions et ouvrages",
+    "Infrastructures de transport",
+    "Télécommunication, approvisionnement et énergie"
+  ],
+  "informations": {
+    "title": "Intervention technique",
+    "description": "Une opération de maintenance aura lieu le lundi 15 juillet à partir de 19h. Elle entraînera une coupure des données et services de l’application pendant 30 minutes. Nous mettrons tout en œuvre pour rétablir les services dans les plus brefs délais.",
+    "type": "warning",
+    "opened": false,
+    "version": 1
+  },
+  "featured": [
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
+    "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2",
+    "PLAN.IGN",
+    "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
+    "ORTHOIMAGERY.ORTHOPHOTOS"
+  ]
+}
