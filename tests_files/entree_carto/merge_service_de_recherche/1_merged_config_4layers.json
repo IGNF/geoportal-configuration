@@ -1,0 +1,170 @@
+{
+    "generalOptions": {
+        },
+    "layers": {
+        "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
+            "hidden": true,
+            "queryable": false,
+            "serviceParams": {
+                "id": "GPP:TMS",
+                "version": "1.0.0",
+                "serverUrl": {
+                    "full": "https://data.geopf.fr/tms/1.0.0/"
+                }
+            },
+            "name": "PLAN.IGN",
+            "title": "PLAN.IGN",
+            "description": "Plan IGN personnalisable",
+            "formats": [
+                {
+                    "current": true,
+                    "name": "application/x-protobuf"
+                }
+            ],
+            "globalConstraint": {
+                "crs": "EPSG:3857",
+                "bbox": {
+                    "left": -20026376.393709917,
+                    "right": 20026376.393709917,
+                    "top": 15538711.09630922,
+                    "bottom": -15538711.09630922
+                },
+                "minScaleDenominator": 559082264.0287179,
+                "maxScaleDenominator": 2132.7295838497826
+            },
+            "defaultProjection": "EPSG:3857"
+        },
+
+    "INAO-AOC_SYMBO_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
+        "name": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS",
+        "title": "D\u00e9limitation parcellaire AOC viticole",
+        "description": "Selon les r\u00e8glements europ\u00e9ens n\u00b0110/2008 du 15 janvier 2008, n\u00b01151/2012 du 21 novembre 2012 et n\u00b01308/2013 de l\u2019OCM , le cahier des charges des appellations d\u00e9finit l\u2019aire g\u00e9ographique. Le terme de \u00ab d\u00e9limitation parcellaire \u00bb d\u00e9signe une aire qui repose sur les limites administratives du cadastre (les parcelles) et dont le maillage suffisamment fin permet de tenir compte de variations tr\u00e8s localis\u00e9es des \u00e9l\u00e9ments du milieu physique. Elle correspond \u00e0 l'aire de production de la mati\u00e8re premi\u00e8re. Elle est incluse dans l'aire g\u00e9ographique. Donn\u00e9es produites par l'Institut National des Origines et la Qualit\u00e9 (INAO)",
+        "globalConstraint": {
+            "minScaleDenominator": 0.0,
+            "maxScaleDenominator": 62236752975597,
+            "bbox": {
+                "left": -2.111875,
+                "right": 9.589375,
+                "top": 49.608125,
+                "bottom": 41.31265625
+            }
+        },
+        "serviceParams": {
+            "id": "OGC:WMS",
+            "version": "1.3.0",
+            "serverUrl": {
+                "full": "https://data.geopf.fr/wms-v/ows"
+            }
+        },
+        "defaultProjection": "EPSG:4326",
+        "queryable": true,
+        "metadata": [],
+        "styles": [
+            {
+                "name": "default-style-INAO-AOC_SYMBO_BDD_FXX_WM_WMS",
+                "title": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS style"
+            }
+        ],
+        "legends": [
+            {
+                "format": "image/png",
+                "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INAO-AOC_SYMBO_BDD_FXX_WM_WMS"
+            }
+        ]
+    },
+
+    "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS": {
+        "name": "INRA.CARTE.SOLS",
+        "title": "carte des sols France enti\u00e8re",
+        "description": "Identification des principaux types de sols.",
+        "globalConstraint": {
+            "maxScaleDenominator": 8735660.375448715,
+            "minScaleDenominator": 8530.918335399145,
+            "bbox": {
+                "left": -63.3725,
+                "right": 55.9259,
+                "top": 51.3121,
+                "bottom": -21.4756
+            }
+        },
+        "serviceParams": {
+            "id": "OGC:WMTS",
+            "version": "1.0.0",
+            "serverUrl": {
+                "full": "https://data.geopf.fr/wmts"
+            }
+        },
+        "styles": [
+            {
+                "name": "CARTE DES SOLS",
+                "title": "CARTE DES SOLS",
+                "current": true,
+                "url": null
+            }
+        ],
+        "legends": [
+            {
+                "format": "image/png",
+                "url": "https://data.geopf.fr/annexes/ressources/legendes/INRA.CARTE.SOLS-legend.png",
+                "minScaleDenominator": "8000"
+            }
+        ],
+        "formats": [
+            {
+                "name": "image/png",
+                "current": true
+            }
+        ]
+    },
+    "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS": {
+        "name": "hydro_ardennes_pyramide_raster_wmts",
+        "title": "hydro-ardennes-l93",
+        "description": "\"Extrait des donn\\u00e9es hydrographiques france enti\\u00e8re de la BD Topo sur le d\\u00e9partement des Ardennes.\\n\\nIl contient 3 tables qui sont group\\u00e9es dans certains des services :\\n\\n- les ponctuels\\n- les lin\\u00e9aires\\n- les surfaces d'eau\"",
+        "globalConstraint": {
+            "maxScaleDenominator": 559082264.0287179,
+            "minScaleDenominator": 8530.918335399145,
+            "bbox": {
+                "left": 1.99937,
+                "right": 5.87344,
+                "top": 50.2587,
+                "bottom": 47.9409
+            }
+        },
+        "serviceParams": {
+            "id": "OGC:WMTS",
+            "version": "1.0.0",
+            "serverUrl": {
+                "full": "https://data.geopf.fr/wmts"
+            }
+        },
+        "styles": [
+            {
+                "name": "normal",
+                "title": "Donn\u00e9es Brutes",
+                "current": true,
+                "url": null
+            }
+        ],
+        "legends": [
+            {
+                "format": "image/png",
+                "url": "http://ign.fr",
+                "minScaleDenominator": 1
+            }
+        ],
+        "formats": [
+            {
+                "name": "image/jpeg",
+                "current": true
+            }
+        ],
+        "thematic": [
+            "inlandWaters"
+        ],
+        "metadata_urls": [
+            "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93",
+            "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
+        ]
+    }
+    }
+}
