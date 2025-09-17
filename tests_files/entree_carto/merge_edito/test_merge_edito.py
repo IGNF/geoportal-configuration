@@ -24,17 +24,18 @@ class TestMergeServiceDeRecherche(unittest.TestCase):
             file.writelines(json.dumps(cls.edito_merged, indent=2, ensure_ascii=False))
 
     def test_append_new_thematic(self):
-        self.assertEqual(len(self.edito_merged["layers"]["INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"]["thematic"]), 3)
+        self.assertEqual(len(self.edito_merged["layers"]["INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"]["thematic"]), 2)
     def test_add_new_producer(self):
         self.assertEqual(self.edito_merged["layers"]["INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"]["producer"][0], "INRA")
     def test_no_duplicate_thematic(self):
-        self.assertEqual(len(self.edito_merged["layers"]["hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS"]["thematic"]), 4)
+        self.assertEqual(len(self.edito_merged["layers"]["hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS"]["thematic"]), 3)
 
     def test_merge_getcap_searchservice_thematic(self):
         self.assertIn(
             "NEWinlandWaters",
             self.edito_merged["layers"]["hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS"]["thematic"]
         )
+    
     def test_has_base_key(self):
         self.assertEqual("base" in self.edito_merged["layers"]["hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS"], True)
 
@@ -44,8 +45,8 @@ class TestMergeServiceDeRecherche(unittest.TestCase):
     def test_keep_same_layers_count(self):
         self.assertEqual(len(self.edito_merged["layers"]), len(self.merged_config["layers"]))
     
-    def test_thematic_is_string(self):
-        self.assertEqual(len(self.edito_merged["layers"]["PLAN.IGN$GEOPORTAIL:GPP:TMS"]["thematic"]), 3)
+    def test_edito_delete_thematic(self):
+        self.assertEqual(len(self.edito_merged["layers"]["PLAN.IGN$GEOPORTAIL:GPP:TMS"]["thematic"]), 0)
 
 if __name__ == '__main__':
     unittest.main()
