@@ -1,7 +1,7 @@
 import json
 
 from core.config_merger import merge_configs
-from core.entree_carto_custom import generate_entree_carto_conf
+from core.entree_carto.entree_carto_config import generate_entree_carto_conf
 from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities, getWFSCapabilities, getTMSTileMaps
 from core.vectortiles_parser import parseVectorTiles
 from core.wms_parser import parseWMS
