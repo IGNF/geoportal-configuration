@@ -23,7 +23,7 @@ def merge_configs(list_configs):
 
     for config2 in list_configs:
         try:
-            config1["tileMatrixSets"] = config2["tileMatrixSets"]
+            config1["tileMatrixSets"].update(config2["tileMatrixSets"])
         except KeyError:
             pass
 
