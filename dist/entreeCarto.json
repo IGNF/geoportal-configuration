@@ -508,6 +508,7 @@
         "PCRS_chantier_D034$GEOPORTAIL:OGC:WMTS",
         "PCRS_chantier_D46_test_SDE22$GEOPORTAIL:OGC:WMTS",
         "PLANIGN.LIDAR.SURSOL$GEOPORTAIL:OGC:WMTS",
+        "PLANIGN.LIDAR.SURSOL.2$GEOPORTAIL:OGC:WMTS",
         "PLANIGN.LIDAR.TERRAIN$GEOPORTAIL:OGC:WMTS",
         "POINTS.INJECTION.BIOMETHANE$GEOPORTAIL:OGC:WMTS",
         "POTENTIEL.EOLIEN.REGLEMENTAIRE$GEOPORTAIL:OGC:WMTS",
@@ -4563,8 +4564,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "Aire-Parcellaire$GEOPORTAIL:OGC:WMTS"
@@ -5839,8 +5840,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRAL.PARCELS.SECTIONS$GEOPORTAIL:OGC:WMTS"
@@ -5975,8 +5976,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMTS"
@@ -6159,8 +6160,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMTS"
@@ -6347,8 +6348,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS"
@@ -6561,8 +6562,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMTS"
@@ -6685,8 +6686,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.QUALREFBDP$GEOPORTAIL:OGC:WMTS"
@@ -34953,9 +34954,9 @@
         "IGN"
       ],
       "thematic": [
+        "atmosphère",
         "météorologie",
-        "Climatologie",
-        "atmosphère"
+        "Climatologie"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.KLAUS$GEOPORTAIL:OGC:WMTS"
@@ -69477,6 +69478,141 @@
       ],
       "base": false
     },
+    "PLANIGN.LIDAR.SURSOL.2$GEOPORTAIL:OGC:WMTS": {
+      "name": "PLANIGN.LIDAR.SURSOL.2",
+      "title": "Plan IGN Lidar Sursol",
+      "description": "Plan IGN Lidar Sursol",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 80.0,
+          "bottom": -80.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_18",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "7",
+            "maxTileRow": "56",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "14",
+            "maxTileRow": "113",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "28",
+            "maxTileRow": "227",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "57",
+            "maxTileRow": "454",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "114",
+            "maxTileRow": "909",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "229",
+            "maxTileRow": "1818",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "459",
+            "maxTileRow": "3636",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "919",
+            "maxTileRow": "7272",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          },
+          "14": {
+            "minTileRow": "1839",
+            "maxTileRow": "14544",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
+          },
+          "15": {
+            "minTileRow": "3678",
+            "maxTileRow": "29089",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
+          },
+          "16": {
+            "minTileRow": "7357",
+            "maxTileRow": "58178",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
+          },
+          "17": {
+            "minTileRow": "14714",
+            "maxTileRow": "116357",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
+          },
+          "18": {
+            "minTileRow": "29428",
+            "maxTileRow": "232715",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/jpeg",
+          "current": true
+        }
+      ],
+      "key": "PLANIGN.LIDAR.SURSOL.2$GEOPORTAIL:OGC:WMTS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
+    },
     "PLANIGN.LIDAR.TERRAIN$GEOPORTAIL:OGC:WMTS": {
       "name": "PLANIGN.LIDAR.TERRAIN",
       "title": "Plan IGN Lidar Terrain",
@@ -87315,8 +87451,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CP.CadastralParcel$GEOPORTAIL:OGC:WMS"
@@ -90986,8 +91122,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "z_St_amand_pcrs_jp2$GEOPORTAIL:OGC:WMS"
@@ -95970,8 +96106,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS"
@@ -96102,8 +96238,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS"
@@ -96234,8 +96370,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.PCI_VECTEUR$GEOPORTAIL:OGC:WMS"
@@ -96366,8 +96502,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS"
@@ -101614,8 +101750,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "GRAPHE.PCRS.ANCT$GEOPORTAIL:OGC:WMS"
@@ -104106,9 +104242,9 @@
         "Météo France"
       ],
       "thematic": [
+        "atmosphère",
         "météorologie",
-        "Climatologie",
-        "atmosphère"
+        "Climatologie"
       ],
       "base": false,
       "key": "METEOFRANCE-STATIONS_BDD-POI_WLD_WM$GEOPORTAIL:OGC:WMS"
@@ -105055,12 +105191,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105345,12 +105481,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105490,12 +105626,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -124175,8 +124311,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "document$GEOPORTAIL:OGC:WMS"
@@ -124307,8 +124443,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "du$GEOPORTAIL:OGC:WMS"
@@ -130079,8 +130215,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "prescription$GEOPORTAIL:OGC:WMS"
@@ -130211,8 +130347,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "prescription_psmv$GEOPORTAIL:OGC:WMS"
@@ -130343,8 +130479,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "psmv$GEOPORTAIL:OGC:WMS"
@@ -131392,8 +131528,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "scot$GEOPORTAIL:OGC:WMS"
@@ -131786,8 +131922,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "sup$GEOPORTAIL:OGC:WMS"
@@ -133755,8 +133891,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "zone_secteur_psmv$GEOPORTAIL:OGC:WMS"
@@ -133965,34 +134101,10 @@
       ],
       "styles": [
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "delestage",
-          "title": "delestage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
           "name": "bati",
@@ -134001,16 +134113,40 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
           "name": "hydrographie",
           "title": "hydrographie",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "routier",
+          "title": "routier",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         }
       ],
       "globalConstraint": {
@@ -134066,16 +134202,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
           "name": "isohypse_monochrome_orange",
           "title": "isohypse_monochrome_orange",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
+        },
+        {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
@@ -134191,9 +134327,15 @@
       ],
       "styles": [
         {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
@@ -134201,12 +134343,6 @@
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -134257,16 +134393,16 @@
       ],
       "styles": [
         {
-          "name": "pci",
-          "title": "pci",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
-        },
-        {
           "name": "noir_et_blanc",
           "title": "noir_et_blanc",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
+        },
+        {
+          "name": "pci",
+          "title": "pci",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
         }
       ],
       "globalConstraint": {
@@ -134316,16 +134452,46 @@
       ],
       "styles": [
         {
+          "name": "attenue",
+          "title": "attenue",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
           "name": "gris",
           "title": "gris",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         },
         {
-          "name": "attenue",
-          "title": "attenue",
+          "name": "accentue",
+          "title": "accentue",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+        },
+        {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "transparent",
@@ -134338,36 +134504,6 @@
           "title": "epure",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
-        },
-        {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "standard",
-          "title": "standard",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
-        },
-        {
-          "name": "toponymes",
-          "title": "toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
-        },
-        {
-          "name": "accentue",
-          "title": "accentue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         }
       ],
       "globalConstraint": {
