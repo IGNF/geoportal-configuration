@@ -32,6 +32,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS2024$GEOPORTAIL:OGC:WMS",
         "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
+        "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE:graphe_bdortho$GEOPORTAIL:OGC:WFS",
@@ -3284,6 +3285,65 @@
         {
           "format": "image/png",
           "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS": {
+      "name": "THR.ORTHOIMAGERY.ORTHOPHOTOS",
+      "title": "Photographies aériennes très haute résolution",
+      "description": "Orthophotographies aériennes d'une résolution de 10cm à 5cm selon disponibilité.",
+      "globalConstraint": {
+        "minScaleDenominator": 266.5911979812228,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": 0.03549122,
+          "right": 6.02352652,
+          "top": 49.69692662,
+          "bottom": 43.15334876
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
