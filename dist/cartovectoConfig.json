@@ -17,6 +17,7 @@
         "STATIONSCLASSEES$GEOPORTAIL:OGC:WMS",
         "STATIONSVERTES$GEOPORTAIL:OGC:WMS",
         "STATISTICALUNITS.IRIS$GEOPORTAIL:OGC:WMS",
+        "STATISTICALUNITS.IRIS.PE$GEOPORTAIL:OGC:WMS",
         "STATISTICALUNITS.IRISGE$GEOPORTAIL:OGC:WMS",
         "TRACES.RANDO.HIVERNALE$GEOPORTAIL:OGC:WMS",
         "VILLAGESETAPE$GEOPORTAIL:OGC:WMS",
@@ -57,6 +58,7 @@
         "BDCARTO_V5:zone_d_activite_ou_d_interet$GEOPORTAIL:OGC:WFS",
         "BDCARTO_V5:zone_d_habitation$GEOPORTAIL:OGC:WFS",
         "STATISTICALUNITS.IRIS:contours_iris$GEOPORTAIL:OGC:WFS",
+        "STATISTICALUNITS.IRIS.PE:contours_iris_pe$GEOPORTAIL:OGC:WFS",
         "TERAGIR:clef_verte$GEOPORTAIL:OGC:WFS",
         "LABELS.TOURISTIQUES:communes_touristiques$GEOPORTAIL:OGC:WFS",
         "STATISTICALUNITS.IRISGE:iris_ge$GEOPORTAIL:OGC:WFS",
@@ -1906,6 +1908,129 @@
         }
       ]
     },
+    "STATISTICALUNITS.IRIS.PE$GEOPORTAIL:OGC:WMS": {
+      "name": "STATISTICALUNITS.IRIS.PE",
+      "title": "IRIS PE",
+      "description": "Contours géométriques des IRIS de l'INSEE. Sources: INSEE, IGN 2025-01-01",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.8098218,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38929713
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-STATISTICALUNITS.IRIS.PE",
+          "title": "STATISTICALUNITS.IRIS.PE style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=STATISTICALUNITS.IRIS.PE"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
     "STATISTICALUNITS.IRISGE$GEOPORTAIL:OGC:WMS": {
       "name": "STATISTICALUNITS.IRISGE",
       "title": "Contours géométriques des IRIS de l'INSEE à grande échelle",
@@ -3286,6 +3411,34 @@
     "STATISTICALUNITS.IRIS:contours_iris$GEOPORTAIL:OGC:WFS": {
       "name": "STATISTICALUNITS.IRIS:contours_iris",
       "title": "CONTOURS IRIS",
+      "description": "Contours géométriques des IRIS de l'INSEE",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.8098218,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38929713
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "cartovecto": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "STATISTICALUNITS.IRIS.PE:contours_iris_pe$GEOPORTAIL:OGC:WFS": {
+      "name": "STATISTICALUNITS.IRIS.PE:contours_iris_pe",
+      "title": "CONTOURS IRIS PE",
       "description": "Contours géométriques des IRIS de l'INSEE",
       "globalConstraint": {
         "minScaleDenominator": 0.0,

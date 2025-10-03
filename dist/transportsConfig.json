@@ -25,15 +25,18 @@
         "TRANSPORTNETWORKS.ROADS.DIRECTION$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.DRONES.RESTRICTIONS$GEOPORTAIL:OGC:WMS",
         "DGAC-PGS-POI_BDD_FXX_WM_WM$GEOPORTAIL:OGC:WMS",
-        "DGAC-PGS_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS",
-        "DGAC-PGS_BDD_FXX_WM:fxx_pgs_wm$GEOPORTAIL:OGC:WFS",
-        "DGAC-PGS-POI_BDD_FXX_WM:aerodrome_avec_pgs_wm$GEOPORTAIL:OGC:WFS",
+        "dgac_peb_arrete_wmsv$GEOPORTAIL:OGC:WMS",
+        "dgac_peb_plan_wmsv$GEOPORTAIL:OGC:WMS",
+        "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
+        "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS",
+        "dgac_psa_plan_wmsv$GEOPORTAIL:OGC:WMS",
         "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf$GEOPORTAIL:OGC:WFS",
         "SECUROUT.TE:franchissement_te_lien_prescription$GEOPORTAIL:OGC:WFS",
         "SECUROUT.TE:franchissement_te$GEOPORTAIL:OGC:WFS",
         "SECUROUT.TE:prescription_te$GEOPORTAIL:OGC:WFS",
         "SECUROUT.TE:troncon_te$GEOPORTAIL:OGC:WFS",
-        "SECUROUT.TE:troncon_te_lien_prescription$GEOPORTAIL:OGC:WFS"
+        "SECUROUT.TE:troncon_te_lien_prescription$GEOPORTAIL:OGC:WFS",
+        "dgac_psa_arrete_wfs:dgac_psa_arrete_wfs$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -2045,18 +2048,18 @@
         }
       ]
     },
-    "DGAC-PGS_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
-      "name": "DGAC-PGS_BDD_FXX_WM_WMS",
-      "title": "Plan de gêne sonore (PGS)",
-      "description": "Les plans de gêne sonore identifient trois type de zones de bruit (I, II, III) établies sur la base du trafic estimé, des procédures de circulation aérienne applicables et des infrastructures qui seront en service dans l'année suivant la date de publication de l'arrêté approuvant le PGS.  Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+    "dgac_peb_arrete_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "dgac_peb_arrete_wmsv",
+      "title": "DGAC Plan d'Exposition au Bruit, documents d'Approbation (PEB)",
+      "description": "Documents d'approbation des PEB",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -1.645795,
-          "right": 7.551737,
-          "top": 49.489555,
-          "bottom": 43.365423
+          "left": -61.528930664,
+          "right": 55.51940918,
+          "top": 50.689465332,
+          "bottom": -21.322717285
         }
       },
       "serviceParams": {
@@ -2068,17 +2071,26 @@
       },
       "defaultProjection": "EPSG:4326",
       "queryable": true,
-      "metadata": [],
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_d_Exposition_au_Bruit_documents_d_approbation_PEB"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_d_Exposition_au_Bruit_documents_d_approbation_PEB"
+        }
+      ],
       "styles": [
         {
-          "name": "default-style-DGAC-PGS_BDD_FXX_WM_WMS",
-          "title": "DGAC-PGS_BDD_FXX_WM_WMS style"
+          "name": "default-style-dgac_peb_arrete_wmsv",
+          "title": "dgac_peb_arrete_wmsv style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=DGAC-PGS_BDD_FXX_WM_WMS"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=dgac_peb_arrete_wmsv"
         }
       ],
       "formats": [
@@ -2168,61 +2180,524 @@
         }
       ]
     },
-    "DGAC-PGS_BDD_FXX_WM:fxx_pgs_wm$GEOPORTAIL:OGC:WFS": {
-      "name": "DGAC-PGS_BDD_FXX_WM:fxx_pgs_wm",
-      "title": "Plan de gêne sonore (PGS)",
-      "description": "Les plans de gêne sonore identifient trois type de zones de bruit (I, II, III) établies sur la base du trafic estimé, des procédures de circulation aérienne applicables et des infrastructures qui seront en service dans l'année suivant la date de publication de l'arrêté approuvant le PGS. Pour en savoir plus Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+    "dgac_peb_plan_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "dgac_peb_plan_wmsv",
+      "title": "DGAC Plan d'Exposition au Bruit (PEB)",
+      "description": "Les plans d'exposition aux bruits identifient trois ou quatre types de zones de bruit diversement exposés au bruit engendré par les aéronefs (A,B,C et/ou D) et définis à partir des prévisions de développement de l'activité aérienne, de l'extension prévisible des infrastructures et des procédures de circulation aérienne.",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -1.645795,
-          "right": 7.551737,
-          "top": 49.489555,
-          "bottom": 43.365423
+          "left": -61.611328125,
+          "right": 55.634765625,
+          "top": 50.744335938,
+          "bottom": -21.421484375
         }
       },
       "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
+        "id": "OGC:WMS",
+        "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wfs/wfs"
+          "transports": "https://data.geopf.fr/wms-v/ows"
         }
       },
-      "defaultProjection": "EPSG:3857",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_d_Exposition_au_Bruit_documents_d_approbation_PEB"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_d_Exposition_au_Bruit_documents_d_approbation_PEB"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-dgac_peb_plan_wmsv",
+          "title": "dgac_peb_plan_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=dgac_peb_plan_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
     },
-    "DGAC-PGS-POI_BDD_FXX_WM:aerodrome_avec_pgs_wm$GEOPORTAIL:OGC:WFS": {
-      "name": "DGAC-PGS-POI_BDD_FXX_WM:aerodrome_avec_pgs_wm",
-      "title": "Plan de gêne sonore, documents d'approbation (PGS)",
-      "description": "Arrêté préfectoral d'approbation, pour chaque aérodrome, du plan de gêne sonore. Pour en savoir plus Sources : Ministère de l'Ecologie, du Développement durable et de l'Energie",
+    "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "dgac_pgs_plan_wmsv",
+      "title": "DGAC Plan de Gêne Sonore (PGS)",
+      "description": "Les plans de gêne sonore délimitent des zones dans lesquelles les riverains peuvent bénéficier d’une aide à l’insonorisation de leur logement.",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -1.607808,
-          "right": 7.529222,
-          "top": 49.454422,
-          "bottom": 43.436634
+          "left": -1.647949219,
+          "right": 7.55859375,
+          "top": 49.493286133,
+          "bottom": 43.34777832
         }
       },
       "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
+        "id": "OGC:WMS",
+        "version": "1.3.0",
         "serverUrl": {
-          "transports": "https://data.geopf.fr/wfs/wfs"
+          "transports": "https://data.geopf.fr/wms-v/ows"
         }
       },
-      "defaultProjection": "EPSG:3857",
-      "queryable": false,
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-dgac_pgs_plan_wmsv",
+          "title": "dgac_pgs_plan_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=dgac_pgs_plan_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "dgac_psa_arrete_wmsv",
+      "title": "DGAC Plan de Servitudes Aéronautique, documents d'approbation (PSA)",
+      "description": "Documents d'approbation des PSA",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -149.611816406,
+          "right": 167.459106445,
+          "top": 51.040637207,
+          "bottom": -22.590228271
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-dgac_psa_arrete_wmsv",
+          "title": "dgac_psa_arrete_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=dgac_psa_arrete_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "dgac_psa_plan_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "dgac_psa_plan_wmsv",
+      "title": "DGAC Plan de Servitudes Aéronautiques  (PSA)",
+      "description": "**Plan de servitudes aéronautiques (PSA)**\n\nLes plans de servitudes aéronautiques définissent les servitudes destinées à assurer la sécurité des approches et des décollages des aéronefs aux abords des aérodromes et à faciliter la maintenance des équipements de ceux-ci.\nPlan de servitudes aéronautiques (PSA).\n\nTéléchargement des documents d’approbation des plans de servitudes aéronautiques (PSA). Les plans de servitudes aéronautiques définissent les servitudes destinées à assurer la sécurité des approches et des décollages des aéronefs aux abords des aérodromes et à faciliter la maintenance des équipements de ceux-ci.\n\nPour obtenir la donnée vectorielle des PSA civils, veuillez contatcter le service géomatique : snia-geomatique-bf@aviation-civile.gouv.fr",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -149.765625,
+          "right": 167.6953125,
+          "top": 51.27109375,
+          "bottom": -22.826171875
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
       "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
+      "styles": [
+        {
+          "name": "default-style-dgac_psa_plan_wmsv",
+          "title": "dgac_psa_plan_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=dgac_psa_plan_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
     },
     "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf$GEOPORTAIL:OGC:WFS": {
       "name": "TRANSPORTS.DRONES.RESTRICTIONS:carte_restriction_drones_lf",
@@ -2376,6 +2851,34 @@
           "right": 9.7475,
           "top": 51.2346875,
           "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "transports": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "dgac_psa_arrete_wfs:dgac_psa_arrete_wfs$GEOPORTAIL:OGC:WFS": {
+      "name": "dgac_psa_arrete_wfs:dgac_psa_arrete_wfs",
+      "title": "dgac_psa_arrete_wfs",
+      "description": "Documents d'approbation des PSA",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -149.611816406,
+          "right": 167.459106445,
+          "top": 51.040637207,
+          "bottom": -22.590228271
         }
       },
       "serviceParams": {
