@@ -2030,8 +2030,8 @@
         "patrinat_inpg:inpg$GEOPORTAIL:OGC:WFS",
         "patrinat_ospar:pgsf$GEOPORTAIL:OGC:WFS",
         "patrinat_pgsf:pgsf$GEOPORTAIL:OGC:WFS",
-        "patrinat_pn:parc_national$GEOPORTAIL:OGC:WFS",
         "patrinat_pn2:pn$GEOPORTAIL:OGC:WFS",
+        "patrinat_pn:parc_national$GEOPORTAIL:OGC:WFS",
         "patrinat_pnm:pnm$GEOPORTAIL:OGC:WFS",
         "patrinat_pnr:pnr$GEOPORTAIL:OGC:WFS",
         "patrinat_pprnn:pprnn$GEOPORTAIL:OGC:WFS",
@@ -2062,12 +2062,12 @@
         "test_mrd_pays_ecoregions:pays$GEOPORTAIL:OGC:WFS",
         "ecoregions:pays$GEOPORTAIL:OGC:WFS",
         "pays_et_regions_ad_0622025:pays$GEOPORTAIL:OGC:WFS",
+        "pays_ecoregions_mrp:pays$GEOPORTAIL:OGC:WFS",
         "monde_wfs_rpt:pays$GEOPORTAIL:OGC:WFS",
         "test-formation-karim2:pays$GEOPORTAIL:OGC:WFS",
         "data_formation_gpf_vecteur_zip_26-05-2025_wmsv:pays$GEOPORTAIL:OGC:WFS",
         "pays_ecoregions_ac_formation_bis:pays-monde_acaz$GEOPORTAIL:OGC:WFS",
         "pays_ecoregions_ldsoc:Pays du monde$GEOPORTAIL:OGC:WFS",
-        "pays_ecoregions_mrp:pays$GEOPORTAIL:OGC:WFS",
         "pays_ecoregions_lb_160625:pays$GEOPORTAIL:OGC:WFS",
         "wfs_monde_et_ecoregions_lpt:pays_lpt$GEOPORTAIL:OGC:WFS",
         "wfs_scot:perimetre_scot$GEOPORTAIL:OGC:WFS",
@@ -2134,6 +2134,7 @@
         "test_mrd_pays_ecoregions:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "ecoregions:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "pays_et_regions_ad_0622025:regions_ecologiques$GEOPORTAIL:OGC:WFS",
+        "pays_ecoregions_mrp:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "monde_wfs_rpt:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "test-formation-karim2:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "data_formation_gpf_vecteur_zip_26-05-2025_wmsv:regions_ecologiques$GEOPORTAIL:OGC:WFS",
@@ -2141,7 +2142,6 @@
         "pays_ecoregions-ldsoc:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "pays_ecoregions_ldsoc:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "Tests_RM_pays_ecoregions:Test RM - regions_ecologiques$GEOPORTAIL:OGC:WFS",
-        "pays_ecoregions_mrp:regions_ecologiques$GEOPORTAIL:OGC:WFS",
         "pays_ecoregions_lb_160625:regions_ecologiques_lb$GEOPORTAIL:OGC:WFS",
         "ObsForets.Sols:repartition_niveaux_trophiques_2018_2022$GEOPORTAIL:OGC:WFS",
         "ObsForets.Sols:repartition_niveaux_trophiques_toutes_campagnes$GEOPORTAIL:OGC:WFS",
@@ -2286,7 +2286,11 @@
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25TOUR.L93$GEOPORTAIL:OGC:WMTS",
         "SCAN100_PYR-JPEG_WLD_WM_WMTS_3D$GEOPORTAIL:OGC:WMTS",
-        "DDFIP_isochrone30$GEOPORTAIL:OGC:WMS"
+        "DDFIP_isochrone30$GEOPORTAIL:OGC:WMS",
+        "SANDBOX.monde_gpkg_22-07-2025_wfs_rest:pays_rest$GEOPORTAIL:OGC:WFS",
+        "services_publics_test_20250428:poc_7_5_2$GEOPORTAIL:OGC:WFS",
+        "services_publics_test_20250428_v2:carto_sp_20250428_2$GEOPORTAIL:OGC:WFS",
+        "SANDBOX.monde_gpkg_22-07-2025_wfs_rest:ecoregions_rest$GEOPORTAIL:OGC:WFS"
       ],
       "ign_scan_ws": [
         "GEOGRAPHICALGRIDSYSTEMS.MAPS$GEOPORTAIL:OGC:WMTS",
@@ -7532,8 +7536,8 @@
         "Autres"
       ],
       "thematic": [
-        "géosciences",
-        "Sciences de la terre"
+        "Sciences de la terre",
+        "géosciences"
       ],
       "base": false,
       "key": "COMMUNES.SISMICITE$GEOPORTAIL:OGC:WMTS"
@@ -26934,8 +26938,8 @@
         "INRA"
       ],
       "thematic": [
-        "géosciences",
-        "Sciences de la terre"
+        "Sciences de la terre",
+        "géosciences"
       ],
       "base": false,
       "key": "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"
@@ -35349,8 +35353,8 @@
         "IGN"
       ],
       "thematic": [
-        "géosciences",
-        "Sciences de la terre"
+        "Sciences de la terre",
+        "géosciences"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.LGV_archeologie$GEOPORTAIL:OGC:WMTS"
@@ -42170,8 +42174,8 @@
         "IGN"
       ],
       "thematic": [
-        "géosciences",
-        "Sciences de la terre"
+        "Sciences de la terre",
+        "géosciences"
       ],
       "base": false,
       "key": "LGV_EDUGEO_ARCHEOLOGIE_PYR-PNG_FXX_WM_20170210$GEOPORTAIL:OGC:WMTS"
@@ -86502,11 +86506,15 @@
           "current": true
         }
       ],
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "orthophoto_1955_calvados$GEOPORTAIL:OGC:WMTS"
@@ -87150,13 +87158,17 @@
           "current": true
         }
       ],
-      "key": "scan1000_corse_jbn$GEOPORTAIL:OGC:WMTS",
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Autres"
       ],
+      "metadata_urls": [
+        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
+      ],
+      "key": "scan1000_corse_jbn$GEOPORTAIL:OGC:WMTS",
       "base": false
     },
     "testSRD-PCRS86-Poitiers$GEOPORTAIL:OGC:WMTS": {
@@ -88880,11 +88892,15 @@
           "current": false
         }
       ],
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "Ortho_20cm_D075_2021$GEOPORTAIL:OGC:WMS"
@@ -91070,13 +91086,17 @@
           "current": false
         }
       ],
-      "key": "scan1000$GEOPORTAIL:OGC:WMS",
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Autres"
       ],
+      "metadata_urls": [
+        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
+      ],
+      "key": "scan1000$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "site_test003$GEOPORTAIL:OGC:WMS": {
@@ -91142,11 +91162,15 @@
           "current": false
         }
       ],
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Autres"
+      ],
+      "metadata_urls": [
+        "https://www.greenfacts.org/fr/glossaire/def/ecoregion.htm"
       ],
       "base": false,
       "key": "site_test003$GEOPORTAIL:OGC:WMS"
@@ -95277,8 +95301,8 @@
         "IGN"
       ],
       "thematic": [
-        "géosciences",
-        "Sciences de la terre"
+        "Sciences de la terre",
+        "géosciences"
       ],
       "base": false,
       "key": "BDTOPO-GEOPO-OROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS"
@@ -105271,11 +105295,16 @@
           "current": false
         }
       ],
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
       ],
       "base": false,
       "key": "OCSGE_Boucle-Correction_30_2021_Couverture$GEOPORTAIL:OGC:WMS"
@@ -105305,12 +105334,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105411,11 +105440,16 @@
           "current": false
         }
       ],
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
       ],
       "base": false,
       "key": "OCSGE_Boucle-Correction_30_2021_Usage$GEOPORTAIL:OGC:WMS"
@@ -105445,12 +105479,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105590,12 +105624,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -120810,12 +120844,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/adminexpress_departement-jpb"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
         }
       ],
       "styles": [
@@ -123868,13 +123902,18 @@
           "current": false
         }
       ],
-      "key": "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS",
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
-        "Autres"
+        "Infrastructures de transport"
       ],
+      "metadata_urls": [
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA",
+        "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
+      ],
+      "key": "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "dgac_psa_plan_wmsv$GEOPORTAIL:OGC:WMS": {
@@ -133768,11 +133807,15 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Limites politiques et administratives"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ADMIN_EXPRESS/adminexpress.json"
       ],
       "base": false,
       "key": "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS"
@@ -133958,10 +134001,10 @@
       ],
       "styles": [
         {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         },
         {
           "name": "ocsge_usage",
@@ -133970,10 +134013,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         },
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         }
       ],
       "globalConstraint": {
@@ -134024,15 +134067,9 @@
       ],
       "styles": [
         {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
           "name": "ocsge_occupation",
           "title": "ocsge_occupation",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         },
         {
@@ -134040,6 +134077,12 @@
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         }
       ],
       "globalConstraint": {
@@ -134149,10 +134192,10 @@
       ],
       "styles": [
         {
-          "name": "toponymes",
-          "title": "toponymes",
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "attenue",
@@ -134161,28 +134204,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
-        },
-        {
           "name": "transparent",
           "title": "transparent",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
-        },
-        {
-          "name": "accentue",
-          "title": "accentue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
           "name": "standard",
@@ -134191,16 +134216,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
+          "name": "toponymes",
+          "title": "toponymes",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "accentue",
+          "title": "accentue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
           "name": "epure",
           "title": "epure",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         }
       ],
       "globalConstraint": {
@@ -134215,11 +134258,23 @@
         "maxScaleDenominator": 2132.7295838497826
       },
       "defaultProjection": "EPSG:3857",
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
       ],
       "base": false,
       "key": "PLAN.IGN$GEOPORTAIL:GPP:TMS"
@@ -134943,12 +134998,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CartoSP_MVP_SP_v2"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/CartoSP_MVP_SP_v2"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CartoSP_MVP_SP_v2"
         }
       ],
       "styles": [
