@@ -23,7 +23,7 @@ def generate_entree_carto_conf(merged_config):
     # Filtre les couches WMS qui dupliquent une couche WMTS
     merged_config["layers"] = filter_specific_duplicates(merged_config["layers"])
     # Convertit les thématiques
-    merged_config["layers"] = convert_thematic(merged_config["layers"])
+    merged_config["layers"] = convert_thematic(merged_config["layers"], edito["topics"]["thematic"])
     # Sauvegarde le résultat
     with open("dist/entreeCarto.json", "w", encoding="utf-8") as file:
         file.writelines(json.dumps(merged_config, indent=2, ensure_ascii=False))

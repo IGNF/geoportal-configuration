@@ -13,7 +13,7 @@ class TestMergeServiceDeRecherche(unittest.TestCase):
     def setUpClass(cls):
         # Charger les fichiers
         base_path = os.path.dirname(__file__)
-        with open(os.path.join(base_path, "edito_merged.json"), "r", encoding="utf-8") as file:
+        with open(os.path.join(base_path, "edito_merged_post_process.json"), "r", encoding="utf-8") as file:
             cls.config = json.load(file)
         # Appeler la fonction à tester
         cls.filtered_config = filter_layers(cls.config["layers"])

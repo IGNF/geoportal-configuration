@@ -104,16 +104,15 @@ def add_layers_default_values(layers):
             layer["base"] = False
     return layers
 
-def convert_thematic(layers):
-    # Récupère une table de conversion des thématiques
-    convert_table = getThematicConversionTable()
-    def convertThematic(thematic, convert_table):
-        if thematic in convert_table:
-            return convert_table[thematic]
-        else:
-            return thematic 
-        # Map les thématiques avec la table de conversion
+def convert_thematic(layers, convert_table):
+    # Conversion de la liste d'objets en dict {id: name}
+    convert_dict = {item["id"]: item["name"] for item in convert_table}
+
     if convert_table:
         for layer in layers.values():
-            layer["thematic"] = [convertThematic(thematic, convert_table) for thematic in layer["thematic"]]
+            thematics = layer.get("thematic", [])
+
+            # Remplace chaque id de thématique par son nom si existant
+            layer["thematic"] = [convert_dict.get(thematic, thematic) for thematic in thematics]
+
     return layers
