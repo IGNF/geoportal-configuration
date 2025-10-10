@@ -7,6 +7,7 @@
         "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMTS",
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMTS",
         "IGNF_MASQUE-FORET.2021-2023$GEOPORTAIL:OGC:WMTS",
+        "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMTS",
         "INPE$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.FORESTAREAS$GEOPORTAIL:OGC:WMTS",
         "LANDCOVER.FORESTINVENTORY.V1$GEOPORTAIL:OGC:WMTS",
@@ -21,6 +22,7 @@
         "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMS",
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMS",
         "IGNF_MASQUE-FORET.2021-2023$GEOPORTAIL:OGC:WMS",
+        "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.FORESTINVENTORY.V1$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.PRSF$GEOPORTAIL:OGC:WMS",
@@ -634,6 +636,133 @@
             "maxTileRow": "24493",
             "minTileCol": "31762",
             "maxTileCol": "34525"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_NATURE-EN-VILLE_2021-2023",
+      "title": "Nature en Ville 2021-2023",
+      "description": "Base de données nationale cartographiant les surfaces végétalisées et surfaces d’eau en contexte urbain. Créée par croisement de CoSIA et du RPG. Couvre les communes urbaines denses et intermédiaires selon l’indice de densité INSEE.",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -63.1614,
+          "right": 55.8465,
+          "top": 51.0991,
+          "bottom": -21.3998
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_18",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "83",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "287",
+            "minTileCol": "166",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "574",
+            "minTileCol": "332",
+            "maxTileCol": "670"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "1148",
+            "minTileCol": "664",
+            "maxTileCol": "1341"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "2297",
+            "minTileCol": "1329",
+            "maxTileCol": "2683"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "4594",
+            "minTileCol": "2658",
+            "maxTileCol": "5366"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "9189",
+            "minTileCol": "5317",
+            "maxTileCol": "10733"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "18378",
+            "minTileCol": "10634",
+            "maxTileCol": "21467"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "36757",
+            "minTileCol": "21269",
+            "maxTileCol": "42934"
+          },
+          "17": {
+            "minTileRow": "43822",
+            "maxTileRow": "73515",
+            "minTileCol": "42539",
+            "maxTileCol": "85869"
+          },
+          "18": {
+            "minTileRow": "87645",
+            "maxTileRow": "147030",
+            "minTileCol": "85079",
+            "maxTileCol": "171738"
           }
         }
       },
@@ -2109,6 +2238,65 @@
       },
       "defaultProjection": "EPSG:3857",
       "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_NATURE-EN-VILLE_2021-2023",
+      "title": "Nature en Ville 2021-2023",
+      "description": "Base de données nationale cartographiant les surfaces végétalisées et surfaces d’eau en contexte urbain. Créée par croisement de CoSIA et du RPG. Couvre les communes urbaines denses et intermédiaires selon l’indice de densité INSEE.",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.16139931028561,
+          "right": 55.84649931028561,
+          "top": 51.09909862028575,
+          "bottom": -21.399799310285612
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
       "metadata": [],
       "styles": [
         {
