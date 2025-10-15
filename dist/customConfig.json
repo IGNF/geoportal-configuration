@@ -2,7 +2,6 @@
   "generalOptions": {
     "apiKeys": {
       "full": [
-        "500k$GEOPORTAIL:OGC:WMTS",
         "ACCES.BIOMETHANE$GEOPORTAIL:OGC:WMTS",
         "ADMIN-EXPRESS-COG-CARTO-PE.LATEST$GEOPORTAIL:OGC:WMTS",
         "ADMINEXPRESS-COG-CARTO-PE.2025$GEOPORTAIL:OGC:WMTS",
@@ -2306,135 +2305,6 @@
     }
   },
   "layers": {
-    "500k$GEOPORTAIL:OGC:WMTS": {
-      "name": "500k",
-      "title": "500k",
-      "description": "500k",
-      "globalConstraint": {
-        "maxScaleDenominator": 559082264.0287179,
-        "minScaleDenominator": 272989.38673277217,
-        "bbox": {
-          "left": -6.0,
-          "right": 11.15,
-          "top": 51.45,
-          "bottom": 40.38
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_0_11",
-        "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "0",
-            "maxTileCol": "0"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "0",
-            "maxTileCol": "1"
-          },
-          "2": {
-            "minTileRow": "1",
-            "maxTileRow": "1",
-            "minTileCol": "1",
-            "maxTileCol": "2"
-          },
-          "3": {
-            "minTileRow": "2",
-            "maxTileRow": "3",
-            "minTileCol": "3",
-            "maxTileCol": "4"
-          },
-          "4": {
-            "minTileRow": "5",
-            "maxTileRow": "6",
-            "minTileCol": "7",
-            "maxTileCol": "8"
-          },
-          "5": {
-            "minTileRow": "10",
-            "maxTileRow": "12",
-            "minTileCol": "15",
-            "maxTileCol": "16"
-          },
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "24",
-            "minTileCol": "30",
-            "maxTileCol": "33"
-          },
-          "7": {
-            "minTileRow": "42",
-            "maxTileRow": "48",
-            "minTileCol": "61",
-            "maxTileCol": "67"
-          },
-          "8": {
-            "minTileRow": "85",
-            "maxTileRow": "96",
-            "minTileCol": "123",
-            "maxTileCol": "135"
-          },
-          "9": {
-            "minTileRow": "170",
-            "maxTileRow": "193",
-            "minTileCol": "247",
-            "maxTileCol": "271"
-          },
-          "10": {
-            "minTileRow": "340",
-            "maxTileRow": "386",
-            "minTileCol": "494",
-            "maxTileCol": "543"
-          },
-          "11": {
-            "minTileRow": "681",
-            "maxTileRow": "772",
-            "minTileCol": "989",
-            "maxTileCol": "1087"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Données Brutes",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "http://ign.fr",
-          "minScaleDenominator": 1
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/jpeg",
-          "current": true
-        }
-      ],
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Carte de référence de la couverture terrestre"
-      ],
-      "base": false,
-      "key": "500k$GEOPORTAIL:OGC:WMTS"
-    },
     "ACCES.BIOMETHANE$GEOPORTAIL:OGC:WMTS": {
       "name": "ACCES.BIOMETHANE",
       "title": "Cartographie biométhane d’accès aux réseaux",
@@ -8045,8 +7915,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "Carhab_habitat$GEOPORTAIL:OGC:WMTS"
@@ -12600,8 +12470,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "EVOL-SURFACE-FORESTIERE-1980-2011_EDUGEO_PYR-PNG_FXX_LAMB93_20150918$GEOPORTAIL:OGC:WMTS"
@@ -35052,8 +34922,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.EVOL_SURFACE_FORESTIERE_1980-2011$GEOPORTAIL:OGC:WMTS"
@@ -35218,9 +35088,9 @@
         "IGN"
       ],
       "thematic": [
-        "atmosphère",
         "Climatologie",
-        "météorologie"
+        "météorologie",
+        "atmosphère"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.KLAUS$GEOPORTAIL:OGC:WMTS"
@@ -35491,8 +35361,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.LGV_faune$GEOPORTAIL:OGC:WMTS"
@@ -35627,8 +35497,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.LGV_flore$GEOPORTAIL:OGC:WMTS"
@@ -35916,8 +35786,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.TAUX_BOISEMENT_2009-2013$GEOPORTAIL:OGC:WMTS"
@@ -42312,8 +42182,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LGV_EDUGEO_FAUNE_PYR-PNG_FXX_WM_20170215$GEOPORTAIL:OGC:WMTS"
@@ -42448,8 +42318,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LGV_EDUGEO_FLORE_PYR-PNG_FXX_WM_20170213$GEOPORTAIL:OGC:WMTS"
@@ -45170,8 +45040,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB.ZONES.EXCLUES$GEOPORTAIL:OGC:WMTS"
@@ -45294,8 +45164,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB.ZONES.EXCLUES.SAUF.TOITURE$GEOPORTAIL:OGC:WMTS"
@@ -45418,8 +45288,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB.ZONES.NECESSITANT.AVIS.GESTIONNAIRE$GEOPORTAIL:OGC:WMTS"
@@ -87287,15 +87157,11 @@
           "current": true
         }
       ],
-      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Autres"
-      ],
-      "metadata_urls": [
-        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "testSRD-PCRS86-Poitiers$GEOPORTAIL:OGC:WMTS"
@@ -87414,15 +87280,11 @@
           "current": true
         }
       ],
-      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "tuto_scan1000_SRD$GEOPORTAIL:OGC:WMTS"
@@ -89046,15 +88908,11 @@
           "current": false
         }
       ],
-      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "Ortho_50cm_D075_2021$GEOPORTAIL:OGC:WMS"
@@ -95829,8 +95687,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "BDTOPO-GEOPO-VEGETATION_WLD_WGS84G$GEOPORTAIL:OGC:WMS"
@@ -100948,8 +100806,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "Evolution_vegetation_Guadeloupe_1950-2010$GEOPORTAIL:OGC:WMS"
@@ -101080,8 +100938,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "Formation_vegetation_Guadeloupe_2010$GEOPORTAIL:OGC:WMS"
@@ -101737,8 +101595,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "HAIES.BOCAGES$GEOPORTAIL:OGC:WMS"
@@ -104097,9 +103955,9 @@
         "Météo France"
       ],
       "thematic": [
-        "atmosphère",
         "Climatologie",
-        "météorologie"
+        "météorologie",
+        "atmosphère"
       ],
       "base": false,
       "key": "METEOFRANCE-STATIONS_BDD-POI_WLD_WM$GEOPORTAIL:OGC:WMS"
@@ -105191,12 +105049,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105626,12 +105484,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -106003,8 +105861,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB_ZONES.EXCLUES.SAUF.TOITURE$GEOPORTAIL:OGC:WMS"
@@ -106135,8 +105993,8 @@
         "ONF"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ONF_FORETS-PUBLIQUES_2021$GEOPORTAIL:OGC:WMS"
@@ -107970,8 +107828,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Gestion.Part-foret-publique-dep$GEOPORTAIL:OGC:WMS"
@@ -108102,8 +107960,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.Volume-moyen-ha-dep-2018-2022$GEOPORTAIL:OGC:WMS"
@@ -108234,8 +108092,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.Volume-sur-pied-dep-2017-2021$GEOPORTAIL:OGC:WMS"
@@ -108497,8 +108355,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.tx-boisement-communes$GEOPORTAIL:OGC:WMS"
@@ -108629,8 +108487,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.tx-boisement-dep-2018-2022$GEOPORTAIL:OGC:WMS"
@@ -108761,8 +108619,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Sols.Repartition-niveaux-trophiques-2018-2022$GEOPORTAIL:OGC:WMS"
@@ -108893,8 +108751,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Sols.Repartition-niveaux-trophiques-toutes-campagnes$GEOPORTAIL:OGC:WMS"
@@ -118457,8 +118315,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "TAUX.BOISEMENT.2009-2013$GEOPORTAIL:OGC:WMS"
@@ -122536,8 +122394,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "conchylicoles$GEOPORTAIL:OGC:WMS"
@@ -123764,18 +123622,13 @@
           "current": false
         }
       ],
-      "thumbnail": "",
+      "key": "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
       "producer": [
         "Autres"
       ],
       "thematic": [
-        "Infrastructures de transport"
+        "Autres"
       ],
-      "metadata_urls": [
-        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS",
-        "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
-      ],
-      "key": "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS": {
@@ -125379,8 +125232,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "forets$GEOPORTAIL:OGC:WMS"
@@ -131951,8 +131804,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "taux_boisement_communal_gpkg_2015-2019_wmsv$GEOPORTAIL:OGC:WMS"
@@ -133998,10 +133851,22 @@
       ],
       "styles": [
         {
-          "name": "bati_date",
-          "title": "bati_date",
+          "name": "classique",
+          "title": "classique",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
           "name": "routier",
@@ -134016,34 +133881,22 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "bati",
+          "title": "bati",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
+          "name": "bati_date",
+          "title": "bati_date",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
           "name": "hydrographie",
           "title": "hydrographie",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
-        },
-        {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         }
       ],
       "globalConstraint": {
@@ -134158,9 +134011,15 @@
       ],
       "styles": [
         {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+        },
+        {
           "name": "ocsge_occupation",
           "title": "ocsge_occupation",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         },
         {
@@ -134168,12 +134027,6 @@
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         }
       ],
       "globalConstraint": {
@@ -134188,17 +134041,11 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
       ],
       "base": false,
       "key": "OCSGE_2016$GEOPORTAIL:GPP:TMS"
@@ -134224,9 +134071,15 @@
       ],
       "styles": [
         {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
@@ -134234,12 +134087,6 @@
           "title": "ocsge_usage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -134254,17 +134101,11 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
       ],
       "base": false,
       "key": "OCSGE_2019$GEOPORTAIL:GPP:TMS"
@@ -134290,16 +134131,16 @@
       ],
       "styles": [
         {
-          "name": "noir_et_blanc",
-          "title": "noir_et_blanc",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
-        },
-        {
           "name": "pci",
           "title": "pci",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        },
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
         }
       ],
       "globalConstraint": {
@@ -134349,40 +134190,10 @@
       ],
       "styles": [
         {
-          "name": "accentue",
-          "title": "accentue",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
-        },
-        {
           "name": "epure",
           "title": "epure",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
-        },
-        {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
-          "name": "toponymes",
-          "title": "toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
-        },
-        {
-          "name": "transparent",
-          "title": "transparent",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
           "name": "standard",
@@ -134391,16 +134202,46 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
-          "name": "attenue",
-          "title": "attenue",
+          "name": "accentue",
+          "title": "accentue",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
           "name": "classique",
           "title": "classique",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
+        },
+        {
+          "name": "transparent",
+          "title": "transparent",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+        },
+        {
+          "name": "attenue",
+          "title": "attenue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         }
       ],
       "globalConstraint": {
