@@ -4,6 +4,7 @@ import os
 import unittest
 import json
 from core.entree_carto.merger import merge_service_de_recherche_infos
+from core.entree_carto.entree_carto_config import searchMtdUrls
 
 class TestMergeServiceDeRecherche(unittest.TestCase):
     """
@@ -13,7 +14,7 @@ class TestMergeServiceDeRecherche(unittest.TestCase):
     def setUpClass(cls):
         # Charger les fichiers
         base_path = os.path.dirname(__file__)
-        with open(os.path.join(base_path, "1_merged_config_4layers.json"), "r", encoding="utf-8") as file:
+        with open(os.path.join(base_path, "1_merged_config_5layers.json"), "r", encoding="utf-8") as file:
             cls.merged_config = json.load(file)
         with open(os.path.join(base_path, "service_recherche_with_metadata_urls.json"), "r", encoding="utf-8") as file:
             cls.search_result = json.load(file)
@@ -39,6 +40,13 @@ class TestMergeServiceDeRecherche(unittest.TestCase):
         self.assertIn(
             "NEWinlandWaters",
             self.search_merged["layers"]["hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS"]["thematic"]
+        )
+
+    # AJOUTER RESULTET SERVICE DE RECHERCHE AVEC THUMBNAIL
+    def test_thumbanil_is_valid(self):
+        self.assertEqual(
+            self.search_merged["layers"]["adminexpress-kdep-jpb-test-raster_wmts$GEOPORTAIL:OGC:WMTS"]["thumbnail"],
+            self.excepted_search_merged["layers"]["adminexpress-kdep-jpb-test-raster_wmts$GEOPORTAIL:OGC:WMTS"]["thumbnail"]
         )
 
 if __name__ == '__main__':
