@@ -9,3 +9,8 @@ python3 -m tests_files.entree_carto.merge_service_de_recherche.test_merge_servic
 python3 -m tests_files.entree_carto.merge_edito.test_merge_edito
 python3 -m tests_files.entree_carto.test_generate_entree_carto_conf
 ```
+```bash
+python3 unittest -m tests_files.entree_carto.post_process.test_filter_specific_duplicates
+
+```
+

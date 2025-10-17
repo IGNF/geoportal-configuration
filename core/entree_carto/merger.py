@@ -1,5 +1,19 @@
-from core.entree_carto.thumbnail import is_valid_thumbnail
+from core.entree_carto.thumbnail import get_valid_thumbnail_from_mtd
 import json 
+
+def merge_service_de_recherche_infos(mtd_urls_layers, config):
+    for item in mtd_urls_layers:
+        if 'layer_name' in item:
+            layerType = item["type"]
+            layerName = item['layer_name']
+            if layerType == "TMS":
+                layerID = layerName + "$GEOPORTAIL:GPP:" + layerType
+            else:
+                layerID = layerName + "$GEOPORTAIL:OGC:" + layerType
+            if layerID in config["layers"]:
+                merge_layer_infos(config["layers"][layerID], item)
+    return config
+    
 def merge_layer_infos(layer, merged_item):
     """
     Fusionne les métadonnées d'un élément merged_item dans le dictionnaire layer.
@@ -16,7 +30,7 @@ def merge_layer_infos(layer, merged_item):
         "metadata_urls": []
     }
 
-    layerThumbnail = next((url for url in merged_item["metadata_urls"] if is_valid_thumbnail(url, 60, 60)), None)
+    layerThumbnail = next((u for u in (get_valid_thumbnail_from_mtd(url, 60, 60) for url in merged_item["metadata_urls"]) if u), None)
     if layerThumbnail:
         props["thumbnail"] = layerThumbnail
     if 'theme' in merged_item:
@@ -29,19 +43,6 @@ def merge_layer_infos(layer, merged_item):
     if 'metadata_urls' in merged_item:
         props["metadata_urls"] = merged_item["metadata_urls"]
     layer.update({k: v for k, v in props.items()})
-
-def merge_service_de_recherche_infos(mtd_urls_layers, config):
-    for item in mtd_urls_layers:
-        if 'layer_name' in item:
-            layerType = item["type"]
-            layerName = item['layer_name']
-            if layerType == "TMS":
-                layerID = layerName + "$GEOPORTAIL:GPP:" + layerType
-            else:
-                layerID = layerName + "$GEOPORTAIL:OGC:" + layerType
-            if layerID in config["layers"]:
-                merge_layer_infos(config["layers"][layerID], item)
-    return config
 
 def merge_layer_edito_infos(layer, merged_item):
     """
