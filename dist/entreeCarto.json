@@ -36,6 +36,7 @@
         "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMTS",
         "CADASTRALPARCELS.PARCELS.L93$GEOPORTAIL:OGC:WMTS",
         "CADASTRALPARCELS.QUALREFBDP$GEOPORTAIL:OGC:WMTS",
+        "CADASTRES.SOLAIRES.DETAILLES$GEOPORTAIL:OGC:WMTS",
         "CADASTRES.SOLAIRES.LOCAUX$GEOPORTAIL:OGC:WMTS",
         "CAPACITE.ACCUEIL.ELECTRIQUE$GEOPORTAIL:OGC:WMTS",
         "CARTES-14-18-EDUGEO_PYR-PNG_FXX_WM$GEOPORTAIL:OGC:WMTS",
@@ -4432,8 +4433,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "Aire-Parcellaire$GEOPORTAIL:OGC:WMTS"
@@ -5708,8 +5709,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRAL.PARCELS.SECTIONS$GEOPORTAIL:OGC:WMTS"
@@ -5844,8 +5845,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.HEATMAP$GEOPORTAIL:OGC:WMTS"
@@ -6028,8 +6029,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.HISTO.2008-2013.PARCELS$GEOPORTAIL:OGC:WMTS"
@@ -6216,8 +6217,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS$GEOPORTAIL:OGC:WMTS"
@@ -6430,8 +6431,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.PARCELS$GEOPORTAIL:OGC:WMTS"
@@ -6554,11 +6555,134 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.QUALREFBDP$GEOPORTAIL:OGC:WMTS"
+    },
+    "CADASTRES.SOLAIRES.DETAILLES$GEOPORTAIL:OGC:WMTS": {
+      "name": "CADASTRES.SOLAIRES.DETAILLES",
+      "title": "Cadastres solaires détaillés",
+      "description": "Productible annuel en toiturel",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -5.15047,
+          "right": 9.57054,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "INSTALLATIONS.PV.SOL",
+          "title": "INSTALLATIONS.PV.SOL",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ENR/INSTALLATIONS.PV.SOL-legend.png",
+          "minScaleDenominator": "2000"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ],
+      "key": "CADASTRES.SOLAIRES.DETAILLES$GEOPORTAIL:OGC:WMTS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
     },
     "CADASTRES.SOLAIRES.LOCAUX$GEOPORTAIL:OGC:WMTS": {
       "name": "CADASTRES.SOLAIRES.LOCAUX",
@@ -7400,8 +7524,8 @@
         "Autres"
       ],
       "thematic": [
-        "Sciences de la terre",
-        "géosciences"
+        "géosciences",
+        "Sciences de la terre"
       ],
       "base": false,
       "key": "COMMUNES.SISMICITE$GEOPORTAIL:OGC:WMTS"
@@ -7907,8 +8031,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "Carhab_habitat$GEOPORTAIL:OGC:WMTS"
@@ -8829,8 +8953,8 @@
         "IGN"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "EDUGEO.NATURALRISKZONES.1910FLOODEDWATERSHEDS$GEOPORTAIL:OGC:WMTS"
@@ -12462,8 +12586,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "EVOL-SURFACE-FORESTIERE-1980-2011_EDUGEO_PYR-PNG_FXX_LAMB93_20150918$GEOPORTAIL:OGC:WMTS"
@@ -21985,8 +22109,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.BCAE.2020$GEOPORTAIL:OGC:WMTS"
@@ -22115,8 +22239,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.BCAE.2021$GEOPORTAIL:OGC:WMTS"
@@ -22245,8 +22369,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.BCAE.2022$GEOPORTAIL:OGC:WMTS"
@@ -22375,8 +22499,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.BCAE.2023$GEOPORTAIL:OGC:WMTS"
@@ -22505,8 +22629,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.BCAE.2024$GEOPORTAIL:OGC:WMTS"
@@ -22635,8 +22759,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.BCAE.2025$GEOPORTAIL:OGC:WMTS"
@@ -22765,8 +22889,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMTS"
@@ -22901,8 +23025,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMTS"
@@ -26802,8 +26926,8 @@
         "INRA"
       ],
       "thematic": [
-        "Sciences de la terre",
-        "géosciences"
+        "géosciences",
+        "Sciences de la terre"
       ],
       "base": false,
       "key": "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"
@@ -34914,8 +35038,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.EVOL_SURFACE_FORESTIERE_1980-2011$GEOPORTAIL:OGC:WMTS"
@@ -35080,8 +35204,8 @@
         "IGN"
       ],
       "thematic": [
-        "météorologie",
         "atmosphère",
+        "météorologie",
         "Climatologie"
       ],
       "base": false,
@@ -35217,8 +35341,8 @@
         "IGN"
       ],
       "thematic": [
-        "Sciences de la terre",
-        "géosciences"
+        "géosciences",
+        "Sciences de la terre"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.LGV_archeologie$GEOPORTAIL:OGC:WMTS"
@@ -35353,8 +35477,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.LGV_faune$GEOPORTAIL:OGC:WMTS"
@@ -35489,8 +35613,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.LGV_flore$GEOPORTAIL:OGC:WMTS"
@@ -35778,8 +35902,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LANDCOVER.EDUGEO.TAUX_BOISEMENT_2009-2013$GEOPORTAIL:OGC:WMTS"
@@ -42038,8 +42162,8 @@
         "IGN"
       ],
       "thematic": [
-        "Sciences de la terre",
-        "géosciences"
+        "géosciences",
+        "Sciences de la terre"
       ],
       "base": false,
       "key": "LGV_EDUGEO_ARCHEOLOGIE_PYR-PNG_FXX_WM_20170210$GEOPORTAIL:OGC:WMTS"
@@ -42174,8 +42298,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LGV_EDUGEO_FAUNE_PYR-PNG_FXX_WM_20170215$GEOPORTAIL:OGC:WMTS"
@@ -42310,8 +42434,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "LGV_EDUGEO_FLORE_PYR-PNG_FXX_WM_20170213$GEOPORTAIL:OGC:WMTS"
@@ -42692,8 +42816,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "LOCALISATION.CONCESSIONS.HYDRO$GEOPORTAIL:OGC:WMTS"
@@ -42940,8 +43064,8 @@
         "IGN"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "LSEP-CRUE_PYR-PNG_WLD_WM_EDUGEO_20130128$GEOPORTAIL:OGC:WMTS"
@@ -45032,8 +45156,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB.ZONES.EXCLUES$GEOPORTAIL:OGC:WMTS"
@@ -45156,8 +45280,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB.ZONES.EXCLUES.SAUF.TOITURE$GEOPORTAIL:OGC:WMTS"
@@ -45280,8 +45404,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB.ZONES.NECESSITANT.AVIS.GESTIONNAIRE$GEOPORTAIL:OGC:WMTS"
@@ -87418,8 +87542,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CP.CadastralParcel$GEOPORTAIL:OGC:WMS"
@@ -87770,8 +87894,8 @@
         "IGN"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS"
@@ -91101,8 +91225,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "z_St_amand_pcrs_jp2$GEOPORTAIL:OGC:WMS"
@@ -93329,8 +93453,8 @@
         "IGN"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "BDCARTO-HYDROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS"
@@ -94902,8 +95026,8 @@
         "IGN"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "BDTOPO-GEOPO-HYDROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS"
@@ -95034,8 +95158,8 @@
         "IGN"
       ],
       "thematic": [
-        "Sciences de la terre",
-        "géosciences"
+        "géosciences",
+        "Sciences de la terre"
       ],
       "base": false,
       "key": "BDTOPO-GEOPO-OROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS"
@@ -95560,8 +95684,8 @@
         "IGN"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "BDTOPO-GEOPO-VEGETATION_WLD_WGS84G$GEOPORTAIL:OGC:WMS"
@@ -95954,8 +96078,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.COMMUNES$GEOPORTAIL:OGC:WMS"
@@ -96086,8 +96210,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.GRAPHE$GEOPORTAIL:OGC:WMS"
@@ -96218,8 +96342,8 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.PCI_VECTEUR$GEOPORTAIL:OGC:WMS"
@@ -96350,142 +96474,11 @@
         "DGFIP"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "CADASTRALPARCELS.SECTIONS$GEOPORTAIL:OGC:WMS"
-    },
-    "CADASTRES.SOLAIRES.DETAILLES$GEOPORTAIL:OGC:WMS": {
-      "name": "CADASTRES.SOLAIRES.DETAILLES",
-      "title": "Cadastres solaires détaillés",
-      "description": "Productible annuel en toiture",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.4325,
-          "right": 9.7475,
-          "top": 51.2346875,
-          "bottom": 41.15
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-CADASTRES.SOLAIRES.DETAILLES",
-          "title": "CADASTRES.SOLAIRES.DETAILLES style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CADASTRES.SOLAIRES.DETAILLES"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ],
-      "key": "CADASTRES.SOLAIRES.DETAILLES$GEOPORTAIL:OGC:WMS",
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Autres"
-      ],
-      "base": false
     },
     "CAMINO$GEOPORTAIL:OGC:WMS": {
       "name": "CAMINO",
@@ -100150,8 +100143,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "EAU.ZRE$GEOPORTAIL:OGC:WMS"
@@ -100810,8 +100803,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "Evolution_vegetation_Guadeloupe_1950-2010$GEOPORTAIL:OGC:WMS"
@@ -100942,8 +100935,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "Formation_vegetation_Guadeloupe_2010$GEOPORTAIL:OGC:WMS"
@@ -101467,8 +101460,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "GRAPHE.PCRS.ANCT$GEOPORTAIL:OGC:WMS"
@@ -101599,8 +101592,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "HAIES.BOCAGES$GEOPORTAIL:OGC:WMS"
@@ -101731,8 +101724,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "HY.PhysicalWaters$GEOPORTAIL:OGC:WMS"
@@ -103959,8 +103952,8 @@
         "Météo France"
       ],
       "thematic": [
-        "météorologie",
         "atmosphère",
+        "météorologie",
         "Climatologie"
       ],
       "base": false,
@@ -105053,12 +105046,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105198,12 +105191,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105343,12 +105336,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105865,8 +105858,8 @@
         "OFB"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "OFB_ZONES.EXCLUES.SAUF.TOITURE$GEOPORTAIL:OGC:WMS"
@@ -105997,8 +105990,8 @@
         "ONF"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ONF_FORETS-PUBLIQUES_2021$GEOPORTAIL:OGC:WMS"
@@ -107832,8 +107825,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Gestion.Part-foret-publique-dep$GEOPORTAIL:OGC:WMS"
@@ -107964,8 +107957,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.Volume-moyen-ha-dep-2018-2022$GEOPORTAIL:OGC:WMS"
@@ -108096,8 +108089,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.Volume-sur-pied-dep-2017-2021$GEOPORTAIL:OGC:WMS"
@@ -108359,8 +108352,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.tx-boisement-communes$GEOPORTAIL:OGC:WMS"
@@ -108491,8 +108484,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Ressources.tx-boisement-dep-2018-2022$GEOPORTAIL:OGC:WMS"
@@ -108623,8 +108616,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Sols.Repartition-niveaux-trophiques-2018-2022$GEOPORTAIL:OGC:WMS"
@@ -108755,8 +108748,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "ObsForets.Sols.Repartition-niveaux-trophiques-toutes-campagnes$GEOPORTAIL:OGC:WMS"
@@ -118450,8 +118443,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "TAUX.BOISEMENT.2009-2013$GEOPORTAIL:OGC:WMS"
@@ -122529,8 +122522,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "conchylicoles$GEOPORTAIL:OGC:WMS"
@@ -122792,8 +122785,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "cours_d_eau$GEOPORTAIL:OGC:WMS"
@@ -124187,8 +124180,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "document$GEOPORTAIL:OGC:WMS"
@@ -124319,8 +124312,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "du$GEOPORTAIL:OGC:WMS"
@@ -124451,8 +124444,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "eaux$GEOPORTAIL:OGC:WMS"
@@ -125372,8 +125365,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "forets$GEOPORTAIL:OGC:WMS"
@@ -125767,8 +125760,8 @@
         "Autres"
       ],
       "thematic": [
-        "Hydrographie",
-        "Eaux intérieures"
+        "Eaux intérieures",
+        "Hydrographie"
       ],
       "base": false,
       "key": "gaz_hydrocarbures_produits_chimiques$GEOPORTAIL:OGC:WMS"
@@ -130105,8 +130098,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "prescription$GEOPORTAIL:OGC:WMS"
@@ -130237,8 +130230,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "prescription_psmv$GEOPORTAIL:OGC:WMS"
@@ -130369,8 +130362,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "psmv$GEOPORTAIL:OGC:WMS"
@@ -131418,8 +131411,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "scot$GEOPORTAIL:OGC:WMS"
@@ -131812,8 +131805,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "sup$GEOPORTAIL:OGC:WMS"
@@ -131944,8 +131937,8 @@
         "Autres"
       ],
       "thematic": [
-        "faune et flore",
-        "Biologie"
+        "Biologie",
+        "faune et flore"
       ],
       "base": false,
       "key": "taux_boisement_communal_gpkg_2015-2019_wmsv$GEOPORTAIL:OGC:WMS"
@@ -133781,8 +133774,8 @@
         "Autres"
       ],
       "thematic": [
-        "aménagement",
-        "Cadastre"
+        "Cadastre",
+        "aménagement"
       ],
       "base": false,
       "key": "zone_secteur_psmv$GEOPORTAIL:OGC:WMS"
@@ -133991,22 +133984,10 @@
       ],
       "styles": [
         {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
+          "name": "hydrographie",
+          "title": "hydrographie",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
-          "name": "delestage",
-          "title": "delestage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
           "name": "classique",
@@ -134021,22 +134002,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
         },
         {
+          "name": "routier",
+          "title": "routier",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+        },
+        {
           "name": "bati_date",
           "title": "bati_date",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
-          "name": "hydrographie",
-          "title": "hydrographie",
+          "name": "delestage",
+          "title": "delestage",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
-          "name": "routier",
-          "title": "routier",
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         }
       ],
       "globalConstraint": {
@@ -134151,10 +134144,10 @@
       ],
       "styles": [
         {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         },
         {
           "name": "ocsge_couverture",
@@ -134163,10 +134156,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         }
       ],
       "globalConstraint": {
@@ -134217,16 +134210,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
           "name": "ocsge_occupation",
@@ -134342,10 +134335,10 @@
       ],
       "styles": [
         {
-          "name": "gris",
-          "title": "gris",
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "transparent",
@@ -134354,16 +134347,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
-          "name": "accentue",
-          "title": "accentue",
+          "name": "gris",
+          "title": "gris",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
-        },
-        {
-          "name": "attenue",
-          "title": "attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         },
         {
           "name": "classique",
@@ -134372,16 +134359,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "toponymes",
-          "title": "toponymes",
+          "name": "epure",
+          "title": "epure",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
+          "name": "attenue",
+          "title": "attenue",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
           "name": "standard",
@@ -134390,10 +134377,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
-          "name": "epure",
-          "title": "epure",
+          "name": "toponymes",
+          "title": "toponymes",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "accentue",
+          "title": "accentue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         }
       ],
       "globalConstraint": {
