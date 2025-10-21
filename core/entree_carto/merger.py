@@ -73,7 +73,7 @@ def merge_layer_edito_infos(layer, merged_item):
         })
     if 'producer' in merged_item:
         props["producer"] = list({
-            v.strip() for v in merged_item["producer"].split(',') if v and v.strip()
+            v.strip() for v in ensure_list(merged_item["producer"]) if v and v.strip()
         })
     if 'base' in merged_item:
         props["base"] = merged_item["base"]
