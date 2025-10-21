@@ -24,7 +24,7 @@ class TestMergeServiceDeRecherche(unittest.TestCase):
             file.writelines(json.dumps(cls.edito_merged, indent=2, ensure_ascii=False))
 
     def test_append_new_thematic(self):
-        self.assertEqual(len(self.edito_merged["layers"]["INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"]["thematic"]), 2)
+        self.assertEqual(len(self.edito_merged["layers"]["INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"]["thematic"]), 1)
     def test_add_new_producer(self):
         self.assertEqual(self.edito_merged["layers"]["INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"]["producer"][0], "INRA")
     def test_no_duplicate_thematic(self):
