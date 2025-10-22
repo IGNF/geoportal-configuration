@@ -2271,9 +2271,6 @@
         "wfs_monde_et_ecoregions_lpt:ecoregions_lpt$GEOPORTAIL:OGC:WFS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
         "BDTOPO$GEOPORTAIL:GPP:TMS",
-        "ISOHYPSE$GEOPORTAIL:GPP:TMS",
-        "OCSGE_2016$GEOPORTAIL:GPP:TMS",
-        "OCSGE_2019$GEOPORTAIL:GPP:TMS",
         "PCI$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS",
         "PLAN.OSM$GEOPORTAIL:GPP:TMS",
@@ -134091,39 +134088,9 @@
       ],
       "styles": [
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "delestage",
-          "title": "delestage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
           "name": "hydrographie",
           "title": "hydrographie",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
@@ -134137,6 +134104,36 @@
           "title": "classique_simplifiee",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+        },
+        {
+          "name": "routier",
+          "title": "routier",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "delestage",
+          "title": "delestage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         }
       ],
       "globalConstraint": {
@@ -134171,197 +134168,6 @@
       "base": false,
       "key": "BDTOPO$GEOPORTAIL:GPP:TMS"
     },
-    "ISOHYPSE$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "ISOHYPSE",
-      "title": "ISOHYPSE",
-      "description": "Courbes de niveau",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -7044436.526761843,
-          "right": 6222585.598639628,
-          "top": 6669387.889728914,
-          "bottom": -2442207.6433298867
-        },
-        "minScaleDenominator": 34123.673341596535,
-        "maxScaleDenominator": 1066.364791924893
-      },
-      "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Altimétrie"
-      ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-      ],
-      "base": false,
-      "key": "ISOHYPSE$GEOPORTAIL:GPP:TMS"
-    },
-    "OCSGE_2016$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "OCSGE_2016",
-      "title": "OCSGE_2016",
-      "description": "OCS GE 2016",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -31492.050174486427,
-          "right": 133994.11334515916,
-          "top": 5477859.625901451,
-          "bottom": 5359382.235092076
-        },
-        "minScaleDenominator": 8735660.375448715,
-        "maxScaleDenominator": 1066.364791924893
-      },
-      "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
-      "producer": [
-        "IGN"
-      ],
-      "thematic": [
-        "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-      ],
-      "base": false,
-      "key": "OCSGE_2016$GEOPORTAIL:GPP:TMS"
-    },
-    "OCSGE_2019$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "OCSGE_2019",
-      "title": "OCSGE_2019",
-      "description": "OCS GE 2019",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -31492.050174486427,
-          "right": 133994.11334515916,
-          "top": 5477859.625901451,
-          "bottom": 5359382.235092076
-        },
-        "minScaleDenominator": 8735660.375448715,
-        "maxScaleDenominator": 1066.364791924893
-      },
-      "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
-      "producer": [
-        "IGN"
-      ],
-      "thematic": [
-        "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-      ],
-      "base": false,
-      "key": "OCSGE_2019$GEOPORTAIL:GPP:TMS"
-    },
     "PCI$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -134383,16 +134189,16 @@
       ],
       "styles": [
         {
-          "name": "noir_et_blanc",
-          "title": "noir_et_blanc",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
-        },
-        {
           "name": "pci",
           "title": "pci",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        },
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
         }
       ],
       "globalConstraint": {
@@ -135194,12 +135000,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/CartoSP_MVP_SP_v2"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CartoSP_MVP_SP_v2"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/CartoSP_MVP_SP_v2"
         }
       ],
       "styles": [
