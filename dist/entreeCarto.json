@@ -177,6 +177,7 @@
         "IGNF_CARTES_SCAN-REGIONAL$GEOPORTAIL:OGC:WMTS",
         "IGNF_COSIA_2017-2020$GEOPORTAIL:OGC:WMTS",
         "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMTS",
+        "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMTS",
         "IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMTS",
         "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
@@ -709,6 +710,7 @@
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
         "IGNF_COSIA_2017-2020$GEOPORTAIL:OGC:WMS",
         "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMS",
+        "IGNF_COSIA_2024_WMS$GEOPORTAIL:OGC:WMS",
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMS",
         "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93$GEOPORTAIL:OGC:WMS",
@@ -1495,6 +1497,7 @@
         "zone_secteur_psmv$GEOPORTAIL:OGC:WMS",
         "zonealertesecheresse972_gpkg_27-09-2024_wmsv$GEOPORTAIL:OGC:WMS",
         "zzz_test_nl_at_chaud$GEOPORTAIL:OGC:WMS",
+        "zzz_test_nl_at_pers_agees$GEOPORTAIL:OGC:WMS",
         "OCS-GERS_BDD_LAMB93_2016:oscge_gers_32_2016$GEOPORTAIL:OGC:WFS",
         "OCS-GERS_BDD_LAMB93_2019:oscge_gers_32_2019$GEOPORTAIL:OGC:WFS",
         "IGNF_GEODESIE:site-rbf$GEOPORTAIL:OGC:WFS",
@@ -23666,6 +23669,141 @@
       ],
       "base": false,
       "key": "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMTS"
+    },
+    "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_COSIA_2024",
+      "title": "IGNF COSIA 2024",
+      "description": "COSIA 2024",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_18",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "84",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "135"
+          },
+          "9": {
+            "minTileRow": "169",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "270"
+          },
+          "10": {
+            "minTileRow": "338",
+            "maxTileRow": "383",
+            "minTileCol": "496",
+            "maxTileCol": "540"
+          },
+          "11": {
+            "minTileRow": "676",
+            "maxTileRow": "767",
+            "minTileCol": "992",
+            "maxTileCol": "1080"
+          },
+          "12": {
+            "minTileRow": "1352",
+            "maxTileRow": "1535",
+            "minTileCol": "1985",
+            "maxTileCol": "2161"
+          },
+          "13": {
+            "minTileRow": "2705",
+            "maxTileRow": "3071",
+            "minTileCol": "3970",
+            "maxTileCol": "4323"
+          },
+          "14": {
+            "minTileRow": "5411",
+            "maxTileRow": "6142",
+            "minTileCol": "7941",
+            "maxTileCol": "8647"
+          },
+          "15": {
+            "minTileRow": "10823",
+            "maxTileRow": "12285",
+            "minTileCol": "15883",
+            "maxTileCol": "17294"
+          },
+          "16": {
+            "minTileRow": "21647",
+            "maxTileRow": "24571",
+            "minTileCol": "31766",
+            "maxTileCol": "34588"
+          },
+          "17": {
+            "minTileRow": "43295",
+            "maxTileRow": "49142",
+            "minTileCol": "63533",
+            "maxTileCol": "69176"
+          },
+          "18": {
+            "minTileRow": "86590",
+            "maxTileRow": "98284",
+            "minTileCol": "127067",
+            "maxTileCol": "138353"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ],
+      "key": "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMTS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
     },
     "IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS": {
       "name": "IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
@@ -87430,15 +87568,11 @@
           "current": true
         }
       ],
-      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Autres"
-      ],
-      "metadata_urls": [
-        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "testSRD-PCRS86-Poitiers$GEOPORTAIL:OGC:WMTS"
@@ -87557,15 +87691,11 @@
           "current": true
         }
       ],
-      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "tuto_scan1000_SRD$GEOPORTAIL:OGC:WMTS"
@@ -87987,6 +88117,73 @@
       ],
       "base": false,
       "key": "HR.ORTHOIMAGERY.ORTHOPHOTOS-OYAPOCK.2023$GEOPORTAIL:OGC:WMS"
+    },
+    "IGNF_COSIA_2024_WMS$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_COSIA_2024_WMS",
+      "title": "COSIA 2024",
+      "description": "COSIA 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "key": "IGNF_COSIA_2024_WMS$GEOPORTAIL:OGC:WMS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
     },
     "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS": {
       "name": "IGNF_HYDROGRAPHY.HYDROGRAPHY",
@@ -89186,15 +89383,11 @@
           "current": false
         }
       ],
-      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "Ortho_50cm_D075_2021$GEOPORTAIL:OGC:WMS"
@@ -92694,8 +92887,8 @@
     },
     "BAN.DATA.GOUV$GEOPORTAIL:OGC:WMS": {
       "name": "BAN.DATA.GOUV",
-      "title": "BAN édition 2025-10-20",
-      "description": "BAN édition 2025-10-20",
+      "title": "BAN édition 2025-10-27",
+      "description": "BAN édition 2025-10-27",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -105176,12 +105369,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105611,12 +105804,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -120821,12 +121014,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/adminexpress_departement-jpb"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/adminexpress_departement-jpb"
         }
       ],
       "styles": [
@@ -123628,12 +123821,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
         }
       ],
       "styles": [
@@ -123734,18 +123927,13 @@
           "current": false
         }
       ],
-      "thumbnail": "",
+      "key": "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
       "producer": [
         "Autres"
       ],
       "thematic": [
-        "Infrastructures de transport"
+        "Autres"
       ],
-      "metadata_urls": [
-        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS",
-        "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
-      ],
-      "key": "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS": {
@@ -134024,7 +134212,7 @@
     },
     "zzz_test_nl_at_chaud$GEOPORTAIL:OGC:WMS": {
       "name": "zzz_test_nl_at_chaud",
-      "title": "ZZZ Test NL - AT",
+      "title": "ZZZ Test NL - AT - Chaud",
       "description": "Pour usage interne - Pas de production avec cette donnée",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
@@ -134047,12 +134235,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_chaud"
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
         },
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_chaud"
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
         }
       ],
       "styles": [
@@ -134162,6 +134350,146 @@
       ],
       "base": false
     },
+    "zzz_test_nl_at_pers_agees$GEOPORTAIL:OGC:WMS": {
+      "name": "zzz_test_nl_at_pers_agees",
+      "title": "ZZZ Test NL - AT - Pers Agées",
+      "description": "Pour usage interne - Pas de production avec cette donnée",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.11625,
+          "right": 9.7475,
+          "top": 51.2346875,
+          "bottom": 41.15
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-zzz_test_nl_at_pers_agees",
+          "title": "zzz_test_nl_at_pers_agees style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=zzz_test_nl_at_pers_agees"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ],
+      "key": "zzz_test_nl_at_pers_agees$GEOPORTAIL:OGC:WMS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
+    },
     "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -134235,22 +134563,22 @@
       ],
       "styles": [
         {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
           "name": "classique_simplifiee",
           "title": "classique_simplifiee",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "hydrographie",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
           "name": "bati",
@@ -134259,10 +134587,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "bati_etages",
-          "title": "bati_etages",
+          "name": "delestage",
+          "title": "delestage",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
           "name": "bati_date",
@@ -134271,16 +134605,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
-          "name": "delestage",
-          "title": "delestage",
+          "name": "routier",
+          "title": "routier",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         }
       ],
       "globalConstraint": {
@@ -134336,16 +134664,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_monochrome_marron",
           "title": "isohypse_monochrome_marron",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         }
       ],
       "globalConstraint": {
@@ -134401,16 +134729,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
-        },
-        {
           "name": "ocsge_occupation",
           "title": "ocsge_occupation",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+        },
+        {
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         }
       ],
       "globalConstraint": {
@@ -134425,17 +134753,11 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
       ],
       "base": false,
       "key": "OCSGE_2016$GEOPORTAIL:GPP:TMS"
@@ -134491,17 +134813,11 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
-      ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
       ],
       "base": false,
       "key": "OCSGE_2019$GEOPORTAIL:GPP:TMS"
@@ -134527,16 +134843,16 @@
       ],
       "styles": [
         {
-          "name": "noir_et_blanc",
-          "title": "noir_et_blanc",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
-        },
-        {
           "name": "pci",
           "title": "pci",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        },
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
         }
       ],
       "globalConstraint": {
