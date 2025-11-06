@@ -30,7 +30,7 @@ def merge_layer_infos(layer, merged_item):
         "metadata_urls": []
     }
 
-    layerThumbnail = next((u for u in (get_valid_thumbnail_from_mtd(url, 60, 60) for url in merged_item["metadata_urls"]) if u), None)
+    layerThumbnail = next((u for u in (get_valid_thumbnail_from_mtd(url, 360, 360) for url in merged_item["metadata_urls"]) if u), None)
     if layerThumbnail:
         props["thumbnail"] = layerThumbnail
     if 'theme' in merged_item:
