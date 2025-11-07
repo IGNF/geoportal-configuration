@@ -39,15 +39,15 @@
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
-        "IGNF_LIDAR-HD_TA:nuage-bloc$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnh-bloc$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mns-bloc$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnt-bloc$GEOPORTAIL:OGC:WFS",
+        "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS",
         "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnh-dalle$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mns-dalle$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnt-dalle$GEOPORTAIL:OGC:WFS",
-        "IGNF_LIDAR-HD_TA:nuage-dalle$GEOPORTAIL:OGC:WFS",
+        "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS"
       ]
@@ -3505,34 +3505,6 @@
         }
       ]
     },
-    "IGNF_LIDAR-HD_TA:nuage-bloc$GEOPORTAIL:OGC:WFS": {
-      "name": "IGNF_LIDAR-HD_TA:nuage-bloc",
-      "title": "Bloc de nuages de points LiDAR HD.",
-      "description": "Liste des blocs des nuages de points LiDAR HD.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -4.1675,
-          "right": 9.7475,
-          "top": 51.2346875,
-          "bottom": 41.31265625
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "IGNF_LIDAR-HD_TA:mnh-bloc$GEOPORTAIL:OGC:WFS": {
       "name": "IGNF_LIDAR-HD_TA:mnh-bloc",
       "title": "Blocs MNH issus de LiDAR HD",
@@ -3611,6 +3583,34 @@
         }
       },
       "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc",
+      "title": "Blocs Nuages de points",
+      "description": "Blocs Nuages de points LIDARHD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
       "queryable": false,
       "metadata": [],
       "styles": [],
@@ -3729,18 +3729,18 @@
       "legends": [],
       "formats": []
     },
-    "IGNF_LIDAR-HD_TA:nuage-dalle$GEOPORTAIL:OGC:WFS": {
-      "name": "IGNF_LIDAR-HD_TA:nuage-dalle",
-      "title": "Dalles de nuages de points LiDAR HD.",
-      "description": "Liste des dalles des nuages de points LiDAR HD.",
+    "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle",
+      "title": "Dalles Nuages de points",
+      "description": "Dalles Nuages de points LIDARHD",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -4.1675,
-          "right": 9.7475,
-          "top": 51.2346875,
-          "bottom": 41.31265625
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
         }
       },
       "serviceParams": {
@@ -3750,7 +3750,7 @@
           "altimetrie": "https://data.geopf.fr/wfs/wfs"
         }
       },
-      "defaultProjection": "EPSG:2154",
+      "defaultProjection": "EPSG:4326",
       "queryable": false,
       "metadata": [],
       "styles": [],

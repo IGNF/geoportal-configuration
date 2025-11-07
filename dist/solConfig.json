@@ -6,11 +6,13 @@
         "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMTS",
         "IGNF_COSIA_2017-2020$GEOPORTAIL:OGC:WMTS",
         "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMTS",
+        "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMTS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS",
         "BDCARTO_ETAT-MAJOR.NIVEAU3$GEOPORTAIL:OGC:WMS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMS",
         "IGNF_COSIA_2017-2020$GEOPORTAIL:OGC:WMS",
         "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMS",
+        "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4:a_1_limite_administrative$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4:a_2_surface_administrative$GEOPORTAIL:OGC:WFS",
@@ -523,6 +525,133 @@
         }
       ]
     },
+    "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_COSIA_2024",
+      "title": "IGNF COSIA 2024",
+      "description": "COSIA 2024",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 80.0,
+          "bottom": -80.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_18",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "7",
+            "maxTileRow": "56",
+            "minTileCol": "0",
+            "maxTileCol": "63"
+          },
+          "7": {
+            "minTileRow": "14",
+            "maxTileRow": "113",
+            "minTileCol": "0",
+            "maxTileCol": "127"
+          },
+          "8": {
+            "minTileRow": "28",
+            "maxTileRow": "227",
+            "minTileCol": "0",
+            "maxTileCol": "255"
+          },
+          "9": {
+            "minTileRow": "57",
+            "maxTileRow": "454",
+            "minTileCol": "0",
+            "maxTileCol": "511"
+          },
+          "10": {
+            "minTileRow": "114",
+            "maxTileRow": "909",
+            "minTileCol": "0",
+            "maxTileCol": "1023"
+          },
+          "11": {
+            "minTileRow": "229",
+            "maxTileRow": "1818",
+            "minTileCol": "0",
+            "maxTileCol": "2047"
+          },
+          "12": {
+            "minTileRow": "459",
+            "maxTileRow": "3636",
+            "minTileCol": "0",
+            "maxTileCol": "4095"
+          },
+          "13": {
+            "minTileRow": "919",
+            "maxTileRow": "7272",
+            "minTileCol": "0",
+            "maxTileCol": "8191"
+          },
+          "14": {
+            "minTileRow": "1839",
+            "maxTileRow": "14544",
+            "minTileCol": "0",
+            "maxTileCol": "16383"
+          },
+          "15": {
+            "minTileRow": "3678",
+            "maxTileRow": "29089",
+            "minTileCol": "0",
+            "maxTileCol": "32767"
+          },
+          "16": {
+            "minTileRow": "7357",
+            "maxTileRow": "58178",
+            "minTileCol": "0",
+            "maxTileCol": "65535"
+          },
+          "17": {
+            "minTileRow": "14714",
+            "maxTileRow": "116357",
+            "minTileCol": "0",
+            "maxTileCol": "131071"
+          },
+          "18": {
+            "minTileRow": "29428",
+            "maxTileRow": "232715",
+            "minTileCol": "0",
+            "maxTileCol": "262143"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS": {
       "name": "INRA.CARTE.SOLS",
       "title": "carte des sols France entière",
@@ -819,6 +948,65 @@
       "name": "IGNF_COSIA_2021-2023",
       "title": "COSIA 2021-2023",
       "description": "COSIA 2021-2023",
+      "globalConstraint": {
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -180.0,
+          "right": 180.0,
+          "top": 80.0,
+          "bottom": -80.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_COSIA_2024",
+      "title": "COSIA 2024",
+      "description": "COSIA 2024",
       "globalConstraint": {
         "minScaleDenominator": 2132.729583849782,
         "maxScaleDenominator": 8735660.375448715,
