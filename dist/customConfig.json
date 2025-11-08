@@ -88470,11 +88470,15 @@
           "current": true
         }
       ],
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "tuto_scan1000_SRD$GEOPORTAIL:OGC:WMTS"
@@ -90095,11 +90099,15 @@
           "current": false
         }
       ],
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
       ],
       "base": false,
       "key": "Ortho_50cm_D075_2021$GEOPORTAIL:OGC:WMS"
@@ -105936,12 +105944,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -106081,12 +106089,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -124533,12 +124541,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
         }
       ],
       "styles": [
@@ -124639,13 +124647,18 @@
           "current": false
         }
       ],
-      "key": "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
-        "Autres"
+        "Infrastructures de transport"
       ],
+      "metadata_urls": [
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS",
+        "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
+      ],
+      "key": "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS": {
@@ -127845,12 +127858,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/mdn_manche_20251010"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=mdn_manche_20251010"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/mdn_manche_20251010"
         }
       ],
       "styles": [
@@ -135144,10 +135157,34 @@
       ],
       "styles": [
         {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
           "name": "routier",
           "title": "routier",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
           "name": "bati",
@@ -135160,30 +135197,6 @@
           "title": "delestage",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "hydrographie",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
           "name": "classique_simplifiee",
@@ -135245,16 +135258,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_monochrome_marron",
           "title": "isohypse_monochrome_marron",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         }
       ],
       "globalConstraint": {
@@ -135334,11 +135347,17 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
       ],
       "base": false,
       "key": "OCSGE_2016$GEOPORTAIL:GPP:TMS"
@@ -135394,11 +135413,17 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
+      "thumbnail": "",
       "producer": [
         "IGN"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
       ],
       "base": false,
       "key": "OCSGE_2019$GEOPORTAIL:GPP:TMS"
@@ -135483,10 +135508,22 @@
       ],
       "styles": [
         {
-          "name": "attenue",
-          "title": "attenue",
+          "name": "standard",
+          "title": "standard",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "classique",
@@ -135495,10 +135532,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "toponymes",
-          "title": "toponymes",
+          "name": "epure",
+          "title": "epure",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
           "name": "accentue",
@@ -135513,22 +135550,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         },
         {
-          "name": "standard",
-          "title": "standard",
+          "name": "attenue",
+          "title": "attenue",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
-        },
-        {
-          "name": "epure",
-          "title": "epure",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
-        },
-        {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
           "name": "gris",
