@@ -15,7 +15,7 @@ class TestThumbnail(unittest.TestCase):
         base_path = os.path.dirname(__file__)
         cls.url = "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb" 
         # Appeler la fonction à tester
-        cls.valid_thumbnail = get_valid_thumbnail_from_mtd(cls.url, 60, 60)
+        cls.valid_thumbnail = get_valid_thumbnail_from_mtd(cls.url, 360, 360)
 
     def test_add_thumbnail(self):
         self.assertEqual(
