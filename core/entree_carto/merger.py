@@ -1,4 +1,4 @@
-from core.entree_carto.thumbnail import get_valid_thumbnail_from_mtd
+from core.entree_carto.thumbnail import get_image_dimensions, get_valid_thumbnail_from_mtd
 import json 
 
 def merge_service_de_recherche_infos(mtd_urls_layers, config):
@@ -30,9 +30,17 @@ def merge_layer_infos(layer, merged_item):
         "metadata_urls": []
     }
 
+    # INFO :
+    # Recherche de la vignette dans les métadonnées
+    # Si une vignette est disponible et valide dans le fichier edito.json, 
+    # elle a priorité sur celle des métadonnées
     layerThumbnail = next((u for u in (get_valid_thumbnail_from_mtd(url, 360, 360) for url in merged_item["metadata_urls"]) if u), None)
     if layerThumbnail:
         props["thumbnail"] = layerThumbnail
+    if 'thumbnail' in merged_item:
+        image = get_image_dimensions(merged_item["thumbnail"])
+        if image and image['width'] <= 360 and image['height'] <= 360:
+            props["thumbnail"] = merged_item["thumbnail"]
     if 'theme' in merged_item:
         props["thematic"] = list(
             set(list(map(str.strip, merged_item["theme"].split(','))) + 
