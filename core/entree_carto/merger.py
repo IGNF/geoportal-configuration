@@ -64,6 +64,7 @@ def merge_layer_edito_infos(layer, merged_item):
     props = {
         "producer": [],
         "thematic": [],
+        "thumbnail": "",
         "base": False
     }
     def ensure_list(value):
@@ -83,6 +84,8 @@ def merge_layer_edito_infos(layer, merged_item):
         props["producer"] = list({
             v.strip() for v in ensure_list(merged_item["producer"]) if v and v.strip()
         })
+    if 'thumbnail' in merged_item:
+        props["thumbnail"] = merged_item["thumbnail"]
     if 'base' in merged_item:
         props["base"] = merged_item["base"]
     layer.update({k: v for k, v in props.items()})
