@@ -16,7 +16,6 @@
         "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
-        "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ]
     }
@@ -1479,46 +1478,6 @@
       "legends": [],
       "formats": []
     },
-    "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "essentiels": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "ADMIN_EXPRESS",
-      "title": "ADMIN_EXPRESS",
-      "description": "Limites administratives des collectivités territoriales. Régions, départements, cantons, communes, arrondissements (pour Paris, Lyon et Marseille) et établissements publics de coopération intercommunale (EPCI).",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "adminexpress",
-          "title": "adminexpress",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ADMIN_EXPRESS/adminexpress.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -7031136.485883979,
-          "right": 6216852.822974959,
-          "top": 6638861.656508054,
-          "bottom": -2439640.6275760634
-        },
-        "minScaleDenominator": 8735660.375448715,
-        "maxScaleDenominator": 1066.364791924893
-      },
-      "defaultProjection": "EPSG:3857"
-    },
     "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -1540,40 +1499,16 @@
       ],
       "styles": [
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
+          "name": "attenue",
+          "title": "attenue",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
           "name": "classique",
           "title": "classique",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
-        },
-        {
-          "name": "standard",
-          "title": "standard",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
-        },
-        {
-          "name": "attenue",
-          "title": "attenue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "epure",
-          "title": "epure",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
           "name": "toponymes",
@@ -1592,6 +1527,30 @@
           "title": "transparent",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
+        },
+        {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+        },
+        {
+          "name": "epure",
+          "title": "epure",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         }
       ],
       "globalConstraint": {
