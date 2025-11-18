@@ -16,6 +16,7 @@
         "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
+        "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ]
     }
@@ -1478,6 +1479,46 @@
       "legends": [],
       "formats": []
     },
+    "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/tms/1.0.0/"
+        }
+      },
+      "name": "ADMIN_EXPRESS",
+      "title": "ADMIN_EXPRESS",
+      "description": "Limites administratives des collectivités territoriales. Régions, départements, cantons, communes, arrondissements (pour Paris, Lyon et Marseille) et établissements publics de coopération intercommunale (EPCI).",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "adminexpress",
+          "title": "adminexpress",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ADMIN_EXPRESS/adminexpress.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": "EPSG:3857",
+        "bbox": {
+          "left": -7031136.485883979,
+          "right": 6216852.822974959,
+          "top": 6638861.656508054,
+          "bottom": -2439640.6275760634
+        },
+        "minScaleDenominator": 8735660.375448715,
+        "maxScaleDenominator": 1066.364791924893
+      },
+      "defaultProjection": "EPSG:3857"
+    },
     "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -1499,22 +1540,16 @@
       ],
       "styles": [
         {
-          "name": "attenue",
-          "title": "attenue",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
-        },
-        {
           "name": "toponymes",
           "title": "toponymes",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
           "name": "accentue",
@@ -1523,16 +1558,28 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
+        },
+        {
+          "name": "attenue",
+          "title": "attenue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
           "name": "transparent",
           "title": "transparent",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
-        },
-        {
-          "name": "standard",
-          "title": "standard",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
           "name": "epure",
@@ -1545,12 +1592,6 @@
           "title": "sans_toponymes",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
         }
       ],
       "globalConstraint": {
@@ -2823,6 +2864,104 @@
           "matrixHeight": 840818,
           "matrixWidth": 100800,
           "scaleDenominator": 178.57142857142858,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        }
+      }
+    },
+    "2154_5cm_14_20": {
+      "projection": "EPSG:2154",
+      "nativeResolutions": [
+        "12.8",
+        "6.4",
+        "3.2",
+        "1.6",
+        "0.8",
+        "0.4",
+        "0.2"
+      ],
+      "tileMatrices": {
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 3285,
+          "matrixWidth": 394,
+          "scaleDenominator": 45714.28571428572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 6569,
+          "matrixWidth": 788,
+          "scaleDenominator": 22857.14285714286,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 13138,
+          "matrixWidth": 1575,
+          "scaleDenominator": 11428.57142857143,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 26276,
+          "matrixWidth": 3150,
+          "scaleDenominator": 5714.285714285715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 52552,
+          "matrixWidth": 6300,
+          "scaleDenominator": 2857.1428571428573,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 105102,
+          "matrixWidth": 12600,
+          "scaleDenominator": 1428.5714285714287,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": 0.0,
+            "y": 12000000.0
+          }
+        },
+        "20": {
+          "matrixId": "20",
+          "matrixHeight": 210205,
+          "matrixWidth": 25200,
+          "scaleDenominator": 714.2857142857143,
           "tileHeight": 256,
           "tileWidth": 256,
           "topLeftCorner": {
