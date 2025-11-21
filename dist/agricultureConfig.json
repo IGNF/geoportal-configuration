@@ -10,6 +10,10 @@
         "HYDROGRAPHY.BCAE.2024$GEOPORTAIL:OGC:WMTS",
         "HYDROGRAPHY.BCAE.2025$GEOPORTAIL:OGC:WMTS",
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMTS",
+        "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024$GEOPORTAIL:OGC:WMTS",
+        "IGNF_RPG_PARCELLES-ELIGIBLES-IAE$GEOPORTAIL:OGC:WMTS",
+        "IGNF_RPG_PRAIRIES-PERMANENTES_2024$GEOPORTAIL:OGC:WMTS",
+        "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMTS",
         "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMTS",
         "LANDUSE.AGRICULTURE2007$GEOPORTAIL:OGC:WMTS",
         "LANDUSE.AGRICULTURE2008$GEOPORTAIL:OGC:WMTS",
@@ -34,6 +38,10 @@
         "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.2025$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
+        "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024$GEOPORTAIL:OGC:WMS",
+        "IGNF_RPG_PARCELLES-ELIGIBLES-IAE$GEOPORTAIL:OGC:WMS",
+        "IGNF_RPG_PRAIRIES-PERMANENTES_2024$GEOPORTAIL:OGC:WMS",
+        "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE2007$GEOPORTAIL:OGC:WMS",
         "LANDUSE.AGRICULTURE2008$GEOPORTAIL:OGC:WMS",
@@ -57,6 +65,9 @@
         "TOURBIERES_ZONES-HUMIDES.BCAE$GEOPORTAIL:OGC:WMS",
         "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.LATEST:bcae_cours_eau$GEOPORTAIL:OGC:WFS",
+        "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024:parcelles_agricole_categorisees_2024$GEOPORTAIL:OGC:WFS",
+        "IGNF_RPG_PARCELLES-ELIGIBLES-IAE:parcelles_eligibles_iae_2024$GEOPORTAIL:OGC:WFS",
+        "IGNF_RPG_PRAIRIES-PERMANENTES_2024:prairies_permanentes_2024$GEOPORTAIL:OGC:WFS",
         "TOURBIERES_ZONES-HUMIDES.BCAE:bcae$GEOPORTAIL:OGC:WFS",
         "PRAIRIES.SENSIBLES.BCAE:prairies_sensibles$GEOPORTAIL:OGC:WFS",
         "RPG.2010:rpg_2010$GEOPORTAIL:OGC:WFS",
@@ -79,7 +90,8 @@
         "RPG.LATEST:codes_cultures$GEOPORTAIL:OGC:WFS",
         "RPG.LATEST:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
         "RPG.2011:rpg_2011$GEOPORTAIL:OGC:WFS",
-        "RPG.2012:rpg_2012$GEOPORTAIL:OGC:WFS"
+        "RPG.2012:rpg_2012$GEOPORTAIL:OGC:WFS",
+        "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024:surfaces_2024_zdh_20250621$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -1077,6 +1089,466 @@
           "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024",
+      "title": "Parcelles catégorisées en terre arables, cultures permanentes, prairies permanentes et surfaces boisées 2024",
+      "description": "Registre parcellaire graphique : couche représentant les types de couverture des sols des parcelles agricoles déclarées au RPG par les exploitants édition 2024",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "IGNF_RPG_PARCELLES-ELIGIBLES-IAE$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_RPG_PARCELLES-ELIGIBLES-IAE",
+      "title": "Parcelles éligibles aux IAE",
+      "description": "Cette couche recense les parcelles éligibles aux Infrastructures Agroecologiques (IEA) que ce soit au titre de l’écorégime ou pour la BCAE8",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "IGNF_RPG_PRAIRIES-PERMANENTES_2024$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_RPG_PRAIRIES-PERMANENTES_2024",
+      "title": "Prairies Permanentes 2024",
+      "description": "Les PRAIRIES PERMANENTES correspondent à toute surface sur laquelle la production d'herbe ou d'autres plantes fourragères herbacées, prédomine depuis 5 ans révolus ou plus (6ème déclaration PAC ou plus) édition 2024",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024",
+      "title": "Zones de Densité Homogène (ZDH)",
+      "description": "Registre parcellaire graphique : Zones de densité homogènes sur laquelle la végétation et les autres éléments naturels non agricoles (affleurements rocheux, zones de sol nu…) apparaissent homogènes lors de la photo-interprétation d’une parcelle ou d’un ensemble de parcelles de prairie permanente déclarées au RPG par les exploitants édition 2024",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "35",
+            "minTileCol": "20",
+            "maxTileCol": "41"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "71",
+            "minTileCol": "41",
+            "maxTileCol": "83"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "143",
+            "minTileCol": "82",
+            "maxTileCol": "167"
+          },
+          "9": {
+            "minTileRow": "170",
+            "maxTileRow": "287",
+            "minTileCol": "165",
+            "maxTileCol": "335"
+          },
+          "10": {
+            "minTileRow": "341",
+            "maxTileRow": "574",
+            "minTileCol": "331",
+            "maxTileCol": "671"
+          },
+          "11": {
+            "minTileRow": "682",
+            "maxTileRow": "1149",
+            "minTileCol": "663",
+            "maxTileCol": "1342"
+          },
+          "12": {
+            "minTileRow": "1365",
+            "maxTileRow": "2298",
+            "minTileCol": "1326",
+            "maxTileCol": "2684"
+          },
+          "13": {
+            "minTileRow": "2731",
+            "maxTileRow": "4596",
+            "minTileCol": "2653",
+            "maxTileCol": "5368"
+          },
+          "14": {
+            "minTileRow": "5462",
+            "maxTileRow": "9193",
+            "minTileCol": "5307",
+            "maxTileCol": "10737"
+          },
+          "15": {
+            "minTileRow": "10924",
+            "maxTileRow": "18386",
+            "minTileCol": "10615",
+            "maxTileCol": "21474"
+          },
+          "16": {
+            "minTileRow": "21849",
+            "maxTileRow": "36772",
+            "minTileCol": "21231",
+            "maxTileCol": "42948"
+          }
+        }
+      },
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr",
+          "minScaleDenominator": 1
         }
       ],
       "formats": [
@@ -3786,6 +4258,242 @@
         }
       ]
     },
+    "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024",
+      "title": "Parcelles catégorisées en terre arables, cultures permanentes, prairies permanentes et surfaces boisées 2024",
+      "description": "Registre parcellaire graphique : couche représentant les types de couverture des sols des parcelles agricoles déclarées au RPG par les exploitants édition 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_RPG_PARCELLES-ELIGIBLES-IAE$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_RPG_PARCELLES-ELIGIBLES-IAE",
+      "title": "Parcelles éligibles aux IAE",
+      "description": "Cette couche recense les parcelles éligibles aux Infrastructures Agroecologiques (IEA) que ce soit au titre de l’écorégime ou pour la BCAE8",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_RPG_PRAIRIES-PERMANENTES_2024$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_RPG_PRAIRIES-PERMANENTES_2024",
+      "title": "Prairies Permanentes 2024",
+      "description": "Les PRAIRIES PERMANENTES correspondent à toute surface sur laquelle la production d'herbe ou d'autres plantes fourragères herbacées, prédomine depuis 5 ans révolus ou plus (6ème déclaration PAC ou plus) édition 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024",
+      "title": "Zones de Densité Homogène (ZDH)",
+      "description": "Registre parcellaire graphique : Zones de densité homogènes sur laquelle la végétation et les autres éléments naturels non agricoles (affleurements rocheux, zones de sol nu…) apparaissent homogènes lors de la photo-interprétation d’une parcelle ou d’un ensemble de parcelles de prairie permanente déclarées au RPG par les exploitants édition 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -63.3725,
+          "right": 55.9259,
+          "top": 51.3121,
+          "bottom": -21.4756
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
     "LANDUSE.AGRICULTURE.LATEST$GEOPORTAIL:OGC:WMS": {
       "name": "LANDUSE.AGRICULTURE.LATEST",
       "title": "Registre parcellaire graphique (RPG)",
@@ -5117,6 +5825,90 @@
       "legends": [],
       "formats": []
     },
+    "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024:parcelles_agricole_categorisees_2024$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024:parcelles_agricole_categorisees_2024",
+      "title": "Parcelles catégorisées en terre arables, cultures permanentes, prairies permanentes et surfaces boisées 2024",
+      "description": "Registre parcellaire graphique : couche représentant les types de couverture des sols des parcelles agricoles déclarées au RPG par les exploitants édition 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_RPG_PARCELLES-ELIGIBLES-IAE:parcelles_eligibles_iae_2024$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_RPG_PARCELLES-ELIGIBLES-IAE:parcelles_eligibles_iae_2024",
+      "title": "Parcelles éligibles aux IAE",
+      "description": "Cette couche recense les parcelles éligibles aux Infrastructures Agroecologiques (IEA) que ce soit au titre de l’écorégime ou pour la BCAE8",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_RPG_PRAIRIES-PERMANENTES_2024:prairies_permanentes_2024$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_RPG_PRAIRIES-PERMANENTES_2024:prairies_permanentes_2024",
+      "title": "Prairies Permanentes 2024",
+      "description": "Les PRAIRIES PERMANENTES correspondent à toute surface sur laquelle la production d'herbe ou d'autres plantes fourragères herbacées, prédomine depuis 5 ans révolus ou plus (6ème déclaration PAC ou plus) édition 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "TOURBIERES_ZONES-HUMIDES.BCAE:bcae$GEOPORTAIL:OGC:WFS": {
       "name": "TOURBIERES_ZONES-HUMIDES.BCAE:bcae",
       "title": "Protection des zones humides et des tourbières BCAE 2",
@@ -5744,6 +6536,34 @@
           "left": -63.09061791,
           "right": 55.83266635,
           "top": 51.07514669,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024:surfaces_2024_zdh_20250621$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024:surfaces_2024_zdh_20250621",
+      "title": "Zones de Densité Homogène (ZDH)",
+      "description": "Registre parcellaire graphique : Zones de densité homogènes sur laquelle la végétation et les autres éléments naturels non agricoles (affleurements rocheux, zones de sol nu…) apparaissent homogènes lors de la photo-interprétation d’une parcelle ou d’un ensemble de parcelles de prairie permanente déclarées au RPG par les exploitants édition 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
           "bottom": -21.38541709
         }
       },
