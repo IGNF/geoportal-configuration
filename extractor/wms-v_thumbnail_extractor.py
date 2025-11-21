@@ -206,6 +206,79 @@ class WMSThumbnailExtractor:
         print(f"Résultats: {success_count} vignettes générées, {fail_count} échecs")
         print(f"{'='*70}\n")
 
+    def debug_extract_all_thumbnails(self, verbose=True):
+        """
+        Extrait les vignettes de toutes les couches sans zoom progressif
+        """
+        layers = self.get_wms_layers()
+        
+        print(f"\n{'='*70}")
+        print(f"URL - {self.service_url}")
+        print(f"WMS - {len(layers)} couches trouvées")
+        print(f"Stratégie: None")
+        print(f"{'='*70}")
+        
+        success_count = 0
+        
+        for layer in layers:  # layers[:20] Traiter les 20 premières couches
+            self.debug_single_request(
+                layer['name'],
+                self.france_zoom_levels[0]['bbox']
+            )
+            
+            success_count += 1
+        
+        print(f"\n{'='*70}")
+        print(f"Résultats: {success_count} vignettes générées")
+        print(f"{'='*70}\n")
+        
+    def debug_single_request(self, layer_name, bbox, width=300, height=300):
+        """Effectue une requête GetMap brute et affiche la réponse ou l’erreur WMS"""
+        
+        bbox_str = f"{bbox[1]},{bbox[0]},{bbox[3]},{bbox[2]}"  # EPSG:4326
+        
+        params = {
+            'service': 'WMS',
+            'version': '1.3.0',
+            'request': 'GetMap',
+            'layers': layer_name,
+            'bbox': bbox_str,
+            'width': width,
+            'height': height,
+            'crs': 'EPSG:4326',
+            'styles': '',
+            'format': 'image/png',
+            'transparent': 'TRUE'
+        }
+
+        print(f"→ Requête sur {layer_name}")
+        print(params)
+
+        if os.path.exists(f"thumbnails-wms-v/{layer_name}.png"):
+            print("  ✓ Vignette déjà extraite, passage.")
+            return
+        
+        response = self.session.get(self.service_url, params=params, timeout=15)
+
+        print(f"HTTP code: {response.status_code}")
+        print(f"Content-Type: {response.headers.get('Content-Type')}")
+
+        # Si la réponse est XML, c’est probablement une exception WMS
+        if response.headers.get('Content-Type', '').startswith("text/xml"):
+            print("\n===== Erreur WMS détectée =====")
+            print(response.text)
+            return
+
+        # Sinon on tente d’afficher quelques infos
+        print(f"Image reçue ({len(response.content)} octets)")
+        
+        try:
+            img = Image.open(BytesIO(response.content))
+            print(f"→ Image OK : {img.size}  {img.mode}")
+            img.save(f"thumbnails-wms-v/{layer_name}.png")
+        except Exception as e:
+            print(f"Impossible de lire l’image : {e}")
+
 # Exemple d'utilisation
 if __name__ == "__main__":
     import os
@@ -218,4 +291,5 @@ if __name__ == "__main__":
     extractor = WMSThumbnailExtractor(wms_url)
     
     # Extraire avec zoom progressif sur la France
-    extractor.extract_all_thumbnails(verbose=True)
+    # extractor.extract_all_thumbnails(verbose=True)
+    extractor.debug_extract_all_thumbnails(verbose=True)
