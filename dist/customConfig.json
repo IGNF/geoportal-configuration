@@ -646,13 +646,10 @@
         "UTILITYANDGOVERNMENTALSERVICES.ALL$GEOPORTAIL:OGC:WMTS",
         "WMTS_BEZIERS-COLOMBIERS_2022110638503087$GEOPORTAIL:OGC:WMTS",
         "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS",
-        "ZZZ_Demo_raster_4_canaux_nodata_transparent$GEOPORTAIL:OGC:WMTS",
         "ZZZ_Le_Havre_3_canaux_sortie_3c_deflate_tiled$GEOPORTAIL:OGC:WMTS",
         "ZZZ_Le_Havre_3_canaux_sortie_3c_deflate_tiled_jpeg$GEOPORTAIL:OGC:WMTS",
-        "ZZZ_Le_Havre_3_canaux_sortie_3c_deflate_tiled_mask$GEOPORTAIL:OGC:WMTS",
         "ZZZ_Le_Havre_3_canaux_sortie_3c_jpeg_tiled_jpeg$GEOPORTAIL:OGC:WMTS",
         "ZZZ_Le_Havre_3_canaux_srce$GEOPORTAIL:OGC:WMTS",
-        "ZZZ_Le_Havre_4_canaux_sortie_4c$GEOPORTAIL:OGC:WMTS",
         "ZZZ_Le_Havre_4_canaux_sortie_4c_deflate_tiled$GEOPORTAIL:OGC:WMTS",
         "ZZZ_Score_pol_lumi_chiro_Atelier3_SDK$GEOPORTAIL:OGC:WMTS",
         "adminexpress-kdep-jpb-test-raster_wmts$GEOPORTAIL:OGC:WMTS",
@@ -87524,183 +87521,6 @@
       ],
       "base": false
     },
-    "ZZZ_Demo_raster_4_canaux_nodata_transparent$GEOPORTAIL:OGC:WMTS": {
-      "name": "ZZZ_Demo_raster_4_canaux_nodata_transparent",
-      "title": "Demo de diffusion GPF d'un raster en 4 canaux",
-      "description": "Pour gestion des pixels non data en transparence native gérée côté serveur",
-      "globalConstraint": {
-        "maxScaleDenominator": 559082264.0287179,
-        "minScaleDenominator": 1066.364791924893,
-        "bbox": {
-          "left": 0.0285308,
-          "right": 0.171565,
-          "top": 49.616,
-          "bottom": 49.4331
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_0_19",
-        "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "0",
-            "maxTileCol": "0"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "1",
-            "maxTileCol": "1"
-          },
-          "2": {
-            "minTileRow": "1",
-            "maxTileRow": "1",
-            "minTileCol": "2",
-            "maxTileCol": "2"
-          },
-          "3": {
-            "minTileRow": "2",
-            "maxTileRow": "2",
-            "minTileCol": "4",
-            "maxTileCol": "4"
-          },
-          "4": {
-            "minTileRow": "5",
-            "maxTileRow": "5",
-            "minTileCol": "8",
-            "maxTileCol": "8"
-          },
-          "5": {
-            "minTileRow": "10",
-            "maxTileRow": "10",
-            "minTileCol": "16",
-            "maxTileCol": "16"
-          },
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "21",
-            "minTileCol": "32",
-            "maxTileCol": "32"
-          },
-          "7": {
-            "minTileRow": "43",
-            "maxTileRow": "43",
-            "minTileCol": "64",
-            "maxTileCol": "64"
-          },
-          "8": {
-            "minTileRow": "87",
-            "maxTileRow": "87",
-            "minTileCol": "128",
-            "maxTileCol": "128"
-          },
-          "9": {
-            "minTileRow": "174",
-            "maxTileRow": "174",
-            "minTileCol": "256",
-            "maxTileCol": "256"
-          },
-          "10": {
-            "minTileRow": "348",
-            "maxTileRow": "349",
-            "minTileCol": "512",
-            "maxTileCol": "512"
-          },
-          "11": {
-            "minTileRow": "697",
-            "maxTileRow": "699",
-            "minTileCol": "1024",
-            "maxTileCol": "1024"
-          },
-          "12": {
-            "minTileRow": "1395",
-            "maxTileRow": "1399",
-            "minTileCol": "2048",
-            "maxTileCol": "2049"
-          },
-          "13": {
-            "minTileRow": "2791",
-            "maxTileRow": "2798",
-            "minTileCol": "4096",
-            "maxTileCol": "4099"
-          },
-          "14": {
-            "minTileRow": "5583",
-            "maxTileRow": "5596",
-            "minTileCol": "8193",
-            "maxTileCol": "8199"
-          },
-          "15": {
-            "minTileRow": "11167",
-            "maxTileRow": "11192",
-            "minTileCol": "16386",
-            "maxTileCol": "16399"
-          },
-          "16": {
-            "minTileRow": "22334",
-            "maxTileRow": "22385",
-            "minTileCol": "32773",
-            "maxTileCol": "32799"
-          },
-          "17": {
-            "minTileRow": "44669",
-            "maxTileRow": "44771",
-            "minTileCol": "65546",
-            "maxTileCol": "65598"
-          },
-          "18": {
-            "minTileRow": "89338",
-            "maxTileRow": "89543",
-            "minTileCol": "131092",
-            "maxTileCol": "131196"
-          },
-          "19": {
-            "minTileRow": "178676",
-            "maxTileRow": "179086",
-            "minTileCol": "262185",
-            "maxTileCol": "262393"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Données Brutes",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "http://ign.fr",
-          "minScaleDenominator": 1
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        }
-      ],
-      "key": "ZZZ_Demo_raster_4_canaux_nodata_transparent$GEOPORTAIL:OGC:WMTS",
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Autres"
-      ],
-      "base": false
-    },
     "ZZZ_Score_pol_lumi_chiro_Atelier3_SDK$GEOPORTAIL:OGC:WMTS": {
       "name": "ZZZ_Score_pol_lumi_chiro_Atelier3_SDK",
       "title": "Score impact Pollution Lumineuse Chiroptères - Atelier 3  - SDK",
@@ -106791,12 +106611,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -106936,12 +106756,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -125395,12 +125215,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_PSA"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_PSA"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_PSA"
         }
       ],
       "styles": [
@@ -128304,12 +128124,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=mdn_manche_20251010"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/mdn_manche_20251010"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=mdn_manche_20251010"
         }
       ],
       "styles": [
@@ -134841,34 +134661,10 @@
       ],
       "styles": [
         {
-          "name": "hydrographie",
-          "title": "hydrographie",
+          "name": "delestage",
+          "title": "delestage",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "bati_date",
-          "title": "bati_date",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
           "name": "bati",
@@ -134877,10 +134673,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "delestage",
-          "title": "delestage",
+          "name": "bati_etages",
+          "title": "bati_etages",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "routier",
+          "title": "routier",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
         },
         {
           "name": "classique_simplifiee",
@@ -134942,16 +134762,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
           "name": "isohypse_monochrome_orange",
           "title": "isohypse_monochrome_orange",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
+        },
+        {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
@@ -135001,16 +134821,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         },
         {
           "name": "ocsge_couverture",
@@ -135067,10 +134887,10 @@
       ],
       "styles": [
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
+          "name": "ocsge_usage",
+          "title": "ocsge_usage",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
         },
         {
           "name": "ocsge_couverture",
@@ -135079,10 +134899,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
-          "name": "ocsge_usage",
-          "title": "ocsge_usage",
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         }
       ],
       "globalConstraint": {
@@ -135133,16 +134953,16 @@
       ],
       "styles": [
         {
-          "name": "noir_et_blanc",
-          "title": "noir_et_blanc",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
-        },
-        {
           "name": "pci",
           "title": "pci",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        },
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
         }
       ],
       "globalConstraint": {
@@ -135192,22 +135012,10 @@
       ],
       "styles": [
         {
-          "name": "gris",
-          "title": "gris",
+          "name": "toponymes",
+          "title": "toponymes",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "epure",
-          "title": "epure",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
           "name": "standard",
@@ -135222,16 +135030,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
-          "name": "transparent",
-          "title": "transparent",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
-        },
-        {
-          "name": "toponymes",
-          "title": "toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
           "name": "attenue",
@@ -135240,10 +135042,28 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "gris",
+          "title": "gris",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "transparent",
+          "title": "transparent",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
+        },
+        {
+          "name": "epure",
+          "title": "epure",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         }
       ],
       "globalConstraint": {
