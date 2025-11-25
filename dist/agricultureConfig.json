@@ -89,6 +89,7 @@
         "RPG.2024:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
         "RPG.LATEST:codes_cultures$GEOPORTAIL:OGC:WFS",
         "RPG.LATEST:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
+        "RPG.LATEST:ilots_anonymes$GEOPORTAIL:OGC:WFS",
         "RPG.2011:rpg_2011$GEOPORTAIL:OGC:WFS",
         "RPG.2012:rpg_2012$GEOPORTAIL:OGC:WFS",
         "IGNF_RPG_ZONES-DENSITE-HOMOGENE_2024:surfaces_2024_zdh_20250621$GEOPORTAIL:OGC:WFS"
@@ -6472,6 +6473,34 @@
     "RPG.LATEST:parcelles_graphiques$GEOPORTAIL:OGC:WFS": {
       "name": "RPG.LATEST:parcelles_graphiques",
       "title": "Registre parcellaire graphique (RPG) : parcelles graphiques",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.07078975,
+          "right": 55.83259967,
+          "top": 51.07510062,
+          "bottom": -21.38541709
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.LATEST:ilots_anonymes$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.LATEST:ilots_anonymes",
+      "title": "Registre parcellaire graphique (RPG) {dpsg.edition} : Ilots anonymes",
       "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
