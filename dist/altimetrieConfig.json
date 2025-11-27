@@ -48,8 +48,7 @@
         "IGNF_LIDAR-HD_TA:mns-dalle$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnt-dalle$GEOPORTAIL:OGC:WFS",
         "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS",
-        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS",
-        "ISOHYPSE$GEOPORTAIL:GPP:TMS"
+        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS"
       ]
     }
   },
@@ -3784,52 +3783,6 @@
       "styles": [],
       "legends": [],
       "formats": []
-    },
-    "ISOHYPSE$GEOPORTAIL:GPP:TMS": {
-      "hidden": true,
-      "queryable": false,
-      "serviceParams": {
-        "id": "GPP:TMS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/tms/1.0.0/"
-        }
-      },
-      "name": "ISOHYPSE",
-      "title": "ISOHYPSE",
-      "description": "Courbes de niveau",
-      "formats": [
-        {
-          "current": true,
-          "name": "application/x-protobuf"
-        }
-      ],
-      "styles": [
-        {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        }
-      ],
-      "globalConstraint": {
-        "crs": "EPSG:3857",
-        "bbox": {
-          "left": -7044436.526761843,
-          "right": 6222585.598639628,
-          "top": 6669387.889728914,
-          "bottom": -2442207.6433298867
-        },
-        "minScaleDenominator": 34123.673341596535,
-        "maxScaleDenominator": 1066.364791924893
-      },
-      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {
