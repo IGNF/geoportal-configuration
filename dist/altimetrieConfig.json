@@ -6,7 +6,6 @@
         "ELEVATION.ELEVATIONGRIDCOVERAGE$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.HIGHRES.MNS$GEOPORTAIL:OGC:WMTS",
-        "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.SRTM3$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.ELEVATIONGRIDCOVERAGE.THRESHOLD$GEOPORTAIL:OGC:WMTS",
         "ELEVATION.LEVEL0$GEOPORTAIL:OGC:WMTS",
@@ -534,151 +533,6 @@
       "formats": [
         {
           "name": "image/x-bil;bits=32",
-          "current": true
-        }
-      ]
-    },
-    "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS": {
-      "name": "ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
-      "title": "Estompage",
-      "description": "Couche d'ombrage calculée à partir des données altimétriques de l'IGN permettant de mieux appréhender le relief. L'estompage proposé est réalisé à partir des données MNT BDAlti au pas de 25m avec deux soleils : un au nord-est de hauteur 45°, l'autre zénithal.",
-      "globalConstraint": {
-        "maxScaleDenominator": 559082264.0287179,
-        "minScaleDenominator": 17061.83667079829,
-        "bbox": {
-          "left": -63.187,
-          "right": 55.8884,
-          "top": 50.9218,
-          "bottom": -21.4069
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_0_15",
-        "tileMatrixSetLimits": {
-          "0": {
-            "minTileRow": "0",
-            "maxTileRow": "0",
-            "minTileCol": "0",
-            "maxTileCol": "0"
-          },
-          "1": {
-            "minTileRow": "0",
-            "maxTileRow": "1",
-            "minTileCol": "0",
-            "maxTileCol": "1"
-          },
-          "2": {
-            "minTileRow": "1",
-            "maxTileRow": "2",
-            "minTileCol": "1",
-            "maxTileCol": "2"
-          },
-          "3": {
-            "minTileRow": "2",
-            "maxTileRow": "4",
-            "minTileCol": "2",
-            "maxTileCol": "5"
-          },
-          "4": {
-            "minTileRow": "5",
-            "maxTileRow": "8",
-            "minTileCol": "5",
-            "maxTileCol": "10"
-          },
-          "5": {
-            "minTileRow": "10",
-            "maxTileRow": "17",
-            "minTileCol": "10",
-            "maxTileCol": "20"
-          },
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "35",
-            "minTileCol": "20",
-            "maxTileCol": "41"
-          },
-          "7": {
-            "minTileRow": "42",
-            "maxTileRow": "71",
-            "minTileCol": "41",
-            "maxTileCol": "83"
-          },
-          "8": {
-            "minTileRow": "85",
-            "maxTileRow": "143",
-            "minTileCol": "83",
-            "maxTileCol": "167"
-          },
-          "9": {
-            "minTileRow": "171",
-            "maxTileRow": "287",
-            "minTileCol": "166",
-            "maxTileCol": "335"
-          },
-          "10": {
-            "minTileRow": "343",
-            "maxTileRow": "574",
-            "minTileCol": "332",
-            "maxTileCol": "670"
-          },
-          "11": {
-            "minTileRow": "686",
-            "maxTileRow": "1148",
-            "minTileCol": "664",
-            "maxTileCol": "1341"
-          },
-          "12": {
-            "minTileRow": "1372",
-            "maxTileRow": "2297",
-            "minTileCol": "1329",
-            "maxTileCol": "2683"
-          },
-          "13": {
-            "minTileRow": "2745",
-            "maxTileRow": "4594",
-            "minTileCol": "2658",
-            "maxTileCol": "5367"
-          },
-          "14": {
-            "minTileRow": "5490",
-            "maxTileRow": "9189",
-            "minTileCol": "5316",
-            "maxTileCol": "10735"
-          },
-          "15": {
-            "minTileRow": "10981",
-            "maxTileRow": "18379",
-            "minTileCol": "10632",
-            "maxTileCol": "21471"
-          }
-        }
-      },
-      "styles": [
-        {
-          "name": "estompage_grayscale",
-          "title": "Estompage",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
-          "minScaleDenominator": 1
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
           "current": true
         }
       ]
@@ -3806,16 +3660,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_monochrome_marron",
           "title": "isohypse_monochrome_marron",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         }
       ],
       "globalConstraint": {

@@ -86,6 +86,7 @@
         "RPG.2023:ilots_de_reference$GEOPORTAIL:OGC:WFS",
         "RPG.2023:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
         "RPG.2024:codes_cultures$GEOPORTAIL:OGC:WFS",
+        "RPG.2024:ilots_anonymes$GEOPORTAIL:OGC:WFS",
         "RPG.2024:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
         "RPG.LATEST:codes_cultures$GEOPORTAIL:OGC:WFS",
         "RPG.LATEST:parcelles_graphiques$GEOPORTAIL:OGC:WFS",
@@ -6389,6 +6390,34 @@
     "RPG.2024:codes_cultures$GEOPORTAIL:OGC:WFS": {
       "name": "RPG.2024:codes_cultures",
       "title": "Registre parcellaire graphique (RPG) 2024 : Codes des cultures",
+      "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2024",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "agriculture": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "RPG.2024:ilots_anonymes$GEOPORTAIL:OGC:WFS": {
+      "name": "RPG.2024:ilots_anonymes",
+      "title": "Registre parcellaire graphique (RPG) 2024 : Ilots anonymes",
       "description": "Registre parcellaire graphique : zones de cultures déclarées par les exploitants en 2024",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
