@@ -25,6 +25,8 @@ Résultats: 331 vignettes générées, 130 échecs
 
 ## WMTS
 
+**TODO**
+
 Usage
 
 ```bash
@@ -45,3 +47,12 @@ Résultats: ... vignettes générées, ... échecs
 ======================================================================
 ```
 
+## entreeCarto
+
+Usage
+
+```bash
+python3 thumbnails.py
+```
+
+Ajoute les thumbnails dans le fichier JSON : `extractor/entreeCarto-test.json`
