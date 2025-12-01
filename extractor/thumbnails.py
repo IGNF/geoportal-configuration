@@ -11,7 +11,7 @@ thumb_dirs = [
 ]
 
 # URL de base GitHub
-github_base = "https://github.com/IGNF/geoportal-configuration/blob/new-url/extractor/"
+github_base = "https://raw.githubusercontent.com/IGNF/geoportal-configuration/refs/heads/new-url/extractor/"
 
 # Suffixes à ignorer
 suffixes = [
