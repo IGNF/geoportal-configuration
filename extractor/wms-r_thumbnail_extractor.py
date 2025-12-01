@@ -19,7 +19,7 @@ class WMSWMTSThumbnailExtractor:
             3: {'name': 'France Ouest', 'bbox': (-612257.199, 5780349.220, 0.000, 6274861.394)},
             4: {'name': 'France Centre', 'bbox': (-111319.491, 5621521.486, 445277.963, 6106854.835)},
             5: {'name': 'France Sud-Est', 'bbox': (333958.472, 5311971.847, 890555.926, 5780349.220)},
-            6: {'name': 'France Sud-Ouest', 'bbox': (-556597.454, 5160979.444, 222638.982, 5621521.486)},
+            6: {'name': 'France Sud-Ouest', 'bbox': (-556597.454, 5160979.444, 222638.982, 5621521.486)}
         }
         
         # Réductions d'échelle (pourcentage de la bbox à réduire)
@@ -126,7 +126,9 @@ class WMSWMTSThumbnailExtractor:
         """
         # Pour WMS 1.3.0, l'ordre est (miny, minx, maxy, maxx) au lieu de (minx, miny, maxx, maxy)
         bbox_str = f"{bbox[0]},{bbox[1]},{bbox[2]},{bbox[3]}"
-        
+        if verbose:
+            print(f"    Requête GetMap pour {layer_name} avec bbox {bbox_str}")
+            
         params = {
             'service': 'WMS',
             'version': '1.3.0',
@@ -198,6 +200,9 @@ class WMSWMTSThumbnailExtractor:
                     print(f"  Zoom {zoom_level}: {zone_name} - {scale_str}")
                 
                 output_file = f"{self.output_dir}/{layer_name}.png"
+                if os.path.exists(output_file):
+                    print(f"  file {layer_name} already exist !")
+                    continue
                 
                 result = self.extract_wms_thumbnail(
                     layer_name,
@@ -205,7 +210,7 @@ class WMSWMTSThumbnailExtractor:
                     width=300,
                     height=300,
                     output_file=output_file,
-                    verbose=False
+                    verbose=verbose
                 )
                 
                 if result:
@@ -247,11 +252,8 @@ class WMSWMTSThumbnailExtractor:
         success_count = 0
         fail_count = 0
         
-        for layer in layers[:20]:  # Traiter les 20 premières couches
-            self.debug_single_request(
-                layer['name'],
-                self.france_zoom_levels[0]['bbox']
-            )
+        for layer in layers:  # Traiter les 20 premières couches
+            print(f"  → {layer['name']}...")
             result = self.try_france_zoom_levels(layer['name'], verbose=verbose)
             
             if result:
@@ -345,7 +347,7 @@ if __name__ == "__main__":
     # Exemple avec un service WMS (Géoportail français)
     wms_url = "https://data.geopf.fr/wms-r"
     
-    extractor = WMSWMTSThumbnailExtractor(wms_url)
+    extractor = WMSWMTSThumbnailExtractor(wms_url, output_dir="thumbnails-wms-r")
     
     # extractor.debug_single_request(
     # 	"ADMINEXPRESS-COG-CARTO-PE.2025", # "CADASTRALPARCELS.PARCELS",
@@ -353,5 +355,5 @@ if __name__ == "__main__":
     # )
 
     # Extraire avec zoom progressif sur la France
-    # extractor.extract_all_thumbnails(verbose=True)
-    extractor.debug_extract_all_thumbnails(verbose=True)
+    extractor.extract_all_thumbnails(verbose=True)
+    # extractor.debug_extract_all_thumbnails(verbose=True)

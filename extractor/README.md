@@ -2,14 +2,15 @@
 
 > thumbnails
 
-## WMS Vecteur / raster
+:information
+> Une fois les vignettes générées, il faut faire un tri de celles que l'on souhaite garder !
 
-> FIXME : limitation du nb de requetes !
+## WMS Vecteur / raster
 
 Usage
 
 ```bash
-python3 wms-v_thumbnail_extractor.py
+python3 wms-v_thumbnail_extractor.py > wms-v_thumbnail_extractor.log
 ```
 
 ```text
@@ -24,16 +25,10 @@ Résultats: 331 vignettes générées, 130 échecs
 
 ## WMTS
 
-> TODO : 
-> - optimiser sur les niveaux du TMS (zoom)
-
-> FIXME :
-> - les zones de validité ne sont pas representatives des données
-
 Usage
 
 ```bash
-python3 wmts_thumbnail_extractor-v2.py
+python3 wmts_thumbnail_extractor.py > wmts_thumbnail_extractor.log
 ```
 
 ```text

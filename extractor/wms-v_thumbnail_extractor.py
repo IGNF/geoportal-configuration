@@ -19,7 +19,7 @@ class WMSThumbnailExtractor:
             3: {'name': 'France Ouest', 'bbox': (-5.5, 46, 0, 49)},
             4: {'name': 'France Centre', 'bbox': (-1, 45, 4, 48)},
             5: {'name': 'France Sud-Est', 'bbox': (3, 43, 8, 46)},
-            6: {'name': 'France Sud-Ouest', 'bbox': (-5, 42, 2, 45)},
+            6: {'name': 'France Sud-Ouest', 'bbox': (-5, 42, 2, 45)}
         }
         
         # Réductions d'échelle (pourcentage de la bbox à réduire)
@@ -95,7 +95,7 @@ class WMSThumbnailExtractor:
         }
         
         if verbose:
-           print(f"  cfg : {params}")
+            print(f"    Requête GetMap pour {layer_name} avec bbox {bbox_str}")
         
         try:
             response = self.session.get(self.service_url, params=params, timeout=15)
@@ -118,8 +118,7 @@ class WMSThumbnailExtractor:
             return output_file
             
         except Exception as e:
-            if verbose:
-                print(f"  ✗ Erreur: {e}")
+            print(f"  ✗ Erreur: {e}")
             return None
     
     def try_france_zoom_levels(self, layer_name, verbose=True):
@@ -144,6 +143,9 @@ class WMSThumbnailExtractor:
                     print(f"  Zoom {zoom_level}: {zone_name} - {scale_str}")
                 
                 output_file = f"{self.output_dir}/{layer_name}.png"
+                if os.path.exists(output_file):
+                    print(f"  file {layer_name} already exist !")
+                    continue
                 
                 result = self.extract_wms_thumbnail(
                     layer_name,
@@ -194,7 +196,7 @@ class WMSThumbnailExtractor:
         success_count = 0
         fail_count = 0
         
-        for layer in layers:  # layers[:20] Traiter les 20 premières couches
+        for layer in layers:  # layers[:20] Traiter les 20 premières couches # Utiliser la bbox de la couche si disponible
             result = self.try_france_zoom_levels(layer['name'], verbose=verbose)
             
             if result:
@@ -288,8 +290,8 @@ if __name__ == "__main__":
     # service WMS
     wms_url = "https://data.geopf.fr/wms-v"
     
-    extractor = WMSThumbnailExtractor(wms_url)
+    extractor = WMSThumbnailExtractor(wms_url, output_dir="thumbnails-wms-v")
     
     # Extraire avec zoom progressif sur la France
-    # extractor.extract_all_thumbnails(verbose=True)
-    extractor.debug_extract_all_thumbnails(verbose=True)
+    extractor.extract_all_thumbnails(verbose=True)
+    # extractor.debug_extract_all_thumbnails(verbose=True)
