@@ -46,8 +46,8 @@ def merge_layer_infos(layer, merged_item):
             set(list(map(str.strip, merged_item["theme"].split(','))) + 
                 list(map(str.strip, layer.get("thematic", []))))
         )
-    if 'producer' in merged_item:
-        props["producer"] = merged_item["producer"]
+    if 'producers' in merged_item:
+        props["producer"] = merged_item["producers"]
     if 'metadata_urls' in merged_item:
         props["metadata_urls"] = merged_item["metadata_urls"]
     layer.update({k: v for k, v in props.items()})
