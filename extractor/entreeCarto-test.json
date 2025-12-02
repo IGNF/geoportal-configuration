@@ -2212,7 +2212,7 @@
         "VIGICRUES-QUA:territoires$GEOPORTAIL:OGC:WFS",
         "VIGICRUES-QUA-2023:territoires$GEOPORTAIL:OGC:WFS",
         "Tests_RM_pays_ecoregions:pays$GEOPORTAIL:OGC:WFS",
-        "bruit_multi_test_pluginGPF_XT_nomtechnique:bruit_multi_test_pluginGPF_XT$GEOPORTAIL:OGC:WFS",
+        "bruitmulti:bruitmulti$GEOPORTAIL:OGC:WFS",
         "TRACES.RANDO.HIVERNALE:traces_rando_hivernale$GEOPORTAIL:OGC:WFS",
         "ZZZ_Trame_noire_Atelier2_SDK:trame_noire$GEOPORTAIL:OGC:WFS",
         "SECUROUT.TE:franchissement_te_lien_prescription$GEOPORTAIL:OGC:WFS",
@@ -2259,7 +2259,6 @@
         "PROTECTEDAREAS.ZNIEFF2.SEA:znieff2_mer$GEOPORTAIL:OGC:WFS",
         "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES:zones_a_prospecter_forets_subnaturelles$GEOPORTAIL:OGC:WFS",
         "PROTECTEDAREAS.ZNIEFF1:znieff1$GEOPORTAIL:OGC:WFS",
-        "arbres_remarquables:arbres_remarquables$GEOPORTAIL:OGC:WFS",
         "TES_PGN_flux_aubagne2:point_du_reseau$GEOPORTAIL:OGC:WFS",
         "essai_gpkg_raster_v2_gpkg_03-02-2025_wfs:composantes_de_la_trame_verte_nsm$GEOPORTAIL:OGC:WFS",
         "test_mig_rlt:dataset$GEOPORTAIL:OGC:WFS",
@@ -2281,6 +2280,7 @@
         "grilles_dalles_echantillons_gpkg_28-09-2025_wfs:grilles$GEOPORTAIL:OGC:WFS",
         "test_hjmk_wfs:test_hjmk_wfs$GEOPORTAIL:OGC:WFS",
         "test_ismpl_jmk:test_ismpl$GEOPORTAIL:OGC:WFS",
+        "arbresremarquables:arbresremarquables$GEOPORTAIL:OGC:WFS",
         "trichls_s_d51_gpkg_07-10-2024_wfs:trichls_s_d51$GEOPORTAIL:OGC:WFS",
         "trichlscomm_s_d51_gpkg_07-10-2024_wfs:trichlscomm_s_d51$GEOPORTAIL:OGC:WFS",
         "trichlsetamt_s_d51_gpkg_07-10-2024_wfs:trichlsetamt_s_d51$GEOPORTAIL:OGC:WFS",
@@ -87676,7 +87676,7 @@
         "DEPARTEMENT DU CALVADOS"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
@@ -87851,7 +87851,7 @@
         "DEPARTEMENT DU CALVADOS"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
@@ -88026,7 +88026,7 @@
         "DEPARTEMENT DU CALVADOS"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
@@ -88201,7 +88201,7 @@
         "DEPARTEMENT DU CALVADOS"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
@@ -88376,7 +88376,7 @@
         "DEPARTEMENT DU CALVADOS"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
@@ -106178,12 +106178,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -106284,13 +106284,19 @@
           "current": false
         }
       ],
-      "key": "OCSGE_075_2021_DF_Couverture$GEOPORTAIL:OGC:WMS",
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
-        "Autres"
+        "Carte de référence de la couverture terrestre",
+        "Constructions et ouvrages"
       ],
+      "metadata_urls": [
+        "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+      ],
+      "key": "OCSGE_075_2021_DF_Couverture$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "OCSGE_Boucle-Correction_30_2021_Couverture$GEOPORTAIL:OGC:WMS": {
@@ -106318,12 +106324,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -106429,8 +106435,8 @@
         "Autres"
       ],
       "thematic": [
-        "Constructions et ouvrages",
-        "Carte de référence de la couverture terrestre"
+        "Carte de référence de la couverture terrestre",
+        "Constructions et ouvrages"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -106464,12 +106470,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -106575,8 +106581,8 @@
         "Autres"
       ],
       "thematic": [
-        "Constructions et ouvrages",
-        "Carte de référence de la couverture terrestre"
+        "Carte de référence de la couverture terrestre",
+        "Constructions et ouvrages"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -106721,8 +106727,8 @@
         "Autres"
       ],
       "thematic": [
-        "Constructions et ouvrages",
-        "Carte de référence de la couverture terrestre"
+        "Carte de référence de la couverture terrestre",
+        "Constructions et ouvrages"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -106862,13 +106868,19 @@
           "current": false
         }
       ],
-      "key": "OCSGE_Boucle-Correction_34_2021_Usage$GEOPORTAIL:OGC:WMS",
+      "thumbnail": "",
       "producer": [
         "Autres"
       ],
       "thematic": [
-        "Autres"
+        "Carte de référence de la couverture terrestre",
+        "Constructions et ouvrages"
       ],
+      "metadata_urls": [
+        "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+      ],
+      "key": "OCSGE_Boucle-Correction_34_2021_Usage$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "OCSGE_NG_USAGE_BDD_WLD_WGS84_32_2019$GEOPORTAIL:OGC:WMS": {
@@ -121903,12 +121915,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/adminexpress_departement-jpb"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
         }
       ],
       "styles": [
@@ -124303,12 +124315,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_documents_d_approbation_PGS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_documents_d_approbation_PGS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_documents_d_approbation_PGS"
         }
       ],
       "styles": [
@@ -134138,34 +134150,10 @@
       ],
       "styles": [
         {
-          "name": "bati_date",
-          "title": "bati_date",
+          "name": "classique",
+          "title": "classique",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
-        },
-        {
-          "name": "delestage",
-          "title": "delestage",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
-        },
-        {
-          "name": "bati",
-          "title": "bati",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
           "name": "hydrographie",
@@ -134180,10 +134168,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "delestage",
+          "title": "delestage",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+        },
+        {
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
         }
       ],
       "globalConstraint": {
@@ -134268,7 +134280,7 @@
         "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/elevation"
+        "Altimétrie"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json",
@@ -134333,7 +134345,7 @@
         "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
@@ -134399,7 +134411,7 @@
         "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "http://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json",
@@ -134676,8 +134688,8 @@
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/adminexpress_departement-jpb",
-        "https://data.geopf.fr/annexes/cartes.gouv.fr-config/style/4a91b333-ff28-44a4-8e06-b5a25b393e35.json",
-        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb",
+        "https://data.geopf.fr/annexes/cartes.gouv.fr-config/style/4a91b333-ff28-44a4-8e06-b5a25b393e35.json"
       ],
       "key": "adminexpress_departement_gpkg_08-09-2025_tms$GEOPORTAIL:GPP:TMS",
       "base": false
