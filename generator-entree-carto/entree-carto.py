@@ -1,11 +1,18 @@
 import json
 import re
 from time import sleep
+from datetime import datetime
+
 
 from core.requester import getEdito, searchMtdUrls
 from core.post_processes import filter_specific_duplicates, filter_layers, add_layers_default_values, convert_thematic
 from core.merger import merge_edito, merge_service_de_recherche_infos
 
+def getTime(verbose=False):
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
+    print(f"Current Time = , {current_time}")
+    
 """
 Creation du fichier entreeCarto.json à partir de fullConfig.json.
 """
@@ -19,6 +26,8 @@ class GenerateEntreeCarto:
         """ 
         Génère le fichier entreeCarto.json à partir de fullConfig.json
         """
+        getTime(verbose=verbose)
+        
         # Charger le JSON
         with open(self.input_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -69,7 +78,9 @@ class GenerateEntreeCarto:
         data["layers"] = filter_specific_duplicates(data["layers"], verbose=verbose)
         # Convertit les thématiques
         data["layers"] = convert_thematic(data["layers"], edito["topics"]["thematic"], verbose=verbose)
-                
+
+        getTime(verbose=verbose)
+        
         # Sauvegarder le JSON modifié dans un nouveau fichier
         with open(self.output_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
