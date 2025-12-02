@@ -35,7 +35,6 @@
         "LANDUSE.AGRICULTURE2024$GEOPORTAIL:OGC:WMTS",
         "PRAIRIES.SENSIBLES.BCAE$GEOPORTAIL:OGC:WMTS",
         "TOURBIERES_ZONES-HUMIDES.BCAE$GEOPORTAIL:OGC:WMTS",
-        "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.2025$GEOPORTAIL:OGC:WMS",
         "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
         "IGNF_RPG_PARCELLES-AGRICOLES-CATEGORISEES_2024$GEOPORTAIL:OGC:WMS",
@@ -4080,65 +4079,6 @@
         {
           "name": "image/png",
           "current": true
-        }
-      ]
-    },
-    "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC$GEOPORTAIL:OGC:WMS": {
-      "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC",
-      "title": "Carte des pentes pour l'agriculture sur la métropole",
-      "description": "Carte des zones ayant une valeur de pente supérieure à 10% - source : RGEALTI 2017 au pas de 5m - disponible jusqu'au 1/17062 - métropole uniquement - mise à jour le 12/10/2017",
-      "globalConstraint": {
-        "minScaleDenominator": 17061.836670798282,
-        "maxScaleDenominator": 559082264.0287179,
-        "bbox": {
-          "left": -63.16139204,
-          "right": 56.00181025,
-          "top": 51.09905418,
-          "bottom": -21.54462458
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "agriculture": "https://data.geopf.fr/wms-r/wms"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "queryable": false,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC",
-          "title": "Données GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.SLOPES.PAC-legend.png"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/x-bil;bits=32",
-          "current": false
         }
       ]
     },
