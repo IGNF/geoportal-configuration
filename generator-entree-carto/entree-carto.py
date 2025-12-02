@@ -10,7 +10,7 @@ from core.merger import merge_edito, merge_service_de_recherche_infos
 Creation du fichier entreeCarto.json à partir de fullConfig.json.
 """
 class GenerateEntreeCarto:
-    def __init__(self, count="full", output_path="entreeCarto-test.json", input_path="./dist/fullConfig.json"):
+    def __init__(self, count="full", output_path="entreeCarto-test.json", input_path="./dist/customConfig.json"):
         self.count = count
         self.output_path = output_path
         self.input_path = input_path
@@ -78,7 +78,7 @@ class GenerateEntreeCarto:
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=False, default="./dist/fullConfig.json")
+    parser.add_argument("--input", required=False, default="./dist/customConfig.json")
     parser.add_argument("--output", required=False, default="entreeCarto-test.json")
     parser.add_argument("--count", required=False, default="full")
     
