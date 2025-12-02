@@ -25,7 +25,8 @@ Résultats: 331 vignettes générées, 130 échecs
 
 ## WMTS
 
-**TODO**
+**FIXME**
+> Utile ? On se base sur les WMS pour extraire des vignettes !?
 
 Usage
 

@@ -1,6 +1,4 @@
-from core.requester import getThematicConversionTable
-
-def filter_layers(layers_dict):
+def filter_layers(layers_dict, verbose=False):
     """
     Filtre les couches dans un dictionnaire en fonction de conditions données.
     
@@ -25,7 +23,7 @@ def filter_layers(layers_dict):
     }
     return filtered_layers
 
-def filter_specific_duplicates(input_dict):
+def filter_specific_duplicates(input_dict, verbose=False):
     """
     Filtre un dictionnaire en supprimant les entrées où:
     - Le 'name' est dupliqué  (y compris les noms formatés avec _wms/_wmts)
@@ -85,7 +83,7 @@ def filter_specific_duplicates(input_dict):
     # Créer le dictionnaire résultat
     return {k: v for k, v in input_dict.items() if k not in keys_to_remove}
 
-def add_layers_default_values(layers):
+def add_layers_default_values(layers, verbose=False):
     """
     Ajoute des valeurs par défaut pour certaines clés manquantes dans les couches.
     Args:
@@ -104,7 +102,7 @@ def add_layers_default_values(layers):
             layer["base"] = False
     return layers
 
-def convert_thematic(layers, convert_table):
+def convert_thematic(layers, convert_table, verbose=False):
     # Conversion de la liste d'objets en dict {id: name}
     convert_dict = {item["id"]: item["name"] for item in convert_table}
 
