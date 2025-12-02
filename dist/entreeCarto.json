@@ -515,6 +515,7 @@
         "PARKING.SUP.500$GEOPORTAIL:OGC:WMTS",
         "PART.ENR.COMMUNE$GEOPORTAIL:OGC:WMTS",
         "PCRS.LAMB93$GEOPORTAIL:OGC:WMTS",
+        "PCRS34-Bloc-C$GEOPORTAIL:OGC:WMTS",
         "PCRS_Metropole_Montpellier$GEOPORTAIL:OGC:WMTS",
         "PCRS_chantier_200m$GEOPORTAIL:OGC:WMTS",
         "PCRS_chantier_D034$GEOPORTAIL:OGC:WMTS",
@@ -945,6 +946,7 @@
         "PARCS-ET-JARDINS.2017-2020$GEOPORTAIL:OGC:WMS",
         "PARCS-ET-JARDINS.2021-2023$GEOPORTAIL:OGC:WMS",
         "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
+        "PCRS34-Bloc-C$GEOPORTAIL:OGC:WMS",
         "PCRS_Metropole_Montpellier$GEOPORTAIL:OGC:WMS",
         "PCRS_SDE35$GEOPORTAIL:OGC:WMS",
         "PCRS_ST_AMAND_TIF$GEOPORTAIL:OGC:WMS",
@@ -1843,6 +1845,7 @@
         "LANDCOVER.CHA06_FR:cha06_fr$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.CHA12_FR:cha12_fr$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.CHA18_FR:cha18_fr$GEOPORTAIL:OGC:WFS",
+        "iso_gpkg_02-12-2025_wfs:isochrones$GEOPORTAIL:OGC:WFS",
         "carr_10km_gpkg_24-10-2024_wfs:carr_10km$GEOPORTAIL:OGC:WFS",
         "carr_1km_zip_24-10-2024_wfs:carr_1km$GEOPORTAIL:OGC:WFS",
         "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_1x1_l93$GEOPORTAIL:OGC:WFS",
@@ -105655,8 +105658,8 @@
         "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre",
-        "Constructions et ouvrages"
+        "Constructions et ouvrages",
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -105801,8 +105804,8 @@
         "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre",
-        "Constructions et ouvrages"
+        "Constructions et ouvrages",
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -105947,8 +105950,8 @@
         "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre",
-        "Constructions et ouvrages"
+        "Constructions et ouvrages",
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -106093,8 +106096,8 @@
         "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre",
-        "Constructions et ouvrages"
+        "Constructions et ouvrages",
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -106239,8 +106242,8 @@
         "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre",
-        "Constructions et ouvrages"
+        "Constructions et ouvrages",
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction",
@@ -123608,12 +123611,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_documents_d_approbation_PGS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_documents_d_approbation_PGS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_documents_d_approbation_PGS"
         }
       ],
       "styles": [
@@ -123753,12 +123756,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
         }
       ],
       "styles": [
@@ -131536,7 +131539,16 @@
       },
       "defaultProjection": "EPSG:4326",
       "queryable": true,
-      "metadata": [],
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&elementSetName=full&ID=Tes-PluginXT"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/Tes-PluginXT"
+        }
+      ],
       "styles": [
         {
           "name": "default-style-testplugin_WMSVecteur",
@@ -131635,13 +131647,18 @@
           "current": false
         }
       ],
-      "key": "testplugin_WMSVecteur$GEOPORTAIL:OGC:WMS",
+      "thumbnail": "",
       "producer": [
-        "Autres"
+        "IGN_producteur"
       ],
       "thematic": [
-        "Autres"
+        "Environnement"
       ],
+      "metadata_urls": [
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://www.isotc211.org/2005/gmd&elementSetName=full&ID=Tes-PluginXT",
+        "https://cartes.gouv.fr/catalogue/dataset/Tes-PluginXT"
+      ],
+      "key": "testplugin_WMSVecteur$GEOPORTAIL:OGC:WMS",
       "base": false
     },
     "transport_cable$GEOPORTAIL:OGC:WMS": {
@@ -133241,12 +133258,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
         }
       ],
       "styles": [
@@ -133920,33 +133937,9 @@
       ],
       "styles": [
         {
-          "name": "standard",
-          "title": "standard",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
-        },
-        {
-          "name": "toponymes",
-          "title": "toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
-        },
-        {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
           "name": "attenue",
           "title": "attenue",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
@@ -133956,22 +133949,46 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "standard",
+          "title": "standard",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+        },
+        {
           "name": "accentue",
           "title": "accentue",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
-          "name": "epure",
-          "title": "epure",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
-        },
-        {
           "name": "transparent",
           "title": "transparent",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+        },
+        {
+          "name": "epure",
+          "title": "epure",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         }
       ],
       "globalConstraint": {
