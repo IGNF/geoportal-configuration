@@ -713,15 +713,25 @@
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMS",
         "HR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
+        "HR.ORTHOIMAGERY.ORTHOPHOTOS-OYAPOCK.2023$GEOPORTAIL:OGC:WMS",
+        "HYDROGRAPHY.BCAE.2025$GEOPORTAIL:OGC:WMS",
+        "HYDROGRAPHY.BCAE.LATEST$GEOPORTAIL:OGC:WMS",
+        "IGNF_COSIA_2017-2020$GEOPORTAIL:OGC:WMS",
+        "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMS",
+        "IGNF_COSIA_2024$GEOPORTAIL:OGC:WMS",
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMS",
         "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
         "IGNF_MASQUE-FORET.2021-2023$GEOPORTAIL:OGC:WMS",
         "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMS",
@@ -758,6 +768,8 @@
         "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1945.1970.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.LOGEMENTS.CONSTRUITS.1970.1990.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.LOGEMENTS.SOCIAUX.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.1.PERSONNE.SECRET$GEOPORTAIL:OGC:WMS",
+        "INSEE.FILOSOFI.PART.MENAGES.5.PERSONNES.OUPLUS.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.MENAGES.MAISON.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.MENAGES.PAUVRES.SECRET$GEOPORTAIL:OGC:WMS",
         "INSEE.FILOSOFI.PART.MENAGES.PROPRIETAIRES.SECRET$GEOPORTAIL:OGC:WMS",
@@ -910,6 +922,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2023$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2025$GEOPORTAIL:OGC:WMS",
+        "ORTHOIMAGERY.ORTHOPHOTOS.SOCLE-ASP.2018$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.TPM.OMBRES$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.URGENCE.ALEX$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS2000-2005$GEOPORTAIL:OGC:WMS",
@@ -1845,7 +1858,6 @@
         "LANDCOVER.CHA06_FR:cha06_fr$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.CHA12_FR:cha12_fr$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.CHA18_FR:cha18_fr$GEOPORTAIL:OGC:WFS",
-        "iso_gpkg_02-12-2025_wfs:isochrones$GEOPORTAIL:OGC:WFS",
         "carr_10km_gpkg_24-10-2024_wfs:carr_10km$GEOPORTAIL:OGC:WFS",
         "carr_1km_zip_24-10-2024_wfs:carr_1km$GEOPORTAIL:OGC:WFS",
         "GEOGRAPHICALGRIDSYSTEM.DFCI:carro_dfci_1x1_l93$GEOPORTAIL:OGC:WFS",
@@ -88523,6 +88535,73 @@
       ],
       "base": false
     },
+    "HR.ORTHOIMAGERY.ORTHOPHOTOS-OYAPOCK.2023$GEOPORTAIL:OGC:WMS": {
+      "name": "HR.ORTHOIMAGERY.ORTHOPHOTOS-OYAPOCK.2023",
+      "title": "ORTHO Guyane 2023",
+      "description": "Orthophotographies issues de prises de vues aériennes acquises le long du fleuve Oyapock (Guyane) et de certains de ses affluent.Millésime : 2023, Résolution : 20cm",
+      "globalConstraint": {
+        "minScaleDenominator": 1066.3647919248926,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -53.3016524699948,
+          "right": -51.60426475000057,
+          "top": 4.26525334,
+          "bottom": 2.1428938503463804
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "inspire_common:DEFAULT",
+          "title": "Style INSPIRE"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "key": "HR.ORTHOIMAGERY.ORTHOPHOTOS-OYAPOCK.2023$GEOPORTAIL:OGC:WMS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
+    },
     "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS": {
       "name": "IGNF_HYDROGRAPHY.HYDROGRAPHY",
       "title": "Hydrographie",
@@ -88582,6 +88661,81 @@
         }
       ],
       "key": "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
+    },
+    "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S",
+      "title": "MNH issu de LiDAR HD RGR92UTM40S",
+      "description": "Données MNH dérivées des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 1785.7142857142856,
+        "maxScaleDenominator": 468114285.7142857,
+        "bbox": {
+          "left": 55.20947095096347,
+          "right": 55.84420231145464,
+          "top": -20.86490156019895,
+          "bottom": -21.390939072673053
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:2975",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        },
+        {
+          "name": "hypso_mnh",
+          "title": "Teinte Hypsométrique MNH"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "key": "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS",
       "producer": [
         "Autres"
       ],
@@ -88807,6 +88961,81 @@
         }
       ],
       "key": "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
+      "producer": [
+        "Autres"
+      ],
+      "thematic": [
+        "Autres"
+      ],
+      "base": false
+    },
+    "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S",
+      "title": "MNT issu de LiDAR HD RGR92UTM40S",
+      "description": "Données MNT dérivées des données LiDAR HD",
+      "globalConstraint": {
+        "minScaleDenominator": 1785.7142857142856,
+        "maxScaleDenominator": 468114285.7142857,
+        "bbox": {
+          "left": 55.20947095096347,
+          "right": 55.84420231145464,
+          "top": -20.86490156019895,
+          "bottom": -21.390939072673053
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:2975",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données Brutes"
+        },
+        {
+          "name": "hypso",
+          "title": "Teinte Hypsométrique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "http://ign.fr"
+        },
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ],
+      "key": "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS",
       "producer": [
         "Autres"
       ],
@@ -105547,12 +105776,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105985,12 +106214,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -106131,12 +106360,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -123756,12 +123985,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
         }
       ],
       "styles": [
@@ -126942,12 +127171,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/mdn_manche_20251010"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=mdn_manche_20251010"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/mdn_manche_20251010"
         }
       ],
       "styles": [
@@ -133258,12 +133487,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
         }
       ],
       "styles": [
@@ -133937,27 +134166,9 @@
       ],
       "styles": [
         {
-          "name": "attenue",
-          "title": "attenue",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
-        },
-        {
-          "name": "gris",
-          "title": "gris",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
-        },
-        {
           "name": "standard",
           "title": "standard",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
@@ -133967,28 +134178,46 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
-          "name": "accentue",
-          "title": "accentue",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
-        },
-        {
-          "name": "transparent",
-          "title": "transparent",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
-        },
-        {
           "name": "sans_toponymes",
           "title": "sans_toponymes",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
+          "name": "gris",
+          "title": "gris",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "attenue",
+          "title": "attenue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
+        },
+        {
+          "name": "accentue",
+          "title": "accentue",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
+        },
+        {
           "name": "epure",
           "title": "epure",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+        },
+        {
+          "name": "transparent",
+          "title": "transparent",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json"
         }
       ],
       "globalConstraint": {
@@ -134063,17 +134292,13 @@
         "maxScaleDenominator": 1066.364791924893
       },
       "defaultProjection": "EPSG:3857",
-      "thumbnail": "",
+      "key": "PLAN.OSM$GEOPORTAIL:GPP:TMS",
       "producer": [
-        "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
+        "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre"
+        "Autres"
       ],
-      "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/osm-etranger.json"
-      ],
-      "key": "PLAN.OSM$GEOPORTAIL:GPP:TMS",
       "base": false
     },
     "adminexpress_departement_gpkg_08-09-2025_tms$GEOPORTAIL:GPP:TMS": {
