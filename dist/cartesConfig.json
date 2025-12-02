@@ -21,6 +21,7 @@
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.BDUNI.J1$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN50.1950$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2$GEOPORTAIL:OGC:WMS",
+        "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMS",
         "SCAN1000_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
         "SCANREG_PYR-JPEG_WLD_WM$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN25.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
@@ -1957,6 +1958,65 @@
         {
           "format": "image/png",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2$GEOPORTAIL:OGC:WMS": {
+      "name": "GEOGRAPHICALGRIDSYSTEMS.TERRIER_V2",
+      "title": "Plan Terrier V2 (XVIIIe siècle)",
+      "description": "Plan Terrier, cartographie ancienne du XVIIIème siècle sur la Corse version est une version numérisée par les archives militaires du Ministère de la Défense",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": 8.36283848,
+          "right": 9.75281587,
+          "top": 43.11740499,
+          "bottom": 41.25676776
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "cartes": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "nolegend",
+          "title": "Données sans légende"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
