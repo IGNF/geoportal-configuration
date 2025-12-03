@@ -1,0 +1,31 @@
+name: generate entree carto
+
+on:
+  workflow_run:
+    workflows: ["refresh config_files"]
+    types:
+      - completed
+
+jobs:
+  refresh_config:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3 # checkout the repository content to github runner.
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8 #install the python needed
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: execute py script
+        run: |
+          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp 
+          python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generate entree carto"
+          git push
+
