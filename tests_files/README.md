@@ -10,7 +10,7 @@ python3 -m tests_files.entree_carto.merge_edito.test_merge_edito
 python3 -m tests_files.entree_carto.test_generate_entree_carto_conf
 ```
 ```bash
-python3 unittest -m tests_files.entree_carto.post_process.test_filter_specific_duplicates
-
+cd generator_entree_carto
+python3 -m unittest discover -s tests_files
 ```
 
