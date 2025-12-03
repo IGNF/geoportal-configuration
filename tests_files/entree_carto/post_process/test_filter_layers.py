@@ -1,9 +1,10 @@
 import sys
 import os
+from .. import test_setup
 
 import unittest
 import json
-from core.entree_carto.post_processes import filter_layers
+from generator_entree_carto.core.post_processes import filter_layers
 
 class TestMergeServiceDeRecherche(unittest.TestCase):
     """

@@ -34,14 +34,14 @@
       "defaultProjection": "EPSG:3857",
       "thumbnail": "",
       "producer": [
-        "Autres"
+        "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
         "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
-        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json",
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json",
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json",
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/transparent.json",
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json",
@@ -50,8 +50,8 @@
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json",
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
       ],
-      "base": false,
-      "key": "PLAN.IGN$GEOPORTAIL:GPP:TMS"
+      "key": "PLAN.IGN$GEOPORTAIL:GPP:TMS",
+      "base": false
     },
     "INAO-AOC_SYMBO_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS": {
       "name": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS",
@@ -89,14 +89,16 @@
           "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INAO-AOC_SYMBO_BDD_FXX_WM_WMS"
         }
       ],
+      "thumbnail": "",
       "producer": [
-        "INAO"
+        "Autres"
       ],
       "thematic": [
-        "Agriculture"
+        "Autres"
       ],
-      "base": false,
-      "key": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS"
+      "metadata_urls": [],
+      "key": "INAO-AOC_SYMBO_BDD_FXX_WM_WMS$GEOPORTAIL:OGC:WMS",
+      "base": false
     },
     "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS": {
       "name": "INRA.CARTE.SOLS",
@@ -141,15 +143,16 @@
           "current": true
         }
       ],
+      "thumbnail": "",
       "producer": [
-        "INRA"
+        ""
       ],
       "thematic": [
-        "Sciences de la terre",
-        "géosciences"
+        "Carte de référence de la couverture terrestre"
       ],
-      "base": false,
-      "key": "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS"
+      "metadata_urls": [],
+      "key": "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS",
+      "base": false
     },
     "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS": {
       "name": "hydro_ardennes_pyramide_raster_wmts",
@@ -195,18 +198,17 @@
         }
       ],
       "thematic": [
-        "Eaux intérieures",
-        "Hydrographie"
+        "Eaux intérieures, Hydrographie"
       ],
       "metadata_urls": [
         "https://qlf-cartes.ign.fr/catalogue/dataset/hydro-ardennes-l93",
         "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=hydro-ardennes-l93"
       ],
+      "key": "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS",
       "producer": [
         "Autres"
       ],
-      "base": false,
-      "key": "hydro_ardennes_pyramide_raster_wmts$GEOPORTAIL:OGC:WMTS"
+      "base": false
     }
   },
   "territories": [
@@ -270,7 +272,7 @@
       "id": "REU",
       "title": "Réunion",
       "description": "",
-      "zoom": 10,
+      "zoom": null,
       "bbox": [
         55.07,
         -21.46,
@@ -298,7 +300,7 @@
       "id": "IDF",
       "title": "Paris petite couronne",
       "description": "",
-      "zoom": 12,
+      "zoom": null,
       "bbox": [
         2.18,
         48.77,
@@ -386,7 +388,7 @@
       {
         "id": "biota",
         "name": "Biologie, faune et flore",
-        "icon": "fr-icon-leaf-file"
+        "icon": "fr-icon-plant-fill"
       },
       {
         "id": "boundaries",
@@ -401,22 +403,22 @@
       {
         "id": "economy",
         "name": "Économie",
-        "icon": "fr-icon-line-chart-fill"
+        "icon": "fr-icon-bar-chart-box-fill"
       },
       {
         "id": "elevation",
         "name": "Altimétrie",
-        "icon": "fr-icon-map-pin-2-fill"
+        "icon": "fr-icon-line-chart-fill"
       },
       {
         "id": "environment",
         "name": "Environnement",
-        "icon": "fr-icon-seedling-fill"
+        "icon": "fr-icon-leaf-fill"
       },
       {
         "id": "farming",
         "name": "Agriculture",
-        "icon": "fr-icon-plant-fill"
+        "icon": "fr-icon-seedling-fill"
       },
       {
         "id": "geoscientificInformation",
@@ -426,12 +428,12 @@
       {
         "id": "health",
         "name": "Santé",
-        "icon": "fr-icon-capsule-fill"
+        "icon": "fr-icon-first-aid-kit-fill"
       },
       {
         "id": "imageryBaseMapsEarthCover",
         "name": "Carte de référence de la couverture terrestre",
-        "icon": "fr-icon-france-fill"
+        "icon": "fr-icon-global-fill"
       },
       {
         "id": "intelligenceMilitary",
@@ -441,7 +443,7 @@
       {
         "id": "inlandWaters",
         "name": "Eaux intérieures, Hydrographie",
-        "icon": "fr-icon-flood-fill"
+        "icon": "fr-icon-drop-fill"
       },
       {
         "id": "location",
@@ -451,22 +453,22 @@
       {
         "id": "oceans",
         "name": "Océans",
-        "icon": "fr-icon-fr--submersion-fill"
+        "icon": "fr-icon-submersion-fill"
       },
       {
         "id": "planningCadastre",
         "name": "Cadastre, aménagement",
-        "icon": "fr-icon-community-fill"
+        "icon": "fr-icon-layout-grid-fill"
       },
       {
         "id": "society",
         "name": "Société",
-        "icon": "fr-icon-group-fill"
+        "icon": "fr-icon-capsule-fill"
       },
       {
         "id": "structure",
         "name": "Constructions et ouvrages",
-        "icon": "fr-icon-compasses-2-fill"
+        "icon": "fr-icon-community-fill"
       },
       {
         "id": "transportation",
@@ -476,7 +478,7 @@
       {
         "id": "utilitiesCommunication",
         "name": "Télécommunication, approvisionnement et énergie",
-        "icon": "fr-icon-radar-fill"
+        "icon": "fr-icon-lightbulb-fill"
       }
     ],
     "service": [

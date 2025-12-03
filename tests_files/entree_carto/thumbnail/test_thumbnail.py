@@ -1,9 +1,10 @@
 import sys
 import os
+from .. import test_setup
 
 import unittest
 import json
-from core.entree_carto.thumbnail import get_valid_thumbnail_from_mtd
+from generator_entree_carto.core.thumbnail import get_valid_thumbnail_from_mtd
 
 class TestThumbnail(unittest.TestCase):
     """
@@ -20,7 +21,7 @@ class TestThumbnail(unittest.TestCase):
     def test_add_thumbnail(self):
         self.assertEqual(
             self.valid_thumbnail,
-            "https://data.geopf.fr/annexes/cartes.gouv.fr-config/thumbnail/f6876c32-f294-43fc-bd20-00a5a66a1882.png"
+            "https://data.geopf.fr/annexes/cartes.gouv.fr-config/thumbnail/7201bf35-36c1-4cde-8968-55b12b5048c3.png"
         )
 
 if __name__ == '__main__':
