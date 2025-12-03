@@ -716,12 +716,14 @@
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMS",
         "IGNF_HYDROGRAPHY.HYDROGRAPHY$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNH_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.RGR92UTM40S$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNS_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.LAMB93$GEOPORTAIL:OGC:WMS",
+        "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMS",
         "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.WGS84G$GEOPORTAIL:OGC:WMS",
         "IGNF_MASQUE-FORET.2021-2023$GEOPORTAIL:OGC:WMS",
         "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMS",
@@ -2277,6 +2279,7 @@
         "ISOHYPSE$GEOPORTAIL:GPP:TMS",
         "OCSGE_2016$GEOPORTAIL:GPP:TMS",
         "OCSGE_2019$GEOPORTAIL:GPP:TMS",
+        "PCI$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS",
         "PLAN.OSM$GEOPORTAIL:GPP:TMS",
         "adminexpress_departement_gpkg_08-09-2025_tms$GEOPORTAIL:GPP:TMS"
@@ -86658,17 +86661,13 @@
           "current": true
         }
       ],
-      "thumbnail": "",
+      "key": "WMTS_BEZIERS-COLOMBIERS_2022110638503087$GEOPORTAIL:OGC:WMTS",
       "producer": [
-        "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
+        "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre"
+        "Autres"
       ],
-      "metadata_urls": [
-        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_ORTHO_SATr_1-0.xml"
-      ],
-      "key": "WMTS_BEZIERS-COLOMBIERS_2022110638503087$GEOPORTAIL:OGC:WMTS",
       "base": false
     },
     "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS": {
@@ -88157,13 +88156,17 @@
           "current": true
         }
       ],
-      "key": "scan1000_corse_jbn$GEOPORTAIL:OGC:WMTS",
+      "thumbnail": "",
       "producer": [
-        "Autres"
+        ""
       ],
       "thematic": [
-        "Autres"
+        "Carte de référence de la couverture terrestre"
       ],
+      "metadata_urls": [
+        "https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_SCAN1000r_2-1.xml"
+      ],
+      "key": "scan1000_corse_jbn$GEOPORTAIL:OGC:WMTS",
       "base": false
     },
     "ADMINEXPRESS-COG-CARTO-PE.LATEST$GEOPORTAIL:OGC:WMS": {
@@ -105833,12 +105836,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -121205,12 +121208,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/adminexpress_departement-jpb"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
         }
       ],
       "styles": [
@@ -123750,12 +123753,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
         }
       ],
       "styles": [
@@ -133681,16 +133684,16 @@
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
           "name": "isohypse_monochrome_orange",
           "title": "isohypse_monochrome_orange",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
+        },
+        {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
@@ -133806,16 +133809,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_couverture",
-          "title": "ocsge_couverture",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
-        },
-        {
           "name": "ocsge_usage",
           "title": "ocsge_usage",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_usage.json"
+        },
+        {
+          "name": "ocsge_couverture",
+          "title": "ocsge_couverture",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
         },
         {
           "name": "ocsge_occupation",
@@ -133849,6 +133852,65 @@
         "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
       ],
       "key": "OCSGE_2019$GEOPORTAIL:GPP:TMS",
+      "base": false
+    },
+    "PCI$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/tms/1.0.0/"
+        }
+      },
+      "name": "PCI",
+      "title": "PCI",
+      "description": "La BD TOPO® contient une description vectorielle, structurée en objets, des éléments du territoire et de ses infrastructures, de précision métrique. Edition 2025-09-01",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "styles": [
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
+        },
+        {
+          "name": "pci",
+          "title": "pci",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": "EPSG:3857",
+        "bbox": {
+          "left": -7031136.485883979,
+          "right": 6216852.822974959,
+          "top": 6638861.656508054,
+          "bottom": -2439640.6275760634
+        },
+        "minScaleDenominator": 17471320.75089743,
+        "maxScaleDenominator": 1066.364791924893
+      },
+      "defaultProjection": "EPSG:3857",
+      "thumbnail": "",
+      "producer": [
+        "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
+      ],
+      "thematic": [
+        "Cadastre, aménagement"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json",
+        "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
+      ],
+      "key": "PCI$GEOPORTAIL:GPP:TMS",
       "base": false
     },
     "PLAN.IGN$GEOPORTAIL:GPP:TMS": {
