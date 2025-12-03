@@ -1418,6 +1418,7 @@
         "dgac_peb_plan_wmsv$GEOPORTAIL:OGC:WMS",
         "dgac_pgs_arrete_wmsv$GEOPORTAIL:OGC:WMS",
         "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
+        "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS",
         "dgac_psa_plan_wmsv$GEOPORTAIL:OGC:WMS",
         "document$GEOPORTAIL:OGC:WMS",
         "du$GEOPORTAIL:OGC:WMS",
@@ -1873,7 +1874,6 @@
         "HYDROGRAPHY.BCAE.LATEST:bcae_cours_eau$GEOPORTAIL:OGC:WFS",
         "dgac_peb_plan_wfs:dgac_peb_plan_wfs$GEOPORTAIL:OGC:WFS",
         "dgac_peb_arrete_wfs:dgac_peb_arrete_wfs$GEOPORTAIL:OGC:WFS",
-        "dgac_psa_arrete_wfs:dgac_psa_arrete$GEOPORTAIL:OGC:WFS",
         "DGCL.2025:voirie_communale$GEOPORTAIL:OGC:WFS",
         "DGCL.2025:voirie_departementale$GEOPORTAIL:OGC:WFS",
         "IGNF_MNH-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS",
@@ -105545,12 +105545,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -105983,12 +105983,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=OCSGE.Boucle-Correction"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/OCSGE.Boucle-Correction"
         }
       ],
       "styles": [
@@ -123754,12 +123754,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
         }
       ],
       "styles": [
@@ -123874,6 +123874,151 @@
       "key": "dgac_pgs_plan_wmsv$GEOPORTAIL:OGC:WMS",
       "base": false
     },
+    "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS": {
+      "name": "dgac_psa_arrete_wmsv",
+      "title": "DGAC Plan de Servitudes Aéronautique, documents d'approbation (PSA)",
+      "description": "**Documents d'approbation des PSA**",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -149.611816406,
+          "right": 167.459106445,
+          "top": 51.040637207,
+          "bottom": -22.590228271
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "full": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-dgac_psa_arrete_wmsv",
+          "title": "dgac_psa_arrete_wmsv style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=dgac_psa_arrete_wmsv"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ],
+      "thumbnail": "",
+      "producer": [
+        "DGAC"
+      ],
+      "thematic": [
+        "Infrastructures de transport"
+      ],
+      "metadata_urls": [
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA",
+        "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
+      ],
+      "key": "dgac_psa_arrete_wmsv$GEOPORTAIL:OGC:WMS",
+      "base": false
+    },
     "dgac_psa_plan_wmsv$GEOPORTAIL:OGC:WMS": {
       "name": "dgac_psa_plan_wmsv",
       "title": "DGAC Plan de Servitudes Aéronautique (PSA)",
@@ -123900,11 +124045,11 @@
       "metadata": [
         {
           "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_PSA"
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
         },
         {
           "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_PSA"
+          "url": "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
         }
       ],
       "styles": [
@@ -124013,8 +124158,8 @@
         "Infrastructures de transport"
       ],
       "metadata_urls": [
-        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_PSA",
-        "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_PSA"
+        "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA",
+        "https://cartes.gouv.fr/catalogue/dataset/DGAC_Plan_de_Servitudes_Aeronautique_documents_d_approbation_PSA"
       ],
       "key": "dgac_psa_plan_wmsv$GEOPORTAIL:OGC:WMS",
       "base": false
@@ -126795,12 +126940,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/mdn_manche_20251010"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=mdn_manche_20251010"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/mdn_manche_20251010"
         }
       ],
       "styles": [
@@ -133111,12 +133256,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
         }
       ],
       "styles": [
@@ -133251,12 +133396,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
         }
       ],
       "styles": [
@@ -133439,22 +133584,28 @@
       ],
       "styles": [
         {
-          "name": "classique",
-          "title": "classique",
+          "name": "bati_date",
+          "title": "bati_date",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
           "name": "hydrographie",
           "title": "hydrographie",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
           "name": "delestage",
@@ -133469,22 +133620,16 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         },
         {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
-          "name": "bati_date",
-          "title": "bati_date",
+          "name": "routier",
+          "title": "routier",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         }
       ],
       "globalConstraint": {
@@ -134542,12 +134687,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/CartoSP_MVP_SP_v2"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CartoSP_MVP_SP_v2"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/CartoSP_MVP_SP_v2"
         }
       ],
       "styles": [
