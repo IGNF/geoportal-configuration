@@ -34,7 +34,7 @@ def merge_layer_infos(layer, merged_item, verbose=False):
     # Recherche de la vignette dans les métadonnées
     # Si une vignette est disponible et valide dans le fichier edito.json, 
     # elle a priorité sur celle des métadonnées
-    layerThumbnail = next((u for u in (get_valid_thumbnail_from_mtd(url, 360, 360) for url in merged_item["metadata_urls"]) if u), None)
+    layerThumbnail = next((u for u in (get_valid_thumbnail_from_mtd(url, 360, 360, verbose=verbose) for url in merged_item["metadata_urls"]) if u), None)
     if layerThumbnail:
         props["thumbnail"] = layerThumbnail
     if 'thumbnail' in merged_item:

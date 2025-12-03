@@ -70,7 +70,7 @@ def get_image_dimensions(url: str):
 
     raise Exception("Format non reconnu ou non supporté")
 
-def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height):
+def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
     """
         Fonction pour obtenir une miniature valide
         On cherche une image avec largeur et hauteur <= 60px
@@ -97,6 +97,7 @@ def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height):
             if image and image['width'] <= max_width and image['height'] <= max_height:
                 return url.text
             else:
+                if verbose:
+                    print(f" --> miniature non valide (dimensions : {image['width']}x{image['height']}) : {url.text} ")
                 return None
-
     return None

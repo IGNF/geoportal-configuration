@@ -1,9 +1,10 @@
 name: generate entree carto
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "* */1 * * *" 
+  workflow_run:
+    workflows: ["refresh config_files"]
+    types:
+      - completed
 
 jobs:
   refresh_config:
@@ -20,8 +21,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: execute py script
         run: |
-          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto_tmp.json 
-          python extractor-thumbnails/thumbnails.py --input=entreeCarto_tmp.json --output=dist/entreeCarto.json
+          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp 
+          python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .

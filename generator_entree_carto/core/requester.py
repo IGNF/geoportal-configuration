@@ -28,6 +28,7 @@ def searchMtdUrls(layer_name, type, verbose=False):
         
         # Corps de la requête
         #   "metadata_urls": True
+        #   "aggregation" : {"fields": ["layer_name"]}"
         request_body = {
             "layer_name" : layer_name,
             "type" : type
@@ -39,8 +40,6 @@ def searchMtdUrls(layer_name, type, verbose=False):
         
         data = response.json()
         
-        if verbose:
-            print(f"    --> page {page} : {len(data.get('documents', []))} résultats")  
         
         # Vérifier si le tableau documents est vide
         if not data.get('documents') or len(data['documents']) == 0:
@@ -52,7 +51,10 @@ def searchMtdUrls(layer_name, type, verbose=False):
         # Passer à la page suivante
         page += 1
     
-    return results
+        if verbose:
+            print(f"    --> page {page} : {len(data.get('documents', []))} résultats")
+        
+        return results
 
 def getHeadRequest(url, referer=""):
     response = requests.head(url, headers={'referer': referer})
