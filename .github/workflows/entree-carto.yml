@@ -20,7 +20,7 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: execute py script
         run: |
-          python generator-entree-carto/entree-carto.py --input=dist/customConfig.json --output=entreeCarto_tmp.json 
+          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto_tmp.json 
           python extractor-thumbnails/thumbnails.py --input=entreeCarto_tmp.json --output=dist/entreeCarto.json
           git config user.name github-actions
           git config user.email github-actions@github.com

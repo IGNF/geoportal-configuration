@@ -1,12 +1,13 @@
 import sys
 import os
+from .. import test_setup
 
 # Ajoute le dossier parent (la racine du projet) au path Python
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import unittest
 import json
-from core.entree_carto.entree_carto_config import filter_specific_duplicates
+from generator_entree_carto.core.post_processes import filter_specific_duplicates
 
 class TestRemoveDuplicate(unittest.TestCase):
     def test_entree_carto_custom_same_name(self):

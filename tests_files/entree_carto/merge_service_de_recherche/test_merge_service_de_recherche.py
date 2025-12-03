@@ -1,10 +1,11 @@
 import sys
 import os
+from .. import test_setup
 
 import unittest
 import json
-from core.entree_carto.merger import merge_service_de_recherche_infos
-from core.entree_carto.entree_carto_config import searchMtdUrls
+from generator_entree_carto.core.merger import merge_service_de_recherche_infos
+from generator_entree_carto.core.requester import searchMtdUrls
 
 class TestMergeServiceDeRecherche(unittest.TestCase):
     """
