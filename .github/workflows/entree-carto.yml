@@ -21,11 +21,11 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: execute py script
         run: |
-          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp 
-          python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
           git config user.name github-actions
           git config user.email github-actions@github.com
           git pull --rebase
+          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp 
+          python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
           git add .
           git commit -m "generate entree carto"
           git push
