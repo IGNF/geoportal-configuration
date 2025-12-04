@@ -66,7 +66,7 @@ if __name__ == "__main__":
     output = parser.parse_args().output
     
     updater = UpdateThumbnails(
-        github_base="https://raw.githubusercontent.com/IGNF/geoportal-configuration/refs/heads/new-url/extractor/",
+        github_base="https://raw.githubusercontent.com/IGNF/geoportal-configuration/refs/heads/new-url/extractor-thumbnails/",
         output_path=output,
         input_path=input
     )
