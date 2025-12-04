@@ -46,25 +46,47 @@ class GenerateEntreeCarto:
         else:
             if verbose:
                 print(f" --> Nombre de layers total : {len(data['layers'])}")
+
+        layers_name = ""
         counter = 1
-        for layer in data.get("layers", {}).values():
-            # Récupère les infos disponibles depuis le service recherche
-            # en particulier "theme", "producers" et "thumbnail"
-            if 'serviceParams' not in layer or 'id' not in layer['serviceParams']:
-                continue
-            # Retirer le préfixe si présent
-            service = prefixes_pattern.sub("", layer['serviceParams']['id'])
+        for service in ["WMTS", "WMS", "TMS", "WFS"]:
             if verbose:
-                print(f"--> layer ({counter}) : {layer['name']} / {service}")
-            mtd_urls_layers = searchMtdUrls(layer['name'], service, verbose=verbose)
-            if mtd_urls_layers:
-                data = merge_service_de_recherche_infos(mtd_urls_layers, data)
-            counter += 1
-            if counter % 20 == 0:
+                print(f" --> Traitement des couches de type : {service} ")
+            for layer in data.get("layers", {}).values():
+                if 'serviceParams' not in layer or 'id' not in layer['serviceParams']:
+                    continue
+                # Retirer le préfixe si présent
+                service_name = prefixes_pattern.sub("", layer['serviceParams']['id'])
+                if service_name != service:
+                    continue
                 if verbose:
-                    print(f" --> Couches traitées : {counter} / {len(data['layers'])} ")
-                sleep(2)  # Pour ne pas surcharger le service de recherche
-                    
+                    print(f"--> layer ({counter}) : {layer['name']} / {service}")
+                # Creation de la chaine des noms de couches
+                if layers_name:
+                    layers_name += "|" + layer['name']
+                else:
+                    layers_name = layer['name']
+                if counter % 20 == 0:
+                    # Récupère les infos disponibles depuis le service recherche
+                    # en particulier "theme", "producers" et "thumbnail"
+                    mtd_urls_layers = searchMtdUrls(layers_name, service, verbose=verbose)
+                    if mtd_urls_layers:
+                        data = merge_service_de_recherche_infos(mtd_urls_layers, data)
+                    if verbose:
+                        print(f" --> Couches traitées : {counter} / {len(data['layers'])} ")
+                    layers_name = ""
+                    # sleep(1)  # Pour ne pas surcharger le service de recherche
+                counter += 1
+            # Traite les couches restantes
+            if layers_name:
+                mtd_urls_layers = searchMtdUrls(layers_name, service, verbose=verbose)
+                if mtd_urls_layers:
+                    data = merge_service_de_recherche_infos(mtd_urls_layers, data)
+                if verbose:
+                    print(f" --> Couches traitées : {counter - 1} / {len(data['layers'])} ")
+                layers_name = ""
+                # sleep(1)  # Pour ne pas surcharger le service de recherche
+              
         # Récupère la configuration éditoriale
         edito = getEdito()
         if edito:

@@ -13,7 +13,7 @@ def getMetadata(url):
         return False
     return response.content
 
-def searchMtdUrls(layer_name, type, verbose=False):
+def searchMtdUrls(layers_name, service, verbose=False):
     size = 100
     page = 1
     results = []
@@ -30,8 +30,9 @@ def searchMtdUrls(layer_name, type, verbose=False):
         #   "metadata_urls": True
         #   "aggregation" : {"fields": ["layer_name"]}"
         request_body = {
-            "layer_name" : layer_name,
-            "type" : type
+            "layer_name" : layers_name,
+            "type" : service,
+            "aggregation" : {"fields": ["layer_name"]}
         }
         
         response = requests.post(url, params=params, json=request_body)
@@ -48,11 +49,11 @@ def searchMtdUrls(layer_name, type, verbose=False):
         # Ajouter les résultats de cette page
         results.extend(data['documents'])
         
-        # Passer à la page suivante
-        page += 1
-    
         if verbose:
             print(f"    --> page {page} : {len(data.get('documents', []))} résultats")
+        
+        # Passer à la page suivante
+        page += 1
         
         return results
 
