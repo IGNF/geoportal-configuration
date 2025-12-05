@@ -30,7 +30,9 @@ class UpdateThumbnails:
         # Directoires de miniatures
         thumb_dirs = [
             "thumbnails-wms-r",
-            "thumbnails-wms-v"
+            "thumbnails-wms-v",
+            "thumbnails-wmts",
+            "thumbnails-tms"
         ]
 
         # Suffixes à ignorer
