@@ -423,6 +423,99 @@ class WMTSThumbnailExtractor:
         
         return None
 
+    def extract_simple_all_thumbnails(self, verbose=True):
+        """
+        Extrait les vignettes simplifiées pour toutes les couches WMTS
+        (tuile mondiale puis France, puis France zoomée)
+        """
+        layers = self.get_wmts_layers()
+        print(f"\n{'='*70}")
+        print(f"URL - {self.service_url}")
+        print(f"WMTS - {len(layers)} couches trouvées")
+        print(f"Stratégie: tuile mondiale → tuile France → tuile France zoomée")
+        print(f"{'='*70}")
+
+        success_count = 0
+        fail_count = 0
+
+        for layer in layers:
+            output_file = f"{self.output_dir}/{layer['name']}.png"
+            if os.path.exists(output_file):
+                print(f"  file {layer['name']} already exist !")
+                continue
+
+            if layer['tile_matrix_sets']:
+                tile_matrix_set = layer['tile_matrix_sets'][0]
+                result = self.extract_simple_thumbnail(
+                    layer['name'], layer['mime_type'], tile_matrix_set, bbox=layer.get('bbox'), verbose=verbose
+                )
+                if result:
+                    success_count += 1
+                else:
+                    fail_count += 1
+            else:
+                print(f"\nCouche: {layer['name']}")
+                print(f"  ✗ Aucun TileMatrixSet disponible")
+                fail_count += 1
+
+        print(f"\n{'='*70}")
+        print(f"Résultats: {success_count} vignettes générées, {fail_count} échecs")
+        print(f"{'='*70}\n")
+    
+    def extract_simple_thumbnail(self, layer_name, mime_type, tile_matrix_set, bbox=None, verbose=True):
+        # 1. Essayer plusieurs tuiles mondiales (zoom 0)
+        zoom_world = 0
+        world_tiles = [(0, 0), (0, 1), (1, 0), (1, 1)]
+        for col, row in world_tiles:
+            img = self.extract_wmts_tile(layer_name, mime_type, tile_matrix_set, col=col, row=row, zoom=zoom_world)
+            if img and self.has_visible_content(img)[0]:
+                img.save(f"{self.output_dir}/{layer_name}.png")
+                if verbose:
+                    print(f"✓ Vignette mondiale extraite pour {layer_name} (col={col}, row={row})")
+                return True
+
+        # 2. Essayer une tuile centrée sur la bbox de la donnée (si bbox fournie)
+        if bbox:
+            zoom_bbox = 5
+            tile_coords = self.bbox_to_tile_coords(bbox, zoom_bbox)
+            col = (tile_coords['col_min'] + tile_coords['col_max']) // 2
+            row = (tile_coords['row_min'] + tile_coords['row_max']) // 2
+            img = self.extract_wmts_tile(layer_name, mime_type, tile_matrix_set, col=col, row=row, zoom=zoom_bbox)
+            if img and self.has_visible_content(img)[0]:
+                img.save(f"{self.output_dir}/{layer_name}.png")
+                if verbose:
+                    print(f"✓ Vignette bbox donnée extraite pour {layer_name}")
+                return True
+
+        # 3. Essayer une tuile sur la France (zoom 5, bbox France)
+        france_bbox = (-612257.199, 5160979.444, 890555.926, 6710219.083)  # bbox France en EPSG:3857
+        zoom_france = 5
+        tile_coords = self.bbox_to_tile_coords(france_bbox, zoom_france)
+        col = (tile_coords['col_min'] + tile_coords['col_max']) // 2
+        row = (tile_coords['row_min'] + tile_coords['row_max']) // 2
+        img = self.extract_wmts_tile(layer_name, mime_type, tile_matrix_set, col=col, row=row, zoom=zoom_france)
+        if img and self.has_visible_content(img)[0]:
+            img.save(f"{self.output_dir}/{layer_name}.png")
+            if verbose:
+                print(f"✓ Vignette France extraite pour {layer_name}")
+            return True
+
+        # 4. Essayer un zoom plus fort sur la France (zoom 8)
+        zoom_france = 8
+        tile_coords = self.bbox_to_tile_coords(france_bbox, zoom_france)
+        col = (tile_coords['col_min'] + tile_coords['col_max']) // 2
+        row = (tile_coords['row_min'] + tile_coords['row_max']) // 2
+        img = self.extract_wmts_tile(layer_name, mime_type, tile_matrix_set, col=col, row=row, zoom=zoom_france)
+        if img and self.has_visible_content(img)[0]:
+            img.save(f"{self.output_dir}/{layer_name}.png")
+            if verbose:
+                print(f"✓ Vignette France zoomée extraite pour {layer_name}")
+            return True
+
+        if verbose:
+            print(f"✗ Impossible d'extraire une vignette pertinente pour {layer_name}")
+        return False
+
 # Exemple d'utilisation
 if __name__ == "__main__":
     import os
@@ -435,4 +528,6 @@ if __name__ == "__main__":
     extractor = WMTSThumbnailExtractor(wmts_url, output_dir="thumbnails-wmts")
     
     # Extraire avec zoom progressif sur la France
-    extractor.extract_all_thumbnails(verbose=True)
+    # extractor.extract_all_thumbnails(verbose=True)
+    # Ou extraire avec méthode simple
+    extractor.extract_simple_all_thumbnails(verbose=True)
