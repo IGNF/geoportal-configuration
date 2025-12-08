@@ -88,11 +88,11 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
             v.strip() for v in ensure_list(merged_item["producer"]) if v and v.strip()
         })
     if 'thumbnail' in merged_item:
-        props["thumbnail"] = merged_item["thumbnail"]
+        props["thumbnail"] = merged_item["thumbnail"] or layer["thumbnail"]
     if 'base' in merged_item:
         props["base"] = merged_item["base"]
     if 'title' in merged_item:
-        props["title"] = merged_item["title"]
+        props["title"] = merged_item["title"] or layer["title"]
         
     layer.update({k: v for k, v in props.items()})
     if verbose:
