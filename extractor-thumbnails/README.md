@@ -23,10 +23,12 @@ Résultats: 331 vignettes générées, 130 échecs
 ======================================================================
 ```
 
-## WMTS
+## WMTS / TMS
 
-**FIXME**
-> Utile ? On se base sur les WMS pour extraire des vignettes !?
+**FIXME** :
+
+> * C'est plus simple de se baser sur les WMS pour extraire des vignettes !?
+> * De plus, pour un TMS de données vecteur (type Mapbox), les tuiles brutes sont des données vectorielles (pbf, mvt, etc.) et n’ont pas de rendu image sans application d’un style (fichier de style Mapbox GL, etc.)...
 
 Usage
 
@@ -50,10 +52,10 @@ Résultats: ... vignettes générées, ... échecs
 
 ## entreeCarto
 
+> Ajouter les thumbnails extraits dans le fichier JSON : `entreeCarto.json`
+
 Usage
 
 ```bash
-python3 thumbnails.py
+python3 thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
 ```
-
-Ajoute les thumbnails dans le fichier JSON : `extractor/entreeCarto-test.json`
