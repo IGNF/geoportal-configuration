@@ -67,7 +67,8 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
         "producer": [],
         "thematic": [],
         "thumbnail": "",
-        "base": False
+        "base": False,
+        "title": ""
     }
     def ensure_list(value):
         if value is None:
@@ -90,6 +91,9 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
         props["thumbnail"] = merged_item["thumbnail"]
     if 'base' in merged_item:
         props["base"] = merged_item["base"]
+    if 'title' in merged_item:
+        props["title"] = merged_item["title"]
+        
     layer.update({k: v for k, v in props.items()})
     if verbose:
         print(f" --> layer : {layer['name']} : merged edito infos : {props} ")
