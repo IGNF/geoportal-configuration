@@ -71,7 +71,7 @@ class GenerateEntreeCarto:
                     # en particulier "theme", "producers" et "thumbnail"
                     mtd_urls_layers = searchMtdUrls(layers_name, service, verbose=verbose)
                     if mtd_urls_layers:
-                        data = merge_service_de_recherche_infos(mtd_urls_layers, data)
+                        data = merge_service_de_recherche_infos(mtd_urls_layers, data, verbose=verbose)
                     if verbose:
                         print(f" --> Couches traitées : {counter} / {len(data['layers'])} ")
                     layers_name = ""
@@ -81,7 +81,7 @@ class GenerateEntreeCarto:
             if layers_name:
                 mtd_urls_layers = searchMtdUrls(layers_name, service, verbose=verbose)
                 if mtd_urls_layers:
-                    data = merge_service_de_recherche_infos(mtd_urls_layers, data)
+                    data = merge_service_de_recherche_infos(mtd_urls_layers, data, verbose=verbose)
                 if verbose:
                     print(f" --> Couches traitées : {counter - 1} / {len(data['layers'])} ")
                 layers_name = ""
