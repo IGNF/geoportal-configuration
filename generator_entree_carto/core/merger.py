@@ -34,7 +34,13 @@ def merge_layer_infos(layer, merged_item, verbose=False):
     # Recherche de la vignette dans les métadonnées
     # Si une vignette est disponible et valide dans le fichier edito.json, 
     # elle a priorité sur celle des métadonnées
-    layerThumbnail = next((u for u in (get_valid_thumbnail_from_mtd(url, 360, 360, verbose=verbose) for url in merged_item["metadata_urls"]) if u), None)
+    layerThumbnail = None
+    for url in merged_item["metadata_urls"]:
+        thumbnail = get_valid_thumbnail_from_mtd(url, 360, 360, verbose=verbose)
+        if thumbnail is not None:
+            layerThumbnail = thumbnail
+            break  # On s'arrête dès qu'on trouve une vignette valide
+    
     if layerThumbnail:
         props["thumbnail"] = layerThumbnail
     if 'thumbnail' in merged_item:
@@ -50,7 +56,7 @@ def merge_layer_infos(layer, merged_item, verbose=False):
         props["producer"] = merged_item["producers"]
     if 'metadata_urls' in merged_item:
         props["metadata_urls"] = merged_item["metadata_urls"]
-    layer.update({k: v for k, v in props.items()})
+    layer.update(props)
     if verbose:
         print(f" --> layer : {layer['name']} : merged infos : {props} ")
 
@@ -83,21 +89,32 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
         props["thematic"] = list({
             v.strip() for v in ensure_list(merged_item["thematic"]) if v and v.strip()
         })
+    elif "thematic" in layer:
+        props["thematic"] = ensure_list(layer["thematic"])
+        
     if 'producer' in merged_item:
         props["producer"] = list({
             v.strip() for v in ensure_list(merged_item["producer"]) if v and v.strip()
         })
-    if 'thumbnail' in merged_item:
+    elif "producer" in layer:
+        props["producer"] = ensure_list(layer["producer"])
+    
+    if 'thumbnail' in merged_item and merged_item['thumbnail']:
         props["thumbnail"] = merged_item["thumbnail"]
+    elif "thumbnail" in layer:
+        props["thumbnail"] = layer["thumbnail"]
+        
     if 'base' in merged_item:
         props["base"] = merged_item["base"]
+    elif 'base' in layer:
+        props["base"] = layer["base"]
     
-    # Priorité au titre s'il existe avant d'utiliser la surcharge editoriale
-    props["title"] = layer["title"]
-    if 'title' in merged_item:
+    if 'title' in merged_item and merged_item['title']:
         props["title"] = merged_item["title"]
-        
-    layer.update({k: v for k, v in props.items()})
+    elif "title" in layer:
+        props["title"] = layer["title"]
+    
+    layer.update(props)
     if verbose:
         print(f" --> layer : {layer['name']} : merged edito infos : {props} ")
 
