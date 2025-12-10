@@ -82,6 +82,9 @@ def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
             Boolean : True si une image valide est trouvée, False sinon
     """
     if (mtd_url and "csw?" in mtd_url):
+        if verbose:
+            print(f" --> Récupération des métadonnées depuis : {mtd_url} ")
+
         mtd_xml = getMetadata(mtd_url)
         root = ET.fromstring(mtd_xml)  # ou ET.fromstring(xml_string)
         # Définir les namespaces
@@ -92,9 +95,15 @@ def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
 
         # Récupérer toutes les valeurs de fileName/CharacterString dans graphicOverview
         urls = root.findall(".//gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString", ns)
+        if not urls:
+            if verbose:
+                print(" --> Aucune miniature trouvée dans les métadonnées. ")
+            return None
         for url in urls:
             image = get_image_dimensions(url.text)
             if image and image['width'] <= max_width and image['height'] <= max_height:
+                if verbose:
+                    print(f" --> miniature valide (dimensions : {image['width']}x{image['height']}) : {url.text} ")
                 return url.text
             else:
                 if verbose:
