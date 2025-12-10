@@ -70,6 +70,29 @@ def get_image_dimensions(url: str):
 
     raise Exception("Format non reconnu ou non supporté")
 
+def find_elements_by_local_name(root, path_parts):
+    """Recherche des éléments en ignorant les namespaces"""
+    results = []
+    
+    def get_local_name(tag):
+        return tag.split('}')[-1] if '}' in tag else tag
+    
+    def search_recursive(element, remaining_path):
+        if not remaining_path:
+            results.append(element)
+            return
+        
+        target = remaining_path[0]
+        for child in element:
+            if get_local_name(child.tag) == target:
+                search_recursive(child, remaining_path[1:])
+    
+    for elem in root.iter():
+        if get_local_name(elem.tag) == path_parts[0]:
+            search_recursive(elem, path_parts[1:])
+    
+    return results
+
 def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
     """
         Fonction pour obtenir une miniature valide
@@ -87,26 +110,27 @@ def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
 
         mtd_xml = getMetadata(mtd_url)
         root = ET.fromstring(mtd_xml)  # ou ET.fromstring(xml_string)
-        # Définir les namespaces
-        ns = {
-            "gmd": "http://www.isotc211.org/2005/gmd",
-            "gco": "http://www.isotc211.org/2005/gco"
-        }
-
-        # Récupérer toutes les valeurs de fileName/CharacterString dans graphicOverview
-        urls = root.findall(".//gmd:graphicOverview/gmd:MD_BrowseGraphic/gmd:fileName/gco:CharacterString", ns)
-        if not urls:
+        
+        # Recherche sans namespace
+        path_parts = ["graphicOverview", "MD_BrowseGraphic", "fileName", "CharacterString"]
+        url_elements = find_elements_by_local_name(root, path_parts)
+        
+        if not url_elements:
             if verbose:
-                print(" --> Aucune miniature trouvée dans les métadonnées. ")
+                print(" --> Aucune miniature trouvée dans les métadonnées (XPath). ")
             return None
-        for url in urls:
-            image = get_image_dimensions(url.text)
-            if image and image['width'] <= max_width and image['height'] <= max_height:
-                if verbose:
-                    print(f" --> miniature valide (dimensions : {image['width']}x{image['height']}) : {url.text} ")
-                return url.text
-            else:
-                if verbose:
-                    print(f" --> miniature non valide (dimensions : {image['width']}x{image['height']}) : {url.text} ")
-                return None
+        
+        for url_elem in url_elements:
+            if url_elem.text:
+                image = get_image_dimensions(url_elem.text)
+                if image and image['width'] <= max_width and image['height'] <= max_height:
+                    if verbose:
+                        print(f" --> miniature valide (dimensions : {image['width']}x{image['height']}) : {url_elem.text} ")
+                    return url_elem.text
+                else:
+                    if verbose:
+                        print(f" --> miniature non valide (dimensions : {image['width']}x{image['height']}) : {url_elem.text} ")
+                    return None
+        if verbose:
+            print(f" --> Aucune miniature valide trouvée dans les métadonnées depuis : {mtd_url} ")
     return None
