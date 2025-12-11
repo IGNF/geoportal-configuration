@@ -40,11 +40,11 @@
         "IGNF_LIDAR-HD_TA:mnh-bloc$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mns-bloc$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnt-bloc$GEOPORTAIL:OGC:WFS",
-        "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS",
         "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnh-dalle$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mns-dalle$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_TA:mnt-dalle$GEOPORTAIL:OGC:WFS",
+        "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS",
         "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS"
@@ -3383,34 +3383,6 @@
       "legends": [],
       "formats": []
     },
-    "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS": {
-      "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc",
-      "title": "Blocs Nuages de points",
-      "description": "Blocs Nuages de points LIDARHD",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS": {
       "name": "ELEVATION.CONTOUR.LINE:courbe",
       "title": "Courbes de niveau",
@@ -3523,9 +3495,37 @@
       "legends": [],
       "formats": []
     },
+    "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc",
+      "title": "LiDAR HD – Blocs Nuages de points",
+      "description": "Blocs Nuages de points LIDARHD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS": {
       "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle",
-      "title": "Dalles Nuages de points",
+      "title": "LiDAR HD – Dalles Nuages de points",
       "description": "Dalles Nuages de points LIDARHD",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
