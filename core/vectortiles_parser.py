@@ -35,6 +35,7 @@ def parseVectorTiles(tileMaps, key, referer):
             continue
         metadata = json.loads(response.text)
 
+        metadatas = []
         styles = []
         response = requests.get(tileMap["@href"], headers={'Referer': referer})
         if response.status_code == 200:
@@ -47,11 +48,21 @@ def parseVectorTiles(tileMaps, key, referer):
                     responseText["Metadata"] = [responseText["Metadata"]]
                 styles = filter(lambda metadata : metadata["@type"] == "Other" and metadata["@mime-type"] == "application/json", responseText["Metadata"])
                 styles = list(styles)
+                metadatas = list(responseText["Metadata"])
             except KeyError:
                 styles = []
+                metadatas = []
         if len(styles) == 0 :
             continue
 
+        finalMetadatas = []
+        for meta in metadatas:
+            finalMetadatas.append({
+                "name": meta["@href"].split("/")[-1].split(".")[0],
+                "title": meta["@href"].split("/")[-1].split(".")[0],
+                "url": meta["@href"]
+                })
+        
         finalStyles = []
         current = True
         for style in styles:
@@ -84,6 +95,7 @@ def parseVectorTiles(tileMaps, key, referer):
                     "name": "application/x-protobuf"
                 }
             ],
+            "metadata": finalMetadatas,
             "styles": finalStyles,
             "globalConstraint": {
                 "crs": "EPSG:3857",
