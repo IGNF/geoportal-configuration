@@ -100,6 +100,32 @@ def _parseLayer(layer, all_tms, key):
         tile_matrix_set_limit["maxTileCol"] = tile_matrix["MaxTileCol"]
         layer_config["wmtsOptions"]["tileMatrixSetLimits"][tile_matrix["TileMatrix"]] = tile_matrix_set_limit
 
+    layer_config["metadata"] = []
+    if "ows:Metadata" in layer:
+        metadata_items = layer["ows:Metadata"]
+        # Si c'est un seul élément, le transformer en liste
+        if not isinstance(metadata_items, list):
+            metadata_items = [metadata_items]
+        
+        # Extraire toutes les URLs des métadonnées
+        for metadata in metadata_items:
+            if "@xlink:href" in metadata:
+                url = metadata["@xlink:href"]
+                # Déterminer le format à partir de l'extension de l'URL
+                if url.endswith('.xml'):
+                    format_type = "text/xml"
+                elif url.endswith('.html') or url.endswith('.htm'):
+                    format_type = "text/html"
+                elif url.endswith('.json'):
+                    format_type = "application/json"
+                else:
+                    format_type = metadata.get("@format", "")
+                
+                layer_config["metadata"].append({
+                    "url": url,
+                    "format": format_type
+                })
+    
     layer_config["styles"] = []
     layer_config["legends"] = []
 
