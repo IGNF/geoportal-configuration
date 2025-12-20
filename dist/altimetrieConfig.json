@@ -38,8 +38,8 @@
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
-        "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS",
         "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS",
+        "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS",
         "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS",
         "ISOHYPSE$GEOPORTAIL:GPP:TMS"
@@ -1894,11 +1894,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MNT-LIDAR-HD",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MNT-LIDAR-HD",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD",
           "format": ""
         }
       ],
@@ -3376,34 +3376,6 @@
         }
       ]
     },
-    "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS": {
-      "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc",
-      "title": "Blocs Nuages de points",
-      "description": "Blocs Nuages de points LIDARHD",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS": {
       "name": "ELEVATION.CONTOUR.LINE:courbe",
       "title": "Courbes de niveau",
@@ -3432,9 +3404,37 @@
       "legends": [],
       "formats": []
     },
+    "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:bloc",
+      "title": "LiDAR HD – Blocs Nuages de points",
+      "description": "Blocs Nuages de points LIDARHD",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "altimetrie": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle$GEOPORTAIL:OGC:WFS": {
       "name": "IGNF_NUAGES-DE-POINTS-LIDAR-HD:dalle",
-      "title": "Dalles Nuages de points",
+      "title": "LiDAR HD – Dalles Nuages de points",
       "description": "Dalles Nuages de points LIDARHD",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
@@ -3509,28 +3509,28 @@
       ],
       "metadata": [
         {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_monochrome_marron",
           "title": "isohypse_monochrome_marron",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         }
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_monochrome_marron",
           "title": "isohypse_monochrome_marron",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         }
       ],
       "globalConstraint": {
