@@ -931,7 +931,7 @@
     "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST$GEOPORTAIL:OGC:WMTS": {
       "name": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
       "title": "Points de repère routiers (PR)",
-      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine. Echelles du 1/8.000.000 au 1/8.000; Edition : 2025-09-15",
+      "description": "Ensemble des points de repère situés sur les routes départementales, nationales ou infrastructures autoroutières concédées de France métropolitaine. Echelles du 1/8.000.000 au 1/8.000; Edition : 2025-12-15",
       "globalConstraint": {
         "maxScaleDenominator": 2183915.0938621787,
         "minScaleDenominator": 2132.7295838497826,
@@ -2448,8 +2448,8 @@
     },
     "BDTOPO-GEOPO-BATI_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
       "name": "BDTOPO-GEOPO-BATI_WLD_WGS84G",
-      "title": "BDTopo Bâtiment édition 2025-09-15",
-      "description": "BDTopo thème Bâtiment édition 2025-09-15",
+      "title": "BDTopo Bâtiment édition 2025-12-15",
+      "description": "BDTopo thème Bâtiment édition 2025-12-15",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -2571,8 +2571,8 @@
     },
     "BDTOPO-GEOPO-HYDROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
       "name": "BDTOPO-GEOPO-HYDROGRAPHIE_WLD_WGS84G",
-      "title": "BDTopo Hydrographie édition 2025-09-15",
-      "description": "BDTopo thème Hydrographie édition 2025-09-15",
+      "title": "BDTopo Hydrographie édition 2025-12-15",
+      "description": "BDTopo thème Hydrographie édition 2025-12-15",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -2694,8 +2694,8 @@
     },
     "BDTOPO-GEOPO-OROGRAPHIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
       "name": "BDTOPO-GEOPO-OROGRAPHIE_WLD_WGS84G",
-      "title": "BDTopo Orographie édition 2025-09-15",
-      "description": "BDTopo thème Orographie édition 2025-09-15",
+      "title": "BDTopo Orographie édition 2025-12-15",
+      "description": "BDTopo thème Orographie édition 2025-12-15",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -2817,8 +2817,8 @@
     },
     "BDTOPO-GEOPO-RESEAU_ROUTIER_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
       "name": "BDTOPO-GEOPO-RESEAU_ROUTIER_WLD_WGS84G",
-      "title": "BDTopo Réseau routier édition 2025-09-15",
-      "description": "BDTopo thème Réseau routier édition 2025-09-15",
+      "title": "BDTopo Réseau routier édition 2025-12-15",
+      "description": "BDTopo thème Réseau routier édition 2025-12-15",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -2940,8 +2940,8 @@
     },
     "BDTOPO-GEOPO-TRANSPORT_ENERGIE_WLD_WGS84G$GEOPORTAIL:OGC:WMS": {
       "name": "BDTOPO-GEOPO-TRANSPORT_ENERGIE_WLD_WGS84G",
-      "title": "BDTopo Réseau de transport d'énergie édition 2025-09-15",
-      "description": "BDTopo thème Réseau de transport d'énergie édition 2025-09-15",
+      "title": "BDTopo Réseau de transport d'énergie édition 2025-12-15",
+      "description": "BDTopo thème Réseau de transport d'énergie édition 2025-12-15",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -7039,14 +7039,39 @@
           "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-TOPO"
         },
         {
-          "name": "bati_date",
-          "title": "bati_date",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+          "name": "routier",
+          "title": "routier",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
           "name": "delestage",
           "title": "delestage",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
+        },
+        {
+          "name": "classique",
+          "title": "classique",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+        },
+        {
+          "name": "bati_etages",
+          "title": "bati_etages",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
+        },
+        {
+          "name": "bati_date",
+          "title": "bati_date",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+        },
+        {
+          "name": "hydrographie",
+          "title": "hydrographie",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
+        },
+        {
+          "name": "classique_simplifiee",
+          "title": "classique_simplifiee",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         },
         {
           "name": "2",
@@ -7057,39 +7082,14 @@
           "name": "bati",
           "title": "bati",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
-        },
-        {
-          "name": "bati_etages",
-          "title": "bati_etages",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
-        },
-        {
-          "name": "routier",
-          "title": "routier",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
-        },
-        {
-          "name": "hydrographie",
-          "title": "hydrographie",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/hydrographie.json"
-        },
-        {
-          "name": "classique_simplifiee",
-          "title": "classique_simplifiee",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
         }
       ],
       "styles": [
         {
-          "name": "bati_date",
-          "title": "bati_date",
+          "name": "routier",
+          "title": "routier",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
         },
         {
           "name": "delestage",
@@ -7098,10 +7098,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/delestage.json"
         },
         {
-          "name": "bati",
-          "title": "bati",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
         },
         {
           "name": "bati_etages",
@@ -7110,16 +7110,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_etages.json"
         },
         {
-          "name": "routier",
-          "title": "routier",
+          "name": "bati_date",
+          "title": "bati_date",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/routier.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati_date.json"
         },
         {
           "name": "hydrographie",
@@ -7132,6 +7126,12 @@
           "title": "classique_simplifiee",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/classique_simplifiee.json"
+        },
+        {
+          "name": "bati",
+          "title": "bati",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDTOPO/bati.json"
         }
       ],
       "globalConstraint": {
