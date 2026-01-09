@@ -33,6 +33,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS2024$GEOPORTAIL:OGC:WMS",
         "PCRS.LAMB93$GEOPORTAIL:OGC:WMS",
         "THR.ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
+        "GRAPHE.PCRS.ANCT$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOS.RESTRICTEDAREAS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE:graphe_bdortho$GEOPORTAIL:OGC:WFS"
@@ -439,11 +440,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-ORTHO",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=IGNF_BD-ORTHO",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=IGNF_BD-ORTHO",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-ORTHO",
           "format": ""
         }
       ],
@@ -3394,6 +3395,129 @@
         },
         {
           "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "GRAPHE.PCRS.ANCT$GEOPORTAIL:OGC:WMS": {
+      "name": "GRAPHE.PCRS.ANCT",
+      "title": "Graphe PCRS ANCT",
+      "description": "Graphe PCRS ANCT",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -3.85125,
+          "right": 8.008125,
+          "top": 51.2346875,
+          "bottom": 42.61390625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "ortho": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [],
+      "styles": [
+        {
+          "name": "default-style-GRAPHE.PCRS.ANCT",
+          "title": "GRAPHE.PCRS.ANCT style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=GRAPHE.PCRS.ANCT"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
