@@ -19,7 +19,7 @@ class UpdateThumbnails:
         # Ajouter le champ thumbnail
         for layer in data.get("layers", {}).values():
             thumb = self.find_thumbnail(layer.get("name", ""), verbose=verbose)
-            if thumb is not None:
+            if thumb is not None and layer.get("thumbnail", "") == "":
                 layer["thumbnail"] = thumb
 
         # Sauvegarder le JSON modifié dans un nouveau fichier
