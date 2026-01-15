@@ -20,9 +20,10 @@ def filter_layers(layers_dict, verbose=False):
         # Vérifie la projection
         projection = layer.get("defaultProjection", "")
         if "IGNF:LAMB93" in projection or "EPSG:2154" in projection:
-            if verbose:
-                print(f"Exclusion {layer_id} : projection {projection}")
-            continue
+            if "WMS" not in layer.get("serviceParams", {}).get("id", ""):
+                if verbose:
+                    print(f"Exclusion {layer_id} : projection {projection}")
+                continue
 
         # Vérifie le type de service
         service_params = layer.get("serviceParams", {})
