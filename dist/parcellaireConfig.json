@@ -28,9 +28,14 @@
         "BDPARCELLAIRE-VECTEUR_WLD_BDD_WGS84G:localisant$GEOPORTAIL:OGC:WFS",
         "BDPARCELLAIRE-VECTEUR_WLD_BDD_WGS84G:parcelle$GEOPORTAIL:OGC:WFS",
         "AOC-VITICOLES:aire_parcellaire$GEOPORTAIL:OGC:WFS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:arrondissement$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_limite_propriete$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:batiment$GEOPORTAIL:OGC:WFS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:commune$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:feuille$GEOPORTAIL:OGC:WFS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_parcelle$GEOPORTAIL:OGC:WFS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:localisant$GEOPORTAIL:OGC:WFS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:subdivision_fiscale$GEOPORTAIL:OGC:WFS",
         "PCI$GEOPORTAIL:GPP:TMS"
       ]
@@ -484,11 +489,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-PARCELLAIRE",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-PARCELLAIRE",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-PARCELLAIRE",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-PARCELLAIRE",
           "format": ""
         }
       ],
@@ -1731,7 +1736,7 @@
     "parcellaire_express_batiment_noir$GEOPORTAIL:OGC:WMS": {
       "name": "parcellaire_express_batiment_noir",
       "title": "Parcellaire Express bâtiment noir",
-      "description": "Parcellaire cadastral édition : 2025-09-01",
+      "description": "Parcellaire cadastral édition : 2025-12-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -1854,7 +1859,7 @@
     "parcellaire_express_batiment_orange$GEOPORTAIL:OGC:WMS": {
       "name": "parcellaire_express_batiment_orange",
       "title": "Parcellaire Express bâtiment orange",
-      "description": "Parcellaire cadastral édition : 2025-09-01",
+      "description": "Parcellaire cadastral édition : 2025-12-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -1977,7 +1982,7 @@
     "parcellaire_express_numero$GEOPORTAIL:OGC:WMS": {
       "name": "parcellaire_express_numero",
       "title": "Parcellaire Express numéro",
-      "description": "Parcellaire cadastral édition : 2025-09-01",
+      "description": "Parcellaire cadastral édition : 2025-12-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -2100,7 +2105,7 @@
     "parcellaire_express_parcelle_noir$GEOPORTAIL:OGC:WMS": {
       "name": "parcellaire_express_parcelle_noir",
       "title": "Parcellaire Express parcelle noir",
-      "description": "Parcellaire cadastral édition : 2025-09-01",
+      "description": "Parcellaire cadastral édition : 2025-12-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -2223,7 +2228,7 @@
     "parcellaire_express_parcelle_orange$GEOPORTAIL:OGC:WMS": {
       "name": "parcellaire_express_parcelle_orange",
       "title": "Parcellaire Express parcelle orange",
-      "description": "Parcellaire cadastral édition : 2025-09-01",
+      "description": "Parcellaire cadastral édition : 2025-12-01",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
@@ -2539,6 +2544,34 @@
       "legends": [],
       "formats": []
     },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:arrondissement$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:arrondissement",
+      "title": "PCI Vecteur : Arrondissements",
+      "description": "Arrondissements",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_limite_propriete$GEOPORTAIL:OGC:WFS": {
       "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_limite_propriete",
       "title": "PCI Vecteur : Bornes de limite de propriété",
@@ -2595,10 +2628,122 @@
       "legends": [],
       "formats": []
     },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:commune$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:commune",
+      "title": "PCI Vecteur : Communes",
+      "description": "Communes",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:feuille$GEOPORTAIL:OGC:WFS": {
       "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:feuille",
       "title": "PCI Vecteur : Feuilles",
       "description": "Feuilles",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_parcelle$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_parcelle",
+      "title": "PCI Vecteur : Lien bornes parcelles",
+      "description": "Lien bornes parcelles",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:localisant$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:localisant",
+      "title": "PCI Vecteur : Localisants",
+      "description": "Localisants",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle",
+      "title": "PCI Vecteur : Parcelles",
+      "description": "Parcelles",
       "globalConstraint": {
         "minScaleDenominator": 0.0,
         "maxScaleDenominator": 62236752975597,
