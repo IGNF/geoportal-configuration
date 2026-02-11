@@ -4269,10 +4269,10 @@
     },
     "POTENTIEL.SOLAIRE.PARKING500$GEOPORTAIL:OGC:WMTS": {
       "name": "POTENTIEL.SOLAIRE.PARKING500",
-      "title": "Unités foncières contenant des surfaces de stationnement non couvertes de plus de 500m² (données déclaratives)",
-      "description": "Unités foncières contenant des surfaces de stationnement non couvertes de plus de 500m² (données déclaratives)",
+      "title": "Unités foncières contenant des surfaces de stationnement non couvertes de plus de 500m² - multi-géométrie",
+      "description": "Unités foncières contenant des surfaces de stationnement non couvertes de plus de 500m² - multi-géométrie",
       "globalConstraint": {
-        "maxScaleDenominator": 8735660.375448715,
+        "maxScaleDenominator": 34942641.50179486,
         "minScaleDenominator": 8530.918335399145,
         "bbox": {
           "left": -63.3725,
@@ -4290,8 +4290,20 @@
       },
       "defaultProjection": "EPSG:3857",
       "wmtsOptions": {
-        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLink": "PM_4_16",
         "tileMatrixSetLimits": {
+          "4": {
+            "minTileRow": "5",
+            "maxTileRow": "8",
+            "minTileCol": "5",
+            "maxTileCol": "10"
+          },
+          "5": {
+            "minTileRow": "10",
+            "maxTileRow": "17",
+            "minTileCol": "10",
+            "maxTileCol": "20"
+          },
           "6": {
             "minTileRow": "21",
             "maxTileRow": "35",
