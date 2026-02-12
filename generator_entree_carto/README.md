@@ -3,7 +3,7 @@
 Usage
 
 ```bash
-python3 generator_entree_carto/entree-carto.py --input=dist/customConfig.json --output=entreeCarto_tmp.json 
+python3 generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto_tmp.json 
 ```
 
 On peut limiter les données à generer via le paramètre `count` :
