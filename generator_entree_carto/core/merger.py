@@ -65,7 +65,7 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
     Fusionne les métadonnées d'un élément merged_item dans le dictionnaire layer.
     Args:
         layer (dict): Dictionnaire à mettre à jour
-        merged_item (dict): Dictionnaire avec les métadonnées à fusionner
+        merged_item (dict): Dictionnaire avec les infos éditoriales à fusionner
     Returns:
         None: Le dictionnaire layer est mis à jour en place
     """
@@ -74,7 +74,8 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
         "thematic": [],
         "thumbnail": "",
         "base": False,
-        "title": ""
+        "title": "",
+        "globalConstraint": {}
     }
     def ensure_list(value):
         if value is None:
@@ -113,6 +114,10 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
         props["title"] = merged_item["title"]
     elif "title" in layer:
         props["title"] = layer["title"]
+    if 'globalConstraint' in merged_item :
+        props["globalConstraint"] = merged_item["globalConstraint"]
+    elif 'globalConstraint' in layer:
+        props["globalConstraint"] = layer["globalConstraint"]
     
     layer.update(props)
     if verbose:
