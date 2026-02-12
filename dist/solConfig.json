@@ -8,23 +8,13 @@
         "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMTS",
         "IGNF_COSIA_2024-2026$GEOPORTAIL:OGC:WMTS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMTS",
+        "PARCS-ET-JARDINS.2021-2023$GEOPORTAIL:OGC:WMTS",
         "BDCARTO_ETAT-MAJOR.NIVEAU3$GEOPORTAIL:OGC:WMS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4$GEOPORTAIL:OGC:WMS",
         "IGNF_COSIA_2017-2020$GEOPORTAIL:OGC:WMS",
         "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMS",
         "IGNF_COSIA_2024-2026$GEOPORTAIL:OGC:WMS",
         "INRA.CARTE.SOLS$GEOPORTAIL:OGC:WMS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:a_2_surface_administrative$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:b_2_troncon_de_voie_ferree$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:b_3_troncon_de_cours_d_eau$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_1_ocs_ancien$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_2_ocs_ancien_sans_bati$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_1_batiment$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_2_batiment_hors_zone_urbaine$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_3_zone_urbaine$GEOPORTAIL:OGC:WFS",
-        "BDCARTO_ETAT-MAJOR.NIVEAU3:z_1_chantier$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4:a_1_limite_administrative$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4:a_2_surface_administrative$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS",
@@ -36,6 +26,17 @@
         "BDCARTO_ETAT-MAJOR.NIVEAU4:c_2_2_batiment_hors_zone_urbaine$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4:c_3_zone_urbaine$GEOPORTAIL:OGC:WFS",
         "BDCARTO_ETAT-MAJOR.NIVEAU4:z_1_chantier$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:a_2_surface_administrative$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:b_2_troncon_de_voie_ferree$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:b_3_troncon_de_cours_d_eau$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_1_ocs_ancien$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_2_ocs_ancien_sans_bati$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_1_batiment$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_2_batiment_hors_zone_urbaine$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:c_3_zone_urbaine$GEOPORTAIL:OGC:WFS",
+        "BDCARTO_ETAT-MAJOR.NIVEAU3:z_1_chantier$GEOPORTAIL:OGC:WFS",
         "INRA.CARTE.SOLS:geoportail_vf$GEOPORTAIL:OGC:WFS"
       ]
     }
@@ -136,11 +137,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-CARTO-EM",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO-EM",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO-EM",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-CARTO-EM",
           "format": ""
         }
       ],
@@ -818,6 +819,131 @@
         }
       ]
     },
+    "PARCS-ET-JARDINS.2021-2023$GEOPORTAIL:OGC:WMTS": {
+      "name": "PARCS-ET-JARDINS.2021-2023",
+      "title": "PARCS-JARDINS 2021-2023",
+      "description": "Base de donnée regroupant les parcs, jardins, squares publics aménagés à caractère de loisir accessibles au public.",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 8530.918335399145,
+        "bbox": {
+          "left": -5.1505,
+          "right": 9.5705,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_16",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          }
+        }
+      },
+      "metadata": [
+        {
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PARCS-JARDINS-PUBLICS-OUVERTS-PUBLIC",
+          "format": ""
+        },
+        {
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PARCS-JARDINS-PUBLICS-OUVERTS-PUBLIC",
+          "format": ""
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données brutes",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
+          "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
     "BDCARTO_ETAT-MAJOR.NIVEAU3$GEOPORTAIL:OGC:WMS": {
       "name": "BDCARTO_ETAT-MAJOR.NIVEAU3",
       "title": "BD CARTO Etat-major N3",
@@ -1174,12 +1300,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=INRAE_CARTE-DES-SOLS"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/INRAE_CARTE-DES-SOLS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=INRAE_CARTE-DES-SOLS"
         }
       ],
       "styles": [
@@ -1216,314 +1342,6 @@
           "current": false
         }
       ]
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:a_2_surface_administrative$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:a_2_surface_administrative",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:b_1_troncon_de_route",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:b_2_troncon_de_voie_ferree$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:b_2_troncon_de_voie_ferree",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:b_3_troncon_de_cours_d_eau$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:b_3_troncon_de_cours_d_eau",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_1_ocs_ancien$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_1_ocs_ancien",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_2_ocs_ancien_sans_bati$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_2_ocs_ancien_sans_bati",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_1_batiment$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_1_batiment",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_2_batiment_hors_zone_urbaine$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_2_batiment_hors_zone_urbaine",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_3_zone_urbaine$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_3_zone_urbaine",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "BDCARTO_ETAT-MAJOR.NIVEAU3:z_1_chantier$GEOPORTAIL:OGC:WFS": {
-      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:z_1_chantier",
-      "title": "BD CARTO Etat-major",
-      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -5.74875,
-          "right": 10.0,
-          "top": 52.0,
-          "bottom": 41.0
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "sol": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2154",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
     },
     "BDCARTO_ETAT-MAJOR.NIVEAU4:a_1_limite_administrative$GEOPORTAIL:OGC:WFS": {
       "name": "BDCARTO_ETAT-MAJOR.NIVEAU4:a_1_limite_administrative",
@@ -1814,6 +1632,314 @@
         "maxScaleDenominator": 62236752975597,
         "bbox": {
           "left": -5.5,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:a_1_limite_administrative",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:a_2_surface_administrative$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:a_2_surface_administrative",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:b_1_troncon_de_route$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:b_1_troncon_de_route",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:b_2_troncon_de_voie_ferree$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:b_2_troncon_de_voie_ferree",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:b_3_troncon_de_cours_d_eau$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:b_3_troncon_de_cours_d_eau",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_1_ocs_ancien$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_1_ocs_ancien",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_2_ocs_ancien_sans_bati$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_1_2_ocs_ancien_sans_bati",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_1_batiment$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_1_batiment",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_2_batiment_hors_zone_urbaine$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_2_2_batiment_hors_zone_urbaine",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:c_3_zone_urbaine$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:c_3_zone_urbaine",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
+          "right": 10.0,
+          "top": 52.0,
+          "bottom": 41.0
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "sol": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "BDCARTO_ETAT-MAJOR.NIVEAU3:z_1_chantier$GEOPORTAIL:OGC:WFS": {
+      "name": "BDCARTO_ETAT-MAJOR.NIVEAU3:z_1_chantier",
+      "title": "BD CARTO Etat-major",
+      "description": "Représentation de l'occupation du sol de la France métropolitaine au 19e siècle. La production des données est réalisée à partir des cartes d'Etat-major, élaborées entre 1825 et 1866. Elle est complétée par des mises à jour partielles (ajout des voies de chemin de fer notamment) jusqu'en 1889. Seul le niveau 3 de géoréférencement de niveau 3 est visible sur le site Géoportail. Il existe un géoréférencement de niveau 4 de meilleure qualité disponible. Source : IGN",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -5.74875,
           "right": 10.0,
           "top": 52.0,
           "bottom": 41.0
@@ -6359,6 +6485,130 @@
         }
       }
     },
+    "PM_10_18": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "152.8740565703525",
+        "76.43702828517624",
+        "38.21851414258813",
+        "19.10925707129406",
+        "9.554628535647032",
+        "4.777314267823516",
+        "2.388657133911758",
+        "1.194328566955879",
+        "0.5971642834779395"
+      ],
+      "tileMatrices": {
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655464,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277217,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638608,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319322,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.673341596535,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497826,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
     "PM_12_16": {
       "projection": "EPSG:3857",
       "nativeResolutions": [
@@ -6636,6 +6886,65 @@
             "y": 20037508.3427892
           }
         },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497826,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "PM_15_18": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "4.777314267823516",
+        "2.388657133911758",
+        "1.194328566955879",
+        "0.5971642834779395"
+      ],
+      "tileMatrices": {
         "15": {
           "matrixId": "15",
           "matrixHeight": 32768,
@@ -7479,6 +7788,397 @@
           "matrixHeight": 131072,
           "matrixWidth": 131072,
           "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "PM_3_18": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "19567.87924100512",
+        "9783.939620502561",
+        "4891.969810251280",
+        "2445.984905125640",
+        "1222.992452562820",
+        "611.4962262814100",
+        "305.7481131407048",
+        "152.8740565703525",
+        "76.43702828517624",
+        "38.21851414258813",
+        "19.10925707129406",
+        "9.554628535647032",
+        "4.777314267823516",
+        "2.388657133911758",
+        "1.194328566955879",
+        "0.5971642834779395"
+      ],
+      "tileMatrices": {
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 8,
+          "matrixWidth": 8,
+          "scaleDenominator": 69885283.00358965,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655464,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277217,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638608,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319322,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.673341596535,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497826,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "PM_4_16": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "9783.939620502561",
+        "4891.969810251280",
+        "2445.984905125640",
+        "1222.992452562820",
+        "611.4962262814100",
+        "305.7481131407048",
+        "152.8740565703525",
+        "76.43702828517624",
+        "38.21851414258813",
+        "19.10925707129406",
+        "9.554628535647032",
+        "4.777314267823516",
+        "2.388657133911758"
+      ],
+      "tileMatrices": {
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655464,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277217,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638608,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319322,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.673341596535,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
           "tileHeight": 256,
           "tileWidth": 256,
           "topLeftCorner": {
@@ -8988,6 +9688,423 @@
         }
       }
     },
+    "PM_6_20": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "2445.984905125640",
+        "1222.992452562820",
+        "611.4962262814100",
+        "305.7481131407048",
+        "152.8740565703525",
+        "76.43702828517624",
+        "38.21851414258813",
+        "19.10925707129406",
+        "9.554628535647032",
+        "4.777314267823516",
+        "2.388657133911758",
+        "1.194328566955879",
+        "0.5971642834779395",
+        "0.2985821417389697",
+        "0.1492910708694849"
+      ],
+      "tileMatrices": {
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655464,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277217,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638608,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319322,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.673341596535,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497826,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 524288,
+          "matrixWidth": 524288,
+          "scaleDenominator": 1066.364791924893,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "20": {
+          "matrixId": "20",
+          "matrixHeight": 1048576,
+          "matrixWidth": 1048576,
+          "scaleDenominator": 533.1823959624465,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
+    "PM_6_21": {
+      "projection": "EPSG:3857",
+      "nativeResolutions": [
+        "2445.984905125640",
+        "1222.992452562820",
+        "611.4962262814100",
+        "305.7481131407048",
+        "152.8740565703525",
+        "76.43702828517624",
+        "38.21851414258813",
+        "19.10925707129406",
+        "9.554628535647032",
+        "4.777314267823516",
+        "2.388657133911758",
+        "1.194328566955879",
+        "0.5971642834779395",
+        "0.2985821417389697",
+        "0.1492910708694849",
+        "0.0746455354347424"
+      ],
+      "tileMatrices": {
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655464,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277217,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638608,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "13": {
+          "matrixId": "13",
+          "matrixHeight": 8192,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319322,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "14": {
+          "matrixId": "14",
+          "matrixHeight": 16384,
+          "matrixWidth": 16384,
+          "scaleDenominator": 34123.673341596535,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "15": {
+          "matrixId": "15",
+          "matrixHeight": 32768,
+          "matrixWidth": 32768,
+          "scaleDenominator": 17061.83667079829,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "16": {
+          "matrixId": "16",
+          "matrixHeight": 65536,
+          "matrixWidth": 65536,
+          "scaleDenominator": 8530.918335399145,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "17": {
+          "matrixId": "17",
+          "matrixHeight": 131072,
+          "matrixWidth": 131072,
+          "scaleDenominator": 4265.459167699572,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "18": {
+          "matrixId": "18",
+          "matrixHeight": 262144,
+          "matrixWidth": 262144,
+          "scaleDenominator": 2132.7295838497826,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "19": {
+          "matrixId": "19",
+          "matrixHeight": 524288,
+          "matrixWidth": 524288,
+          "scaleDenominator": 1066.364791924893,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "20": {
+          "matrixId": "20",
+          "matrixHeight": 1048576,
+          "matrixWidth": 1048576,
+          "scaleDenominator": 533.1823959624465,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        },
+        "21": {
+          "matrixId": "21",
+          "matrixHeight": 2097152,
+          "matrixWidth": 2097152,
+          "scaleDenominator": 266.5911979812229,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -20037508.3427892,
+            "y": 20037508.3427892
+          }
+        }
+      }
+    },
     "PM_7_17": {
       "projection": "EPSG:3857",
       "nativeResolutions": [
@@ -10322,6 +11439,358 @@
           "matrixHeight": 16384,
           "matrixWidth": 32768,
           "scaleDenominator": 17061.836670798253,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        }
+      }
+    },
+    "WGS84G_PO": {
+      "projection": "IGNF:WGS84G",
+      "nativeResolutions": [
+        "0.703125",
+        "0.3515625",
+        "0.17578125",
+        "0.087890625",
+        "0.0439453125",
+        "0.02197265625",
+        "0.010986328125",
+        "0.0054931640625",
+        "0.00274658203125",
+        "0.001373291015625",
+        "0.0006866455078125",
+        "0.00034332275390625",
+        "0.000171661376953125"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 2,
+          "scaleDenominator": 279541132.0143589,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 2,
+          "matrixWidth": 4,
+          "scaleDenominator": 139770566.00717944,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 4,
+          "matrixWidth": 8,
+          "scaleDenominator": 69885283.00358972,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 8,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655447,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277234,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638617,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319309,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        }
+      }
+    },
+    "WGS84G_PO_0_12": {
+      "projection": "IGNF:WGS84G",
+      "nativeResolutions": [
+        "0.703125",
+        "0.3515625",
+        "0.17578125",
+        "0.087890625",
+        "0.0439453125",
+        "0.02197265625",
+        "0.010986328125",
+        "0.0054931640625",
+        "0.00274658203125",
+        "0.001373291015625",
+        "0.0006866455078125",
+        "0.00034332275390625",
+        "0.000171661376953125"
+      ],
+      "tileMatrices": {
+        "0": {
+          "matrixId": "0",
+          "matrixHeight": 1,
+          "matrixWidth": 2,
+          "scaleDenominator": 279541132.0143589,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "1": {
+          "matrixId": "1",
+          "matrixHeight": 2,
+          "matrixWidth": 4,
+          "scaleDenominator": 139770566.00717944,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "2": {
+          "matrixId": "2",
+          "matrixHeight": 4,
+          "matrixWidth": 8,
+          "scaleDenominator": 69885283.00358972,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "3": {
+          "matrixId": "3",
+          "matrixHeight": 8,
+          "matrixWidth": 16,
+          "scaleDenominator": 34942641.50179486,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "4": {
+          "matrixId": "4",
+          "matrixHeight": 16,
+          "matrixWidth": 32,
+          "scaleDenominator": 17471320.75089743,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "5": {
+          "matrixId": "5",
+          "matrixHeight": 32,
+          "matrixWidth": 64,
+          "scaleDenominator": 8735660.375448715,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "6": {
+          "matrixId": "6",
+          "matrixHeight": 64,
+          "matrixWidth": 128,
+          "scaleDenominator": 4367830.1877243575,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "7": {
+          "matrixId": "7",
+          "matrixHeight": 128,
+          "matrixWidth": 256,
+          "scaleDenominator": 2183915.0938621787,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "8": {
+          "matrixId": "8",
+          "matrixHeight": 256,
+          "matrixWidth": 512,
+          "scaleDenominator": 1091957.5469310894,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "9": {
+          "matrixId": "9",
+          "matrixHeight": 512,
+          "matrixWidth": 1024,
+          "scaleDenominator": 545978.7734655447,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "10": {
+          "matrixId": "10",
+          "matrixHeight": 1024,
+          "matrixWidth": 2048,
+          "scaleDenominator": 272989.38673277234,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "11": {
+          "matrixId": "11",
+          "matrixHeight": 2048,
+          "matrixWidth": 4096,
+          "scaleDenominator": 136494.69336638617,
+          "tileHeight": 256,
+          "tileWidth": 256,
+          "topLeftCorner": {
+            "x": -180.0,
+            "y": 90.0
+          }
+        },
+        "12": {
+          "matrixId": "12",
+          "matrixHeight": 4096,
+          "matrixWidth": 8192,
+          "scaleDenominator": 68247.34668319309,
           "tileHeight": 256,
           "tileWidth": 256,
           "topLeftCorner": {
