@@ -102,13 +102,18 @@ def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
             mtd_url (str): string URL d'une métadonnée  
 
         Returns:
-            Boolean : True si une image valide est trouvée, False sinon
+            str ou None : URL de la miniature valide, ou None si aucune n'est trouvée
     """
     if (mtd_url and "csw?" in mtd_url):
         if verbose:
             print(f" --> Récupération des métadonnées depuis : {mtd_url} ")
 
         mtd_xml = getMetadata(mtd_url)
+        if not mtd_xml or not isinstance(mtd_xml, (str, bytes)):
+            if verbose:
+                print(f" --> Impossible de récupérer les métadonnées depuis {mtd_url}")
+            return None
+
         root = ET.fromstring(mtd_xml)  # ou ET.fromstring(xml_string)
         
         # Recherche sans namespace
