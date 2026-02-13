@@ -75,7 +75,6 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
         "thumbnail": "",
         "base": False,
         "title": "",
-        "globalConstraint": {}
     }
     def ensure_list(value):
         if value is None:
@@ -114,10 +113,8 @@ def merge_layer_edito_infos(layer, merged_item, verbose=False):
         props["title"] = merged_item["title"]
     elif "title" in layer:
         props["title"] = layer["title"]
-    if 'globalConstraint' in merged_item :
-        props["globalConstraint"] = merged_item["globalConstraint"]
-    elif 'globalConstraint' in layer:
-        props["globalConstraint"] = layer["globalConstraint"]
+    if 'globalConstraint' in merged_item and 'noConstraint' in merged_item["globalConstraint"]:
+        layer["globalConstraint"].update(merged_item["globalConstraint"])
     
     layer.update(props)
     if verbose:
