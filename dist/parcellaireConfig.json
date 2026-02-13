@@ -36,7 +36,8 @@
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:borne_parcelle$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:localisant$GEOPORTAIL:OGC:WFS",
         "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
-        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:subdivision_fiscale$GEOPORTAIL:OGC:WFS"
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:subdivision_fiscale$GEOPORTAIL:OGC:WFS",
+        "PCI$GEOPORTAIL:GPP:TMS"
       ]
     }
   },
@@ -1235,12 +1236,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-PARCELLAIRE"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-PARCELLAIRE"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-PARCELLAIRE"
         }
       ],
       "styles": [
@@ -2937,6 +2938,64 @@
       "styles": [],
       "legends": [],
       "formats": []
+    },
+    "PCI$GEOPORTAIL:GPP:TMS": {
+      "hidden": true,
+      "queryable": false,
+      "serviceParams": {
+        "id": "GPP:TMS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "parcellaire": "https://data.geopf.fr/tms/1.0.0/"
+        }
+      },
+      "name": "PCI",
+      "title": "PCI",
+      "description": "La BD TOPO® contient une description vectorielle, structurée en objets, des éléments du territoire et de ses infrastructures, de précision métrique. Edition 2025-12-01",
+      "formats": [
+        {
+          "current": true,
+          "name": "application/x-protobuf"
+        }
+      ],
+      "metadata": [
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
+        },
+        {
+          "name": "pci",
+          "title": "pci",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        }
+      ],
+      "styles": [
+        {
+          "name": "noir_et_blanc",
+          "title": "noir_et_blanc",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/noir_et_blanc.json"
+        },
+        {
+          "name": "pci",
+          "title": "pci",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PCI/pci.json"
+        }
+      ],
+      "globalConstraint": {
+        "crs": "EPSG:3857",
+        "bbox": {
+          "left": -7031136.485883979,
+          "right": 6216852.822974959,
+          "top": 6638861.656508054,
+          "bottom": -2439640.6275760634
+        },
+        "minScaleDenominator": 17471320.75089743,
+        "maxScaleDenominator": 1066.364791924893
+      },
+      "defaultProjection": "EPSG:3857"
     }
   },
   "tileMatrixSets": {
