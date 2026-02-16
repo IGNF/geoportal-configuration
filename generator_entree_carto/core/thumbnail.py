@@ -4,6 +4,29 @@ import requests
 import struct
 from core.requester import getHeadRequest
 
+# Cette fonction permet de faire une requête GET partielle pour récupérer uniquement les premiers octets d'une ressource
+# notamment pour extraire les dimensions d'une image sans télécharger l'intégralité du fichier.
+def partial_get(url, max_bytes):
+    headers = {"Range": f"bytes=0-{max_bytes-1}"}
+
+    try:
+        with requests.get(url, headers=headers, stream=True, timeout=10) as resp:
+            if resp.status_code not in (200, 206):
+                raise Exception(f"HTTP {resp.status_code} lors du GET partiel")
+
+            data = b""
+            for chunk in resp.iter_content(chunk_size=8192):
+                if chunk:
+                    data += chunk
+                    if len(data) >= max_bytes:
+                        break
+
+            return data[:max_bytes]
+
+    except requests.exceptions.RequestException as e:
+        print(f"Erreur réseau sur {url}: {e}")
+        return None
+
 def get_image_dimensions(url: str):
     # --- Étape 1 : HEAD pour connaître le type ---
     header = getHeadRequest(url)
@@ -22,12 +45,13 @@ def get_image_dimensions(url: str):
         max_bytes = 16384     # Par défaut : 16 Ko pour sécurité
 
     # --- Étape 3 : GET partiel ---
-    headers = {"Range": f"bytes=0-{max_bytes-1}"}
-    resp = requests.get(url, headers=headers)
-    if resp.status_code not in (200, 206):
-        raise Exception(f"HTTP {resp.status_code} lors du GET partiel")
-    
-    data = resp.content
+    try:
+        data = partial_get(url, max_bytes)
+        if data is None:
+            return None
+    except Exception as e:
+        print(f"Erreur lors du GET partiel de {url}: {e}")
+        return None
 
     # --- Étape 4 : parser dimensions ---
     # PNG
@@ -128,14 +152,18 @@ def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
         for url_elem in url_elements:
             if url_elem.text:
                 image = get_image_dimensions(url_elem.text)
-                if image and image['width'] <= max_width and image['height'] <= max_height:
+                if not image: 
+                    if verbose:
+                        print(f" --> Impossible de récupérer les dimensions de l'image : {url_elem.text} ")
+                    continue
+                if image['width'] <= max_width and image['height'] <= max_height:
                     if verbose:
                         print(f" --> miniature valide (dimensions : {image['width']}x{image['height']}) : {url_elem.text} ")
                     return url_elem.text
                 else:
                     if verbose:
                         print(f" --> miniature non valide (dimensions : {image['width']}x{image['height']}) : {url_elem.text} ")
-                    return None
+                    continue
         if verbose:
             print(f" --> Aucune miniature valide trouvée dans les métadonnées depuis : {mtd_url} ")
     return None

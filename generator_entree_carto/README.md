@@ -9,5 +9,5 @@ python3 generator_entree_carto/entree_carto.py --input=dist/customConfig.json --
 On peut limiter les données à generer via le paramètre `count` :
 
 ```bash
-python generator_entree_carto/entree-carto.py --input=dist/fullConfig.json --output=entreeCarto_tmp.json --count=100
+python generator_entree_carto/entree_carto.py --input=dist/fullConfig.json --output=entreeCarto_tmp.json --count=100
 ```
