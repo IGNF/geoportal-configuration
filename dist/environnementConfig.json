@@ -47,9 +47,9 @@
         "MESURES_COMPENSATOIRES:emprises_lineaires$GEOPORTAIL:OGC:WFS",
         "MESURES_COMPENSATOIRES:emprises_polygones$GEOPORTAIL:OGC:WFS",
         "MESURES_COMPENSATOIRES:emprises_ponctuelles$GEOPORTAIL:OGC:WFS",
+        "PRSF_BDD_REU_2023:prs_reu$GEOPORTAIL:OGC:WFS",
         "PRSF_BDD_GUF_2023:prs_guf$GEOPORTAIL:OGC:WFS",
         "PRSF_BDD_GLP_2023:prs_glp$GEOPORTAIL:OGC:WFS",
-        "PRSF_BDD_REU_2023:prs_reu$GEOPORTAIL:OGC:WFS",
         "DEBROUSSAILLEMENT:debroussaillement$GEOPORTAIL:OGC:WFS"
       ]
     }
@@ -2318,12 +2318,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORETS-ANCIENNES"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-FORETS-ANCIENNES"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORETS-ANCIENNES"
         }
       ],
       "styles": [
@@ -2522,12 +2522,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=INRAE_GRAIN-BOCAGER"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/INRAE_GRAIN-BOCAGER"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=INRAE_GRAIN-BOCAGER"
         }
       ],
       "styles": [
@@ -3896,6 +3896,34 @@
       "legends": [],
       "formats": []
     },
+    "PRSF_BDD_REU_2023:prs_reu$GEOPORTAIL:OGC:WFS": {
+      "name": "PRSF_BDD_REU_2023:prs_reu",
+      "title": "Points de Rencontre de Secours en Forêt (PRSF)",
+      "description": "Les Points de Rencontre de Secours en Forêt (PRSF) sont supposées connus des services de secours. Ils permettent de faciliter la localisation d’un blessé par les services de secours.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": 55.28242418,
+          "right": 55.82905815,
+          "top": -20.88254768,
+          "bottom": -21.37413806
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wfs/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2975",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "PRSF_BDD_GUF_2023:prs_guf$GEOPORTAIL:OGC:WFS": {
       "name": "PRSF_BDD_GUF_2023:prs_guf",
       "title": "Points de Rencontre de Secours en Forêt (PRSF)",
@@ -3946,34 +3974,6 @@
         }
       },
       "defaultProjection": "EPSG:32620",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
-    "PRSF_BDD_REU_2023:prs_reu$GEOPORTAIL:OGC:WFS": {
-      "name": "PRSF_BDD_REU_2023:prs_reu",
-      "title": "Points de Rencontre de Secours en Forêt (PRSF)",
-      "description": "Les Points de Rencontre de Secours en Forêt (PRSF) sont supposées connus des services de secours. Ils permettent de faciliter la localisation d’un blessé par les services de secours.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": 55.28242418,
-          "right": 55.82905815,
-          "top": -20.88254768,
-          "bottom": -21.37413806
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wfs/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:2975",
       "queryable": false,
       "metadata": [],
       "styles": [],
