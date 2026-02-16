@@ -77,7 +77,8 @@ def get_image_dimensions(url: str):
                 height, width = struct.unpack(">HH", data[offset+5:offset+9])
                 return {"format": "jpeg", "width": width, "height": height}
             offset += 2 + length
-        raise Exception("JPEG : dimensions non trouvées, il faut augmenter max_bytes")
+        print(f"JPEG : dimensions non trouvées, il faut augmenter max_bytes")
+        return None
 
     # WebP
     if data[0:4] == b"RIFF" and data[8:12] == b"WEBP":
@@ -91,8 +92,8 @@ def get_image_dimensions(url: str):
             width = 1 + int.from_bytes(data[24:27], "little")
             height = 1 + int.from_bytes(data[27:30], "little")
             return {"format": "webp", "width": width, "height": height}
-
-    raise Exception("Format non reconnu ou non supporté")
+    print(f"Format non reconnu ou non supporté")
+    return None
 
 def find_elements_by_local_name(root, path_parts):
     """Recherche des éléments en ignorant les namespaces"""
