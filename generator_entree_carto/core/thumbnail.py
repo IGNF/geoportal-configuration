@@ -30,6 +30,9 @@ def partial_get(url, max_bytes):
 def get_image_dimensions(url: str):
     # --- Étape 1 : HEAD pour connaître le type ---
     header = getHeadRequest(url)
+    if not header:
+        print(f"Impossible d'accéder à l'URL : {url}")
+        return None
     content_type = header["content-type"].lower()
 
     # --- Étape 2 : choisir max_bytes selon le type ---
@@ -152,6 +155,8 @@ def get_valid_thumbnail_from_mtd(mtd_url, max_width, max_height, verbose=False):
         
         for url_elem in url_elements:
             if url_elem.text:
+                if verbose:
+                    print(" --> recherche de la validité de la miniature : ", url_elem.text)
                 image = get_image_dimensions(url_elem.text)
                 if not image: 
                     if verbose:
