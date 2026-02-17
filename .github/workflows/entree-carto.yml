@@ -26,8 +26,8 @@ jobs:
           git pull --rebase
           python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp 
           python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
+          git pull --rebase --autostash
           git add .
-          git pull --rebase
           git commit -m "generate entree carto"
           git push
 
