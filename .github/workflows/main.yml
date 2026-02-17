@@ -3,7 +3,7 @@ name: refresh config_files
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *" 
+    - cron: "0 */4 * * *" 
 
 jobs:
   refresh_config:
