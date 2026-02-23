@@ -46,7 +46,8 @@ def parseVectorTiles(tileMaps, key, referer):
             try:
                 if not isinstance(responseText["Metadata"], list):
                     responseText["Metadata"] = [responseText["Metadata"]]
-                styles = filter(lambda metadata : metadata["@type"] == "Other" and metadata["@mime-type"] == "application/json", responseText["Metadata"])
+                # On considère que les styles sont des métadonnées de type "OTHER" ou "STYLE_SHEET" avec un mime-type "application/json"
+                styles = filter(lambda metadata : (metadata["@type"].upper() == "OTHER" and metadata["@mime-type"] == "application/json") or (metadata["@type"].upper() == "STYLE_SHEET" and metadata["@mime-type"] == "application/json"), responseText["Metadata"])
                 styles = list(styles)
                 metadatas = list(responseText["Metadata"])
             except KeyError:
@@ -69,7 +70,7 @@ def parseVectorTiles(tileMaps, key, referer):
             finalStyles.append({
                 "name": style["@href"].split("/")[-1].split(".")[0],
                 "title": style["@href"].split("/")[-1].split(".")[0],
-                "current": current,
+                "current": current, # On suppose que le premier style est le style par défaut
                 "url": style["@href"]
                 })
             current = False
