@@ -130,7 +130,7 @@ def add_layers_default_values(layers, verbose=False):
             layer["base"] = False
     return layers
 
-def convert_thematic(layers, convert_table, verbose=False):
+def convert_thematic(layers, convert_table, verbose=False, edito=None):
     """
     Remplace les identifiants de thématiques par leur nom dans chaque couche.
 
@@ -156,10 +156,43 @@ def convert_thematic(layers, convert_table, verbose=False):
                 if t in convert_dict:
                     converted_thematics.append(convert_dict[t])
                 else:
+                    if edito and "thematics" in edito:
+                        if t in edito["thematics"]:
+                            converted_thematics.append(edito["thematics"][t])
+                            if verbose:
+                                print(f"Thématique '{t}' convertie en '{edito['thematics'][t]}' pour la couche {layer_id} grâce à l'édito")
                     converted_thematics.append(t)
                     if verbose:
                         print(f"Attention : thématique '{t}' non trouvée pour la couche {layer_id}")
             layer["thematic"] = converted_thematics
             if verbose:
                 print(f"Couche {layer_id} : thématiques converties -> {layer['thematic']}")
+    return layers
+
+def filter_thematic(layers, allowed_thematics=None, verbose=False):
+    """
+    Filtre les couches en ne gardant que celles qui ont au moins une thématique dans la liste donnée.
+    
+    Args:
+        layers (dict): Dictionnaire des couches à filtrer
+        allowed_thematics (list): Liste des thématiques à conserver
+    
+    Returns:
+        dict: Dictionnaire des couches filtrées
+    """
+        
+    if allowed_thematics:
+        # Pour chaque couche, remplacer les ids par les noms
+        for layer_id, layer in layers.items():
+            thematics = layer.get("thematic", [])
+            filtered_thematic = []
+            for t in thematics:
+                if t in allowed_thematics or t == 'Autres':
+                    filtered_thematic.append(t)
+                else:
+                    if verbose:
+                       print(f"Attention : thématique '{t}' exclue pour la couche {layer_id}")
+            if len(filtered_thematic) == 0:
+                filtered_thematic.append("Autres")
+            layer["thematic"] = filtered_thematic
     return layers
