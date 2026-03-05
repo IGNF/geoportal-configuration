@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 from core.requester import getEdito, searchMtdUrls
-from core.post_processes import filter_specific_duplicates, filter_layers, add_layers_default_values, convert_thematic
+from core.post_processes import filter_specific_duplicates, filter_layers, add_layers_default_values, convert_thematic, filter_thematic
 from core.merger import merge_edito, merge_service_de_recherche_infos
 
 def getTime(verbose=False):
@@ -100,7 +100,9 @@ class GenerateEntreeCarto:
         data["layers"] = filter_specific_duplicates(data["layers"], verbose=verbose)
         # Convertit les thématiques
         data["layers"] = convert_thematic(data["layers"], edito["topics"]["thematic"], verbose=verbose)
-
+        # Filtre les thématique
+        data["layers"] = filter_thematic(data["layers"], edito["thematics"], verbose=verbose)
+        
         getTime(verbose=verbose)
         
         # Sauvegarder le JSON modifié dans un nouveau fichier
