@@ -196,3 +196,26 @@ def filter_thematic(layers, allowed_thematics=None, verbose=False):
                 filtered_thematic.append("Autres")
             layer["thematic"] = filtered_thematic
     return layers
+
+from core.utils import get_max_tilematrix
+def setZoomConstraint(layers, verbose=False):
+    """
+    Définit la contrainte de zoom (globalConstraint) pour les couches en fonction de leur échelle maximale.
+    Si l'échelle maximale correspond à un niveau de TileMatrix supérieur ou égal à 18, la contrainte est définie sur "noConstraint": True.
+    Args:
+        layers (dict): Dictionnaire des couches à traiter
+    Returns:
+        dict: Dictionnaire des couches avec les contraintes de zoom mises à jour   
+    """
+    for layer_id, layer in layers.items():
+        if "globalConstraint" not in layer or "minScaleDenominator" not in layer["globalConstraint"]:
+            continue
+        # maxScaleDenominator au lieu du min pour TMS
+        if  "TMS" in layer["serviceParams"]["id"]:
+            max_zoom = get_max_tilematrix(layer["globalConstraint"]["maxScaleDenominator"], layer["defaultProjection"])
+        # minScaleDenominator au lieu du max pour WMTS et WMS
+        else:
+            max_zoom = get_max_tilematrix(layer["globalConstraint"]["minScaleDenominator"], layer["defaultProjection"])
+        if max_zoom >= 18:
+            layer["globalConstraint"].update({"noConstraint": True})
+    return layers
