@@ -209,7 +209,7 @@ def setZoomConstraint(layers, verbose=False):
         dict: Dictionnaire des couches avec les contraintes de zoom mises à jour   
     """
     for layer_id, layer in layers.items():
-        if "globalConstraint" not in layer or "minScaleDenominator" not in layer["globalConstraint"]:
+        if "globalConstraint" not in layer or "minScaleDenominator" not in layer["globalConstraint"]or "maxScaleDenominator" not in layer["globalConstraint"]:
             continue
         # maxScaleDenominator au lieu du min pour TMS
         if  "TMS" in layer["serviceParams"]["id"]:
