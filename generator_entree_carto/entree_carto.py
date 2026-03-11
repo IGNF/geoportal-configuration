@@ -100,8 +100,9 @@ class GenerateEntreeCarto:
         data["layers"] = filter_specific_duplicates(data["layers"], verbose=verbose)
         # Convertit les thématiques
         data["layers"] = convert_thematic(data["layers"], edito["topics"]["thematic"], verbose=verbose)
-        # Filtre les thématique
+        # Filtre les thématiques selon la configuration éditoriale
         data["layers"] = filter_thematic(data["layers"], edito["thematics"], verbose=verbose)
+        print("end filter thematic")
         # 
         data["layers"] = setZoomConstraint(data["layers"], verbose=verbose)
         
