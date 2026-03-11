@@ -19,7 +19,8 @@ def get_max_tilematrix(max_scale_denominator: float, crs: str = "EPSG:3857", til
     elif crs == "EPSG:4326":
         resolution_0 = 360 / tile_size
     else:
-        raise ValueError("CRS non supporté")
+        print(f"CRS {crs} non supporté pour le calcul du maxTileMatrix.")
+        return 0
     
     # Résolution minimale correspondant au maxScaleDenominator
     resolution_min = max_scale_denominator * 0.00028  # 0.28 mm par pixel
