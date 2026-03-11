@@ -186,6 +186,7 @@ def filter_thematic(layers, allowed_thematics=None, verbose=False):
         for layer_id, layer in layers.items():
             thematics = layer.get("thematic", [])
             filtered_thematic = []
+            print(f"Couche {layer_id} : thématiques avant filtrage -> {thematics}")
             for t in thematics:
                 if t in allowed_thematics or t == 'Autres':
                     filtered_thematic.append(t)
@@ -195,4 +196,31 @@ def filter_thematic(layers, allowed_thematics=None, verbose=False):
             if len(filtered_thematic) == 0:
                 filtered_thematic.append("Autres")
             layer["thematic"] = filtered_thematic
+    return layers
+
+from core.utils import get_max_tilematrix
+def setZoomConstraint(layers, verbose=False):
+    """
+    Définit la contrainte de zoom (globalConstraint) pour les couches en fonction de leur échelle maximale.
+    Si l'échelle maximale correspond à un niveau de TileMatrix supérieur ou égal à 18, la contrainte est définie sur "noConstraint": True.
+    Args:
+        layers (dict): Dictionnaire des couches à traiter
+    Returns:
+        dict: Dictionnaire des couches avec les contraintes de zoom mises à jour   
+    """
+    for layer_id, layer in layers.items():
+        if "globalConstraint" not in layer or "minScaleDenominator" not in layer["globalConstraint"]:
+            continue
+        # maxScaleDenominator au lieu du min pour TMS
+        if  "TMS" in layer["serviceParams"]["id"]:
+            max_zoom = get_max_tilematrix(layer["globalConstraint"]["maxScaleDenominator"], layer["defaultProjection"])
+        # minScaleDenominator au lieu du max pour WMTS et WMS
+        else:
+            if verbose:
+                print(f"Calcul du max_zoom pour la couche {layer_id} avec minScaleDenominator {layer['globalConstraint']['minScaleDenominator']} et projection {layer['defaultProjection']}")
+            max_zoom = get_max_tilematrix(layer["globalConstraint"]["minScaleDenominator"], layer["defaultProjection"])
+        if max_zoom >= 18:
+            layer["globalConstraint"].update({"noConstraint": True})
+        if verbose:
+            print(f"Couche {layer_id} : max_zoom = {max_zoom}")
     return layers
