@@ -103,7 +103,7 @@ class GenerateEntreeCarto:
         # Filtre les thématiques selon la configuration éditoriale
         data["layers"] = filter_thematic(data["layers"], edito["thematics"], verbose=verbose)
         print("end filter thematic")
-        # 
+        # Set la contrainte de zoom pour les couches avec maxZoom >= 18
         data["layers"] = setZoomConstraint(data["layers"], verbose=verbose)
         
         getTime(verbose=verbose)
