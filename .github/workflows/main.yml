@@ -23,7 +23,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git pull --rebase
-          cat keys.txt | xargs -L 1 python main.py
+          cat keys.txt | xargs -L 1 python main.py --referer https://cartes.gouv.fr/
           python main.py full
           git add .
           git commit -m "refresh config files"
