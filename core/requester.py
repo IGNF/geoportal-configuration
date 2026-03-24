@@ -7,7 +7,7 @@ from core.generic_keys import GENERIC_KEYS
 
 
 
-def getWMTSCapabilities(key, referer="https://cartes.gouv.fr/"):
+def getWMTSCapabilities(key, referer=""):
     if key in GENERIC_KEYS() :
         url = "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities"
     else:
@@ -20,7 +20,7 @@ def getWMTSCapabilities(key, referer="https://cartes.gouv.fr/"):
 
     return dict_capabilities["Capabilities"]
 
-def getWMSRCapabilities(key, referer="https://cartes.gouv.fr/"):
+def getWMSRCapabilities(key, referer=""):
     if key in GENERIC_KEYS() :
         url = "https://data.geopf.fr/wms-r/wms?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
     else:
@@ -33,7 +33,7 @@ def getWMSRCapabilities(key, referer="https://cartes.gouv.fr/"):
 
     return dict_capabilities["WMS_Capabilities"]["Capability"]
 
-def getWMSVCapabilities(key, referer="https://cartes.gouv.fr/"):
+def getWMSVCapabilities(key, referer=""):
     if key in GENERIC_KEYS() :
         url = "https://data.geopf.fr/wms-v/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities"
     else:
@@ -46,7 +46,7 @@ def getWMSVCapabilities(key, referer="https://cartes.gouv.fr/"):
 
     return dict_capabilities["WMS_Capabilities"]["Capability"]
 
-def getWFSCapabilities(key, referer="https://cartes.gouv.fr/"):
+def getWFSCapabilities(key, referer=""):
     if key in GENERIC_KEYS() :
         url = "https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities"
     else:
@@ -69,7 +69,7 @@ def getWFSCapabilities(key, referer="https://cartes.gouv.fr/"):
 
     return [capabilities, namespaces]
 
-def getTMSTileMaps(key, referer="https://cartes.gouv.fr/"):
+def getTMSTileMaps(key, referer=""):
     if key in GENERIC_KEYS() :
         url = "https://data.geopf.fr/tms/1.0.0"
     else:
