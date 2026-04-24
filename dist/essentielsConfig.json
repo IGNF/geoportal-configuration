@@ -15,6 +15,7 @@
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
         "BDTOPO_V3:batiment$GEOPORTAIL:OGC:WFS",
         "BDTOPO_V3:troncon_de_route$GEOPORTAIL:OGC:WFS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ]
@@ -710,11 +711,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNS-LIDAR-HD",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNS-LIDAR-HD",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNS-LIDAR-HD",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNS-LIDAR-HD",
           "format": ""
         }
       ],
@@ -887,11 +888,11 @@
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MNT-LIDAR-HD",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MNT-LIDAR-HD",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD",
           "format": ""
         }
       ],
@@ -1564,6 +1565,34 @@
       "legends": [],
       "formats": []
     },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle",
+      "title": "PCI Vecteur : Parcelles",
+      "description": "Parcelles ; Édition 2025-12-01",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -1585,9 +1614,9 @@
       ],
       "metadata": [
         {
-          "name": "adminexpress",
-          "title": "adminexpress",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ADMIN_EXPRESS/adminexpress.json"
+          "name": "IGNF_ADMIN-EXPRESS",
+          "title": "IGNF_ADMIN-EXPRESS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         },
         {
           "name": "2",
@@ -1595,9 +1624,9 @@
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
         },
         {
-          "name": "IGNF_ADMIN-EXPRESS",
-          "title": "IGNF_ADMIN-EXPRESS",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
+          "name": "adminexpress",
+          "title": "adminexpress",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ADMIN_EXPRESS/adminexpress.json"
         }
       ],
       "styles": [
@@ -1642,24 +1671,14 @@
       ],
       "metadata": [
         {
-          "name": "attenue",
-          "title": "attenue",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
-        },
-        {
           "name": "accentue",
           "title": "accentue",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
-          "name": "toponymes",
-          "title": "toponymes",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "name": "epure",
+          "title": "epure",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
           "name": "transparent",
@@ -1672,55 +1691,53 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
-          "name": "epure",
-          "title": "epure",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+          "name": "classique",
+          "title": "classique",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "IGNF_PLAN-IGN",
-          "title": "IGNF_PLAN-IGN",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_PLAN-IGN"
+          "name": "attenue",
+          "title": "attenue",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
         },
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+          "name": "toponymes",
+          "title": "toponymes",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
           "name": "gris",
           "title": "gris",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         },
         {
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PLAN-IGN"
+        },
+        {
+          "name": "IGNF_PLAN-IGN",
+          "title": "IGNF_PLAN-IGN",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_PLAN-IGN"
         }
       ],
       "styles": [
         {
-          "name": "attenue",
-          "title": "attenue",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
-        },
-        {
-          "name": "classique",
-          "title": "classique",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
-        },
-        {
           "name": "accentue",
           "title": "accentue",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/accentue.json"
         },
         {
-          "name": "toponymes",
-          "title": "toponymes",
+          "name": "epure",
+          "title": "epure",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
         },
         {
           "name": "transparent",
@@ -1735,22 +1752,34 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/standard.json"
         },
         {
-          "name": "epure",
-          "title": "epure",
+          "name": "classique",
+          "title": "classique",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/epure.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/classique.json"
         },
         {
-          "name": "sans_toponymes",
-          "title": "sans_toponymes",
+          "name": "attenue",
+          "title": "attenue",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/attenue.json"
+        },
+        {
+          "name": "toponymes",
+          "title": "toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/toponymes.json"
         },
         {
           "name": "gris",
           "title": "gris",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/gris.json"
+        },
+        {
+          "name": "sans_toponymes",
+          "title": "sans_toponymes",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/PLAN.IGN/sans_toponymes.json"
         }
       ],
       "globalConstraint": {
