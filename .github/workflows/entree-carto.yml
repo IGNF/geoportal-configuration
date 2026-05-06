@@ -30,4 +30,13 @@ jobs:
           git add .
           git commit -m "generate entree carto"
           git push
+      # Dépôt sur s3
+      - name: Decrypt rclone conf
+        run: ./scripts/decrypt_secret.sh
+        env:
+          RCLONE_PASSPHRASE: ${{ secrets.RCLONE_PASSPHRASE }}
+      - name: Install rclone
+        run: apt-get update && apt-get install rclone
+      - name: Transfert configuration sur S3
+        run: bash ./scripts/copy_entree_carto_conf_s3.sh
 
