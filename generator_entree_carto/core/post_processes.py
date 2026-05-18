@@ -223,4 +223,9 @@ def setZoomConstraint(layers, verbose=False):
             layer["globalConstraint"].update({"noConstraint": True})
         if verbose:
             print(f"Couche {layer_id} : max_zoom = {max_zoom}")
+
+        # Ajout de la valeur par défaut zoomLevelNoConstraint = 18 si noConstraint = True et zoomLevelNoConstraint n'est pas défini
+        if "zoomLevelNoConstraint" not in layer["globalConstraint"]:
+            layer["globalConstraint"]["zoomLevelNoConstraint"] = 18
+
     return layers
