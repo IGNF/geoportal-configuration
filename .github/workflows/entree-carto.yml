@@ -39,7 +39,7 @@ jobs:
           S3_CONF_FILENAME: ${{ secrets.S3_CONF_FILENAME }}
           S3_PATH: ${{ secrets.S3_PATH }}
       - name: Install rclone
-        run: apt-get update && apt-get install rclone
+        run: sudo apt-get update && sudo apt-get install -y rclone
       - name: Transfert configuration sur S3
         run: bash ./scripts/copy_entree_carto_conf_s3.sh
 
