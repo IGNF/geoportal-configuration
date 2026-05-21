@@ -21,4 +21,5 @@ Pour se faire :
 gpg --symmetric --cipher-algo AES256 rclone.conf
 ```
 - créer une variable d'env secret sur github RCLONE_PASSPHRASE
-- pousser le fichier rclone.conf.gpg 
+- créer les variables d'env github S3_CONF_FILENAME (nom du fichier chiffré) et S3_PATH (bucket)
+- pousser le fichier rclone.conf.gpg ou rclone.conf.qua.gpg
