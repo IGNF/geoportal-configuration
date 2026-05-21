@@ -9,6 +9,7 @@ on:
 jobs:
   refresh_config:
     runs-on: ubuntu-latest
+    environment: qualification
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner.
@@ -35,6 +36,8 @@ jobs:
         run: ./scripts/decrypt_secret.sh
         env:
           RCLONE_PASSPHRASE: ${{ secrets.RCLONE_PASSPHRASE }}
+          S3_CONF_FILENAME: ${{ secrets.S3_CONF_FILENAME }}
+          S3_PATH: ${{ secrets.S3_PATH }}
       - name: Install rclone
         run: apt-get update && apt-get install rclone
       - name: Transfert configuration sur S3
