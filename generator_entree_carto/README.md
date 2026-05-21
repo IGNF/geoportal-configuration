@@ -13,7 +13,7 @@ python generator_entree_carto/entree_carto.py --input=dist/fullConfig.json --out
 ```
 
 ## Déploiement sur S3
-Dépôt du fihchier de configuration sur le s3 de IGN-MUT
+Dépôt du fichier de configuration sur le s3 de IGN-MUT
 
 Pour se faire :
 - encoder la configuration rclone.conf à l'aide d'une passphrase
@@ -23,3 +23,7 @@ gpg --symmetric --cipher-algo AES256 rclone.conf
 - créer une variable d'env secret sur github RCLONE_PASSPHRASE
 - créer les variables d'env github S3_CONF_FILENAME (nom du fichier chiffré) et S3_PATH (bucket)
 - pousser le fichier rclone.conf.gpg ou rclone.conf.qua.gpg
+
+### Définition de l'environnement
+On définit l'environnement S3 dans github a spécifier dans le Workflow entree-carto.yml
+avec les trois variables RCLONE_PASSPHRASE S3_CONF_FILENAME S3_PATH
