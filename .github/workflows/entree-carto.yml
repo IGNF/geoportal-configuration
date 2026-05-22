@@ -9,6 +9,7 @@ on:
 jobs:
   refresh_config:
     runs-on: ubuntu-latest
+    environment: qualification
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner.
@@ -30,4 +31,16 @@ jobs:
           git add .
           git commit -m "generate entree carto"
           git push
-
+      # Dépôt sur s3
+      - name: Decrypt rclone conf
+        run: ./scripts/decrypt_secret.sh
+        env:
+          RCLONE_PASSPHRASE: ${{ secrets.RCLONE_PASSPHRASE }}
+          S3_CONF_FILENAME: ${{ secrets.S3_CONF_FILENAME }}
+          S3_PATH: ${{ secrets.S3_PATH }}
+      - name: Install rclone
+        run: sudo apt-get update && sudo apt-get install -y rclone
+      - name: Transfert configuration sur S3
+        run: bash ./scripts/copy_entree_carto_conf_s3.sh
+        env:
+          S3_PATH: ${{ secrets.S3_PATH }}
