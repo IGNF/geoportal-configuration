@@ -9,7 +9,7 @@ on:
 jobs:
   refresh_config:
     runs-on: ubuntu-latest
-    environment: qualification
+    environment: production
     env:
       S3_CONF_FILENAME: ${{ vars.S3_CONF_FILENAME || secrets.S3_CONF_FILENAME }}
       S3_PATH: ${{ vars.S3_PATH || secrets.S3_PATH }}
