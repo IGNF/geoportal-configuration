@@ -18,18 +18,17 @@
         "LANDCOVER.SYLVOECOREGIONS.ALLUVIUM$GEOPORTAIL:OGC:WMTS",
         "PROTECTEDAREAS.PRSF$GEOPORTAIL:OGC:WMTS",
         "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMTS",
-        "CONSERVATOIRE_LITTORAL.PERIMETRES$GEOPORTAIL:OGC:WMS",
+        "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS",
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMS",
         "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMS",
-        "IGNF_CARTO-FORMATIONS-VEGETALES_2016$GEOPORTAIL:OGC:WMS",
-        "IGNF_CARTO-FORMATIONS-VEGETALES_2017$GEOPORTAIL:OGC:WMS",
-        "IGNF_CARTO-FORMATIONS-VEGETALES_2022$GEOPORTAIL:OGC:WMS",
-        "IGNF_CARTO-FORMATIONS-VEGETALES_2023$GEOPORTAIL:OGC:WMS",
-        "IGNF_SITES-UNESCO$GEOPORTAIL:OGC:WMS",
-        "INPE$GEOPORTAIL:OGC:WMS",
+        "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMS",
+        "IGNF_MASQUE-FORET.2021-2023$GEOPORTAIL:OGC:WMS",
+        "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMS",
+        "INRAE_GRAIN-BOCAGER$GEOPORTAIL:OGC:WMS",
+        "LANDCOVER.FORESTINVENTORY.V1$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS",
-        "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS",
         "PROTECTEDAREAS.PRSF$GEOPORTAIL:OGC:WMS",
+        "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMS",
         "LANDCOVER.FORESTINVENTORY.V1:resu_bdv1_shape$GEOPORTAIL:OGC:WFS",
         "LANDCOVER.FORESTINVENTORY.V2:formation_vegetale$GEOPORTAIL:OGC:WFS",
         "IGNF_CARTO-FORMATIONS-VEGETALES_2016:formations_vegetales_d976_2016$GEOPORTAIL:OGC:WFS",
@@ -793,11 +792,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MASQUE-FORET",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MASQUE-FORET",
           "format": ""
         }
       ],
@@ -930,11 +929,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_NATURE-EN-VILLE",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NATURE-EN-VILLE",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NATURE-EN-VILLE",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_NATURE-EN-VILLE",
           "format": ""
         }
       ],
@@ -1055,11 +1054,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INPE",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INPE",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INPE",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INPE",
           "format": ""
         }
       ],
@@ -1903,11 +1902,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PRSF",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PRSF",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PRSF",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PRSF",
           "format": ""
         }
       ],
@@ -2070,40 +2069,49 @@
         }
       ]
     },
-    "CONSERVATOIRE_LITTORAL.PERIMETRES$GEOPORTAIL:OGC:WMS": {
-      "name": "CONSERVATOIRE_LITTORAL.PERIMETRES",
-      "title": "Conservatoire du littoral : périmètres d'intervention",
-      "description": "L’intervention foncière du Conservatoire du littoral est plus particulièrement justifiée dans au moins un de ces quatre critères : \n- Lorsque le terrain fait l’objet de pressions en faveur de l’urbanisation mettant en échec la réglementation existante ou de menaces d’artificialisation irréversible du milieu ; \n- Lorsque le terrain connaît un processus de dégradation qui appelle une gestion patrimoniale pour restaurer la biodiversité et les paysages ; \n- Lorsque le terrain est inaccessible et que son ouverture au public est souhaitable ; \n- Lorsque la maîtrise foncière permet d’assurer la pérennité d’activités économiques traditionnelles garantes d’un paysage caractéristique ou d’équilibres écologiques remarquables. Ces interventions du Conservatoire répondent à quatre préoccupations : \n- C’est sur la zone côtière immédiate que les pressions sont les plus fortes ; \n- Il faut veiller à une répartition équilibrée des acquisitions ; \n- Certains grands sites nationaux ont une importance particulière, en fonction de critères écologiques, esthétiques et paysagers ; \n- Ces interventions doivent être appréciées au regard des interactions entre les espaces concernés et leur environnement et donc en termes de fonctionnalité au sein d’une zone plus large et plus complexe sur le plan des écosystèmes.",
+    "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMS": {
+      "name": "DEBROUSSAILLEMENT",
+      "title": "Zonage informatif des obligations légales de débroussaillement",
+      "description": "Zonage informatif des obligations légales de débroussaillement, Edition : 2026-01-01",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -63.193359375,
-          "right": 55.8984375,
-          "top": 51.16890625,
-          "bottom": -21.431132812
+          "left": -6.189499310285613,
+          "right": 10.423399310285612,
+          "top": 51.31209931028561,
+          "bottom": 41.00120068971439
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
+          "environnement": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
-      "metadata": [],
+      "metadata": [
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_DEBROUSSAILLEMENT"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_DEBROUSSAILLEMENT"
+        }
+      ],
       "styles": [
         {
-          "name": "default-style-CONSERVATOIRE_LITTORAL.PERIMETRES",
-          "title": "CONSERVATOIRE_LITTORAL.PERIMETRES style"
+          "name": "nolegend",
+          "title": "Données sans légende"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=CONSERVATOIRE_LITTORAL.PERIMETRES"
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -2112,55 +2120,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -2168,27 +2128,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -2198,44 +2142,44 @@
       "title": "Forêts publiques",
       "description": "Localisation des forêts publiques domaniales et non domaniales (communales, sectionales, départementales et d'établissements publics) gérées par l'Office national des forêts (ONF).",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 69885283.00358963,
         "bbox": {
-          "left": -61.80976436,
-          "right": 55.83659517,
-          "top": 50.8634572,
-          "bottom": -21.37682085
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
+          "environnement": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=ONF_FORETS-PUBLIQUES"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/ONF_FORETS-PUBLIQUES"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=ONF_FORETS-PUBLIQUES"
         }
       ],
       "styles": [
         {
-          "name": "default-style-FORETS.PUBLIQUES",
-          "title": "FORETS.PUBLIQUES style"
+          "name": "FORETS PUBLIQUES ONF",
+          "title": "FORETS PUBLIQUES ONF"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=FORETS.PUBLIQUES"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/onf_forets_publiques.png"
         }
       ],
       "formats": [
@@ -2244,55 +2188,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -2300,27 +2196,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -2328,178 +2208,46 @@
     "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMS": {
       "name": "GEOGRAPHICALGRIDSYSTEM.DFCI",
       "title": "Carroyage DFCI",
-      "description": "Le « carroyage DFCI » est un système de maillage géographique utilisé en France par les acteurs de la Défense des Forêts Contre les Incendies (DFCI). Le territoire métropolitain est couvert par des carrés de 100 km de côté, identifiables par deux lettres. Chaque carré de 100 km est divisé en 25 carrés de 20 km de côté, numérotés par des chiffres pairs de 0 à 8. Chaque carré de 20 km est divisé en 100 carrés de 2 km de côté, numérotés par un groupe composé d'une lettre et d'un chiffre. L'unité élémentaire est un carreau de 2 kilomètres de côté, défini par 6 caractères (exemple : KD42F7). Pour désigner un point à l'intérieur de l'unité élémentaire, la précision est obtenue en découpant ce carré en cinq zones numérotées de 1 à 5. Il a été créé sur une grille qui s'appuie sur la projection Lambert II étendue. Depuis 2009, il est re-projeté en Lambert 93 avec une légère déformation des angles et des surfaces. Carroyage DFCI (2 km) : Chaque carré de 20 km est divisé en 100 carrés de 2 km de côté, numérotés par un groupe composé d'une lettre et d'un chiffre. Les carrés de 2 km sont dénommés de A à L (sauf I et J) pour les abscisses, et numérotés de 0 à 9 pour les ordonnées. Date des données : 7 juin 2016",
+      "description": "Le « carroyage DFCI » est un système de maillage géographique utilisé en France par les acteurs de la Défense des Forêts Contre les Incendies (DFCI). Le territoire métropolitain est couvert par des carrés de 100 km de côté, identifiables par deux lettres. Chaque carré de 100 km est divisé en 25 carrés de 20 km de côté, numérotés par des chiffres pairs de 0 à 8. Chaque carré de 20 km est divisé en 100 carrés de 2 km de côté, numérotés par un groupe composé d'une lettre et d'un chiffre. L'unité élémentaire est un carreau de 2 kilomètres de côté, défini par 6 caractères (exemple : KD42F7). Pour désigner un point à l'intérieur de l'unité élémentaire, la précision est obtenue en découpant ce carré en cinq zones numérotées de 1 à 5. Il a été créé sur une grille qui s'appuie sur la projection Lambert II étendue. Depuis 2009, il est re-projeté en Lambert 93 avec une légère déformation des angles et des surfaces. Carroyage DFCI (2 km) : Chaque carré de 20 km est divisé en 100 carrés de 2 km de côté, numérotés par un groupe composé d'une lettre et d'un chiffre. Les carrés de 2 km sont dénommés de A à L (sauf I et J) pour les abscisses, et numérotés de 0 à 9 pour les ordonnées. Date des données : 7 juin 2016 Source : couches 100, 50, 20 et 2 km : Entente Valablre - PôNT, couche 1 km : avec l'aimable autorisation de Geonov (www.geonov.fr)",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -5.52344284,
-          "right": 10.81600641,
-          "top": 51.0945837,
-          "bottom": 40.27275277
+          "left": -5.15047272,
+          "right": 9.57054324,
+          "top": 51.09905418,
+          "bottom": 41.32520964
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
+          "environnement": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
-        {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/VALABRE_CARROYAGE-DFCI"
-        },
         {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_VALABRE_CARROYAGE-DFCI"
-        }
-      ],
-      "styles": [
-        {
-          "name": "default-style-GEOGRAPHICALGRIDSYSTEM.DFCI",
-          "title": "GEOGRAPHICALGRIDSYSTEM.DFCI style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=GEOGRAPHICALGRIDSYSTEM.DFCI"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
         },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "IGNF_CARTO-FORMATIONS-VEGETALES_2016$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2016",
-      "title": "Cartographie des formations végétales 2016 de Mayotte",
-      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": 45.013046875,
-          "right": 45.30796875,
-          "top": -12.632265625,
-          "bottom": -13.00875
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [
         {
           "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
-        },
-        {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/VALABRE_CARROYAGE-DFCI"
         }
       ],
       "styles": [
         {
-          "name": "default-style-IGNF_CARTO-FORMATIONS-VEGETALES_2016",
-          "title": "IGNF_CARTO-FORMATIONS-VEGETALES_2016 style"
+          "name": "normal",
+          "title": "Légende générique"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_CARTO-FORMATIONS-VEGETALES_2016"
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -2508,55 +2256,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -2564,329 +2264,58 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "IGNF_CARTO-FORMATIONS-VEGETALES_2017$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2017",
-      "title": "Cartographie des formations végétales 2017 de la Martinique",
-      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.237792969,
-          "right": -60.809326172,
-          "top": 14.880908203,
-          "bottom": 14.387072754
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-IGNF_CARTO-FORMATIONS-VEGETALES_2017",
-          "title": "IGNF_CARTO-FORMATIONS-VEGETALES_2017 style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_CARTO-FORMATIONS-VEGETALES_2017"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
           "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
     },
-    "IGNF_CARTO-FORMATIONS-VEGETALES_2022$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2022",
-      "title": "Cartographie des formations végétales 2022 de la Martinique",
-      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
+    "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_FORETS-ANCIENNES",
+      "title": "Forêts anciennes",
+      "description": "Une forêt est ancienne si l’usage du sol est forestier depuis au moins le milieu du XIXème siècle. Les données sont issues du croisement BD CARTO® EM et BD Forêt® V2.",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -61.237792969,
-          "right": -60.809326172,
-          "top": 14.880908203,
-          "bottom": 14.387072754
+          "left": -5.150499310285613,
+          "right": 9.57049931028561,
+          "top": 51.09909931028561,
+          "bottom": 41.32520068971439
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
+          "environnement": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [
-        {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
-        },
-        {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
-        }
-      ],
-      "styles": [
-        {
-          "name": "default-style-IGNF_CARTO-FORMATIONS-VEGETALES_2022",
-          "title": "IGNF_CARTO-FORMATIONS-VEGETALES_2022 style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_CARTO-FORMATIONS-VEGETALES_2022"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "IGNF_CARTO-FORMATIONS-VEGETALES_2023$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_CARTO-FORMATIONS-VEGETALES_2023",
-      "title": "Cartographie des formations végétales 2023 de Mayotte",
-      "description": "La cartographie des formations végétales localise les formations végétales qui caractérisent les DROM exclusivement, les peuplements forestiers, ainsi que les formations arbustives, selon une nomenclature propre à chaque territoire couvert.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": 45.013046875,
-          "right": 45.30796875,
-          "top": -12.632265625,
-          "bottom": -13.00875
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
         {
           "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORETS-ANCIENNES"
         },
         {
           "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-FORETS-ANCIENNES"
         }
       ],
       "styles": [
         {
-          "name": "default-style-IGNF_CARTO-FORMATIONS-VEGETALES_2023",
-          "title": "IGNF_CARTO-FORMATIONS-VEGETALES_2023 style"
+          "name": "normal",
+          "title": "IGNF_FORETS-ANCIENNES"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_CARTO-FORMATIONS-VEGETALES_2023"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/IGNF_FORETS-ANCIENNES-legend.png"
         }
       ],
       "formats": [
@@ -2895,55 +2324,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -2951,293 +2332,22 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "IGNF_SITES-UNESCO$GEOPORTAIL:OGC:WMS": {
-      "name": "IGNF_SITES-UNESCO",
-      "title": "Sites du patrimoine mondial de l'UNESCO",
-      "description": "Sites du patrimoine mondial de l'UNESCO : Le patrimoine mondial est une appellation attribuée à des lieux ou des biens, situés à travers le monde, possédant une valeur universelle exceptionnelle. A ce titre, ils sont inscrits sur la Liste du patrimoine mondial afin d’être protégés pour que les générations futures puissent encore les apprécier à leur tour.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -151.37512207,
-          "right": 166.876831055,
-          "top": 51.040637207,
-          "bottom": -49.334161377
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [],
-      "styles": [
-        {
-          "name": "default-style-IGNF_SITES-UNESCO",
-          "title": "IGNF_SITES-UNESCO style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=IGNF_SITES-UNESCO"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
           "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
     },
-    "INPE$GEOPORTAIL:OGC:WMS": {
-      "name": "INPE",
-      "title": "Inventaire national des plans d'eau",
-      "description": "Inventaire national des plans d'eau",
+    "IGNF_MASQUE-FORET.2021-2023$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_MASQUE-FORET.2021-2023",
+      "title": "Masque Forêt 2021-2023",
+      "description": "Le Masque Forêt V1 permet de localiser les surfaces de forêt présentes en France métropolitaine. Il contient également une information sur l’usage des forêts.",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.875,
-          "right": 55.8984375,
-          "top": 51.27109375,
-          "bottom": -21.421484375
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WMS",
-        "version": "1.3.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
-        }
-      },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
-      "metadata": [
-        {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INPE"
-        },
-        {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INPE"
-        }
-      ],
-      "styles": [
-        {
-          "name": "default-style-INPE",
-          "title": "INPE style"
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=INPE"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        },
-        {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
-          "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
-          "current": false
-        },
-        {
-          "name": "image/tiff",
-          "current": false
-        },
-        {
-          "name": "image/tiff8",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
-          "current": false
-        }
-      ]
-    },
-    "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS": {
-      "name": "LANDCOVER.FORESTINVENTORY.V2",
-      "title": "BD Forêt v2 (2006-2019)",
-      "description": "Localisation de 32 types de formations végétales sur le territoire. Carte en cours de réalisation depuis 2006.",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
           "left": -5.52320944,
           "right": 9.65507376,
@@ -3249,31 +2359,31 @@
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
+          "environnement": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MASQUE-FORET"
         },
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-FORET"
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET"
         }
       ],
       "styles": [
         {
-          "name": "default-style-LANDCOVER.FORESTINVENTORY.V2",
-          "title": "LANDCOVER.FORESTINVENTORY.V2 style"
+          "name": "normal",
+          "title": "Données IGNF_MASQUE-FORET.2021-2023"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=LANDCOVER.FORESTINVENTORY.V2"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/IGNF_MASQUE-FORET_2021-2023-legend.png"
         }
       ],
       "formats": [
@@ -3282,55 +2392,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -3338,74 +2400,58 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
     },
-    "MESURES_COMPENSATOIRES$GEOPORTAIL:OGC:WMS": {
-      "name": "MESURES_COMPENSATOIRES",
-      "title": "Mesures compensatoires des atteintes à la biodiversité",
-      "description": "Carte des mesures compensatoires des atteintes à la biodiversité. Source : CEREMA 2026-01-01",
+    "IGNF_NATURE-EN-VILLE_2021-2023$GEOPORTAIL:OGC:WMS": {
+      "name": "IGNF_NATURE-EN-VILLE_2021-2023",
+      "title": "Nature en Ville 2021-2023",
+      "description": "Base de données nationale cartographiant les surfaces végétalisées et surfaces d’eau en contexte urbain. Créée par croisement de CoSIA et du RPG. Couvre les communes urbaines denses et intermédiaires selon l’indice de densité INSEE.",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -180.0,
-          "right": 180.0,
-          "top": 85.0,
-          "bottom": -85.0
+          "left": -63.16139931028561,
+          "right": 55.84649931028561,
+          "top": 51.09909862028575,
+          "bottom": -21.399799310285612
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
+          "environnement": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
         {
           "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=CEREMA_MESURES-COMPENSATOIRES"
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_NATURE-EN-VILLE"
         },
         {
           "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CEREMA_MESURES-COMPENSATOIRES"
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NATURE-EN-VILLE"
         }
       ],
       "styles": [
         {
-          "name": "default-style-MESURES_COMPENSATOIRES",
-          "title": "MESURES_COMPENSATOIRES style"
+          "name": "normal",
+          "title": "Données brutes"
         }
       ],
       "legends": [
         {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=MESURES_COMPENSATOIRES"
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
         }
       ],
       "formats": [
@@ -3414,55 +2460,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -3470,27 +2468,215 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "INRAE_GRAIN-BOCAGER$GEOPORTAIL:OGC:WMS": {
+      "name": "INRAE_GRAIN-BOCAGER",
+      "title": "INRAE_GRAIN-BOCAGER",
+      "description": "Le produit Grain Bocager est un ensemble de couches nationales de référence pour la gestion des bocages en lien avec la biodiversité forestière",
+      "globalConstraint": {
+        "minScaleDenominator": 17061.836670798282,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -5.185041791428065,
+          "right": 9.691712177146504,
+          "top": 51.130330494012654,
+          "bottom": 41.258538538571955
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=INRAE_GRAIN-BOCAGER"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/INRAE_GRAIN-BOCAGER"
+        }
+      ],
+      "styles": [
+        {
+          "name": "grains_bocagers",
+          "title": "Grains bocagers"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png8",
+          "name": "image/tiff",
           "current": false
         },
         {
-          "name": "text/html; subtype=openlayers",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "text/html; subtype=openlayers2",
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.FORESTINVENTORY.V1$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.FORESTINVENTORY.V1",
+      "title": "BD Forêt v1 (1987-2004)",
+      "description": "La cartographie forestière est une base de données cartographique des formations végétales forestières et naturelles. Elle couvre l'ensemble du territoire de France métropolitaine. Elle est réalisée par interprétation de photographies aériennes infrarouges et affinée par des contrôles sur le terrain (le seuil minimal de surface cartographiée est de 2,25 ha).",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -5.15047272,
+          "right": 9.57054324,
+          "top": 51.09905418,
+          "bottom": 41.32520964
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
+      "metadata": [
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-FORET"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Légende générique"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
           "current": false
         },
         {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "LANDCOVER.FORESTINVENTORY.V2$GEOPORTAIL:OGC:WMS": {
+      "name": "LANDCOVER.FORESTINVENTORY.V2",
+      "title": "BD Forêt v2 (2006-2019)",
+      "description": "Localisation de 32 types de formations végétales sur le territoire. Carte en cours de réalisation depuis 2006.",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
+        "bbox": {
+          "left": -5.15047272,
+          "right": 9.57054324,
+          "top": 51.09905418,
+          "bottom": 41.32520964
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-FORET"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données LANDCOVER.FORESTINVENTORY.V2"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LANDCOVER.FORESTINVENTORY.V2-legend.png"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -3498,25 +2684,25 @@
     "PROTECTEDAREAS.PRSF$GEOPORTAIL:OGC:WMS": {
       "name": "PROTECTEDAREAS.PRSF",
       "title": "Points de Rencontre de Secours en Forêt (PRSF)",
-      "description": "Points de Rencontre de Secours en Forêt (PRSF) édition 2025-06-01",
+      "description": "Les Points de Rencontre de Secours en Forêt (PRSF) sont supposées connus des services de secours. Ils permettent de faciliter la localisation d'un blessé par les services de secours.",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 4265.459167699571,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -61.80857161,
-          "right": 55.82904018,
-          "top": 50.84235058,
-          "bottom": -21.37411381
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "environnement": "https://data.geopf.fr/wms-v/ows"
+          "environnement": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
         {
@@ -3530,14 +2716,14 @@
       ],
       "styles": [
         {
-          "name": "default-style-PROTECTEDAREAS.PRSF",
-          "title": "PROTECTEDAREAS.PRSF style"
+          "name": "POINT RENCONTRE SECOURS FORET",
+          "title": "POINT RENCONTRE SECOURS FORET"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=PROTECTEDAREAS.PRSF"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/PROTECTEDAREAS.PRSF-legend.png"
         }
       ],
       "formats": [
@@ -3546,55 +2732,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -3602,27 +2740,79 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
+          "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES$GEOPORTAIL:OGC:WMS": {
+      "name": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES",
+      "title": "Zones à prospecter pour les forêts subnaturelles",
+      "description": "Cartographie des zones à prospecter pour l’identification des forêts subnaturelles",
+      "globalConstraint": {
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 34942641.50179486,
+        "bbox": {
+          "left": -5.150499310285613,
+          "right": 9.57049931028561,
+          "top": 51.09909931028561,
+          "bottom": 41.32520068971439
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wms-r/wms"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PNA-ZONES-A-PROSPECTER"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PNA-ZONES-A-PROSPECTER"
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Données brutes"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/jpeg",
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "image/jpeg",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png8",
+          "name": "image/tiff",
           "current": false
         },
         {
-          "name": "text/html; subtype=openlayers",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -4124,11 +3314,6 @@
       ],
       "metadata": [
         {
-          "name": "LANDCOVER-FORESTINVENTORY-V2",
-          "title": "LANDCOVER-FORESTINVENTORY-V2",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDFORET/LANDCOVER-FORESTINVENTORY-V2.json"
-        },
-        {
           "name": "IGNF_BD-FORET",
           "title": "IGNF_BD-FORET",
           "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-FORET"
@@ -4137,6 +3322,11 @@
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
+        },
+        {
+          "name": "LANDCOVER-FORESTINVENTORY-V2",
+          "title": "LANDCOVER-FORESTINVENTORY-V2",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDFORET/LANDCOVER-FORESTINVENTORY-V2.json"
         }
       ],
       "styles": [
