@@ -1,6 +1,8 @@
 name: generate entree carto
 
 on:
+  # Ce workflow se déclenche automatiquement à la fin du workflow "refresh config_files".
+  # Il n'a donc pas besoin d'être lancé manuellement ni planifié séparément.
   workflow_run:
     workflows: ["refresh config_files"]
     types:
@@ -14,27 +16,45 @@ jobs:
       S3_CONF_FILENAME: ${{ vars.S3_CONF_FILENAME || secrets.S3_CONF_FILENAME }}
       S3_PATH: ${{ vars.S3_PATH || secrets.S3_PATH }}
     steps:
-      - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner.
-      - name: setup python
+      - name: Checkout main branch
+        # On clone la branche main pour avoir accès au code source (scripts Python,
+        # scripts shell, rclone.conf.gpg, etc.) qui ne se trouve pas sur la branche dist.
+        # fetch-depth: 0 est requis pour pouvoir accéder à la branche dist ensuite.
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8 #install the python needed
+          python-version: 3.8
+
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: execute py script
+
+      - name: Restore dist files from dist branch
+        # On récupère uniquement le dossier dist/ depuis la branche dist
+        # (générée par le workflow précédent) et on l'intègre dans le répertoire
+        # de travail courant (qui est sur main). Ainsi les scripts Python peuvent
+        # lire dist/customConfig.json sans qu'on ait besoin de changer de branche.
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git pull --rebase
-          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp 
+          git fetch origin dist
+          git checkout origin/dist -- dist/
+
+      - name: Generate entree carto config
+        # On génère le fichier d'entrée carto en deux étapes :
+        # 1. entree_carto.py lit dist/customConfig.json et produit un fichier temporaire.
+        # 2. thumbnails.py enrichit ce fichier avec les vignettes et écrit dist/entreeCarto.json.
+        run: |
+          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp
           python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
-          git pull --rebase --autostash
-          git add .
-          git commit -m "generate entree carto"
-          git push
-      # Dépôt sur s3
+
+      # --- Dépôt sur S3 ---
+      # Ces étapes sont exécutées pendant qu'on est encore sur main,
+      # car les fichiers scripts/ et rclone.conf.gpg (nécessaires au transfert)
+      # ne sont présents que sur cette branche.
       - name: Validate S3 settings
         run: |
           test -n "$S3_CONF_FILENAME" || { echo "S3_CONF_FILENAME is empty. Define it in environment variables or secrets."; exit 1; }
@@ -47,3 +67,24 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y rclone
       - name: Transfert configuration sur S3
         run: bash ./scripts/copy_entree_carto_conf_s3.sh
+
+      - name: Push entreeCarto.json to dist branch
+        # On pousse uniquement dist/entreeCarto.json sur la branche dist.
+        # Le code source (main) n'est pas modifié.
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          # Sauvegarde du fichier généré avant de changer de branche.
+          cp dist/entreeCarto.json /tmp/entreeCarto.json
+
+          # Bascule sur la branche dist et mise à jour locale.
+          git fetch origin dist:dist
+          git checkout dist
+          git pull --rebase origin dist
+
+          # Copie du fichier généré et commit uniquement si une modification est détectée.
+          cp /tmp/entreeCarto.json dist/entreeCarto.json
+          git add dist/entreeCarto.json
+          git diff --cached --quiet || git commit -m "generate entree carto"
+          git push origin dist
