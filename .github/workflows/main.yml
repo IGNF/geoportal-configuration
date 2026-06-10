@@ -3,29 +3,70 @@ name: refresh config_files
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */4 * * *" 
+    - cron: "0 */4 * * *"
 
 jobs:
   refresh_config:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner.
-      - name: setup python
+      - name: Checkout main branch
+        # On clone explicitement la branche main (la branche par défaut du projet).
+        # fetch-depth: 0 récupère tout l'historique et toutes les branches distantes,
+        # ce qui est nécessaire pour pouvoir basculer ensuite sur la branche dist.
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8 #install the python needed
+          python-version: 3.8
+
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: execute py script
+
+      - name: Generate config files
+        # On génère les fichiers de configuration dans le dossier dist/.
+        # Ce dossier est ignoré par .gitignore sur main : il ne sera jamais
+        # commité sur cette branche, seulement utilisé comme espace de travail temporaire.
+        run: |
+          mkdir -p dist
+          cat keys.txt | xargs -L 1 python main.py --referer https://cartes.gouv.fr/
+          python main.py full
+
+      - name: Push generated files to dist branch
+        # On envoie le contenu généré sur la branche dédiée « dist »,
+        # qui ne contient que les fichiers produits (pas le code source).
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git pull --rebase
-          cat keys.txt | xargs -L 1 python main.py --referer https://cartes.gouv.fr/
-          python main.py full
-          git add .
-          git commit -m "refresh config files"
-          git push
+
+          # Sauvegarde du dossier dist/ dans un répertoire temporaire hors du dépôt,
+          # car on va changer de branche juste après.
+          cp -r dist /tmp/dist-generated
+
+          # Si la branche dist existe déjà sur le dépôt distant, on la récupère et on bascule dessus.
+          # Sinon, on la crée comme branche orpheline (sans historique commun avec main)
+          # puis on supprime tous les fichiers hérités de main pour partir d'un répertoire vide.
+          if git ls-remote --exit-code origin dist; then
+            git fetch origin dist:dist
+            git checkout dist
+            git pull --rebase origin dist
+          else
+            git checkout --orphan dist
+            git rm -rf .
+            mkdir -p dist
+          fi
+
+          # On remplace le contenu du dossier dist/ par les fichiers fraîchement générés.
+          rm -rf dist
+          cp -r /tmp/dist-generated dist
+
+          # On ne commite que si des modifications ont réellement été apportées,
+          # pour éviter un commit vide en cas d'absence de changement.
+          git add dist/
+          git diff --cached --quiet || git commit -m "refresh config files"
+          git push origin dist
 
