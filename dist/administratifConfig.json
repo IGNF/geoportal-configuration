@@ -34,6 +34,12 @@
         "ADMINEXPRESS-COG.2026$GEOPORTAIL:OGC:WMS",
         "ADMINEXPRESS-COG.LATEST$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG-CARTO-PE.2025$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG-CARTO-PE.2026$GEOPORTAIL:OGC:WMS",
+        "ADMINEXPRESS-COG.2026$GEOPORTAIL:OGC:WMS",
+        "Noms_communes$GEOPORTAIL:OGC:WMS",
+        "Noms_departements$GEOPORTAIL:OGC:WMS",
+        "Noms_regions$GEOPORTAIL:OGC:WMS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement$GEOPORTAIL:OGC:WFS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:arrondissement_municipal$GEOPORTAIL:OGC:WFS",
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST:canton$GEOPORTAIL:OGC:WFS",
@@ -943,11 +949,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
           "format": ""
         }
       ],
@@ -1318,11 +1324,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
           "format": ""
         }
       ],
@@ -1443,11 +1449,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
           "format": ""
         }
       ],
@@ -2068,11 +2074,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS",
           "format": ""
         }
       ],
@@ -2232,23 +2238,23 @@
       "title": "ADMINEXPRESS COG CARTO PE (PETITE ECHELLE); Edition 2025-01-01",
       "description": "Limites administratives d’ADMIN EXPRESS pour un usage cartographique et/ou statistique à petite échelle (édition 2025-01-01).",
       "globalConstraint": {
-        "minScaleDenominator": 8530.918335399141,
-        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "administratif": "https://data.geopf.fr/wms-r/wms"
+          "administratif": "https://data.geopf.fr/wms-v/ows"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [
         {
@@ -2262,14 +2268,14 @@
       ],
       "styles": [
         {
-          "name": "ADMINEXPRESS-COG",
-          "title": "Légende du 1/1000000"
+          "name": "default-style-ADMINEXPRESS-COG-CARTO-PE.2025",
+          "title": "ADMINEXPRESS-COG-CARTO-PE.2025 style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/ADMINEXPRESS-COG.LATEST-legend.png"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ADMINEXPRESS-COG-CARTO-PE.2025"
         }
       ],
       "formats": [
@@ -2278,11 +2284,31 @@
           "current": true
         },
         {
-          "name": "image/jpeg",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -2290,7 +2316,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
@@ -2300,35 +2370,35 @@
       "title": "ADMINEXPRESS COG CARTO PE (PETITE ECHELLE); Edition 2026-01-01",
       "description": "Limites administratives d’ADMIN EXPRESS pour un usage cartographique et/ou statistique à petite échelle (édition 2026-01-01).",
       "globalConstraint": {
-        "minScaleDenominator": 8530.918335399141,
-        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "administratif": "https://data.geopf.fr/wms-r/wms"
+          "administratif": "https://data.geopf.fr/wms-v/ows"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
       "metadata": [],
       "styles": [
         {
-          "name": "ADMINEXPRESS-COG",
-          "title": "Légende du 1/1000000"
+          "name": "default-style-ADMINEXPRESS-COG-CARTO-PE.2026",
+          "title": "ADMINEXPRESS-COG-CARTO-PE.2026 style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/ADMINEXPRESS-COG.LATEST-legend.png"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ADMINEXPRESS-COG-CARTO-PE.2026"
         }
       ],
       "formats": [
@@ -2337,11 +2407,31 @@
           "current": true
         },
         {
-          "name": "image/jpeg",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -2349,7 +2439,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
@@ -2515,12 +2649,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -2583,12 +2717,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -2855,12 +2989,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -2991,12 +3125,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -3107,44 +3241,35 @@
       "title": "ADMINEXPRESS COG ; Edition : 2026-01-01",
       "description": "Limites administratives Express COG code officiel géographique ; Edition : 2026-01-01",
       "globalConstraint": {
-        "minScaleDenominator": 8530.918335399141,
-        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
         "bbox": {
-          "left": -63.3725215,
-          "right": 55.92586458,
-          "top": 51.31211928,
-          "bottom": -21.47558667
+          "left": -63.0847418,
+          "right": 55.83665387,
+          "top": 51.08898944,
+          "bottom": -21.38963076
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "administratif": "https://data.geopf.fr/wms-r/wms"
+          "administratif": "https://data.geopf.fr/wms-v/ows"
         }
       },
-      "defaultProjection": "EPSG:3857",
+      "defaultProjection": "EPSG:4326",
       "queryable": true,
-      "metadata": [
-        {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
-        },
-        {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        }
-      ],
+      "metadata": [],
       "styles": [
         {
-          "name": "ADMINEXPRESS-COG",
-          "title": "Légende du 1/1000000"
+          "name": "default-style-ADMINEXPRESS-COG.2026",
+          "title": "ADMINEXPRESS-COG.2026 style"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources/legendes/ADMINEXPRESS-COG.LATEST-legend.png"
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ADMINEXPRESS-COG.2026"
         }
       ],
       "formats": [
@@ -3153,11 +3278,31 @@
           "current": true
         },
         {
-          "name": "image/jpeg",
+          "name": "application/atom+xml",
           "current": false
         },
         {
-          "name": "image/tiff",
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
           "current": false
         },
         {
@@ -3165,7 +3310,51 @@
           "current": false
         },
         {
-          "name": "image/x-bil;bits=32",
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
@@ -3263,12 +3452,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -3302,6 +3491,402 @@
         },
         {
           "name": "image/x-bil;bits=32",
+          "current": false
+        }
+      ]
+    },
+    "Noms_communes$GEOPORTAIL:OGC:WMS": {
+      "name": "Noms_communes",
+      "title": "ADMINEXPRESS COG Noms communes; Edition : 2025-01-01",
+      "description": "ADMINEXPRESS COG Noms communes ; Edition : 2025-01-01",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-Noms_communes",
+          "title": "Noms_communes style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Noms_communes"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "Noms_departements$GEOPORTAIL:OGC:WMS": {
+      "name": "Noms_departements",
+      "title": "ADMINEXPRESS COG Noms departements; Edition : 2025-01-01",
+      "description": "ADMINEXPRESS COG Noms departements ; Edition : 2025-01-01",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-Noms_departements",
+          "title": "Noms_departements style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Noms_departements"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
+          "current": false
+        }
+      ]
+    },
+    "Noms_regions$GEOPORTAIL:OGC:WMS": {
+      "name": "Noms_regions",
+      "title": "ADMINEXPRESS COG Noms regions; Edition : 2025-01-01",
+      "description": "ADMINEXPRESS COG Noms regions ; Edition : 2025-01-01",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.875,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMS",
+        "version": "1.3.0",
+        "serverUrl": {
+          "administratif": "https://data.geopf.fr/wms-v/ows"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": true,
+      "metadata": [
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        }
+      ],
+      "styles": [
+        {
+          "name": "default-style-Noms_regions",
+          "title": "Noms_regions style"
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=Noms_regions"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        },
+        {
+          "name": "application/atom+xml",
+          "current": false
+        },
+        {
+          "name": "application/json;type=utfgrid",
+          "current": false
+        },
+        {
+          "name": "application/pdf",
+          "current": false
+        },
+        {
+          "name": "application/rss+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
+          "current": false
+        },
+        {
+          "name": "application/vnd.google-earth.kmz",
+          "current": false
+        },
+        {
+          "name": "image/geotiff",
+          "current": false
+        },
+        {
+          "name": "image/geotiff8",
+          "current": false
+        },
+        {
+          "name": "image/gif",
+          "current": false
+        },
+        {
+          "name": "image/jpeg",
+          "current": false
+        },
+        {
+          "name": "image/png; mode=8bit",
+          "current": false
+        },
+        {
+          "name": "image/svg+xml",
+          "current": false
+        },
+        {
+          "name": "image/tiff",
+          "current": false
+        },
+        {
+          "name": "image/tiff8",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png",
+          "current": false
+        },
+        {
+          "name": "image/vnd.jpeg-png8",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers2",
+          "current": false
+        },
+        {
+          "name": "text/html; subtype=openlayers3",
           "current": false
         }
       ]
