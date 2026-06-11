@@ -35,13 +35,12 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Restore dist files from dist branch
-        # On récupère uniquement le dossier dist/ depuis la branche dist
-        # (générée par le workflow précédent) et on l'intègre dans le répertoire
-        # de travail courant (qui est sur main). Ainsi les scripts Python peuvent
-        # lire dist/customConfig.json sans qu'on ait besoin de changer de branche.
+        # On récupère uniquement le fichier requis depuis la branche dist
+        # sans modifier l'index Git de la branche main.
         run: |
+          mkdir -p dist
           git fetch origin dist
-          git checkout origin/dist -- dist/
+          git show origin/dist:dist/customConfig.json > dist/customConfig.json
 
       - name: Generate entree carto config
         # On génère le fichier d'entrée carto en deux étapes :
@@ -69,22 +68,30 @@ jobs:
         run: bash ./scripts/copy_entree_carto_conf_s3.sh
 
       - name: Push entreeCarto.json to dist branch
-        # On pousse uniquement dist/entreeCarto.json sur la branche dist.
-        # Le code source (main) n'est pas modifié.
+        # On pousse uniquement dist/entreeCarto.json sur la branche dist
+        # via un worktree temporaire, sans changer la branche courante.
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
 
-          # Sauvegarde du fichier généré avant de changer de branche.
+          # Sauvegarde du fichier généré hors du dépôt principal.
           cp dist/entreeCarto.json /tmp/entreeCarto.json
 
-          # Bascule sur la branche dist et mise à jour locale.
+          # Prépare un worktree temporaire sur la branche dist.
+          DIST_WORKTREE=/tmp/geoportal-dist-worktree
+          rm -rf "$DIST_WORKTREE"
           git fetch origin dist:dist
-          git checkout dist
+          git worktree add --force "$DIST_WORKTREE" dist
+
+          cd "$DIST_WORKTREE"
           git pull --rebase origin dist
 
           # Copie du fichier généré et commit uniquement si une modification est détectée.
+          mkdir -p dist
           cp /tmp/entreeCarto.json dist/entreeCarto.json
           git add dist/entreeCarto.json
           git diff --cached --quiet || git commit -m "generate entree carto"
           git push origin dist
+
+          cd "$GITHUB_WORKSPACE"
+          git worktree remove --force "$DIST_WORKTREE"
