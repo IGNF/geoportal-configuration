@@ -181,7 +181,7 @@ def _parseTMS(tms):
     tms_id = tms["ows:Identifier"]
     tms_config = {}
     tms_config["projection"] = tms["ows:SupportedCRS"]
-    with open("nativeResolutions.json") as json_file:
+    with open("static/json/nativeResolutions.json") as json_file:
         nativeResolutionsData = defaultdict(lambda: None, json.load(json_file))
     if len(tms_id.split("_")) >= 3 and tms_id not in nativeResolutionsData:
         splitted = tms_id.split("_")
