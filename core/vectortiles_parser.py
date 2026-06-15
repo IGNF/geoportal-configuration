@@ -5,9 +5,8 @@ import xmltodict
 from core.key_resource_lister import keysServicesLayers
 from core.generic_keys import GENERIC_KEYS
 
-key_services_layers = keysServicesLayers()
-
 def parseVectorTiles(tileMaps, key, referer):
+    key_services_layers = keysServicesLayers()
 
     if key in GENERIC_KEYS() and key != "full" and "TMS" not in key_services_layers[key]:
         return False

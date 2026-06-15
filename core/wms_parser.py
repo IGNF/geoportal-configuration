@@ -1,10 +1,8 @@
 from core.key_resource_lister import keysServicesLayers
 from core.generic_keys import GENERIC_KEYS
 
-
-key_services_layers = keysServicesLayers()
-
 def parseWMS(dict_capabilities, key):
+    key_services_layers = keysServicesLayers()
     if dict_capabilities == False:
         return False
     wms_config = {}
@@ -18,7 +16,7 @@ def parseWMS(dict_capabilities, key):
 
     server_url = dict_capabilities["Request"]["GetMap"]["DCPType"]["HTTP"]["Get"]["OnlineResource"]["@xlink:href"].split("?")[0]
     formats = _parseFormats(dict_capabilities)
-    all_layers = _parseLayers(dict_capabilities["Layer"]["Layer"], key, server_url, formats)
+    all_layers = _parseLayers(dict_capabilities["Layer"]["Layer"], key, server_url, formats, key_services_layers)
 
     general_options = {}
     general_options["apiKeys"] = {}
@@ -27,7 +25,7 @@ def parseWMS(dict_capabilities, key):
     wms_config["layers"] = all_layers
     return wms_config
 
-def _parseLayers(layers, key, server_url, formats):
+def _parseLayers(layers, key, server_url, formats, key_services_layers):
     layers_config = {}
     for layer in layers:
         if layer == None:

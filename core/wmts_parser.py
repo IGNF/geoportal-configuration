@@ -4,16 +4,15 @@ from collections import defaultdict
 from core.key_resource_lister import keysServicesLayers
 from core.generic_keys import GENERIC_KEYS
 
-key_services_layers = keysServicesLayers()
-
 def parseWMTS(dict_capabilities, key):
+    key_services_layers = keysServicesLayers()
     if dict_capabilities == False:
         return False
 
     wmts_config = {}
     all_tms = _parseAllTMS(dict_capabilities["Contents"]["TileMatrixSet"])
     try:
-        all_layers = _parseLayers(dict_capabilities["Contents"]["Layer"], all_tms, key)
+        all_layers = _parseLayers(dict_capabilities["Contents"]["Layer"], all_tms, key, key_services_layers)
     except KeyError:
         return False
     if key in GENERIC_KEYS() and key != "full" and "WMTS" not in key_services_layers[key]:
@@ -29,7 +28,7 @@ def parseWMTS(dict_capabilities, key):
 
     return wmts_config
 
-def _parseLayers(layers, all_tms, key):
+def _parseLayers(layers, all_tms, key, key_services_layers):
     if not isinstance(layers, list):
         layers = [layers]
     layers_config = {}
