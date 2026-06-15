@@ -4,9 +4,8 @@ import xml.etree.ElementTree as ET
 from core.key_resource_lister import keysServicesLayers
 from core.generic_keys import GENERIC_KEYS
 
-key_services_layers = keysServicesLayers()
-
 def parseWFS(capabilities, key, namespaces):
+    key_services_layers = keysServicesLayers()
     if capabilities == False:
         return False
     wfs_config = {}
@@ -17,7 +16,7 @@ def parseWFS(capabilities, key, namespaces):
     server_url = ET.tostring(root.find('ows:OperationsMetadata', namespaces).find("ows:Operation", namespaces).find("ows:DCP", namespaces).find("ows:HTTP", namespaces).find("ows:Get", namespaces)).decode("utf-8")
     server_url = server_url.split("href=\"")[1].split("\"")[0]
     featureTypeList = root.find('FeatureTypeList', namespaces)
-    all_layers = _parseLayers(featureTypeList, key, server_url, namespaces)
+    all_layers = _parseLayers(featureTypeList, key, server_url, namespaces, key_services_layers)
 
     general_options = {}
     general_options["apiKeys"] = {}
@@ -26,7 +25,7 @@ def parseWFS(capabilities, key, namespaces):
     wfs_config["layers"] = all_layers
     return wfs_config
 
-def _parseLayers(layers, key, server_url, namespaces):
+def _parseLayers(layers, key, server_url, namespaces, key_services_layers):
     layers_config = {}
     for layer in layers.findall('FeatureType', namespaces):
         if layer == None:

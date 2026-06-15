@@ -1,6 +1,12 @@
 import csv
-import requests
 import json
+from pathlib import Path
+
+import requests
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DEFAULT_RESOURCES_FILE = ROOT_DIR / "resources_by_key.csv"
+DEFAULT_GENERIC_KEYS_FILE = ROOT_DIR / "generic_keys.json"
 
 TMS_CONFIG = [
   {"service": "TMS", "key": "administratif", "layer": "ADMIN_EXPRESS"},
@@ -16,7 +22,8 @@ TMS_CONFIG = [
 
 def createKeyServiceLayersFile(
   url="https://data.geopf.fr/annexes/ressources/capabilities/services.csv",
-  filePath="resources_by_key.csv"):
+  filePath=DEFAULT_RESOURCES_FILE):
+  filePath = Path(filePath)
   with requests.Session() as s:
     download = s.get(url)
     decoded_content = download.content.decode("latin1")
@@ -57,10 +64,14 @@ def createKeyServiceLayersFile(
       except:
         print(row)
         continue
-    with open("generic_keys.json", "w", newline='', encoding="utf-8") as generic_keys_file:
+    with open(DEFAULT_GENERIC_KEYS_FILE, "w", newline='', encoding="utf-8") as generic_keys_file:
       json.dump(list(set(generic_keys)), generic_keys_file)
 
-def keysServicesLayers(filePath="resources_by_key.csv"):
+def keysServicesLayers(filePath=DEFAULT_RESOURCES_FILE):
+  filePath = Path(filePath)
+  if not filePath.exists():
+    createKeyServiceLayersFile(filePath=filePath)
+
   rows = []
   keys = []
   with open(filePath) as csvfile:
