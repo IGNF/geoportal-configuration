@@ -37,36 +37,37 @@ jobs:
           python main.py full
 
       - name: Push generated files to dist branch
-        # On envoie le contenu généré sur la branche dédiée « dist »,
-        # qui ne contient que les fichiers produits (pas le code source).
+        # On pousse le contenu généré sur la branche dédiée « dist »
+        # via un worktree temporaire, sans changer la branche courante.
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
 
-          # Sauvegarde du dossier dist/ dans un répertoire temporaire hors du dépôt,
-          # car on va changer de branche juste après.
+          # Sauvegarde des fichiers générés hors du dépôt principal.
           cp -r dist /tmp/dist-generated
 
-          # Si la branche dist existe déjà sur le dépôt distant, on la récupère et on bascule dessus.
-          # Sinon, on la crée comme branche orpheline (sans historique commun avec main)
-          # puis on supprime tous les fichiers hérités de main pour partir d'un répertoire vide.
-          if git ls-remote --exit-code origin dist; then
-            git fetch origin dist:dist
-            git checkout dist
-            git pull --rebase origin dist
-          else
-            git checkout --orphan dist
-            git rm -rf .
-            mkdir -p dist
-          fi
+          # Prépare un worktree temporaire sur la branche dist.
+          DIST_WORKTREE=/tmp/geoportal-dist-worktree
+          rm -rf "$DIST_WORKTREE"
+          git fetch origin dist:dist
+          git worktree add "$DIST_WORKTREE" dist
 
-          # On remplace le contenu du dossier dist/ par les fichiers fraîchement générés.
-          rm -rf dist
-          cp -r /tmp/dist-generated dist
+          cd "$DIST_WORKTREE"
+          git pull --rebase origin dist
 
-          # On ne commite que si des modifications ont réellement été apportées,
-          # pour éviter un commit vide en cas d'absence de changement.
+          # Fusionne les fichiers générés dans dist/ sans supprimer les fichiers existants.
+          # tous les fichiers non modifiés restent conservés
+          mkdir -p dist
+          rsync -a /tmp/dist-generated/ dist/
+
+          # Commit uniquement si des modifications ont été détectées.
           git add dist/
           git diff --cached --quiet || git commit -m "refresh config files"
           git push origin dist
+
+          cd "$GITHUB_WORKSPACE"
+          git worktree remove --force "$DIST_WORKTREE"
+
+      # - name: Trim dist branch history
+      #   run: sh ./scripts/trim_dist_history.sh 100 dist
 
