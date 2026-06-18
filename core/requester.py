@@ -2,8 +2,17 @@ import requests
 import xmltodict
 import xml.etree.ElementTree as ET
 import os
+from xml.parsers.expat import ExpatError
 
 from core.generic_keys import GENERIC_KEYS
+
+
+def _parse_xmltodict_response(response_text, service_name, key):
+    try:
+        return xmltodict.parse(response_text)
+    except ExpatError as error:
+        print("Skipping {} capabilities for key '{}': malformed XML ({})".format(service_name, key, error))
+        return False
 
 
 
@@ -16,7 +25,9 @@ def getWMTSCapabilities(key, referer=""):
     response = requests.get(url, headers={'Referer': referer})
     if response.status_code != 200:
         return False
-    dict_capabilities = xmltodict.parse(response.text)
+    dict_capabilities = _parse_xmltodict_response(response.text, "WMTS", key)
+    if dict_capabilities == False:
+        return False
 
     return dict_capabilities["Capabilities"]
 
@@ -29,7 +40,9 @@ def getWMSRCapabilities(key, referer=""):
     response = requests.get(url, headers={'referer': referer})
     if response.status_code != 200:
         return False
-    dict_capabilities = xmltodict.parse(response.text)
+    dict_capabilities = _parse_xmltodict_response(response.text, "WMS-R", key)
+    if dict_capabilities == False:
+        return False
 
     return dict_capabilities["WMS_Capabilities"]["Capability"]
 
@@ -42,7 +55,9 @@ def getWMSVCapabilities(key, referer=""):
     response = requests.get(url, headers={'referer': referer})
     if response.status_code != 200:
         return False
-    dict_capabilities = xmltodict.parse(response.text)
+    dict_capabilities = _parse_xmltodict_response(response.text, "WMS-V", key)
+    if dict_capabilities == False:
+        return False
 
     return dict_capabilities["WMS_Capabilities"]["Capability"]
 
@@ -57,15 +72,21 @@ def getWFSCapabilities(key, referer=""):
         return [False, False]
     with open("originalCapa.xml", "w", encoding="utf-8") as file:
         file.writelines(response.text)
-    namespaces = {}
-    for _, node in ET.iterparse("originalCapa.xml", events=['start-ns']):
-        if node[0] == 'wfs':
-            continue
-        namespaces[node[0]] = node[1]
-    for ns in namespaces:
-        ET.register_namespace(ns, namespaces[ns])
-    capabilities = ET.parse("originalCapa.xml")
-    os.remove("originalCapa.xml")
+    try:
+        namespaces = {}
+        for _, node in ET.iterparse("originalCapa.xml", events=['start-ns']):
+            if node[0] == 'wfs':
+                continue
+            namespaces[node[0]] = node[1]
+        for ns in namespaces:
+            ET.register_namespace(ns, namespaces[ns])
+        capabilities = ET.parse("originalCapa.xml")
+    except ET.ParseError as error:
+        print("Skipping WFS capabilities for key '{}': malformed XML ({})".format(key, error))
+        return [False, False]
+    finally:
+        if os.path.exists("originalCapa.xml"):
+            os.remove("originalCapa.xml")
 
     return [capabilities, namespaces]
 
@@ -78,6 +99,8 @@ def getTMSTileMaps(key, referer=""):
     response = requests.get(url, headers={'referer': referer})
     if response.status_code != 200:
         return False
-    dict_capabilities = xmltodict.parse(response.text)
+    dict_capabilities = _parse_xmltodict_response(response.text, "TMS", key)
+    if dict_capabilities == False:
+        return False
 
     return dict_capabilities["TileMapService"]["TileMaps"]["TileMap"]
