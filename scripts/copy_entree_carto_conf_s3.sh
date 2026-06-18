@@ -12,4 +12,5 @@ if [ -z "${S3_PATH:-}" ]; then
   exit 1
 fi
 
-rclone copy "$SCRIPT_DIR/../dist/entreeCarto.json" "$S3_PATH"
+# On uploade la version minifiée sous le nom entreeCarto.json sur S3.
+rclone copyto "$SCRIPT_DIR/../dist/entreeCarto.min.json" "$S3_PATH/entreeCarto.json"

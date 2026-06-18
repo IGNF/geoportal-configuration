@@ -111,6 +111,10 @@ class GenerateEntreeCarto:
         # Sauvegarder le JSON modifié dans un nouveau fichier
         with open(self.output_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+        # Produire également une version minifiée (sans espaces ni sauts de ligne)
+        min_output_path = self.output_path.replace(".json", ".min.json")
+        with open(min_output_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
         return data
     
 # Exemple d'utilisation
