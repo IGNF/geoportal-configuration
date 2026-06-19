@@ -25,6 +25,12 @@ class UpdateThumbnails:
         # Sauvegarder le JSON modifié dans un nouveau fichier
         with open(self.output_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
+
+        # Garder aussi une version minifiée synchronisée avec le fichier principal.
+        if self.output_path.endswith(".json"):
+            min_output_path = self.output_path[:-5] + ".min.json"
+            with open(min_output_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, separators=(",", ":"))
         
     def find_thumbnail(self, layer_name, verbose=False):
         # Directoires de miniatures
