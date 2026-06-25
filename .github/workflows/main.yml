@@ -68,6 +68,6 @@ jobs:
           cd "$GITHUB_WORKSPACE"
           git worktree remove --force "$DIST_WORKTREE"
 
-      # - name: Trim dist branch history
-      #   run: sh ./scripts/trim_dist_history.sh 100 dist
+      - name: Trim dist branch history
+        run: sh ./scripts/trim_dist_history.sh 100 dist
 
