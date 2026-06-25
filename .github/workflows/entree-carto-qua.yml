@@ -1,0 +1,97 @@
+name: generate entree-carto qualification
+
+jobs:
+  refresh_config:
+    runs-on: ubuntu-latest
+    environment: qualification
+    env:
+      S3_CONF_FILENAME: ${{ vars.S3_CONF_FILENAME || secrets.S3_CONF_FILENAME }}
+      S3_PATH: ${{ vars.S3_PATH || secrets.S3_PATH }}
+      LAYER_COUNT: ${{ vars.LAYER_COUNT }}
+    steps:
+      - name: Checkout dev branch
+        # On clone la branche dev pour avoir accès au code source (scripts Python,
+        # scripts shell, rclone.conf.gpg, etc.) qui ne se trouve pas sur la branche dist.
+        # fetch-depth: 0 est requis pour pouvoir accéder à la branche dist ensuite.
+        uses: actions/checkout@v3
+        with:
+          ref: dev
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Restore dist files from dist branch
+        # On récupère uniquement le fichier requis depuis la branche dist
+        # sans modifier l'index Git de la branche dev.
+        run: |
+          mkdir -p dist
+          git fetch origin dist
+          git show origin/dist:dist/customConfig.json > dist/customConfig.json
+
+      - name: Generate entree carto config
+        # On génère le fichier d'entrée carto en deux étapes :
+        # 1. entree_carto.py lit dist/customConfig.json et produit un fichier temporaire.
+        # 2. thumbnails.py enrichit ce fichier avec les vignettes et écrit dist/entreeCarto.json.
+        run: |
+          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp --count=$LAYER_COUNT
+          python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
+
+      # --- Dépôt sur S3 ---
+      # Ces étapes sont exécutées pendant qu'on est encore sur main,
+      # car les fichiers scripts/ et rclone.conf.gpg (nécessaires au transfert)
+      # ne sont présents que sur cette branche.
+      - name: Validate S3 settings
+        run: |
+          test -n "$S3_CONF_FILENAME" || { echo "S3_CONF_FILENAME is empty. Define it in environment variables or secrets."; exit 1; }
+          test -n "$S3_PATH" || { echo "S3_PATH is empty. Define it in environment variables or secrets."; exit 1; }
+      - name: Decrypt rclone conf
+        run: ./scripts/decrypt_secret.sh
+        env:
+          RCLONE_PASSPHRASE: ${{ secrets.RCLONE_PASSPHRASE }}
+      - name: Install rclone
+        run: sudo apt-get update && sudo apt-get install -y rclone
+      - name: Transfert configuration sur S3
+        run: bash ./scripts/copy_entree_carto_conf_s3.sh
+
+      - name: Push entreeCarto.json to dist-dev branch
+        # On pousse uniquement dist/entreeCarto.json sur la branche dist-dev
+        # via un worktree temporaire, sans changer la branche courante.
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          # Sauvegarde du fichier généré hors du dépôt principal.
+          cp dist/entreeCarto.json /tmp/entreeCarto.json
+
+          # Prépare un worktree temporaire sur la branche dist-dev.
+          DIST_WORKTREE=/tmp/geoportal-dist-worktree
+          rm -rf "$DIST_WORKTREE"
+          
+          # Récupère dist-dev s'il existe, sinon crée une branche orpheline
+          if git fetch origin dist-dev 2>/dev/null; then
+            git fetch origin dist-dev:dist
+            git worktree add --force "$DIST_WORKTREE" dist
+            cd "$DIST_WORKTREE"
+            git pull --rebase origin dist-dev
+          else
+            git worktree add --force "$DIST_WORKTREE" --orphan dist
+            cd "$DIST_WORKTREE"
+            git rm -rf . || true
+          fi
+
+          # Copie du fichier généré et commit uniquement si une modification est détectée.
+          mkdir -p dist
+          cp /tmp/entreeCarto.json dist/entreeCarto.json
+          git add dist/entreeCarto.json
+          git diff --cached --quiet || git commit -m "generate entree carto qualification"
+          git push origin dist-dev
+
+          cd "$GITHUB_WORKSPACE"
+          git worktree remove --force "$DIST_WORKTREE"
