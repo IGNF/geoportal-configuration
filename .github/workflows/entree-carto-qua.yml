@@ -84,7 +84,7 @@ jobs:
             cd "$DIST_WORKTREE"
             git pull --rebase origin dist-dev
           else
-            git worktree add --force "$DIST_WORKTREE" --orphan dist-dev
+            git worktree add --force --orphan -b dist-dev "$DIST_WORKTREE"
             cd "$DIST_WORKTREE"
             git rm -rf . || true
           fi
