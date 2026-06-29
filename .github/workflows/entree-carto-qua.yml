@@ -79,8 +79,8 @@ jobs:
           
           # Récupère dist-dev s'il existe, sinon crée une branche orpheline
           if git fetch origin dist-dev 2>/dev/null; then
-            git fetch origin dist-dev:dist
-            git worktree add --force "$DIST_WORKTREE" dist
+            git fetch origin dist-dev:dist-dev
+            git worktree add --force "$DIST_WORKTREE" dist-dev
             cd "$DIST_WORKTREE"
             git pull --rebase origin dist-dev
           else
