@@ -11,6 +11,7 @@ jobs:
       S3_CONF_FILENAME: ${{ vars.S3_CONF_FILENAME || secrets.S3_CONF_FILENAME }}
       S3_PATH: ${{ vars.S3_PATH || secrets.S3_PATH }}
       LAYER_COUNT: ${{ vars.LAYER_COUNT }}
+      MAX_COMMIT: ${{ vars.MAX_COMMIT || 100 }}
     steps:
       - name: Checkout dev branch
         # On clone la branche dev pour avoir accès au code source (scripts Python,
@@ -98,3 +99,9 @@ jobs:
 
           cd "$GITHUB_WORKSPACE"
           git worktree remove --force "$DIST_WORKTREE"
+
+      - name: Trim dist-dev history
+        # Checkout dist-dev puis tronque l'historique si le nombre de commits dépasse MAX_COMMIT.
+        run: |
+          git checkout dist-dev
+          bash ./scripts/trim_dist_history.sh "$MAX_COMMIT" dist-dev
