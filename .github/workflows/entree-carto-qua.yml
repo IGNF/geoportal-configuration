@@ -101,7 +101,9 @@ jobs:
           git worktree remove --force "$DIST_WORKTREE"
 
       - name: Trim dist-dev history
-        # Checkout dist-dev puis tronque l'historique si le nombre de commits dépasse MAX_COMMIT.
+        # Copie le script (présent sur dev) avant de basculer sur dist-dev,
+        # puis tronque l'historique si le nombre de commits dépasse MAX_COMMIT.
         run: |
+          cp ./scripts/trim_dist_history.sh /tmp/trim_dist_history.sh
           git checkout dist-dev
-          bash ./scripts/trim_dist_history.sh "$MAX_COMMIT" dist-dev
+          bash /tmp/trim_dist_history.sh "$MAX_COMMIT" dist-dev
