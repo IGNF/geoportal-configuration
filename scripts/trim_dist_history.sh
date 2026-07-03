@@ -28,8 +28,8 @@ if [ "$COUNT" -gt "$MAX" ]; then
 
     # Rejoue uniquement les (MAX - 1) commits les plus récents par-dessus la
     # nouvelle racine orpheline, pour obtenir exactement MAX commits au total.
-    git rebase --onto "$ORPHAN_ROOT" "HEAD~$((MAX - 1))" HEAD
+    git rebase --onto "$ORPHAN_ROOT" "HEAD~$((MAX - 1))"
 
     # Force la mise à jour distante de la branche cible avec protection --force-with-lease.
-    git push --force-with-lease origin "$TARGET_BRANCH"
+    git push --force-with-lease origin "HEAD:$TARGET_BRANCH"
 fi

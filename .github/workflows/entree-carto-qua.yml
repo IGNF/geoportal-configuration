@@ -105,5 +105,6 @@ jobs:
         # puis tronque l'historique si le nombre de commits dépasse MAX_COMMIT.
         run: |
           cp ./scripts/trim_dist_history.sh /tmp/trim_dist_history.sh
-          git checkout dist-dev
+          git fetch origin dist-dev
+          git checkout -B dist-dev origin/dist-dev
           bash /tmp/trim_dist_history.sh "$MAX_COMMIT" dist-dev
