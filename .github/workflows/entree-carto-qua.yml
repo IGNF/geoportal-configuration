@@ -11,6 +11,7 @@ jobs:
       S3_CONF_FILENAME: ${{ vars.S3_CONF_FILENAME || secrets.S3_CONF_FILENAME }}
       S3_PATH: ${{ vars.S3_PATH || secrets.S3_PATH }}
       LAYER_COUNT: ${{ vars.LAYER_COUNT }}
+      MAX_COMMIT: ${{ vars.MAX_COMMIT || 100 }}
     steps:
       - name: Checkout dev branch
         # On clone la branche dev pour avoir accès au code source (scripts Python,
@@ -79,12 +80,12 @@ jobs:
           
           # Récupère dist-dev s'il existe, sinon crée une branche orpheline
           if git fetch origin dist-dev 2>/dev/null; then
-            git fetch origin dist-dev:dist
-            git worktree add --force "$DIST_WORKTREE" dist
+            git fetch origin dist-dev:dist-dev
+            git worktree add --force "$DIST_WORKTREE" dist-dev
             cd "$DIST_WORKTREE"
             git pull --rebase origin dist-dev
           else
-            git worktree add --force "$DIST_WORKTREE" --orphan dist-dev
+            git worktree add --force --orphan -b dist-dev "$DIST_WORKTREE"
             cd "$DIST_WORKTREE"
             git rm -rf . || true
           fi
@@ -98,3 +99,12 @@ jobs:
 
           cd "$GITHUB_WORKSPACE"
           git worktree remove --force "$DIST_WORKTREE"
+
+      - name: Trim dist-dev history
+        # Copie le script (présent sur dev) avant de basculer sur dist-dev,
+        # puis tronque l'historique si le nombre de commits dépasse MAX_COMMIT.
+        run: |
+          cp ./scripts/trim_dist_history.sh /tmp/trim_dist_history.sh
+          git fetch origin dist-dev
+          git checkout -B dist-dev origin/dist-dev
+          bash /tmp/trim_dist_history.sh "$MAX_COMMIT" dist-dev

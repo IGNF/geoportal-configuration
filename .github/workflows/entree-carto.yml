@@ -95,3 +95,12 @@ jobs:
 
           cd "$GITHUB_WORKSPACE"
           git worktree remove --force "$DIST_WORKTREE"
+
+      - name: Trim dist history
+        # Copie le script (présent sur main) avant de basculer sur dist,
+        # puis tronque l'historique si le nombre de commits dépasse MAX_COMMIT.
+        run: |
+          cp ./scripts/trim_dist_history.sh /tmp/trim_dist_history.sh
+          git fetch origin dist
+          git checkout -B dist origin/dist 
+          bash /tmp/trim_dist_history.sh "$MAX_COMMIT" dist
