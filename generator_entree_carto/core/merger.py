@@ -1,7 +1,17 @@
 from core.thumbnail import get_image_dimensions, get_valid_thumbnail_from_mtd
-import json 
+import json
+import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# Nombre de couches traitées en parallèle au sein d'un même lot (~20 couches
+# max par appel, cf. entree_carto.py). Chaque couche déclenche 1 requête CSW
+# + 0-N requêtes HEAD/GET pour ses vignettes : c'est I/O-bound, donc des
+# threads suffisent (pas besoin de multiprocessing). Rester modéré pour ne
+# pas surcharger data.geopf.fr ; ajustable via variable d'environnement.
+MAX_WORKERS = int(os.environ.get("ENTREE_CARTO_MAX_WORKERS", "8"))
 
 def merge_service_de_recherche_infos(mtd_urls_layers, config, verbose=False):
+    to_process = []
     for item in mtd_urls_layers:
         if 'layer_name' in item:
             layerType = item["type"]
@@ -11,7 +21,25 @@ def merge_service_de_recherche_infos(mtd_urls_layers, config, verbose=False):
             else:
                 layerID = layerName + "$GEOPORTAIL:OGC:" + layerType
             if layerID in config["layers"]:
-                merge_layer_infos(config["layers"][layerID], item, verbose=verbose)
+                to_process.append((config["layers"][layerID], item))
+
+    if not to_process:
+        return config
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {
+            executor.submit(merge_layer_infos, layer, item, verbose): layer.get("name", "?")
+            for layer, item in to_process
+        }
+        for future in as_completed(futures):
+            # Remonte les exceptions éventuelles (sinon elles seraient
+            # silencieusement avalées par le thread), avec le nom de la
+            # couche concernée pour faciliter le diagnostic.
+            try:
+                future.result()
+            except Exception as exc:
+                layer_name = futures[future]
+                print(f"Erreur lors du traitement de la couche {layer_name} : {exc}")
     return config
     
 def merge_layer_infos(layer, merged_item, verbose=False):
