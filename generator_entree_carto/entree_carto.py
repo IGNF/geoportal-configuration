@@ -1,12 +1,13 @@
 import json
 import re
+import os
 from time import sleep
 from datetime import datetime
 
 
 from core.requester import getEdito, searchMtdUrls
 from core.post_processes import filter_specific_duplicates, filter_layers, add_layers_default_values, convert_thematic, filter_thematic, setZoomConstraint
-from core.merger import merge_edito, merge_service_de_recherche_infos
+from core.merger import merge_edito, merge_service_de_recherche_infos, get_max_workers
 
 def getTime(verbose=False):
     now = datetime.now()
@@ -27,6 +28,13 @@ class GenerateEntreeCarto:
         Génère le fichier entreeCarto.json à partir de fullConfig.json
         """
         getTime(verbose=verbose)
+        if verbose:
+            env_value = os.environ.get("ENTREE_CARTO_MAX_WORKERS")
+            env_display = env_value if env_value is not None else "<non définie>"
+            print(
+                f" --> Parallélisme configuré : workers={get_max_workers()} "
+                f"(ENTREE_CARTO_MAX_WORKERS={env_display})"
+            )
         
         # Charger le JSON
         with open(self.input_path, "r", encoding="utf-8") as f:

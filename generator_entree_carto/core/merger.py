@@ -8,7 +8,16 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # + 0-N requêtes HEAD/GET pour ses vignettes : c'est I/O-bound, donc des
 # threads suffisent (pas besoin de multiprocessing). Rester modéré pour ne
 # pas surcharger data.geopf.fr ; ajustable via variable d'environnement.
-MAX_WORKERS = int(os.environ.get("ENTREE_CARTO_MAX_WORKERS", "8"))
+DEFAULT_MAX_WORKERS = 8
+
+
+def get_max_workers():
+    raw = os.environ.get("ENTREE_CARTO_MAX_WORKERS", str(DEFAULT_MAX_WORKERS))
+    try:
+        value = int(raw)
+    except (TypeError, ValueError):
+        return DEFAULT_MAX_WORKERS
+    return max(1, value)
 
 def merge_service_de_recherche_infos(mtd_urls_layers, config, verbose=False):
     to_process = []
@@ -26,7 +35,16 @@ def merge_service_de_recherche_infos(mtd_urls_layers, config, verbose=False):
     if not to_process:
         return config
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    max_workers = get_max_workers()
+    if verbose:
+        env_value = os.environ.get("ENTREE_CARTO_MAX_WORKERS")
+        env_display = env_value if env_value is not None else "<non définie>"
+        print(
+            f" --> Lot service-recherche : {len(to_process)} couche(s), "
+            f"workers={max_workers} (ENTREE_CARTO_MAX_WORKERS={env_display})"
+        )
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {
             executor.submit(merge_layer_infos, layer, item, verbose): layer.get("name", "?")
             for layer, item in to_process
