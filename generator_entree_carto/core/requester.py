@@ -9,7 +9,12 @@ from urllib3.util.retry import Retry
 DEFAULT_TIMEOUT = 15  # secondes ; évite qu'une requête traîne indéfiniment
 
 _session = requests.Session()
-_retries = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+_retries = Retry(
+    total=3,
+    backoff_factor=0.5,
+    status_forcelist=[500, 502, 503, 504],
+    allowed_methods=frozenset(["HEAD", "GET", "POST"]),
+)
 # pool_maxsize doit couvrir le nombre de threads utilisés en parallèle
 # (voir merger.py) sous peine de reconnexions.
 _adapter = HTTPAdapter(pool_connections=20, pool_maxsize=20, max_retries=_retries)
