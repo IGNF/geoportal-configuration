@@ -1,7 +1,8 @@
 import xml.etree.ElementTree as ET
-from core.requester import getMetadata
+from core.requester import getMetadata, _session, DEFAULT_TIMEOUT
 import requests
 import struct
+from functools import lru_cache
 from core.requester import getHeadRequest
 
 # Cette fonction permet de faire une requête GET partielle pour récupérer uniquement les premiers octets d'une ressource
@@ -10,7 +11,7 @@ def partial_get(url, max_bytes):
     headers = {"Range": f"bytes=0-{max_bytes-1}"}
 
     try:
-        with requests.get(url, headers=headers, stream=True, timeout=10) as resp:
+        with _session.get(url, headers=headers, stream=True, timeout=DEFAULT_TIMEOUT) as resp:
             if resp.status_code not in (200, 206):
                 raise Exception(f"HTTP {resp.status_code} lors du GET partiel")
 
@@ -27,6 +28,7 @@ def partial_get(url, max_bytes):
         print(f"Erreur réseau sur {url}: {e}")
         return None
 
+@lru_cache(maxsize=4096)
 def get_image_dimensions(url: str):
     # --- Étape 1 : HEAD pour connaître le type ---
     header = getHeadRequest(url)
