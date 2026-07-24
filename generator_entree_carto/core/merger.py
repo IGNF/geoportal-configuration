@@ -9,6 +9,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # threads suffisent (pas besoin de multiprocessing). Rester modéré pour ne
 # pas surcharger data.geopf.fr ; ajustable via variable d'environnement.
 DEFAULT_MAX_WORKERS = 8
+# Borne haute pour éviter de saturer le pool de connexions HTTP (voir core.requester)
+MAX_MAX_WORKERS = 20
 
 
 def get_max_workers():
@@ -16,8 +18,8 @@ def get_max_workers():
     try:
         value = int(raw)
     except (TypeError, ValueError):
-        return DEFAULT_MAX_WORKERS
-    return max(1, value)
+        value = DEFAULT_MAX_WORKERS
+    return min(MAX_MAX_WORKERS, max(1, value))
 
 def merge_service_de_recherche_infos(mtd_urls_layers, config, verbose=False):
     to_process = []
