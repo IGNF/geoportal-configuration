@@ -1,0 +1,30 @@
+services:
+  generate-configuration:
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+    image: geoportal-configuration-cron
+    volumes:
+      - ../customConfig.json:/app/customConfig.json:ro
+      - ../entreeCarto.json:/app/entreeCarto.json
+      - ../entreeCarto.min.json:/app/entreeCarto.min.json
+    environment:
+      CONFIG_INPUT: /app/customConfig.json
+
+  generate-configuration-s3:
+    profiles: ["s3"]
+    build:
+      context: ..
+      dockerfile: .docker/Dockerfile
+    image: geoportal-configuration-cron
+    volumes:
+      - ../customConfig.json:/app/customConfig.json:ro
+      - ../rclone.conf.gpg:/app/rclone.conf.gpg:ro
+      - ../entreeCarto.json:/app/entreeCarto.json
+      - ../entreeCarto.min.json:/app/entreeCarto.min.json
+    environment:
+      CONFIG_INPUT: /app/customConfig.json
+      RCLONE_GPG_FILE: /app/rclone.conf.gpg
+      RCLONE_PASSPHRASE: ${RCLONE_PASSPHRASE:-"change_me"}
+      S3_PATH: ${S3_PATH:-cartes_s3_dev:prd-ign-mut-cartes/entree-carto}
+      S3_GATEWAY_PATH: ${S3_GATEWAY_PATH:-https://cartes.gouv.fr/files/entree-carto/}

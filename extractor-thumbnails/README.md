@@ -57,5 +57,10 @@ Résultats: ... vignettes générées, ... échecs
 Usage
 
 ```bash
-python3 thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
+python3 thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json 
 ```
+
+par défaut, les urls publiques des miniatures pointent sur le dépôt github : `--base-url=https://raw.githubusercontent.com/IGNF/geoportal-configuration/refs/heads/new-url/extractor-thumbnails/`
+
+Mais, il est possible de les faire pointer sur la gateway S3 :
+`--base-url=https://cartes.gouv.fr/files/entree-carto/`

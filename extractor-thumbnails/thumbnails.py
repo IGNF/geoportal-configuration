@@ -6,8 +6,8 @@ import re
 Mise à jour du fichier entreeCarto.json pour ajouter les miniatures aux couches.
 """
 class UpdateThumbnails:
-    def __init__(self, github_base, output_path="entreeCarto.json", input_path="entreeCarto-test.json"):
-        self.github_base = github_base
+    def __init__(self, url, output_path="entreeCarto.json", input_path="entreeCarto-test.json"):
+        self.url = url
         self.output_path = output_path
         self.input_path = input_path
     
@@ -59,8 +59,8 @@ class UpdateThumbnails:
                 if os.path.isfile(thumb_path):
                     if verbose:
                         print(f" --> found : {thumb_path_str}")
-                    # Retourne l'URL GitHub
-                    return self.github_base + thumb_path_str
+                    # Retourne l'URL de la miniature
+                    return self.url + thumb_path_str
         return None
 
 # Exemple d'utilisation
@@ -69,12 +69,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=False, default="entreeCarto-test.json")
     parser.add_argument("--output", required=False, default="entreeCarto.json")
+    parser.add_argument("--base-url", required=False, default="https://raw.githubusercontent.com/IGNF/geoportal-configuration/refs/heads/new-url/extractor-thumbnails/")
     
-    input = parser.parse_args().input
-    output = parser.parse_args().output
+    args = parser.parse_args()
+    input = args.input
+    output = args.output
+    base_url = args.base_url
     
     updater = UpdateThumbnails(
-        github_base="https://raw.githubusercontent.com/IGNF/geoportal-configuration/refs/heads/new-url/extractor-thumbnails/",
+        url=base_url,
         output_path=output,
         input_path=input
     )
