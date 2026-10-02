@@ -7,6 +7,8 @@ on:
     workflows: ["refresh config_files"]
     types:
       - completed
+  # Permet de lancer manuellement en cliquant "Run workflow" avec la version courante du fichier
+  workflow_dispatch:
 
 jobs:
   refresh_config:
