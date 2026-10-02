@@ -1,15 +1,16 @@
 name: generate entree carto
 
-# on:
-#   # Ce workflow se déclenche automatiquement à la fin du workflow "refresh config_files".
-#   # Il n'a donc pas besoin d'être lancé manuellement ni planifié séparément.
-#   workflow_run:
-#     workflows: ["refresh config_files"]
-#     types:
-#       - completed
+on:
+  # Ce workflow se déclenche automatiquement à la fin du workflow "refresh config_files".
+  # Il n'a donc pas besoin d'être lancé manuellement ni planifié séparément.
+  workflow_run:
+    workflows: ["refresh config_files"]
+    types:
+      - completed
 
 jobs:
   refresh_config:
+    if: false
     runs-on: ubuntu-latest
     environment: production
     env:
