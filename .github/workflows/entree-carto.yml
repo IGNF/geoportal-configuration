@@ -1,12 +1,12 @@
 name: generate entree carto
 
-on:
-  # Ce workflow se déclenche automatiquement à la fin du workflow "refresh config_files".
-  # Il n'a donc pas besoin d'être lancé manuellement ni planifié séparément.
-  workflow_run:
-    workflows: ["refresh config_files"]
-    types:
-      - completed
+# on:
+#   # Ce workflow se déclenche automatiquement à la fin du workflow "refresh config_files".
+#   # Il n'a donc pas besoin d'être lancé manuellement ni planifié séparément.
+#   workflow_run:
+#     workflows: ["refresh config_files"]
+#     types:
+#       - completed
 
 jobs:
   refresh_config:
@@ -20,7 +20,7 @@ jobs:
         # On clone la branche main pour avoir accès au code source (scripts Python,
         # scripts shell, rclone.conf.gpg, etc.) qui ne se trouve pas sur la branche dist.
         # fetch-depth: 0 est requis pour pouvoir accéder à la branche dist ensuite.
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3 
         with:
           ref: main
           fetch-depth: 0
