@@ -35,8 +35,6 @@
         "RGEALTI-MNT_PYR-ZIP_MYT_RGM04UTM38S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_REU_RGR92UTM40S_WMS$GEOPORTAIL:OGC:WMS",
         "RGEALTI-MNT_PYR-ZIP_SPM_RGSPM06U21_WMS$GEOPORTAIL:OGC:WMS",
-        "ELEVATION.CONTOUR.LINE$GEOPORTAIL:OGC:WMS",
-        "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY$GEOPORTAIL:OGC:WMS",
         "ELEVATION.CONTOUR.LINE:courbe$GEOPORTAIL:OGC:WFS",
         "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY:source_fra$GEOPORTAIL:OGC:WFS",
         "IGNF_LIDAR-HD_METADONNEE:metadata$GEOPORTAIL:OGC:WFS",
@@ -539,11 +537,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNS-CORREL",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNS-CORREL",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNS-CORREL",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNS-CORREL",
           "format": ""
         }
       ],
@@ -1888,24 +1886,24 @@
       "title": "Courbes de niveau",
       "description": "Le produit « Courbes de niveau » est un modèle numérique de terrain sous forme de courbes de même altitude, appelées aussi « isoplèthes d’altitude », ou plus techniquement « isohypses ». Ces courbes permettent la description du relief français.",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 2132.729583849782,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -63.15340092,
-          "right": 55.83678733,
-          "top": 51.12086835,
-          "bottom": -21.3896732
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-v/ows"
+          "altimetrie": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
-      "queryable": true,
+      "defaultProjection": "EPSG:3857",
+      "queryable": false,
       "metadata": [
         {
           "format": "text/html",
@@ -1918,14 +1916,14 @@
       ],
       "styles": [
         {
-          "name": "default-style-ELEVATION.CONTOUR.LINE",
-          "title": "ELEVATION.CONTOUR.LINE style"
+          "name": "normal",
+          "title": "Données ELEVATION.CONTOUR.LINE"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ELEVATION.CONTOUR.LINE"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ELEVATION-CONTOUR-LINE-legend.png"
         }
       ],
       "formats": [
@@ -1934,55 +1932,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -1990,27 +1940,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -2040,12 +1974,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-ALTI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-ALTI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-ALTI"
         }
       ],
       "styles": [
@@ -2192,12 +2126,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNS-CORREL"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNS-CORREL"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNS-CORREL"
         }
       ],
       "styles": [
@@ -2517,23 +2451,23 @@
       "title": "Masque de source du RGE Alti",
       "description": "Informations sur la précision du RGEAlti.",
       "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
+        "minScaleDenominator": 8530.918335399141,
+        "maxScaleDenominator": 8735660.375448715,
         "bbox": {
-          "left": -63.18904211,
-          "right": 55.84453236,
-          "top": 51.12965159,
-          "bottom": -21.42727734
+          "left": -63.3725215,
+          "right": 55.92586458,
+          "top": 51.31211928,
+          "bottom": -21.47558667
         }
       },
       "serviceParams": {
         "id": "OGC:WMS",
         "version": "1.3.0",
         "serverUrl": {
-          "altimetrie": "https://data.geopf.fr/wms-v/ows"
+          "altimetrie": "https://data.geopf.fr/wms-r/wms"
         }
       },
-      "defaultProjection": "EPSG:4326",
+      "defaultProjection": "EPSG:3857",
       "queryable": true,
       "metadata": [
         {
@@ -2547,14 +2481,14 @@
       ],
       "styles": [
         {
-          "name": "default-style-ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY",
-          "title": "ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY style"
+          "name": "Graphe de source du RGE Alti",
+          "title": "Graphe de source du RGE Alti"
         }
       ],
       "legends": [
         {
           "format": "image/png",
-          "url": "https://data.geopf.fr/wms-v/ows?service=WMS&version=1.3.0&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY"
+          "url": "https://data.geopf.fr/annexes/ressources/legendes/ELEVATIONGRIDCOVERAGE.HIGHRES.QUALITY.png"
         }
       ],
       "formats": [
@@ -2563,55 +2497,7 @@
           "current": true
         },
         {
-          "name": "application/atom+xml",
-          "current": false
-        },
-        {
-          "name": "application/json;type=utfgrid",
-          "current": false
-        },
-        {
-          "name": "application/pdf",
-          "current": false
-        },
-        {
-          "name": "application/rss+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kml+xml;mode=networklink",
-          "current": false
-        },
-        {
-          "name": "application/vnd.google-earth.kmz",
-          "current": false
-        },
-        {
-          "name": "image/geotiff",
-          "current": false
-        },
-        {
-          "name": "image/geotiff8",
-          "current": false
-        },
-        {
-          "name": "image/gif",
-          "current": false
-        },
-        {
           "name": "image/jpeg",
-          "current": false
-        },
-        {
-          "name": "image/png; mode=8bit",
-          "current": false
-        },
-        {
-          "name": "image/svg+xml",
           "current": false
         },
         {
@@ -2619,27 +2505,11 @@
           "current": false
         },
         {
-          "name": "image/tiff8",
+          "name": "image/geotiff",
           "current": false
         },
         {
-          "name": "image/vnd.jpeg-png",
-          "current": false
-        },
-        {
-          "name": "image/vnd.jpeg-png8",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers2",
-          "current": false
-        },
-        {
-          "name": "text/html; subtype=openlayers3",
+          "name": "image/x-bil;bits=32",
           "current": false
         }
       ]
@@ -2864,12 +2734,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNT-LIDAR-HD"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD"
         }
       ],
       "styles": [
@@ -3600,6 +3470,16 @@
       ],
       "metadata": [
         {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
+          "name": "2",
+          "title": "2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_COURBES-DE-NIVEAU"
+        },
+        {
           "name": "IGNF_COURBES-DE-NIVEAU",
           "title": "IGNF_COURBES-DE-NIVEAU",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_COURBES-DE-NIVEAU"
@@ -3613,23 +3493,19 @@
           "name": "isohypse_monochrome_orange",
           "title": "isohypse_monochrome_orange",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
-          "name": "2",
-          "title": "2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_COURBES-DE-NIVEAU"
         }
       ],
       "styles": [
         {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "current": true,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+        },
+        {
           "name": "isohypse_multicolore",
           "title": "isohypse_multicolore",
-          "current": true,
+          "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"
         },
         {
@@ -3637,12 +3513,6 @@
           "title": "isohypse_monochrome_orange",
           "current": false,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
