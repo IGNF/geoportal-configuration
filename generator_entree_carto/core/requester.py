@@ -60,7 +60,11 @@ def searchMtdUrls(layers_name, service, verbose=False):
             "aggregation" : {"fields": ["layer_name"]}
         }
 
-        response = _session.post(url, params=params, json=request_body, timeout=DEFAULT_TIMEOUT)
+        headers = {
+            'User-Agent': 'geoportal-configuration'
+        }
+
+        response = _session.post(url, params=params, json=request_body, timeout=DEFAULT_TIMEOUT, headers=headers)
         if response.status_code != 200:
             return False
 
