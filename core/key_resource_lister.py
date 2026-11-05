@@ -26,7 +26,7 @@ def createKeyServiceLayersFile(
   filePath = Path(filePath)
   with requests.Session() as s:
     download = s.get(url)
-    decoded_content = download.content.decode("latin1")
+    decoded_content = download.content.decode("utf-8-sig")
     reader = csv.DictReader(decoded_content.splitlines(), delimiter=";")
   generic_keys = []
   with open(filePath, "w", newline='', encoding="utf-8") as csvFile:
