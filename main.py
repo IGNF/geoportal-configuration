@@ -1,12 +1,18 @@
 import json
+import sys
 
 from core.config_merger import merge_configs
-from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities, getWFSCapabilities, getTMSTileMaps
+from core.requester import getWMSRCapabilities, getWMSVCapabilities, getWMTSCapabilities, getWFSCapabilities, getTMSTileMaps, CapabilitiesUnavailable
 from core.vectortiles_parser import parseVectorTiles
 from core.wms_parser import parseWMS
 from core.wmts_parser import parseWMTS
 from core.wfs_parser import parseWFS
 from core.key_resource_lister import createKeyServiceLayersFile
+
+def _wfsConfig(key, referer):
+    # Un seul GetCapabilities : le document et ses namespaces doivent venir de la même réponse
+    capabilities, namespaces = getWFSCapabilities(key, referer)
+    return parseWFS(capabilities, key, namespaces)
 
 def main(keys, referer=""):
     createKeyServiceLayersFile()
@@ -19,7 +25,7 @@ def main(keys, referer=""):
             parseWMTS(getWMTSCapabilities(key, referer), key),
             parseWMS(getWMSRCapabilities(key, referer), key),
             parseWMS(getWMSVCapabilities(key, referer), key),
-            parseWFS(getWFSCapabilities(key, referer)[0], key, getWFSCapabilities(key, referer)[1]),
+            _wfsConfig(key, referer),
             parseVectorTiles(getTMSTileMaps(key, referer), key, referer)
         ]
     ]
@@ -43,5 +49,13 @@ if __name__ == "__main__":
     if len(keys) > 1:
         config_name = "custom"
 
+    # La config est calculée avant d'ouvrir le fichier : en cas d'échec, aucun
+    # fichier (même vide) n'est écrit et la version publiée sur dist est conservée.
+    try:
+        content = main(keys, referer)
+    except CapabilitiesUnavailable as error:
+        print("ERROR: {} not generated: {}".format(config_name, error))
+        sys.exit(1)
+
     with open("dist/{}Config.json".format(config_name), "w", encoding="utf-8") as file:
-        file.writelines(main(keys, referer))
+        file.writelines(content)

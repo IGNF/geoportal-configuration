@@ -8,6 +8,9 @@ on:
 jobs:
   refresh_config:
     runs-on: ubuntu-latest
+    # Filet de sécurité : un run nominal dure 30-40 min. Au-delà, on coupe
+    # (rien n'est poussé, la branche dist garde sa dernière version complète).
+    timeout-minutes: 90
     steps:
       - name: Checkout main branch
         # On clone explicitement la branche main (la branche par défaut du projet).
@@ -31,10 +34,19 @@ jobs:
         # On génère les fichiers de configuration dans le dossier dist/.
         # Ce dossier est ignoré par .gitignore sur main : il ne sera jamais
         # commité sur cette branche, seulement utilisé comme espace de travail temporaire.
+        # Une clé en échec (service injoignable) n'écrit pas son fichier : sa version
+        # actuelle sur dist est conservée, les autres clés sont tout de même mises à jour.
+        # Les clés en échec sont listées dans FAILED_KEYS et font échouer le job à la fin.
         run: |
           mkdir -p dist
-          cat keys.txt | xargs -L 1 python main.py --referer https://cartes.gouv.fr/
-          python main.py full
+          failed=""
+          while read -r line || [ -n "$line" ]; do
+            [ -z "$line" ] && continue
+            # $line non quoté volontairement : une ligne peut contenir plusieurs clés (ex. "full entree-carto")
+            python main.py --referer https://cartes.gouv.fr/ $line || failed="$failed [$line]"
+          done < keys.txt
+          python main.py full || failed="$failed [full]"
+          echo "FAILED_KEYS=$failed" >> "$GITHUB_ENV"
 
       - name: Push generated files to dist branch
         # On pousse le contenu généré sur la branche dédiée « dist »
@@ -70,4 +82,12 @@ jobs:
 
       - name: Trim dist branch history
         run: sh ./scripts/trim_dist_history.sh 100 dist
+
+      - name: Fail if some keys were not generated
+        # Les fichiers des autres clés ont été poussés ; on signale ici celles
+        # dont la config n'a pas pu être régénérée (version précédente conservée sur dist).
+        if: env.FAILED_KEYS != ''
+        run: |
+          echo "::error::Config non régénérée (service injoignable) pour :${FAILED_KEYS}"
+          exit 1
 

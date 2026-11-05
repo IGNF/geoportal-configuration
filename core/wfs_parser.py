@@ -8,6 +8,9 @@ def parseWFS(capabilities, key, namespaces):
     key_services_layers = keysServicesLayers()
     if capabilities == False:
         return False
+    if not namespaces or "ows" not in namespaces:
+        print("Skipping WFS capabilities for key '{}': 'ows' namespace missing".format(key))
+        return False
     wfs_config = {}
     if key in GENERIC_KEYS() and key != "full" and "WFS" not in key_services_layers[key]:
         return False
