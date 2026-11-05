@@ -7,12 +7,16 @@ on:
     workflows: ["refresh config_files"]
     types:
       - completed
+    # Seuls les runs de main publient sur dist : inutile de régénérer après un run de branche.
+    branches: [main]
   # Permet de lancer manuellement en cliquant "Run workflow" avec la version courante du fichier
   workflow_dispatch:
 
 jobs:
   refresh_config:
-    if: true
+    # Lancé même si « refresh config_files » a échoué (dist contient alors la dernière
+    # version complète), sauf après un dry run : rien n'a été publié sur dist.
+    if: github.event_name != 'workflow_run' || !endsWith(github.event.workflow_run.display_title, '(dry run)')
     runs-on: ubuntu-latest
     environment: production
     env:
