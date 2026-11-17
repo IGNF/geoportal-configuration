@@ -1,21 +1,31 @@
 name: refresh config_files
+run-name: "refresh config_files${{ (github.ref != 'refs/heads/main' || inputs.dry_run == true) && ' (dry run)' || '' }}"
 
 on:
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run : générer les fichiers sans les publier sur la branche dist (toujours activé hors de main)"
+        type: boolean
+        default: false
   schedule:
     - cron: "0 6-18 * * 1-5"
 
 jobs:
   refresh_config:
     runs-on: ubuntu-latest
+    env:
+      # Dry run forcé sur toute autre branche que main ; sur main, choisi au lancement
+      # manuel (case « dry_run »). Le cron tourne sur main sans input → publication.
+      DRY_RUN: ${{ github.ref != 'refs/heads/main' || inputs.dry_run == true }}
     steps:
-      - name: Checkout main branch
-        # On clone explicitement la branche main (la branche par défaut du projet).
+      - name: Checkout
+        # Sans « ref », on clone la branche qui a déclenché le run : main pour le cron,
+        # la branche choisie pour un lancement manuel (permet de tester une branche).
         # fetch-depth: 0 récupère tout l'historique et toutes les branches distantes,
         # ce qui est nécessaire pour pouvoir basculer ensuite sur la branche dist.
         uses: actions/checkout@v3
         with:
-          ref: main
           fetch-depth: 0
 
       - name: Setup Python
@@ -36,9 +46,21 @@ jobs:
           cat keys.txt | xargs -L 1 python main.py --referer https://cartes.gouv.fr/
           python main.py full
 
+      - name: Upload generated files (dry run)
+        # En dry run, rien n'est publié : les fichiers générés sont téléchargeables
+        # depuis la page du run (section « Artifacts »).
+        if: env.DRY_RUN == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-dry-run
+          path: dist/
+          if-no-files-found: warn
+          retention-days: 7
+
       - name: Push generated files to dist branch
         # On pousse le contenu généré sur la branche dédiée « dist »
         # via un worktree temporaire, sans changer la branche courante.
+        if: env.DRY_RUN != 'true'
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
@@ -69,5 +91,6 @@ jobs:
           git worktree remove --force "$DIST_WORKTREE"
 
       - name: Trim dist branch history
+        if: env.DRY_RUN != 'true'
         run: sh ./scripts/trim_dist_history.sh 100 dist
 
