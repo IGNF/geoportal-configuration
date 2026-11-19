@@ -13,6 +13,7 @@
         "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS$GEOPORTAIL:OGC:WMS",
         "ORTHOIMAGERY.ORTHOPHOTOS.GRAPHE-MOSAIQUAGE$GEOPORTAIL:OGC:WMS",
+        "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS",
         "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS",
         "PLAN.IGN$GEOPORTAIL:GPP:TMS"
       ]
@@ -168,11 +169,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PARCELLAIRE-EXPRESS-PCI",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PARCELLAIRE-EXPRESS-PCI",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PARCELLAIRE-EXPRESS-PCI",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PARCELLAIRE-EXPRESS-PCI",
           "format": ""
         }
       ],
@@ -531,11 +532,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNH-LIDAR-HD",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNH-LIDAR-HD",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNH-LIDAR-HD",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNH-LIDAR-HD",
           "format": ""
         }
       ],
@@ -877,11 +878,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNT-LIDAR-HD",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_MNT-LIDAR-HD",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MNT-LIDAR-HD",
           "format": ""
         }
       ],
@@ -1187,12 +1188,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PLAN-IGN"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PLAN-IGN"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PLAN-IGN"
         }
       ],
       "styles": [
@@ -1233,7 +1234,7 @@
     "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST$GEOPORTAIL:OGC:WMS": {
       "name": "LIMITES_ADMINISTRATIVES_EXPRESS.LATEST",
       "title": "Limites administratives mises à jour en continu",
-      "description": "Limites administratives mises à jour en continu ; édition 2026-10-15",
+      "description": "Limites administratives mises à jour en continu ; édition 2026-11-15",
       "globalConstraint": {
         "minScaleDenominator": 8530.918335399141,
         "maxScaleDenominator": 8735660.375448715,
@@ -1255,12 +1256,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -1498,6 +1499,34 @@
         }
       ]
     },
+    "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle$GEOPORTAIL:OGC:WFS": {
+      "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS:parcelle",
+      "title": "PCI Vecteur : Parcelles",
+      "description": "Parcelles ; Édition 2026-06-01",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -63.28125,
+          "right": 55.8984375,
+          "top": 51.27109375,
+          "bottom": -21.421484375
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "essentiels": "https://data.geopf.fr/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:4326",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "ADMIN_EXPRESS$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -1519,14 +1548,14 @@
       ],
       "metadata": [
         {
-          "name": "IGNF_ADMIN-EXPRESS",
-          "title": "IGNF_ADMIN-EXPRESS",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        },
-        {
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "name": "IGNF_ADMIN-EXPRESS",
+          "title": "IGNF_ADMIN-EXPRESS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         },
         {
           "name": "adminexpress",
