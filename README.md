@@ -10,6 +10,8 @@ Generation of configuration JSONs for Geoportal JS APIs
 
 Config files are generated in `dist` directory
 
+HTTP requests are sent in parallel: the 5 GetCapabilities of a key and the TMS layer descriptions. The number of simultaneous requests is set by the `CONFIG_MAX_WORKERS` environment variable (default 8, max 20, `1` = sequential).
+
 ## Launch web interface
 ### Without Docker
 `python -m flask run --host=0.0.0.0`
