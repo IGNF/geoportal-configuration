@@ -1,3 +1,5 @@
+import json
+import os
 import requests
 from functools import lru_cache
 from requests.adapters import HTTPAdapter
@@ -21,10 +23,18 @@ _adapter = HTTPAdapter(pool_connections=20, pool_maxsize=20, max_retries=_retrie
 _session.mount("https://", _adapter)
 _session.mount("http://", _adapter)
 
+# EDITO_SOURCE : URL (http/https) ou chemin d'un fichier local de configuration
+# éditoriale. Par défaut, l'edito de production.
+DEFAULT_EDITO_SOURCE = "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/edito.json"
+
 
 def getEdito():
-    url = "https://data.geopf.fr/annexes/cartes.gouv.fr-config/public/edito.json"
-    response = _session.get(url, timeout=DEFAULT_TIMEOUT)
+    source = os.environ.get("EDITO_SOURCE") or DEFAULT_EDITO_SOURCE
+    print(f" --> Edito : {source}")
+    if not source.startswith(("http://", "https://")):
+        with open(source, "r", encoding="utf-8") as f:
+            return json.load(f)
+    response = _session.get(source, timeout=DEFAULT_TIMEOUT)
     if response.status_code != 200:
         return False
     return response.json()

@@ -97,8 +97,12 @@ class GenerateEntreeCarto:
               
         # Récupère la configuration éditoriale
         edito = getEdito()
-        if edito:
-            data = merge_edito(edito, data, verbose=verbose)
+        if not edito:
+            raise RuntimeError(
+                "Impossible de récupérer la configuration éditoriale (edito.json). "
+                "Vérifier la variable EDITO_SOURCE."
+            )
+        data = merge_edito(edito, data, verbose=verbose)
 
         # Filtre couches
         data["layers"] = filter_layers(data["layers"], verbose=verbose)
