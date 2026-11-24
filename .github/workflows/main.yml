@@ -1,11 +1,14 @@
 name: refresh config_files
-run-name: "refresh config_files${{ (github.ref != 'refs/heads/main' || inputs.dry_run == true) && ' (dry run)' || '' }}"
+# Titre du run : « (dry run) » si la case est cochée (suffixe lu par entree-carto.yml),
+# « (dist-test : <branche>) » pour une publication de test depuis une autre branche que main.
+run-name: "refresh config_files${{ inputs.dry_run == true && ' (dry run)' || (github.ref != 'refs/heads/main' && format(' (dist-test : {0})', github.ref_name) || '') }}"
 
 on:
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Dry run : générer les fichiers sans les publier sur la branche dist (toujours activé hors de main)"
+        # La description est statique (pas d'expression possible) : elle couvre les deux cas.
+        description: "Dry run : ne rien publier, fichiers téléchargeables dans les artifacts du run. Décoché : publication sur dist si lancé depuis main, sur dist-test depuis une autre branche."
         type: boolean
         default: false
   schedule:
@@ -14,10 +17,17 @@ on:
 jobs:
   refresh_config:
     runs-on: ubuntu-latest
+    # Les publications sur dist-test (branche ≠ main, sans dry run) partagent le groupe
+    # de generate-test.yml pour ne jamais pousser en même temps sur dist-test.
+    # Les autres runs (main, dry run) ont un groupe unique : aucune contrainte.
+    concurrency:
+      group: ${{ (github.ref != 'refs/heads/main' && inputs.dry_run != true) && 'generate-config-test' || format('refresh-config-{0}', github.run_id) }}
+      cancel-in-progress: false
     env:
-      # Dry run forcé sur toute autre branche que main ; sur main, choisi au lancement
-      # manuel (case « dry_run »). Le cron tourne sur main sans input → publication.
-      DRY_RUN: ${{ github.ref != 'refs/heads/main' || inputs.dry_run == true }}
+      # Choisi au lancement manuel (case « dry_run ») ; le cron tourne sur main sans input → publication.
+      DRY_RUN: ${{ inputs.dry_run == true }}
+      # Cible de publication hors dry run : dist depuis main, dist-test depuis toute autre branche.
+      IS_MAIN: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - name: Checkout
         # Sans « ref », on clone la branche qui a déclenché le run : main pour le cron,
@@ -60,7 +70,7 @@ jobs:
       - name: Push generated files to dist branch
         # On pousse le contenu généré sur la branche dédiée « dist »
         # via un worktree temporaire, sans changer la branche courante.
-        if: env.DRY_RUN != 'true'
+        if: env.DRY_RUN != 'true' && env.IS_MAIN == 'true'
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
@@ -91,6 +101,51 @@ jobs:
           git worktree remove --force "$DIST_WORKTREE"
 
       - name: Trim dist branch history
-        if: env.DRY_RUN != 'true'
+        if: env.DRY_RUN != 'true' && env.IS_MAIN == 'true'
         run: sh ./scripts/trim_dist_history.sh 100 dist
 
+      - name: Push generated files to dist-test branch
+        # Hors de main et sans dry run : publication de test sur DIST_BRANCH (dist-test),
+        # jamais sur dist. DIST_BRANCH et MAX_COMMIT viennent de envs/test.env, comme pour
+        # generate-test.yml. Les fichiers générés sont fusionnés (rsync sans --delete) :
+        # entreeCarto.json déjà présent sur dist-test est conservé.
+        if: env.DRY_RUN != 'true' && env.IS_MAIN != 'true'
+        run: |
+          test -f envs/test.env || { echo "Fichier envs/test.env introuvable"; exit 1; }
+          DIST_BRANCH="$(sed -n 's/^DIST_BRANCH=//p' envs/test.env | tail -n 1)"
+          MAX_COMMIT="$(sed -n 's/^MAX_COMMIT=//p' envs/test.env | tail -n 1)"
+          case "$DIST_BRANCH" in
+            dist-*) ;;
+            *) echo "DIST_BRANCH doit commencer par 'dist-' (reçu : $DIST_BRANCH)"; exit 1 ;;
+          esac
+          case "$MAX_COMMIT" in
+            ''|*[!0-9]*|0) echo "MAX_COMMIT doit être un entier > 0 (reçu : $MAX_COMMIT)"; exit 1 ;;
+          esac
+
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          DIST_WORKTREE="$RUNNER_TEMP/dist-test-worktree"
+          rm -rf "$DIST_WORKTREE"
+
+          # Branche orpheline créée si elle n'existe pas encore. Ref complète obligatoire :
+          # « --heads dist-test » matcherait aussi feat/dist-test (comparaison sur le suffixe).
+          if git ls-remote --exit-code origin "refs/heads/$DIST_BRANCH" >/dev/null; then
+            git fetch origin "refs/heads/$DIST_BRANCH:refs/heads/$DIST_BRANCH"
+            git worktree add "$DIST_WORKTREE" "$DIST_BRANCH"
+          else
+            git worktree add --orphan -b "$DIST_BRANCH" "$DIST_WORKTREE"
+          fi
+
+          mkdir -p "$DIST_WORKTREE/dist"
+          rsync -a dist/ "$DIST_WORKTREE/dist/"
+
+          cd "$DIST_WORKTREE"
+          git add dist/
+          git diff --cached --quiet || git commit -m "refresh config files (test, branche : $GITHUB_REF_NAME)"
+          git push origin "$DIST_BRANCH"
+
+          sh "$GITHUB_WORKSPACE/scripts/trim_dist_history.sh" "$MAX_COMMIT" "$DIST_BRANCH"
+
+          cd "$GITHUB_WORKSPACE"
+          git worktree remove --force "$DIST_WORKTREE"
