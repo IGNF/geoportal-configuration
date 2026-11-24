@@ -1,0 +1,111 @@
+name: generate config (test)
+run-name: "generate config test${{ inputs.edito_source && format(' ({0})', inputs.edito_source) || '' }}"
+
+# Génère les fichiers de configuration (capabilities de production + entrée carto)
+# avec un edito custom, et les publie sur la branche dist-test.
+# Lancement manuel uniquement. Paramétrage dans envs/test.env.
+on:
+  workflow_dispatch:
+    inputs:
+      edito_source:
+        description: "Edito à utiliser : chemin d'un fichier du repo ou URL. Vide = EDITO_SOURCE de envs/test.env"
+        type: string
+        required: false
+        default: ""
+
+# Évite deux publications simultanées sur dist-test.
+concurrency:
+  group: generate-config-test
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        # fetch-depth: 0 pour pouvoir récupérer / créer la branche dist-test ensuite.
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Load environment file
+        # Ajoute les variables de envs/test.env à l'environnement des étapes suivantes,
+        # puis applique la surcharge éventuelle de l'edito.
+        env:
+          EDITO_INPUT: ${{ inputs.edito_source }}
+        run: |
+          test -f envs/test.env || { echo "Fichier envs/test.env introuvable"; exit 1; }
+          grep -Ev '^\s*(#|$)' envs/test.env | tee -a "$GITHUB_ENV"
+          if [ -n "$EDITO_INPUT" ]; then
+            echo "EDITO_SOURCE=$EDITO_INPUT" | tee -a "$GITHUB_ENV"
+          fi
+
+      - name: Check settings
+        run: |
+          for v in EDITO_SOURCE DIST_BRANCH MAX_COMMIT; do
+            test -n "${!v}" || { echo "$v doit être défini dans envs/test.env"; exit 1; }
+          done
+          case "$MAX_COMMIT" in
+            ''|*[!0-9]*|0) echo "MAX_COMMIT doit être un entier > 0 (reçu : $MAX_COMMIT)"; exit 1 ;;
+          esac
+          case "$DIST_BRANCH" in
+            dist-*) ;;
+            *) echo "DIST_BRANCH doit commencer par 'dist-' (reçu : $DIST_BRANCH)"; exit 1 ;;
+          esac
+          test "$DIST_BRANCH" != "dist" || { echo "DIST_BRANCH ne peut pas être la branche de prod 'dist'"; exit 1; }
+          case "$EDITO_SOURCE" in
+            http://*|https://*) ;;
+            *) test -f "$EDITO_SOURCE" || { echo "Edito local introuvable : $EDITO_SOURCE"; exit 1; } ;;
+          esac
+
+      - name: Generate config files
+        # Mêmes commandes que main.yml (GetCapabilities de production).
+        run: |
+          mkdir -p dist
+          cat keys.txt | xargs -L 1 python main.py --referer https://cartes.gouv.fr/
+          python main.py full
+
+      - name: Generate entree carto config
+        # Même chaîne que entree-carto.yml, avec l'edito défini par EDITO_SOURCE.
+        run: |
+          python generator_entree_carto/entree_carto.py --input=dist/customConfig.json --output=entreeCarto.tmp
+          python extractor-thumbnails/thumbnails.py --input=entreeCarto.tmp --output=dist/entreeCarto.json
+
+      - name: Push generated files to dist-test branch
+        # Publie dist/ sur $DIST_BRANCH via un worktree temporaire
+        # (branche orpheline créée au premier lancement), puis tronque l'historique
+        # à MAX_COMMIT commits (défini dans envs/test.env).
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+
+          DIST_WORKTREE="$RUNNER_TEMP/dist-worktree"
+          rm -rf "$DIST_WORKTREE"
+
+          if git ls-remote --exit-code --heads origin "$DIST_BRANCH" >/dev/null; then
+            git fetch origin "$DIST_BRANCH:$DIST_BRANCH"
+            git worktree add "$DIST_WORKTREE" "$DIST_BRANCH"
+          else
+            git worktree add --orphan -b "$DIST_BRANCH" "$DIST_WORKTREE"
+          fi
+
+          mkdir -p "$DIST_WORKTREE/dist"
+          rsync -a dist/ "$DIST_WORKTREE/dist/"
+
+          cd "$DIST_WORKTREE"
+          git add dist/
+          git diff --cached --quiet || git commit -m "refresh config files (test, edito: $EDITO_SOURCE)"
+          git push origin "$DIST_BRANCH"
+
+          sh "$GITHUB_WORKSPACE/scripts/trim_dist_history.sh" "$MAX_COMMIT" "$DIST_BRANCH"
+
+          cd "$GITHUB_WORKSPACE"
+          git worktree remove --force "$DIST_WORKTREE"
