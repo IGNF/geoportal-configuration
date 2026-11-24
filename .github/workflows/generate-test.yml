@@ -90,8 +90,8 @@ jobs:
           DIST_WORKTREE="$RUNNER_TEMP/dist-worktree"
           rm -rf "$DIST_WORKTREE"
 
-          if git ls-remote --exit-code --heads origin "$DIST_BRANCH" >/dev/null; then
-            git fetch origin "$DIST_BRANCH:$DIST_BRANCH"
+          if git ls-remote --exit-code origin "refs/heads/$DIST_BRANCH" >/dev/null; then
+            git fetch origin "refs/heads/$DIST_BRANCH:refs/heads/$DIST_BRANCH"
             git worktree add "$DIST_WORKTREE" "$DIST_BRANCH"
           else
             git worktree add --orphan -b "$DIST_BRANCH" "$DIST_WORKTREE"
