@@ -1,9 +1,9 @@
 import json
-import requests
 import xmltodict
 
 from core.key_resource_lister import keysServicesLayers
 from core.generic_keys import GENERIC_KEYS
+from core import http_client
 
 def parseVectorTiles(tileMaps, key, referer):
     key_services_layers = keysServicesLayers()
@@ -29,14 +29,14 @@ def parseVectorTiles(tileMaps, key, referer):
         if key in GENERIC_KEYS() and key != "full" and layerName not in key_services_layers[key]["TMS"]:
             continue
         metadataURL = tileMap["@href"] + "/metadata.json"
-        response = requests.get(metadataURL, headers={'Referer': referer})
+        response = http_client.get(metadataURL, referer)
         if response.status_code != 200:
             continue
         metadata = json.loads(response.text)
 
         metadatas = []
         styles = []
-        response = requests.get(tileMap["@href"], headers={'Referer': referer})
+        response = http_client.get(tileMap["@href"], referer)
         if response.status_code == 200:
             responseText = xmltodict.parse(response.text)["TileMap"]
             bbox = responseText["BoundingBox"]

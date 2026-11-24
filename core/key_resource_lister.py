@@ -2,7 +2,7 @@ import csv
 import json
 from pathlib import Path
 
-import requests
+from core import http_client
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_RESOURCES_FILE = ROOT_DIR / "resources_by_key.csv"
@@ -24,10 +24,10 @@ def createKeyServiceLayersFile(
   url="https://data.geopf.fr/annexes/ressources/capabilities/services.csv",
   filePath=DEFAULT_RESOURCES_FILE):
   filePath = Path(filePath)
-  with requests.Session() as s:
-    download = s.get(url)
-    decoded_content = download.content.decode("utf-8-sig")
-    reader = csv.DictReader(decoded_content.splitlines(), delimiter=";")
+  download = http_client.get(url)
+  download.raise_for_status()
+  decoded_content = download.content.decode("utf-8-sig")
+  reader = csv.DictReader(decoded_content.splitlines(), delimiter=";")
   generic_keys = []
   with open(filePath, "w", newline='', encoding="utf-8") as csvFile:
     fieldnames = ["service", "key", "layer"]

@@ -1,10 +1,10 @@
-import requests
 import xmltodict
 import xml.etree.ElementTree as ET
 import os
 from xml.parsers.expat import ExpatError
 
 from core.generic_keys import GENERIC_KEYS
+from core import http_client
 
 
 def _parse_xmltodict_response(response_text, service_name, key):
@@ -22,7 +22,7 @@ def getWMTSCapabilities(key, referer=""):
     else:
         url = "https://data.geopf.fr/private/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetCapabilities&apikey={}".format(key)
 
-    response = requests.get(url, headers={'Referer': referer})
+    response = http_client.get(url, referer)
     if response.status_code != 200:
         return False
     dict_capabilities = _parse_xmltodict_response(response.text, "WMTS", key)
@@ -37,7 +37,7 @@ def getWMSRCapabilities(key, referer=""):
     else:
         url = "https://data.geopf.fr/private/wms-r?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&apikey={}".format(key)
 
-    response = requests.get(url, headers={'referer': referer})
+    response = http_client.get(url, referer)
     if response.status_code != 200:
         return False
     dict_capabilities = _parse_xmltodict_response(response.text, "WMS-R", key)
@@ -52,7 +52,7 @@ def getWMSVCapabilities(key, referer=""):
     else:
         url = "https://data.geopf.fr/private/wms-v/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&apikey={}".format(key)
 
-    response = requests.get(url, headers={'referer': referer})
+    response = http_client.get(url, referer)
     if response.status_code != 200:
         return False
     dict_capabilities = _parse_xmltodict_response(response.text, "WMS-V", key)
@@ -67,7 +67,7 @@ def getWFSCapabilities(key, referer=""):
     else:
         url = "https://data.geopf.fr/private/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetCapabilities&apikey={}".format(key)
 
-    response = requests.get(url, headers={'referer': referer})
+    response = http_client.get(url, referer)
     if response.status_code != 200:
         return [False, False]
     with open("originalCapa.xml", "w", encoding="utf-8") as file:
@@ -96,7 +96,7 @@ def getTMSTileMaps(key, referer=""):
     else:
         return {}
 
-    response = requests.get(url, headers={'referer': referer})
+    response = http_client.get(url, referer)
     if response.status_code != 200:
         return False
     dict_capabilities = _parse_xmltodict_response(response.text, "TMS", key)
