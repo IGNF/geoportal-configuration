@@ -13,16 +13,18 @@ def main(keys, referer=""):
     if not isinstance(keys, list):
         keys = [keys]
     non_null_keys = list(filter(lambda x: x != "", keys))
-    list_configs = [
-        config for key in non_null_keys
-        for config in [
+    list_configs = []
+    for key in non_null_keys:
+        # Un seul appel WFS par clé (auparavant deux : un pour les capabilities,
+        # un pour les namespaces).
+        wfs_capabilities, wfs_namespaces = getWFSCapabilities(key, referer)
+        list_configs += [
             parseWMTS(getWMTSCapabilities(key, referer), key),
             parseWMS(getWMSRCapabilities(key, referer), key),
             parseWMS(getWMSVCapabilities(key, referer), key),
-            parseWFS(getWFSCapabilities(key, referer)[0], key, getWFSCapabilities(key, referer)[1]),
+            parseWFS(wfs_capabilities, key, wfs_namespaces),
             parseVectorTiles(getTMSTileMaps(key, referer), key, referer)
         ]
-    ]
     list_configs = [config for config in list_configs if isinstance(config, dict)]
     try:
         merged_config = merge_configs(list_configs)
