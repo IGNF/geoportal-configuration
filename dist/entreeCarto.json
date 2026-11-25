@@ -211,7 +211,6 @@
         "IGNF_COSIA_2021-2023$GEOPORTAIL:OGC:WMTS",
         "IGNF_COSIA_2024-2026$GEOPORTAIL:OGC:WMTS",
         "IGNF_DEBROUSSAILLEMENT-ZONES-OLD$GEOPORTAIL:OGC:WMTS",
-        "IGNF_DEBROUSSAILLEMENT_ZONES-OLD$GEOPORTAIL:OGC:WMTS",
         "IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS",
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMTS",
         "IGNF_FRANCE-RELIEF_MNS$GEOPORTAIL:OGC:WMTS",
@@ -29827,143 +29826,6 @@
       ],
       "metadata_urls": [],
       "key": "IGNF_DEBROUSSAILLEMENT-ZONES-OLD$GEOPORTAIL:OGC:WMTS",
-      "base": false
-    },
-    "IGNF_DEBROUSSAILLEMENT_ZONES-OLD$GEOPORTAIL:OGC:WMTS": {
-      "name": "IGNF_DEBROUSSAILLEMENT_ZONES-OLD",
-      "title": "Zones à débroussailler - OLD - infrastructures bâties et zonages d’urbanisme - version bêta.",
-      "description": "Zones à débroussailler autour des infrastructures bâties et selon les zonages d’urbanisme, calculées automatiquement en appliquant la réglementation sur les obligations légales de débroussaillement (OLD) et en distinguant les différents responsables de ces obligations (à titre indicatif uniquement). Consultez la notice d'utilisation disponible sur cartes.gouv.",
-      "globalConstraint": {
-        "maxScaleDenominator": 8735660.375448715,
-        "minScaleDenominator": 2132.7295838497826,
-        "bbox": {
-          "left": -5.1505,
-          "right": 9.5705,
-          "top": 51.0991,
-          "bottom": 41.3252
-        },
-        "noConstraint": true
-      },
-      "serviceParams": {
-        "id": "OGC:WMTS",
-        "version": "1.0.0",
-        "serverUrl": {
-          "full": "https://data.geopf.fr/wmts"
-        }
-      },
-      "defaultProjection": "EPSG:3857",
-      "wmtsOptions": {
-        "tileMatrixSetLink": "PM_6_18",
-        "tileMatrixSetLimits": {
-          "6": {
-            "minTileRow": "21",
-            "maxTileRow": "23",
-            "minTileCol": "31",
-            "maxTileCol": "33"
-          },
-          "7": {
-            "minTileRow": "42",
-            "maxTileRow": "47",
-            "minTileCol": "62",
-            "maxTileCol": "67"
-          },
-          "8": {
-            "minTileRow": "85",
-            "maxTileRow": "95",
-            "minTileCol": "124",
-            "maxTileCol": "134"
-          },
-          "9": {
-            "minTileRow": "171",
-            "maxTileRow": "191",
-            "minTileCol": "248",
-            "maxTileCol": "269"
-          },
-          "10": {
-            "minTileRow": "342",
-            "maxTileRow": "382",
-            "minTileCol": "497",
-            "maxTileCol": "539"
-          },
-          "11": {
-            "minTileRow": "684",
-            "maxTileRow": "765",
-            "minTileCol": "994",
-            "maxTileCol": "1078"
-          },
-          "12": {
-            "minTileRow": "1369",
-            "maxTileRow": "1530",
-            "minTileCol": "1989",
-            "maxTileCol": "2156"
-          },
-          "13": {
-            "minTileRow": "2738",
-            "maxTileRow": "3061",
-            "minTileCol": "3978",
-            "maxTileCol": "4313"
-          },
-          "14": {
-            "minTileRow": "5477",
-            "maxTileRow": "6123",
-            "minTileCol": "7957",
-            "maxTileCol": "8627"
-          },
-          "15": {
-            "minTileRow": "10955",
-            "maxTileRow": "12246",
-            "minTileCol": "15915",
-            "maxTileCol": "17255"
-          },
-          "16": {
-            "minTileRow": "21911",
-            "maxTileRow": "24492",
-            "minTileCol": "31830",
-            "maxTileCol": "34510"
-          },
-          "17": {
-            "minTileRow": "43822",
-            "maxTileRow": "48985",
-            "minTileCol": "63660",
-            "maxTileCol": "69020"
-          },
-          "18": {
-            "minTileRow": "87645",
-            "maxTileRow": "97970",
-            "minTileCol": "127321",
-            "maxTileCol": "138041"
-          }
-        }
-      },
-      "metadata": [],
-      "styles": [
-        {
-          "name": "normal",
-          "title": "Débroussaillement OLD Bâti",
-          "current": true,
-          "url": null
-        }
-      ],
-      "legends": [
-        {
-          "format": "image/png",
-          "url": "https://data.geopf.fr/annexes/ressources//debroussaillement/OLD/legende_OLD.png",
-          "minScaleDenominator": "1"
-        }
-      ],
-      "formats": [
-        {
-          "name": "image/png",
-          "current": true
-        }
-      ],
-      "key": "IGNF_DEBROUSSAILLEMENT_ZONES-OLD$GEOPORTAIL:OGC:WMTS",
-      "producer": [
-        "Autres"
-      ],
-      "thematic": [
-        "Autres"
-      ],
       "base": false
     },
     "IGNF_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW$GEOPORTAIL:OGC:WMTS": {
@@ -104581,8 +104443,8 @@
         "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "Infrastructures de transport",
-        "Agriculture"
+        "Agriculture",
+        "Infrastructures de transport"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/logopluginGPF",
@@ -107293,12 +107155,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
         }
       ],
       "styles": [
@@ -107422,9 +107284,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfd95caa37-436b-431c-9391-643164f010bb",
@@ -107566,10 +107428,10 @@
       ],
       "thumbnail": "https://raw.githubusercontent.com/IGNF/geoportal-configuration/refs/heads/new-url/extractor-thumbnails/thumbnails-wms-r/INSEE.FILOSOFI.PART.ENFANTS.0.17.ANS.SECRET.png",
       "producer": [
-        "Autres"
+        "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "Autres"
+        "Société"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/INSEE_DONNEES",
@@ -110623,12 +110485,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -110866,12 +110728,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -111028,12 +110890,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -111392,12 +111254,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -111481,12 +111343,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -111578,12 +111440,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -111772,12 +111634,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -111950,12 +111812,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -112193,12 +112055,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -112355,12 +112217,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -112436,12 +112298,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RGE-ALTI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RGE-ALTI"
         }
       ],
       "styles": [
@@ -113222,12 +113084,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=pcrs_image_ccin_2026"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/pcrs_image_ccin_2026"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=pcrs_image_ccin_2026"
         }
       ],
       "styles": [
@@ -113269,11 +113131,11 @@
         "Autres"
       ],
       "thematic": [
-        "Eaux intérieures, Hydrographie",
         "Océans",
         "Constructions et ouvrages",
+        "Environnement",
         "Cadastre, aménagement",
-        "Environnement"
+        "Eaux intérieures, Hydrographie"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=pcrs_image_ccin_2026",
@@ -113354,8 +113216,8 @@
         "Autres"
       ],
       "thematic": [
-        "Carte de référence de la couverture terrestre",
-        "Localisation"
+        "Localisation",
+        "Carte de référence de la couverture terrestre"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CCPF-PCRS",
@@ -116005,12 +115867,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-CARTO"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO"
         }
       ],
       "styles": [
@@ -116150,12 +116012,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-CARTO"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO"
         }
       ],
       "styles": [
@@ -116440,12 +116302,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-CARTO"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO"
         }
       ],
       "styles": [
@@ -116585,12 +116447,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-CARTO"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-CARTO"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-CARTO"
         }
       ],
       "styles": [
@@ -116875,12 +116737,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
         }
       ],
       "styles": [
@@ -117310,12 +117172,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
         }
       ],
       "styles": [
@@ -117600,12 +117462,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
         }
       ],
       "styles": [
@@ -117890,12 +117752,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
         }
       ],
       "styles": [
@@ -125373,12 +125235,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
         }
       ],
       "styles": [
@@ -125941,12 +125803,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_GEODESIE-ET-NIVELLEMENT"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_GEODESIE-ET-NIVELLEMENT"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_GEODESIE-ET-NIVELLEMENT"
         }
       ],
       "styles": [
@@ -126086,12 +125948,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_GEODESIE-ET-NIVELLEMENT"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_GEODESIE-ET-NIVELLEMENT"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_GEODESIE-ET-NIVELLEMENT"
         }
       ],
       "styles": [
@@ -126799,12 +126661,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -127379,12 +127241,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -127669,12 +127531,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -128104,12 +127966,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -128394,12 +128256,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -128539,12 +128401,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -128829,12 +128691,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -128974,12 +128836,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -129119,12 +128981,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -129264,12 +129126,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -129409,12 +129271,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -129989,12 +129851,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -130968,12 +130830,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=CEREMA_MESURES-COMPENSATOIRES"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CEREMA_MESURES-COMPENSATOIRES"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=CEREMA_MESURES-COMPENSATOIRES"
         }
       ],
       "styles": [
@@ -131379,12 +131241,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -131524,12 +131386,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         }
       ],
       "styles": [
@@ -132104,12 +131966,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-ORTHO"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-ORTHO"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-ORTHO"
         }
       ],
       "styles": [
@@ -132249,12 +132111,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ORTHO-SAT_SPOT"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ORTHO-SAT_SPOT"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ORTHO-SAT_SPOT"
         }
       ],
       "styles": [
@@ -132539,12 +132401,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ORTHO-SAT_SPOT"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ORTHO-SAT_SPOT"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ORTHO-SAT_SPOT"
         }
       ],
       "styles": [
@@ -132684,12 +132546,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ORTHO-SAT_SPOT"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ORTHO-SAT_SPOT"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ORTHO-SAT_SPOT"
         }
       ],
       "styles": [
@@ -133385,12 +133247,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-ORTHO"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-ORTHO"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-ORTHO"
         }
       ],
       "styles": [
@@ -134509,12 +134371,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-ORTHO"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-ORTHO"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-ORTHO"
         }
       ],
       "styles": [
@@ -143492,12 +143354,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RPG"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_RPG"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_RPG"
         }
       ],
       "styles": [
@@ -145341,12 +145203,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/ANETT_COMMUNE-TOURISTIQUE-ET-STATION-CLASSEE"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=ANETT_COMMUNE-TOURISTIQUE-ET-STATION-CLASSEE"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/ANETT_COMMUNE-TOURISTIQUE-ET-STATION-CLASSEE"
         }
       ],
       "styles": [
@@ -147940,12 +147802,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TOPO"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TOPO"
         }
       ],
       "styles": [
@@ -148363,12 +148225,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/adminexpress_departement-jpb"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=adminexpress_departement-jpb"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/adminexpress_departement-jpb"
         }
       ],
       "styles": [
@@ -149741,12 +149603,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfde26f53e-5c29-5320-b53c-e38abea75fb5"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=osfde26f53e-5c29-5320-b53c-e38abea75fb5"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfde26f53e-5c29-5320-b53c-e38abea75fb5"
         }
       ],
       "styles": [
@@ -149852,9 +149714,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfde26f53e-5c29-5320-b53c-e38abea75fb5",
@@ -152268,12 +152130,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=DGAC_Plan_de_Gene_Sonore_PGS"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/DGAC_Plan_de_Gene_Sonore_PGS"
         }
       ],
       "styles": [
@@ -153903,8 +153765,8 @@
         "CONSERVATOIRE BOTANIQUE NATIONAL DU MASSIF CENTRAL"
       ],
       "thematic": [
-        "Environnement",
-        "Biologie, faune et flore"
+        "Biologie, faune et flore",
+        "Environnement"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=2026_CBNMC_Messicoles_1",
@@ -154083,12 +153945,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=1b464210-8702-5296-b738-25978d5d4806"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/1b464210-8702-5296-b738-25978d5d4806"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=1b464210-8702-5296-b738-25978d5d4806"
         }
       ],
       "styles": [
@@ -154194,9 +154056,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=1b464210-8702-5296-b738-25978d5d4806",
@@ -154520,12 +154382,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=6ae8ab2e8c1810a7734a43d5"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/6ae8ab2e8c1810a7734a43d5"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=6ae8ab2e8c1810a7734a43d5"
         }
       ],
       "styles": [
@@ -154665,12 +154527,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=6b040ad6f20c246d545926f1"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/6b040ad6f20c246d545926f1"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=6b040ad6f20c246d545926f1"
         }
       ],
       "styles": [
@@ -155233,12 +155095,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=0"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/0"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=0"
         }
       ],
       "styles": [
@@ -155922,12 +155784,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/004"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=004"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/004"
         }
       ],
       "styles": [
@@ -156611,12 +156473,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/RGC08"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=RGC08"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/RGC08"
         }
       ],
       "styles": [
@@ -157167,12 +157029,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/db2c2bbe-68ea-454c-a90e-b19257381ed9"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=db2c2bbe-68ea-454c-a90e-b19257381ed9"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/db2c2bbe-68ea-454c-a90e-b19257381ed9"
         }
       ],
       "styles": [
@@ -157446,15 +157308,15 @@
       "metadata": [
         {
           "format": "text/html",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/logopluginGPF"
+        },
+        {
+          "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/logopluginGPF"
         },
         {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=logopluginGPF"
-        },
-        {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/logopluginGPF"
         }
       ],
       "styles": [
@@ -157560,8 +157422,8 @@
         "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "Infrastructures de transport",
-        "Agriculture"
+        "Agriculture",
+        "Infrastructures de transport"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/logopluginGPF",
@@ -158696,12 +158558,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/1e293047-2855-4cb8-b41d-47659fcd6d78"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=1e293047-2855-4cb8-b41d-47659fcd6d78"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/1e293047-2855-4cb8-b41d-47659fcd6d78"
         }
       ],
       "styles": [
@@ -158952,8 +158814,8 @@
         "DIRECTION DEPARTEMENTALE DES TERRITOIRES ET DE LA MER HERAULT"
       ],
       "thematic": [
-        "Environnement",
-        "Sciences de la terre, géosciences"
+        "Sciences de la terre, géosciences",
+        "Environnement"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=096d65a9-df89-4f92-a80c-d1c89336ac65",
@@ -158987,12 +158849,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=3"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/3"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=3"
         }
       ],
       "styles": [
@@ -159388,8 +159250,8 @@
         "DDTM 13"
       ],
       "thematic": [
-        "Environnement",
-        "Cadastre, aménagement"
+        "Cadastre, aménagement",
+        "Environnement"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/7a32bb10-da66-4cda-aaa0-56b1fd28330b",
@@ -159846,12 +159708,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/territoires_paec_bfc"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=territoires_paec_bfc"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/territoires_paec_bfc"
         }
       ],
       "styles": [
@@ -159991,12 +159853,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/territoires_paec_bfc"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=territoires_paec_bfc"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/territoires_paec_bfc"
         }
       ],
       "styles": [
@@ -160136,12 +159998,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=territoires_paec_bfc"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/territoires_paec_bfc"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=territoires_paec_bfc"
         }
       ],
       "styles": [
@@ -160392,8 +160254,8 @@
         "EPTB de la Sarthe"
       ],
       "thematic": [
-        "Environnement",
-        "Eaux intérieures, Hydrographie"
+        "Eaux intérieures, Hydrographie",
+        "Environnement"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/PAPI_Sarthe",
@@ -160717,12 +160579,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PARCELLAIRE-EXPRESS-PCI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PARCELLAIRE-EXPRESS-PCI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PARCELLAIRE-EXPRESS-PCI"
         }
       ],
       "styles": [
@@ -160862,12 +160724,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PARCELLAIRE-EXPRESS-PCI"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PARCELLAIRE-EXPRESS-PCI"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PARCELLAIRE-EXPRESS-PCI"
         }
       ],
       "styles": [
@@ -162107,12 +161969,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=perimetre_pnrpa_2026"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/perimetre_pnrpa_2026"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=perimetre_pnrpa_2026"
         }
       ],
       "styles": [
@@ -163896,12 +163758,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=rpg_metrolyon_wms"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/rpg_metrolyon_wms"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=rpg_metrolyon_wms"
         }
       ],
       "styles": [
@@ -164152,9 +164014,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=osfd95b355a-dbb8-52f2-bb54-c99ad98c7bd3",
@@ -164720,12 +164582,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CVStrasbourg-Ville_10262026"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CVStrasbourg-Ville_10262026"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CVStrasbourg-Ville_10262026"
         }
       ],
       "styles": [
@@ -165109,8 +164971,8 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
         "Agriculture",
+        "Environnement",
         "Sciences de la terre, géosciences"
       ],
       "metadata_urls": [
@@ -165389,9 +165251,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osff858525a-9fea-5ae3-93ab-43afab78483f",
@@ -167589,12 +167451,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=osf63e6c177-455e-5805-b70b-0894ee1c7174"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osf63e6c177-455e-5805-b70b-0894ee1c7174"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=osf63e6c177-455e-5805-b70b-0894ee1c7174"
         }
       ],
       "styles": [
@@ -167700,9 +167562,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osf63e6c177-455e-5805-b70b-0894ee1c7174",
@@ -168696,16 +168558,16 @@
       "queryable": true,
       "metadata": [
         {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/zzz_test_nl_at_pers_agees"
+        },
+        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=zzz_test_nl_at_pers_agees"
         },
         {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/zzz_test_nl_at_pers_agees"
-        },
-        {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/zzz_test_nl_at_pers_agees"
         }
       ],
       "styles": [
@@ -168842,14 +168704,14 @@
       ],
       "metadata": [
         {
-          "name": "IGNF_ADMIN-EXPRESS",
-          "title": "IGNF_ADMIN-EXPRESS",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
-        },
-        {
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_ADMIN-EXPRESS"
+        },
+        {
+          "name": "IGNF_ADMIN-EXPRESS",
+          "title": "IGNF_ADMIN-EXPRESS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS"
         },
         {
           "name": "adminexpress",
@@ -169212,9 +169074,9 @@
       ],
       "metadata": [
         {
-          "name": "dep_flux",
-          "title": "dep_flux",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/dep_flux.json"
+          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         },
         {
           "name": "2",
@@ -169222,9 +169084,9 @@
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         },
         {
-          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+          "name": "dep_flux",
+          "title": "dep_flux",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/dep_flux.json"
         }
       ],
       "styles": [
@@ -169283,9 +169145,9 @@
       ],
       "metadata": [
         {
-          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+          "name": "2",
+          "title": "2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         },
         {
           "name": "dep_propriete",
@@ -169293,9 +169155,9 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/dep_propriete.json"
         },
         {
-          "name": "2",
-          "title": "2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -169354,6 +169216,11 @@
       ],
       "metadata": [
         {
+          "name": "dep_volume",
+          "title": "dep_volume",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/dep_volume.json"
+        },
+        {
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
@@ -169362,11 +169229,6 @@
           "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
           "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
-          "name": "dep_volume",
-          "title": "dep_volume",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/dep_volume.json"
         }
       ],
       "styles": [
@@ -169425,6 +169287,11 @@
       ],
       "metadata": [
         {
+          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
@@ -169433,11 +169300,6 @@
           "name": "reg_taux_boisement",
           "title": "reg_taux_boisement",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/reg_taux_boisement.json"
-        },
-        {
-          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -169496,6 +169358,11 @@
       ],
       "metadata": [
         {
+          "name": "2",
+          "title": "2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
           "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
           "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
@@ -169504,11 +169371,6 @@
           "name": "reg_flux",
           "title": "reg_flux",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/reg_flux.json"
-        },
-        {
-          "name": "2",
-          "title": "2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -169638,9 +169500,9 @@
       ],
       "metadata": [
         {
-          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+          "name": "reg_volume",
+          "title": "reg_volume",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/reg_volume.json"
         },
         {
           "name": "2",
@@ -169648,9 +169510,9 @@
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         },
         {
-          "name": "reg_volume",
-          "title": "reg_volume",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/reg_volume.json"
+          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -169780,11 +169642,6 @@
       ],
       "metadata": [
         {
-          "name": "2",
-          "title": "2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
           "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
@@ -169793,6 +169650,11 @@
           "name": "ser_flux",
           "title": "ser_flux",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/ser_flux.json"
+        },
+        {
+          "name": "2",
+          "title": "2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -169856,14 +169718,14 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/IFN/ser_propriete.json"
         },
         {
-          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
-        },
-        {
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
+        },
+        {
+          "name": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "title": "IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS_INVENTAIRE-FORESTIER-NATIONAL"
         }
       ],
       "styles": [
@@ -169993,16 +169855,6 @@
       ],
       "metadata": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
-        },
-        {
-          "name": "isohypse_monochrome_orange",
-          "title": "isohypse_monochrome_orange",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
-        },
-        {
           "name": "isohypse_multicolore",
           "title": "isohypse_multicolore",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"
@@ -170013,17 +169865,27 @@
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_COURBES-DE-NIVEAU"
         },
         {
+          "name": "isohypse_monochrome_orange",
+          "title": "isohypse_monochrome_orange",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
+        },
+        {
           "name": "2",
           "title": "2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_COURBES-DE-NIVEAU"
+        },
+        {
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "styles": [
         {
-          "name": "isohypse_monochrome_marron",
-          "title": "isohypse_monochrome_marron",
+          "name": "isohypse_multicolore",
+          "title": "isohypse_multicolore",
           "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"
         },
         {
           "name": "isohypse_monochrome_orange",
@@ -170032,10 +169894,10 @@
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_orange.json"
         },
         {
-          "name": "isohypse_multicolore",
-          "title": "isohypse_multicolore",
+          "name": "isohypse_monochrome_marron",
+          "title": "isohypse_monochrome_marron",
           "current": false,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_multicolore.json"
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/ISOHYPSE/isohypse_monochrome_marron.json"
         }
       ],
       "globalConstraint": {
@@ -170089,11 +169951,6 @@
       ],
       "metadata": [
         {
-          "name": "2",
-          "title": "2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
-        },
-        {
           "name": "LANDCOVER-FORESTINVENTORY-V2",
           "title": "LANDCOVER-FORESTINVENTORY-V2",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDFORET/LANDCOVER-FORESTINVENTORY-V2.json"
@@ -170102,6 +169959,11 @@
           "name": "IGNF_BD-FORET",
           "title": "IGNF_BD-FORET",
           "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-FORET"
+        },
+        {
+          "name": "2",
+          "title": "2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
         }
       ],
       "styles": [
@@ -170244,14 +170106,14 @@
       ],
       "metadata": [
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+        },
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         },
         {
           "name": "ocsge_usage",
@@ -170261,16 +170123,16 @@
       ],
       "styles": [
         {
-          "name": "ocsge_occupation",
-          "title": "ocsge_occupation",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
-        },
-        {
           "name": "ocsge_couverture",
           "title": "ocsge_couverture",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_couverture.json"
+        },
+        {
+          "name": "ocsge_occupation",
+          "title": "ocsge_occupation",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/OCSGE/ocsge_occupation.json"
         },
         {
           "name": "ocsge_usage",
@@ -170628,9 +170490,9 @@
       ],
       "metadata": [
         {
-          "name": "IGNF_BD-TRANSPORTS-EXCEPTIONNELS",
-          "title": "IGNF_BD-TRANSPORTS-EXCEPTIONNELS",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TRANSPORTS-EXCEPTIONNELS"
+          "name": "transport_exceptionnel",
+          "title": "transport_exceptionnel",
+          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/TRANSPORT_EXCEPTIONNEL/transport_exceptionnel.json"
         },
         {
           "name": "2",
@@ -170638,9 +170500,9 @@
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-TRANSPORTS-EXCEPTIONNELS"
         },
         {
-          "name": "transport_exceptionnel",
-          "title": "transport_exceptionnel",
-          "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/TRANSPORT_EXCEPTIONNEL/transport_exceptionnel.json"
+          "name": "IGNF_BD-TRANSPORTS-EXCEPTIONNELS",
+          "title": "IGNF_BD-TRANSPORTS-EXCEPTIONNELS",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-TRANSPORTS-EXCEPTIONNELS"
         }
       ],
       "styles": [
@@ -170699,14 +170561,14 @@
       ],
       "metadata": [
         {
-          "name": "osfde26f53e-5c29-5320-b53c-e38abea75fb5",
-          "title": "osfde26f53e-5c29-5320-b53c-e38abea75fb5",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfde26f53e-5c29-5320-b53c-e38abea75fb5"
-        },
-        {
           "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
           "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=osfde26f53e-5c29-5320-b53c-e38abea75fb5"
+        },
+        {
+          "name": "osfde26f53e-5c29-5320-b53c-e38abea75fb5",
+          "title": "osfde26f53e-5c29-5320-b53c-e38abea75fb5",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfde26f53e-5c29-5320-b53c-e38abea75fb5"
         },
         {
           "name": "fca2b3ec-0d23-4dfd-baa8-15c10db4bc14_pb_ext_1",
@@ -170739,9 +170601,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfde26f53e-5c29-5320-b53c-e38abea75fb5",
@@ -170853,28 +170715,28 @@
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/logopluginGPF"
         },
         {
-          "name": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
-          "title": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
-          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/f4db33a9-5b40-4faf-a7c1-79381262ccf8.json"
-        },
-        {
           "name": "65b745f0-9560-49fc-999c-44e38ee734cb",
           "title": "65b745f0-9560-49fc-999c-44e38ee734cb",
           "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/65b745f0-9560-49fc-999c-44e38ee734cb.json"
+        },
+        {
+          "name": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
+          "title": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
+          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/f4db33a9-5b40-4faf-a7c1-79381262ccf8.json"
         }
       ],
       "styles": [
         {
-          "name": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
-          "title": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/f4db33a9-5b40-4faf-a7c1-79381262ccf8.json"
-        },
-        {
           "name": "65b745f0-9560-49fc-999c-44e38ee734cb",
           "title": "65b745f0-9560-49fc-999c-44e38ee734cb",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/65b745f0-9560-49fc-999c-44e38ee734cb.json"
+        },
+        {
+          "name": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
+          "title": "f4db33a9-5b40-4faf-a7c1-79381262ccf8",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/f4db33a9-5b40-4faf-a7c1-79381262ccf8.json"
         }
       ],
       "globalConstraint": {
@@ -170895,8 +170757,8 @@
         "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "Infrastructures de transport",
-        "Agriculture"
+        "Agriculture",
+        "Infrastructures de transport"
       ],
       "metadata_urls": [
         "https://cartes.gouv.fr/rechercher-une-donnee/dataset/logopluginGPF",
@@ -170928,19 +170790,14 @@
       ],
       "metadata": [
         {
-          "name": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
-          "title": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
-          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/682fa0ef-0027-4ec6-a819-0eeeb4b4ac29.json"
+          "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
+          "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=logopluginGPF"
         },
         {
           "name": "34c6db63-688d-4c0f-994f-54362a2ffc04",
           "title": "34c6db63-688d-4c0f-994f-54362a2ffc04",
           "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/34c6db63-688d-4c0f-994f-54362a2ffc04.json"
-        },
-        {
-          "name": "logopluginGPF",
-          "title": "logopluginGPF",
-          "url": "https://cartes.gouv.fr/catalogue/dataset/logopluginGPF"
         },
         {
           "name": "logopluginGPF",
@@ -170948,23 +170805,28 @@
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/logopluginGPF"
         },
         {
-          "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
-          "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=logopluginGPF"
+          "name": "logopluginGPF",
+          "title": "logopluginGPF",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/logopluginGPF"
+        },
+        {
+          "name": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
+          "title": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
+          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/682fa0ef-0027-4ec6-a819-0eeeb4b4ac29.json"
         }
       ],
       "styles": [
         {
-          "name": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
-          "title": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
-          "current": true,
-          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/682fa0ef-0027-4ec6-a819-0eeeb4b4ac29.json"
-        },
-        {
           "name": "34c6db63-688d-4c0f-994f-54362a2ffc04",
           "title": "34c6db63-688d-4c0f-994f-54362a2ffc04",
-          "current": false,
+          "current": true,
           "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/34c6db63-688d-4c0f-994f-54362a2ffc04.json"
+        },
+        {
+          "name": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
+          "title": "682fa0ef-0027-4ec6-a819-0eeeb4b4ac29",
+          "current": false,
+          "url": "https://data.geopf.fr/annexes/recette-cartes-gouv/style/682fa0ef-0027-4ec6-a819-0eeeb4b4ac29.json"
         }
       ],
       "globalConstraint": {
@@ -170985,8 +170847,8 @@
         "INSTITUT NATIONAL DE L'INFORMATION GEOGRAPHIQUE ET FORESTIERE (IGN)"
       ],
       "thematic": [
-        "Infrastructures de transport",
-        "Agriculture"
+        "Agriculture",
+        "Infrastructures de transport"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/annexes/recette-cartes-gouv/style/682fa0ef-0027-4ec6-a819-0eeeb4b4ac29.json",
@@ -171019,6 +170881,11 @@
       ],
       "metadata": [
         {
+          "name": "1b464210-8702-5296-b738-25978d5d4806",
+          "title": "1b464210-8702-5296-b738-25978d5d4806",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/1b464210-8702-5296-b738-25978d5d4806"
+        },
+        {
           "name": "c9740106-d6a2-481b-92ae-4e4609a25e49_sols_gironde",
           "title": "c9740106-d6a2-481b-92ae-4e4609a25e49_sols_gironde",
           "url": "https://data.geopf.fr/annexes/gissol-osf/style/c9740106-d6a2-481b-92ae-4e4609a25e49_sols_gironde.json"
@@ -171027,11 +170894,6 @@
           "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
           "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=1b464210-8702-5296-b738-25978d5d4806"
-        },
-        {
-          "name": "1b464210-8702-5296-b738-25978d5d4806",
-          "title": "1b464210-8702-5296-b738-25978d5d4806",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/1b464210-8702-5296-b738-25978d5d4806"
         }
       ],
       "styles": [
@@ -171059,9 +170921,9 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
+        "Sciences de la terre, géosciences",
         "Agriculture",
-        "Sciences de la terre, géosciences"
+        "Environnement"
       ],
       "metadata_urls": [
         "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=1b464210-8702-5296-b738-25978d5d4806",
@@ -171092,9 +170954,9 @@
       ],
       "metadata": [
         {
-          "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
-          "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CVStrasbourg-Ville_10262026"
+          "name": "CVStrasbourg-Ville_10262026",
+          "title": "CVStrasbourg-Ville_10262026",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CVStrasbourg-Ville_10262026"
         },
         {
           "name": "54f72f56-cbc7-4d05-af58-0edc301c9945_style_cv_strasbourg",
@@ -171102,9 +170964,9 @@
           "url": "https://data.geopf.fr/annexes/club_vosgien_de_strasbourg/style/54f72f56-cbc7-4d05-af58-0edc301c9945_style_cv_strasbourg.json"
         },
         {
-          "name": "CVStrasbourg-Ville_10262026",
-          "title": "CVStrasbourg-Ville_10262026",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CVStrasbourg-Ville_10262026"
+          "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
+          "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CVStrasbourg-Ville_10262026"
         }
       ],
       "styles": [
@@ -171163,9 +171025,9 @@
       ],
       "metadata": [
         {
-          "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
-          "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=osfc9008138-f56a-5b19-9cd4-25398dcb4d62"
+          "name": "d4e4000f-b331-4bcd-9e85-c544f66ef90c_sols_loiret",
+          "title": "d4e4000f-b331-4bcd-9e85-c544f66ef90c_sols_loiret",
+          "url": "https://data.geopf.fr/annexes/gissol-osf/style/d4e4000f-b331-4bcd-9e85-c544f66ef90c_sols_loiret.json"
         },
         {
           "name": "osfc9008138-f56a-5b19-9cd4-25398dcb4d62",
@@ -171173,9 +171035,9 @@
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/osfc9008138-f56a-5b19-9cd4-25398dcb4d62"
         },
         {
-          "name": "d4e4000f-b331-4bcd-9e85-c544f66ef90c_sols_loiret",
-          "title": "d4e4000f-b331-4bcd-9e85-c544f66ef90c_sols_loiret",
-          "url": "https://data.geopf.fr/annexes/gissol-osf/style/d4e4000f-b331-4bcd-9e85-c544f66ef90c_sols_loiret.json"
+          "name": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
+          "title": "csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=osfc9008138-f56a-5b19-9cd4-25398dcb4d62"
         }
       ],
       "styles": [
@@ -171203,8 +171065,8 @@
         "INRAE - Info&Sols"
       ],
       "thematic": [
-        "Environnement",
         "Agriculture",
+        "Environnement",
         "Sciences de la terre, géosciences"
       ],
       "metadata_urls": [
@@ -171485,11 +171347,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-25",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_SCAN-25",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_SCAN-25",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-25",
           "format": ""
         }
       ],
@@ -171594,11 +171456,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-OACI",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_SCAN-OACI",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_SCAN-OACI",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-OACI",
           "format": ""
         }
       ],
@@ -171733,11 +171595,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_SCAN-25",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-25",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-25",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_SCAN-25",
           "format": ""
         }
       ],
@@ -171901,11 +171763,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=MTE_CARTOGRAPHIE-ZONES-HUMIDES",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/MTE_CARTOGRAPHIE-ZONES-HUMIDES",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/MTE_CARTOGRAPHIE-ZONES-HUMIDES",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=MTE_CARTOGRAPHIE-ZONES-HUMIDES",
           "format": ""
         }
       ],
@@ -172063,11 +171925,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-100",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_SCAN-100",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_SCAN-100",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_SCAN-100",
           "format": ""
         }
       ],
@@ -172131,16 +171993,16 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CartoSP_MVP_SP_v2"
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CartoSP_MVP_SP_v2"
         },
         {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/CartoSP_MVP_SP_v2"
         },
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&elementSetName=full&ID=CartoSP_MVP_SP_v2"
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/CartoSP_MVP_SP_v2"
         }
       ],
       "styles": [
