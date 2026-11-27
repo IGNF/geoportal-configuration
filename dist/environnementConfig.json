@@ -6,6 +6,7 @@
         "DEBROUSSAILLEMENT$GEOPORTAIL:OGC:WMTS",
         "FORETS.PUBLIQUES$GEOPORTAIL:OGC:WMTS",
         "GEOGRAPHICALGRIDSYSTEM.DFCI$GEOPORTAIL:OGC:WMTS",
+        "IGNF_DEBROUSSAILLEMENT-ZONES-OLD$GEOPORTAIL:OGC:WMTS",
         "IGNF_FORETS-ANCIENNES$GEOPORTAIL:OGC:WMTS",
         "IGNF_INDICATEURS-NATIONAUX-NATURE-EN-VILLE_2017-2023$GEOPORTAIL:OGC:WMTS",
         "IGNF_MASQUE-CARTO-FORMATIONS-VEGETALES_2004$GEOPORTAIL:OGC:WMTS",
@@ -74,10 +75,11 @@
         "MESURES_COMPENSATOIRES:emprises_lineaires$GEOPORTAIL:OGC:WFS",
         "MESURES_COMPENSATOIRES:emprises_polygones$GEOPORTAIL:OGC:WFS",
         "MESURES_COMPENSATOIRES:emprises_ponctuelles$GEOPORTAIL:OGC:WFS",
-        "PRSF_BDD_GLP_2023:prs_glp$GEOPORTAIL:OGC:WFS",
         "PRSF_BDD_REU_2023:prs_reu$GEOPORTAIL:OGC:WFS",
+        "PRSF_BDD_GLP_2023:prs_glp$GEOPORTAIL:OGC:WFS",
         "PRSF_BDD_GUF_2023:prs_guf$GEOPORTAIL:OGC:WFS",
         "DEBROUSSAILLEMENT:debroussaillement$GEOPORTAIL:OGC:WFS",
+        "IGNF_DEBROUSSAILLEMENT-ZONES-OLD:_zones_a_debroussailler$GEOPORTAIL:OGC:WFS",
         "LANDCOVER-TMS.FORESTINVENTORY.V2$GEOPORTAIL:GPP:TMS"
       ]
     }
@@ -449,11 +451,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=ONF_FORETS-PUBLIQUES",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/ONF_FORETS-PUBLIQUES",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/ONF_FORETS-PUBLIQUES",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=ONF_FORETS-PUBLIQUES",
           "format": ""
         }
       ],
@@ -595,6 +597,143 @@
           "format": "image/jpeg",
           "url": "https://data.geopf.fr/annexes/ressources/legendes/LEGEND.jpg",
           "minScaleDenominator": "200"
+        }
+      ],
+      "formats": [
+        {
+          "name": "image/png",
+          "current": true
+        }
+      ]
+    },
+    "IGNF_DEBROUSSAILLEMENT-ZONES-OLD$GEOPORTAIL:OGC:WMTS": {
+      "name": "IGNF_DEBROUSSAILLEMENT-ZONES-OLD",
+      "title": "Zones à débroussailler (OLD) - infrastructures bâties et zonages d'urbanisme - beta",
+      "description": "Zones à débroussailler autour des infrastructures bâties et selon les zonages d’urbanisme, calculées automatiquement en appliquant la réglementation sur les obligations légales de débroussaillement (OLD) et en distinguant les différents responsables de ces obligations (à titre indicatif uniquement). Consultez la notice d'utilisation disponible sur cartes.gouv.",
+      "globalConstraint": {
+        "maxScaleDenominator": 8735660.375448715,
+        "minScaleDenominator": 2132.7295838497826,
+        "bbox": {
+          "left": -5.1505,
+          "right": 9.5705,
+          "top": 51.0991,
+          "bottom": 41.3252
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WMTS",
+        "version": "1.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wmts"
+        }
+      },
+      "defaultProjection": "EPSG:3857",
+      "wmtsOptions": {
+        "tileMatrixSetLink": "PM_6_18",
+        "tileMatrixSetLimits": {
+          "6": {
+            "minTileRow": "21",
+            "maxTileRow": "23",
+            "minTileCol": "31",
+            "maxTileCol": "33"
+          },
+          "7": {
+            "minTileRow": "42",
+            "maxTileRow": "47",
+            "minTileCol": "62",
+            "maxTileCol": "67"
+          },
+          "8": {
+            "minTileRow": "85",
+            "maxTileRow": "95",
+            "minTileCol": "124",
+            "maxTileCol": "134"
+          },
+          "9": {
+            "minTileRow": "171",
+            "maxTileRow": "191",
+            "minTileCol": "248",
+            "maxTileCol": "269"
+          },
+          "10": {
+            "minTileRow": "342",
+            "maxTileRow": "382",
+            "minTileCol": "497",
+            "maxTileCol": "539"
+          },
+          "11": {
+            "minTileRow": "684",
+            "maxTileRow": "765",
+            "minTileCol": "994",
+            "maxTileCol": "1078"
+          },
+          "12": {
+            "minTileRow": "1369",
+            "maxTileRow": "1530",
+            "minTileCol": "1989",
+            "maxTileCol": "2156"
+          },
+          "13": {
+            "minTileRow": "2738",
+            "maxTileRow": "3061",
+            "minTileCol": "3978",
+            "maxTileCol": "4313"
+          },
+          "14": {
+            "minTileRow": "5477",
+            "maxTileRow": "6123",
+            "minTileCol": "7957",
+            "maxTileCol": "8627"
+          },
+          "15": {
+            "minTileRow": "10955",
+            "maxTileRow": "12246",
+            "minTileCol": "15915",
+            "maxTileCol": "17255"
+          },
+          "16": {
+            "minTileRow": "21911",
+            "maxTileRow": "24492",
+            "minTileCol": "31830",
+            "maxTileCol": "34510"
+          },
+          "17": {
+            "minTileRow": "43822",
+            "maxTileRow": "48985",
+            "minTileCol": "63660",
+            "maxTileCol": "69020"
+          },
+          "18": {
+            "minTileRow": "87645",
+            "maxTileRow": "97970",
+            "minTileCol": "127321",
+            "maxTileCol": "138041"
+          }
+        }
+      },
+      "metadata": [
+        {
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BETA-DEBROUSSAILLEMENT-ZONES-OLD-BATI-URBA",
+          "format": ""
+        },
+        {
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BETA-DEBROUSSAILLEMENT-ZONES-OLD-BATI-URBA",
+          "format": ""
+        }
+      ],
+      "styles": [
+        {
+          "name": "normal",
+          "title": "Débroussaillement OLD Bâti",
+          "current": true,
+          "url": null
+        }
+      ],
+      "legends": [
+        {
+          "format": "image/png",
+          "url": "https://data.geopf.fr/annexes/ressources//debroussaillement/OLD/legende_OLD.png",
+          "minScaleDenominator": "1"
         }
       ],
       "formats": [
@@ -824,11 +963,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS-NATIONAUX-NATURE-EN-VILLE",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS-NATIONAUX-NATURE-EN-VILLE",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INDICATEURS-NATIONAUX-NATURE-EN-VILLE",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INDICATEURS-NATIONAUX-NATURE-EN-VILLE",
           "format": ""
         }
       ],
@@ -1199,11 +1338,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
           "format": ""
         }
       ],
@@ -1449,11 +1588,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
           "format": ""
         }
       ],
@@ -1574,11 +1713,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
           "format": ""
         }
       ],
@@ -1699,11 +1838,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM",
+          "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM",
           "format": ""
         }
       ],
@@ -1973,11 +2112,11 @@
       },
       "metadata": [
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_NATURE-EN-VILLE",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NATURE-EN-VILLE",
           "format": ""
         },
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NATURE-EN-VILLE",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_NATURE-EN-VILLE",
           "format": ""
         }
       ],
@@ -2098,11 +2237,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-FORET",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_BD-FORET",
           "format": ""
         }
       ],
@@ -2598,11 +2737,11 @@
       },
       "metadata": [
         {
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PNA-ZONES-A-PROSPECTER",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PNA-ZONES-A-PROSPECTER",
           "format": ""
         },
         {
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PNA-ZONES-A-PROSPECTER",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PNA-ZONES-A-PROSPECTER",
           "format": ""
         }
       ],
@@ -3096,12 +3235,12 @@
       "queryable": false,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_MASQUE-FORET-DROM"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_MASQUE-FORET-DROM"
         }
       ],
       "styles": [
@@ -3468,12 +3607,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_NATURE-EN-VILLE"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_NATURE-EN-VILLE"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_NATURE-EN-VILLE"
         }
       ],
       "styles": [
@@ -3604,12 +3743,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PRSF"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_PRSF"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_PRSF"
         }
       ],
       "styles": [
@@ -3843,12 +3982,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
         }
       ],
       "styles": [
@@ -4215,12 +4354,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
         }
       ],
       "styles": [
@@ -4339,12 +4478,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
         }
       ],
       "styles": [
@@ -4463,12 +4602,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "application/xml",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
-        },
-        {
           "format": "text/html",
           "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_CARTO-VEGETATION"
+        },
+        {
+          "format": "application/xml",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_CARTO-VEGETATION"
         }
       ],
       "styles": [
@@ -4826,12 +4965,12 @@
       "queryable": true,
       "metadata": [
         {
-          "format": "text/html",
-          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INPE"
-        },
-        {
           "format": "application/xml",
           "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_INPE"
+        },
+        {
+          "format": "text/html",
+          "url": "https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_INPE"
         }
       ],
       "styles": [
@@ -5721,34 +5860,6 @@
       "legends": [],
       "formats": []
     },
-    "PRSF_BDD_GLP_2023:prs_glp$GEOPORTAIL:OGC:WFS": {
-      "name": "PRSF_BDD_GLP_2023:prs_glp",
-      "title": "Points de Rencontre de Secours en Forêt (PRSF)",
-      "description": "Les Points de Rencontre de Secours en Forêt (PRSF) sont supposées connus des services de secours. Ils permettent de faciliter la localisation d’un blessé par les services de secours ; Édition 2023-01-01",
-      "globalConstraint": {
-        "minScaleDenominator": 0.0,
-        "maxScaleDenominator": 62236752975597,
-        "bbox": {
-          "left": -61.80877874,
-          "right": -61.00764963,
-          "top": 16.50991853,
-          "bottom": 15.84342129
-        }
-      },
-      "serviceParams": {
-        "id": "OGC:WFS",
-        "version": "2.0.0",
-        "serverUrl": {
-          "environnement": "https://data.geopf.fr/wfs"
-        }
-      },
-      "defaultProjection": "EPSG:32620",
-      "queryable": false,
-      "metadata": [],
-      "styles": [],
-      "legends": [],
-      "formats": []
-    },
     "PRSF_BDD_REU_2023:prs_reu$GEOPORTAIL:OGC:WFS": {
       "name": "PRSF_BDD_REU_2023:prs_reu",
       "title": "Points de Rencontre de Secours en Forêt (PRSF)",
@@ -5771,6 +5882,34 @@
         }
       },
       "defaultProjection": "EPSG:2975",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
+    "PRSF_BDD_GLP_2023:prs_glp$GEOPORTAIL:OGC:WFS": {
+      "name": "PRSF_BDD_GLP_2023:prs_glp",
+      "title": "Points de Rencontre de Secours en Forêt (PRSF)",
+      "description": "Les Points de Rencontre de Secours en Forêt (PRSF) sont supposées connus des services de secours. Ils permettent de faciliter la localisation d’un blessé par les services de secours ; Édition 2023-01-01",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -61.80877874,
+          "right": -61.00764963,
+          "top": 16.50991853,
+          "bottom": 15.84342129
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:32620",
       "queryable": false,
       "metadata": [],
       "styles": [],
@@ -5833,6 +5972,34 @@
       "legends": [],
       "formats": []
     },
+    "IGNF_DEBROUSSAILLEMENT-ZONES-OLD:_zones_a_debroussailler$GEOPORTAIL:OGC:WFS": {
+      "name": "IGNF_DEBROUSSAILLEMENT-ZONES-OLD:_zones_a_debroussailler",
+      "title": "Zones à débroussailler (OLD) - infrastructures bâties et zonages d'urbanisme - beta",
+      "description": "Zones à débroussailler autour des infrastructures bâties et selon les zonages d’urbanisme, calculées automatiquement en appliquant la réglementation sur les obligations légales de débroussaillement (OLD) et en distinguant les différents responsables de ces obligations (à titre indicatif uniquement). Consultez la notice d'utilisation disponible sur cartes.gouv.",
+      "globalConstraint": {
+        "minScaleDenominator": 0.0,
+        "maxScaleDenominator": 62236752975597,
+        "bbox": {
+          "left": -4.8,
+          "right": 9.7475,
+          "top": 49.44546875,
+          "bottom": 41.31265625
+        }
+      },
+      "serviceParams": {
+        "id": "OGC:WFS",
+        "version": "2.0.0",
+        "serverUrl": {
+          "environnement": "https://data.geopf.fr/wfs"
+        }
+      },
+      "defaultProjection": "EPSG:2154",
+      "queryable": false,
+      "metadata": [],
+      "styles": [],
+      "legends": [],
+      "formats": []
+    },
     "LANDCOVER-TMS.FORESTINVENTORY.V2$GEOPORTAIL:GPP:TMS": {
       "hidden": true,
       "queryable": false,
@@ -5859,14 +6026,14 @@
           "url": "https://cartes.gouv.fr/catalogue/dataset/IGNF_BD-FORET"
         },
         {
-          "name": "2",
-          "title": "2",
-          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
-        },
-        {
           "name": "LANDCOVER-FORESTINVENTORY-V2",
           "title": "LANDCOVER-FORESTINVENTORY-V2",
           "url": "https://data.geopf.fr/annexes/ressources/vectorTiles/styles/BDFORET/LANDCOVER-FORESTINVENTORY-V2.json"
+        },
+        {
+          "name": "2",
+          "title": "2",
+          "url": "https://data.geopf.fr/csw?REQUEST=GetRecordById&SERVICE=CSW&VERSION=2.0.2&OUTPUTSCHEMA=http://standards.iso.org/iso/19115/-3/mdb/2.0&elementSetName=full&ID=IGNF_BD-FORET"
         }
       ],
       "styles": [
